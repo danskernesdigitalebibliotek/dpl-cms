@@ -27,3 +27,8 @@ web/sites/simpletest
 
 # Task environment file
 .task.env
+
+# drush contrib commands
+drush/Commands/contrib
+
+.drush-lock-update
