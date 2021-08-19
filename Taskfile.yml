@@ -4,19 +4,14 @@ dotenv: [".task.env"]
 
 vars:
   REGISTRY: '{{.REGISTRY | default "ghcr.io"}}'
-  ORG: '{{.ORG | default "reload"}}'
+  ORG: '{{.ORG | default "danskernesdigitalebibliotek"}}'
   VERSION: "{{ .VERSION }}"
-  REPOSITORY_URL: '{{.REPOSITORY_URL | default "git@github.com:reload/dpl-poc-core.git"}}'
+  REPOSITORY_URL: '{{.REPOSITORY_URL | default "git@github.com:{{ .ORG }}/dpl-cms.git"}}'
   REPOSITORY_DIR: "core_repository"
-  DOCKER_IMAGE_NAMESPACE: '{{.DOCKER_IMAGE_NAMESPACE | default "dpl-poc"}}'
+  DOCKER_IMAGE_NAMESPACE: '{{.DOCKER_IMAGE_NAMESPACE | default "dpl-cms"}}'
   DOCKER_IMAGE_PREFIX: "{{ .REGISTRY }}/{{ .ORG }}/{{ .DOCKER_IMAGE_NAMESPACE }}"
-  DOCKER_IMAGE_DIR: "{{ .REPOSITORY_DIR }}/docker"
-  # GIT_SHA_CORE:
-  #   sh: (cd {{ .REPOSITORY_DIR }} && git rev-parse HEAD)
+  DOCKER_IMAGE_DIR: "docker"
   IMAGE_SOURCE: "{{ .DOCKER_IMAGE_PREFIX }}-source:{{ .VERSION }}"
-  IMAGE_CLI: "{{ .DOCKER_IMAGE_PREFIX }}-cli:{{ .VERSION }}"
-  IMAGE_NGINX: "{{ .DOCKER_IMAGE_PREFIX }}-nginx:{{ .VERSION }}"
-  IMAGE_PHP: "{{ .DOCKER_IMAGE_PREFIX }}-php:{{ .VERSION }}"
 
 tasks:
   ghcr:login:
@@ -27,18 +22,10 @@ tasks:
       - sh: "[ ! -z {{.CR_PAT}} ]"
         msg: "Env variable CR_PAT is not set or empty."
 
-  core:repo:clone:
-    summary: Get a git cloned copy of the core repository.
-    cmds:
-      - git clone {{ .REPOSITORY_URL }} {{ .REPOSITORY_DIR }}
-    status:
-      - "[ -d '{{ .REPOSITORY_DIR }}' ] || exit 1"
-
   core:source:build:
     summary: Build core source image.
-    deps: [core:repo:clone]
     cmds:
-      - docker build -f {{ .DOCKER_IMAGE_DIR }}/core.dockerfile --tag {{ .IMAGE_SOURCE }} {{ .REPOSITORY_DIR }}
+      - docker build -f {{ .DOCKER_IMAGE_DIR }}/source.dockerfile --tag {{ .IMAGE_SOURCE }} .
     preconditions:
       - sh: "[ ! -z {{ .VERSION }} ]"
         msg: "Env variable VERSION is not set or empty."
@@ -52,35 +39,11 @@ tasks:
       - sh: "[ ! -z {{ .VERSION }} ]"
         msg: "Env variable VERSION is not set or empty."
 
-  core:build:
-    summary: Build core images.
-    deps: [core:repo:clone]
-    cmds:
-      - docker build -f {{ .DOCKER_IMAGE_DIR }}/cli.dockerfile --build-arg CORE_RELEASE={{ .IMAGE_SOURCE }} --tag {{ .IMAGE_CLI }} {{ .REPOSITORY_DIR }}
-      - docker build -f {{ .DOCKER_IMAGE_DIR }}/nginx.dockerfile --build-arg IMAGE_CLI={{ .IMAGE_CLI }} --tag {{ .IMAGE_NGINX }} {{ .REPOSITORY_DIR }}
-      - docker build -f {{ .DOCKER_IMAGE_DIR }}/php.dockerfile --build-arg IMAGE_CLI={{ .IMAGE_CLI }} --tag {{ .IMAGE_PHP }} {{ .REPOSITORY_DIR }}
-    preconditions:
-      - sh: "[ ! -z {{.VERSION}} ]"
-        msg: "Env variable VERSION is not set or empty."
-
-  core:push:
-    summary: Push core image to container registry.
-    deps: [ghcr:login]
-    cmds:
-      - docker push {{ .IMAGE_CLI }}
-      - docker push {{ .IMAGE_NGINX }}
-      - docker push {{ .IMAGE_PHP }}
-    preconditions:
-      - sh: "[ ! -z {{.VERSION}} ]"
-        msg: "Env variable VERSION is not set or empty."
-
   core:deploy:
-    desc: Build and push all core docker images.
+    desc: Build and push core source docker image.
     cmds:
       - task: core:source:build
       - task: core:source:push
-      - task: core:build
-      - task: core:push
     preconditions:
       - sh: "[ ! -z {{.VERSION}} ]"
         msg: "Env variable VERSION is not set or empty."
