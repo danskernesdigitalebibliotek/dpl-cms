@@ -5,13 +5,15 @@ dotenv: [".task.env"]
 vars:
   REGISTRY: '{{.REGISTRY | default "ghcr.io"}}'
   ORG: '{{.ORG | default "danskernesdigitalebibliotek"}}'
-  VERSION: "{{ .VERSION }}"
+  COMMIT_COUNT:
+    sh: git rev-list --count main
+  BUILD_NUMBER: '{{.BUILD_NUMBER | default .COMMIT_COUNT }}'
   REPOSITORY_URL: '{{.REPOSITORY_URL | default "git@github.com:{{ .ORG }}/dpl-cms.git"}}'
   REPOSITORY_DIR: "core_repository"
   DOCKER_IMAGE_NAMESPACE: '{{.DOCKER_IMAGE_NAMESPACE | default "dpl-cms"}}'
   DOCKER_IMAGE_PREFIX: "{{ .REGISTRY }}/{{ .ORG }}/{{ .DOCKER_IMAGE_NAMESPACE }}"
   DOCKER_IMAGE_DIR: "docker"
-  IMAGE_SOURCE: "{{ .DOCKER_IMAGE_PREFIX }}-source:{{ .VERSION }}"
+  IMAGE_SOURCE: "{{ .DOCKER_IMAGE_PREFIX }}-source:{{ .BUILD_NUMBER }}"
 
 tasks:
   ghcr:login:
@@ -27,8 +29,8 @@ tasks:
     cmds:
       - docker build -f {{ .DOCKER_IMAGE_DIR }}/source.dockerfile --tag {{ .IMAGE_SOURCE }} .
     preconditions:
-      - sh: "[ ! -z {{ .VERSION }} ]"
-        msg: "Env variable VERSION is not set or empty."
+      - sh: "[ ! -z {{ .BUILD_NUMBER }} ]"
+        msg: "Env variable BUILD_NUMBER is not set or empty."
 
   core:source:push:
     summary: Push core source image to container registry.
@@ -36,8 +38,8 @@ tasks:
     cmds:
       - docker push {{ .IMAGE_SOURCE }}
     preconditions:
-      - sh: "[ ! -z {{ .VERSION }} ]"
-        msg: "Env variable VERSION is not set or empty."
+      - sh: "[ ! -z {{ .BUILD_NUMBER }} ]"
+        msg: "Env variable BUILD_NUMBER is not set or empty."
 
   core:deploy:
     desc: Build and push core source docker image.
@@ -45,6 +47,6 @@ tasks:
       - task: core:source:build
       - task: core:source:push
     preconditions:
-      - sh: "[ ! -z {{.VERSION}} ]"
-        msg: "Env variable VERSION is not set or empty."
+      - sh: "[ ! -z {{.BUILD_NUMBER}} ]"
+        msg: "Env variable BUILD_NUMBER is not set or empty."
  
