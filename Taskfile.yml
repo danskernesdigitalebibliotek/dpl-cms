@@ -24,29 +24,27 @@ tasks:
       - sh: "[ ! -z {{.CR_PAT}} ]"
         msg: "Env variable CR_PAT is not set or empty."
 
-  core:source:build:
+  composer:install:
+    summary: Install drupal.
+    cmds:
+      - composer install
+    preconditions:
+  
+  source:build:
     summary: Build core source image.
+    deps: [composer:install]
     cmds:
       - docker build -f {{ .DOCKER_IMAGE_DIR }}/source.dockerfile --tag {{ .IMAGE_SOURCE }} .
-    preconditions:
-      - sh: "[ ! -z {{ .BUILD_NUMBER }} ]"
-        msg: "Env variable BUILD_NUMBER is not set or empty."
 
-  core:source:push:
+  source:push:
     summary: Push core source image to container registry.
     deps: [ghcr:login]
     cmds:
       - docker push {{ .IMAGE_SOURCE }}
-    preconditions:
-      - sh: "[ ! -z {{ .BUILD_NUMBER }} ]"
-        msg: "Env variable BUILD_NUMBER is not set or empty."
 
-  core:deploy:
+  source:deploy:
     desc: Build and push core source docker image.
     cmds:
-      - task: core:source:build
-      - task: core:source:push
-    preconditions:
-      - sh: "[ ! -z {{.BUILD_NUMBER}} ]"
-        msg: "Env variable BUILD_NUMBER is not set or empty."
- 
+      - task: composer:install
+      - task: source:build
+      - task: source:push
