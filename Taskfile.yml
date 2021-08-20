@@ -38,7 +38,7 @@ tasks:
   composer:install:
     summary: Install drupal.
     cmds:
-      - composer install
+      - docker-compose run cli sh -c "COMPOSER_MEMORY_LIMIT=-1 composer install"
     preconditions:
   
   source:build:
@@ -56,6 +56,5 @@ tasks:
   source:deploy:
     desc: Build and push core source docker image.
     cmds:
-      - task: composer:install
       - task: source:build
       - task: source:push
