@@ -62,7 +62,7 @@ tasks:
       - task: source:build
       - task: source:push
   
-  dev:upnrunning:
+  dev:setup:
     desc: Create local development setup
     cmds:
       - task: dev:composer:install
