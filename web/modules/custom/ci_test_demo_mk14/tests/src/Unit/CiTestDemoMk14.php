@@ -5,7 +5,7 @@ namespace Drupal\Tests\ci_test_demo_mk14\Unit;
 use Drupal\Tests\UnitTestCase;
 
 /**
- * Unit tests prooving that the phpUnit setup works.
+ * Unit tests proving that the phpUnit setup works.
  *
  * @group ci_test_demo_mk14
  */
