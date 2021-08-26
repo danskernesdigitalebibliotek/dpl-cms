@@ -12,7 +12,7 @@ vars:
   ORG: '{{.ORG | default "danskernesdigitalebibliotek"}}'
   # Get total amout of commits on the main branch. Used as build number.
   COMMIT_COUNT:
-    sh: git rev-list --count main
+    sh: git rev-list --count origin/main
   # Build number. Used for separating each build. 
   # It can be specified by adding BUILD_NUMBER=XX when running command.
   # Otherwise it will default to the COMMIT_COUNT variable.
@@ -35,15 +35,18 @@ tasks:
       - sh: "[ ! -z {{.CR_PAT}} ]"
         msg: "Env variable CR_PAT is not set or empty."
 
-  composer:install:
+  dev:composer:install:
     summary: Install drupal.
     cmds:
-      - composer install
-    preconditions:
+      - docker-compose run cli sh -c "COMPOSER_MEMORY_LIMIT=-1 composer install"
   
+  dev:run:
+    summary: Run docker compose
+    cmds:
+      - docker-compose up -d
+
   source:build:
     summary: Build core source image.
-    deps: [composer:install]
     cmds:
       - docker build -f {{ .DOCKER_IMAGE_DIR }}/source.dockerfile --tag {{ .IMAGE_SOURCE }} .
 
@@ -56,6 +59,11 @@ tasks:
   source:deploy:
     desc: Build and push core source docker image.
     cmds:
-      - task: composer:install
       - task: source:build
       - task: source:push
+  
+  dev:setup:
+    desc: Create local development setup
+    cmds:
+      - task: dev:composer:install
+      - task: dev:run
