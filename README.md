@@ -12,4 +12,3 @@ The command builds the site with dependencies and starts the required docker con
 In order to run local development you need:
 * go-task, https://taskfile.dev
 * docker
-* (Optional) dory - docker DNS service, https://github.com/FreedomBen/dory 
