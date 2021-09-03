@@ -1,8 +1,16 @@
 <?php
 
-define('DING_REACT_FOLLOW_SEARCHES_URL', 'https://prod.followsearches.dandigbib.org');
-define('DING_REACT_MATERIAL_LIST_URL', 'https://prod.materiallist.dandigbib.org');
-define('DING_REACT_COVER_SERVICE_URL', 'https://cover.dandigbib.org/api/v2');
+/**
+ * @file
+ * Ddb_react_demo_mk6 drupal module file.
+ */
+
+// phpcs:ignore
+define('DDB_REACT_DEMO_MK6_FOLLOW_SEARCHES_URL', 'https://prod.followsearches.dandigbib.org');
+// phpcs:ignore
+define('DDB_REACT_DEMO_MK6_MATERIAL_LIST_URL', 'https://prod.materiallist.dandigbib.org');
+// phpcs:ignore
+define('DDB_REACT_DEMO_MK6_COVER_SERVICE_URL', 'https://cover.dandigbib.org/api/v2');
 
 use Drupal\Component\Serialization\Json;
 
@@ -35,21 +43,21 @@ function ddb_react_demo_mk6_library_info_alter(array &$libraries, $module) {
  *   Render array with button.
  */
 function ddb_react_demo_mk6_button() {
-    $data = [
-      'material-list-url' => ding_react_material_list_url(),
-      'id' => 100,
-      'add-text' => t('Add to checklist'),
-      'add-error-text' => t('An error occurred'),
-      'add-success-text' => t('Added to checklist'),
-      'remove-text' => t('Remove from checklist'),
-      'remove-error-text' => t('An error occurred'),
-      'remove-success-text' => t('Removed from checklist'),
+  $data = [
+    'material-list-url' => ding_react_material_list_url(),
+    'id' => 100,
+    'add-text' => t('Add to checklist'),
+    'add-error-text' => t('An error occurred'),
+    'add-success-text' => t('Added to checklist'),
+    'remove-text' => t('Remove from checklist'),
+    'remove-error-text' => t('An error occurred'),
+    'remove-success-text' => t('Removed from checklist'),
       // Obviously we cannot login via google.com.
       // This needs to be corrected with proper a proper url when known.
-      'login-url' => 'http://google.com',
-    ];
+    'login-url' => 'http://google.com',
+  ];
 
-    return [ding_react_app('checklist-material-button', $data)];
+  return [ding_react_app('checklist-material-button', $data)];
 }
 
 /**
@@ -81,8 +89,8 @@ function ding_react_app($name, array $data = []) {
     '#attached' => [
       'library' => [
         'ddb_react_demo_mk6/demo',
-        sprintf('ddb_react_demo_mk6/%s', $name)
-        ]
+        sprintf('ddb_react_demo_mk6/%s', $name),
+      ],
     ],
   ];
 
@@ -96,7 +104,7 @@ function ding_react_app($name, array $data = []) {
  *   Url to Material List service instance.
  */
 function ding_react_material_list_url() {
-  return DING_REACT_MATERIAL_LIST_URL;
+  return DDB_REACT_DEMO_MK6_MATERIAL_LIST_URL;
 }
 
 /**
@@ -106,7 +114,7 @@ function ding_react_material_list_url() {
  *   Url to Follow Searches service instance.
  */
 function ding_react_follow_searches_url() {
-  return DING_REACT_FOLLOW_SEARCHES_URL;
+  return DDB_REACT_DEMO_MK6_FOLLOW_SEARCHES_URL;
 }
 
 /**
@@ -116,5 +124,5 @@ function ding_react_follow_searches_url() {
  *   Url to Cover service instance.
  */
 function ding_react_cover_service_url() {
-  return DING_REACT_COVER_SERVICE_URL;
+  return DDB_REACT_DEMO_MK6_COVER_SERVICE_URL;
 }

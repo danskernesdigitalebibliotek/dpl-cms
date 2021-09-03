@@ -23,8 +23,6 @@ checklist:
   dependencies:
     - ddb_react_demo_mk6/base
 
-
-
 checklist-material-button:
   remote: https://github.com/danskernesdigitalebibliotek/ddb-react
   license:

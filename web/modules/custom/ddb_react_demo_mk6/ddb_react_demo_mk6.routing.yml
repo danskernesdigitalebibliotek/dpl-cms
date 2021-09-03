@@ -2,6 +2,6 @@ ddb_react_demo_mk6.demo:
   path: '/react-ddb-demo'
   defaults:
     _controller: '\Drupal\ddb_react_demo_mk6\Controller\DddbReactDemoController::index'
-    _title: 'Ddb React Demo Baby!'
+    _title: 'Ddb React Demo'
   requirements:
     _permission: 'access content'
