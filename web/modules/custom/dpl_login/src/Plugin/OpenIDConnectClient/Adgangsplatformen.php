@@ -34,7 +34,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
     $form = parent::buildConfigurationForm($form, $form_state);
 
     $form['authorization_endpoint'] = [
-      '#title' => $this->t('Authorization endpoint dit bæst'),
+      '#title' => $this->t('Authorization endpoint'),
       '#type' => 'textfield',
       '#default_value' => $this->configuration['authorization_endpoint'],
     ];
