@@ -81,7 +81,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
   /**
    * {@inheritdoc}
    *
-   * Medlemsservice doesn't return an ID Token. The inherited method cannot
+   * Adgangsplatformen doesn't return an ID Token. The inherited method cannot
    * handle / decode the missing / null value so we hardcode the decoded value
    * to be an empty array.
    */
