@@ -1,0 +1,22 @@
+uuid: eb35427e-7c26-4fbd-89dd-f96c4a45816f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - novel
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: novel_breadcrumbs
+theme: novel
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

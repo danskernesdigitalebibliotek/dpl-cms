@@ -1,0 +1,22 @@
+uuid: 33b60cb8-3f8c-4514-9164-039b3de5dd47
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - novel
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: novel_help
+theme: novel
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

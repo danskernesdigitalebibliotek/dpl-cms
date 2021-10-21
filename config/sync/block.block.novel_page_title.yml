@@ -1,0 +1,20 @@
+uuid: e6cfc725-a09f-4438-ae36-89e957537713
+langcode: en
+status: true
+dependencies:
+  theme:
+    - novel
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: novel_page_title
+theme: novel
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

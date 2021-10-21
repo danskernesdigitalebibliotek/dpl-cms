@@ -1,0 +1,22 @@
+uuid: 519b8613-e8c2-44f1-8ecf-660cd19d7bbc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - novel
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: novel_messages
+theme: novel
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
