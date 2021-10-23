@@ -1,0 +1,9 @@
+dpl_login.login:
+  path: '/login'
+  defaults:
+    _controller: '\Drupal\dpl_login\Controller\Login::login'
+    _title: 'Log in using Adgangsplatformen'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    no_cache: TRUE
