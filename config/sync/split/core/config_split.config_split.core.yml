@@ -1,0 +1,48 @@
+uuid: 8a574028-a8ed-48c0-bb75-7180c94a4c5a
+langcode: en
+status: true
+dependencies: {  }
+id: core
+label: Core
+description: 'Core configuration for DPL CMS'
+weight: 0
+storage: collection
+folder: ''
+module:
+  block: 0
+  config_split: 0
+  dblog: 0
+  dynamic_page_cache: 0
+  field: 0
+  file: 0
+  filter: 0
+  node: 0
+  page_cache: 0
+  path_alias: 0
+  text: 0
+  update: 0
+  user: 0
+  minimal: 1000
+theme: {  }
+complete_list:
+  - system.authorize
+  - system.cron
+  - system.date
+  - system.diff
+  - system.file
+  - system.image
+  - system.image.gd
+  - system.logging
+  - system.mail
+  - system.maintenance
+  - system.menu.account
+  - system.menu.admin
+  - system.menu.footer
+  - system.menu.main
+  - system.menu.tools
+  - system.performance
+  - system.rss
+  - system.theme
+  - system.theme.global
+  - 'core.date_format.*'
+partial_list: {  }

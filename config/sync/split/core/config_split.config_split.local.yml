@@ -1,0 +1,15 @@
+uuid: a7a955f0-e377-4736-8f17-ecb944f33dd5
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: 'Local site configuration'
+weight: 0
+storage: database
+folder: ''
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list:
+  - '*'
