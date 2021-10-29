@@ -24,6 +24,8 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 include __DIR__ . "/settings.lagoon.php";
 
+$config['system.site']['uuid'] = '9a7c4670-c4ce-49ec-818f-d2e711b55261';
+
 /**
  * Skipping permissions hardening.
  *

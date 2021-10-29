@@ -1,0 +1,6 @@
+status: false
+ignored_config_entities: {  }
+whitelist_config_entities:
+  - core.extension
+_core:
+  default_config_hash: cOHDL5_7SklYQjpqa23wFKZ4rGPUSCmPOnFJ9e1yRGE
