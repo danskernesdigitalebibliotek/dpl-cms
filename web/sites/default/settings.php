@@ -26,6 +26,15 @@ include __DIR__ . "/settings.lagoon.php";
 
 $config['system.site']['uuid'] = '9a7c4670-c4ce-49ec-818f-d2e711b55261';
 
+$is_production_site = FALSE;
+if ($is_production_site) {
+  $config['config_ignore_auto.settings']['status'] = TRUE;
+  $config['config_ignore_auto.settings']['whitelist_config_entities'] = NULL;
+} else {
+  $config['config_ignore_auto.settings']['status'] = FALSE;
+  $config['config_ignore_auto.settings']['ignored_config_entities'] = NULL;
+}
+
 /**
  * Skipping permissions hardening.
  *
