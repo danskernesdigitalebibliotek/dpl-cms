@@ -79,8 +79,8 @@ jobs:
       - name: Run PhpUnit
         run: ./vendor/bin/phpunit --coverage-text
 
-  DockerCompose:
-    name: Setup site using Docker Compose
+  LightHouse:
+    name: Test site performance using Lighthouse
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -92,5 +92,11 @@ jobs:
         run: task dev:reset:ci
       - name: Setup DNS for containers
         run: echo "127.0.0.1 dpl-cms.docker" | sudo tee -a /etc/hosts
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - name: Run Lighthouse test
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: |
+            http://dpl-cms.docker
+          runs: 3
+          uploadArtifacts: true
+          temporaryPublicStorage: true
