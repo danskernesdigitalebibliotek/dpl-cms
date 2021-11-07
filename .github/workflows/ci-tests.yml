@@ -97,7 +97,7 @@ jobs:
         with:
           urls: |
             http://dpl-cms.docker
-          configPath: './.lighthouserc.json'
+          configPath: './.lighthouserc.js'
           runs: 3
           uploadArtifacts: true
           temporaryPublicStorage: true
