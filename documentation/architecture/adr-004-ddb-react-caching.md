@@ -8,9 +8,8 @@ We need to have a caching strategy that makes sure that:
 * The same cache is being flushed upon deploy because that is the moment where new versions of DDB React can be introduced.
 
 ## Decision
-
 We have created a purger in the Drupal Varnish/Purge setup that is able to purge everything.
 The purger is being used in the deploy routine by the command: `drush cache:rebuild-external -y`
 
-## Note
-By studing the vcl of Lagoon we found that the PURGE request actually is being translated into a BAN on req.url.
+## Consequences
+- Everything will be invalidated on every deploy. Note: Although we are sending a PURGE request we found out, by studing the vcl of Lagoon, that the PURGE request actually is being translated into a BAN on req.url.
