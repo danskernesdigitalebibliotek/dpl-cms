@@ -1,7 +1,7 @@
 # Architecture Decision Record: Caching of DDB React and other js resources.
 
 ## Context
-The general cachings strategy is defined in another document and this focused on describing the caching strategy of DDB react and other js resources.
+The general caching strategy is defined in another document and this focused on describing the caching strategy of DDB react and other js resources.
 
 We need to have a caching startegy that makes sure that:
 * The js files defined as Drupal libraries (which ddb react is) and pages that make use of the are being cached.
