@@ -3,7 +3,7 @@ langcode: da
 status: true
 dependencies: {  }
 id: 30cd45a1b1
-name: 'DPM CMS Varnish All'
+name: 'DPL CMS Varnish All'
 invalidationtype: everything
 hostname: varnish
 port: 8080
