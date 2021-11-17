@@ -25,7 +25,10 @@ vars:
   IMAGE_SOURCE: "{{ .DOCKER_IMAGE_PREFIX }}-source:{{ .SOURCE_VERSION }}"
   # Where is the docker file(s) we use for our builds residing?
   LAGOON_DIR: "lagoon"
-  DOCKER_COMPOSE_FILES: '{{.DOCKER_COMPOSE_FILES | default "-f docker-compose.yml"}}'
+  DOCKER_COMPOSE_FILES_DEFAULT: '{{.DOCKER_COMPOSE_FILES | default "-f docker-compose.yml"}}'
+  DOCKER_COMPOSE_FILES_OSX: '{{.DOCKER_COMPOSE_FILES_OSX | default "-f docker-compose.yml -f docker-compose.override.yml"}}'
+  DOCKER_COMPOSE_FILES:
+    sh: '{{if eq OS "darwin"}} echo {{ .DOCKER_COMPOSE_FILES_OSX }} {{else}} echo {{ .DOCKER_COMPOSE_FILES_DEFAULT }} {{end}}'
   # Sql dump files directory
   SQL_DUMP_DIR: 'database-dump'
 
