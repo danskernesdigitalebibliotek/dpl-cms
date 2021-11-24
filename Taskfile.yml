@@ -31,6 +31,8 @@ vars:
   DOCKER_COMPOSE_FILES_CI: '{{.DOCKER_COMPOSE_FILES}} -f docker-compose.ci.yml'
   # Sql dump files directory
   SQL_DUMP_DIR: 'database-dump'
+  # Directory with lagoon backup files.
+  BACKUP_FILES_DIR: 'files-backup'
 
 tasks:
   ghcr:login:
@@ -95,6 +97,22 @@ tasks:
       SQL_DUMP_DIR_CONTENT:
        sh: ls {{ .SQL_DUMP_DIR }}
       MYSQL_CONTAINER: 'mariadb'
+
+  dev:files:restore:
+    desc: 'Restore files by overwriting existing with the nones from the Lagoon backup package'
+    cmds:
+      - docker-compose exec -T cli sh dev-scripts/cli-restore-lagoon-files.sh {{ .BACKUP_FILES_DIR }}
+      - task dev:cache:clear:all
+    preconditions:
+      - sh: "[ {{ .BACKUP_FILES_COUNT }} -gt 0 ]"
+        msg: "There are no tar.gz files in {{ .BACKUP_FILES_DIR }}/. Cannot continue."
+      - sh: "[ {{ .BACKUP_FILES_COUNT }} -eq 1 ]"
+        msg: "There are {{ .BACKUP_FILES_COUNT }} valid files in {{ .BACKUP_FILES_DIR }}/:\n{{ .BACKUP_FILES_DIR_CONTENT }}\n...there should be just one."
+    vars:
+      BACKUP_FILES_COUNT:
+        sh: ls {{ .BACKUP_FILES_DIR }}/*.tar.gz | wc -l 2> /dev/null | xargs
+      BACKUP_FILES_DIR_CONTENT:
+       sh: ls {{ .BACKUP_FILES_DIR }}
 
   dev:cache:clear:all:
     summary: Clears all cache
