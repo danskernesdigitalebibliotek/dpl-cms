@@ -4,7 +4,7 @@
 #
 # The script must be run from within a running lagoon cli container and expects
 # the root of the dpl-cms repository to be available at /app.
-set -euo pipefail
+set -eo pipefail
 
 BACKUP_FILES_DIR="$1"
 
@@ -12,6 +12,17 @@ if [[ -z "${BACKUP_FILES_DIR}" ]]; then
 	echo "usage: $0 <BACKUP_FILES_DIR> " >&2
 	exit 1
 fi
+
+set -u
+
+while true; do
+    read -p "The command will erase the current files directory. Do you want to continue [yY/nN]? " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 # Move in to /app so that all file-paths from now on matches what a developer
 # standing at the root of dpl-cms would see
