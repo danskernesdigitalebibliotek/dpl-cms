@@ -5,7 +5,6 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
-/web/modules/local/
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
@@ -51,3 +50,9 @@ drush/sites/lagoon.site.yml
 
 # Ignore docker compose override file. Not everybody needs it.
 docker-compose.override.yml
+
+# For Visual Studio Code users
+.vscode
+
+# Module upload folder
+/web/modules/local
