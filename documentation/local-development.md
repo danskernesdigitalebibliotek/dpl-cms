@@ -25,11 +25,11 @@ If you need to get new backup files from the remote site:
 1. Login to the lagoon administration and navigate to the project/environment.
 2. Select the backup tab:
 
-![](images/backup_tab.png)
+![backup_tab image](images/backup_tab.png)
 
 3. Retrieve the files backup you need:
 
-![](images/retrieve.png)
+![retrieve image](images/retrieve.png)
 4. Due to a UI bug you need to RELOAD the window and then it should be possible to download the nginx package.
 
 Replace files locally:
