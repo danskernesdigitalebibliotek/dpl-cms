@@ -101,7 +101,7 @@ tasks:
   dev:files:restore:
     desc: 'Restore files by overwriting existing with the nones from the Lagoon backup package'
     cmds:
-      - docker-compose exec -T cli sh dev-scripts/cli-restore-lagoon-files.sh {{ .BACKUP_FILES_DIR }}
+      - docker-compose exec cli sh dev-scripts/cli-restore-lagoon-files.sh {{ .BACKUP_FILES_DIR }}
       - task dev:cache:clear:all
     preconditions:
       - sh: "[ {{ .BACKUP_FILES_COUNT }} -gt 0 ]"
