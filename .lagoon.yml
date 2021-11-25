@@ -39,6 +39,12 @@ tasks:
                 mkdir web/sites/default/files/modules_local
             fi
         service: cli
+    - run:
+        name: Import translations
+        command: |
+            drush locale-check
+            drush locale-update
+        service: cli
 
 environments:
   mains:
