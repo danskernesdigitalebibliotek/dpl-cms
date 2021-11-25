@@ -12,7 +12,7 @@ database, not any files from the site.
 2. Place the dump in the [database-dump](../database-dump) directory, be aware
    that the directory is only allowed to contain a single `.sql` file.
 3. Start a local environment using `task dev:reset`
-4. Import the database by running `task dev:db:restore`
+4. Import the database by running `task dev:restore:database`
 
 ## Copy files from Lagoon environment to local setup
 Prerequisites:
@@ -36,4 +36,4 @@ Replace files locally:
 1. Place the files dump in the [files-backup](../files-backup) directory, be aware
    that the directory is only allowed to contain a single `.tar.gz` file.
 2. Start a local environment using `task dev:reset`
-3. Restore the filesš by running `task dev:files:restore`
+3. Restore the filesš by running `task dev:restore:files`
