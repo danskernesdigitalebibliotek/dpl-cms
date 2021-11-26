@@ -1,7 +1,7 @@
 # Danish translation of DPL CMS
 #
-msgid ""
-msgstr ""
+msgid "Make content sticky"
+msgstr "Lav indhold klistret"
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2021-11-02 10:30+0200\n"
 "PO-Revision-Date: 2021-11-02 10:30+0200\n"
