@@ -37,3 +37,52 @@ known as draw.io).
 
 When a change has been made to a `*.puml` or `*.drawio` file, you should
 re-render the diagrams using the command `task render` and commit the result.
+
+## Using GitHub to contribute
+
+No direct commits are allowed to this project. To contribute to the project you
+must follow a standard pull request based workflow. Please fork the relevant
+repositories and keep them in sync with Core. Then open a pull request from your
+fork back to core with your changes. Once a pull request is approved by one of
+the core team members it will be merged back into core.
+
+### Add remote core repository
+
+After forking a repository you can add the parent/Core repository to you local
+clone by adding a new remote.
+
+```shell
+git remote add core https://github.com/danskernesdigitalebibliotek/<REPOS>.git
+```
+
+If your local fork don't have the current release branch you should create it
+and ensure it is in sync with Core.
+
+```shell
+git checkout main
+git pull origin
+git fetch core
+git checkout -b release/x
+git rebase core/release/x release/x
+git push --set-upstream origin release/x
+```
+
+### Refresh release existing branch
+
+You will need to refresh/sync your branches in the fork base on changes in core.
+
+```shell
+git checkout main
+git pull origin
+git checkout <BRANCH>
+git fetch core
+git rebase core/<BRANCH> <BRANCH>
+git push origin <BRANCH>
+```
+
+### Flow illustration
+
+This flow chart explains the workflow support by the git commands in the
+sections above.
+
+![PR flow diagram](images/pr_flow.png)
