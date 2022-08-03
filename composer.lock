@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ce29212657e3c4176a206fa9e6227fa",
+    "content-hash": "d17322a341b8f7c5e83fdb9d0a5f644a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,10 +1077,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.1.0",
+            "version": "v1.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/v1.1.0-rc.1/dist.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/v1.5.0/dist.zip"
             },
             "type": "drupal-library"
         },
