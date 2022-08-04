@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d17322a341b8f7c5e83fdb9d0a5f644a",
+    "content-hash": "d4a52589d7b7095318e254d9789153d3",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,19 +1077,19 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.5.0",
+            "version": "v1.5.1-rc1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/v1.5.0/dist.zip"
+                "url": "https://github.com/reload/dpl-design-system/releases/download/release-feature%2Ffix-search-header/dist.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc1",
+            "version": "0.3.0-rc3",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-release%2F3/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-demo-july-4/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -13022,6 +13022,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 5,
         "danskernesdigitalebibliotek/dpl-react": 5,
         "drupal/default_content": 15,
         "drupal/libraries": 10,
