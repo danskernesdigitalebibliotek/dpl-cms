@@ -14,8 +14,8 @@ class RouteSubscriber extends RouteSubscriberBase {
    * {@inheritdoc}
    */
   protected function alterRoutes(RouteCollection $collection): void {
-    // Rewire the core logout route to ours
-    // so we can logout users remotely as well.
+    // Rewire the core logout route to ours, so we can log out users remotely as
+    // well.
     if ($route = $collection->get('user.logout')) {
       $route->setPath('/logout');
     }

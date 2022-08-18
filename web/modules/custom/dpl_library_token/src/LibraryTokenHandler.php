@@ -8,7 +8,9 @@ use GuzzleHttp\Exception\RequestException;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\KeyValueStore\KeyValueExpirableFactoryInterface;
+use Drupal\Core\KeyValueStore\KeyValueStoreExpirableInterface;
 use Drupal\dpl_library_token\Exception\MissingConfigurationException;
+use Drupal\Core\Logger\LoggerChannelInterface;
 use function Safe\sprintf as sprintf;
 
 /**
@@ -28,27 +30,21 @@ class LibraryTokenHandler {
   /**
    * Cron Configuration.
    *
-   * @var mixed[]
+   * @var array
    */
-  protected $settings;
+  protected array $settings;
   /**
    * Key value store.
    *
    * @var \Drupal\Core\KeyValueStore\KeyValueStoreExpirableInterface
    */
-  protected $tokenCollection;
-  /**
-   * The HTTP client.
-   *
-   * @var \GuzzleHttp\ClientInterface
-   */
-  protected $httpClient;
+  protected KeyValueStoreExpirableInterface $tokenCollection;
   /**
    * The logger.
    *
    * @var \Drupal\Core\Logger\LoggerChannelInterface
    */
-  protected $logger;
+  protected LoggerChannelInterface $logger;
 
   /**
    * Constructs the LibraryTokenHandler service.
@@ -57,21 +53,27 @@ class LibraryTokenHandler {
    *   The key value expire keyValueFactory.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   Configuration.
-   * @param \GuzzleHttp\ClientInterface $http_client
+   * @param \GuzzleHttp\ClientInterface $httpClient
    *   The HTTP client.
    * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $logger
    *   The library token logger channel.
+   *
+   * @throws \Drupal\dpl_library_token\Exception\MissingConfigurationException
+   * @throws \Safe\Exceptions\StringsException
    */
   public function __construct(
     KeyValueExpirableFactoryInterface $keyValueFactory,
     ConfigFactoryInterface $configFactory,
-    ClientInterface $http_client,
+    protected ClientInterface $httpClient,
     LoggerChannelFactoryInterface $logger
   ) {
     $this->tokenCollection = $keyValueFactory->get(self::TOKEN_COLLECTION_KEY);
-    $this->settings = $configFactory
-      ->get(self::SETTINGS_KEY)->get('settings');
-    $this->httpClient = $http_client;
+
+    $settings = $configFactory->get(self::SETTINGS_KEY)->get('settings');
+    if (is_array($settings)) {
+      $this->settings = $settings;
+    }
+
     $this->logger = $logger->get(self::LOGGER_KEY);
 
     $this->validateSettings();
@@ -79,12 +81,14 @@ class LibraryTokenHandler {
 
   /**
    * Retrieve token from external service and save it.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function retrieveAndStoreToken(): void {
     // If no token stored.
     if (!$this->getToken()) {
       // Then try to fetch one.
-      if ($token = $this->fectchToken()) {
+      if ($token = $this->fetchToken()) {
         // And store it.
         $this->setToken($token);
       }
@@ -121,10 +125,12 @@ class LibraryTokenHandler {
   /**
    * Fetches and returns library token from remote service.
    *
-   * @return \Drupal\dpl_library_token\LibraryToken|null
-   *   If token was fetched it is returned. Otherwise NULL.
+   * @return LibraryToken|null
+   *   If token was fetched it is returned. Otherwise, NULL.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
-  public function fectchToken(): ?LibraryToken {
+  public function fetchToken(): ?LibraryToken {
     $token = NULL;
 
     try {
@@ -161,8 +167,7 @@ class LibraryTokenHandler {
       if ($e instanceof RequestException && $e->hasResponse()) {
         // Since we already checked via RequestException::hasResponse
         // we do not need additional checking.
-        /* @phpstan-ignore-next-line */
-        $response_body = $e->getResponse()->getBody()->getContents();
+        $response_body = $e->getResponse()?->getBody()->getContents();
         $variables['@error_message'] .= ' Response: ' . $response_body;
       }
       $this->logger->log(LogLevel::ERROR, '@message. Details: @error_message', $variables);
@@ -173,6 +178,9 @@ class LibraryTokenHandler {
 
   /**
    * Validate settings. Exception is thrown if a setting is missing.
+   *
+   * @throws \Drupal\dpl_library_token\Exception\MissingConfigurationException
+   * @throws \Safe\Exceptions\StringsException
    */
   protected function validateSettings(): void {
     foreach ([

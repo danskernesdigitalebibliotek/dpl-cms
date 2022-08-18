@@ -10,6 +10,7 @@ use Drupal\Core\Routing\TrustedRedirectResponse;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\dpl_login\Exception\MissingConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * DPL React Controller.
@@ -17,18 +18,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class DplLoginController extends ControllerBase {
   use StringTranslationTrait;
 
-  const LOGGER_KEY = 'dpl_login';
   // @todo This could be moved to a new service
   // handling adgangsplatform configuration.
   // @see dpl_login_install() and \Drupal\dpl_library_token\LibraryTokenHandler.
   const SETTINGS_KEY = 'openid_connect.settings.adgangsplatformen';
 
-  /**
-   * The User token provider.
-   *
-   * @var \Drupal\dpl_login\UserTokensProvider
-   */
-  protected userTokensProvider $userTokensProvider;
   /**
    * The Messenger service.
    *
@@ -38,25 +32,26 @@ class DplLoginController extends ControllerBase {
   /**
    * Configuration.
    *
-   * @var mixed[]
+   * @var array
    */
-  protected $settings;
+  protected array $settings;
 
   /**
-   * DdplReactController constructor.
+   * DplReactController constructor.
    *
-   * @param \Drupal\dpl_login\UserTokensProvider $user_token_provider
-   *   The Uuser token provider.
+   * @param \Drupal\dpl_login\UserTokensProvider $userTokensProvider
+   *   The user token provider.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   Configuration.
    */
   public function __construct(
-    UserTokensProvider $user_token_provider,
+    protected UserTokensProvider $userTokensProvider,
     ConfigFactoryInterface $configFactory
   ) {
-    $this->userTokensProvider = $user_token_provider;
-    $this->settings = $configFactory
-      ->get(self::SETTINGS_KEY)->get('settings');
+    $settings = $configFactory->get(self::SETTINGS_KEY)->get('settings');
+    if (is_array($settings)) {
+      $this->settings = $settings;
+    }
   }
 
   /**
@@ -67,7 +62,7 @@ class DplLoginController extends ControllerBase {
    *
    * @return static
    */
-  public static function create(ContainerInterface $container) {
+  public static function create(ContainerInterface $container): static {
     return new static(
       $container->get('dpl_login.user_tokens'),
       $container->get('config.factory')
@@ -77,12 +72,12 @@ class DplLoginController extends ControllerBase {
   /**
    * Logs out user externally and internally.
    *
-   * @todo Insert TrustedRedirectResponse|RedirectResponse as return type when going to PHP ^8.0.
-   *
-   * @return \Drupal\Core\Routing\TrustedRedirectResponse|\Symfony\Component\HttpFoundation\RedirectResponse
+   * @return \Drupal\Core\Routing\TrustedRedirectResponse|RedirectResponse
    *   Redirect to external logout service or front if not possible.
+   *
+   * @throws \Drupal\dpl_login\Exception\MissingConfigurationException
    */
-  public function logout() {
+  public function logout(): TrustedRedirectResponse|RedirectResponse {
     // It is a global problem if the logout endpoint has not been configured.
     // @todo This could be moved to a new service
     // handling adgangsplatform configuration.
@@ -94,7 +89,7 @@ class DplLoginController extends ControllerBase {
     $access_token = $this->userTokensProvider->getAccessToken();
 
     // Log out user in Drupal.
-    // We do this regardless wether it is possible to logout remotely or not.
+    // We do this regardless whether it is possible to logout remotely or not.
     // We do not want the user to get stuck on the site in a logged in state.
     user_logout();
 
@@ -106,9 +101,9 @@ class DplLoginController extends ControllerBase {
     }
 
     // Create url for logout service that it should redirect back to.
-    // Since toString(TRUE) is called
-    // we know that the return value of toString() is GeneratedUrl
-    // and consequently we are able to call getGeneratedUrl in the end.
+    // Since toString(TRUE) is called we know that the return value of
+    // toString() is GeneratedUrl, and consequently we are able to call
+    // getGeneratedUrl in the end.
     /* @phpstan-ignore-next-line */
     $redirect_uri = Url::fromRoute('<front>', [], ["absolute" => TRUE])
       ->toString(TRUE)

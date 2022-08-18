@@ -57,7 +57,7 @@ class DplLoginControllerTest extends UnitTestCase {
     $config_factory = $this->prophesize(ConfigFactoryInterface::class);
     $config_factory->get(LibraryTokenHandler::SETTINGS_KEY)->willReturn($config->reveal());
 
-    $unrouted_url_assembler = $this->prophesize(UnroutedUrlAssemblerInterface::class);
+    $un_routed_url_assembler = $this->prophesize(UnroutedUrlAssemblerInterface::class);
     $generated_url = $this->prophesize(GeneratedUrl::class);
     $generated_url->getGeneratedUrl()->willReturn('https://local.site');
     $url_generator = $this->prophesize(UrlGenerator::class);
@@ -67,14 +67,14 @@ class DplLoginControllerTest extends UnitTestCase {
     $container->set('logger.factory', $logger_factory->reveal());
     $container->set('dpl_login.user_tokens', $user_token_provider->reveal());
     $container->set('config.factory', $config_factory->reveal());
-    $container->set('unrouted_url_assembler', $unrouted_url_assembler->reveal());
+    $container->set('unrouted_url_assembler', $un_routed_url_assembler->reveal());
     $container->set('url_generator', $url_generator->reveal());
 
     \Drupal::setContainer($container);
   }
 
   /**
-   * Make sure an config missing exception is thrown.
+   * Make sure a config missing exception is thrown.
    */
   public function testThatExceptionIsThrownIfLogoutEndpointIsMissing(): void {
     $container = \Drupal::getContainer();

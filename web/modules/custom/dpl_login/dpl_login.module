@@ -17,14 +17,16 @@ use function Safe\sprintf as sprintf;
 /**
  * Implements hook_openid_connect_userinfo_alter().
  *
- * @param mixed[] $userinfo
+ * @param array $userinfo
  *   User info from external service.
- * @param mixed[] $context
+ * @param array $context
  *   Various openid_connect context. Tokens etc.
+ *
+ * @throws \Safe\Exceptions\StringsException
  */
 function dpl_login_openid_connect_userinfo_alter(array &$userinfo, array $context): void {
 
-  // If we cannot resolve uinque id we cannot continue.
+  // If we cannot resolve unique id we cannot continue.
   if (!$id = $userinfo['attributes']['uniqueId'] ?? FALSE) {
     $userinfo = [];
     return;
@@ -35,7 +37,7 @@ function dpl_login_openid_connect_userinfo_alter(array &$userinfo, array $contex
   $name = uniqid();
   // Drupal needs an email. We set a unique one to apply to that rule.
   $userinfo['email'] = sprintf('%s@dpl-cms.invalid', $name);
-  // Drupal needs a user name. We use the unique id to apply to that rule.
+  // Drupal needs a username. We use the unique id to apply to that rule.
   $userinfo['name'] = $name;
   // openid_connect module needs the sub for creating the auth map.
   $userinfo['sub'] = $id_hash;
@@ -46,11 +48,15 @@ function dpl_login_openid_connect_userinfo_alter(array &$userinfo, array $contex
  *
  * @param \Drupal\Core\Session\AccountInterface $account
  *   User account.
- * @param mixed[] $context
- *   Various openid_connect context. Tokens etc.
+ * @param array $context
+ *   OpenID context.
+ *
+ * @throws \Drupal\Core\TempStore\TempStoreException
+ * @throws \Drupal\dpl_login\Exception\AccessTokenCreationException
  */
 function dpl_login_openid_connect_post_authorize(AccountInterface $account, array $context): void {
   $access_token = AccessToken::createFromOpenidConnectContext($context);
+
   /** @var Drupal\dpl_login\UserTokensProvider $token_provider */
   $token_provider = \Drupal::service('dpl_login.user_tokens');
   $token_provider->setAccessToken($access_token);
@@ -61,13 +67,15 @@ function dpl_login_openid_connect_post_authorize(AccountInterface $account, arra
  *
  * @param \Drupal\user\UserInterface $account
  *   The user account being saved.
- * @param mixed[] $context
+ * @param array $context
  *   Various openid_connect context. Tokens etc.
  *
- *   We are ignoring the function declaration
- *   because PhpStan gives us an iterable error on UserInterface
- *   which we cannot handle for the moment.
- *   @phpstan-ignore-next-line
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ *   Storage execution.
+ *
+ * @phpstan-ignore-next-line
+ *   We are ignoring the function declaration because PhpStan gives us an
+ *   iterable error on UserInterface which we cannot handle for the moment.
  */
 function dpl_login_openid_connect_userinfo_save(UserInterface $account, array $context): void {
   // If the user is new we attach a role to the user.
@@ -80,11 +88,11 @@ function dpl_login_openid_connect_userinfo_save(UserInterface $account, array $c
 /**
  * Decide if the user has already been processed.
  *
- * @param mixed[] $openid_connect_context
+ * @param array $openid_connect_context
  *   Various openid_connect context. Tokens etc.
  *
  * @return bool
- *   Yes or no?
+ *   True if it has been processed else false.
  */
 function _dpl_login_user_has_been_processed(array $openid_connect_context): bool {
   // If we for some reason do not have the information

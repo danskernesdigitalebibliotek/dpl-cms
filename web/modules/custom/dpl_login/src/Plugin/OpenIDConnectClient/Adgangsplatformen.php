@@ -19,7 +19,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
   /**
    * {@inheritdoc}
    *
-   * @return mixed[]
+   * @return array
    *   Default configuration.
    */
   public function defaultConfiguration(): array {
@@ -35,15 +35,15 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
   /**
    * {@inheritdoc}
    *
-   * @param mixed[] $form
+   * @param array $form
    *   Drupal form.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   Drupal form state.
    *
-   * @return mixed[]
-   *   Drupla form array.
+   * @return array
+   *   Drupal form array.
    */
-  public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
+  public function buildConfigurationForm(array $form, FormStateInterface $form_state): array {
     $form = parent::buildConfigurationForm($form, $form_state);
 
     $form['authorization_endpoint'] = [
@@ -78,7 +78,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
   /**
    * {@inheritdoc}
    *
-   * @return mixed[]
+   * @return array
    *   Various endpoints.
    */
   public function getEndpoints(): array {
@@ -97,7 +97,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
    * @param \Drupal\Core\GeneratedUrl $redirect_uri
    *   The redirect uri.
    *
-   * @return mixed[]
+   * @return array
    *   Url options array.
    */
   protected function getUrlOptions($scope, GeneratedUrl $redirect_uri): array {
@@ -114,7 +114,7 @@ class Adgangsplatformen extends OpenIDConnectClientBase {
    * handle / decode the missing / null value so we hardcode the decoded value
    * to be an empty array.
    *
-   * @return mixed[]
+   * @return array
    *   Decoded id token.
    */
   public function decodeIdToken($id_token): array {

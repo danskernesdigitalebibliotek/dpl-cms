@@ -29,6 +29,8 @@ class LibraryTokenHandlerTest extends UnitTestCase {
 
   /**
    * Test behaviour when no token has been stored yet.
+   *
+   * @throws \Safe\Exceptions\JsonException
    */
   public function testIfNoTokenHasBeenStoredaNewOneIsFetched(): void {
     $collection = $this->prophesize(KeyValueStoreExpirableInterface::class);
@@ -154,7 +156,7 @@ class LibraryTokenHandlerTest extends UnitTestCase {
   }
 
   /**
-   * Dataprovider with settings and expected exception messages.
+   * Data provider with settings and expected exception messages.
    *
    * @return array[]
    */

@@ -32,6 +32,8 @@ class UserTokensProvider {
    *
    * @param \Drupal\dpl_login\AccessToken $accessToken
    *   Good old access token.
+   *
+   * @throws \Drupal\Core\TempStore\TempStoreException
    */
   public function setAccessToken(AccessToken $accessToken): void {
     $this->tempStore->set('access_token', $accessToken);
@@ -41,7 +43,7 @@ class UserTokensProvider {
    * Get access token.
    *
    * @return \Drupal\dpl_login\AccessToken|null
-   *   Accesstoken or NULL if no one has been stored.
+   *   Access token or NULL if no one has been stored.
    */
   public function getAccessToken(): ?AccessToken {
     return $this->tempStore->get('access_token');

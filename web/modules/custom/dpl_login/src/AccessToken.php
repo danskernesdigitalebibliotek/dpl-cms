@@ -26,11 +26,13 @@ class AccessToken {
    *
    * From the data of the openid connect context.
    *
-   * @param mixed[] $context
+   * @param array $context
    *   The openid connect context.
    *
    * @return AccessToken
    *   Token object created based on a json formed response.
+   *
+   * @throws \Drupal\dpl_login\Exception\AccessTokenCreationException
    */
   public static function createFromOpenidConnectContext(array $context): self {
     if (!$access_token = $context['tokens']['access_token'] ?? FALSE) {
