@@ -3,6 +3,7 @@
 namespace Drupal\dpl_react_apps\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\GeneratedUrl;
 use Drupal\Core\Url;
 
 /**
@@ -23,16 +24,17 @@ class DplReactAppsController extends ControllerBase {
       'search-result' => dpl_react_render('search-result', [
         'search-url' => self::searchResultUrl(),
         'material-url' => self::materialUrl(),
-        'et-al-text' => t('et. al.', [], $options),
-        'by-author-text' => t('By', [], $options),
-        'show-more-text' => t('Show more', [], $options),
-        'showing-text' => t('Showing', [], $options),
-        'out-of-text' => t('out of', [], $options),
-        'results-text' => t('results', [], $options),
-        'number-description-text' => t('Nr.', [], $options),
-        'in-series-text' => t('In series', [], $options),
-        'available-text' => t('Available', [], $options),
-        'unavailable-text' => t('Unavailable', [], $options)
+        'auth-url' => self::authUrl(),
+        'et-al-text' => $this->t('et. al.', [], $options),
+        'by-author-text' => $this->t('By', [], $options),
+        'show-more-text' => $this->t('Show more', [], $options),
+        'showing-text' => $this->t('Showing', [], $options),
+        'out-of-text' => $this->t('out of', [], $options),
+        'results-text' => $this->t('results', [], $options),
+        'number-description-text' => $this->t('Nr.', [], $options),
+        'in-series-text' => $this->t('In series', [], $options),
+        'available-text' => $this->t('Available', [], $options),
+        'unavailable-text' => $this->t('Unavailable', [], $options),
       ]),
     ];
   }
@@ -55,6 +57,7 @@ class DplReactAppsController extends ControllerBase {
         'wid' => $wid,
         'search-url' => self::searchResultUrl(),
         'material-url' => self::materialUrl(),
+        'auth-url' => self::authUrl(),
         'material-header-author-by-text' => $this->t('By', [], $c),
         'periodikum-select-year-text' => $this->t('Year', [], $c),
         'periodikum-select-week-text' => $this->t('Week', [], $c),
@@ -92,24 +95,49 @@ class DplReactAppsController extends ControllerBase {
   /**
    * Builds an url for the local search result route.
    */
-  public static function searchResultUrl(): string
-  {
-    return Url::fromRoute('dpl_react_apps.search_result')->toString();
+  public static function searchResultUrl(): string {
+    return self::ensureUrlIsString(
+      Url::fromRoute('dpl_react_apps.search_result')->toString()
+    );
   }
 
   /**
    * Builds an url for the material/work route.
    */
-  public static function materialUrl(): string
-  {
+  public static function materialUrl(): string {
     // React applications support variable replacement where variables are
     // prefixed with :. Specify the variable :workid as a parameter to let the
     // route build the url. Unfortunatly : will be encoded as %3A so we have to
     // decode the url again to make replacement work.
-    $url = Url::fromRoute('dpl_react_apps.work')
-      ->setRouteParameter('wid', ':workid')
-      ->toString();
+    $url = self::ensureUrlIsString(
+      Url::fromRoute('dpl_react_apps.work')
+        ->setRouteParameter('wid', ':workid')
+        ->toString()
+    );
     return urldecode($url);
+  }
+
+  /**
+   * Builds an url for the react apps to use for authorization.
+   */
+  public static function authUrl(): string {
+    return self::ensureUrlIsString(
+      Url::fromRoute('dpl_login.authorize_from_app')->toString()
+    );
+  }
+
+  /**
+   * Make sure that generated url is a string.
+   *
+   * @param string|\Drupal\Core\GeneratedUrl $url
+   *   Drupal generated Url object.
+   */
+  public static function ensureUrlIsString(string|GeneratedUrl $url): string {
+    if ($url instanceof GeneratedUrl) {
+      $url = $url->getGeneratedUrl();
+    }
+
+    return $url;
   }
 
 }
