@@ -11,7 +11,10 @@ module.exports = {
         // Lighthouse best practices require HTTPS but we do not this available
         // on our CI environments so disable that check. It should not keep our
         // score down.
-        "skipAudits": ["is-on-https"]
+        "skipAudits": ["is-on-https"],
+        "throttling": {
+          "cpuSlowdownMultiplier": 2.4
+        }
       }
     },
     "assert": {
