@@ -3,6 +3,8 @@
 namespace Drupal\dpl_loans\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\HttpFoundation\Response;
+use function Safe\sprintf as sprintf;
 
 /**
  * This is used for demoing the React components.
@@ -21,6 +23,7 @@ class DplLoansController extends ControllerBase {
     $contextAria = ['context' => 'Loan list (Aria)'];
 
     $data = [
+      "fbs-base-url-config" => 'http://fbs-mock.docker',
       "bottom-due-date-renew-loan-modal-button-text" => $this->t("Select all with the possibility of renewal", [], $context),
       "bottom-due-date-renew-loan-modal-checkbox-text" => $this->t("Renew possible", [], $context),
       "bottom-renew-loan-modal-button-text" => $this->t("Select all with the possibility of renewal", [], $context),
