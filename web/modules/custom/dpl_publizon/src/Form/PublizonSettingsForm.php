@@ -1,14 +1,13 @@
 <?php
-/**
- * @file
- * Contains Drupal\dpl_publizon\Form\PublizonSettingsForm.
- */
 
 namespace Drupal\dpl_publizon\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Publizon setting form.
+ */
 class PublizonSettingsForm extends ConfigFormBase {
 
   /**
@@ -52,7 +51,7 @@ class PublizonSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
+  public function validateForm(array &$form, FormStateInterface $form_state): void {
     $url = $form_state->getValue('base_url');
     if (!filter_var($url, FILTER_VALIDATE_URL)) {
       $form_state->setErrorByName('base_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $url]));
@@ -62,11 +61,12 @@ class PublizonSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state) {
+  public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
 
     $this->config('publizon.settings')
       ->set('base_url', $form_state->getValue('base_url'))
       ->save();
   }
+
 }

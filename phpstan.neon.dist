@@ -9,3 +9,5 @@ parameters:
     # Drupal Form API makes extensive use for arrays which we cannot provide
     # more detailed typing of.
     - '#.*\:\:(buildForm|getEditableConfigNames|submitForm)\(\) .* no value type specified in iterable type array\.#'
+    # Disable the need to describe every array structure given form drupal core.
+    - '#Method .* has parameter \$[a-zA-Z0-9_]+ with no value type specified in iterable type array\.#'

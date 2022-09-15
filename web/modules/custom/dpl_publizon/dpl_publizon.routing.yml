@@ -4,6 +4,6 @@ dpl_publizon.settings:
     _form: '\Drupal\dpl_publizon\Form\PublizonSettingsForm'
     _title: 'Publizon settings'
   requirements:
-    _permission: 'access administration pages'
+    _permission: 'administer site configuration'
   options:
     _admin_route: TRUE

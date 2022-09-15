@@ -4,6 +4,6 @@ dpl_fbs.settings:
     _form: '\Drupal\dpl_fbs\Form\FbsSettingsForm'
     _title: 'FBS settings'
   requirements:
-    _permission: 'access administration pages'
+    _permission: 'administer site configuration'
   options:
     _admin_route: TRUE

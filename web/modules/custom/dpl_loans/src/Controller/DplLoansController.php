@@ -3,11 +3,9 @@
 namespace Drupal\dpl_loans\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Symfony\Component\HttpFoundation\Response;
-use function Safe\sprintf as sprintf;
 
 /**
- * This is used for demoing the React components.
+ * Render loan list react app.
  */
 class DplLoansController extends ControllerBase {
 
