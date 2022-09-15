@@ -3,20 +3,28 @@ module:
   breakpoint: 0
   config_filter: 0
   config_ignore: 0
+  dpl_cms: 1000
+  dpl_fbs: 0
   dpl_library_agency: 0
   dpl_library_token: 0
+  dpl_loans: 0
   dpl_login: 0
   dpl_mapp: 0
+  dpl_publizon: 0
   dpl_react: 0
   dpl_react_apps: 0
   dpl_url_proxy: 0
+  dpl_user_profile: 0
   dynamic_page_cache: 0
   field: 0
   file: 0
   filter: 0
   jsonlog: 0
   language: 0
+  link: 0
   locale: 0
+  menu_link_content: 0
+  menu_ui: 0
   node: 0
   openid_connect: 0
   path_alias: 0
@@ -34,7 +42,6 @@ module:
   user: 0
   varnish_purge_tags: 0
   varnish_purger: 0
-  dpl_cms: 1000
 theme:
   claro: 0
   stable9: 0

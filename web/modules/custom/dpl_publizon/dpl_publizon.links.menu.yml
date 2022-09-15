@@ -1,4 +1,4 @@
-publizon.settings_form:
+dpl_publizon.settings_form:
   title: 'Publizon settings'
   route_name: dpl_publizon.settings
   description: 'Change basic publizon settings'

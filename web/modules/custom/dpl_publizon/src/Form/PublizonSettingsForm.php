@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains Drupal\dpl_fbs\Form\FbsSettingsForm.
+ * Contains Drupal\dpl_publizon\Form\PublizonSettingsForm.
  */
 
 namespace Drupal\dpl_publizon\Form;
@@ -16,7 +16,7 @@ class PublizonSettingsForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames(): array {
     return [
-      'fbs.settings',
+      'publizon.settings',
     ];
   }
 

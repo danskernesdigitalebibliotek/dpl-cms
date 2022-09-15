@@ -2,7 +2,8 @@ name: DPL loans
 description: Handle the user profile loan pages
 package: DPL
 dependencies:
-  - dpl_react:dpl_react
-
+  - dpl_user_profile:dpl_user_profile
+  - dpl_fbs:dpl_fbs
+  - dpl_publizon:dpl_publizon
 type: module
 core_version_requirement: ^9

@@ -1,4 +1,4 @@
-fbs.settings_form:
+dpl_fbs.settings_form:
   title: 'FBS settings'
   route_name: dpl_fbs.settings
   description: 'Change basic FBS settings'

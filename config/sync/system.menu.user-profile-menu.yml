@@ -1,0 +1,8 @@
+uuid: 34f018af-f8d8-4482-889f-082e57d78d8e
+langcode: en
+status: true
+dependencies: {  }
+id: user-profile-menu
+label: 'User profile menu'
+description: 'Library user menu'
+locked: false
