@@ -1,0 +1,9 @@
+dpl_fbs.settings:
+  path: '/admin/config/services/fbs'
+  defaults:
+    _form: '\Drupal\dpl_fbs\Form\FbsSettingsForm'
+    _title: 'FBS settings'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

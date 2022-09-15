@@ -17,6 +17,8 @@ x-volumes:
     # Define all volumes you would like to have real-time mounted into the docker containers
     volumes:
       - 'projectroot:/app'
+      - 'reactroot:/app/web/libraries/dpl-react'
+      - 'themeroot:/app/web/themes/custom/novel/assets/dpl-design-system'
 
 x-user:
   &default-user
@@ -34,7 +36,9 @@ x-environment:
     # Uncomment if you like to have the system behave like in production
     #LAGOON_ENVIRONMENT_TYPE: production
     # Uncomment to enable xdebug and then restart via `docker-compose up -d`
-    #XDEBUG_ENABLE: "true"
+    XDEBUG_ENABLE: "true"
+    PHP_IDE_CONFIG: "serverName=localhost"
+    XDEBUG_CONFIG: "start"
 
 services:
   varnish: # Caching HTTP reverse proxy that serves (mostly) anonymous requests.
@@ -87,6 +91,8 @@ services:
       << : *default-environment # loads the defined environment variables from the top
       # Route that should be used locally.
       VIRTUAL_HOST: nginx.${COMPOSE_PROJECT_NAME}.docker
+    ports:
+      - '8080'
     labels:
       lagoon.type: nginx-php-persistent
       lagoon.persistent: /app/web/sites/default/files/ # define where the persistent storage should be mounted too
@@ -143,4 +149,16 @@ volumes:
     driver_opts:
       type: none
       device: ${PWD}
+      o: bind
+  reactroot:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/../dpl-react/dist/
+      o: bind
+  themeroot:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/../dpl-design-system/build/
       o: bind

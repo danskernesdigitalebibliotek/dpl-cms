@@ -73,9 +73,9 @@ tasks:
       # Create a .env file with recommended defaults.
       - cp -n .env.example .env || true
       # Build site.
-      - task dev:cli -- composer install
+#      - task dev:cli -- composer install
       # Build dev scripts
-      - task dev:cli -- $(cd dev-scripts/dpl-react; composer install)
+#      - task dev:cli -- $(cd dev-scripts/dpl-react; composer install)
       # Start local environment.
       - task dev:start
       # Install site.
