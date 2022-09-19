@@ -43,9 +43,9 @@ jobs:
         with:
           url: ${{ steps.environment.outputs.url }}
           responseCode: 200
-          # Time in ms. Wait for 15 mins for deployment to complete. We have
+          # Time in ms. Wait for 20 mins for deployment to complete. We have
           # seen deployments taking up to 12 mins.
-          timeout: 600000
+          timeout: 1200000
           # Poll every 10 seconds. For whatever reason Lagoon environments may
           # return 200 during the deployment process even though the deployment
           # is not complete. Reduce polling interval to the risk of this
