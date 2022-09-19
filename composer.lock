@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89ecd43455aaa739edf98653c2523f92",
+    "content-hash": "d6aa2117d6d6c97ca84728523464df66",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1080,7 +1080,7 @@
             "version": "v1.7.0-rc2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-release%2F4/dist.zip"
+                "url": "https://github.com/reload/dpl-design-system/releases/download/release-reservation-modal-padding/dist.zip"
             },
             "type": "drupal-library"
         },
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc7",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-release%2F4/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-fix-search-wait-time/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
