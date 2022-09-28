@@ -142,7 +142,6 @@ class DplReactAppsController extends ControllerBase {
         'login-to-see-review-text' => $this->t('Log in to read the review', [], $c),
         'material-header-all-editions-text' => $this->t('All editions', [], $c),
         'material-header-author-by-text' => $this->t('By', [], $c),
-        'material-header-all-editions-text' => $this->t('All editions', [], $c),
         'material-is-included-text' => $this->t('Material is included', [], $c),
         'material-is-loaned-out-text' => $this->t('Material is loaned out', [], $c),
         'missing-data-text' => $this->t('Missing data', [], $c),
