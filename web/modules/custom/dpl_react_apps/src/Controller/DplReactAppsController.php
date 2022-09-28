@@ -90,11 +90,7 @@ class DplReactAppsController extends ControllerBase {
     return [
       'material' => dpl_react_render('material', [
         'wid' => $wid,
-<<<<<<< HEAD
         // Config.
-=======
-        // config
->>>>>>> 75023ff (Adding new material app texts)
         'sms-notifications-for-reservations-enabled-config' =>
         // Data attributes can only be strings
         // so we need to convert the boolean to a number (0/1).
@@ -103,22 +99,14 @@ class DplReactAppsController extends ControllerBase {
         'auth-url' => self::authUrl(),
         'material-url' => self::materialUrl(),
         'search-url' => self::searchResultUrl(),
-<<<<<<< HEAD
         'dpl-cms-base-url' => self::dplCmsBaseUrl(),
-=======
-        'url-proxy-url' => self::urlProxyUrl(),
->>>>>>> 75023ff (Adding new material app texts)
         // Text.
         'already-reserved-text' => $this->t('Already reserved', [], $c),
         'approve-reservation-text' => $this->t('Approve reservation', [], $c),
         'audience-text' => $this->t('Audience', [], $c),
         'available-text' => $this->t('Available', [], $c),
         'cannot-see-review-text' => $this->t('The review is not accessible', [], $c),
-<<<<<<< HEAD
         'cant-reserve-text' => $this->t("Can't be reserved", [], $c),
-=======
-        'cant-reserve-text' => $this->t('Can\'t be reserved', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'cant-view-review-text' => $this->t('Cannot view review', [], $c),
         'close-text' => $this->t('Close', [], $c),
         'contributors-text' => $this->t('Contributors', [], $c),
@@ -126,19 +114,11 @@ class DplReactAppsController extends ControllerBase {
         'creators-are-missing-text' => $this->t('Creators are missing', [], $c),
         'days-text' => $this->t('Days', [], $c),
         'description-headline-text' => $this->t('Description', [], $c),
-<<<<<<< HEAD
-=======
-        'description-headline-text' => $this->t('Description', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'details-of-the-material-text' => $this->t('Details of the material', [], $c),
         'details-text' => $this->t('Details', [], $c),
         'edition-text' => $this->t('Edition', [], $c),
         'editions-text' => $this->t('Editions', [], $c),
         'fiction-nonfiction-text' => $this->t('Fiction/nonfiction', [], $c),
-<<<<<<< HEAD
-=======
-        'find-on-bookshelf-text' => $this->t('Find on book shelf', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'find-on-bookshelf-text' => $this->t('Find on bookshelf', [], $c),
         'find-on-shelf-expand-button-explanation-text' => $this->t('This button opens a modal', [], $c),
         'find-on-shelf-modal-close-modal-aria-label-text' => $this->t('Close reservation modal', [], $c),
@@ -150,27 +130,17 @@ class DplReactAppsController extends ControllerBase {
         'have-no-interest-after-text' => $this->t('Have no interest after', [], $c),
         'hearts-icon-text' => $this->t('hearts', [], $c),
         'identifier-text' => $this->t('Identifiers', [], $c),
-<<<<<<< HEAD
         'in-same-series-text' => $this->t('In the same series', [], $c),
         'in-series-text' => $this->t('in the series', [], $c),
-=======
         'identifier-text' => $this->t('Identifiers', [], $c),
         'in-same-series-text' => $this->t('In the same series', [], $c),
-        'in-same-series-text' => $this->t('In the same series', [], $c),
         'in-series-text' => $this->t('in the series', [], $c),
-        'in-series-text' => $this->t('in the series', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'isbn-text' => $this->t('ISBN', [], $c),
         'language-text' => $this->t('Language', [], $c),
         'libraries-have-the-material-text' => $this->t('Libraries have the material', [], $c),
         'loading-text' => $this->t('Loading', [], $c),
         'login-to-see-review-text' => $this->t('Log in to read the review', [], $c),
-<<<<<<< HEAD
         'material-header-all-editions-text' => $this->t('All editions', [], $c),
-=======
-        'login-to-see-review-text' => $this->t('Log in to read the review', [], $c),
-        'material-header-author-by-text' => $this->t('By', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'material-header-author-by-text' => $this->t('By', [], $c),
         'material-is-included-text' => $this->t('Material is included', [], $c),
         'material-is-loaned-out-text' => $this->t('Material is loaned out', [], $c),
@@ -179,22 +149,15 @@ class DplReactAppsController extends ControllerBase {
         'modal-reservation-form-email-header-title-text' => $this->t('Change email', [], $c),
         'modal-reservation-form-email-input-field-description-text' => $this->t('Type in email', [], $c),
         'modal-reservation-form-email-input-field-label-text' => $this->t('Email', [], $c),
-<<<<<<< HEAD
         'modal-reservation-form-no-interest-after-header-description-text' => $this->t('Set date for when your interest for the material will expire.', [], $c),
         'modal-reservation-form-no-interest-after-header-title-text' => $this->t('Change interest deadline', [], $c),
         'modal-reservation-form-pickup-header-description-text' => $this->t('Decide at which library you want to pickup the material.', [], $c),
         'modal-reservation-form-pickup-header-title-text' => $this->t('Choose pickup library', [], $c),
-=======
->>>>>>> 75023ff (Adding new material app texts)
         'modal-reservation-form-sms-header-description-text' => $this->t('If you want to receive SMS notifications, you can enter or change your phone number here.', [], $c),
         'modal-reservation-form-sms-header-title-text' => $this->t('Change phone number', [], $c),
         'modal-reservation-form-sms-input-field-description-text' => $this->t('Input phone number', [], $c),
         'modal-reservation-form-sms-input-field-label-text' => $this->t('Phone', [], $c),
         'number-description-text' => $this->t('Nr.', [], $c),
-<<<<<<< HEAD
-=======
-        'number-description-text' => $this->t('Nr.', [], $c),
->>>>>>> 75023ff (Adding new material app texts)
         'number-in-queue-text' => $this->t('You are number', [], $c),
         'ok-button-text' => $this->t('Ok', [], $c),
         'one-month-text' => $this->t('1 month', [], $c),
