@@ -19,8 +19,12 @@ class LoanListBlock extends BlockBase {
     $contextMobile = ['context' => 'Loan list (mobile)'];
     $contextAria = ['context' => 'Loan list (Aria)'];
 
+    $fbsConfig = \Drupal::config('dpl_fbs.settings');
+    $publizonConfig = \Drupal::config('dpl_publizon.settings');
+
     $data = [
-      "fbs-base-url-config" => 'http://fbs-mock.docker',
+      "fbs-base-url-config" => $fbsConfig->get('base_url'),
+      "publizon-base-url-config" => $publizonConfig->get('base_url'),
       "bottom-due-date-renew-loan-modal-button-text" => $this->t("Select all with the possibility of renewal", [], $context),
       "bottom-due-date-renew-loan-modal-checkbox-text" => $this->t("Renew possible", [], $context),
       "bottom-renew-loan-modal-button-text" => $this->t("Select all with the possibility of renewal", [], $context),

@@ -15,7 +15,7 @@ class FbsSettingsForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames(): array {
     return [
-      'fbs.settings',
+      'dpl_fbs.settings',
     ];
   }
 
@@ -23,14 +23,14 @@ class FbsSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId(): string {
-    return 'fbs_settings_form';
+    return 'dpl_fbs_settings_form';
   }
 
   /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
-    $config = $this->config('fbs.settings');
+    $config = $this->config('dpl_fbs.settings');
 
     $form['settings'] = [
       '#type' => 'fieldset',
@@ -64,7 +64,7 @@ class FbsSettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
 
-    $this->config('fbs.settings')
+    $this->config('dpl_fbs.settings')
       ->set('base_url', $form_state->getValue('base_url'))
       ->save();
   }

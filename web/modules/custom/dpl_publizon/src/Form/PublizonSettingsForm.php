@@ -15,7 +15,7 @@ class PublizonSettingsForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames(): array {
     return [
-      'publizon.settings',
+      'dpl_publizon.settings',
     ];
   }
 
@@ -23,14 +23,14 @@ class PublizonSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId(): string {
-    return 'publizon_settings_form';
+    return 'dpl_publizon_settings_form';
   }
 
   /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
-    $config = $this->config('publizon.settings');
+    $config = $this->config('dpl_publizon.settings');
 
     $form['settings'] = [
       '#type' => 'fieldset',
@@ -64,7 +64,7 @@ class PublizonSettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
 
-    $this->config('publizon.settings')
+    $this->config('dpl_publizon.settings')
       ->set('base_url', $form_state->getValue('base_url'))
       ->save();
   }
