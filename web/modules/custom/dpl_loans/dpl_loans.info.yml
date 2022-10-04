@@ -2,6 +2,7 @@ name: DPL loans
 description: Handle the user profile loan pages
 package: DPL
 dependencies:
+  - drupal:block
   - dpl_user_profile:dpl_user_profile
   - dpl_fbs:dpl_fbs
   - dpl_publizon:dpl_publizon
