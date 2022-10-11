@@ -59,3 +59,4 @@ services:
       http_proxy: http://wiremock:80
       https_proxy: https://wiremock:443
       CI: true
+      COMPOSER_CACHE_DIR: '/app/.cache/composer'
