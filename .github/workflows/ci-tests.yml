@@ -95,10 +95,6 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-
-            ${{ runner.os }}-yarn-
-            ${{ runner.os }}-
       - name: Setup site
         run: task ci:reset
       - name: Run Lighthouse test
@@ -125,10 +121,6 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-
-            ${{ runner.os }}-yarn-
-            ${{ runner.os }}-
       - name: Setup site
         run: task ci:reset
       - name: Run Pa11y
@@ -148,10 +140,6 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-
-            ${{ runner.os }}-yarn-
-            ${{ runner.os }}-
       - name: Install go-task
         uses: arduino/setup-task@v1
       - name: Setup site
@@ -240,10 +228,6 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-
-            ${{ runner.os }}-yarn-
-            ${{ runner.os }}-
       - name: Install go-task
         uses: arduino/setup-task@v1
       - name: Setup site
