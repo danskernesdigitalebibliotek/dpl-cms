@@ -95,6 +95,10 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Cache Docker images
+        uses: ScribeMD/docker-cache@0.2.4
+        with:
+          key: ${{ runner.os }}-docker-${{ hashFiles('**/docker-compose.yml', '**/docker-compose.ci.yml') }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
       - name: Setup site
         run: task ci:reset
       - name: Run Lighthouse test
@@ -121,6 +125,10 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Cache Docker images
+        uses: ScribeMD/docker-cache@0.2.4
+        with:
+          key: ${{ runner.os }}-docker-${{ hashFiles('**/docker-compose.yml', '**/docker-compose.ci.yml') }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
       - name: Setup site
         run: task ci:reset
       - name: Run Pa11y
@@ -140,6 +148,10 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Cache Docker images
+        uses: ScribeMD/docker-cache@0.2.4
+        with:
+          key: ${{ runner.os }}-docker-${{ hashFiles('**/docker-compose.yml', '**/docker-compose.ci.yml') }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
       - name: Install go-task
         uses: arduino/setup-task@v1
       - name: Setup site
@@ -228,6 +240,10 @@ jobs:
         with:
           path: .cache
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Cache Docker images
+        uses: ScribeMD/docker-cache@0.2.4
+        with:
+          key: ${{ runner.os }}-docker-${{ hashFiles('**/docker-compose.yml', '**/docker-compose.ci.yml') }}-yarn-${{ hashFiles('**/yarn.lock') }}-composer-${{ hashFiles('**/composer.lock') }}
       - name: Install go-task
         uses: arduino/setup-task@v1
       - name: Setup site
