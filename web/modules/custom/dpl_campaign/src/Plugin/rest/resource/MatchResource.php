@@ -197,7 +197,7 @@ class MatchResource extends ResourceBase {
 
       $sorted_values = $facet->values;
       usort($sorted_values, function (Value $a, Value $b) {
-        return $a->score - $b->score;
+        return $b->score - $a->score;
       });
 
       // Store the facet name so we can check for duplicates.
