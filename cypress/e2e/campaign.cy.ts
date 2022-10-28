@@ -3,7 +3,6 @@ const campaigns = {
   authorCampaign: "Promote authors: H. P. Lovecraft and Stephen King",
   booksByJKRowling: "Read books by J. K. Rowling",
   rankingAndCampaign: "An AND campaign for testing ranking matching",
-  rankingOrCampaign: "An OR campaign for testing ranking matching",
 } as const;
 
 describe("Campaign creation and endpoint", () => {
@@ -276,7 +275,6 @@ describe("Campaign creation and endpoint", () => {
     createAuthorCampaign();
     createCampaignBooksByJKRowling();
     createRankingAndCampaign();
-    createRankingOrCampaign();
 
     // Logout (obviously).
     cy.drupalLogout();
@@ -291,7 +289,6 @@ describe("Campaign creation and endpoint", () => {
     deleteCampaign(campaigns.authorCampaign);
     deleteCampaign(campaigns.booksByJKRowling);
     deleteCampaign(campaigns.rankingAndCampaign);
-    deleteCampaign(campaigns.rankingOrCampaign);
 
     // Logout (obviously).
     cy.drupalLogout();
@@ -370,29 +367,6 @@ const createRankingAndCampaign = () => {
       facet: "type",
       term: "rankingTestAnd",
       maxValue: 3,
-    });
-  });
-};
-
-const createRankingOrCampaign = () => {
-  createCampaign(() => {
-    createCampaignMainProperties(campaigns.rankingOrCampaign, "OR");
-    createCampaignRule(0, {
-      facet: "creator",
-      term: "rankingTestOr",
-      maxValue: 5,
-    });
-    cy.get("[id^=field-campaign-rules-campaign-rule-add-more]").click();
-    createCampaignRule(1, {
-      facet: "language",
-      term: "rankingTestOr",
-      maxValue: 5,
-    });
-    cy.get("[id^=field-campaign-rules-campaign-rule-add-more]").click();
-    createCampaignRule(2, {
-      facet: "type",
-      term: "rankingTestOr",
-      maxValue: 5,
     });
   });
 };
