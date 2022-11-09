@@ -103,6 +103,7 @@ class DplReactAppsController extends ControllerBase {
         'auth-url' => self::authUrl(),
         'material-url' => self::materialUrl(),
         'search-url' => self::searchResultUrl(),
+        'dpl-cms-base-url' => self::dplCmsBaseUrl(),
         // Text.
         'available-text' => $this->t('Available', [], $options),
         'by-author-text' => $this->t('By', [], $options),
