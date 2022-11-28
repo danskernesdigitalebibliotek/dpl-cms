@@ -9,6 +9,7 @@ module:
   dpl_das: 0
   dpl_cms: 1000
   dpl_fbs: 0
+  dpl_das: 0
   dpl_library_agency: 0
   dpl_library_token: 0
   dpl_loans: 0
