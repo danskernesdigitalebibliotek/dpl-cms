@@ -47,7 +47,7 @@ tasks:
         service: cli
 
 environments:
-  dpl-cms-pr-182:
+  pr-182:
     cronjobs:
     - name: drush cron
       schedule: "M/15 * * * *"
