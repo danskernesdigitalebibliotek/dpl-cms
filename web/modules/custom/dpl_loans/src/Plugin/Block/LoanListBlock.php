@@ -4,6 +4,7 @@ namespace Drupal\dpl_loans\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Config\ConfigFactory;
+use Drupal\dpl_react_apps\Controller\DplReactAppsController;
 
 /**
  * Provides user loans list.
@@ -18,7 +19,7 @@ class LoanListBlock extends BlockBase {
   /**
    * LoanListBlock constructor.
    *
-   * @param Drupal\Core\Config\ConfigFactory $configFactory
+   * @param \Drupal\Core\Config\ConfigFactory $configFactory
    *   Drupal config factory.
    */
   public function __construct(
@@ -28,6 +29,9 @@ class LoanListBlock extends BlockBase {
 
   /**
    * {@inheritDoc}
+   *
+   * @return mixed[]
+   *   The app render array.
    */
   public function build() {
     $context = ['context' => 'Loan list'];
@@ -40,17 +44,16 @@ class LoanListBlock extends BlockBase {
       // Config.
       "fbs-base-url-config" => $fbsConfig->get('base_url'),
       "publizon-base-url-config" => $publizonConfig->get('base_url'),
-    // This overrides config.
+      // This overrides config.
       "page-size-desktop" => "25",
-    // This overrides config.
+      // This overrides config.
       "page-size-mobile" => "25",
       // Urls.
-    // @todo update placeholder URL
+      // @todo update placeholder URL's
       'fees-page-url' => "https://unsplash.com/photos/wd6YQy0PJt8",
-      // @todo update placeholder URL
       'material-overdue-url' => "https://unsplash.com/photos/wd6YQy0PJt8",
-      'search-url' => self::searchResultUrl(),
-      'dpl-cms-base-url' => self::dplCmsBaseUrl(),
+      'search-url' => DplReactAppsController::searchResultUrl(),
+      'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
       // Texts.
       'group-modal-due-date-link-to-page-with-fees-text' => $this->t("Read more about fees", [], $context),
       'group-modal-due-date-renew-loan-close-modal-aria-label-text' => $this->t("Close renew loans modal", [], $contextAria),
