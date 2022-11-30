@@ -7,6 +7,8 @@ module:
   dpl_campaign: 0
   dpl_fbs: 0
   dpl_das: 0
+  dpl_cms: 1000
+  dpl_fbs: 0
   dpl_library_agency: 0
   dpl_library_token: 0
   dpl_loans: 0
@@ -53,7 +55,6 @@ module:
   varnish_purge_tags: 0
   varnish_purger: 0
   paragraphs: 11
-  dpl_cms: 1000
 theme:
   claro: 0
   stable9: 0
