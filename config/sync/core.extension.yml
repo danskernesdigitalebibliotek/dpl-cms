@@ -55,7 +55,6 @@ module:
   varnish_purge_tags: 0
   varnish_purger: 0
   paragraphs: 11
-  dpl_cms: 1000
 theme:
   claro: 0
   stable9: 0
