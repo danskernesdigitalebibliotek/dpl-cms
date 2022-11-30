@@ -1,0 +1,4 @@
+dpl_user_profile.logout:
+  weight: 10
+  menu_name: user-profile-menu
+  class: Drupal\user\Plugin\Menu\LoginLogoutMenuLink
