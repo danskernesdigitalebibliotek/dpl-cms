@@ -2,7 +2,9 @@
 
 namespace Drupal\dpl_loans\Controller;
 
+use Drupal\Core\Block\BlockManagerInterface;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Render\RendererInterface;
 
 /**
  * Render loan list react app.
@@ -10,17 +12,33 @@ use Drupal\Core\Controller\ControllerBase;
 class DplLoansController extends ControllerBase {
 
   /**
+   * DplLoansController constructor.
+   *
+   * @param \Drupal\Core\Block\BlockManagerInterface $blockManager
+   *   Drupal block manager.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   Drupal renderer service.
+   */
+  public function __construct(
+    private BlockManagerInterface $blockManager,
+    private RendererInterface $renderer
+  ) {
+  }
+
+  /**
    * Demo react rendering.
    *
-   * @return array
+   * @return mixed[]
    *   Render array.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\PluginException
    */
   public function list(): array {
-    $block_manager = $this->configFactory->get('plugin.manager.block');
-
     // You can hard code configuration, or you load from settings.
     $config = [];
-    $plugin_block = $block_manager->createInstance('dpl_loans_list_block', $config);
+
+    /** @var \Drupal\dpl_loans\Plugin\Block\LoanListBlock $plugin_block */
+    $plugin_block = $this->blockManager->createInstance('dpl_loans_list_block', $config);
 
     // Some blocks might implement access check.
     $access_result = $plugin_block->access($this->currentUser());
@@ -34,7 +52,7 @@ class DplLoansController extends ControllerBase {
 
     // Add the cache tags/contexts.
     $render = $plugin_block->build();
-    $this->configFactory->get('renderer')->addCacheableDependency($render, $plugin_block);
+    $this->renderer->addCacheableDependency($render, $plugin_block);
 
     return $render;
   }
