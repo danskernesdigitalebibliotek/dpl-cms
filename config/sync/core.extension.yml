@@ -6,13 +6,18 @@ module:
   config_ignore: 0
   dpl_campaign: 0
   dpl_das: 0
+  dpl_cms: 1000
+  dpl_fbs: 0
   dpl_library_agency: 0
   dpl_library_token: 0
+  dpl_loans: 0
   dpl_login: 0
   dpl_mapp: 0
+  dpl_publizon: 0
   dpl_react: 0
   dpl_react_apps: 0
   dpl_url_proxy: 0
+  dpl_user_profile: 0
   dynamic_page_cache: 0
   entity_reference_revisions: 0
   field: 0
@@ -49,7 +54,6 @@ module:
   varnish_purge_tags: 0
   varnish_purger: 0
   paragraphs: 11
-  dpl_cms: 1000
 theme:
   claro: 0
   stable9: 0
