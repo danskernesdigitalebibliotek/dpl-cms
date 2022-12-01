@@ -5,6 +5,7 @@ namespace Drupal\dpl_loans\Controller;
 use Drupal\Core\Block\BlockManagerInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Render\RendererInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Render loan list react app.
@@ -23,6 +24,21 @@ class DplLoansController extends ControllerBase {
     private BlockManagerInterface $blockManager,
     private RendererInterface $renderer
   ) {
+  }
+
+  /**
+   * {@inheritdoc}
+   *
+   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
+   *   The Drupal service container.
+   *
+   * @return static
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('plugin.manager.block'),
+      $container->get('renderer'),
+    );
   }
 
   /**
