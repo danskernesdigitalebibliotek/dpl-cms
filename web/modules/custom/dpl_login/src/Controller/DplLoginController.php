@@ -55,7 +55,7 @@ class DplLoginController extends ControllerBase {
   protected $claims;
 
   /**
-   * DdplReactController constructor.
+   * DplLoginController constructor.
    *
    * @param \Drupal\dpl_login\UserTokensProvider $userTokensProvider
    *   The User token provider.
