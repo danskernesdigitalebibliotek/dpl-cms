@@ -5,9 +5,15 @@ parameters:
     - web/themes/custom
   ignoreErrors:
     - '#Unsafe usage of new static\(\).#'
+
     # Drupal Form API makes extensive use for arrays which we cannot provide
     # more detailed typing of.
     - '#.*\:\:(buildForm|getEditableConfigNames|submitForm|validateForm)\(\) .* no value type specified in iterable type array\.#'
+
+    # Drupal BLock API makes extensive use of $configuration arrays which we cannot provide
+    # more detailed typing of.
+    - '#Method Drupal\\.*Block::.* has parameter \$configuration with no value type specified in iterable type array.#'
+
     # Drupal has many different iterable interfaces we do not want to provide
     # iterable typing for.
     - '#no value type specified in iterable type Drupal\\.*Interface#'
