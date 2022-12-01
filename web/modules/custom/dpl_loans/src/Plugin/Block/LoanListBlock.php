@@ -3,7 +3,6 @@
 namespace Drupal\dpl_loans\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\dpl_react_apps\Controller\DplReactAppsController;
@@ -90,9 +89,9 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'group-modal-checkbox-text' => $this->t("Choose all renewable", [], $context),
       'group-modal-due-date-header-text' => $this->t("Due date @date", [], $context),
       'group-modal-due-date-warning-loan-overdue-text' => $this->t("The due date of return is exceeded, therefore you will be charged a fee, when the item is returned", [], $context),
-      'group-modal-go-to-material-text' => $this->t("Go to material details",[], $context),
-      'group-modal-return-library-text' => $this->t("Can be returned to all branches of Samsøs libraries",[],$context),
-      'material-details-go-to-ereolen-text' => $this->t("Go to eReolen",[], $context),
+      'group-modal-go-to-material-text' => $this->t("Go to material details", [], $context),
+      'group-modal-return-library-text' => $this->t("Can be returned to all branches of Samsøs libraries", [], $context),
+      'material-details-go-to-ereolen-text' => $this->t("Go to eReolen", [], $context),
       'loan-list-aria-label-list-button-text' => $this->t("This button shows all loans in the list", [], $contextAria),
       'loan-list-aria-label-stack-button-text' => $this->t("This button filters the list, so only one the materials that have the same due date is shown", [], $contextAria),
       'group-modal-renew-loan-denied-inter-library-loan-text' => $this->t("The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library", [], $context),
@@ -133,9 +132,9 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'material-and-author-text' => $this->t("and", [], $context),
       'material-by-author-text' => $this->t("By", [], $context),
       'material-details-close-modal-aria-label-text' => $this->t("Close material details modal", [], $contextAria),
-      'material-details-digital-due-date-label-text' => $this->t("Expires",[], $context),
+      'material-details-digital-due-date-label-text' => $this->t("Expires", [], $context),
       'material-details-physical-due-date-label-text' => $this->t("Afleveres", [], $context),
-      'material-details-go-to-ereolen-text' => $this->t("Go to eReolen",[], $context),
+      'material-details-go-to-ereolen-text' => $this->t("Go to eReolen", [], $context),
       'material-details-link-to-page-with-fees-text' => $this->t("Read more about fees", [], $context),
       'material-details-loan-date-label-text' => $this->t("Loan date", [], $context),
       'material-details-material-number-label-text' => $this->t("Material Item Number", [], $context),
