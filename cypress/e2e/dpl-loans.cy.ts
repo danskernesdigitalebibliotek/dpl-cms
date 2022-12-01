@@ -41,12 +41,7 @@ describe("DPL React Apps", () => {
     // Logging in will retrieve a user token using OAuth authorization grants.
     cy.adgangsplatformenLogin(authorizationCode, userAccessToken, userGuid);
 
-    cy.request("/user/me/loans")
-      .its("body")
-      .should(
-        "contain",
-        `Your loans")`
-      );
+    cy.request("/user/me/loans").its("body").should("contain", "Your loans");
   });
 
   beforeEach(() => {
