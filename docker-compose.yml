@@ -1,4 +1,4 @@
-# This docker-compose file follows the best-practicis for a docker-compose setup
+# This docker-compose file follows the best-practices for a docker-compose setup
 # used by a Lagoon based project.
 # https://docs.lagoon.sh/lagoon/using-lagoon-the-basics/docker-compose-yml
 #
@@ -72,8 +72,6 @@ services:
       lagoon.type: cli-persistent
       lagoon.persistent.name: nginx # mount the persistent storage of nginx into this container
       lagoon.persistent: /app/web/sites/default/files/ # location where the persistent storage should be mounted
-    environment:
-      << : *default-environment # loads the defined environment variables from the top
 
   nginx: # Webserver in front of php-fpm. Serves static assets.
     # https://docs.lagoon.sh/lagoon/docker-images/nginx/nginx-drupal
