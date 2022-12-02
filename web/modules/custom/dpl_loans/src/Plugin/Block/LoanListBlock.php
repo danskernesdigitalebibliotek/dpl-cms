@@ -70,8 +70,8 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     $data = [
       // Config.
-      "fbs-base-url-config" => $fbsConfig->get('base_url'),
-      "publizon-base-url-config" => $publizonConfig->get('base_url'),
+      "fbs-base-url" => $fbsConfig->get('base_url'),
+      "publizon-base-url" => $publizonConfig->get('base_url'),
       // This overrides config.
       "page-size-desktop" => "25",
       // This overrides config.
