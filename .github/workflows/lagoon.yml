@@ -1,5 +1,7 @@
-on:
-  pull_request:
+on: workflow_dispatch
+
+# on:
+#   pull_request:
     # We have two groups of jobs in this workflow that reacts on actions:
     #
     # 1. We update the status of a Github Deployment on:
@@ -93,10 +95,36 @@ jobs:
   InformLagoon:
     name: Send synthetic event to Lagoon
     runs-on: ubuntu-latest
+    env:
+      webhook_url: ${{ secrets.LAGOON_WEBHOOK_URL }}
+      webhook_secret: ${{ secrets.LAGOON_WEBHOOK_SECRET }}
     steps:
+    - name: Verify secrets are set
+      id: check_env
+      run: |
+        # Set default
+        ok="true"
+
+        # Then go about checking the variables
+        if [[ -z "${webhook_url:-}" ]]; then
+          echo "Could not read secret LAGOON_WEBHOOK_URL, will not send event to Lagoon"
+          ok="false"
+        fi
+
+        if [[ -z "${webhook_secret:-}" ]]; then
+          echo "Could not read secret LAGOON_WEBHOOK_SECRET, will not send event to Lagoon"
+          ok="false"
+        fi
+
+        if [[ "${ok}" == "false"]]; then
+          echo "This workflow has most likely been triggered by a user that does"
+          echo "have the necessary access to the required Github secrets."
+          echo
+          echo "Aborting workflow"
+          exit 1
+        fi
+
     - name: Send pull request event
       uses: distributhor/workflow-webhook@v2
       env:
-        webhook_url: ${{ secrets.LAGOON_WEBHOOK_URL }}
-        webhook_secret: ${{ secrets.LAGOON_WEBHOOK_SECRET }}
         webhook_type: 'json-extended'
