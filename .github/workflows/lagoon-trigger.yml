@@ -1,8 +1,6 @@
 on:
   pull_request_target:
 
-# on:
-#   pull_request:
     # We have two groups of jobs in this workflow that reacts on actions:
     #
     # 1. We update the status of a Github Deployment on:
