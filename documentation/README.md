@@ -37,3 +37,18 @@ known as draw.io).
 
 When a change has been made to a `*.puml` or `*.drawio` file, you should
 re-render the diagrams using the command `task render` and commit the result.
+
+
+## Developer Experience
+
+### Lagoon integration
+
+Pull-requests, and the `main` and `develop` branches are automatically deployed
+to environments hosted in our [Lagoon](https://lagoon.sh/) installation.
+
+`main` and `develop` are monitored by Lagoon and pushes to these branches will
+be deployed automatically.
+
+An environment has access to some sensitive secrets, and as such, we're more
+careful when deploying PR-environments as the code in these environments may
+come from outside contributors. As such, we only deploy 
