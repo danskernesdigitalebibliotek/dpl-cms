@@ -1,7 +1,8 @@
 # This workflow takes care of building and publishing the source code of the Danish Public Libraries CMS.
 name: Publish source
-on:
-  create
+# on:
+#   create
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest

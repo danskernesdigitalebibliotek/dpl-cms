@@ -1,5 +1,6 @@
 # These workflows takes care of various CI tests.
-on: pull_request
+# on: pull_request
+on: workflow_dispatch
 name: CI Tests
 env:
   PHP_VERSION: 8.0
