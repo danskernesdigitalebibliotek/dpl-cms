@@ -1,5 +1,4 @@
-on:
-  pull_request_target:
+on: pull_request_target
 
     # We have two groups of jobs in this workflow that reacts on actions:
     #
@@ -10,7 +9,7 @@ on:
     # - closed
     #
     # 2. We forward all events to lagoon via InformLagoon
-    types: [ opened, synchronize, reopened, closed, edited ]
+    # types: [ opened, synchronize, reopened, closed, edited ]
 name: Inform Lagoon
 
 env:
