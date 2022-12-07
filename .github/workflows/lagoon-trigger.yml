@@ -1,4 +1,7 @@
-on: pull_request_target
+on:
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
+
 
     # We have two groups of jobs in this workflow that reacts on actions:
     #
