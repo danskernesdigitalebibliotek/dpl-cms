@@ -61,11 +61,16 @@ jobs:
           echo "Aborting workflow"
           exit 1
         fi
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: "refs/pull/${{ github.event.number }}/merge"
     - name: Debug
       run: |
         export
-        git rev-parse refs/pull/${{ github.event.number }}/merge
-        merge_sha=$(git rev-parse refs/pull/${{ github.event.number }}/merge)
+        git rev-parse HEAD
+        merge_sha=$(git rev-parse HEAD)
         echo "merge_sha=${merge_sha}" >> $GITHUB_OUTPUT
 
     - name: Send pull request event
