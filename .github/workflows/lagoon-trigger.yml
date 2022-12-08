@@ -54,7 +54,7 @@ jobs:
           ok="false"
         fi
 
-        if [[ "${ok}" == "false"]]; then
+        if [[ "${ok}" == "false" ]]; then
           echo "This workflow has most likely been triggered by a user that does"
           echo "have the necessary access to the required Github secrets."
           echo
