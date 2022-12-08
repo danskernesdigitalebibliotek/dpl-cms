@@ -17,10 +17,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc10",
+                "version": "0.3.0-rc11",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-demo-search-2022-12-08/dist.zip",
                     "type": "zip"
                 },
                 "require": {

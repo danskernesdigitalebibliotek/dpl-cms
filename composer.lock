@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7db51d0915e4f0312fe2fa430704b365",
+    "content-hash": "2863eae8d61e9c88b207188fb43d4cee",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc10",
+            "version": "0.3.0-rc11",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-demo-search-2022-12-08/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/fbs-client",
-            "version": "dev-opsaetning-af-a11y-check-i-gh-actions-pa-dpl-cms-DDFSOEG-324",
+            "version": "dev-demo-search-2022-12-08",
             "dist": {
                 "type": "path",
                 "url": "packages/fbs-client",
