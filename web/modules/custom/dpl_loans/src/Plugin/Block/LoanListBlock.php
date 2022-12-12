@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Provides user loans list.
  *
- * @block(
+ * @Block(
  *   id = "dpl_loans_list_block",
  *   admin_label = "List user loans"
  * )
