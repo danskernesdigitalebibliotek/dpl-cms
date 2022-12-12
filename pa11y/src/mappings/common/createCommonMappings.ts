@@ -22,8 +22,13 @@ export default (baseUri?: string, options?: Options) => {
               format: "jpeg",
               size: "small",
             },
+            medium: {
+              url: "https://picsum.photos/224/270",
+              format: "jpeg",
+              size: "large",
+            },
             large: {
-              url: "https://picsum.photos/142/172",
+              url: "https://picsum.photos/322/480",
               format: "jpeg",
               size: "large",
             },
