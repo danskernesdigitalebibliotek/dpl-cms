@@ -98,7 +98,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'group-modal-renew-loan-denied-reserved-text' => $this->t("The item is reserved by another patron", [], $context),
       'loan-list-digital-loans-empty-list-text' => $this->t("You have no digital loans at the moment", [], $context),
       'loan-list-digital-loans-title-text' => $this->t("Digital loans", [], $context),
-      'loan-list-digital-physical-loans-empty-list-text' => $this->t("You have @count loans at the moment", [], $context),
+      'loan-list-digital-physical-loans-empty-list-text' => $this->t("You have 0 loans at the moment", [], $context),
       'loan-list-due-date-modal-aria-label-text' => $this->t("This button opens a modal that covers the entire page and contains loans with the same due date as the loan currently in focus", [], $contextAria),
       'group-modal-hidden-label-checkbox-on-material-text' => $this->t("Select material for renewal", [], $context),
       'loan-list-material-late-fee-text' => $this->t("You will be charged a fee, when the item is returned", [], $context),
