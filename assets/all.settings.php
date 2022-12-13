@@ -41,7 +41,7 @@ $settings['config_sync_directory'] = '../config/sync';
 
 // Set service base urls for the external APIs.
 $config['dpl_fbs.settings'] = ['base_url' => 'https://fbs-openplatform.dbc.dk'];
-// Todo publizon base url contains test
+// @todo Publizon base url contains test
 $config['dpl_publizon.settings'] = ['base_url' => 'https://pubhub-openplatform.test.dbc.dk'];
 
 // Set service base urls for the react apps.
