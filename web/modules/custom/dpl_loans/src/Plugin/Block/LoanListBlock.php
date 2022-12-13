@@ -68,7 +68,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
 
-    $data = [
+    $build = ['loan-list' => dpl_react_render('loan-list', [
       // Config.
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
@@ -150,9 +150,9 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'group-modal-header-text' => $this->t("Renew several", [], $context),
       'result-pager-status-text' => $this->t("Showing @itemsShown out of @hitcount loans", [], $context),
       'show-more-text' => $this->t("show more", [], $context),
+      ] + DplReactAppsController::externalApiBaseUrls()),
     ];
-
-    return dpl_react_render('loan-list', $data);
+    return $build;
   }
 
 }
