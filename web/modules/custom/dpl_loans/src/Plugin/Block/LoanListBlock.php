@@ -117,13 +117,6 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'loan-list-renew-multiple-button-text' => $this->t("Renew several", [], $context),
       'loan-list-status-badge-danger-text' => $this->t("Expired", [], $context),
       'loan-list-status-badge-warning-text' => $this->t("Expiring soon", [], $context),
-      'loan-list-status-circle-aria-label-text' => [
-        'type' => 'plural',
-        'text' => [
-          $this->t('This material is due in one day', [], $contextAria),
-          $this->t('This material is due in @count days', [], $contextAria),
-        ],
-      ],
       'loan-list-title-text' => $this->t("Your loans", [], $context),
       'loan-list-to-be-delivered-digital-material-text' => $this->t("Due date @date", [], $context),
       'group-modal-due-date-material-text' => $this->t("Hand in @date", [], $context),
