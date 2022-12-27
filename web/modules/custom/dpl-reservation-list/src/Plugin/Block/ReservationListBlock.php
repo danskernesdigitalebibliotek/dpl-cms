@@ -169,7 +169,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
 'reservation-details-expires-text' => $this->t('Your reservation expires @date!',[], $context),
 'reservation-details-save-text' => $this->t('Save',[], $context),
 'reservation-details-cancel-text' => $this->t('Cancel',[], $context),
-'deleteReservation-modal-header-text' => [
+'delete-reservation-modal-header-text' => [
 'type' => 'plural',
 'text' => [
     $this->t('Cancel reservation', [], $context),
@@ -177,14 +177,14 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
 ],
 ],
 
-'deleteReservation-modal-delete-question-text' => [
+'delete-reservation-modal-delete-question-text' => [
 'type' => 'plural',
 'text' => [
     $this->t('Do you want to cancel your reservation?', [], $context),
     $this->t('Do you want to cancel your reservations?', [], $context),
 ],
 ],
-'deleteReservation-modal-delete-question-text' => [
+'delete-reservation-modal-delete-question-text' => [
 'type' => 'plural',
 'text' => [
     $this->t('Cancel reservation', [], $context),
@@ -192,9 +192,9 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
 ],
 ],
 
-'deleteReservation-modal-not-regrettable-text' => $this->t('You cannot regret this action',[], $context),
-'deleteReservation-modal-close-modal-text' => $this->t('Close delete reservation modal',[], $context),
-'deleteReservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations',[], $context),
+'delete-reservation-modal-not-regrettable-text' => $this->t('You cannot regret this action',[], $context),
+'delete-reservation-modal-close-modal-text' => $this->t('Close delete reservation modal',[], $context),
+'delete-reservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations',[], $context),
 'reservation-listPause-reservation-text' => $this->t('Pause your reservations',[], $context),
 'reservation-list-on-hold-aria-text' => $this->t('Reservations have been paused in the following time span: ',[], $context),
 'reservation-list-pause-reservation-aria-modal-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to pause physical reservations',[], $context),
