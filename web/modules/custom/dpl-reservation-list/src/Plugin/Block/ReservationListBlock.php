@@ -184,7 +184,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $this->t('Do you want to cancel your reservations?', [], $context),
 ],
 ],
-'delete-reservation-modal-delete-question-text' => [
+'delete-reservation-modal-delete-button-text' => [
 'type' => 'plural',
 'text' => [
     $this->t('Cancel reservation', [], $context),
