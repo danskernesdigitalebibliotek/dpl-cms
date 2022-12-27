@@ -1,0 +1,5 @@
+dpl_loan.list:
+  title: "Reservation"
+  menu_name: user-profile-menu
+  route_name: dpl_reservations.list
+  description: "List user reservations"
