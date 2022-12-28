@@ -1,0 +1,5 @@
+patron_page.createPage:
+  title: "Patron page"
+  menu_name: user-profile-menu
+  route_name: dpl_patron_page.createPage
+  description: "Patron page displays patron information"

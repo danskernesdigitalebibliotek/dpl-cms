@@ -18,6 +18,7 @@ module:
   dynamic_page_cache: 0
   entity_reference_revisions: 0
   field: 0
+  dpl_patron_page: 0
   file: 0
   filter: 0
   handy_cache_tags: 0
