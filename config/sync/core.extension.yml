@@ -1,10 +1,12 @@
 module:
+  automated_cron: 0
   block: 0
   breakpoint: 0
   config_filter: 0
   config_ignore: 0
   dpl_campaign: 0
   dpl_fbs: 0
+  dpl_das: 0
   dpl_library_agency: 0
   dpl_library_token: 0
   dpl_loans: 0

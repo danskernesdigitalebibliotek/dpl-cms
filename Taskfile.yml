@@ -25,8 +25,7 @@ vars:
   RELEASE_FULL_NAME: '{{.RELEASE_IMAGE_REGISTRY}}/{{.RELEASE_IMAGE_NAME}}:{{.RELEASE_IMAGE_TAG}}'
   # Where is the docker file(s) we use for our builds residing?
   LAGOON_DIR: "lagoon"
-  DOCKER_COMPOSE_FILES_OSX: '{{if eq OS "darwin"}}-f docker-compose.mac-nfs.yml{{end}}'
-  DOCKER_COMPOSE_FILES_DEFAULT: '-f docker-compose.yml {{ .DOCKER_COMPOSE_FILES_OSX }}'
+  DOCKER_COMPOSE_FILES_DEFAULT: '-f docker-compose.yml'
   DOCKER_COMPOSE_FILES: '{{.DOCKER_COMPOSE_FILES | default .DOCKER_COMPOSE_FILES_DEFAULT }}'
   DOCKER_COMPOSE_FILES_CI: '{{.DOCKER_COMPOSE_FILES}} -f docker-compose.ci.yml'
   # Sql dump files directory
@@ -95,6 +94,10 @@ tasks:
       - cp -n .env.example .env || true
       # Build site.
       - task dev:cli -- composer install
+      # Always reinstall packages tracking develop builds. The content of such
+      # packages may change without composer package version changes so ensure
+      # we have the latest version.
+      - task dev:cli -- composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
       # Build dev scripts
       - task dev:cli -- $(cd dev-scripts/dpl-react; composer install)
       # Start local environment.
@@ -193,9 +196,9 @@ tasks:
   ci:cypress:
     desc: Run Cypress functional tests
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome yarn install --frozen-lockfile
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
       - task dev:cli -- drush user:password $CYPRESS_DRUPAL_USERNAME $CYPRESS_DRUPAL_PASSWORD
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress
     env:
       CYPRESS_DRUPAL_USERNAME: admin
       CYPRESS_DRUPAL_PASSWORD: admin
@@ -217,44 +220,41 @@ tasks:
 
   ci:pa11y:
     desc: Run Pa11y to test accessiblity
-    deps: [ci:pa11y:pre]
+    deps: [ci:wiremock:create-mappings]
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn pa11y:ci
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn pa11y:ci
 
-  ci:pa11y:browser:
+  ci:wiremock:browser:
     desc: Watch the site with a wiremock http proxy. ⚠️  Depends on Chrome installed on OS ⚠️
-    deps: [ci:pa11y:browser:warning, ci:pa11y:pre]
+    deps: [ci:wiremock:create-mappings]
     cmds:
-      - yarn pa11y:browser
+      - echo '⚠️  Please make sure that Chrome is installed in your OS.'
+      - yarn wiremock:browser
     env:
       HTTP_PROXY: '{{ .WIREMOCK_HOST_LOCAL }}'
 
-  ci:pa11y:browser:warning:
+  ci:wiremock:create-mappings:
     cmds:
-      - echo '⚠️  Please make sure that Chrome is installed in your OS.'
-
-  ci:pa11y:pre:
-    cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn pa11y:create-mappings
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn wiremock:create-mappings
 
   ci:lighthouse:
     desc: Run Lighthouse to test performance
+    deps: [ci:wiremock:create-mappings]
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome npx lhci autorun
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome npx lhci autorun
 
   ci:openapi:validate:
     desc: Validate the Drupal OpenAPI specification
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome npx swagger-cli validate http://varnish:8080/openapi/rest?_format=json
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome npx swagger-cli validate http://varnish:8080/openapi/rest?_format=json
 
   ci:openapi:download:
     desc: Download the Drupal OpenAPI specification from the running local site to the local filesystem
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run node-chrome curl http://varnish:8080/openapi/rest?_format=json | npx jsome -r > openapi.json
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome curl http://varnish:8080/openapi/rest?_format=json | npx jsome -r > openapi.json
 
   source:build:
     summary: Build core source image.
