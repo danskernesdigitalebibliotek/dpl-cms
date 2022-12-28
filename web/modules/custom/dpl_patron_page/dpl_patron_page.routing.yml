@@ -1,5 +1,5 @@
 dpl_patron_page.createPage:
-  path: "/user/me/mememe"
+  path: "/user/me"
   defaults:
     _controller: '\Drupal\dpl_patron_page\Controller\DplPatronPageController::createPage'
   requirements:
