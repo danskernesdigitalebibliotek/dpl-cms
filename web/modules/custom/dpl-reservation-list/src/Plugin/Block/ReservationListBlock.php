@@ -204,7 +204,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
 'pause-reservation-modal-close-modal-text' => $this->t('Close pause reservations modal',[], $context),
 'date-inputs-start-date-label-text' => $this->t('Start date',[], $context),
 'date-inputs-end-date-label-text' => $this->t('End date',[], $context),
-'pause-reservation-modal-below-inputs-text-text'=> $this->t('pause-reservation-modal-below-inputs-text-text',[], $context),
+'pause-reservation-modal-below-inputs-text-text'=> $this->t('Lorem ipsum quod maxime placeat facere possimus',[], $context), // Todo replace this lorem ipsum
 'pause-reservation-modal-link-text' => $this->t('Read more about pausing reservertions and what that means here',[], $context),
 'pause-reservation-modal-save-button-label-text' => $this->t('Save',[], $context),
 'one-month-text' => $this->t('1 month',[], $context),
