@@ -176,22 +176,8 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $this->t('Cancel reservations', [], $context),
 ],
 ],
-
-'delete-reservation-modal-delete-question-text' => [
-'type' => 'plural',
-'text' => [
-    $this->t('Do you want to cancel your reservation?', [], $context),
-    $this->t('Do you want to cancel your reservations?', [], $context),
-],
-],
-'delete-reservation-modal-delete-button-text' => [
-'type' => 'plural',
-'text' => [
-    $this->t('Cancel reservation', [], $context),
-    $this->t('Cancel reservations', [], $context),
-],
-],
-
+'delete-reservation-modal-delete-question-text' => $this->t('Do you want to cancel your reservation?',[], $context),
+'delete-reservation-modal-delete-button-text' => $this->t('Cancel reservation',[], $context),
 'delete-reservation-modal-not-regrettable-text' => $this->t('You cannot regret this action',[], $context),
 'delete-reservation-modal-close-modal-text' => $this->t('Close delete reservation modal',[], $context),
 'delete-reservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations',[], $context),
