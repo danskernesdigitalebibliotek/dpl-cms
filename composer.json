@@ -35,7 +35,7 @@
                 "type": "drupal-library",
                 "version": "v1.7.0-rc3",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-design-system/releases/download/release-lazyload-search-results/dist.zip",
                     "type": "zip"
                 }
             }
