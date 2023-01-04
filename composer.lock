@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77c4ade978d98ebfb92b0e6a1cbd51ae",
+    "content-hash": "09f115d13cfd2d788be035988cf61254",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc10",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reload/dpl-react/releases/download/release-lazyload-search-results/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-lazyload-search-results-plus-mount-set-timeout/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"

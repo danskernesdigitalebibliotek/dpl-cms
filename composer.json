@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc10",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/reload/dpl-react/releases/download/release-lazyload-search-results/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-lazyload-search-results-plus-mount-set-timeout/dist.zip",
                     "type": "zip"
                 },
                 "require": {
