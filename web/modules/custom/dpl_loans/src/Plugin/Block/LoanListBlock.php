@@ -62,6 +62,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
    *   The app render array.
    */
   public function build() {
+    $loan_list_settings = $this->configFactory->get('loan_list.settings');
     $context = ['context' => 'Loan list'];
     $contextAria = ['context' => 'Loan list (Aria)'];
 
@@ -73,16 +74,14 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         // Config.
         "fbs-base-url" => $fbsConfig->get('base_url'),
         "publizon-base-url" => $publizonConfig->get('base_url'),
-        // This overrides config.
-        "page-size-desktop" => "25",
-        // This overrides config.
-        "page-size-mobile" => "25",
+        "page-size-desktop" => $loan_list_settings->get('page_size_desktop'),
+        "page-size-mobile" => $loan_list_settings->get('page_size_mobile'),
+
         // Urls.
-        // @todo update placeholder URL's
-        'fees-page-url' => "https://unsplash.com/photos/wd6YQy0PJt8",
-        'material-overdue-url' => "https://unsplash.com/photos/wd6YQy0PJt8",
-        'search-url' => DplReactAppsController::searchResultUrl(),
+        'fees-page-url' => $loan_list_settings->get('fees_page_url'),
+        'material-overdue-url' => $loan_list_settings->get('material_overdue_url'),
         'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
+
         // Texts.
         'group-modal-due-date-link-to-page-with-fees-text' => $this->t("Read more about fees", [], $context),
         'group-modal-due-date-renew-loan-close-modal-aria-label-text' => $this->t("Close renew loans modal", [], $contextAria),
