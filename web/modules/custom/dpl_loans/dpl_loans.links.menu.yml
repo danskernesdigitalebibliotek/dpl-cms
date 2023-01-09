@@ -4,7 +4,6 @@ dpl_loan.list:
   route_name: dpl_loans.list
   description: "List user loans"
 
-
 dpl_loans.settings_form:
   title: "Loan list settings"
   route_name: dpl_loans.settings
