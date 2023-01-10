@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66da6f72f489d09ba0c066bdcb83c613",
+    "content-hash": "6271c9f0519e1f2fd6c2970e1ea2a8f6",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc10",
+            "version": "0.3.0-rc11",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-fix%2Ffbi-update-take-2/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/fbs-client",
-            "version": "dev-main",
+            "version": "dev-fbi-api-update",
             "dist": {
                 "type": "path",
                 "url": "packages/fbs-client",
