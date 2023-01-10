@@ -6,7 +6,7 @@ dpl_loans.list:
     _permission: "access content"
 
 dpl_loans.settings:
-  path: "/admin/config/services/loan-list" # todo where does this go?
+  path: "/admin/config/dpl-library-agency/loan-list-settings"
   defaults:
     _form: '\Drupal\dpl_loans\Form\LoanListSettingsForm'
     _title: "Loans settings"

@@ -8,4 +8,4 @@ dpl_loans.settings_form:
   title: "Loan list settings"
   route_name: dpl_loans.settings
   description: "Change loan list settings"
-  parent: system.admin_config_services
+  parent: dpl_library_agency.settings
