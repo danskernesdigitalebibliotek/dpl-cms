@@ -79,13 +79,13 @@ class LoanListSettingsForm extends ConfigFormBase {
       $form_state->setErrorByName('material_overdue_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl]));
     }
 
-    $pageSizeMobile = intval($form_state->getValue('page_size_mobile'));
-    if ($pageSizeMobile <= 0) {
+    $pageSizeMobile = $form_state->getValue('page_size_mobile');
+    if (!is_int($pageSizeMobile) && $pageSizeMobile <= 0) {
       $form_state->setErrorByName('page_size_mobile', $this->t('Page size mobile has to be a positive integer'));
     }
 
-    $pageSizeDesktop = intval($form_state->getValue('page_size_desktop'));
-    if ($pageSizeDesktop <= 0) {
+    $pageSizeDesktop = $form_state->getValue('page_size_desktop');
+    if (!is_int($pageSizeDesktop) && $pageSizeDesktop <= 0) {
       $form_state->setErrorByName('page_size_desktop', $this->t('Page size desktop has to be a positive integer'));
     }
   }
