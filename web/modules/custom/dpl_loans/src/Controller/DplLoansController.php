@@ -50,7 +50,6 @@ class DplLoansController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\PluginException
    */
   public function list(): array {
-    // You can hard code configuration, or you load from settings.
     $config = [];
 
     /** @var \Drupal\dpl_loans\Plugin\Block\LoanListBlock $plugin_block */
