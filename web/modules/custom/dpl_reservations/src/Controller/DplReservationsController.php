@@ -52,8 +52,7 @@ class DplReservationsController extends ControllerBase {
   public function list(): array {
     // You can hard code configuration, or you load from settings.
     $config = [];
-    
-    
+
     /** @var \Drupal\dpl_reservations\Plugin\Block\ReservationListBlock $plugin_block */
     $plugin_block = $this->blockManager->createInstance('dpl_reservations_list_block', $config);
 
