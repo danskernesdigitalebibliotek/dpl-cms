@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66da6f72f489d09ba0c066bdcb83c613",
+    "content-hash": "da140b5f940a7043876433638d53b7f7",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1080,7 +1080,7 @@
             "version": "v1.7.0-rc3",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-design-system/releases/download/release-feature%2Fskeleton-screen-and-search-result/dist.zip"
             },
             "type": "drupal-library"
         },
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc10",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
