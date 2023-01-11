@@ -20,7 +20,11 @@
                 "version": "0.3.0-rc10",
                 "type": "drupal-library",
                 "dist": {
+<<<<<<< HEAD
                     "url": "https://github.com/reload/dpl-react/releases/download/release-lazyload-search-results-plus-mount-set-timeout/dist.zip",
+=======
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374/dist.zip",
+>>>>>>> f7e4033 (Add sskeleton screen deps)
                     "type": "zip"
                 },
                 "require": {
@@ -35,7 +39,11 @@
                 "type": "drupal-library",
                 "version": "v1.7.0-rc3",
                 "dist": {
+<<<<<<< HEAD
                     "url": "https://github.com/reload/dpl-design-system/releases/download/release-lazyload-search-results/dist.zip",
+=======
+                    "url": "https://github.com/reload/dpl-design-system/releases/download/release-feature%2Fskeleton-screen-and-search-result/dist.zip",
+>>>>>>> f7e4033 (Add sskeleton screen deps)
                     "type": "zip"
                 }
             }
