@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da140b5f940a7043876433638d53b7f7",
+    "content-hash": "365501910170b88894441b52be9a7dee",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc10",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374-plus-reduce-rerenders/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/fbs-client",
-            "version": "dev-lazyload-search-results",
+            "version": "dev-lav-et-dpl-cms-miljo-med-samtlige-perf-forbedringer-pa-sogeresultater-DDFSOEG-377",
             "dist": {
                 "type": "path",
                 "url": "packages/fbs-client",
