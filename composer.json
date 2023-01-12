@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc10",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374-plus-reduce-rerenders/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-skeleton-screens-DDFSOEG-374/dist.zip",
                     "type": "zip"
                 },
                 "require": {
