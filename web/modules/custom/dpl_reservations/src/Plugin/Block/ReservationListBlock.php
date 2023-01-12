@@ -77,7 +77,12 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $reservation_list_settings = $this->configFactory->get('reservation_list.settings');
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
+    var_dump($reservation_list_settings->get('pause_reservation_start_date_config'));
 
+    $dateConfig = $reservation_list_settings->get('pause_reservation_start_date_config');
+    if (is_null($dateConfig)) {
+      $dateConfig = "";
+    }
     $build = [
       'reservation-list' => dpl_react_render('reservation-list', [
         // Branches.
@@ -88,7 +93,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
         // Url.
         'ereolen-my-page-url' => $reservation_list_settings->get('ereolen_my_page_url'),
         'pause-reservation-info-url' => $reservation_list_settings->get('pause_reservation_info_url'),
-        'pause-reservation-start-date-config' => $reservation_list_settings->get('pause_reservation_start_date_config') || "",
+        'pause-reservation-start-date-config' => $dateConfig,
         // Config.
         "page-size-desktop" => $reservation_list_settings->get('page_size_desktop'),
         "page-size-mobile" => $reservation_list_settings->get('page_size_mobile'),
