@@ -91,7 +91,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
         'blacklisted-availability-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
         'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
         // Url.
-        'ereolen-my-page-urld' => $reservation_list_settings->get('ereolen_my_page_url'),
+        'ereolen-my-page-url' => $reservation_list_settings->get('ereolen_my_page_url'),
         'pause-reservation-info-url' => $reservation_list_settings->get('pause_reservation_info_url'),
         'pause-reservation-start-date-config' => $dateConfig,
         // Config.
