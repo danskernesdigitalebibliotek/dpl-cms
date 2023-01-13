@@ -123,7 +123,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         'loan-list-to-be-delivered-text' => $this->t("Due date @date", [], $context),
         'material-and-author-text' => $this->t("and", [], $context),
         'material-by-author-text' => $this->t("By", [], $context),
-        'material-details-close-modal-aria-label-text' => $this->t("Close material details modal", [], $contextAria),
+        'material-details-close-mdal-aria-label-text' => $this->t("Close material details modal", [], $contextAria),
         'material-details-digital-due-date-label-text' => $this->t("Expires", [], $context),
         'material-details-physical-due-date-label-text' => $this->t("Hand in", [], $context),
         'material-details-go-to-ereolen-text' => $this->t("Go to eReolen", [], $context),
