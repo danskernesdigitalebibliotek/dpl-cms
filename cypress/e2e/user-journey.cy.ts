@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const autosuggestData = require("../../wiremock/src/mappings/search/data/fbi/autosugggest.json");
 const searchResultData = require("../../wiremock/src/mappings/search/data/fbi/searchWithPagination.json");
+const availabilityLabelsData = require("../../wiremock/src/mappings/work/data/fbs/availability.json");
 
 describe("User journey", () => {
   it("Shows search suggestions & redirects to search result page", () => {
@@ -43,6 +44,32 @@ describe("User journey", () => {
         },
         status: 200,
         jsonBody: searchResultData,
+      },
+    });
+    cy.createMapping({
+      request: {
+        method: "GET",
+        urlPattern: ".*/availability/v3.*",
+      },
+      response: {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        status: 200,
+        jsonBody: availabilityLabelsData,
+      },
+    });
+    cy.createMapping({
+      request: {
+        method: "GET",
+        urlPattern: ".*/holdings/v3.*",
+      },
+      response: {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        status: 200,
+        jsonBody: workHoldingData,
       },
     });
 
