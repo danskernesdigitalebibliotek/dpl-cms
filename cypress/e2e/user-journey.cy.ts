@@ -59,19 +59,6 @@ describe("User journey", () => {
         jsonBody: availabilityLabelsData,
       },
     });
-    cy.createMapping({
-      request: {
-        method: "GET",
-        urlPattern: ".*/holdings/v3.*",
-      },
-      response: {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        status: 200,
-        jsonBody: workHoldingData,
-      },
-    });
 
     cy.visit("/search?q=Harry%2520Potter")
       .get('[data-cy="search-result-title"]')
