@@ -1,0 +1,29 @@
+{
+  "authenticateStatus": "VALID",
+  "patron": {
+    "address": {
+      "coName": "",
+      "street": "10, Maple street",
+      "postalCode": "2000",
+      "city": "Copenhagen",
+      "country": "DK"
+    },
+    "allowBookings": false,
+    "birthday": "1989-12-13",
+    "blockStatus": null,
+    "defaultInterestPeriod": 180,
+    "emailAddress": "example@gmail.com",
+    "name": "John Doe",
+    "notificationProtocols": [],
+    "onHold": null,
+    "patronId": 20439779,
+    "phoneNumber": "12345678",
+    "preferredLanguage": null,
+    "preferredPickupBranch": "DK-775100",
+    "receiveEmail": true,
+    "receivePostalMail": false,
+    "receiveSms": false,
+    "resident": false,
+    "secondaryAddress": null
+  }
+}
