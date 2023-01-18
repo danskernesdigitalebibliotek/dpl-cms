@@ -74,7 +74,7 @@ describe("User journey", () => {
       .should("include", "work/work-of:870970-basis:25245784");
   });
 
-  it("Shows material page & can open reservation modal", () => {
+  function materialPageMocking() {
     cy.createMapping({
       request: {
         method: "POST",
@@ -127,6 +127,10 @@ describe("User journey", () => {
         jsonBody: patronData,
       },
     });
+  }
+
+  it("Shows material page & can open reservation modal", () => {
+    materialPageMocking();
 
     cy.visit("/work/work-of:870970-basis:25245784")
       .contains("Harry Potter og Fønixordenen")
