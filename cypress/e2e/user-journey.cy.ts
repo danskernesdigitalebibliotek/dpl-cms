@@ -66,9 +66,9 @@ describe("User journey", () => {
     });
 
     cy.visit("/search?q=Harry%2520Potter")
-      .get('[data-cy="search-result-title"]')
+      .get("[data-cy='search-result-title']")
       .should("contain", "Showing results for “Harry Potter” (109)")
-      .get('[data-cy="search-result-list"]')
+      .get("[data-cy='search-result-list']")
       .children()
       .eq(0)
       .click()
@@ -76,7 +76,7 @@ describe("User journey", () => {
       .should("include", "work/work-of:870970-basis:25245784");
   });
 
-  function materialPageMocking() {
+  function mockMaterialPage() {
     cy.createMapping({
       request: {
         method: "POST",
@@ -132,14 +132,14 @@ describe("User journey", () => {
   }
 
   it("Shows material page & can open reservation modal", () => {
-    materialPageMocking();
+    mockMaterialPage();
 
     cy.visit("/work/work-of:870970-basis:25245784")
       .contains("Harry Potter og Fønixordenen")
-      .get('[data-cy="material-header-buttons-physical"]')
+      .get("[data-cy='material-header-buttons-physical']")
       .should("contain", "Reserve bog")
       .click()
-      .get('[data-cy="modal"]')
+      .get("[data-cy='modal']")
       .should("contain", "Harry Potter og Fønixordenen");
   });
 
