@@ -136,7 +136,9 @@ describe("User journey", () => {
       .contains("Harry Potter og Fønixordenen")
       .get('[data-cy="material-header-buttons-physical"]')
       .should("contain", "Reserve bog")
-      .click();
+      .click()
+      .get('[data-cy="modal"]')
+      .should("contain", "Harry Potter og Fønixordenen");
   });
 
   beforeEach(() => {
