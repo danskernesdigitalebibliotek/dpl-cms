@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "reservationResults": [
+    {
+      "periodical": null,
+      "recordId": "52557240",
+      "reservationDetails": {
+        "reservationId": 74218696,
+        "recordId": "52557240",
+        "state": "reserved",
+        "pickupBranch": "DK-775100",
+        "pickupDeadline": null,
+        "expiryDate": "2023-07-17",
+        "dateOfReservation": "2023-01-18T10:44:22.37",
+        "numberInQueue": 3,
+        "periodical": null,
+        "pickupNumber": null,
+        "ilBibliographicRecord": null,
+        "transactionId": "0867d98d-6f40-4adc-9826-a7aca8977cfe",
+        "reservationType": "normal"
+      },
+      "result": "success"
+    }
+  ]
+}
