@@ -1,0 +1,89 @@
+[
+  {
+    "recordId": "52557240",
+    "reservable": true,
+    "reservations": 3,
+    "holdings": [
+      {
+        "branch": { "branchId": "DK-775100", "title": "Hovedbiblioteket" },
+        "department": { "departmentId": "vo", "title": "Voksen" },
+        "location": null,
+        "sublocation": null,
+        "materials": [
+          {
+            "itemNumber": "5119211680",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211524",
+            "available": true,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211672",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211834",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211753",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211745",
+            "available": true,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211737",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          },
+          {
+            "itemNumber": "5119211885",
+            "available": false,
+            "periodical": null,
+            "materialGroup": {
+              "name": "standard",
+              "description": "31 dages lånetid til alm lånere"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
