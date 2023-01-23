@@ -77,7 +77,6 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $reservation_list_settings = $this->configFactory->get('reservation_list.settings');
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
-    var_dump($reservation_list_settings->get('pause_reservation_start_date_config'));
 
     $dateConfig = $reservation_list_settings->get('pause_reservation_start_date_config');
     if (is_null($dateConfig)) {
