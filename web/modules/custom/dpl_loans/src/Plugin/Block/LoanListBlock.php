@@ -73,17 +73,14 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         // Page sige.
         "page-size-desktop" => $loan_list_settings->get('page_size_desktop'),
         "page-size-mobile" => $loan_list_settings->get('page_size_mobile'),
-        
         // Config.
         "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
-        
         // Urls.
         "fbs-base-url" => $fbsConfig->get('base_url'),
         "publizon-base-url" => $publizonConfig->get('base_url'),
         'fees-page-url' => $loan_list_settings->get('fees_page_url'),
         'material-overdue-url' => $loan_list_settings->get('material_overdue_url'),
         'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
-
         // Texts.
         'group-modal-due-date-link-to-page-with-fees-text' => $this->t("Read more about fees", [], $context),
         'group-modal-due-date-renew-loan-close-modal-aria-label-text' => $this->t("Close renew loans modal", [], $contextAria),
