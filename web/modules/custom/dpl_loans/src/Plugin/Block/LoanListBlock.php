@@ -68,16 +68,18 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
-
     $build = [
       'loan-list' => dpl_react_render('loan-list', [
-        // Config.
-        "fbs-base-url" => $fbsConfig->get('base_url'),
-        "publizon-base-url" => $publizonConfig->get('base_url'),
+        // Page sige.
         "page-size-desktop" => $loan_list_settings->get('page_size_desktop'),
         "page-size-mobile" => $loan_list_settings->get('page_size_mobile'),
-
+        
+        // Config.
+        "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
+        
         // Urls.
+        "fbs-base-url" => $fbsConfig->get('base_url'),
+        "publizon-base-url" => $publizonConfig->get('base_url'),
         'fees-page-url' => $loan_list_settings->get('fees_page_url'),
         'material-overdue-url' => $loan_list_settings->get('material_overdue_url'),
         'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
@@ -90,7 +92,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         'group-modal-due-date-header-text' => $this->t("Due date @date", [], $context),
         'group-modal-due-date-warning-loan-overdue-text' => $this->t("The due date of return is exceeded, therefore you will be charged a fee, when the item is returned", [], $context),
         'group-modal-go-to-material-text' => $this->t("Go to material details", [], $context),
-        'group-modal-return-library-text' => $this->t("Can be returned to all branches of Samsøs libraries", [], $context),
+        'group-modal-return-library-text' => $this->t("Can be returned to all branches of todo libraries", [], $context),
         'loan-list-aria-label-list-button-text' => $this->t("This button shows all loans in the list", [], $contextAria),
         'loan-list-aria-label-stack-button-text' => $this->t("This button filters the list, so only one the materials that have the same due date is shown", [], $contextAria),
         'group-modal-renew-loan-denied-inter-library-loan-text' => $this->t("The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library", [], $context),
