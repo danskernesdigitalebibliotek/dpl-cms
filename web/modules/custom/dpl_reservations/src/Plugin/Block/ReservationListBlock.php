@@ -94,6 +94,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
         'pause-reservation-info-url' => $reservation_list_settings->get('pause_reservation_info_url'),
         'pause-reservation-start-date-config' => $dateConfig,
         // Config.
+        "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
         "page-size-desktop" => $reservation_list_settings->get('page_size_desktop'),
         "page-size-mobile" => $reservation_list_settings->get('page_size_mobile'),
         "fbs-base-url" => $fbsConfig->get('base_url'),
