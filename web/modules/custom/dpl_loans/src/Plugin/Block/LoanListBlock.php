@@ -68,6 +68,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
 
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
+
     $build = [
       'loan-list' => dpl_react_render('loan-list', [
         // Page sige.
