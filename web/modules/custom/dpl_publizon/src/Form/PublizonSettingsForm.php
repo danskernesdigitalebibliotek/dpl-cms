@@ -41,8 +41,7 @@ class PublizonSettingsForm extends ConfigFormBase {
     $form['settings']['base_url'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Publizon service url'),
-      '#description' => $this->t('Which publizon service should be used (default: https://pubhub-openplatform.dbc.dk, QA: https://pubhub-openplatform.test.dbc.dk).'),
-      '#default_value' => $config->get('base_url') ?? 'https://pubhub-openplatform.dbc.dk',
+      '#default_value' => $config->get('base_url'),
     ];
 
     return parent::buildForm($form, $form_state);
@@ -63,7 +62,6 @@ class PublizonSettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
-
     $this->config('dpl_publizon.settings')
       ->set('base_url', $form_state->getValue('base_url'))
       ->save();

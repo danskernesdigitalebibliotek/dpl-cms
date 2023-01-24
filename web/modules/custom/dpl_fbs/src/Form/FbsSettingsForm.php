@@ -41,8 +41,7 @@ class FbsSettingsForm extends ConfigFormBase {
     $form['settings']['base_url'] = [
       '#type' => 'textfield',
       '#title' => $this->t('FBS service url'),
-      '#description' => $this->t('Which FBS service should be used (default: https://fbs-openplatform.dbc.dk).'),
-      '#default_value' => $config->get('base_url') ?? 'https://fbs-openplatform.dbc.dk',
+      '#default_value' => $config->get('base_url'),
     ];
 
     return parent::buildForm($form, $form_state);
