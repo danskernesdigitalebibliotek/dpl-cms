@@ -41,6 +41,25 @@ function novel_theme(
  * @param mixed[] $variables
  *   The variables for the theme hook.
  */
+function novel_preprocess_dpl_react_app__search_header(array &$variables): void {
+  $search_svg = file_get_contents(sprintf('%s/%s',
+    \Drupal::theme()->getActiveTheme()->getPath(),
+    '/assets/dpl-design-system/icons/collection/Search.svg'
+  ));
+
+  $variables += [
+    'search_icon' => $search_svg,
+    'search_action' => $variables['data']['search-url'] ?? "",
+    'input_placeholder_text' => $variables['data']['input-placeholder-text'] ?? "",
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param mixed[] $variables
+ *   The variables for the theme hook.
+ */
 function novel_preprocess_dpl_react_app__search_result(array &$variables): void {
   $variables += [
     'q' => \Drupal::request()->query->get('q') ?? "",
