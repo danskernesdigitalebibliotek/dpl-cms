@@ -5,6 +5,9 @@
  * Novel Theme.
  */
 
+use function Safe\file_get_contents;
+use function Safe\sprintf;
+
 /**
  * Implements hook_theme().
  *
