@@ -46,7 +46,7 @@ $config['dpl_publizon.settings'] = ['base_url' => 'https://pubhub-openplatform.t
 // Set service base urls for the react apps.
 $config['dpl_react_apps.settings']['services'] = [
   'cover' => ['base_url' => 'https://cover.dandigbib.org'],
-  'fbi' => ['base_url' => 'https://fbi-api.dbc.dk/opac/graphql'],
+  'fbi' => ['base_url' => 'https://fbi-api.dbc.dk/next/graphql'],
   'material-list' => ['base_url' => 'https://prod.materiallist.dandigbib.org'],
 ];
 
@@ -79,7 +79,7 @@ if (getenv('CI')) {
   // We need http domains for testing in CI context.
   $config['dpl_react_apps.settings']['services'] = [
     'cover' => ['base_url' => 'http://cover.dandigbib.org'],
-    'fbi' => ['base_url' => 'http://fbi-api.dbc.dk/opac/graphql'],
+    'fbi' => ['base_url' => 'http://fbi-api.dbc.dk/next/graphql'],
     'material-list' => ['base_url' => 'http://prod.materiallist.dandigbib.org'],
   ];
 }
