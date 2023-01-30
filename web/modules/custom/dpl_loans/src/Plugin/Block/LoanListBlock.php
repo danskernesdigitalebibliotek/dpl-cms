@@ -65,12 +65,9 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
     $loan_list_settings = $this->configFactory->get('loan_list.settings');
     $context = ['context' => 'Loan list'];
     $contextAria = ['context' => 'Loan list (Aria)'];
-
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
-
-    $build = [
-      'loan-list' => dpl_react_render('loan-list', [
+    $data = [
         // Page sige.
         "page-size-desktop" => $loan_list_settings->get('page_size_desktop'),
         "page-size-mobile" => $loan_list_settings->get('page_size_mobile'),
@@ -144,9 +141,17 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         'result-pager-status-text' => $this->t("Showing @itemsShown out of @hitcount loans", [], $context),
         'show-more-text' => $this->t("show more", [], $context),
         'group-modal-go-to-material-aria-label-text' => $this->t("Go to @label material details", [], $context),
-      ] + DplReactAppsController::externalApiBaseUrls()),
+      ] + DplReactAppsController::externalApiBaseUrls();
+
+    $app = [
+      '#theme' => 'dpl_react_app',
+      "#name" => 'loan-list',
+      '#data' => $data,
     ];
-    return $build;
+
+
+    return $app;
+
   }
 
 }
