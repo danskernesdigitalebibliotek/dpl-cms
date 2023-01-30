@@ -73,9 +73,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
       // Config.
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
-      // This overrides config.
       "page-size-desktop" => "25",
-      // This overrides config.
       "page-size-mobile" => "25",
       // Urls.
       // @todo update placeholder URL's
