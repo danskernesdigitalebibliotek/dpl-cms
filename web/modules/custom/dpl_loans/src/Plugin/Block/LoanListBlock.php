@@ -90,7 +90,6 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
         'group-modal-due-date-header-text' => $this->t("Due date @date", [], $context),
         'group-modal-due-date-warning-loan-overdue-text' => $this->t("The due date of return is exceeded, therefore you will be charged a fee, when the item is returned", [], $context),
         'group-modal-go-to-material-text' => $this->t("Go to material details", [], $context),
-        // todo : ask Jesper
         'group-modal-return-library-text' => $this->t("Can be returned to all branches of the municipalities libraries", [], $context),
         'loan-list-aria-label-list-button-text' => $this->t("This button shows all loans in the list", [], $contextAria),
         'loan-list-aria-label-stack-button-text' => $this->t("This button filters the list, so only one the materials that have the same due date is shown", [], $contextAria),
