@@ -82,7 +82,8 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     if (is_null($dateConfig)) {
       $dateConfig = "";
     }
-    $app = [
+
+    $data = [
       // Branches.
       'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
       'blacklisted-search-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedSearchBranches()),
