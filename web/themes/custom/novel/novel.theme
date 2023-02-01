@@ -71,10 +71,10 @@ function novel_preprocess_dpl_react_app__search_result(array &$variables): void 
     'number_of_fake_result_items' => 5,
   ];
 
-  // Preconnect covers.
-  _novel_variables_preconnect_covers($variables);
-  // Preload fonts.
-  _novel_variables_preload_fonts($variables);
+//   // Preconnect covers.
+//   _novel_variables_preconnect_covers($variables);
+//   // Preload fonts.
+//   _novel_variables_preload_fonts($variables);
 }
 
 /**
@@ -83,12 +83,12 @@ function novel_preprocess_dpl_react_app__search_result(array &$variables): void 
  * @param mixed[] $variables
  *   The variables for the theme hook.
  */
-function novel_preprocess_dpl_react_app__material(array &$variables): void {
+// function novel_preprocess_dpl_react_app__material(array &$variables): void {
   // Preconnect covers.
-  _novel_variables_preconnect_covers($variables);
-  // Preload fonts.
-  _novel_variables_preload_fonts($variables);
-}
+  // _novel_variables_preconnect_covers($variables);
+  // // Preload fonts.
+  // _novel_variables_preload_fonts($variables);
+// }
 
 /**
  * Adds preloading of fontsto theme variables.
