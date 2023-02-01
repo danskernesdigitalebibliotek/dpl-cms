@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df6b3d3e3519d14dce102bd33410e45c",
+    "content-hash": "9c57b96a3c26729db0fcdc270e442496",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,7 +1077,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.7.0-rc6",
+            "version": "v1.7.0-rc7",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/reload/dpl-design-system/releases/download/release-performance-research-materiale-visningssiden-DDFSOEG-400/dist.zip"
