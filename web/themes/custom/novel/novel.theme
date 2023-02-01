@@ -5,6 +5,7 @@
  * Novel Theme.
  */
 
+use Drupal\Component\Serialization\Json;
 use function Safe\file_get_contents;
 use function Safe\sprintf;
 
@@ -86,12 +87,47 @@ function novel_preprocess_dpl_react_app__material(array &$variables): void {
 }
 
 /**
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param mixed[] $variables
+ *   The variables for the theme hook.
+ */
+function novel_preprocess_dpl_react_app(array &$variables): void {
+  $theme = \Drupal::theme()->getActiveTheme();
+  $json_path = sprintf('%s/%s',
+    $theme->getPath(),
+    'assets/dpl-design-system/fonts.json'
+  );
+
+  // Check if a version json file exists and decode the json configuration.
+  if ($fonts_data = file_get_contents($json_path)) {
+    $fonts = Json::decode($fonts_data);
+    foreach ($fonts as $font) {
+      $variables['#attached']['html_head_link'][] = [
+        [
+          'rel' => 'preload',
+          'href' => sprintf('/%s/%s/%s',
+            $theme->getPath(),
+            'assets/dpl-design-system/fonts',
+            $font
+          ),
+          'as' => 'font',
+          'type' => 'font/woff2',
+          'crossorigin' => 'anonymous',
+        ],
+        TRUE,
+      ];
+    }
+  }
+}
+
+/**
  * Adds preconnect for covers to theme variables.
  *
  * @param mixed[] $variables
  *   The variables for the theme.
  */
-function _novel_variables_preconnect_covers(&$variables): void {
+function _novel_variables_preconnect_covers(array &$variables): void {
   $react_apps_settings = \Drupal::configFactory()->get('dpl_react_apps.settings');
   if (!$services = $react_apps_settings->get('services')) {
     return;
