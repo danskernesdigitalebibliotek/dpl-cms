@@ -70,25 +70,7 @@ function novel_preprocess_dpl_react_app__search_result(array &$variables): void 
     'showing_results_for_text' => $variables['data']['showing-results-for-text'] ?? "",
     'number_of_fake_result_items' => 5,
   ];
-
-//   // Preconnect covers.
-//   _novel_variables_preconnect_covers($variables);
-//   // Preload fonts.
-//   _novel_variables_preload_fonts($variables);
 }
-
-/**
- * Implements hook_preprocess_HOOK().
- *
- * @param mixed[] $variables
- *   The variables for the theme hook.
- */
-// function novel_preprocess_dpl_react_app__material(array &$variables): void {
-  // Preconnect covers.
-  // _novel_variables_preconnect_covers($variables);
-  // // Preload fonts.
-  // _novel_variables_preload_fonts($variables);
-// }
 
 /**
  * Adds preloading of fontsto theme variables.
