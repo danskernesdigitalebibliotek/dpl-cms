@@ -2,6 +2,7 @@ base:
   version: "1.0"
   css:
     theme:
+      assets/dpl-design-system/css/base.css: {}
       css/novel.css: {}
   js:
     assets/dpl-design-system/js/initheader.js: {}
