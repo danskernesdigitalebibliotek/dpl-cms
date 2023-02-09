@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc25",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/reload/dpl-react/releases/download/release-performance-research-materiale-visningssiden-DDFSOEG-400/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-performance-research-materiale-visningssiden-DDFSOEG-400_fewer-search-results/dist.zip",
                     "type": "zip"
                 },
                 "require": {
