@@ -102,7 +102,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       // Texts.
       'reservation-list-header-text' => $this->t('Your reservations', [], $context),
       'reservation-list-physical-reservations-header-text' => $this->t('Physical reservations', [], $context),
-      'reservation-list-pause-reservation-text' => $this->t('Pause your reservations', [], $context),
+      'reservation-list-pause-reservation-text' => $this->t('Pause reservations on physical items', [], $context),
       'reservation-list-digital-reservations-header-text' => $this->t('Digital reservations', [], $context),
       'reservation-list-ready-for-pickup-title-text' => $this->t('Ready for pickup', [], $context),
       'reservation-list-ready-for-pickup-empty-text' => $this->t('At the moment you have 0 reservations ready for pickup', [], $context),
@@ -153,7 +153,6 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       'delete-reservation-modal-not-regrettable-text' => $this->t('You cannot regret this action', [], $context),
       'delete-reservation-modal-close-modal-text' => $this->t('Close delete reservation modal', [], $context),
       'delete-reservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations', [], $context),
-      'reservation-listPause-reservation-text' => $this->t('Pause your reservations', [], $context),
       'reservation-list-on-hold-aria-text' => $this->t('Reservations have been paused in the following time span:', [], $context),
       'reservation-list-pause-reservation-aria-modal-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to pause physical reservations', [], $context),
       'pause-reservation-modal-aria-description-text' => $this->t('This modal makes it possible to pause your physical reservations', [], $context),
