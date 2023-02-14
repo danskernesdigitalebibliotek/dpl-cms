@@ -118,17 +118,33 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
 
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
+    $patron_page_settings = $this->configFactory->get('patron_page.settings');
+
+
 
     $data = [
+        'text-notifications-enabled-config' => $patron_page_settings ->get('text_notifications_enabled'),
         'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
         'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
         'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
         'pincode-length-config' => '4',
+        'pause-reservation-info-url' => $reservation_list_settings->get('pause_reservation_info_url'),
+        'pause-reservation-start-date-config' => $dateConfig,
+              'pause-reservation-modal-aria-description-text' => $this->t('This modal makes it possible to pause your physical reservations', [], $context),
+        'pause-reservation-modal-header-text' => $this->t('Pause reservations on physical items', [], $context),
+        'pause-reservation-modal-body-text' => $this->t('Pause your reservations early, since reservations that are already being processed, will not be paused.', [], $context),
+        'pause-reservation-modal-close-modal-text' => $this->t('Close pause reservations modal', [], $context),
+        'date-inputs-start-date-label-text' => $this->t('Start date', [], $context),
+        'date-inputs-end-date-label-text' => $this->t('End date', [], $context),
+        'pause-reservation-modal-below-inputs-text-text' => $this->t('Pause reservation below inputs text', [], $context),
+        'pause-reservation-modal-link-text' => $this->t('Read more about pausing reservertions and what that means here', [], $context),
+        'pause-reservation-modal-save-button-label-text' => $this->t('Save', [], $context),
         'delete-patron-link-config' => $this->t('https://images.unsplash.com/photo-1560888126-5c13ad3f9345?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80'),
         'always-loanable-ereolen-link' => $this->t('https://images.unsplash.com/photo-1560888126-5c13ad3f9345?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80'),
         'patron-page-header-text' => $this->t('Patron profile page'),
         'patron-page-basic-details-header-text' => $this->t('BASIC DETAILS'),
         'patron-page-basic-details-name-label-text' => $this->t('Name'),
+        'patron-page-text-fee-text' => $this->t('patron-page-text-fee-text') || "",
         'patron-page-basic-details-address-label-text' => $this->t('Address'),
         'patron-page-contact-info-header-text' => $this->t('CONTACT INFORMATION'),
         'patron-page-contact-info-body-text' => $this->t('patron-page-contact-info-body-text') || "",
