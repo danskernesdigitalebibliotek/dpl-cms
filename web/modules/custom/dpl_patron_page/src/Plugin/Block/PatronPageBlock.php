@@ -155,7 +155,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'date-inputs-start-date-label-text' => $this->t('Start date', [], $context),
       'date-inputs-end-date-label-text' => $this->t('End date', [], $context),
       'pause-reservation-modal-below-inputs-text-text' => $this->t('Pause reservation below inputs text', [], $context),
-      'pause-reservation-modal-link-text' => $this->t('Read more about pausing reservertions and what that means here', [], $context),
+      'pause-reservation-modal-link-text' => $this->t('Read more', [], $context),
       'pause-reservation-modal-save-button-label-text' => $this->t('Save', [], $context),
       'delete-patron-url' => $patron_page_settings->get('delete_patron_url'),
       'always-available-ereolen-url' => $patron_page_settings->get('always_available_ereolen'),
