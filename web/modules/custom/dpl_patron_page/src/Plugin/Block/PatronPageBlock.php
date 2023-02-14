@@ -134,7 +134,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         'patron-page-contact-info-body-text' => $this->t(''), // todo make string
         'patron-page-contact-phone-label-text' => $this->t('Phone number'),
         'patron-page-contact-phone-checkbox-text' => $this->t('Receive text messages about your loans, reservations, and so forth'),
-        'patron-page-contact-email--label-text' => $this->t('E-mail'),
+        'patron-page-contact-email-label-text' => $this->t('E-mail'),
         'patron-page-contact-email-checkbox-text' => $this->t('Receive emails about your loans, reservations, and so forth'),
         'patron-page-status-section-header-text' => $this->t('Digital loans (eReolen)'),
         'patron-page-status-section-body-text' => $this->t('There is a number of materials without limitation to amounts of loans per month.'),
@@ -143,7 +143,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         'patron-page-status-section-loans-ebooks-text' => $this->t('E-books'),
         'patron-page-status-section-loans-audio-books-text' => $this->t('Audiobooks'),
         'patron-page-change-pickup-header-text' => $this->t('Reservations'),
-        'patron-page-change-pickup-body-text' => $this->t('patron-page-change-pickup-body-text'),
+        'patron-page-change-pickup-body-text' => $this->t('patron-page-change-pickup-body-text') || "",
         'pickup-branches-dropdown-label-text' => $this->t('Choose pickup branch'),
         'pickup-branches-dropdown-nothing-selected-text' => $this->t('Nothing selected'),
         'patron-page-pause-reservations-header-text' => $this->t('Pause physical reservations'),
