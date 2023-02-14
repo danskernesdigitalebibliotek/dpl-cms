@@ -38,30 +38,35 @@ class PatronPageSettingsForm extends ConfigFormBase {
       '#tree' => FALSE,
     ];
 
-
     $form['settings']['text_notifications_enabled'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Enable SMS notifications'),
       '#default_value' => $config->get('text_notifications_enabled'),
     ];
 
-    $form['settings']['fees_page_url'] = [
+    $form['settings']['delete_patron_url'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Fee page url'),
-      '#description' => $this->t('The link to the relevant fee page'),
-      '#default_value' => $config->get('fees_page_url') ?? '',
+      '#title' => $this->t('Delete patron link'),
+      '#description' => $this->t('Link to a page where it is possible to delete patron'),
+      '#default_value' => $config->get('delete_patron_url') ?? '',
     ];
 
-    $form['settings']['material_overdue_url'] = [
+    $form['settings']['always_available_ereolen'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Material overdue url'),
-      '#description' => $this->t('The link to the material overdue page'),
-      '#default_value' => $config->get('material_overdue_url') ?? '',
+      '#title' => $this->t('Ereolen always available'),
+      '#default_value' => $config->get('always_available_ereolen') ?? '',
     ];
-    $form['settings']['pincode_length'] = [
+    
+    $form['settings']['pincode_length_min'] = [
       '#type' => 'number',
-      '#title' => $this->t('Pincode length'),
-      '#default_value' => $config->get('pincode_length') ?? 4,
+      '#title' => $this->t('Pincode length (min)'),
+      '#default_value' => $config->get('pincode_length_min') ?? 4,
+    ];
+
+    $form['settings']['pincode_length_max'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Pincode length max'),
+      '#default_value' => $config->get('pincode_length_max') ?? 4,
     ];
 
     return parent::buildForm($form, $form_state);
@@ -71,20 +76,26 @@ class PatronPageSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state): void {
-    $feesUrl = $form_state->getValue('fees_page_url');
+    $feesUrl = $form_state->getValue('delete_patron_url');
     if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('fees_page_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl]));
+      $form_state->setErrorByName('delete_patron_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl]));
     }
 
-    $materialUrl = $form_state->getValue('material_overdue_url');
+    $materialUrl = $form_state->getValue('always_available_ereolen');
     if (!filter_var($materialUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('material_overdue_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl]));
+      $form_state->setErrorByName('always_available_ereolen', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl]));
     }
 
-    $pageSizeMobile = $form_state->getValue('pincode_length');
-    if (!is_int($pageSizeMobile) && $pageSizeMobile <= 0) {
+    $pincodeLengthMin = $form_state->getValue('pincode_length_min');
+    if (!is_int($pincodeLengthMin) && $pincodeLengthMin <= 0) {
+      $form_state->setErrorByName('pincode_length_min', $this->t('Pincode length has to be a positive integer'));
+    }
+    
+    $pincodeLengthMax = $form_state->getValue('pincode_length_max');
+    if (!is_int($pincodeLengthMax) && $pincodeLengthMax <= 0) {
       $form_state->setErrorByName('pincode_length', $this->t('Pincode length has to be a positive integer'));
     }
+
   }
 
   /**
@@ -94,10 +105,11 @@ class PatronPageSettingsForm extends ConfigFormBase {
     parent::submitForm($form, $form_state);
 
     $this->config('patron_page.settings')
-      ->set('fees_page_url', $form_state->getValue('fees_page_url'))
-      ->set('material_overdue_url', $form_state->getValue('material_overdue_url'))
+      ->set('delete_patron_url', $form_state->getValue('delete_patron_url'))
+      ->set('always_available_ereolen', $form_state->getValue('always_available_ereolen'))
       ->set('text_notifications_enabled', $form_state->getValue('text_notifications_enabled'))
-      ->set('pincode_length', $form_state->getValue('pincode_length'))
+      ->set('pincode_length_min', $form_state->getValue('pincode_length_min'))
+      ->set('pincode_length_max', $form_state->getValue('pincode_length_max'))
       ->save();
   }
 

@@ -77,8 +77,9 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $reservation_list_settings = $this->configFactory->get('reservation_list.settings');
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
+    $general_config =  $this->configFactory->get('dpl_library_agency.general_settings');
 
-    $dateConfig = $reservation_list_settings->get('pause_reservation_start_date_config');
+    $dateConfig = $general_config->get('pause_reservation_start_date_config');
     if (is_null($dateConfig)) {
       $dateConfig = "";
     }
@@ -91,7 +92,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
       // Url.
       'ereolen-my-page-url' => $reservation_list_settings->get('ereolen_my_page_url'),
-      'pause-reservation-info-url' => $reservation_list_settings->get('pause_reservation_info_url'),
+      'pause-reservation-info-url' => $general_config->get('pause_reservation_info_url'),
       'pause-reservation-start-date-config' => $dateConfig,
       // Config.
       "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
