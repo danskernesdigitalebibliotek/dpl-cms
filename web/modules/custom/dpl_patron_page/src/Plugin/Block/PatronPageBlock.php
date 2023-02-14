@@ -109,12 +109,12 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
   /**
    * Checks whether the library has enable text messages.
    *
-   * @return bool
+   * @return string
    *  true on enabled, false on disabled
    */
-  public function textNotificationsEnabled(): bool {
+  public function textNotificationsEnabled(): string {
     $patron_page_settings = $this->configFactory->get('patron_page.settings');
-    return ($patron_page_settings->get('text_notifications_enabled')) ? false : true;
+    return empty($patron_page_settings->get('text_notifications_enabled')) ? 'false' : 'true';
   }
 
 
@@ -162,10 +162,10 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'patron-page-header-text' => $this->t('Patron profile page'),
       'patron-page-basic-details-header-text' => $this->t('BASIC DETAILS'),
       'patron-page-basic-details-name-label-text' => $this->t('Name'),
-      'patron-page-text-fee-text' => $this->t('patron-page-text-fee-text') || "",
+      'patron-page-text-fee-text' => $this->t('patron page text fee text'),
       'patron-page-basic-details-address-label-text' => $this->t('Address'),
       'patron-page-contact-info-header-text' => $this->t('CONTACT INFORMATION'),
-      'patron-page-contact-info-body-text' => $this->t('patron-page-contact-info-body-text') || "",
+      'patron-page-contact-info-body-text' => $this->t('patron page contact info body text'),
       'patron-page-contact-phone-label-text' => $this->t('Phone number'),
       'patron-page-contact-phone-checkbox-text' => $this->t('Receive text messages about your loans, reservations, and so forth'),
       'patron-page-contact-email-label-text' => $this->t('E-mail'),
@@ -177,12 +177,12 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'patron-page-status-section-loans-ebooks-text' => $this->t('E-books'),
       'patron-page-status-section-loans-audio-books-text' => $this->t('Audiobooks'),
       'patron-page-change-pickup-header-text' => $this->t('RESERVATIONS'),
-      'patron-page-change-pickup-body-text' => $this->t('patron-page-change-pickup-body-text') || "",
+      'patron-page-change-pickup-body-text' => $this->t('patron page change pickup body text'),
       'pickup-branches-dropdown-label-text' => $this->t('Choose pickup branch'),
       'pickup-branches-dropdown-nothing-selected-text' => $this->t('Nothing selected'),
       'patron-page-pause-reservations-header-text' => $this->t('Pause physical reservations'),
-      'patron-page-pause-reservations-body-text' => $this->t('patron-page-pause-reservations-body-text') || "",
-      'patron-page-open-pause-reservations-section-text' => $this->t('Open pause reservation section'),
+      'patron-page-pause-reservations-body-text' => $this->t('patron page pause reservations body text'),
+      'patron-page-open-pause-reservations-section-text' => $this->t('Pause your reservations'),
       'patron-page-open-pause-reservations-section-aria-text' => $this->t('This checkbox opens a section where you can put your current reservations on a pause, when the time period picked has ended, the reservations will be resumed'),
       'date-inputs-start-date-label-text' => $this->t('From'),
       'date-inputs-end-date-label-text' => $this->t('To'),
