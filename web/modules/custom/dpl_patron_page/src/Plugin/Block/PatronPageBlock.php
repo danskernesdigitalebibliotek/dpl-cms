@@ -190,6 +190,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'patron-page-change-pincode-body-text' => $this->t('Change current pin by entering a new pin and saving'),
       'patron-page-pincode-label-text' => $this->t('New pin'),
       'patron-page-confirm-pincode-label-text' => $this->t('Confirm new pin'),
+      'patron-pin-saved-success-text' => $this->t('Your pincode was saved'),
       'patron-page-pincode-too-short-validation-text' => $this->t('The pincode should be minimum @pincodeLengthMin and maximum @pincodeLengthMax characters long'),
       'patron-page-pincodes-not-the-same-text' => $this->t('The pincodes are not the same'),
       'patron-page-save-button-text' => $this->t('Save'),
