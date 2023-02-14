@@ -126,7 +126,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     if (is_null($dateConfig)) {
       $dateConfig = "";
     }
-    
+
     $data = [
       'text-notifications-enabled-config' => $patron_page_settings->get('text_notifications_enabled'),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
