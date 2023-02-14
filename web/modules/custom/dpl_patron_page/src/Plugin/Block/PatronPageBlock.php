@@ -119,7 +119,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
 
-    $build = ['patron-page' => dpl_react_render('patron-page', [
+    $data = [
         'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
         'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
         'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
@@ -165,9 +165,15 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         'patron-page-status-section-out-of-text' => $this->t('@this out of @that'),
         'patron-page-status-section-out-of-aria-label-audio-books-text' => $this->t('You used @this audiobooks out of you quota of @that audiobooks'),
         'patron-page-status-section-out-of-aria-label-ebooks-text' => $this->t('You used @this ebooks out of you quota of @that ebooks'),
-      ] + DplReactAppsController::externalApiBaseUrls()),
+      ] + DplReactAppsController::externalApiBaseUrls();
+
+    $app = [
+      '#theme' => 'dpl_react_app',
+      "#name" => 'patron-page',
+      '#data' => $data,
     ];
-    return $build;
+
+    return $app;
   }
 
 }
