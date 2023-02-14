@@ -17,7 +17,7 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc19",
+                "version": "0.3.0-rc20",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fpatron-page-shine-up/dist.zip",
