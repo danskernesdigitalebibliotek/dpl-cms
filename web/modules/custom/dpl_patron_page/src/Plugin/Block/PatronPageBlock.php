@@ -107,6 +107,19 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
 
 
   /**
+   * Checks whether the library has enable text messages.
+   *
+   * @return bool
+   *  true on enabled, false on disabled
+   */
+  public function textNotificationsEnabled(): bool {
+    $patron_page_settings = $this->configFactory->get('patron_page.settings');
+    return ($patron_page_settings->get('text_notifications_enabled')) ? false : true;
+  }
+
+
+
+  /**
    * {@inheritDoc}
    *
    * @return mixed[]
@@ -119,7 +132,6 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
     $patron_page_settings = $this->configFactory->get('patron_page.settings');
-    $patron_page_settings = $this->configFactory->get('patron_page.settings');
     $general_config =  $this->configFactory->get('dpl_library_agency.general_settings');
     
     $dateConfig = $general_config->get('pause_reservation_start_date_config');
@@ -128,7 +140,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     }
 
     $data = [
-      'text-notifications-enabled-config' => $patron_page_settings->get('text_notifications_enabled'),
+      'text-notifications-enabled-config' => $this->textNotificationsEnabled(),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
       'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
