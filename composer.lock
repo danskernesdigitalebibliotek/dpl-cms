@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e53fa4c42d4928314203f35197bf1d1f",
+    "content-hash": "aff15bb6b64d8e6ff36c99f607a894e7",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,7 +1086,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc12",
+            "version": "0.3.0-rc17",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fpatron-page-shine-up/dist.zip"
