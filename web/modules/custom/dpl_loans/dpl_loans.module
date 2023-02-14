@@ -2,8 +2,7 @@
 
 /**
  * @file
- * Dpl_react_demo drupal module file.
+ * Dpl_loans drupal module file.
  *
- * Demonstrates how to use the dpl_react module
- * and render components.
+ * Renders the loan list.
  */
