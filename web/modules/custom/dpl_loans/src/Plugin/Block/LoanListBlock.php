@@ -56,33 +56,43 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
   }
 
   /**
+   * Gets threshold config
+   *
+   * @return string
+   */
+  public function getThresholdConfig(): string {
+    $generalSettings = $this->configFactory->get('dpl_library_agency.general_settings');
+    return $generalSettings->get('threshold_config');
+  }
+
+  /**
    * {@inheritDoc}
    *
    * @return mixed[]
    *   The app render array.
    */
   public function build() {
-    $loan_list_settings = $this->configFactory->get('loan_list.settings');
+    $loanListSettings = $this->configFactory->get('loan_list.settings');
     $context = ['context' => 'Loan list'];
     $contextAria = ['context' => 'Loan list (Aria)'];
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
     $data = [
       // Page sige.
-      "page-size-desktop" => $loan_list_settings->get('page_size_desktop'),
-      "page-size-mobile" => $loan_list_settings->get('page_size_mobile'),
+      "page-size-desktop" => $loanListSettings->get('page_size_desktop'),
+      "page-size-mobile" => $loanListSettings->get('page_size_mobile'),
       // Config.
-      "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
+      "threshold-config" => $this->getThresholdConfig(),
       // Urls.
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
-      'fees-page-url' => $loan_list_settings->get('fees_page_url'),
-      'material-overdue-url' => $loan_list_settings->get('material_overdue_url'),
+      'fees-page-url' => $loanListSettings->get('fees_page_url'),
+      'material-overdue-url' => $loanListSettings->get('material_overdue_url'),
       'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
       // Texts.
       'group-modal-due-date-link-to-page-with-fees-text' => $this->t("Read more about fees", [], $context),
       'group-modal-due-date-renew-loan-close-modal-aria-label-text' => $this->t("Close renew loans modal", [], $contextAria),
-      'group-modal-due-date-aria-description-text' => $this->t("This modal groups loans after due date and makes it possible to renew said loans", [], $context),
+      'group-modal-due-date-aria-description-text' => $this->t("This modal groups loans after due date and makes it possible to renew said loans", [], $contextAria),
       'group-modal-checkbox-text' => $this->t("Choose all renewable", [], $context),
       'group-modal-due-date-header-text' => $this->t("Due date @date", [], $context),
       'group-modal-due-date-warning-loan-overdue-text' => $this->t("The due date of return is exceeded, therefore you will be charged a fee, when the item is returned", [], $context),
@@ -140,7 +150,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'group-modal-header-text' => $this->t("Renew several", [], $context),
       'result-pager-status-text' => $this->t("Showing @itemsShown out of @hitcount loans", [], $context),
       'show-more-text' => $this->t("show more", [], $context),
-      'group-modal-go-to-material-aria-label-text' => $this->t("Go to @label material details", [], $context),
+      'group-modal-go-to-material-aria-label-text' => $this->t("Go to @label material details", [], $contextAria),
     ] + DplReactAppsController::externalApiBaseUrls();
 
     $app = [
