@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Provides user intermediate list.
  *
- * @block(
+ * @Block(
  *   id = "dpl_fees_block",
  *   admin_label = "List user fees"
  * )
@@ -39,7 +39,6 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, ConfigFactoryInterface $configFactory)
   {
-    var_dump("dfsdfsdf$");
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
     $this->configFactory = $configFactory;
@@ -50,7 +49,6 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition)
   {
-    var_dump("dfsdfsdf");
     return new static(
       $configuration,
       $plugin_id,
@@ -67,14 +65,12 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public function build()
   {
-    var_dump("hallo! :D");
 
     $context = ['context' => 'Fees list'];
     $contextAria = ['context' => 'Fees list (Aria)'];
 
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
-    var_dump("hallo! :D");
     $data = [
         // Config.
         "fbs-base-url" => $fbsConfig->get('base_url'),
@@ -117,20 +113,18 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
         'plus-x-other-materials-text' => $this->t("+ @amount other materials", [], $context),
         'item-fee-amount-text' => $this->t("Fee @fee,-", [], $context),
         'fee-created-text' => $this->t("Fees charged @date", [], $context),
-
         'available-payment-types-url' => $this->t("https://unsplash.com/photos/JDzoTGfoogA", [], $context),
         'payment-overview-url' => $this->t("https://unsplash.com/photos/yjI3ozta2Zk", [], $context),
         'view-fees-and-compensation-rates-url' => $this->t("https://unsplash.com/photos/NEJcmvLFcws", [], $context),
         'terms-of-trade-url' => $this->t("https://unsplash.com/photos/JDzoTGfoogA", [], $context),
         ] + DplReactAppsController::externalApiBaseUrls();
 
-    var_dump("hallo2 :) ");
     $app = [
       '#theme' => 'dpl_react_app',
       "#name" => 'intermediate-list',
       '#data' => $data,
     ];
-    var_dump("halp");
+
     return $app;
   }
 }
