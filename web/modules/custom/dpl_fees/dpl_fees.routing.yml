@@ -1,0 +1,6 @@
+dpl_fees.list:
+  path: "/user/me/fees"
+  defaults:
+    _controller: '\Drupal\dpl_fees\Controller\DplFeesController::list'
+  requirements:
+    _permission: "access content"

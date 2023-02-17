@@ -1,0 +1,6 @@
+dpl_fees.list:
+  title: "Fees"
+  menu_name: user-profile-menu
+  route_name: dpl_fees.list
+  description: "List user fees"
+
