@@ -53,10 +53,10 @@ class DplFeesController extends ControllerBase {
 
     // You can hard code configuration, or you load from settings.
     $config = [];
-
+    var_dump("test nr 49");
     /** @var \Drupal\dpl_fees\Plugin\Block\IntermediateListBlock $plugin_block */
     $plugin_block = $this->blockManager->createInstance('dpl_fees_block', $config);
-
+    var_dump($plugin_block);
     // Some blocks might implement access check.
     $access_result = $plugin_block->access($this->currentUser());
 
@@ -66,7 +66,7 @@ class DplFeesController extends ControllerBase {
       // You might need to add some cache tags/contexts.
       return [];
     }
-
+    var_dump("test  nummer hehe");
     // Add the cache tags/contexts.
     $render = $plugin_block->build();
     $this->renderer->addCacheableDependency($render, $plugin_block);
