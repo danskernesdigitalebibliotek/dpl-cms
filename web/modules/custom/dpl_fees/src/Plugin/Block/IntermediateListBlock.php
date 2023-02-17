@@ -65,6 +65,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public function build()
   {
+    var_dump("hallo! :D");
 
     $context = ['context' => 'Fees list'];
     $contextAria = ['context' => 'Fees list (Aria)'];
