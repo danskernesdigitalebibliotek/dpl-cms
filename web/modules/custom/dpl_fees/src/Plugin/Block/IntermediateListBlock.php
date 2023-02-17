@@ -121,7 +121,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
         'terms-of-trade-url' => $this->t("https://unsplash.com/photos/JDzoTGfoogA", [], $context),
         ] + DplReactAppsController::externalApiBaseUrls();
 
-    var_dump("hallo2 D:");
+    var_dump("hallo2 :) ");
     $app = [
       '#theme' => 'dpl_react_app',
       "#name" => 'intermediate-list',
