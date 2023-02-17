@@ -73,8 +73,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
 
-    $build = [
-      'intermediate-list' => dpl_react_render('intermediate-list', [
+    $data = [
         // Config.
         "fbs-base-url" => $fbsConfig->get('base_url'),
         "publizon-base-url" => $publizonConfig->get('base_url'),
@@ -121,8 +120,13 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
         'payment-overview-url' => $this->t("https://unsplash.com/photos/yjI3ozta2Zk", [], $context),
         'view-fees-and-compensation-rates-url' => $this->t("https://unsplash.com/photos/NEJcmvLFcws", [], $context),
         'terms-of-trade-url' => $this->t("https://unsplash.com/photos/JDzoTGfoogA", [], $context),
-      ]  + DplReactAppsController::externalApiBaseUrls()),
+        ] + DplReactAppsController::externalApiBaseUrls();
+    $app = [
+      '#theme' => 'dpl_fees',
+      "#name" => 'intermediate-list',
+      '#data' => $data,
     ];
-    return $build;
+
+    return $app;
   }
 }
