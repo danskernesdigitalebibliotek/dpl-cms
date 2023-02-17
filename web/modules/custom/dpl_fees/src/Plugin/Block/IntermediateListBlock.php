@@ -39,6 +39,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, ConfigFactoryInterface $configFactory)
   {
+    var_dump("dfsdfsdf$");
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
     $this->configFactory = $configFactory;
@@ -49,6 +50,7 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition)
   {
+    var_dump("dfsdfsdf");
     return new static(
       $configuration,
       $plugin_id,
