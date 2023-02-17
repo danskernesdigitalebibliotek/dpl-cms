@@ -56,7 +56,7 @@ class DplFeesController extends ControllerBase {
     var_dump("test nr 49");
     /** @var \Drupal\dpl_fees\Plugin\Block\IntermediateListBlock $plugin_block */
     $plugin_block = $this->blockManager->createInstance('dpl_fees_block', $config);
-    var_dump($plugin_block);
+
     // Some blocks might implement access check.
     $access_result = $plugin_block->access($this->currentUser());
 
