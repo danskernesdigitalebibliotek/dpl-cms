@@ -18,7 +18,6 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginInterface
 {
-
   /**
    * Drupal config factory.
    *
