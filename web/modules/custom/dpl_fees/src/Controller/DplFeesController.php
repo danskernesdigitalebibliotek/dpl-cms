@@ -69,6 +69,7 @@ class DplFeesController extends ControllerBase {
     var_dump("test  nummer hehe");
     // Add the cache tags/contexts.
     $render = $plugin_block->build();
+    var_dump($render);
     $this->renderer->addCacheableDependency($render, $plugin_block);
 
     return $render;
