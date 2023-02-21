@@ -86,6 +86,7 @@ class MenuBlock extends BlockBase implements ContainerFactoryPluginInterface
         // 'material-overdue-url" => "https://unsplash.com/photos/wd6YQy0PJt8",
         "search-url" => DplReactAppsController::searchResultUrl(),
         "dpl-cms-base-url" => DplReactAppsController::dplCmsBaseUrl(),
+
         // Texts.
         "menu-view-your-profile-text" => $this->t("My Account", [], $context),
         "menu-view-your-profile-text-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
