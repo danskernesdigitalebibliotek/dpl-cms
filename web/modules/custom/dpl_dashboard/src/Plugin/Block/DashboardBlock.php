@@ -16,8 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   admin_label = "List user dashboard"
  * )
  */
-class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterface
-{
+class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterface {
   /**
    * Drupal config factory.
    *
