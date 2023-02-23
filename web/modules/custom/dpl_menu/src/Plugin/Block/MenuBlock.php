@@ -72,37 +72,37 @@ class MenuBlock extends BlockBase implements ContainerFactoryPluginInterface
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
 
     $data = [
-        // Config.
-        "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
-        // "menu-navigation-data-config" => $this->configFactory->get('dpl_menu.settings')->get('menu_navigation_data_config'),
-        "menu-navigation-data-config" => '[{"name": "Loans","link": "","dataId": "1"},{"name": "Reservations","link": "","dataId": "2"},{"name": "My list","link": "","dataId": "3"},{"name": "Fees & Replacement costs","link": "","dataId": "4"},{"name": "My account","link": "","dataId": "5"}]',
-        "fbs-base-url" => $fbsConfig->get('base_url'),
-        "publizon-base-url" => $publizonConfig->get('base_url'),
-        "page-size-desktop" => "25",
-        "page-size-mobile" => "25",
-        // Urls.
-        // @todo update placeholder URL's
-        // 'menu-page-url" => "https://unsplash.com/photos/wd6YQy0PJt8",
-        // 'material-overdue-url" => "https://unsplash.com/photos/wd6YQy0PJt8",
-        "search-url" => DplReactAppsController::searchResultUrl(),
-        "dpl-cms-base-url" => DplReactAppsController::dplCmsBaseUrl(),
+      // Config.
+      "threshold-config" => $this->configFactory->get('dpl_library_agency.general_settings')->get('threshold_config'),
+      // "menu-navigation-data-config" => $this->configFactory->get('dpl_menu.settings')->get('menu_navigation_data_config'),
+      "menu-navigation-data-config" => '[{"name": "Loans","link": "","dataId": "1"},{"name": "Reservations","link": "","dataId": "2"},{"name": "My list","link": "","dataId": "3"},{"name": "Fees & Replacement costs","link": "","dataId": "4"},{"name": "My account","link": "","dataId": "5"}]',
+      "fbs-base-url" => $fbsConfig->get('base_url'),
+      "publizon-base-url" => $publizonConfig->get('base_url'),
+      "page-size-desktop" => "25",
+      "page-size-mobile" => "25",
+      // Urls.
+      // @todo update placeholder URL's
+      // 'menu-page-url" => "https://unsplash.com/photos/wd6YQy0PJt8",
+      // 'material-overdue-url" => "https://unsplash.com/photos/wd6YQy0PJt8",
+      "search-url" => DplReactAppsController::searchResultUrl(),
+      "dpl-cms-base-url" => DplReactAppsController::dplCmsBaseUrl(),
 
-        // Texts.
-        "menu-view-your-profile-text" => $this->t("My Account", [], $context),
-        "menu-view-your-profile-text-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-notification-loans-expired-text" => $this->t("loans expired", [], $context),
-        "menu-notification-loans-expired-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-notification-loans-expiring-soon-text" => $this->t("loans expiring soon", [], $context),
-        "menu-notification-loans-expiring-soon-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-notification-ready-for-pickup-text" => $this->t("reservations ready for pickup", [], $context),
-        "menu-notification-ready-for-pickup-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-log-out-text" => $this->t("Log Out", [], $context),
-        "menu-log-out-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-login-text" => $this->t("Log in", [], $context),
-        "menu-login-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        "menu-sign-up-text" => $this->t("Sign up", [], $context),
-        "menu-sign-up-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
-        ] + DplReactAppsController::externalApiBaseUrls();
+      // Texts.
+      "menu-view-your-profile-text" => $this->t("My Account", [], $context),
+      "menu-view-your-profile-text-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-notification-loans-expired-text" => $this->t("loans expired", [], $context),
+      "menu-notification-loans-expired-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-notification-loans-expiring-soon-text" => $this->t("loans expiring soon", [], $context),
+      "menu-notification-loans-expiring-soon-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-notification-ready-for-pickup-text" => $this->t("reservations ready for pickup", [], $context),
+      "menu-notification-ready-for-pickup-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-log-out-text" => $this->t("Log Out", [], $context),
+      "menu-log-out-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-login-text" => $this->t("Log in", [], $context),
+      "menu-login-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+      "menu-sign-up-text" => $this->t("Sign up", [], $context),
+      "menu-sign-up-url" => $this->t("https://unsplash.com/photos/tNJdaBc-r5c", [], $context),
+    ] + DplReactAppsController::externalApiBaseUrls();
 
     $app = [
       "#theme" => "dpl_react_app",
@@ -112,3 +112,4 @@ class MenuBlock extends BlockBase implements ContainerFactoryPluginInterface
     return $app;
   }
 }
+

@@ -8,12 +8,14 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Menu setting form.
  */
-class MenuSettingsForm extends ConfigFormBase {
+class MenuSettingsForm extends ConfigFormBase
+{
 
   /**
    * {@inheritdoc}
    */
-  protected function getEditableConfigNames(): array {
+  protected function getEditableConfigNames(): array
+  {
     return [
       'dpl_menu.settings',
     ];
@@ -22,14 +24,16 @@ class MenuSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function getFormId(): string {
+  public function getFormId(): string
+  {
     return 'menu_settings_form';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state): array {
+  public function buildForm(array $form, FormStateInterface $form_state): array
+  {
     $config = $this->config('dpl_menu.settings');
 
     $form['settings'] = [
@@ -53,19 +57,19 @@ class MenuSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state): void {
-
+  public function validateForm(array &$form, FormStateInterface $form_state): void
+  {
   }
 
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state): void {
+  public function submitForm(array &$form, FormStateInterface $form_state): void
+  {
     parent::submitForm($form, $form_state);
 
     $this->config('dpl_menu.settings')
       ->set('menu_navigation_data_config', $form_state->getValue('menu_navigation_data_config'))
       ->save();
   }
-
 }

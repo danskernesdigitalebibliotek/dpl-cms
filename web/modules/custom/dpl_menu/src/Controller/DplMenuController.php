@@ -10,7 +10,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Render intermediate list react app.
  */
-class DplMenuController extends ControllerBase {
+class DplMenuController extends ControllerBase
+{
 
   /**
    * DplMenuController constructor.
@@ -34,7 +35,8 @@ class DplMenuController extends ControllerBase {
    *
    * @return static
    */
-  public static function create(ContainerInterface $container) {
+  public static function create(ContainerInterface $container)
+  {
     return new static(
       $container->get('plugin.manager.block'),
       $container->get('renderer'),
@@ -49,7 +51,8 @@ class DplMenuController extends ControllerBase {
    *
    * @throws \Drupal\Component\Plugin\Exception\PluginException
    */
-  public function list(): array {
+  public function list(): array
+  {
 
     // You can hard code configuration, or you load from settings.
     $config = [];
@@ -72,5 +75,4 @@ class DplMenuController extends ControllerBase {
     $this->renderer->addCacheableDependency($render, $plugin_block);
     return $render;
   }
-
 }
