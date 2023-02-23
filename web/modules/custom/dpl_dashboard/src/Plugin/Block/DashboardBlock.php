@@ -133,7 +133,7 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
       "#name" => "DashBoard",
       "#data" => $data,
     ];
-
+    var_dump($data);
     return $app;
   }
 }
