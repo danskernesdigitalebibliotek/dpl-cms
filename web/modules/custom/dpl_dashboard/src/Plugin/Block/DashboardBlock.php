@@ -67,7 +67,6 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
   {
 
     $context = ['context' => 'dashboard list'];
-    $contextAria = ['context' => 'dashboard list (Aria)'];
 
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
