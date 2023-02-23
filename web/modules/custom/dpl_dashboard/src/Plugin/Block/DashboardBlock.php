@@ -36,8 +36,7 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   Drupal config factory to get FBS and Publizon settings.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, ConfigFactoryInterface $configFactory)
-  {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, ConfigFactoryInterface $configFactory) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
     $this->configFactory = $configFactory;
@@ -46,8 +45,7 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
   /**
    * {@inheritDoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition)
-  {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
       $configuration,
       $plugin_id,
@@ -62,8 +60,7 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
    * @return mixed[]
    *   The app render array.
    */
-  public function build()
-  {
+  public function build() {
 
     $context = ['context' => 'dashboard list'];
     $contextAria = ['context' => 'dashboard list (Aria)'];
@@ -110,10 +107,10 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
         'publizon-ebook-text' => $this->t("E-book", [], $context),
         'publizon-podcast-text' => $this->t("Podcast", [], $context),
         'group-modal-due-date-header-text' => $this->t("Due date @date", [], $context),
-        'group-modal-return-library-text' => $this->t("", [], $context),
+        // 'group-modal-return-library-text' => $this->t("", [], $context),
         'group-modal-checkbox-text' => $this->t("Choose all renewable", [], $context),
         'group-modal-button-text' => $this->t("Renewable (@count)", [], $context),
-        'group-modal-renew-loan-denied-max-renewals-reached-text' => $this->t("The item cannot be renewed further ", [], $context),
+        'group-modal-renew-loan-denied-max-renewals-reached-text' => $this->t("The item cannot be renewed further", [], $context),
         'group-modal-due-date-material-text' => $this->t("To be returned @date", [], $context),
         'group-modal-go-to-material-text' => $this->t("Go to material details", [], $context),
         'result-pager-status-text' => $this->t("Showing @itemsShown out of @hitcount loans", [], $context),
@@ -128,12 +125,13 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
         'warning-icon-alt-text' => $this->t(" warningIconAltText", [], $context)
         ] + DplReactAppsController::externalApiBaseUrls();
 
-    $app = [
-      '#theme' => 'dpl_react_app',
-      "#name" => 'DashBoard',
-      '#data' => $data,
+        $app = [
+      "#theme" => "dpl_react_app",
+      "#name" => "DashBoard",
+      "#data" => $data,
     ];
 
     return $app;
   }
 }
+
