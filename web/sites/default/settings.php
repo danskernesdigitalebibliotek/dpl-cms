@@ -45,3 +45,14 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 if (file_exists(__DIR__ . '/services.local.yml')) {
   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 }
+$databases['default']['default'] = array (
+  'database' => 'db',
+  'username' => 'db',
+  'password' => 'db',
+  'prefix' => '',
+  'host' => 'mariadb',
+  'port' => 3306,
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'mDWwtJn5RkEPTgDM_i-SN0-2Iw1CI0yCCs-YR30Jlfl2Sw3hGjpRUyxa8rQfI40BiypMg7cpKQ';
