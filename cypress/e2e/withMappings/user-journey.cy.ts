@@ -36,22 +36,37 @@ describe("User journey", () => {
       .should("contain", "Reserve bog");
   });
 
-  it("Can open reservation modal & reserve a material", () => {
+  it.only("Can open reservation modal & reserve a material", () => {
     const authorizationCode = "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc";
     const accessToken = "447131b0a03fe0421204c54e5c21a60d70030fd1";
     const userGuid = "19a4ae39-be07-4db9-a8b7-8bbb29f03da6";
     cy.adgangsplatformenLogin(authorizationCode, accessToken, userGuid);
-    cy.visit("/work/work-of:870970-basis:54181744")
-      .getBySel("material-header-author-text")
+
+    cy.visit("/work/work-of:870970-basis:54181744");
+    cy.scrollTo("bottom");
+
+    cy.getBySel("material-header-author-text")
       .scrollIntoView()
-      .getBySel("material-header-buttons-physical")
-      .click()
-      .getBySel("modal")
+      .should("be.visible");
+
+    cy.getBySel("material-header-buttons-physical")
+      .scrollIntoView()
       .should("be.visible")
-      .and("contain", "Harry Potter og Fønixordenen")
-      .getBySel("reservation-modal-submit-button")
-      .click()
-      .getBySel("reservation-success-title-text")
+      .contains("Reserve bog")
+      .click();
+
+    cy.getBySel("modal")
+      .scrollIntoView()
+      .should("be.visible")
+      .and("contain", "Harry Potter og Fønixordenen");
+
+    cy.getBySel("reservation-modal-submit-button")
+      .scrollIntoView()
+      .should("be.visible")
+      .contains("Approve reservation")
+      .click();
+
+    cy.getBySel("reservation-success-title-text")
       .should("exist")
       .and("contain", "The material is available and is now reserved for you!");
   });
