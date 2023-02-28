@@ -20,3 +20,5 @@ import "./commands";
 // require('./commands')
 
 import "cypress-plugin-api";
+
+require("cypress-terminal-report/src/installLogsCollector")();
