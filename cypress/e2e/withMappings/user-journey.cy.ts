@@ -64,7 +64,9 @@ describe("User journey", () => {
       .scrollIntoView()
       .should("be.visible")
       .contains("Approve reservation")
-      .click();
+      .wait(1000)
+      .click({ scrollBehavior: "center" })
+      .wait(1000);
 
     cy.getBySel("reservation-success-title-text")
       .should("exist")

@@ -30,21 +30,21 @@ jobs:
     name: Check code style
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup PHP, with composer and extensions
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: ${{ env.PHP_VERSION }}
-        tools: composer:${{ env.COMPOSER_VERSION }}
-        coverage: none
-        extensions: gd
-    - name: Install Dependencies
-      run: |
-        composer install --no-interaction --no-progress
-    - name: Run phpcs
-      uses: reload/action-phpcs@main
-      with:
-        reviewdog_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          tools: composer:${{ env.COMPOSER_VERSION }}
+          coverage: none
+          extensions: gd
+      - name: Install Dependencies
+        run: |
+          composer install --no-interaction --no-progress
+      - name: Run phpcs
+        uses: reload/action-phpcs@main
+        with:
+          reviewdog_token: ${{ secrets.GITHUB_TOKEN }}
 
   Phpstan:
     name: Analyse code using PHPStan
@@ -147,13 +147,14 @@ jobs:
         run: task ci:reset
       - name: Run Cypress
         run: task ci:cypress
-      - name: Archive vidoes
+      - name: Archive videoes
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-videos
           path: cypress/videos
       - name: Archive screenshots
-        if: ${{ failure() }}
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-screenshots
@@ -171,7 +172,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          cache: 'yarn'
+          cache: "yarn"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Install problem matcher
@@ -191,7 +192,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          cache: 'yarn'
+          cache: "yarn"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Run ESLint
@@ -209,7 +210,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          cache: 'yarn'
+          cache: "yarn"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Run ESLint
