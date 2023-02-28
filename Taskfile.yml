@@ -1,7 +1,7 @@
 # This is a go-task file for various developer tasks
 # e.g. building docker images and setting up local development.
 # You can read about the Task files here: https://taskfile.dev.
-version: '3'
+version: "3"
 
 dotenv: [".task.env"]
 
@@ -17,21 +17,21 @@ vars:
   # The version number we want to tag the source build with.
   # It can be specified by adding RELEASE_TAG=XX when running command.
   # Otherwise it will default to the COMMIT_COUNT variable.
-  RELEASE_IMAGE_TAG: '{{.RELEASE_IMAGE_TAG | default .COMMIT_COUNT }}'
+  RELEASE_IMAGE_TAG: "{{.RELEASE_IMAGE_TAG | default .COMMIT_COUNT }}"
   # Constructing docker image name.
   DOCKER_IMAGE_PREFIX: "{{ .RELEASE_IMAGE_REGISTRY }}/{{ .DOCKER_IMAGE_NAMESPACE }}"
   # Constructing docker image name.
   RELEASE_IMAGE_NAME: '{{.RELEASE_IMAGE_NAME | default "dpl-cms-source"}}'
-  RELEASE_FULL_NAME: '{{.RELEASE_IMAGE_REGISTRY}}/{{.RELEASE_IMAGE_NAME}}:{{.RELEASE_IMAGE_TAG}}'
+  RELEASE_FULL_NAME: "{{.RELEASE_IMAGE_REGISTRY}}/{{.RELEASE_IMAGE_NAME}}:{{.RELEASE_IMAGE_TAG}}"
   # Where is the docker file(s) we use for our builds residing?
   LAGOON_DIR: "lagoon"
-  DOCKER_COMPOSE_FILES_DEFAULT: '-f docker-compose.yml'
-  DOCKER_COMPOSE_FILES: '{{.DOCKER_COMPOSE_FILES | default .DOCKER_COMPOSE_FILES_DEFAULT }}'
-  DOCKER_COMPOSE_FILES_CI: '{{.DOCKER_COMPOSE_FILES}} -f docker-compose.ci.yml'
+  DOCKER_COMPOSE_FILES_DEFAULT: "-f docker-compose.yml"
+  DOCKER_COMPOSE_FILES: "{{.DOCKER_COMPOSE_FILES | default .DOCKER_COMPOSE_FILES_DEFAULT }}"
+  DOCKER_COMPOSE_FILES_CI: "{{.DOCKER_COMPOSE_FILES}} -f docker-compose.ci.yml"
   # Sql dump files directory
-  DIR_RESTORE_DATABASE: 'restore/database'
+  DIR_RESTORE_DATABASE: "restore/database"
   # Directory with lagoon backup files.
-  DIR_RESTORE_FILES: 'restore/files'
+  DIR_RESTORE_FILES: "restore/files"
 
   # Ports and host names:
   # Using ports exposed on localhost is important.
@@ -41,15 +41,15 @@ vars:
   # Cypress.
   CYPRESS_BASE_PORT:
     sh: docker compose port varnish 8080 | cut -d ":" -f2
-  CYPRESS_HOST_LOCAL: 'http://localhost:{{ .CYPRESS_BASE_PORT }}'
+  CYPRESS_HOST_LOCAL: "http://localhost:{{ .CYPRESS_BASE_PORT }}"
   # Wiremock.
   WIREMOCK_HTTP_PORT:
     sh: docker compose port wiremock 80 | cut -d ":" -f2
   WIREMOCK_HTTPS_PORT:
     sh: docker compose port wiremock 443 | cut -d ":" -f2
   WIREMOCK_HOST_DOCKER: http://wiremock
-  WIREMOCK_HOST_LOCAL: 'http://localhost:{{ .WIREMOCK_HTTP_PORT }}'
-  WIREMOCK_HOST_LOCAL_HTTPS: 'https://localhost:{{ .WIREMOCK_HTTPS_PORT }}'
+  WIREMOCK_HOST_LOCAL: "http://localhost:{{ .WIREMOCK_HTTP_PORT }}"
+  WIREMOCK_HOST_LOCAL_HTTPS: "https://localhost:{{ .WIREMOCK_HTTPS_PORT }}"
 
 tasks:
   ghcr:login:
@@ -135,11 +135,11 @@ tasks:
       SQL_FILE:
         sh: ls -t "{{ .DIR_RESTORE_DATABASE }}"/*.sql
       DIR_RESTORE_DATABASE_CONTENT:
-       sh: ls {{ .DIR_RESTORE_DATABASE }}
-      MYSQL_CONTAINER: 'mariadb'
+        sh: ls {{ .DIR_RESTORE_DATABASE }}
+      MYSQL_CONTAINER: "mariadb"
 
   dev:restore:files:
-    desc: 'Restore files by overwriting existing with the ones from the Lagoon backup package'
+    desc: "Restore files by overwriting existing with the ones from the Lagoon backup package"
     cmds:
       - docker-compose exec cli sh dev-scripts/cli-restore-lagoon-files.sh {{ .DIR_RESTORE_FILES }}
       - task dev:cache:clear:all
@@ -165,8 +165,8 @@ tasks:
     cmds:
       - cmd: task dev:cli -- dev-scripts/dpl-react/bin/console construct-assets-url {{ .BRANCH }}
     preconditions:
-    - sh: "[ ! -z {{.BRANCH}} ]"
-      msg: "Env variable BRANCH is not set or empty."
+      - sh: "[ ! -z {{.BRANCH}} ]"
+        msg: "Env variable BRANCH is not set or empty."
 
   dev:dpl-react:overwrite:
     desc: Downloads assets from Github and overwrites existing dpl-react library
@@ -202,7 +202,7 @@ tasks:
       # We make sure to run the tests that require mappings first.
       - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/withMappings/*.ts"
       # All tests that delete mappings and make their own run afterwards.
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/*.ts"
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/*.ts" --config trashAssetsBeforeRuns=false
     env:
       CYPRESS_DRUPAL_USERNAME: admin
       CYPRESS_DRUPAL_PASSWORD: admin
@@ -216,7 +216,7 @@ tasks:
       - http_proxy={{ .WIREMOCK_HOST_LOCAL }} https_proxy={{ .WIREMOCK_HOST_LOCAL_HTTPS }} npx cypress open
     env:
       CYPRESS_BASE_URL: http://localhost:{{ .CYPRESS_BASE_PORT }}
-      CYPRESS_WIREMOCK_URL: '{{ .WIREMOCK_HOST_LOCAL }}'
+      CYPRESS_WIREMOCK_URL: "{{ .WIREMOCK_HOST_LOCAL }}"
       CYPRESS_DRUPAL_USERNAME: admin
       CYPRESS_DRUPAL_PASSWORD: admin
       # Enable this to help with debugging with network and proxy requests.
@@ -236,7 +236,7 @@ tasks:
       - echo '⚠️  Please make sure that Chrome is installed in your OS.'
       - yarn wiremock:browser
     env:
-      HTTP_PROXY: '{{ .WIREMOCK_HOST_LOCAL }}'
+      HTTP_PROXY: "{{ .WIREMOCK_HOST_LOCAL }}"
 
   ci:wiremock:create-mappings:
     cmds:
