@@ -43,7 +43,7 @@ describe("User journey", () => {
     cy.adgangsplatformenLogin(authorizationCode, accessToken, userGuid);
 
     cy.visit("/work/work-of:870970-basis:54181744");
-    cy.scrollTo("bottom");
+    // cy.scrollTo("bottom");
 
     cy.getBySel("material-header-author-text")
       .scrollIntoView()
@@ -64,9 +64,7 @@ describe("User journey", () => {
       .scrollIntoView()
       .should("be.visible")
       .contains("Approve reservation")
-      .wait(1000)
-      .click({ scrollBehavior: "center" })
-      .wait(1000);
+      .click();
 
     cy.getBySel("reservation-success-title-text")
       .should("exist")

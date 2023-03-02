@@ -1517,121 +1517,54 @@
       "subjects": {
         "all": [
           {
-            "display": "eventyrlige fortællinger"
+            "display": "kærlighed"
           },
           {
-            "display": "troldmænd"
+            "display": "adoption"
           },
           {
-            "display": "magi"
+            "display": "familien"
           },
           {
-            "display": "Harry Potter"
+            "display": "slægtsromaner"
           },
           {
-            "display": "Ron Weasley"
+            "display": "kærleiki"
           },
           {
-            "display": "Hermione Granger"
+            "display": "ættleiðing"
           },
           {
-            "display": "Fantasy"
+            "display": "familjan"
           },
           {
-            "display": "Seriebog"
+            "display": "ættarsøgur"
+          }
+        ],
+        "dbcVerified": [
+          {
+            "display": "kærlighed"
           },
           {
-            "display": "for børn"
+            "display": "adoption"
           },
           {
-            "display": "romaner"
+            "display": "familien"
           },
           {
-            "display": "Anbefales: 6. klasse"
+            "display": "slægtsromaner"
           },
           {
-            "display": "Fantasi"
+            "display": "kærleiki"
           },
           {
-            "display": "fantasy"
+            "display": "ættleiðing"
           },
           {
-            "display": "gandakallar"
+            "display": "familjan"
           },
           {
-            "display": "gandur"
-          },
-          {
-            "display": "Børnebøger"
-          },
-          {
-            "display": "Magi"
-          },
-          {
-            "display": "MP3"
-          },
-          {
-            "display": "4.- 7.kl"
-          },
-          {
-            "display": "Del af serie"
-          },
-          {
-            "display": "Trolde"
-          },
-          {
-            "display": "Hekse"
-          },
-          {
-            "display": "Fantasia"
-          },
-          {
-            "display": "Fantastiske fortællinger"
-          },
-          {
-            "display": "Spændende bøger"
-          },
-          {
-            "display": "Fantacy"
-          },
-          {
-            "display": "Fantastiske fortæll"
-          },
-          {
-            "display": "Frilæs/5.-7. kl"
-          },
-          {
-            "display": "Frilæs/6.-10. kl"
-          },
-          {
-            "display": "Eventyrlige fortællinger"
-          },
-          {
-            "display": "Troldmænd"
-          },
-          {
-            "display": "for 12 år"
-          },
-          {
-            "display": "for 13 år"
-          },
-          {
-            "display": "for 14 år"
-          },
-          {
-            "display": "for 15 år"
-          },
-          {
-            "display": "for 16 år"
-          },
-          {
-            "display": "kostskoler"
-          },
-          {
-            "display": "fant"
-          },
-          {
-            "display": "bø"
+            "display": "ættarsøgur"
           }
         ]
       },
