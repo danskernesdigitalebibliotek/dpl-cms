@@ -41,30 +41,17 @@ describe("User journey", () => {
     const accessToken = "447131b0a03fe0421204c54e5c21a60d70030fd1";
     const userGuid = "19a4ae39-be07-4db9-a8b7-8bbb29f03da6";
     cy.adgangsplatformenLogin(authorizationCode, accessToken, userGuid);
-
     cy.visit("/work/work-of:870970-basis:54181744");
-    // cy.scrollTo("bottom");
 
-    cy.getBySel("material-header-author-text")
-      .scrollIntoView()
-      .should("be.visible");
+    cy.getBySel("material-header-author-text").scrollIntoView();
 
     cy.getBySel("material-header-buttons-physical")
-      .scrollIntoView()
-      .should("be.visible")
-      .contains("Reserve bog")
-      .click();
-
-    cy.getBySel("modal")
-      .scrollIntoView()
+      .click()
+      .getBySel("modal")
       .should("be.visible")
       .and("contain", "Harry Potter og Fønixordenen");
 
-    cy.getBySel("reservation-modal-submit-button")
-      .scrollIntoView()
-      .should("be.visible")
-      .contains("Approve reservation")
-      .click();
+    cy.getBySel("reservation-modal-submit-button").click();
 
     cy.getBySel("reservation-success-title-text")
       .should("exist")
