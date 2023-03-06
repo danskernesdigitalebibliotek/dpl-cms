@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85bbe7f80f97f0705f9cea18dc3aade0",
+    "content-hash": "1da464b30487a4321afeacd45a4cbedf",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc28",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Fdashboard-array-length-prints/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
