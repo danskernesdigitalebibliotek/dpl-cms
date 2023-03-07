@@ -122,6 +122,7 @@
             "web/themes/custom/novel/assets/{$name}": ["danskernesdigitalebibliotek/dpl-design-system"],
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/varnish_purger": ["drupal/varnish_purge"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
