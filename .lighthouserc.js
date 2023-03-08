@@ -7,8 +7,9 @@ module.exports = {
         "http://varnish:8080/search?q=harry+potter&x=0&y=0",
         "http://varnish:8080/work/work-of:870970-basis:25245784?type=bog"
       ],
-      // Use 3 runs to test both cold and warm caches.
-      numberOfRuns: 3,
+      // Use 5 runs to reduce problems regarding variance in the results.
+      // https://github.com/GoogleChrome/lighthouse/blob/main/docs/variability.md
+      numberOfRuns: 5,
       settings: {
         chromeFlags: "--no-sandbox",
         // Lighthouse best practices require HTTPS but we do not this available
