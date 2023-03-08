@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1da464b30487a4321afeacd45a4cbedf",
+    "content-hash": "06d93f4a929cf8a8f580cd170bae2b5b",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc28",
+            "version": "0.3.0-rc29",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Fdashboard-array-length-prints/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Fremoving-zeros-from-menu/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
