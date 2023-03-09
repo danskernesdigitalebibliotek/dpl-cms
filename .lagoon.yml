@@ -60,5 +60,5 @@ environments:
     cronjobs:
     - name: Locale export
       schedule: "*/2 * * * *"
-      command: drush locale:export da > sites/default/translations/dpl_cms.da.po
+      command: drush locale:export da > /app/web/sites/default/files/translations/dpl_cms.da.po
       service: cli
