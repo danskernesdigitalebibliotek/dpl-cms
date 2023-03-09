@@ -56,7 +56,7 @@ environments:
       schedule: "M/15 * * * *"
       command: drush cron
       service: cli
-  translation-server:
+  dpl-cms-pr-270:
     cronjobs:
     - name: Locale export
       schedule: "*/2 * * * *"
