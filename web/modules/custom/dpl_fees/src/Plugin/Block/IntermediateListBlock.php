@@ -124,7 +124,6 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
       "#name" => 'intermediate-list',
       '#data' => $data,
     ];
-
     return $app;
   }
 }
