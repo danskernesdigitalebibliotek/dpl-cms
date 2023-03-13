@@ -77,8 +77,6 @@ class DplFeesSettingsForm extends ConfigFormBase
       '#default_value' => $config->get('intermediate_list_body_text') ??  'Fees and replacement costs are handled through the new system "Mit betalingsoverblik.',
     ];
 
-
-
     return parent::buildForm($form, $form_state);
   }
 
@@ -100,7 +98,7 @@ class DplFeesSettingsForm extends ConfigFormBase
       ->set('fees_and_replacement_costs_url', $form_state->getValue('fees_and_replacement_costs_url'))
       ->set('terms_of_trade_text', $form_state->getValue('terms_of_trade_text'))
       ->set('payment_overview_url', $form_state->getValue('payment_overview_url'))
-      ->set('intermediate_list_body_text', $form_state->getValue('intermediate_list_body_text') ?? ' ')
+      ->set('intermediate_list_body_text', $form_state->getValue('intermediate_list_body_text'))
       ->save();
   }
 }

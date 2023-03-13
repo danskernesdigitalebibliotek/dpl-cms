@@ -8,4 +8,4 @@ dpl_fees.settings_form:
   title: "Intermediate List settings"
   route_name: dpl_fees.settings
   description: "Change Intermediate List Settings"
-  parent: system.admin_config_services
+  parent: dpl_library_agency.settings
