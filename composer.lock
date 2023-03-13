@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9570223e3498869c0733a00036c6c69b",
+    "content-hash": "3344f9f24b3250a3c64081ad7f4081b3",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,7 +1077,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.7.0-rc6",
+            "version": "v1.7.0-rc19",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
@@ -1086,7 +1086,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc14",
+            "version": "0.3.0-rc27",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
@@ -2892,6 +2892,54 @@
             "homepage": "https://www.drupal.org/project/handy_cache_tags",
             "support": {
                 "source": "https://git.drupalcode.org/project/handy_cache_tags"
+            }
+        },
+        {
+            "name": "drupal/inline_all_css",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_all_css.git",
+                "reference": "1.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_all_css-1.0.0-rc3.zip",
+                "reference": "1.0.0-rc3",
+                "shasum": "1b2014699d49609d4ea366701ad7abc42e4650ae"
+            },
+            "require": {
+                "drupal/core": "^9"
+            },
+            "suggest": {
+                "drupal/guzzle_cache": "Provides a Drupal cache backend for Kevinrob/guzzle-cache-middleware."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-rc3",
+                    "datestamp": "1645900154",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Leber",
+                    "homepage": "https://www.drupal.org/user/3509746",
+                    "email": "lukeleber@gmail.com"
+                }
+            ],
+            "description": "Delivers all CSS to the client via an inline style tag.",
+            "homepage": "https://drupal.org/project/inline_all_css",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_all_css"
             }
         },
         {
@@ -13153,9 +13201,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "danskernesdigitalebibliotek/dpl-design-system": 5,
-        "danskernesdigitalebibliotek/dpl-react": 5,
         "drupal/default_content": 15,
+        "drupal/inline_all_css": 5,
         "drupal/libraries": 10,
         "drupal/openapi_rest": 5
     },
