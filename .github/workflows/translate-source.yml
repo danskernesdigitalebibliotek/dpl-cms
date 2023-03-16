@@ -1,0 +1,34 @@
+# This workflow takes care of building and publishing the source code of the Danish Public Libraries CMS.
+name: Translate source
+on:
+  pull_request:
+  push:
+    branches:
+      - translation-gh-action-test
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+    - name: Install go-task
+      uses: arduino/setup-task@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Setup site
+      run: task ci:reset
+    - name: Scan translations
+    # Todo: Do not continue if no new translations were found.
+      run: LANGUAGE=da task source:translations:build
+    - name: Commit translations
+      id: commit_translations
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add --force web/profiles/dpl_cms/translations/da.po
+        (git commit -m 'Updating da.po with translations' && echo '::set-output name=changed::true') || echo '::set-output name=changed::false'
+    - name: Push rebuild dist
+      if: ${{ steps.commit_translations.outputs.changed == 'true' }}
+      run: |
+        git push origin translation-gh-action-test
