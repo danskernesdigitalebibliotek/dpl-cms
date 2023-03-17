@@ -23,4 +23,6 @@ distribution:
 #themes:
 
 "interface translation project": dpl_cms
-"interface translation server pattern": https://raw.githubusercontent.com/reload/dpl-cms-ts-poc/translation-gh-action-test/web/profiles/dpl_cms/translations/da.po
+#"interface translation server pattern": https://raw.githubusercontent.com/reload/dpl-cms-ts-poc/translation-gh-action-test/web/profiles/dpl_cms/translations/da.po
+# Trying a known project translation file:
+"interface translation server pattern": https://ftp.drupal.org/files/translations/8.x/config_filter/config_filter-8.x-2.2.da.po
