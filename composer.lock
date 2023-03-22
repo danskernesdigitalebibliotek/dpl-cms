@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5205872b381434b0004dc06e0fd9ea3",
+    "content-hash": "f162c3a87bb09880d75d85f36f57bb40",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc28",
+            "version": "0.3.0-rc29",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Floan-list-testfeedback/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
