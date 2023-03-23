@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f162c3a87bb09880d75d85f36f57bb40",
+    "content-hash": "f6450304ba332cc3b0b5f096d40137ad",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,10 +1077,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.7.0-rc19",
+            "version": "v1.7.0-rc20",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-design-system/releases/download/release-feature%2Floan-list-testfeedback/dist.zip"
             },
             "type": "drupal-library"
         },
