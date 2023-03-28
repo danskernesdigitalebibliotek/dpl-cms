@@ -133,7 +133,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
     $patron_page_settings = $this->configFactory->get('patron_page.settings');
     $general_config =  $this->configFactory->get('dpl_library_agency.general_settings');
-    
+
     $dateConfig = $general_config->get('pause_reservation_start_date_config');
     if (is_null($dateConfig)) {
       $dateConfig = "";
@@ -169,6 +169,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'patron-page-contact-phone-label-text' => $this->t('Phone number'),
       'patron-page-contact-phone-checkbox-text' => $this->t('Receive text messages about your loans, reservations, and so forth'),
       'patron-page-contact-email-label-text' => $this->t('E-mail'),
+      'patron-page-contact-phone-checkbox-text' => $this->t('Receive text messages about your loans, reservations, and so forth. This may cost money.'),
       'patron-page-contact-email-checkbox-text' => $this->t('Receive emails about your loans, reservations, and so forth'),
       'patron-page-status-section-header-text' => $this->t('DIGITAL LOANS (EREOLEN)'),
       'patron-page-status-section-body-text' => $this->t('There is a number of materials without limitation to amounts of loans per month.'),
