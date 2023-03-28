@@ -40,7 +40,7 @@ class PatronPageSettingsForm extends ConfigFormBase {
 
     $form['settings']['text_notifications_enabled'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Disable SMS notifications'),
+      '#title' => $this->t('Enable SMS notifications'),
       '#default_value' => $config->get('text_notifications_enabled'),
     ];
 
