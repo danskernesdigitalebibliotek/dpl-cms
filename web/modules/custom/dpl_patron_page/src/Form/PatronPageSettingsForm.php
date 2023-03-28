@@ -40,7 +40,7 @@ class PatronPageSettingsForm extends ConfigFormBase {
 
     $form['settings']['text_notifications_enabled'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Enable SMS notifications'),
+      '#title' => $this->t('Disable SMS notifications'),
       '#default_value' => $config->get('text_notifications_enabled'),
     ];
 
@@ -56,7 +56,7 @@ class PatronPageSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Ereolen always available'),
       '#default_value' => $config->get('always_available_ereolen') ?? '',
     ];
-    
+
     $form['settings']['pincode_length_min'] = [
       '#type' => 'number',
       '#title' => $this->t('Pincode length (min)'),
@@ -90,7 +90,7 @@ class PatronPageSettingsForm extends ConfigFormBase {
     if (!is_int($pincodeLengthMin) && $pincodeLengthMin <= 0) {
       $form_state->setErrorByName('pincode_length_min', $this->t('Pincode length has to be a positive integer'));
     }
-    
+
     $pincodeLengthMax = $form_state->getValue('pincode_length_max');
     if (!is_int($pincodeLengthMax) && $pincodeLengthMax <= 0) {
       $form_state->setErrorByName('pincode_length', $this->t('Pincode length has to be a positive integer'));
