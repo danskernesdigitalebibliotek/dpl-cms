@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e120e1c72f946c458f52c2bb4f65391",
+    "content-hash": "48ae6d146916b7de313a9a1a5a3f0a5a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc30",
+            "version": "0.3.0-rc31",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Fpatron-page-testfeedback/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Freservation-list-testfeedback/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
