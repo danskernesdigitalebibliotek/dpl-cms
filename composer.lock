@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3344f9f24b3250a3c64081ad7f4081b3",
+    "content-hash": "99bf53c87cb8de6e64ec6b30a4814feb",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,7 +1086,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc27",
+            "version": "0.3.0-rc28",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
@@ -2921,7 +2921,7 @@
                     "datestamp": "1645900154",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3340,6 +3340,73 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/potion",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/potion.git",
+                "reference": "e48d6ee336d960b9d2efb5d88e68402db6d229a6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "symfony/finder": "^3.4 || ^4.4",
+                "symfony/process": "^3.4 || ^4.4"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta1+14-dev",
+                    "datestamp": "1616160587",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Antistatique",
+                    "homepage": "https://www.antistatique.net",
+                    "email": "info@antistatique.net",
+                    "role": "Sponsor"
+                },
+                {
+                    "name": "Toni Fisler",
+                    "homepage": "https://www.drupal.org/u/tonifisler",
+                    "email": "mail@toni.io",
+                    "role": "Author & Maintainer"
+                },
+                {
+                    "name": "Gilles Doge",
+                    "homepage": "https://www.drupal.org/u/gido",
+                    "email": "gilles@antistatique.net",
+                    "role": "Author & Maintainer"
+                },
+                {
+                    "name": "Kevin Wenger",
+                    "email": "contact@kevin-wenger.ch",
+                    "homepage": "https://www.drupal.org/u/wengerk",
+                    "role": "Author & Maintainer"
+                }
+            ],
+            "description": "Provides a normalized way to collect internationalization strings to export, merge & create .po files from versatile sources such as Twig, PHP or YML files.",
+            "homepage": "https://www.drupal.org/project/potion",
+            "support": {
+                "source": "https://git.drupalcode.org/project/potion",
+                "issues": "https://www.drupal.org/project/issues/potion"
             }
         },
         {
@@ -9858,8 +9925,14 @@
             "version": "8.3.13",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/coder.git",
+                "url": "https://github.com/pfrenssen/coder.git",
                 "reference": "d3286d571b19633cc296d438c36b9aed195de43c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/d3286d571b19633cc296d438c36b9aed195de43c",
+                "reference": "d3286d571b19633cc296d438c36b9aed195de43c",
+                "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
@@ -13201,10 +13274,13 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 5,
+        "danskernesdigitalebibliotek/dpl-react": 5,
         "drupal/default_content": 15,
         "drupal/inline_all_css": 5,
         "drupal/libraries": 10,
-        "drupal/openapi_rest": 5
+        "drupal/openapi_rest": 5,
+        "drupal/potion": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

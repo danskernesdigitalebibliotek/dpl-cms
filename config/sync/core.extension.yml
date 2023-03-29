@@ -10,12 +10,14 @@ module:
   dpl_fbs: 0
   dpl_library_agency: 0
   dpl_library_token: 0
+  dpl_loans: 0
   dpl_login: 0
   dpl_mapp: 0
   dpl_publizon: 0
   dpl_react: 0
   dpl_react_apps: 0
   dpl_url_proxy: 0
+  dpl_reservations: 0
   dynamic_page_cache: 0
   entity_reference_revisions: 0
   field: 0
