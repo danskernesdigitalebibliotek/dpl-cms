@@ -171,6 +171,7 @@ class DplReactAppsController extends ControllerBase {
       'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
+      'instant-loan-config' => $this->getInstantLoanConfig(),
       // Urls.
       'auth-url' => self::authUrl(),
       'material-url' => self::materialUrl(),
@@ -425,6 +426,16 @@ class DplReactAppsController extends ControllerBase {
     }
 
     return $url;
+  }
+
+  /**
+   * Get the instant loan configuration.
+   *
+   * @return mixed[]
+   *   The instant loan configuration.
+   */
+  public static function getInstantLoanConfig() {
+    return \Drupal::configFactory()->get('dpl_instant_loan.settings')->get() ?? [];
   }
 
 }
