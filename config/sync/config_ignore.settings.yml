@@ -48,6 +48,7 @@ ignored_config_entities:
   - ~language.negotiation
   - ~language.types
   - ~locale.settings
+  - ~dpl_fees.settings
   - ~node.settings
   - ~node.type.campaign
   - ~paragraphs.paragraphs_type.campaign_rule
