@@ -8,14 +8,12 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Menu setting form.
  */
-class DplFeesSettingsForm extends ConfigFormBase
-{
+class DplFeesSettingsForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
    */
-  protected function getEditableConfigNames(): array
-  {
+  protected function getEditableConfigNames(): array {
     return [
       'dpl_fees.settings',
     ];
@@ -24,16 +22,14 @@ class DplFeesSettingsForm extends ConfigFormBase
   /**
    * {@inheritdoc}
    */
-  public function getFormId(): string
-  {
+  public function getFormId(): string {
     return 'intermediate_list_settings_form';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state): array
-  {
+  public function buildForm(array $form, FormStateInterface $form_state): array {
     $config = $this->config('dpl_fees.settings');
 
     $form['settings'] = [
@@ -52,15 +48,8 @@ class DplFeesSettingsForm extends ConfigFormBase
     $form['settings']['terms_of_trade_text'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Terms of trade text'),
-      '#description' => $this->t(''),
+      '#description' => $this->t('Terms of trade text'),
       '#default_value' => $config->get('terms_of_trade_text') ?? '',
-    ];
-
-    $form['settings']['payment_overview_url'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('Payment options image'),
-      '#description' => $this->t('Image containing the available payment options (300x35)'),
-      '#default_value' => $config->get('payment_overview_url') ?? '',
     ];
 
     $form['settings']['payment_overview_url'] = [
@@ -74,7 +63,7 @@ class DplFeesSettingsForm extends ConfigFormBase
       '#type' => 'textarea',
       '#title' => $this->t('Intro text'),
       '#description' => $this->t('Display an intro-text below the headline'),
-      '#default_value' => $config->get('intermediate_list_body_text') ??  'Fees and replacement costs are handled through the new system "Mit betalingsoverblik.',
+      '#default_value' => $config->get('intermediate_list_body_text') ?? 'Fees and replacement costs are handled through the new system "Mit betalingsoverblik.',
     ];
 
     return parent::buildForm($form, $form_state);
@@ -83,15 +72,13 @@ class DplFeesSettingsForm extends ConfigFormBase
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state): void
-  {
+  public function validateForm(array &$form, FormStateInterface $form_state): void {
   }
 
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state): void
-  {
+  public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
 
     $this->config('dpl_fees.settings')
@@ -101,4 +88,5 @@ class DplFeesSettingsForm extends ConfigFormBase
       ->set('intermediate_list_body_text', $form_state->getValue('intermediate_list_body_text'))
       ->save();
   }
+
 }
