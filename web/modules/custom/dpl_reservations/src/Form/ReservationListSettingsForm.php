@@ -78,27 +78,33 @@ class ReservationListSettingsForm extends ConfigFormBase {
     $form['settings']['reservation_detail_allow_remove_ready_reservations_config'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow removing ready reservations', [], $context),
+      '#default_value' => 1,
     ];
 
     $form['settings']['interest_period_one_month_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 1 month', [], $context),
+      '#default_value' => 1,
     ];
     $form['settings']['interest_period_two_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 2 months', [], $context),
+      '#default_value' => 1,
     ];
     $form['settings']['interest_period_three_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 3 months', [], $context),
+      '#default_value' => 1,
     ];
     $form['settings']['interest_period_six_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 6 months', [], $context),
+      '#default_value' => 1,
     ];
     $form['settings']['interest_period_one_year_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 12 months', [], $context),
+      '#default_value' => 1,
     ];
 
 
@@ -135,6 +141,11 @@ class ReservationListSettingsForm extends ConfigFormBase {
       ->set('page_size_desktop', $form_state->getValue('page_size_desktop'))
       ->set('page_size_mobile', $form_state->getValue('page_size_mobile'))
       ->set('reservation_detail_allow_remove_ready_reservations_config', $form_state->getValue('reservation_detail_allow_remove_ready_reservations_config'))
+      ->set('interest_period_one_month_config_text', $form_state->getValue('interest_period_one_month_config_text'))
+      ->set('interest_period_two_months_config_text', $form_state->getValue('interest_period_two_months_config_text'))
+      ->set('interest_period_three_months_config_text', $form_state->getValue('interest_period_three_months_config_text'))
+      ->set('interest_period_six_months_config_text', $form_state->getValue('interest_period_six_months_config_text'))
+      ->set('interest_period_one_year_config_text', $form_state->getValue('interest_period_one_year_config_text'))
       ->save();
   }
 
