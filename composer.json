@@ -17,10 +17,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc28",
+                "version": "0.3.0-rc29",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Freservation-list-testfeedback/dist.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -33,7 +33,7 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "v1.7.0-rc19",
+                "version": "v1.7.0-rc20",
                 "dist": {
                     "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip",
                     "type": "zip"
