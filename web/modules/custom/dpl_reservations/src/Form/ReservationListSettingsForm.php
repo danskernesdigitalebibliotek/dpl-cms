@@ -84,12 +84,12 @@ class ReservationListSettingsForm extends ConfigFormBase {
     $form['settings']['interest_period_one_month_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 1 month', [], $context),
-      '#default_value' => $config->get('interest'),
+      '#default_value' => $config->get('interest_period_one_month_config_text'),
     ];
     $form['settings']['interest_period_two_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 2 months', [], $context),
-      '#default_value' => $config->get('interest'),
+      '#default_value' => $config->get('interest_period_two_months_config_text'),
     ];
     $form['settings']['interest_period_three_months_config_text'] = [
       '#type' => 'checkbox',
