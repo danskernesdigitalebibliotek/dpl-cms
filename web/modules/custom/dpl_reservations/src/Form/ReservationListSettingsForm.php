@@ -78,33 +78,33 @@ class ReservationListSettingsForm extends ConfigFormBase {
     $form['settings']['reservation_detail_allow_remove_ready_reservations_config'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow removing ready reservations', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('reservation_detail_allow_remove_ready_reservations_config'),
     ];
 
     $form['settings']['interest_period_one_month_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 1 month', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('interest'),
     ];
     $form['settings']['interest_period_two_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 2 months', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('interest'),
     ];
     $form['settings']['interest_period_three_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 3 months', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('interest_period_three_months_config_text'),
     ];
     $form['settings']['interest_period_six_months_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 6 months', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('interest_period_six_months_config_text'),
     ];
     $form['settings']['interest_period_one_year_config_text'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Allow settings interest period to 12 months', [], $context),
-      '#default_value' => 1,
+      '#default_value' => $config->get('interest_period_one_year_config_text'),
     ];
 
 
