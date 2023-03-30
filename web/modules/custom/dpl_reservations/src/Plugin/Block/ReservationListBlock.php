@@ -94,6 +94,12 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
       // Texts.
+      'interest-period-one-month-config-text' => $this->t('1', [], $context),
+      'interest-period-two-months-config-text' => $this->t('1', [], $context),
+      'interest-period-three-months-config-text' => $this->t('1', [], $context),
+      'interest-period-six-months-config-text' => $this->t('1', [], $context),
+      'interest-period-one-year-config-text' => $this->t('1', [], $context),
+      'reservation-detail-allow-remove-ready-reservations-config' => $this->t('1', [], $context),
       'reservation-list-header-text' => $this->t('Your reservations', [], $context),
       'reservation-list-physical-reservations-header-text' => $this->t('Physical reservations', [], $context),
       'reservation-list-pause-reservation-text' => $this->t('Pause reservations on physical items', [], $context),
