@@ -140,12 +140,12 @@ class ReservationListSettingsForm extends ConfigFormBase {
       ->set('pause_reservation_start_date_config', $form_state->getValue('pause_reservation_start_date_config'))
       ->set('page_size_desktop', $form_state->getValue('page_size_desktop'))
       ->set('page_size_mobile', $form_state->getValue('page_size_mobile'))
-      ->set('reservation_detail_allow_remove_ready_reservations_config', $form_state->getValue('reservation_detail_allow_remove_ready_reservations_config'))
-      ->set('interest_period_one_month_config_text', $form_state->getValue('interest_period_one_month_config_text'))
-      ->set('interest_period_two_months_config_text', $form_state->getValue('interest_period_two_months_config_text'))
-      ->set('interest_period_three_months_config_text', $form_state->getValue('interest_period_three_months_config_text'))
-      ->set('interest_period_six_months_config_text', $form_state->getValue('interest_period_six_months_config_text'))
-      ->set('interest_period_one_year_config_text', $form_state->getValue('interest_period_one_year_config_text'))
+      ->set('reservation_detail_allow_remove_ready_reservations_config', $form_state->getValue('reservation_detail_allow_remove_ready_reservations_config') ?? "0")
+      ->set('interest_period_one_month_config_text', $form_state->getValue('interest_period_one_month_config_text') ?? "0")
+      ->set('interest_period_two_months_config_text', $form_state->getValue('interest_period_two_months_config_text') ?? "0")
+      ->set('interest_period_three_months_config_text', $form_state->getValue('interest_period_three_months_config_text') ?? "0")
+      ->set('interest_period_six_months_config_text', $form_state->getValue('interest_period_six_months_config_text') ?? "0")
+      ->set('interest_period_one_year_config_text', $form_state->getValue('interest_period_one_year_config_text') ?? "0")
       ->save();
   }
 
