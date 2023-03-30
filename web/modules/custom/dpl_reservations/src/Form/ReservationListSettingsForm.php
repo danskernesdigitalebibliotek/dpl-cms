@@ -75,6 +75,33 @@ class ReservationListSettingsForm extends ConfigFormBase {
       '#step' => 1,
     ];
 
+    $form['settings']['reservation_detail_allow_remove_ready_reservations_config'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow removing ready reservations', [], $context),
+    ];
+
+    $form['settings']['interest_period_one_month_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 1 month', [], $context),
+    ];
+    $form['settings']['interest_period_two_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 2 months', [], $context),
+    ];
+    $form['settings']['interest_period_three_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 3 months', [], $context),
+    ];
+    $form['settings']['interest_period_six_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 6 months', [], $context),
+    ];
+    $form['settings']['interest_period_one_year_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 12 months', [], $context),
+    ];
+
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -107,6 +134,7 @@ class ReservationListSettingsForm extends ConfigFormBase {
       ->set('pause_reservation_start_date_config', $form_state->getValue('pause_reservation_start_date_config'))
       ->set('page_size_desktop', $form_state->getValue('page_size_desktop'))
       ->set('page_size_mobile', $form_state->getValue('page_size_mobile'))
+      ->set('reservation_detail_allow_remove_ready_reservations_config', $form_state->getValue('reservation_detail_allow_remove_ready_reservations_config'))
       ->save();
   }
 
