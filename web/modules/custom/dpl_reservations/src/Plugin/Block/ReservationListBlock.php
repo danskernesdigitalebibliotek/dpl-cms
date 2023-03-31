@@ -8,6 +8,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\dpl_react_apps\Controller\DplReactAppsController;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
+use Drupal\dpl_library_agency\ReservationSettings;
 use Drupal\dpl_library_agency\BranchSettings;
 
 /**
@@ -43,7 +44,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
    * @param \Drupal\dpl_library_agency\Branch\BranchRepositoryInterface $branchRepository
    *   The branchsettings for getting branches.
    */
-  public function __construct(array $configuration, string $plugin_id, array $plugin_definition, ConfigFactoryInterface $configFactory, protected BranchSettings $branchSettings, protected BranchRepositoryInterface $branchRepository) {
+  public function __construct(array $configuration, string $plugin_id, array $plugin_definition, ConfigFactoryInterface $configFactory, protected BranchSettings $branchSettings, protected BranchRepositoryInterface $branchRepository, protected ReservationSettings $reservationSettings) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
     $this->configFactory = $configFactory;
@@ -60,6 +61,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       $container->get('config.factory'),
       $container->get('dpl_library_agency.branch_settings'),
       $container->get('dpl_library_agency.branch.repository'),
+      $container->get('dpl_library_agency.reservation_settings')
     );
   }
 
@@ -91,7 +93,17 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       "page-size-mobile" => $reservation_list_settings->get('page_size_mobile'),
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
+      // Data attributes can only be strings
+      // so we need to convert the boolean to a number (0/1).
+      'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
+      'reservation-detail-allow-remove-ready-reservations-config' => (int) $this->reservationSettings->deleteReadyReservationsEnabled(),
+      'interest-period-one-month-config-text' => (int) $this->reservationSettings->interestPeriodOneMonthEnabled(),
+      'interest-period-two-months-config-text' => (int) $this->reservationSettings->interestPeriodTwoMonthsEnabled(),
+      'interest-period-three-months-config-text' => (int) $this->reservationSettings->interestPeriodThreeMonthsEnabled(),
+      'interest-period-six-months-config-text' => (int) $this->reservationSettings->interestPeriodSixMonthsEnabled(),
+      'interest-period-one-year-config-text' => (int) $this->reservationSettings->interestPeriodTwelveMonthsEnabled(),
       // Texts.
+
       'reservation-list-header-text' => $this->t('Your reservations', [], ['context' => 'Reservations Page']),
       'reservation-list-physical-reservations-header-text' => $this->t('Physical reservations', [], ['context' => 'Reservations Page']),
       'reservation-list-pause-reservation-text' => $this->t('Pause reservations on physical items', [], ['context' => 'Reservations Page']),
