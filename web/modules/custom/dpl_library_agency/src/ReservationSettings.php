@@ -37,14 +37,69 @@ class ReservationSettings implements CacheableDependencyInterface {
   }
 
    /**
-   * Checks whether sms notifications for reservations are enabled.
+   * Checks whether ready reservations are allowed to be deleted.
    *
    * @return bool
-   *   TRUE if sms notifications are enabled, FALSE otherwise.
+   *   TRUE if allowed to be deleted, FALSE otherwise.
    */
   public function deleteReadyReservationsEnabled(): bool {
     $config = $this->getConfig();
     return ($config->get('reservation_detail_allow_remove_ready_reservations_config')) ? FALSE : TRUE;
+  }
+
+     /**
+   * Checks whether the one-month interest period should be shown.
+   *
+   * @return bool
+   *   TRUE if allowed to be deleted, FALSE otherwise.
+   */
+  public function interestPeriodOneMonthEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('interest_period_one_month_config_text')) ? FALSE : TRUE;
+  }
+
+     /**
+   * Checks whether the two-months interest period should be shown.
+   *
+   * @return bool
+   *   TRUE if allowed to be deleted, FALSE otherwise.
+   */
+  public function interestPeriodTwoMonthsEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('interest_period_two_months_config_text')) ? FALSE : TRUE;
+  }
+
+    /**
+   * Checks whether the three-months interest period should be shown.
+   *
+   * @return bool
+   *   TRUE if allowed to be deleted, FALSE otherwise.
+   */
+  public function interestPeriodThreeMonthsEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('interest_period_three_months_config_text')) ? FALSE : TRUE;
+  }
+
+    /**
+   * Checks whether the six-months interest period should be shown.
+   *
+   * @return bool
+   *   TRUE if allowed to be deleted, FALSE otherwise.
+   */
+  public function interestPeriodSixMonthsEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('interest_period_six_months_config_text')) ? FALSE : TRUE;
+  }
+
+      /**
+   * Checks whether the twelve-months interest period should be shown.
+   *
+   * @return bool
+   *   TRUE if allowed to be deleted, FALSE otherwise.
+   */
+  public function interestPeriodTwelveMonthsEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('interest_period_one_year_config_text')) ? FALSE : TRUE;
   }
 
   /**

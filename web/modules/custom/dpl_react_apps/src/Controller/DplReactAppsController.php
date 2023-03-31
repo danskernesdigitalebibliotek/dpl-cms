@@ -169,6 +169,11 @@ class DplReactAppsController extends ControllerBase {
       // so we need to convert the boolean to a number (0/1).
       'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
       'reservation-detail-allow-remove-ready-reservations-config' => (int) $this->reservationSettings->deleteReadyReservationsEnabled(),
+      'interest-period-one-month-config-text' => (int) $this->reservationSettings->interestPeriodOneMonthEnabled(),
+      'interest-period-two-months-config-text' => (int) $this->reservationSettings->interestPeriodTwoMonthsEnabled(),
+      'interest-period-three-months-config-text' => (int) $this->reservationSettings->interestPeriodThreeMonthsEnabled(),
+      'interest-period-six-months-config-text' => (int) $this->reservationSettings->interestPeriodSixMonthsEnabled(),
+      'interest-period-one-year-config-text' => (int) $this->reservationSettings->interestPeriodTwelveMonthsEnabled(),
       'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
