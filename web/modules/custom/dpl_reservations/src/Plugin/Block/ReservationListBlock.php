@@ -194,7 +194,8 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       ],
     ] + DplReactAppsController::externalApiBaseUrls();
 
-    die(print('<pre>'.print_r($data,true).'</pre>'));
+    var_dump($data);
+
     return [
       '#theme' => 'dpl_react_app',
       "#name" => 'reservation-list',
