@@ -44,7 +44,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function deleteReadyReservationsEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('reservation_detail_allow_remove_ready_reservations_config')) ? FALSE : TRUE;
+    return ($config->get('reservation_detail_allow_remove_ready_reservations_config')) ? TRUE : FALSE;
   }
 
      /**
@@ -55,7 +55,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function interestPeriodOneMonthEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('interest_period_one_month_config_text')) ? FALSE : TRUE;
+    return ($config->get('interest_period_one_month_config_text')) ? TRUE : FALSE;
   }
 
      /**
@@ -66,7 +66,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function interestPeriodTwoMonthsEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('interest_period_two_months_config_text')) ? FALSE : TRUE;
+    return ($config->get('interest_period_two_months_config_text')) ? TRUE : FALSE;
   }
 
     /**
@@ -77,7 +77,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function interestPeriodThreeMonthsEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('interest_period_three_months_config_text')) ? FALSE : TRUE;
+    return ($config->get('interest_period_three_months_config_text')) ? TRUE : FALSE;
   }
 
     /**
@@ -88,7 +88,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function interestPeriodSixMonthsEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('interest_period_six_months_config_text')) ? FALSE : TRUE;
+    return ($config->get('interest_period_six_months_config_text')) ? TRUE : FALSE;
   }
 
       /**
@@ -99,7 +99,7 @@ class ReservationSettings implements CacheableDependencyInterface {
    */
   public function interestPeriodTwelveMonthsEnabled(): bool {
     $config = $this->getConfig();
-    return ($config->get('interest_period_one_year_config_text')) ? FALSE : TRUE;
+    return ($config->get('interest_period_one_year_config_text')) ? TRUE : FALSE;
   }
 
   /**
