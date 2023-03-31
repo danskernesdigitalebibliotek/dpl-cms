@@ -10,9 +10,10 @@ jobs:
     name: Send translatable strings to POEditor
     runs-on: ubuntu-latest
     # Avoid systems crossing each other by not looking for string changes
-    # in commits coming from POEditor.
+    # in commits coming from POEditor or from the job itself.
     # Commits from POEditor are in the format: "Update [file] (POEditor.com)"
-    if: ${{ !contains(github.event.head_commit.message, 'POEditor.com') }}
+    # Commits from the this job says: "New translations were found"
+    if: ${{ !contains(github.event.head_commit.message, 'POEditor.com') && !contains(github.event.head_commit.message, 'New translations were found') }}
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
@@ -21,6 +22,7 @@ jobs:
     - uses: actions/checkout@master
       with:
         fetch-depth: 0
+        token: ${{ secrets.AUTOCOMMIT_GITHUB_TOKEN }}
     - name: Install go-task
       uses: arduino/setup-task@v1
       with:
@@ -36,7 +38,7 @@ jobs:
         commit_message: New translations were found
     - name: Make Poeditor look for changes
       uses: distributhor/workflow-webhook@v2
-      with:
+      env:
         webhook_url: ${{ secrets.POEDITOR_WEBHOOK_URL }}
         # POEditor webhooks to not use secrets but the action requires a value.
         webhook_secret: 'xxxx'
