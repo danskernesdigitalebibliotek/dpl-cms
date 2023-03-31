@@ -189,6 +189,38 @@ class GeneralSettingsForm extends ConfigFormBase {
       "#disabled" => $disabled,
     ];
 
+    $form['settings']['reservation_detail_allow_remove_ready_reservations_config'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow removing ready reservations', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('reservation_detail_allow_remove_ready_reservations_config'),
+    ];
+
+    $form['settings']['interest_period_one_month_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 1 month', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('interest_period_one_month_config_text'),
+    ];
+    $form['settings']['interest_period_two_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 2 months', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('interest_period_two_months_config_text'),
+    ];
+    $form['settings']['interest_period_three_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 3 months', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('interest_period_three_months_config_text'),
+    ];
+    $form['settings']['interest_period_six_months_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 6 months', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('interest_period_six_months_config_text'),
+    ];
+    $form['settings']['interest_period_one_year_config_text'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow settings interest period to 12 months', [], ['context' => 'Reservation list (settings)']),
+      '#default_value' => $config->get('interest_period_one_year_config_text'),
+    ];
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -212,6 +244,12 @@ class GeneralSettingsForm extends ConfigFormBase {
       ->set('reservation_sms_notifications_disabled', $form_state->getValue('reservation_sms_notifications_disabled'))
       ->set('pause_reservation_info_url', $form_state->getValue('pause_reservation_info_url'))
       ->set('pause_reservation_start_date_config', $form_state->getValue('pause_reservation_start_date_config'))
+      ->set('reservation_detail_allow_remove_ready_reservations_config', $form_state->getValue('reservation_detail_allow_remove_ready_reservations_config'))
+      ->set('interest_period_one_month_config_text', $form_state->getValue('interest_period_one_month_config_text'))
+      ->set('interest_period_two_months_config_text', $form_state->getValue('interest_period_two_months_config_text'))
+      ->set('interest_period_three_months_config_text', $form_state->getValue('interest_period_three_months_config_text'))
+      ->set('interest_period_six_months_config_text', $form_state->getValue('interest_period_six_months_config_text'))
+      ->set('interest_period_one_year_config_text', $form_state->getValue('interest_period_one_year_config_text'))
       ->save();
 
     $this->branchSettings->setExcludedAvailabilityBranches(array_filter($form_state->getValue('availability')));
