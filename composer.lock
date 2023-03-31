@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76bc5f997b92b799dcc719fa9b29eed0",
+    "content-hash": "61e266ed44af7200efc9a48d7b59b387",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc29",
+            "version": "0.3.0-rc30",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Freservation-list-testfeedback/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-fix%2Fadding-noscroll-class-to-body/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
