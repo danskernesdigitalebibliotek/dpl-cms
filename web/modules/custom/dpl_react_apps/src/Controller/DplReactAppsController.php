@@ -168,6 +168,7 @@ class DplReactAppsController extends ControllerBase {
       // Data attributes can only be strings
       // so we need to convert the boolean to a number (0/1).
       'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
+      'reservation-detail-allow-remove-ready-reservations-config' => (int) $this->reservationSettings->deleteReadyReservationsEnabled(),
       'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),

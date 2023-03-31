@@ -36,6 +36,17 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('reservation_sms_notifications_disabled')) ? FALSE : TRUE;
   }
 
+   /**
+   * Checks whether sms notifications for reservations are enabled.
+   *
+   * @return bool
+   *   TRUE if sms notifications are enabled, FALSE otherwise.
+   */
+  public function deleteReadyReservationsEnabled(): bool {
+    $config = $this->getConfig();
+    return ($config->get('reservation_detail_allow_remove_ready_reservations_config')) ? FALSE : TRUE;
+  }
+
   /**
    * Sets whether sms notifications for reservations should be enabled.
    *
