@@ -8,8 +8,8 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\dpl_react_apps\Controller\DplReactAppsController;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
-use Drupal\dpl_library_agency\ReservationSettings;
 use Drupal\dpl_library_agency\BranchSettings;
+use Drupal\dpl_library_agency\ReservationSettings;
 
 /**
  * Provides user reservations list.
@@ -43,7 +43,10 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
    *   The branchsettings for branch config.
    * @param \Drupal\dpl_library_agency\Branch\BranchRepositoryInterface $branchRepository
    *   The branchsettings for getting branches.
+   * * @param \Drupal\dpl_library_agency\Branch\ReservationSettings $reservationSettings
+  *   The reservationSettings for getting interest periods and reservation settings.
    */
+
   public function __construct(array $configuration, string $plugin_id, array $plugin_definition, ConfigFactoryInterface $configFactory, protected BranchSettings $branchSettings, protected BranchRepositoryInterface $branchRepository, protected ReservationSettings $reservationSettings) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
@@ -61,7 +64,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       $container->get('config.factory'),
       $container->get('dpl_library_agency.branch_settings'),
       $container->get('dpl_library_agency.branch.repository'),
-      $container->get('dpl_library_agency.reservation_settings')
+      $container->get('dpl_library_agency.reservationSettings')
     );
   }
 
