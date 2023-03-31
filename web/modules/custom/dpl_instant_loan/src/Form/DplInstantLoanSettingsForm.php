@@ -74,7 +74,7 @@ class DplInstantLoanSettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->config('dpl_instant_loan.settings')
       ->set('enabled', $form_state->getValue('enabled'))
-      ->set('match_string', $form_state->getValue('match_string'))
+      ->set('matchString', $form_state->getValue('match_string'))
       ->set('threshold', $form_state->getValue('threshold'))
       ->save();
 
