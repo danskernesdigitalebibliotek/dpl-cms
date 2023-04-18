@@ -23,7 +23,7 @@ class DplFeesSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId(): string {
-    return 'intermediate_list_settings_form';
+    return 'fee_list_settings_form';
   }
 
   /**
@@ -58,18 +58,26 @@ class DplFeesSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('terms_of_trade_url') ?? '',
     ];
 
-    $form['settings']['payment_overview_url'] = [
+    // Todo, images to be done in future tender.
+    $form['settings']['image'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Payment options image'),
       '#description' => $this->t('Image containing the available payment options (300x35)'),
+      '#default_value' => $config->get('image') ?? '',
+    ];
+
+    $form['settings']['payment_overview_url'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Payment overview url'),
       '#default_value' => $config->get('payment_overview_url') ?? '',
     ];
 
-    $form['settings']['intermediate_list_body_text'] = [
+
+    $form['settings']['fee_list_body_text'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Intro text'),
       '#description' => $this->t('Display an intro-text below the headline'),
-      '#default_value' => $config->get('intermediate_list_body_text') ?? 'Fees and replacement costs are handled through the new system "Mit betalingsoverblik.',
+      '#default_value' => $config->get('fee_list_body_text') ?? 'Fees and replacement costs are handled through the new system "Mit betalingsoverblik.',
     ];
 
     return parent::buildForm($form, $form_state);
@@ -79,14 +87,19 @@ class DplFeesSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state): void {
-    $feesUrl = $form_state->getValue('terms_of_trade_url');
-    if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('terms_of_trade_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Fees list (settings)']));
+    $termsOfTradeUrl = $form_state->getValue('terms_of_trade_url');
+    if (!filter_var($termsOfTradeUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('terms_of_trade_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $termsOfTradeUrl], ['context' => 'Fees list (settings)']));
     }
 
-    $materialUrl = $form_state->getValue('fees_and_replacement_costs_url');
-    if (!filter_var($materialUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('fees_and_replacement_costs_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl], ['context' => 'Fees list (settings)']));
+    $feesAndReplacementCostUrl = $form_state->getValue('fees_and_replacement_costs_url');
+    if (!filter_var($feesAndReplacementCostUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('fees_and_replacement_costs_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesAndReplacementCostUrl], ['context' => 'Fees list (settings)']));
+    }
+
+    $paymentOverviewUrl = $form_state->getValue('payment_overview_url');
+    if (!filter_var($paymentOverviewUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('payment_overview_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $paymentOverviewUrl], ['context' => 'Fees list (settings)']));
     }
   }
 
@@ -101,7 +114,7 @@ class DplFeesSettingsForm extends ConfigFormBase {
       ->set('terms_of_trade_text', $form_state->getValue('terms_of_trade_text'))
       ->set('terms_of_trade_url', $form_state->getValue('terms_of_trade_url'))
       ->set('payment_overview_url', $form_state->getValue('payment_overview_url'))
-      ->set('intermediate_list_body_text', $form_state->getValue('intermediate_list_body_text'))
+      ->set('fee_list_body_text', $form_state->getValue('fee_list_body_text'))
       ->save();
   }
 

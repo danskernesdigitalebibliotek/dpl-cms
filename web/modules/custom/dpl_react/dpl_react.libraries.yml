@@ -70,14 +70,14 @@ reservation-list:
     - dpl_react/base
     - dpl_react/handler
 
-intermediate-list:
+fee-list:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
   license:
     name: GNU AFFERO
     url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
     gpl-compatible: true
   js:
-    /libraries/dpl-react/intermediate-list.js: {}
+    /libraries/dpl-react/FeeList.js: {}
   dependencies:
     - dpl_react/base
     - dpl_react/handler
