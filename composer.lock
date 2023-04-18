@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6e4aafd37f05d64c37ed6e6410822ca",
+    "content-hash": "66627edd04bed581f3916f883017d4c2",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,7 +1086,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc31",
+            "version": "0.3.0-rc32",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fintermediate-list/dist.zip"
