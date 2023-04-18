@@ -52,6 +52,12 @@ class DplFeesSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('terms_of_trade_text') ?? '',
     ];
 
+    $form['settings']['terms_of_trade_url'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Terms of trade redirect url'),
+      '#default_value' => $config->get('terms_of_trade_url') ?? '',
+    ];
+
     $form['settings']['payment_overview_url'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Payment options image'),
@@ -73,6 +79,15 @@ class DplFeesSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state): void {
+    $feesUrl = $form_state->getValue('terms_of_trade_url');
+    if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('terms_of_trade_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Fees list (settings)']));
+    }
+
+    $materialUrl = $form_state->getValue('payment_overview_url');
+    if (!filter_var($materialUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('payment_overview_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl], ['context' => 'Fees list (settings)']));
+    }
   }
 
   /**
@@ -84,6 +99,7 @@ class DplFeesSettingsForm extends ConfigFormBase {
     $this->config('dpl_fees.settings')
       ->set('fees_and_replacement_costs_url', $form_state->getValue('fees_and_replacement_costs_url'))
       ->set('terms_of_trade_text', $form_state->getValue('terms_of_trade_text'))
+      ->set('terms_of_trade_url', $form_state->getValue('terms_of_trade_url'))
       ->set('payment_overview_url', $form_state->getValue('payment_overview_url'))
       ->set('intermediate_list_body_text', $form_state->getValue('intermediate_list_body_text'))
       ->save();

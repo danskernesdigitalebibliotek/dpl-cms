@@ -107,9 +107,9 @@ class IntermediateListBlock extends BlockBase implements ContainerFactoryPluginI
       'item-fee-amount-text' => $this->t("Fee @fee,-", [], ['context' => 'Fees list']),
       'fee-created-text' => $this->t("Fees charged @date", [], ['context' => 'Fees list']),
       'available-payment-types-url' => $feesConfig->get('payment_overview_url'),
-      'payment-overview-url' => $this->t("https://unsplash.com/photos/yjI3ozta2Zk", [], ['context' => 'Fees list']),
+      'payment-overview-url' =>  $feesConfig->get('payment_overview_url'),
       'view-fees-and-compensation-rates-url' => $feesConfig->get('fees_and_replacement_costs_url'),
-      'terms-of-trade-url' => $this->t("https://unsplash.com/photos/JDzoTGfoogA", [], ['context' => 'Fees list']),
+      'terms-of-trade-url' =>  $feesConfig->get('terms_of_trade_url'),
     ] + DplReactAppsController::externalApiBaseUrls();
 
     return [
