@@ -84,9 +84,9 @@ class DplFeesSettingsForm extends ConfigFormBase {
       $form_state->setErrorByName('terms_of_trade_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Fees list (settings)']));
     }
 
-    $materialUrl = $form_state->getValue('payment_overview_url');
+    $materialUrl = $form_state->getValue('fees_and_replacement_costs_url');
     if (!filter_var($materialUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('payment_overview_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl], ['context' => 'Fees list (settings)']));
+      $form_state->setErrorByName('fees_and_replacement_costs_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl], ['context' => 'Fees list (settings)']));
     }
   }
 
