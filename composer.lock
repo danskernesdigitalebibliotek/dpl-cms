@@ -1077,10 +1077,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "v1.7.0-rc19",
+            "version": "v1.7.0-rc21",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-design-system/releases/download/release-feature%2Fintermediate-list/dist.zip"
             },
             "type": "drupal-library"
         },
