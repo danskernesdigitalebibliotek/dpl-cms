@@ -43,10 +43,9 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
    *   The branchsettings for branch config.
    * @param \Drupal\dpl_library_agency\Branch\BranchRepositoryInterface $branchRepository
    *   The branchsettings for getting branches.
-   * * @param \Drupal\dpl_library_agency\Branch\ReservationSettings $reservationSettings
-  *   The reservationSettings for getting interest periods and reservation settings.
+   * @param \Drupal\dpl_library_agency\Branch\ReservationSettings $reservationSettings
+   *   The reservationSettings for getting interest periods.
    */
-
   public function __construct(array $configuration, string $plugin_id, array $plugin_definition, ConfigFactoryInterface $configFactory, protected BranchSettings $branchSettings, protected BranchRepositoryInterface $branchRepository, protected ReservationSettings $reservationSettings) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
@@ -106,7 +105,6 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       'interest-period-six-months-config-text' => (int) $this->reservationSettings->interestPeriodSixMonthsEnabled(),
       'interest-period-one-year-config-text' => (int) $this->reservationSettings->interestPeriodTwelveMonthsEnabled(),
       // Texts.
-
       'reservation-list-header-text' => $this->t('Your reservations', [], ['context' => 'Reservations Page']),
       'reservation-list-physical-reservations-header-text' => $this->t('Physical reservations', [], ['context' => 'Reservations Page']),
       'reservation-list-pause-reservation-text' => $this->t('Pause reservations on physical items', [], ['context' => 'Reservations Page']),

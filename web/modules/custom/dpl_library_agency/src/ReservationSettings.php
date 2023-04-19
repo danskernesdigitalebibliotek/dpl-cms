@@ -36,7 +36,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('reservation_sms_notifications_disabled')) ? FALSE : TRUE;
   }
 
-   /**
+  /**
    * Checks whether ready reservations are allowed to be deleted.
    *
    * @return bool
@@ -47,7 +47,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('reservation_detail_allow_remove_ready_reservations_config')) ? TRUE : FALSE;
   }
 
-     /**
+  /**
    * Checks whether the one-month interest period should be shown.
    *
    * @return bool
@@ -58,7 +58,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('interest_period_one_month_config_text')) ? TRUE : FALSE;
   }
 
-     /**
+  /**
    * Checks whether the two-months interest period should be shown.
    *
    * @return bool
@@ -69,7 +69,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('interest_period_two_months_config_text')) ? TRUE : FALSE;
   }
 
-    /**
+  /**
    * Checks whether the three-months interest period should be shown.
    *
    * @return bool
@@ -80,7 +80,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('interest_period_three_months_config_text')) ? TRUE : FALSE;
   }
 
-    /**
+  /**
    * Checks whether the six-months interest period should be shown.
    *
    * @return bool
@@ -91,7 +91,7 @@ class ReservationSettings implements CacheableDependencyInterface {
     return ($config->get('interest_period_six_months_config_text')) ? TRUE : FALSE;
   }
 
-      /**
+  /**
    * Checks whether the twelve-months interest period should be shown.
    *
    * @return bool
