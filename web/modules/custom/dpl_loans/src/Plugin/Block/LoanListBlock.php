@@ -79,6 +79,17 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
   }
 
   /**
+   * Gets fee page url.
+   *
+   * @return string
+   *   Returns the fee page url.
+   */
+  public function getFeesPageUrl(): string {
+    $generalSettings = $this->configFactory->get('dpl_library_agency.general_settings');
+    return $generalSettings->get('fees_page_url');
+  }
+
+  /**
    * {@inheritDoc}
    *
    * @return mixed[]
@@ -98,7 +109,7 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       // Urls.
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
-      'fees-page-url' => $loanListSettings->get('fees_page_url'),
+      'fees-page-url' => $this->getFeesPageUrl(),
       'material-overdue-url' => $loanListSettings->get('material_overdue_url'),
       'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
       // Texts.

@@ -116,6 +116,20 @@ class GeneralSettingsForm extends ConfigFormBase {
       $disabled = TRUE;
     }
 
+    $form['fee'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('Fees'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    ];
+
+    $form['settings']['fees_page_url'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Fee page url', [], ['context' => 'Loan list (settings)']),
+      '#description' => $this->t('The link to the relevant fee page', [], ['context' => 'Loan list (settings)']),
+      '#default_value' => $config->get('fees_page_url') ?? '',
+    ];
+
     $form['reservations'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Reservations'),
@@ -196,11 +210,14 @@ class GeneralSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state): void {
-    $feesUrl = $form_state->getValue('pause_reservation_info_url');
-    if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
+    $pauseReservationInfoUrl = $form_state->getValue('pause_reservation_info_url');
+    if (!filter_var($pauseReservationInfoUrl, FILTER_VALIDATE_URL)) {
       $form_state->setErrorByName('pause_reservation_info_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Library Agency Configuration']));
     }
-
+    $feesUrl = $form_state->getValue('fees_page_url');
+    if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
+      $form_state->setErrorByName('fees_page_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Loan list (settings)']));
+    }
   }
 
   /**
@@ -211,6 +228,7 @@ class GeneralSettingsForm extends ConfigFormBase {
       ->set('threshold_config', $form_state->getValue('threshold_config'))
       ->set('reservation_sms_notifications_disabled', $form_state->getValue('reservation_sms_notifications_disabled'))
       ->set('pause_reservation_info_url', $form_state->getValue('pause_reservation_info_url'))
+      ->set('fees_page_url', $form_state->getValue('pause_reservation_info_url'))
       ->set('pause_reservation_start_date_config', $form_state->getValue('pause_reservation_start_date_config'))
       ->save();
 
