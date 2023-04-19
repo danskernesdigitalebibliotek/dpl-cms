@@ -43,7 +43,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
    *   The branchsettings for branch config.
    * @param \Drupal\dpl_library_agency\Branch\BranchRepositoryInterface $branchRepository
    *   The branchsettings for getting branches.
-   * @param \Drupal\dpl_library_agency\Branch\ReservationSettings $reservationSettings
+   * @param \Drupal\dpl_library_agency\ReservationSettings $reservationSettings
    *   The reservationSettings for getting interest periods.
    */
   public function __construct(array $configuration, string $plugin_id, array $plugin_definition, ConfigFactoryInterface $configFactory, protected BranchSettings $branchSettings, protected BranchRepositoryInterface $branchRepository, protected ReservationSettings $reservationSettings) {
