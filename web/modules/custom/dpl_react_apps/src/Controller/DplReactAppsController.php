@@ -129,14 +129,16 @@ class DplReactAppsController extends ControllerBase {
       'facet-work-types-text' => $this->t('Work types', [], ['context' => 'Search Result']),
       'filter-list-text' => $this->t('Filter list', [], ['context' => 'Search Result']),
       'in-series-text' => $this->t('In series', [], ['context' => 'Search Result']),
+      'no-search-result-text' => $this->t('Your search has 0 results', [], ['context' => 'Search Result']),
       'number-description-text' => $this->t('Nr.', [], ['context' => 'Search Result']),
       'out-of-text' => $this->t('out of', [], ['context' => 'Search Result']),
       'result-pager-status-text' => $this->t('Showing @itemsShown out of @hitcount results', [], ['context' => 'Search Result']),
       'results-text' => $this->t('results', [], ['context' => 'Search Result']),
       'show-more-text' => $this->t('Show more', [], ['context' => 'Search Result']),
       'show-results-text' => $this->t('Show results', [], ['context' => 'Search Result']),
-      'showing-results-for-text' => $this->t('Showing results for', [], ['context' => 'Search Result'])->__toString(),
+      'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result'])->__toString(),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
+      'subject-number-text' => $this->t('Subject number', [], ['context' => 'Search Result']),
       'unavailable-text' => $this->t('Unavailable', [], ['context' => 'Search Result']),
     // Add external API base urls.
     ] + self::externalApiBaseUrls();
