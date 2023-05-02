@@ -87,6 +87,6 @@ base:
 handler:
   version: 1.0
   js:
-    js/handler.js: {}
+    js/handler.js: { weight: -15 }
   dependencies:
     - core/drupal
