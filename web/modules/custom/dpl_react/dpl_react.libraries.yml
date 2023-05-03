@@ -8,7 +8,7 @@ hello-world:
     /libraries/dpl-react/hello-world.js: {}
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 search-header:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -17,10 +17,10 @@ search-header:
     url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
     gpl-compatible: true
   js:
-    /libraries/dpl-react/search-header.js: {}
+    /libraries/dpl-react/search-header.js: { preprocess: false }
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 search-result:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -32,7 +32,7 @@ search-result:
     /libraries/dpl-react/search-result.js: {}
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 material:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -41,10 +41,10 @@ material:
     url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
     gpl-compatible: true
   js:
-    /libraries/dpl-react/material.js: {}
+    /libraries/dpl-react/material.js: { preprocess: false }
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 loan-list:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -56,7 +56,7 @@ loan-list:
     /libraries/dpl-react/loan-list.js: {}
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 reservation-list:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -68,7 +68,7 @@ reservation-list:
     /libraries/dpl-react/reservation-list.js: {}
   dependencies:
     - dpl_react/base
-    - dpl_react/handler
+    - dpl_react/app
 
 base:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
@@ -78,17 +78,16 @@ base:
     gpl-compatible: true
   header: true
   js:
-    /libraries/dpl-react/runtime.js: { weight: -19 }
-    /libraries/dpl-react/bundle.js: { weight: -18 }
-    /libraries/dpl-react/mount.js: { weight: -16 }
+    /libraries/dpl-react/runtime.js: { weight: -20 }
+    /libraries/dpl-react/mount.js: { weight: -19 }
+    js/handler.js: { weight: -18 }
   css:
     theme:
       /libraries/dpl-react/components.css: {}
-
-handler:
-  version: 1.0
-  header: true
-  js:
-    js/handler.js: { weight: -15 }
   dependencies:
     - core/drupal
+
+app:
+  version: 1.0
+  js:
+    /libraries/dpl-react/bundle.js: {}
