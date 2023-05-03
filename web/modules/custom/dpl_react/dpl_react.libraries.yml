@@ -76,6 +76,7 @@ base:
     name: GNU AFFERO
     url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
     gpl-compatible: true
+  header: true
   js:
     /libraries/dpl-react/runtime.js: { weight: -19 }
     /libraries/dpl-react/bundle.js: { weight: -18 }
@@ -86,6 +87,7 @@ base:
 
 handler:
   version: 1.0
+  header: true
   js:
     js/handler.js: { weight: -15 }
   dependencies:
