@@ -29,25 +29,26 @@
       const element = getElement(context);
       if (element) {
         // Port jQuery.ajax with dataType script to vanilla JS with Fetch API.
-        fetch("/dpl-react/user-tokens", {
-          headers: {
-            Accept:
-              "text/javascript, application/javascript, " +
-              "application/ecmascript, application/x-ecmascript",
-          },
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(
-                `HTTP error response: ${response.status} - ${response.statusText}`
-              );
-            }
-            return response.text();
-          })
-          .then((response) => {
-            DOMEval(response);
-            window.dplReact.mount(element);
-          });
+        // fetch("/dpl-react/user-tokens", {
+        //   headers: {
+        //     Accept:
+        //       "text/javascript, application/javascript, " +
+        //       "application/ecmascript, application/x-ecmascript",
+        //   },
+        // })
+        //   .then((response) => {
+        //     if (!response.ok) {
+        //       throw new Error(
+        //         `HTTP error response: ${response.status} - ${response.statusText}`
+        //       );
+        //     }
+        //     return response.text();
+        //   })
+        //   .then((response) => {
+        //     DOMEval(response);
+        //     window.dplReact.mount(element);
+        //   });
+        window.dplReact.mount(element);
       }
     },
     detach(context) {
