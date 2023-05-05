@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc28",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-revert-cover/dist.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -35,7 +35,7 @@
                 "type": "drupal-library",
                 "version": "v1.7.0-rc19",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-design-system/releases/download/release-revert-cover/dist.zip",
                     "type": "zip"
                 }
             }
