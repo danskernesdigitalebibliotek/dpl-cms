@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc29",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/reload/dpl-react/releases/download/release-performance_find-on-shelf-modal-body-introduced/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-performance_find-on-shelf-modal-body-introduced-WITH-PREACT/dist.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -54,8 +54,8 @@
         "amazeeio/drupal_integrations": "0.3.5",
         "composer/installers": "1.11.0",
         "cweagans/composer-patches": "1.7.0",
-        "danskernesdigitalebibliotek/dpl-design-system": "^1.7@RC",
-        "danskernesdigitalebibliotek/dpl-react": "^0.3.0@RC",
+        "danskernesdigitalebibliotek/dpl-design-system": "*",
+        "danskernesdigitalebibliotek/dpl-react": "*",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "drupal/config_ignore": "^2.3",

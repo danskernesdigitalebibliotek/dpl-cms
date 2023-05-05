@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "228ec1cb676923f11a616c486aed4271",
+    "content-hash": "3b3789116d7b4267bae9c3522efb994f",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc29",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reload/dpl-react/releases/download/release-performance_find-on-shelf-modal-body-introduced/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-performance_find-on-shelf-modal-body-introduced-WITH-PREACT/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
