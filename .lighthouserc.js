@@ -4,9 +4,7 @@ module.exports = {
       url: [
         "http://varnish:8080/",
         "http://varnish:8080/search?q=harry+potter&x=0&y=0",
-        // TODO: Unfortunately the work page test is failing due to a low Lighthouse score.
-        // When performance is improved this should be re-enabled.
-        // "http://varnish:8080/work/work-of:870970-basis:25245784?type=bog"
+        "http://varnish:8080/work/work-of:870970-basis:25245784?type=bog"
       ],
       // Use 3 runs to test both cold and warm caches.
       numberOfRuns: 3,
