@@ -1,7 +1,7 @@
 # dpl-cms
 
 This is the main repository used for building the core Drupal CMS which is used
-by the danish public libraries.
+by the danish public libraries
 
 ## Running a local development
 
