@@ -74,7 +74,10 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
     $dateConfig = $reservation_list_settings->get('pause_reservation_start_date_config') ?? '';
-
+    var_dump($reservation_list_settings->get('interest_period_one_month_config_text'));
+    var_dump($reservation_list_settings->get('interest_period_two_months_config_text'));
+    var_dump($reservation_list_settings->get('interest_period_three_months_config_text'));
+    var_dump("sdf");
     $data = [
       // Branches.
       'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
@@ -91,6 +94,12 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       "page-size-mobile" => $reservation_list_settings->get('page_size_mobile'),
       "fbs-base-url" => $fbsConfig->get('base_url'),
       "publizon-base-url" => $publizonConfig->get('base_url'),
+      'reservation-detail-allow-remove-ready-reservations-config' => $reservation_list_settings->get('reservation_detail_allow_remove_ready_reservations_config'),
+      'interest-period-one-month-config-text' => $reservation_list_settings->get('interest_period_one_month_config_text'),
+      'interest-period-two-months-config-text' => $reservation_list_settings->get('interest_period_two_months_config_text'),
+      'interest-period-three-months-config-text' => $reservation_list_settings->get('interest_period_three_months_config_text'),
+      'interest-period-six-months-config-text' => $reservation_list_settings->get('interest_period_six_months_config_text'),
+      'interest-period-one-year-config-text' => $reservation_list_settings->get('interest_period_one_year_config_text'),
       // Texts.
       'reservation-list-header-text' => $this->t('Your reservations', [], ['context' => 'Reservation list']),
       'reservation-list-physical-reservations-header-text' => $this->t('Physical reservations', [], ['context' => 'Reservation list']),
