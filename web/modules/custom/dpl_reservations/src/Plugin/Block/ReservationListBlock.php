@@ -74,10 +74,7 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
     $fbsConfig = $this->configFactory->get('dpl_fbs.settings');
     $publizonConfig = $this->configFactory->get('dpl_publizon.settings');
     $dateConfig = $reservation_list_settings->get('pause_reservation_start_date_config') ?? '';
-    var_dump($reservation_list_settings->get('interest_period_one_month_config_text'));
-    var_dump($reservation_list_settings->get('interest_period_two_months_config_text'));
-    var_dump($reservation_list_settings->get('interest_period_three_months_config_text'));
-    var_dump("sdf");
+
     $data = [
       // Branches.
       'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
