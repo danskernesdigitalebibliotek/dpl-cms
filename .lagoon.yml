@@ -50,11 +50,11 @@ tasks:
         service: cli
 
 environments:
-  pr-329:
+  pr-*:
     cronjobs:
     - name: drush cron
-      schedule: "* * * * *"
-      command: echo "hi I'm cron"
+      schedule: "*/2 * * * *"
+      command: echo "hi I'm cron on pr environments"
       service: cli
   main:
     cronjobs:
