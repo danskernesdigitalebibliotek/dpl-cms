@@ -39,14 +39,14 @@ class ReservationListSettingsForm extends ConfigFormBase {
     ];
 
     $form['settings']['pause_reservation_info_url'] = [
-      '#type' => 'textfield',
+      '#type' => 'url',
       '#title' => $this->t('Pause reservation link', [], ['context' => 'Reservation list (settings)']),
       '#description' => $this->t('The link in the pause reservation modal', [], ['context' => 'Reservation list (settings)']),
       '#default_value' => $config->get('pause_reservation_info_url') ?? '',
     ];
 
     $form['settings']['ereolen_my_page_url'] = [
-      '#type' => 'textfield',
+      '#type' => 'url',
       '#title' => $this->t('Ereolen link', [], ['context' => 'Reservation list (settings)']),
       '#description' => $this->t('My page in ereolen', [], ['context' => 'Reservation list (settings)']),
       '#default_value' => $config->get('ereolen_my_page_url') ?? '',
@@ -75,21 +75,6 @@ class ReservationListSettingsForm extends ConfigFormBase {
     ];
 
     return parent::buildForm($form, $form_state);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state): void {
-    $feesUrl = $form_state->getValue('pause_reservation_info_url');
-    if (!filter_var($feesUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('pause_reservation_info_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $feesUrl], ['context' => 'Reservation list (settings)']));
-    }
-
-    $materialUrl = $form_state->getValue('ereolen_my_page_url');
-    if (!filter_var($materialUrl, FILTER_VALIDATE_URL)) {
-      $form_state->setErrorByName('ereolen_my_page_url', $this->t('The url "%url" is not a valid URL.', ['%url' => $materialUrl], ['context' => 'Reservation list (settings)']));
-    }
   }
 
   /**
