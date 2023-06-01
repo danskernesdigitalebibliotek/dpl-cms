@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "46c291a7932ddf96eecb7f6210512ab3",
+=======
+    "content-hash": "9fe9bf94f3e22ecab4205d079ddc2601",
+>>>>>>> 74fb16e (itkdev: bump react)
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1077,7 +1081,11 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
+<<<<<<< HEAD
             "version": "v1.7.0-rc22",
+=======
+            "version": "v1.7.0-rc20",
+>>>>>>> 74fb16e (itkdev: bump react)
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
@@ -1086,7 +1094,11 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
+<<<<<<< HEAD
             "version": "0.3.0-rc32",
+=======
+            "version": "0.3.0-rc30",
+>>>>>>> 74fb16e (itkdev: bump react)
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
