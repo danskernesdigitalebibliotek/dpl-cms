@@ -43,11 +43,6 @@ msgid "Page size desktop"
 msgstr ""
 
 #: 
-msgctxt "Loan list (settings)"
-msgid "The url \"%url\" is not a valid URL."
-msgstr ""
-
-#: 
 msgctxt "Loan list"
 msgid "Read more about fees"
 msgstr ""
@@ -305,71 +300,6 @@ msgid "DDB React library is missing (@dir)"
 msgstr ""
 
 #: 
-msgid "configured"
-msgstr ""
-
-#: 
-msgid "This configuration form is for administering proxy url generation."
-msgstr ""
-
-#: 
-msgid "Proxy server URL prefix"
-msgstr ""
-
-#: 
-msgid "The prefix to use for proxy server URLs. This is the part of the URL\n"
-"        that comes before the hostname"
-msgstr ""
-
-#: 
-msgid "Hostnames"
-msgstr ""
-
-#: 
-msgid "Host configuration"
-msgstr ""
-
-#: 
-msgid "Hostname"
-msgstr "Værtsnavn"
-
-#: 
-msgid "Replacement %configured"
-msgstr ""
-
-#: 
-msgid "Regular expression"
-msgstr "Regulært udtryk"
-
-#: 
-msgid "Use regular expression to substitut parts of the url, e.g. \"<em>%regex</em>\"."
-msgstr ""
-
-#: 
-msgid "Replacement"
-msgstr ""
-
-#: 
-msgid "The replacement value for the regular expression."
-msgstr ""
-
-#: 
-msgid "Do not use proxy prefix for this hostname"
-msgstr ""
-
-#: 
-msgid "Remove this"
-msgstr ""
-
-#: 
-msgid "Add one more"
-msgstr ""
-
-#: 
-msgid "Submit"
-msgstr "Indsend"
-
-#: 
 msgctxt "Search Result"
 msgid "+ more filters"
 msgstr ""
@@ -487,11 +417,6 @@ msgstr ""
 #: 
 msgctxt "Search Result"
 msgid "Show results"
-msgstr ""
-
-#: 
-msgctxt "Search Result"
-msgid "Showing results for"
 msgstr ""
 
 #: 
@@ -1172,7 +1097,7 @@ msgstr ""
 #: 
 msgctxt "Search Header"
 msgid "Start typing in order to search"
-msgstr ""
+msgstr "Hej folkens"
 
 #: 
 msgctxt "Search Header"
@@ -1192,10 +1117,6 @@ msgstr ""
 #: 
 msgctxt "Search Header"
 msgid "Work"
-msgstr ""
-
-#: 
-msgid "Reservations"
 msgstr ""
 
 #: 
@@ -1273,77 +1194,12 @@ msgid "Selected branches will not be available as pickup locations for reservati
 msgstr ""
 
 #: 
-msgctxt "Library Agency Configuration"
-msgid "The url \"%url\" is not a valid URL."
-msgstr ""
-
-#: 
 msgid "Configuration file"
-msgstr ""
-
-#: 
-msgid "Select a configuration file in YAML format to upload."
 msgstr ""
 
 #: 
 msgid "Upload"
 msgstr "Upload"
-
-#: 
-msgid "Unable to handle the uploaded file"
-msgstr ""
-
-#: 
-msgid "Unable to parse YAML file: %reason"
-msgstr ""
-
-#: 
-msgid "Installed modules: %modules_list"
-msgstr ""
-
-#: 
-msgid "Failed to install modules: @reason"
-msgstr ""
-
-#: 
-msgid "Uninstalled modules: %modules_list"
-msgstr ""
-
-#: 
-msgid "Failed to uninstall modules: @reason"
-msgstr ""
-
-#: 
-msgid "Basic settings"
-msgstr ""
-
-#: 
-msgid "FBS service url"
-msgstr ""
-
-#: 
-msgid "The url \"%url\" is not a valid URL."
-msgstr ""
-
-#: 
-msgid "Publizon service url"
-msgstr ""
-
-#: 
-msgid "Domain"
-msgstr "Domæne"
-
-#: 
-msgid "Specify the Tag Integration domain if the JavaScript-file should be loaded from the Mapp server."
-msgstr ""
-
-#: 
-msgid "Id"
-msgstr "Id"
-
-#: 
-msgid "Enter your Tag Integration customer ID if the JavaScript-file should be loaded from the Mapp server."
-msgstr ""
 
 #: 
 msgid "Library token"
@@ -1358,323 +1214,11 @@ msgid "No valid token available. <a href=\":url\">Run cron</a> to retrieve a new
 msgstr ""
 
 #: 
-msgid "Authorization endpoint"
-msgstr ""
-
-#: 
-msgid "Token endpoint"
-msgstr ""
-
-#: 
-msgid "UserInfo endpoint"
-msgstr ""
-
-#: 
-msgid "Logout endpoint"
-msgstr ""
-
-#: 
-msgid "Agency ID"
-msgstr ""
-
-#: 
 msgid "Adgangsplatformen"
 msgstr ""
 
 #: 
 msgid "Integration configured"
-msgstr ""
-
-#: 
-msgid "Pause reservation link"
-msgstr ""
-
-#: 
-msgid "The link in the pause reservation modal"
-msgstr ""
-
-#: 
-msgid "Ereolen link"
-msgstr ""
-
-#: 
-msgid "My page in ereolen"
-msgstr ""
-
-#: 
-msgid "Start date"
-msgstr "Startdato"
-
-#: 
-msgid "Pause reservation start date"
-msgstr ""
-
-#: 
-msgid "Page size mobile"
-msgstr ""
-
-#: 
-msgid "Page size desktop"
-msgstr ""
-
-#: 
-msgid "Your reservations"
-msgstr ""
-
-#: 
-msgid "Physical reservations"
-msgstr ""
-
-#: 
-msgid "Pause reservations on physical items"
-msgstr ""
-
-#: 
-msgid "Digital reservations"
-msgstr ""
-
-#: 
-msgid "Ready for pickup"
-msgstr ""
-
-#: 
-msgid "At the moment you have 0 reservations ready for pickup"
-msgstr ""
-
-#: 
-msgid "At the moment you have 0 physical reservations"
-msgstr ""
-
-#: 
-msgid "At the moment you have 0 reservations"
-msgstr ""
-
-#: 
-msgid "At the moment you have 0 reservations on digital items"
-msgstr ""
-
-#: 
-msgid "Ready"
-msgstr ""
-
-#: 
-msgid "By"
-msgstr "Af"
-
-#: 
-msgid "and"
-msgstr "og"
-
-#: 
-msgid "There are @count people in the queue before you"
-msgstr ""
-
-#: 
-msgid "You are at the front of the queue"
-msgstr ""
-
-#: 
-msgid "queued"
-msgstr ""
-
-#: 
-msgid "Pick up before @date"
-msgstr ""
-
-#: 
-msgid "E-book"
-msgstr ""
-
-#: 
-msgid "Audiobook"
-msgstr ""
-
-#: 
-msgid "Podcast"
-msgstr ""
-
-#: 
-msgid "Borrow before @date"
-msgstr ""
-
-#: 
-msgid "Available in @count days"
-msgstr ""
-
-#: 
-msgid "days"
-msgstr ""
-
-#: 
-msgid "day"
-msgstr ""
-
-#: 
-msgid "Remove your reservation"
-msgstr ""
-
-#: 
-msgid "Others are queueing for this material"
-msgstr ""
-
-#: 
-msgid "@count queued"
-msgstr ""
-
-#: 
-msgid "Status"
-msgstr "Status"
-
-#: 
-msgid "Pickup deadline"
-msgstr ""
-
-#: 
-msgid "Borrow before"
-msgstr ""
-
-#: 
-msgid "Pickup branch"
-msgstr ""
-
-#: 
-msgid "Apply changes"
-msgstr ""
-
-#: 
-msgid "Date of reservation"
-msgstr ""
-
-#: 
-msgid "Not interested after"
-msgstr ""
-
-#: 
-msgid "Go to eReolen"
-msgstr ""
-
-#: 
-msgid "Your reservation expires @date!"
-msgstr ""
-
-#: 
-msgid "Save"
-msgstr "Gem"
-
-#: 
-msgid "Cancel"
-msgstr "Annullér"
-
-#: 
-msgid "Cancel reservation"
-msgstr ""
-
-#: 
-msgid "Cancel reservations"
-msgstr ""
-
-#: 
-msgid "Do you want to cancel your reservation?"
-msgstr ""
-
-#: 
-msgid "You cannot regret this action"
-msgstr ""
-
-#: 
-msgid "Close delete reservation modal"
-msgstr ""
-
-#: 
-msgid "This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations"
-msgstr ""
-
-#: 
-msgid "Reservations have been paused in the following time span:"
-msgstr ""
-
-#: 
-msgid "This button opens a modal that covers the entire page and contains the possibility to pause physical reservations"
-msgstr ""
-
-#: 
-msgid "This modal makes it possible to pause your physical reservations"
-msgstr ""
-
-#: 
-msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
-msgstr ""
-
-#: 
-msgid "Close pause reservations modal"
-msgstr ""
-
-#: 
-msgid "Close material details modal"
-msgstr ""
-
-#: 
-msgid "End date"
-msgstr "Slutdato"
-
-#: 
-msgid "Pause reservation below inputs text"
-msgstr ""
-
-#: 
-msgid "Read more about pausing reservertions and what that means here"
-msgstr ""
-
-#: 
-msgid "1 month"
-msgstr ""
-
-#: 
-msgid "2 months"
-msgstr ""
-
-#: 
-msgid "3 months"
-msgstr ""
-
-#: 
-msgid "6 months"
-msgstr ""
-
-#: 
-msgid "1 year"
-msgstr ""
-
-#: 
-msgid "Pick"
-msgstr ""
-
-#: 
-msgid "show more"
-msgstr ""
-
-#: 
-msgid "Showing @itemsShown out of @hitcount results"
-msgstr ""
-
-#: 
-msgid "This material is ready for pickup"
-msgstr ""
-
-#: 
-msgid "You are the only person queued for this material"
-msgstr ""
-
-#: 
-msgid "This material has @count people in queue before you"
-msgstr ""
-
-#: 
-msgid "This material is ready in 1 day"
-msgstr ""
-
-#: 
-msgid "This material is ready in @count days"
 msgstr ""
 
 #: 
@@ -1855,5 +1399,1991 @@ msgstr ""
 
 #: 
 msgid "Custom theme for the Danish Public Libraries"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "configured"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "This configuration form is for administering proxy url generation."
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Proxy server URL prefix"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "The prefix to use for proxy server URLs. This is the part of the URL\n"
+"        that comes before the hostname"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Hostnames"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Host configuration"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Hostname"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Replacement %configured"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Regular expression"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Use regular expression to substitut parts of the url, e.g. \"<em>%regex</em>\"."
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Replacement"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "The replacement value for the regular expression."
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Do not use proxy prefix for this hostname"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Remove this"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Add one more"
+msgstr ""
+
+#: 
+msgctxt "Url Proxy"
+msgid "Submit"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Reservations"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Select a configuration file in YAML format to upload."
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Unable to handle the uploaded file"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Unable to parse YAML file: %reason"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Installed modules: %modules_list"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Failed to install modules: @reason"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Uninstalled modules: %modules_list"
+msgstr ""
+
+#: 
+msgctxt "DPL Config Import"
+msgid "Failed to uninstall modules: @reason"
+msgstr ""
+
+#: 
+msgctxt "Dpl Fbs"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Dpl Fbs"
+msgid "FBS service url"
+msgstr ""
+
+#: 
+msgctxt "Dpl Publizon"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Dpl Publizon"
+msgid "Publizon service url"
+msgstr ""
+
+#: 
+msgctxt "Dpl Mapp"
+msgid "Domain"
+msgstr ""
+
+#: 
+msgctxt "Dpl Mapp"
+msgid "Specify the Tag Integration domain if the JavaScript-file should be loaded from the Mapp server."
+msgstr ""
+
+#: 
+msgctxt "Dpl Mapp"
+msgid "Id"
+msgstr ""
+
+#: 
+msgctxt "Dpl Mapp"
+msgid "Enter your Tag Integration customer ID if the JavaScript-file should be loaded from the Mapp server."
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "Authorization endpoint"
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "Token endpoint"
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "UserInfo endpoint"
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "Logout endpoint"
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "Agency ID"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Pause reservation link"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "The link in the pause reservation modal"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Ereolen link"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "My page in ereolen"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Start date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Pause reservation start date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Page size mobile"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (settings)"
+msgid "Page size desktop"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Your reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pause reservations on physical items"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Digital reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "At the moment you have 0 reservations ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "At the moment you have 0 physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "At the moment you have 0 reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "At the moment you have 0 reservations on digital items"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Ready"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "There are @count people in the queue before you"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "You are at the front of the queue"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "queued"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pick up before @date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "E-book"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Audiobook"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Podcast"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Borrow before @date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Available in @count days"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "days"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "day"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Remove your reservation"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Others are queueing for this material"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "@count queued"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Status"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pickup deadline"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Borrow before"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pickup branch"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Apply changes"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Date of reservation"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Not interested after"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Go to eReolen"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Your reservation expires @date!"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Save"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Cancel"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Cancel reservation"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Cancel reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Do you want to cancel your reservation?"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "You cannot regret this action"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Close delete reservation modal"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "Reservations have been paused in the following time span:"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This button opens a modal that covers the entire page and contains the possibility to pause physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This modal makes it possible to pause your physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Close pause reservations modal"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Start date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "Close material details modal"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "End date"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pause reservation below inputs text"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "1 month"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "2 months"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "3 months"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "6 months"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "1 year"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Pick"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "show more"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Showing @itemsShown out of @hitcount results"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This material is ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "You are the only person queued for this material"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This material has @count people in queue before you"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This material is ready in 1 day"
+msgstr ""
+
+#: 
+msgctxt "Reservation list (Aria)"
+msgid "This material is ready in @count days"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Showing results for \"@query\""
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Fee page"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron d title text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron d body text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron s title text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron s body text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron f title text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron f body text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "You have exceeded your fee limit"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "You are therefore not able to borrow or reserve materials from the library"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Your user is blocked"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "You therefore cannot reserve, borrow or renew loans. Please contact the library for further information"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked reason O modal title"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron o body text"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Pay your fees here"
+msgstr ""
+
+#: 
+msgctxt "Blocked user (Aria)"
+msgid "Close blocked patron modal"
+msgstr ""
+
+#: 
+msgctxt "Blocked user (Aria)"
+msgid "This modal alerts you, that your patron has been blocked"
+msgstr ""
+
+#: 
+msgid "Blocked user"
+msgstr ""
+
+#: 
+msgid "Redirect blocked user link"
+msgstr ""
+
+#: 
+msgid "The link to redirect the blocked user to"
+msgstr ""
+
+#: 
+msgid "Blocked user link for modal"
+msgstr ""
+
+#: 
+msgid "If a user has blocked status e, this link appears in the modal"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "Choose all renewable"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "@count materials"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "Favorites"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "et al"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "show more"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "Showing @itemsShown out of @hitcount results"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "Your favorites list is empty"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "in series"
+msgstr ""
+
+#: 
+msgctxt "Favorites list"
+msgid "Number description"
+msgstr ""
+
+#: 
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgid "Page size mobile"
+msgstr ""
+
+#: 
+msgid "Page size desktop"
+msgstr ""
+
+#: 
+msgid "Favorites list settings"
+msgstr ""
+
+#: 
+msgid "DPL favorites"
+msgstr ""
+
+#: 
+msgid "Handle the favorites list"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Select all"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Number @count in line"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Digital"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Renewable (@count)"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Choose all renewable"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "This modal groups loans after due date and makes it possible to renew said loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Due date @date"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Read more about fees"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "To be returned @date"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Close renew loans modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Go to material details"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "The item cannot be renewed further"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "The item is reserved by another patron"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Can be returned to all branches of (library) libraries"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Intermediates"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "days"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Longer return time"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Returned too late"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "To be returned soon"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "At the moment, you have 0 physical loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "At the moment, you have 0 reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Read more"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Physical loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Physical"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pick up before"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Audiobook"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "E-book"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Podcast"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Ready"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "This modal shows materials that are ready for loan"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Ready for loan"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Close ready to loan details modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Remove reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Ready for you"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Still in queue"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Showing @itemsShown out of @hitcount loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Close still in queue details modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "This modal shows materials that are still in queue"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "You owe in total"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "warningIconAltText"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Your profile"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Fees url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Pay owed url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Physical loans url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Loans overdue url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Loans soon overdue url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Loans not overdue url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Reservations url"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Page size mobile"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (settings)"
+msgid "Page size desktop"
+msgstr ""
+
+#: 
+msgid "Dashboard settings"
+msgstr ""
+
+#: 
+msgid "DPL dashboard"
+msgstr ""
+
+#: 
+msgid "Handle the user profile dashboard page"
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "By the same author"
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "Something similar"
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "Other materials"
+msgstr ""
+
+#: 
+msgid "DPL something similar"
+msgstr ""
+
+#: 
+msgid "Something similar component"
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "For your inspiration"
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "Because you have borrowed @title you may also like"
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "Because you have reserved @title you may also like"
+msgstr ""
+
+#: 
+msgctxt "Recommender (settings)"
+msgid "Search text"
+msgstr ""
+
+#: 
+msgctxt "Recommender (settings)"
+msgid "Search text for recommender when no loan/no reservation"
+msgstr ""
+
+#: 
+msgid "Recommender settings"
+msgstr ""
+
+#: 
+msgid "DPL recommender"
+msgstr ""
+
+#: 
+msgid "recommender component"
+msgstr ""
+
+#: 
+msgctxt "Patron page (aria)"
+msgid "This modal makes it possible to pause your physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Pause reservations on physical items"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Close pause reservations modal"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Pause reservation below inputs text"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Read more"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Save"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Patron profile page"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "BASIC DETAILS"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Name"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "patron page text fee text"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Address"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "CONTACT INFORMATION"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "patron page contact info body text"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Phone number"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Receive text messages about your loans, reservations, and so forth"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "E-mail"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Receive emails about your loans, reservations, and so forth"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "DIGITAL LOANS (EREOLEN)"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "There is a number of materials without limitation to amounts of loans per month."
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Click here, to see titles always eligible to be loaned"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Loans per month"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "E-books"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Audiobooks"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "RESERVATIONS"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "patron page change pickup body text"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Choose pickup branch"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Nothing selected"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Pause physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "patron page pause reservations body text"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Pause your reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron page (aria)"
+msgid "This checkbox opens a section where you can put your current reservations on a pause, when the time period picked has ended, the reservations will be resumed"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "From"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "To"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "PINCODE"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Change current pin by entering a new pin and saving"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "New pin"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Confirm new pin"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Your pincode was saved"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "The pincode should be minimum @pincodeLengthMin and maximum @pincodeLengthMax characters long"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "The pincodes are not the same"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Do you wish to delete your library profile?"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "Delete your profile"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "You can reserve @countEbooks ebooks and @countAudiobooks audiobooks"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "@this out of @that"
+msgstr ""
+
+#: 
+msgctxt "Patron page (aria)"
+msgid "You used @this audiobooks out of you quota of @that audiobooks"
+msgstr ""
+
+#: 
+msgctxt "Patron page (aria)"
+msgid "You used @this ebooks out of you quota of @that ebooks"
+msgstr ""
+
+#: 
+msgid "Enable SMS notifications"
+msgstr ""
+
+#: 
+msgid "Delete patron link"
+msgstr ""
+
+#: 
+msgid "Link to a page where it is possible to delete patron"
+msgstr ""
+
+#: 
+msgid "Ereolen always available"
+msgstr ""
+
+#: 
+msgid "Pincode length (min)"
+msgstr ""
+
+#: 
+msgid "Pincode length max"
+msgstr ""
+
+#: 
+msgid "DPL patron page"
+msgstr ""
+
+#: 
+msgid "Handle the patron page"
+msgstr ""
+
+#: 
+msgid "Patron page settings"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Enabled"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Should materials available for instant loans be promoted to patrons?"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Match String"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Text used to identify materials which are available for instant loans. This text must be present in the material group of such materials."
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Threshold"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "The minimum number of materials which must be available for instant loan at a library branch to notify patrons of the option when making reservations."
+msgstr ""
+
+#: 
+msgid "Instant Loan"
+msgstr ""
+
+#: 
+msgid "Supports promoting materials available for instant loans to patrons."
+msgstr ""
+
+#: 
+msgid "Instant loan settings"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component"
+msgid "Go to My list"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component"
+msgid "Your list"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component (settings)"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component (settings)"
+msgid "Favorites list url"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component (settings)"
+msgid "The link to the favorites list"
+msgstr ""
+
+#: 
+msgid "DPL favorites list material component"
+msgstr ""
+
+#: 
+msgid "Handle the favorites list material component pages"
+msgstr ""
+
+#: 
+msgid "Favorites list material component settings"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Please note that paid fees are not registered up until 72 hours after your payment after which your debt is updated and your user unblocked if it has been blocked."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "You have 0 unpaid fees or replacement costs"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fees charged @date"
+msgstr ""
+
+#: 
+msgctxt "Fees list (Aria)"
+msgid "Close fee details modal"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Modal containing information about this element or group of elements fees"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "A modal containing details about a fee"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Days"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fees & replacement costs"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "You will be redirected to Mit Betalingsoverblik."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Cancel"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Go to Mit Betalingsoverblik"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Unpaid fees post 27/10 2020"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Paid fees can take up to 24 hours to registrer."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "I accept the"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fee @fee,-"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "By"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Other materials"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Pay"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "+ @amount other materials"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "AFTER 27/10 2020"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "BEFORE 27/10 2020"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fee"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Total"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Turned in @date"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Unsettled debt"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "see our fees and replacement costs"
+msgstr ""
+
+#: 
+msgid "Fees and Replacement costs URL"
+msgstr ""
+
+#: 
+msgid "File or URL containing the fees and replacement costs"
+msgstr ""
+
+#: 
+msgid "Available payment types url"
+msgstr ""
+
+#: 
+msgid "Terms of trade text"
+msgstr ""
+
+#: 
+msgid "Terms of trade redirect url"
+msgstr ""
+
+#: 
+msgid "Payment options image"
+msgstr ""
+
+#: 
+msgid "Image containing the available payment options (300x35)"
+msgstr ""
+
+#: 
+msgid "Payment overview url"
+msgstr ""
+
+#: 
+msgid "Intro text"
+msgstr ""
+
+#: 
+msgid "Display an intro-text below the headline"
+msgstr ""
+
+#: 
+msgid "Fees and replacement costs are handled through the new system \"Mit betalingsoverblik."
+msgstr ""
+
+#: 
+msgid "DPL Fees"
+msgstr ""
+
+#: 
+msgid "Handle the user profile fees page"
+msgstr ""
+
+#: 
+msgid "Fees settings"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "Read more about pausing reservations and what that means here"
+msgstr ""
+
+#: 
+msgctxt "Dpl patron redirect"
+msgid "Redirect settings"
+msgstr ""
+
+#: 
+msgctxt "Dpl patron redirect"
+msgid "Set the paths that requires the patron to be logged in and if the user is not logged in an redirect to Adgangsplatformen will automatically be enforced."
+msgstr ""
+
+#: 
+msgid "Pages"
+msgstr "Sider"
+
+#: 
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. An example path is %user-wildcard for every user page. %front is the front page."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Interest periods for reservation"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Allow removing ready reservations"
+msgstr ""
+
+#: 
+msgid "DPL Patron redirect"
+msgstr ""
+
+#: 
+msgid "Redirect patron to login if required."
+msgstr ""
+
+#: 
+msgid "Patron redirect settings"
+msgstr ""
+
+#: 
+msgid "Log in with @client_title"
+msgstr ""
+
+#: 
+msgid "Minimum age to allow self registration"
+msgstr ""
+
+#: 
+msgid "Redirect on create"
+msgstr ""
+
+#: 
+msgid "Redirect to this on user successful created"
+msgstr ""
+
+#: 
+msgid "Information page"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Cancel"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "create patron change pickup body text"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "create patron change pickup header text"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Confirm"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Register as patron"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "This SSN is invalid"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Invalid SSN"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Receive emails about your loans, reservations, and so forth"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "E-mail"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "contact info body text"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "contact info header text"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Name"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Receive text messages about your loans, reservations, and so forth"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Phone number"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Change current pin by entering a new pin and saving"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Pincode"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Confirm new pin"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "New pin"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "The pincode should be minimum @pincodeLengthMin and maximum @pincodeLengthMax characters long"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "The pincodes are not the same"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Choose pickup branch"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Nothing selected"
+msgstr ""
+
+#: 
+msgid "Patron registration"
+msgstr ""
+
+#: 
+msgid "Enable registration of new patrons"
+msgstr ""
+
+#: 
+msgid "Patron registration information"
+msgstr ""
+
+#: 
+msgid "Patron nem-login authentication"
+msgstr ""
+
+#: 
+msgid "Patron create"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component (aria)"
+msgid "Add @title to favorites list"
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component (aria)"
+msgid "Remove @title from favorites list"
+msgstr ""
+
+#: 
+msgctxt "Favorites list (aria)"
+msgid "Remove @title from favorites list"
+msgstr ""
+
+#: 
+msgctxt "Favorites list (aria)"
+msgid "Add @title to favorites list"
+msgstr ""
+
+#: 
+msgctxt "Recommender (Aria)"
+msgid "Add @title to favorites list"
+msgstr ""
+
+#: 
+msgctxt "Recommender (Aria)"
+msgid "Remove @title from favorites list"
+msgstr ""
+
+#: 
+msgctxt "Something similar (Aria)"
+msgid "Add @title to favorites list"
+msgstr ""
+
+#: 
+msgctxt "Something similar (Aria)"
+msgid "Remove @title from favorites list"
+msgstr ""
+
+#: 
+msgid "Loans"
+msgstr ""
+
+#: 
+msgid "Reservations"
+msgstr ""
+
+#: 
+msgid "My list"
+msgstr ""
+
+#: 
+msgid "Fees & Replacement costs"
+msgstr ""
+
+#: 
+msgid "My account"
+msgstr "Min konto"
+
+#: 
+msgctxt "Patron menu"
+msgid "My Account"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "loans expired"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "loans expiring soon"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "reservations ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Close user menu"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The user modal"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The user modal, log in or create a user"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Log out"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Log in"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Sign up"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (aria)"
+msgid "Open user menu"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (aria)"
+msgid "Notifications menu"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (aria)"
+msgid "Profile links"
+msgstr ""
+
+#: 
+msgid "DPL menu"
+msgstr ""
+
+#: 
+msgid "Handle the patron user menu"
 msgstr ""
 
