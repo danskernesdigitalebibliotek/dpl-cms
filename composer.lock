@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "742f20ae96cf594b26eae159781309d0",
+    "content-hash": "c9b896a6cdddbeb17863812e52928ea8",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc30",
+            "version": "0.3.0-rc31",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fpragmatic-solution-to-lighthouse-test/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fitk-dev-menu-modals/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"

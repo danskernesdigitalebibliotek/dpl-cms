@@ -17,10 +17,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc30",
+                "version": "0.3.0-rc31",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fpragmatic-solution-to-lighthouse-test/dist.zip",
+                    "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fitk-dev-menu-modals/dist.zip",
                     "type": "zip"
                 },
                 "require": {
