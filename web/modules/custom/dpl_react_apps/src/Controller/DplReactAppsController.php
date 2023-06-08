@@ -132,6 +132,7 @@ class DplReactAppsController extends ControllerBase {
       'facet-work-types-text' => $this->t('Work types', [], ['context' => 'Search Result']),
       'filter-list-text' => $this->t('Filter list', [], ['context' => 'Search Result']),
       'in-series-text' => $this->t('In series', [], ['context' => 'Search Result']),
+      'no-search-result-text' => $this->t('Your search has 0 results', [], ['context' => 'Search Result']),
       'number-description-text' => $this->t('Nr.', [], ['context' => 'Search Result']),
       'out-of-text' => $this->t('out of', [], ['context' => 'Search Result']),
       'result-pager-status-text' => $this->t('Showing @itemsShown out of @hitcount results', [], ['context' => 'Search Result']),
@@ -140,6 +141,7 @@ class DplReactAppsController extends ControllerBase {
       'show-results-text' => $this->t('Show results', [], ['context' => 'Search Result']),
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
+      'subject-number-text' => $this->t('Subject number', [], ['context' => 'Search Result']),
       'unavailable-text' => $this->t('Unavailable', [], ['context' => 'Search Result']),
     // Add external API base urls.
     ] + self::externalApiBaseUrls();
@@ -153,6 +155,19 @@ class DplReactAppsController extends ControllerBase {
     $this->renderer->addCacheableDependency($app, $this->branchSettings);
 
     return $app;
+  }
+
+  /**
+   * Get a string with interest periods.
+   *
+   * @return string
+   *   A string with interest periods
+   */
+  public static function getInterestPeriods(): string {
+    // @todo the general setting should be converted into an settings object and
+    // injected into the places it is needed and then remove thies static
+    // functions.
+    return \Drupal::configFactory()->get('dpl_library_agency.general_settings')->get('interest_periods_config');
   }
 
   /**
@@ -170,18 +185,19 @@ class DplReactAppsController extends ControllerBase {
       // Config.
       // Data attributes can only be strings
       // so we need to convert the boolean to a number (0/1).
-      'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
-      'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
-     // @todo Remove when instant loans branches are used.
+      // @todo Remove when instant loans branches are used.
       'blacklisted-instant-loan-branches-config' => "",
+      'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
+      'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
       'instant-loan-config' => $this->instantLoanSettings->getConfig(),
+      "interest-periods-config" => $this->getInterestPeriods(),
       // Urls.
       'auth-url' => self::authUrl(),
+      'dpl-cms-base-url' => self::dplCmsBaseUrl(),
       'material-url' => self::materialUrl(),
       'search-url' => self::searchResultUrl(),
-      'dpl-cms-base-url' => self::dplCmsBaseUrl(),
       // Text.
       'already-reserved-text' => $this->t('Already reserved', [], ['context' => 'Work Page']),
       'approve-reservation-text' => $this->t('Approve reservation', [], ['context' => 'Work Page']),
@@ -190,6 +206,10 @@ class DplReactAppsController extends ControllerBase {
       'cannot-see-review-text' => $this->t('The review is not accessible', [], ['context' => 'Work Page']),
       'cant-reserve-text' => $this->t("Can't be reserved", [], ['context' => 'Work Page']),
       'cant-view-review-text' => $this->t('Cannot view review', [], ['context' => 'Work Page']),
+      'change-email-text' => $this->t('Change email', [], ['context' => 'Work Page']),
+      'change-pickup-location-text' => $this->t('Change pickup location', [], ['context' => 'Work Page']),
+      'change-sms-number-text' => $this->t('Change SMS number', [], ['context' => 'Work Page']),
+      'changeInterestPeriodText' => $this->t('Change interest period', [], ['context' => 'Work Page']),
       'choose-one-text' => $this->t('Choose one', [], ['context' => 'Work Page']),
       'close-text' => $this->t('Close', [], ['context' => 'Work Page']),
       'contributors-text' => $this->t('Contributors', [], ['context' => 'Work Page']),
@@ -215,7 +235,9 @@ class DplReactAppsController extends ControllerBase {
       'edition-text' => $this->t('Edition', [], ['context' => 'Work Page']),
       'editions-text' => $this->t('Editions', [], ['context' => 'Work Page']),
       'et-al-text' => $this->t('et al.', [], ['context' => 'Work Page']),
+      'facet-fictional-characters-text' => $this->t('Fictional characters', [], ['context' => 'Work Page']),
       'fiction-nonfiction-text' => $this->t('Fiction/nonfiction', [], ['context' => 'Work Page']),
+      'film-adaptations-text' => $this->t('Film adaptations', [], ['context' => 'Work Page']),
       'find-on-bookshelf-text' => $this->t('Find on bookshelf', [], ['context' => 'Work Page']),
       'find-on-shelf-expand-button-explanation-text' => $this->t('Find on shelf expand button explanation', [], ['context' => 'Work Page']),
       'find-on-shelf-modal-close-modal-aria-label-text' => $this->t('Close reservation modal', [], ['context' => 'Work Page']),
@@ -226,6 +248,7 @@ class DplReactAppsController extends ControllerBase {
       'find-on-shelf-modal-periodical-edition-dropdown-text' => $this->t('Find on shelf modal periodical dropdown - choose edition/volume', [], ['context' => 'Work Page']),
       'find-on-shelf-modal-periodical-year-dropdown-text' => $this->t('Choose periodical year', [], ['context' => 'Work Page']),
       'find-on-shelf-modal-screen-reader-modal-description-text' => $this->t('Reservation modal screen reader description', [], ['context' => 'Work Page']),
+      'first-available-edition-text' => $this->t('First available edition', [], ['context' => 'Work Page']),
       'genre-and-form-text' => $this->t('Genre', [], ['context' => 'Work Page']),
       'get-online-text' => $this->t('Get online', [], ['context' => 'Work Page']),
       'go-to-text' => $this->t('Go to @source', [], ['context' => 'Work Page']),
@@ -236,6 +259,14 @@ class DplReactAppsController extends ControllerBase {
       'in-series-text' => $this->t('in the series', [], ['context' => 'Work Page']),
       'infomedia-modal-close-modal-aria-label-text' => $this->t('Close infomedia modal', [], ['context' => 'Work Page']),
       'infomedia-modal-screen-reader-modal-description-text' => $this->t('Infomedia modal screen reader description', [], ['context' => 'Work Page']),
+      'instant-loan-sub-title-text' => $this->t('Avoid the queue and pick up the material now', [], ['context' => 'Work Page']),
+      'instant-loan-title-text' => $this->t('Instant loan', [], ['context' => 'Work Page']),
+      'instant-loan-underline-description-text' => $this->t('The material is available at these nearby libraries', [], ['context' => 'Work Page']),
+      'interest-period-one-month-config-text' => $this->t('1', [], ['context' => 'Work Page']),
+      'interest-period-one-year-config-text' => $this->t('1', [], ['context' => 'Work Page']),
+      'interest-period-six-months-config-text' => $this->t('1', [], ['context' => 'Work Page']),
+      'interest-period-three-months-config-text' => $this->t('1', [], ['context' => 'Work Page']),
+      'interest-period-two-months-config-text' => $this->t('1', [], ['context' => 'Work Page']),
       'isbn-text' => $this->t('ISBN', [], ['context' => 'Work Page']),
       'language-text' => $this->t('Language', [], ['context' => 'Work Page']),
       'libraries-have-the-material-text' => $this->t('Libraries have the material', [], ['context' => 'Work Page']),
@@ -279,6 +310,8 @@ class DplReactAppsController extends ControllerBase {
       'ok-button-text' => $this->t('Ok', [], ['context' => 'Work Page']),
       'one-month-text' => $this->t('1 month', [], ['context' => 'Work Page']),
       'one-year-text' => $this->t('1 year', [], ['context' => 'Work Page']),
+      'online-limit-month-audiobook-info-text' => $this->t('You have borrowed @count out of @limit possible audio-books this month', [], ['context' => 'Work Page']),
+      'online-limit-month-ebook-info-text' => $this->t('You have borrowed @count out of @limit possible e-books this month', [], ['context' => 'Work Page']),
       'online-limit-month-info-text' => $this->t('You have borrowed @count out of @limit possible e-books this month', [], ['context' => 'Work Page']),
       'order-digital-copy-button-loading-text' => $this->t('Order digital copy button loading text', [], ['context' => 'Work Page']),
       'order-digital-copy-button-text' => $this->t('Order digital copy', [], ['context' => 'Work Page']),
