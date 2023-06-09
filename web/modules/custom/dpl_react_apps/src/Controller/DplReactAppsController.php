@@ -129,6 +129,7 @@ class DplReactAppsController extends ControllerBase {
       'facet-genre-and-form-text' => $this->t('Genre and form', [], ['context' => 'Search Result']),
       'facet-main-languages-text' => $this->t('Main languages', [], ['context' => 'Search Result']),
       'facet-material-types-general-text' => $this->t('Material types general', [], ['context' => 'Search Result']),
+      'facet-material-types-specific-text' => $this->t('Material types specific', [], ['context' => 'Search Result']),
       'facet-material-types-text' => $this->t('Material types', [], ['context' => 'Search Result']),
       'facet-subjects-text' => $this->t('Subjects', [], ['context' => 'Search Result']),
       'facet-work-types-text' => $this->t('Work types', [], ['context' => 'Search Result']),
