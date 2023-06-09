@@ -133,6 +133,7 @@ class DplReactAppsController extends ControllerBase {
       'filter-list-text' => $this->t('Filter list', [], ['context' => 'Search Result']),
       'in-series-text' => $this->t('In series', [], ['context' => 'Search Result']),
       'no-search-result-text' => $this->t('Your search has 0 results', [], ['context' => 'Search Result']),
+      'facet-material-types-general-text' => $this->t('Material types general', [], ['context' => 'Search Result']),
       'number-description-text' => $this->t('Nr.', [], ['context' => 'Search Result']),
       'out-of-text' => $this->t('out of', [], ['context' => 'Search Result']),
       'result-pager-status-text' => $this->t('Showing @itemsShown out of @hitcount results', [], ['context' => 'Search Result']),
