@@ -20,8 +20,6 @@ class DplFavoritesListMaterialComponentController extends ControllerBase {
    *   Drupal block manager.
    * @param \Drupal\Core\Render\RendererInterface $renderer
    *   Drupal renderer service.
-   * @param \Drupal\dpl_react\DplReactConfigInterface $favoritesListMaterialComponentSettings
-   *   Favorites list material component settings.
    */
   public function __construct(
     private BlockManagerInterface $blockManager,
@@ -66,7 +64,6 @@ class DplFavoritesListMaterialComponentController extends ControllerBase {
     // Add the cache tags/contexts.
     $render = $plugin_block->build();
     $this->renderer->addCacheableDependency($render, $plugin_block);
-    $this->renderer->addCacheableDependency($render, $this->favoritesListMaterialComponentSettings);
 
     return $render;
   }
