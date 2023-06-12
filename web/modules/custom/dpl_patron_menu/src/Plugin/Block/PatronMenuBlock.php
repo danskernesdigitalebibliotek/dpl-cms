@@ -137,6 +137,7 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       "menu-log-out-url" => Url::fromRoute('dpl_login.logout', [], ['absolute' => TRUE])->toString(),
       "menu-sign-up-url" => Url::fromRoute('dpl_patron_reg.information', [], ['absolute' => TRUE])->toString(),
       'ereolen-my-page-url' => $generalSettings->get('ereolen_my_page_url'),
+      'menu-view-your-profile-text-url' => Url::fromRoute('dpl_patron_page.profile', [], ['absolute' => TRUE])->toString(),
 
       // Texts.
       'delete-reservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations', [], ['context' => 'Patron menu (Aria)']),
@@ -151,6 +152,10 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
           $this->t('Cancel reservations', [], ['context' => 'Patron menu']),
         ],
       ],
+      'status-badge-warning-text' => $this->t('Expires soon', [], ['context' => 'Patron menu']),
+      'loans-overdue-text' => $this->t('Returned too late', [], ['context' => 'Patron menu']),
+      'loans-soon-overdue-text' => $this->t('To be returned soon', [], ['context' => 'Patron menu']),
+      'reservations-ready-text' => $this->t('Ready for you', [], ['context' => 'Patron menu']),
       'show-more-text' => $this->t("show more", [], ['context' => 'Patron menu']),
       'group-modal-hidden-label-checkbox-on-material-text' => $this->t("Select @label", [], ['context' => 'Patron menu']),
       'group-modal-checkbox-text' => $this->t('Choose all renewable', [], ['context' => 'Patron menu']),
@@ -185,6 +190,7 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'group-modal-reservations-loans-aria-description-text' => $this->t('This modal makes it possible to delete reservations', [], ['context' => 'Patron menu']),
       'group-modal-reservations-close-modal-aria-label-text' => $this->t('Close modal with grouped reservations', [], ['context' => 'Patron menu']),
       'reservation-details-ready-for-loan-text' => $this->t('Ready for pickup', [], ['context' => 'Patron menu']),
+      'ready-for-loan-text' => $this->t('Ready for pickup', [], ['context' => 'Patron menu']),
       'reservation-details-pickup-deadline-title-text' => $this->t('Pickup deadline', [], ['context' => 'Patron menu']),
       'reservation-details-digital-reservation-go-to-ereolen-text' => $this->t('Go to eReolen', [], ['context' => 'Patron menu']),
       'reservation-details-borrow-before-text' => $this->t('Borrow before @date', [], ['context' => 'Patron menu']),
