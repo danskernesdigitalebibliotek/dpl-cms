@@ -5,16 +5,15 @@ namespace Drupal\dpl_patron_reg\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\dpl_library_agency\BranchSettings;
 use Drupal\dpl_library_agency\Branch\Branch;
+use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
+use Drupal\dpl_library_agency\ReservationSettings;
 use Drupal\dpl_login\UserTokensProvider;
 use Drupal\dpl_react\DplReactConfigInterface;
 use Drupal\dpl_react_apps\Controller\DplReactAppsController;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
-use Drupal\dpl_library_agency\BranchSettings;
 use function Safe\json_encode as json_encode;
-use Drupal\dpl_library_agency\ReservationSettings;
-
 
 /**
  * Provides user registration block.
@@ -138,6 +137,10 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
     $userToken = $this->user_token_provider->getAccessToken()?->token;
     $patron_page_settings = $this->patronPageSettings->loadConfig();
 
+    // Get user info endpoint from OpenIdConnect configuration.
+    $configuration = $this->configFactory->get('openid_connect.settings.adgangsplatformen');
+    $userInfoEndpoint = $configuration->get('settings')['userinfo_endpoint'];
+
     $data = [
       // Configuration.
       'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
@@ -147,7 +150,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       'pincode-length-min-config' => $patron_page_settings->get('pincode_length_min'),
       'redirect-on-user-created-url' => $config->get('redirect_on_user_created_url'),
       'user-token' => $userToken,
-      'login-url' => "https://login.bib.dk/userinfo",
+      'login-url' => $userInfoEndpoint,
       'text-notifications-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
 
       // Texts.
