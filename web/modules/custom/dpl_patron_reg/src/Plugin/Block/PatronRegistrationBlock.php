@@ -45,6 +45,8 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
    *   The branch-settings for getting branches.
    * @param \Drupal\dpl_library_agency\ReservationSettings $reservationSettings
    *   Reservation settings.
+   * @param \Drupal\dpl_react\DplReactConfigInterface $patronPageSettings
+   *   Patron page settings.
    * @param \Drupal\dpl_react\DplReactConfigInterface $patronRegSettings
    *   Patron registration settings.
    */
@@ -57,6 +59,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
     private BranchSettings $branchSettings,
     private BranchRepositoryInterface $branchRepository,
     protected ReservationSettings $reservationSettings,
+    private DplReactConfigInterface $patronPageSettings,
     private DplReactConfigInterface $patronRegSettings
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -76,6 +79,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       $container->get('dpl_library_agency.branch_settings'),
       $container->get('dpl_library_agency.branch.repository'),
       $container->get('dpl_library_agency.reservation_settings'),
+      \Drupal::service('dpl_patron_page.settings'),
       \Drupal::service('dpl_patron_reg.settings'),
     );
   }
@@ -132,9 +136,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
   public function build(): array {
     $config = $this->patronRegSettings->loadConfig();
     $userToken = $this->user_token_provider->getAccessToken()?->token;
-
-    // @todo change to use patron_page settings inject, if approved in other PR.
-    $patron_page_settings = $this->configFactory->get('patron_page.settings');
+    $patron_page_settings = $this->patronPageSettings->loadConfig();
 
     $data = [
       // Configuration.
