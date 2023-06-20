@@ -139,6 +139,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       'pincode-length-min-config' => $patron_page_settings->get('pincode_length_min'),
       'redirect-on-user-created-url' => $config->get('redirect_on_user_created_url'),
       'user-token' => $userToken,
+      'login-url' => "https://login.bib.dk/userinfo",
 
       // Texts.
       'create-patron-cancel-button-text' => $this->t("Cancel", [], ['context' => 'Create patron']),
