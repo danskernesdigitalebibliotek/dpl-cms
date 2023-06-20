@@ -13,6 +13,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
 use Drupal\dpl_library_agency\BranchSettings;
 use function Safe\json_encode as json_encode;
+use Drupal\dpl_library_agency\ReservationSettings;
+
 
 /**
  * Provides user registration block.
@@ -41,6 +43,8 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
    *   The branch-settings for branch config.
    * @param \Drupal\dpl_library_agency\Branch\BranchRepositoryInterface $branchRepository
    *   The branch-settings for getting branches.
+   * @param \Drupal\dpl_library_agency\ReservationSettings $reservationSettings
+   *   Reservation settings.
    * @param \Drupal\dpl_react\DplReactConfigInterface $patronRegSettings
    *   Patron registration settings.
    */
@@ -52,6 +56,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
     private ConfigFactoryInterface $configFactory,
     private BranchSettings $branchSettings,
     private BranchRepositoryInterface $branchRepository,
+    protected ReservationSettings $reservationSettings,
     private DplReactConfigInterface $patronRegSettings
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -70,7 +75,8 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       $container->get('config.factory'),
       $container->get('dpl_library_agency.branch_settings'),
       $container->get('dpl_library_agency.branch.repository'),
-      \Drupal::service('dpl_patron_reg.settings')
+      $container->get('dpl_library_agency.reservation_settings'),
+      \Drupal::service('dpl_patron_reg.settings'),
     );
   }
 
@@ -140,6 +146,7 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       'redirect-on-user-created-url' => $config->get('redirect_on_user_created_url'),
       'user-token' => $userToken,
       'login-url' => "https://login.bib.dk/userinfo",
+      'text-notifications-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
 
       // Texts.
       'create-patron-cancel-button-text' => $this->t("Cancel", [], ['context' => 'Create patron']),
