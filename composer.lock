@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b890e2d8cf73f7332194fe5a1465acbf",
+    "content-hash": "f055b623dff2e7e2dc42b80771e577e1",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1086,10 +1086,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc33",
+            "version": "0.3.0-rc34",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/itk-dev/dpl-react/releases/download/release-feature%2Fitkdev-create-patron-fix/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
