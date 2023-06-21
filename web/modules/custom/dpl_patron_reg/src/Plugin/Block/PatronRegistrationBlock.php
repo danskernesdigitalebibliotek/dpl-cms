@@ -155,8 +155,8 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
 
       // Texts.
       'create-patron-cancel-button-text' => $this->t("Cancel", [], ['context' => 'Create patron']),
-      'create-patron-change-pickup-body-text' => $this->t("Select pickup location", [], ['context' => 'Create patron']),
-      'create-patron-change-pickup-header-text' => $this->t("create patron change pickup header text", [], ['context' => 'Create patron']),
+      'create-patron-change-pickup-body-text' => $this->t("Select pickup location in the select", [], ['context' => 'Create patron']),
+      'create-patron-change-pickup-header-text' => $this->t("Select pickup location", [], ['context' => 'Create patron']),
       'create-patron-confirm-button-text' => $this->t("Confirm", [], ['context' => 'Create patron']),
       'create-patron-header-text' => $this->t("Register as patron", [], ['context' => 'Create patron']),
       'create-patron-invalid-ssn-body-text' => $this->t("This SSN is invalid", [], ['context' => 'Create patron']),
