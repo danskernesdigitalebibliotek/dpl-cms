@@ -1097,7 +1097,7 @@ msgstr ""
 #: 
 msgctxt "Search Header"
 msgid "Start typing in order to search"
-msgstr ""
+msgstr "Lottes sjove tekst"
 
 #: 
 msgctxt "Search Header"
@@ -1590,36 +1590,6 @@ msgstr ""
 #: 
 msgctxt "Reservation list (settings)"
 msgid "Basic settings"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Pause reservation link"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "The link in the pause reservation modal"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Ereolen link"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "My page in ereolen"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Start date"
-msgstr ""
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Pause reservation start date"
 msgstr ""
 
 #: 
@@ -2143,27 +2113,7 @@ msgstr ""
 
 #: 
 msgctxt "Dashboard"
-msgid "Number @count in line"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Digital"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
 msgid "Renewable (@count)"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Choose all renewable"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "This modal groups loans after due date and makes it possible to renew said loans"
 msgstr ""
 
 #: 
@@ -2178,52 +2128,7 @@ msgstr ""
 
 #: 
 msgctxt "Dashboard"
-msgid "To be returned @date"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Close renew loans modal"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
 msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Go to material details"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "The item cannot be renewed further"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "The item is reserved by another patron"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Can be returned to all branches of (library) libraries"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Intermediates"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "days"
 msgstr ""
 
 #: 
@@ -2263,26 +2168,6 @@ msgstr ""
 
 #: 
 msgctxt "Dashboard"
-msgid "Read more"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Physical loans"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Physical"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Pick up before"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
 msgid "Audiobook"
 msgstr ""
 
@@ -2303,26 +2188,6 @@ msgstr ""
 
 #: 
 msgctxt "Dashboard"
-msgid "This modal shows materials that are ready for loan"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Ready for loan"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Close ready to loan details modal"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Remove reservations"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
 msgid "Ready for you"
 msgstr ""
 
@@ -2338,27 +2203,7 @@ msgstr ""
 
 #: 
 msgctxt "Dashboard"
-msgid "Showing @itemsShown out of @hitcount loans"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "Close still in queue details modal"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "This modal shows materials that are still in queue"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
 msgid "You owe in total"
-msgstr ""
-
-#: 
-msgctxt "Dashboard"
-msgid "warningIconAltText"
 msgstr ""
 
 #: 
@@ -2744,10 +2589,6 @@ msgid "You used @this ebooks out of you quota of @that ebooks"
 msgstr ""
 
 #: 
-msgid "Enable SMS notifications"
-msgstr ""
-
-#: 
 msgid "Delete patron link"
 msgstr ""
 
@@ -2842,30 +2683,11 @@ msgid "By"
 msgstr ""
 
 #: 
-msgctxt "Favorites list material component (settings)"
-msgid "Basic settings"
-msgstr ""
-
-#: 
-msgctxt "Favorites list material component (settings)"
-msgid "Favorites list url"
-msgstr ""
-
-#: 
-msgctxt "Favorites list material component (settings)"
-msgid "The link to the favorites list"
-msgstr ""
-
-#: 
 msgid "DPL favorites list material component"
 msgstr ""
 
 #: 
 msgid "Handle the favorites list material component pages"
-msgstr ""
-
-#: 
-msgid "Favorites list material component settings"
 msgstr ""
 
 #: 
@@ -3312,7 +3134,7 @@ msgstr ""
 
 #: 
 msgid "My account"
-msgstr "Min konto"
+msgstr "Min brugerprofil"
 
 #: 
 msgctxt "Patron menu"
@@ -3385,5 +3207,629 @@ msgstr ""
 
 #: 
 msgid "Handle the patron user menu"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Your search has 0 results"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Subject number"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Change pickup location"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Change SMS number"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Change interest period"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Fictional characters"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Film adaptations"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "First available edition"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Avoid the queue and pick up the material now"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Instant loan"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "The material is available at these nearby libraries"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "1"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "You have borrowed @count out of @limit possible audio-books this month"
+msgstr ""
+
+#: 
+msgctxt "Search Header"
+msgid "Input must contain at least one non-whitespace character."
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Close delete reservation modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "You cannot regret this action"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Fees"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pay"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "@total,-"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Select @label for renewal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Queued reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Remove reservations (@amount)"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Expires soon"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "Close material details modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "This modal shows material details, and makes it possible to renew a material, of that material is renewable"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Expired"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Material Item Number"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Loan date"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Afleveres"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Choose all"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "This modal makes it possible to renew materials"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Remove your reservation"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Date of reservation"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pick"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Not interested after"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Apply changes"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pickup branch"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Status"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Borrow before @date"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Showing @itemsShown out of @hitcount elements"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Go to eReolen"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pickup deadline"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Pick up before @date"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Digital reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Do you want to cancel your reservation?"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Cancel reservation"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Cancel reservations"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Ereolen link"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "My page in ereolen"
+msgstr ""
+
+#: 
+msgctxt "Reservation list"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Favorites list material component"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Recommender"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Loan list"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Something similar"
+msgid "et al."
+msgstr ""
+
+#: 
+msgctxt "Patron menu (Aria)"
+msgid "Close modal with grouped loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "This modal makes it possible to delete reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (aria)"
+msgid "Close modal with grouped reservations"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Digital"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "This modal groups loans after due date and makes it possible to renew said loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Close renew loans modal"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Intermediates"
+msgstr ""
+
+#: 
+msgctxt "Menu (settings)"
+msgid "Page size mobile"
+msgstr ""
+
+#: 
+msgctxt "Menu (settings)"
+msgid "Page size desktop"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (Aria)"
+msgid "This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Close delete reservation modal"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Cancel reservation"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Do you want to cancel your reservation?"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "You cannot regret this action"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Cancel reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "show more"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Select @label"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Choose all renewable"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Can be returned to all branches of (library) libraries"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Showing @itemsShown out of @hitcount loans"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Due date @date"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Go to material details"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "To be returned @date"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Read more about fees"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Renewable (@count)"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (Aria)"
+msgid "This modal makes it possible to renew materials"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The item is reserved by another patron"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "The item cannot be renewed further"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Renew your loans"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Expires"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Go to eReolen"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (Aria)"
+msgid "This modal shows material details, and makes it possible to renew a material, of that material is renewable"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Expired"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (Aria)"
+msgid "Close material details modal"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Material Item Number"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Loan date"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Due date"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Reservations ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Pick up before"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Remove reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Ready"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "This modal makes it possible to delete reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Close modal with grouped reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Ready for pickup"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Pickup deadline"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Borrow before @date"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Status"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Remove your reservation"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Pickup branch"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Apply changes"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Not interested after"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Date of reservation"
+msgstr ""
+
+#: 
+msgid "Menu settings"
+msgstr "Menu"
+
+#: 
+msgctxt "Dashboard"
+msgid "Others are queueing for this material"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "@count queued"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Number @count in line"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Others are queueing for this material"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "@count queued"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Number @count in line"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Expires soon"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Returned too late"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "To be returned soon"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Ready for you"
 msgstr ""
 
