@@ -547,7 +547,7 @@ msgstr "Forlag"
 #: 
 msgctxt "Work Page"
 msgid "Scope"
-msgstr ""
+msgstr "Sidetal"
 
 #: 
 msgctxt "Work Page"
@@ -742,12 +742,12 @@ msgstr "@count eksemplarer er reserveret"
 #: 
 msgctxt "Work Page"
 msgid "We have 1 copy of the material in stock"
-msgstr "Vi har 1 eksemplar af materialet hjemme"
+msgstr "Vi har 1 eksemplar af materialet hjemme."
 
 #: 
 msgctxt "Work Page"
 msgid "We have @count copies of the material in stock"
-msgstr "Vi har @count eksemplarer af materialet hjemme"
+msgstr "Vi har @count eksemplarer af materialet hjemme."
 
 #: 
 msgctxt "Work Page"
@@ -822,7 +822,7 @@ msgstr "Nr."
 #: 
 msgctxt "Work Page"
 msgid "You are number @number in the queue"
-msgstr "Du er nummer @count i køen"
+msgstr "Du er nummer @number i køen"
 
 #: 
 msgctxt "Work Page"
@@ -1720,7 +1720,7 @@ msgstr ""
 #: 
 msgctxt "Reservation list"
 msgid "Remove your reservation"
-msgstr ""
+msgstr "Slet din reservering"
 
 #: 
 msgctxt "Reservation list"
@@ -1740,7 +1740,7 @@ msgstr ""
 #: 
 msgctxt "Reservation list"
 msgid "Pickup deadline"
-msgstr ""
+msgstr "Afhent senest"
 
 #: 
 msgctxt "Reservation list"
@@ -1750,22 +1750,22 @@ msgstr ""
 #: 
 msgctxt "Reservation list"
 msgid "Pickup branch"
-msgstr ""
+msgstr "Afhentningssted"
 
 #: 
 msgctxt "Reservation list"
 msgid "Apply changes"
-msgstr ""
+msgstr "Skift"
 
 #: 
 msgctxt "Reservation list"
 msgid "Date of reservation"
-msgstr ""
+msgstr "Reserveringsdato"
 
 #: 
 msgctxt "Reservation list"
 msgid "Not interested after"
-msgstr ""
+msgstr "Ikke interesseret efter"
 
 #: 
 msgctxt "Reservation list"
@@ -2566,7 +2566,7 @@ msgstr "Ønsker du ikke længere at have en profil på biblioteket?"
 #: 
 msgctxt "Patron page"
 msgid "Delete your profile"
-msgstr "Slet din profil"
+msgstr "Sådan sletter du din profil"
 
 #: 
 msgctxt "Patron page"
@@ -3382,12 +3382,12 @@ msgstr "Denne pop-up gør det muligt at forny materialer"
 #: 
 msgctxt "Dashboard"
 msgid "Remove your reservation"
-msgstr ""
+msgstr "Slet reservering"
 
 #: 
 msgctxt "Dashboard"
 msgid "Date of reservation"
-msgstr ""
+msgstr "Reserveringsdato"
 
 #: 
 msgctxt "Dashboard"
@@ -3397,17 +3397,17 @@ msgstr ""
 #: 
 msgctxt "Dashboard"
 msgid "Not interested after"
-msgstr ""
+msgstr "Ikke interesseret efter"
 
 #: 
 msgctxt "Dashboard"
 msgid "Apply changes"
-msgstr ""
+msgstr "Skift"
 
 #: 
 msgctxt "Dashboard"
 msgid "Pickup branch"
-msgstr ""
+msgstr "Afhentningssted"
 
 #: 
 msgctxt "Dashboard"
@@ -3432,7 +3432,7 @@ msgstr ""
 #: 
 msgctxt "Dashboard"
 msgid "Pickup deadline"
-msgstr ""
+msgstr "Afhent senest"
 
 #: 
 msgctxt "Dashboard"
@@ -3743,7 +3743,7 @@ msgstr "Klar til lån"
 #: 
 msgctxt "Patron menu"
 msgid "Pickup deadline"
-msgstr ""
+msgstr "Afhent senest"
 
 #: 
 msgctxt "Patron menu"
@@ -3758,27 +3758,27 @@ msgstr ""
 #: 
 msgctxt "Patron menu"
 msgid "Remove your reservation"
-msgstr ""
+msgstr "Slet reservering"
 
 #: 
 msgctxt "Patron menu"
 msgid "Pickup branch"
-msgstr ""
+msgstr "Afhentningssted"
 
 #: 
 msgctxt "Patron menu"
 msgid "Apply changes"
-msgstr ""
+msgstr "Skift"
 
 #: 
 msgctxt "Patron menu"
 msgid "Not interested after"
-msgstr ""
+msgstr "Ikke interesseret efter"
 
 #: 
 msgctxt "Patron menu"
 msgid "Date of reservation"
-msgstr ""
+msgstr "Reserveringsdato"
 
 #: 
 msgid "Menu settings"
@@ -3833,4 +3833,14 @@ msgstr ""
 msgctxt "Patron menu"
 msgid "Ready for you"
 msgstr "Klar til dig"
+
+#: 
+msgctxt "Patron menu"
+msgid "and"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "By"
+msgstr ""
 
