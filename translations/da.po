@@ -3618,12 +3618,12 @@ msgstr ""
 #: 
 msgctxt "Patron menu"
 msgid "Go to material details"
-msgstr ""
+msgstr "Vis detaljer for materialet"
 
 #: 
 msgctxt "Patron menu"
 msgid "To be returned @date"
-msgstr ""
+msgstr "Afleveres @date"
 
 #: 
 msgctxt "Patron menu"
@@ -3843,4 +3843,14 @@ msgstr "og"
 msgctxt "Patron menu"
 msgid "By"
 msgstr "Af"
+
+#: 
+msgctxt "Patron menu"
+msgid "Physical reservations"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Digital reservations"
+msgstr ""
 
