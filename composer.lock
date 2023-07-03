@@ -4,15 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     "content-hash": "46c291a7932ddf96eecb7f6210512ab3",
-=======
-    "content-hash": "9fe9bf94f3e22ecab4205d079ddc2601",
->>>>>>> 74fb16e (itkdev: bump react)
-=======
-    "content-hash": "1d6b1302bd2620ab8380a9ea57931086",
->>>>>>> 388c93a (bump react)
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1085,15 +1077,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "version": "v1.7.0-rc22",
-=======
-            "version": "v1.7.0-rc20",
->>>>>>> 74fb16e (itkdev: bump react)
-=======
-            "version": "v1.7.0-rc21",
->>>>>>> 388c93a (bump react)
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-develop/dist.zip"
@@ -1102,15 +1086,7 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "version": "0.3.0-rc32",
-=======
-            "version": "0.3.0-rc30",
->>>>>>> 74fb16e (itkdev: bump react)
-=======
-            "version": "0.3.0-rc31",
->>>>>>> 388c93a (bump react)
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
@@ -9601,6 +9577,7 @@
                 "issues": "https://github.com/minkphp/MinkGoutteDriver/issues",
                 "source": "https://github.com/minkphp/MinkGoutteDriver/tree/v1.3.0"
             },
+            "abandoned": "behat/mink-browserkit-driver",
             "time": "2021-10-12T11:35:46+00:00"
         },
         {
@@ -13478,6 +13455,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 5,
+        "danskernesdigitalebibliotek/dpl-react": 5,
         "drupal/customerror": 10,
         "drupal/default_content": 15,
         "drupal/inline_all_css": 5,
