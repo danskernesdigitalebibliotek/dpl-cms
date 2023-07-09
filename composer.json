@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc33",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-feature%2Fupdate-fbi-client/dist.zip",
                     "type": "zip"
                 },
                 "require": {
