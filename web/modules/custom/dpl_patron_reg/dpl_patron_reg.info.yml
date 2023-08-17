@@ -5,3 +5,5 @@ type: module
 core_version_requirement: ^9
 dependencies:
   - dpl_login:dpl_login
+  - dpl_patron_page:dpl_patron_page
+  - dpl_reservations:dpl_reservations

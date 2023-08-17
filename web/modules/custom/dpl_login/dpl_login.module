@@ -21,12 +21,32 @@ use function Safe\sprintf as sprintf;
  *   User info from external service.
  * @param mixed[] $context
  *   Various openid_connect context. Tokens etc.
+ *
+ * @return void
+ *
+ * @throws \Drupal\dpl_login\Exception\AccessTokenCreationException
+ * @throws \Safe\Exceptions\StringsException
+ * @throws \Drupal\Core\TempStore\TempStoreException
  */
 function dpl_login_openid_connect_userinfo_alter(array &$userinfo, array $context): void {
 
-  // If we cannot resolve uinque id we cannot continue.
+  // If we cannot resolve unique id we cannot continue.
   if (!$id = $userinfo['attributes']['uniqueId'] ?? FALSE) {
+    // If this is n user registration flow we still need the user token to
+    // create the user in FBS from React.
+    /** @var Drupal\Core\TempStore\PrivateTempStore $store */
+    $store = \Drupal::service('tempstore.private')->get('dpl_patron_reg');
+
+    if ($store->get('isRegistrationFlow')) {
+      $access_token = AccessToken::createFromOpenidConnectContext($context);
+      /** @var Drupal\dpl_login\UserTokensProvider $token_provider */
+      $token_provider = \Drupal::service('dpl_login.user_tokens');
+      $token_provider->setAccessToken($access_token);
+      $store->delete('isRegistrationFlow');
+    }
+
     $userinfo = [];
+
     return;
   }
 
@@ -35,7 +55,7 @@ function dpl_login_openid_connect_userinfo_alter(array &$userinfo, array $contex
   $name = uniqid();
   // Drupal needs an email. We set a unique one to apply to that rule.
   $userinfo['email'] = sprintf('%s@dpl-cms.invalid', $name);
-  // Drupal needs a user name. We use the unique id to apply to that rule.
+  // Drupal needs a username. We use the unique id to apply to that rule.
   $userinfo['name'] = $name;
   // openid_connect module needs the sub for creating the auth map.
   $userinfo['sub'] = $id_hash;

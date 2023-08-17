@@ -50,7 +50,9 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
     private ConfigFactoryInterface $configFactory,
     private BranchSettings $branchSettings,
     private BranchRepositoryInterface $branchRepository,
-    private DplReactConfigInterface $patronRegSettings
+    private DplReactConfigInterface $patronRegSettings,
+    private DplReactConfigInterface $patronSettings,
+    private DplReactConfigInterface $reservationSettings,
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configuration = $configuration;
@@ -68,7 +70,9 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
       $container->get('config.factory'),
       $container->get('dpl_library_agency.branch_settings'),
       $container->get('dpl_library_agency.branch.repository'),
-      \Drupal::service('dpl_patron_reg.settings')
+      \Drupal::service('dpl_patron_reg.settings'),
+      \Drupal::service('dpl_patron_page.settings'),
+      \Drupal::service('dpl_reservations.settings')
     );
   }
 
@@ -94,20 +98,21 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
    */
   public function build(): array {
     $config = $this->patronRegSettings->loadConfig();
+    $patron_page_settings = $this->patronSettings->loadConfig();
+    $reservation_settings = $this->reservationSettings->loadConfig();
     $userToken = $this->user_token_provider->getAccessToken()?->token;
-
-    // @todo change to use patron_page settings inject, if approved in other PR.
-    $patron_page_settings = $this->configFactory->get('patron_page.settings');
 
     $data = [
       // Configuration.
-      'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
+        'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
       'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
       'min-age-config' => $config->get('age_limit') ?? '18',
       'pincode-length-max-config' => $patron_page_settings->get('pincode_length_max'),
       'pincode-length-min-config' => $patron_page_settings->get('pincode_length_min'),
       'redirect-on-user-created-url' => $config->get('redirect_on_user_created_url'),
       'user-token' => $userToken,
+      'login-url' => 'https://login.bib.dk/userinfo',
+      'text-notifications-enabled-config' => $reservation_settings->get('reservation_sms_notifications_disabled') ? FALSE : TRUE,
 
       // Texts.
       'create-patron-cancel-button-text' => $this->t("Cancel", [], ['context' => 'Create patron']),

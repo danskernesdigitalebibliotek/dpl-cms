@@ -145,6 +145,11 @@ class DplPatronRegController extends ControllerBase {
     $url->setAbsolute();
     $url = $url->toString();
 
+    // Set special cookie to detect this is patron registration flow. This is
+    // used in dpl_login.
+    $store = \Drupal::service('tempstore.private')->get('dpl_patron_reg');
+    $store->set('isRegistrationFlow', true);
+
     /** @var string $url */
     return new TrustedRedirectResponse($url);
   }
