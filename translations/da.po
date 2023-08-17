@@ -14,16 +14,6 @@ msgstr "Grundlæggende indstillinger"
 
 #: 
 msgctxt "Loan list (settings)"
-msgid "Fee page url"
-msgstr "Oplysningsside om takster 1"
-
-#: 
-msgctxt "Loan list (settings)"
-msgid "The link to the relevant fee page"
-msgstr "Her angives linket til oplysningsside om takster"
-
-#: 
-msgctxt "Loan list (settings)"
 msgid "Material overdue url"
 msgstr "Link til overskredne lån"
 
@@ -1939,36 +1929,6 @@ msgstr "Takster for gebyrer og erstatninger"
 
 #: 
 msgctxt "Blocked user"
-msgid "Blocked patron d title text"
-msgstr "Blokeret låner årsag D"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron d body text"
-msgstr "Blokeret låner årsag D. Her skal stå en meningsfuld besked"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron s title text"
-msgstr "Blokeret låner årsag S"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron s body text"
-msgstr "Blokeret låner årsag S. Her skal stå en meningsfuld besked"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron f title text"
-msgstr "Blokeret låner årsag F"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron f body text"
-msgstr "Blokeret låner årsag F. Her skal stå en meningsfuld besked"
-
-#: 
-msgctxt "Blocked user"
 msgid "You have exceeded your fee limit"
 msgstr "Du har overskredet din gebyrgrænse"
 
@@ -1976,26 +1936,6 @@ msgstr "Du har overskredet din gebyrgrænse"
 msgctxt "Blocked user"
 msgid "You are therefore not able to borrow or reserve materials from the library"
 msgstr "Du kan derfor ikke låne eller reservere materialer fra biblioteket."
-
-#: 
-msgctxt "Blocked user"
-msgid "Your user is blocked"
-msgstr "Din bruger er blokeret"
-
-#: 
-msgctxt "Blocked user"
-msgid "You therefore cannot reserve, borrow or renew loans. Please contact the library for further information"
-msgstr "Du kan derfor ikke reservere, låne eller forny dine lån. Kontakt venligst biblioteket for yderligere information."
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked reason O modal title"
-msgstr "Blokeret låner årsag O"
-
-#: 
-msgctxt "Blocked user"
-msgid "Blocked patron o body text"
-msgstr "Blokeret låner årsag O. Her skal stå en meningsfuld besked"
 
 #: 
 msgctxt "Blocked user"
@@ -2215,41 +2155,6 @@ msgstr "Din side"
 msgctxt "Dashboard (settings)"
 msgid "Basic settings"
 msgstr "Grundlæggende indstillinger"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Fees url"
-msgstr "Link til menupunktet Gebyrer & erstatninger"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Pay owed url"
-msgstr "Betalingslink"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Physical loans url"
-msgstr ""
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Loans overdue url"
-msgstr ""
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Loans soon overdue url"
-msgstr ""
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Loans not overdue url"
-msgstr ""
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Reservations url"
-msgstr ""
 
 #: 
 msgctxt "Dashboard (settings)"
@@ -3713,11 +3618,6 @@ msgstr "Reserveringer klar til afhentning"
 
 #: 
 msgctxt "Patron menu"
-msgid "Pick up before"
-msgstr "Hent senest"
-
-#: 
-msgctxt "Patron menu"
 msgid "Remove reservations"
 msgstr "Slet reserveringer"
 
@@ -3854,4 +3754,79 @@ msgstr "Fysiske reserveringer"
 msgctxt "Patron menu"
 msgid "Digital reservations"
 msgstr "Digitale reserveringer"
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron title text (d)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron body text (d)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron title text (s)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron body text (s)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron title text (f)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron body text (f)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Your user is blocked (w)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "You therefore cannot reserve, borrow or renew loans. Please contact the library for further information (w)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked reason modal title (o)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Blocked patron body text (o)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "Your user is blocked (u)"
+msgstr ""
+
+#: 
+msgctxt "Blocked user"
+msgid "You therefore cannot reserve, borrow or renew loans. Please contact the library for further information (u)"
+msgstr ""
+
+#: 
+msgctxt "Patron menu"
+msgid "Pick up before @date"
+msgstr ""
+
+#: 
+msgctxt "Loan list"
+msgid "Due date digital @date"
+msgstr "Udløbsdato @date"
+
+#: 
+msgctxt "Loan list"
+msgid "Due date physical @date"
+msgstr "Afleveringsdato @date"
 
