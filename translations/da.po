@@ -1680,7 +1680,7 @@ msgstr "i kø"
 #: 
 msgctxt "Reservation list"
 msgid "Pick up before @date"
-msgstr "Hent før @date"
+msgstr "Hent senest @date"
 
 #: 
 msgctxt "Reservation list"
@@ -3438,7 +3438,7 @@ msgstr "Afhent senest"
 #: 
 msgctxt "Dashboard"
 msgid "Pick up before @date"
-msgstr "Hent før @date"
+msgstr "Hent senest @date"
 
 #: 
 msgctxt "Dashboard"
@@ -3714,7 +3714,7 @@ msgstr "Reserveringer klar til afhentning"
 #: 
 msgctxt "Patron menu"
 msgid "Pick up before"
-msgstr "Hent før"
+msgstr "Hent senest"
 
 #: 
 msgctxt "Patron menu"
