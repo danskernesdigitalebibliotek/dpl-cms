@@ -486,7 +486,7 @@ class DplReactAppsController extends ControllerBase {
     $blockedData = [
       'redirect-on-blocked-url' => $blockedSettings->get('redirect_on_blocked_url') ?? '',
       'blocked-patron-e-link-url' => $blockedSettings->get('blocked_patron_e_link_url') ?? '',
-      'blocked-patron-d-title-text' => t('Blocked patron title text (d)', [], ['context' => 'Blocked user']),
+      'blocked-patron-d-title-text' => t('Blocked patron title text (d) ', [], ['context' => 'Blocked user']),
       'blocked-patron-d-body-text' => t('Blocked patron body text (d)', [], ['context' => 'Blocked user']),
       'blocked-patron-s-title-text' => t('Blocked patron title text (s)', [], ['context' => 'Blocked user']),
       'blocked-patron-s-body-text' => t('Blocked patron body text (s)', [], ['context' => 'Blocked user']),
