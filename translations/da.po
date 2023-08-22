@@ -1042,7 +1042,7 @@ msgstr "Søgefelt input"
 #: 
 msgctxt "Search Header"
 msgid "Animated series"
-msgstr ""
+msgstr "Animeret serie"
 
 #: 
 msgctxt "Search Header"
@@ -1185,7 +1185,7 @@ msgstr "Valgte filialer vil ikke kunne vælges som afhentningssted."
 
 #: 
 msgid "Configuration file"
-msgstr ""
+msgstr "Konfigurationsfil"
 
 #: 
 msgid "Upload"
@@ -1209,7 +1209,7 @@ msgstr "Adgangsplatformen"
 
 #: 
 msgid "Integration configured"
-msgstr ""
+msgstr "Integration konfigureret"
 
 #: 
 msgid "Generate proxy url"
@@ -1309,7 +1309,7 @@ msgstr "dpl_campaign"
 
 #: 
 msgid "A module that deliveres possibility for campaign CRUD and integration with Dpl React Apps"
-msgstr ""
+msgstr "Et modul, som giver mulighed for kampagne CRUD og integration med DPL React Apps"
 
 #: 
 msgid "Publizon settings"
@@ -1394,7 +1394,7 @@ msgstr "Standardtema for Folkebibliotekernes CMS"
 #: 
 msgctxt "Url Proxy"
 msgid "configured"
-msgstr ""
+msgstr "konfigureret"
 
 #: 
 msgctxt "Url Proxy"
@@ -1430,7 +1430,7 @@ msgstr "Hostname / Værtsnavn"
 #: 
 msgctxt "Url Proxy"
 msgid "Replacement %configured"
-msgstr ""
+msgstr "Erstatning %configured"
 
 #: 
 msgctxt "Url Proxy"
@@ -1480,7 +1480,7 @@ msgstr "Reserveringer"
 #: 
 msgctxt "DPL Config Import"
 msgid "Select a configuration file in YAML format to upload."
-msgstr ""
+msgstr "Vælg en konfigurationsfil i YAML til upload."
 
 #: 
 msgctxt "DPL Config Import"
@@ -3070,7 +3070,7 @@ msgstr "Luk brugermenu"
 #: 
 msgctxt "Patron menu"
 msgid "The user modal"
-msgstr ""
+msgstr "Brugermodalen"
 
 #: 
 msgctxt "Patron menu"
@@ -3858,12 +3858,12 @@ msgstr "Forny ikke"
 #: 
 msgctxt "Loan list (Aria)"
 msgid "accept modal aria description text"
-msgstr ""
+msgstr "accepter pop-up beskrivelsestekst"
 
 #: 
 msgctxt "Loan list (Aria)"
 msgid "accept modal aria label text"
-msgstr ""
+msgstr "accepter pop-up label tekst"
 
 #: 
 msgctxt "Dashboard"
@@ -3893,10 +3893,10 @@ msgstr "Forny ikke"
 #: 
 msgctxt "Dashboard (Aria)"
 msgid "accept modal aria description text"
-msgstr ""
+msgstr "accepter pop-up beskrivelsestekst"
 
 #: 
 msgctxt "Dashboard (Aria)"
 msgid "accept modal aria label text"
-msgstr ""
+msgstr "accepter pop-up beskrivelsestekst"
 
