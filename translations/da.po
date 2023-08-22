@@ -1087,7 +1087,7 @@ msgstr "i"
 #: 
 msgctxt "Search Header"
 msgid "Start typing in order to search"
-msgstr "Lotte er den bedste TEST Man 12:17"
+msgstr "Tillykke med det nye testsite Tir 10:55"
 
 #: 
 msgctxt "Search Header"
@@ -3829,4 +3829,74 @@ msgstr "Udløbsdato @date"
 msgctxt "Loan list"
 msgid "Due date physical @date"
 msgstr "Afleveres @date"
+
+#: 
+msgctxt "Loan list"
+msgid "Your fee is raised"
+msgstr "Dit gebyr er forhøjet"
+
+#: 
+msgctxt "Loan list"
+msgid "If you renew your fee will be raised"
+msgstr "Hvis du fornyer bliver dit gebyr forhøjet"
+
+#: 
+msgctxt "Loan list"
+msgid "Are you sure you want to renew?"
+msgstr "Er du sikker på at du vil forny?"
+
+#: 
+msgctxt "Loan list"
+msgid "Yes, renew"
+msgstr "Ja, forny"
+
+#: 
+msgctxt "Loan list"
+msgid "Cancel renewal"
+msgstr "Forny ikke"
+
+#: 
+msgctxt "Loan list (Aria)"
+msgid "accept modal aria description text"
+msgstr ""
+
+#: 
+msgctxt "Loan list (Aria)"
+msgid "accept modal aria label text"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "Your fee is raised"
+msgstr "Dit gebyr er fohøjet"
+
+#: 
+msgctxt "Dashboard"
+msgid "If you renew your fee will be raised"
+msgstr "Hvis du fornyer bliver dit gebyr forhøjet"
+
+#: 
+msgctxt "Dashboard"
+msgid "Are you sure you want to renew?"
+msgstr "Er du sikker på at du vil forny?"
+
+#: 
+msgctxt "Dashboard"
+msgid "Yes, renew"
+msgstr "Ja, forny"
+
+#: 
+msgctxt "Dashboard"
+msgid "Cancel renewal"
+msgstr "Forny ikke"
+
+#: 
+msgctxt "Dashboard (Aria)"
+msgid "accept modal aria description text"
+msgstr ""
+
+#: 
+msgctxt "Dashboard (Aria)"
+msgid "accept modal aria label text"
+msgstr ""
 
