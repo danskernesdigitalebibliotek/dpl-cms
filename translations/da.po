@@ -1710,7 +1710,7 @@ msgstr "dag"
 #: 
 msgctxt "Reservation list"
 msgid "Remove your reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Reservation list"
@@ -1780,7 +1780,7 @@ msgstr "Fortryd"
 #: 
 msgctxt "Reservation list"
 msgid "Cancel reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Reservation list"
@@ -1790,7 +1790,7 @@ msgstr "Slet reserveringer"
 #: 
 msgctxt "Reservation list"
 msgid "Do you want to cancel your reservation?"
-msgstr "Vil du slette din reservering?"
+msgstr "Vil du slette dine reserveringer?"
 
 #: 
 msgctxt "Reservation list"
@@ -2538,16 +2538,6 @@ msgstr "Skal materialer som er tilgængelige som strakslån vises til brugerne?"
 
 #: 
 msgctxt "dpl_instant_loan"
-msgid "Match String"
-msgstr "Match String"
-
-#: 
-msgctxt "dpl_instant_loan"
-msgid "Text used to identify materials which are available for instant loans. This text must be present in the material group of such materials."
-msgstr "Tekststreng som bruges til at identificere materialer, som er tilgængelige som strakslån. Tekststrengen skal indgå i gruppen af materialer af denne type."
-
-#: 
-msgctxt "dpl_instant_loan"
 msgid "Threshold"
 msgstr "Varsel"
 
@@ -3288,7 +3278,7 @@ msgstr "Denne pop-up gør det muligt at forny materialer"
 #: 
 msgctxt "Dashboard"
 msgid "Remove your reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Dashboard"
@@ -3358,12 +3348,12 @@ msgstr "Digitale reserveringer"
 #: 
 msgctxt "Dashboard"
 msgid "Do you want to cancel your reservation?"
-msgstr "Vil du slette din reservering?"
+msgstr "Vil du slette dine reserveringer?"
 
 #: 
 msgctxt "Dashboard"
 msgid "Cancel reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Dashboard"
@@ -3473,12 +3463,12 @@ msgstr "Luk pop-up til at reservere"
 #: 
 msgctxt "Patron menu"
 msgid "Cancel reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Patron menu"
 msgid "Do you want to cancel your reservation?"
-msgstr "Vil du slette din reservering?"
+msgstr "Vil du slette dine reserveringer?"
 
 #: 
 msgctxt "Patron menu"
@@ -3659,7 +3649,7 @@ msgstr "Status"
 #: 
 msgctxt "Patron menu"
 msgid "Remove your reservation"
-msgstr "Slet reservering"
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Patron menu"
@@ -3899,4 +3889,14 @@ msgstr "accepter pop-up beskrivelsestekst"
 msgctxt "Dashboard (Aria)"
 msgid "accept modal aria label text"
 msgstr "accepter pop-up beskrivelsestekst"
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Match Strings"
+msgstr ""
+
+#: 
+msgctxt "dpl_instant_loan"
+msgid "Text used to identify materials which are available for instant loans.<br/> You can write multiple strings - each on a spearate line.<br/> To find a match one of the strings must be present in the material group of such materials."
+msgstr ""
 
