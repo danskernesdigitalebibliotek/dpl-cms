@@ -89,7 +89,8 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
 
       // Urls.
       'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
-      'fees-page-url' => '/user/me/fees',
+      'fees-page-url' => $generalSettings->get('fees_page_url'),
+      'fees-url' => '/user/me/fees',
       'intermediate-url' => '/user/me/intermediates',
       'reservations-url' => '/user/me/reservations',
       'physical-loans-url' => '/user/me/loans',
