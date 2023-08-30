@@ -742,12 +742,12 @@ msgstr "Vi har @count eksemplarer af materialet hjemme."
 #: 
 msgctxt "Work Page"
 msgid "Missing data"
-msgstr "Data mangler"
+msgstr "Ingen information"
 
 #: 
 msgctxt "Work Page"
 msgid "If you want to receive notifications by e-mail, you can enter or change the desired e-mail here."
-msgstr "Hvis du vil ønsker at modtage notifikationer på e-mail, kan du skrive eller ændre din mailadresse her"
+msgstr "Hvis du ønsker at modtage servicemeddelelser om reserveringer og afleveringer, kan du angive eller ændre din e-mail her."
 
 #: 
 msgctxt "Work Page"
@@ -787,7 +787,7 @@ msgstr "Vælg afhentningssted"
 #: 
 msgctxt "Work Page"
 msgid "If you want to receive SMS, you can enter or change your phone number here."
-msgstr "Hvis du ønsker at modtage en SMS, kan du angive eller ændre dit mobilnummer her"
+msgstr "Hvis du ønsker at modtage servicemeddelelser om reserveringer og afleveringer, kan du angive eller ændre dit mobilnummer her."
 
 #: 
 msgctxt "Work Page"
@@ -802,7 +802,7 @@ msgstr "Angiv dit mobilnummer"
 #: 
 msgctxt "Work Page"
 msgid "Phone"
-msgstr "Monilnummer"
+msgstr "Mobilnummer"
 
 #: 
 msgctxt "Work Page"
@@ -2326,7 +2326,7 @@ msgstr "Kontaktinformation"
 #: 
 msgctxt "Patron page"
 msgid "patron page contact info body text"
-msgstr "Husk at opdatere dine oplysninger hvis du skifter mobilnummer eller e-mail"
+msgstr "Husk at opdatere dine oplysninger, hvis du skifter mobilnummer eller e-mail."
 
 #: 
 msgctxt "Patron page"
@@ -3132,11 +3132,6 @@ msgstr "Skift interesseperiode"
 
 #: 
 msgctxt "Work Page"
-msgid "Fictional characters"
-msgstr "Fiktive karakterer"
-
-#: 
-msgctxt "Work Page"
 msgid "Film adaptations"
 msgstr "Filmatisering"
 
@@ -3898,5 +3893,40 @@ msgstr ""
 #: 
 msgctxt "dpl_instant_loan"
 msgid "Text used to identify materials which are available for instant loans.<br/> You can write multiple strings - each on a spearate line.<br/> To find a match one of the strings must be present in the material group of such materials."
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Fictional characters"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Can't be viewed"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Authors"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "You don't live in the municipality where this library is located."
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Subject number"
+msgstr ""
+
+#: 
+msgctxt "React apps (Global error handling)"
+msgid "Close"
+msgstr ""
+
+#: 
+msgctxt "React apps (Global error handling)"
+msgid "An error occurred"
 msgstr ""
 
