@@ -2895,7 +2895,7 @@ msgstr "Kontaktinformation brødtekst"
 #: 
 msgctxt "Create patron"
 msgid "contact info header text"
-msgstr "Kontaktoplysninger overskrift"
+msgstr "Kontaktoplysninger"
 
 #: 
 msgctxt "Create patron"
@@ -3095,7 +3095,7 @@ msgstr "Notifikations menu"
 #: 
 msgctxt "Patron menu (aria)"
 msgid "Profile links"
-msgstr "Links til din profil"
+msgstr "Links til dit låneoverblik"
 
 #: 
 msgid "DPL menu"
