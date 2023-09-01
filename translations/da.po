@@ -3208,7 +3208,7 @@ msgstr "Lån"
 #: 
 msgctxt "Dashboard"
 msgid "Select @label for renewal"
-msgstr "Vælg @label til fornyelse"
+msgstr "Vælg @label til sletning"
 
 #: 
 msgctxt "Dashboard"
