@@ -1107,7 +1107,7 @@ msgstr "Emne"
 #: 
 msgctxt "Search Header"
 msgid "Work"
-msgstr "Værk"
+msgstr "Titel"
 
 #: 
 msgctxt "Library Agency Configuration"
