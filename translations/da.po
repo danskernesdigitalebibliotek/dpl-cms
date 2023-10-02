@@ -3898,7 +3898,7 @@ msgstr ""
 #: 
 msgctxt "Search Result"
 msgid "Fictional characters"
-msgstr ""
+msgstr "Fiktive personer"
 
 #: 
 msgctxt "Work Page"
@@ -3918,7 +3918,7 @@ msgstr "Du er ikke bosiddende i kommunen som dette bibliotek er tilknyttet"
 #: 
 msgctxt "Work Page"
 msgid "Subject number"
-msgstr ""
+msgstr "Emnetal"
 
 #: 
 msgctxt "React apps (Global error handling)"
