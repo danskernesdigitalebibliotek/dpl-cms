@@ -115,7 +115,8 @@ class DplReactAppsController extends ControllerBase {
       'search-url' => self::searchResultUrl(),
       // Text.
       'add-more-filters-text' => $this->t('+ more filters', [], ['context' => 'Search Result']),
-      'available-text' => $this->t('Available', [], ['context' => 'Search Result']),
+      'availability-available-text' => $this->t('Available', [], ['context' => 'Search Result']),
+      'availability-unavailable-text' => $this->t('Unavailable', [], ['context' => 'Search Result']),
       'by-author-text' => $this->t('By', [], ['context' => 'Search Result']),
       'clear-all-text' => $this->t('Clear all', [], ['context' => 'Search Result']),
       'et-al-text' => $this->t('et. al.', [], ['context' => 'Search Result']),
@@ -125,6 +126,7 @@ class DplReactAppsController extends ControllerBase {
       'facet-children-or-adults-text' => $this->t('Children or adults', [], ['context' => 'Search Result']),
       'facet-creators-text' => $this->t('Creators', [], ['context' => 'Search Result']),
       'facet-fiction-nonfiction-text' => $this->t('Fiction or non-fiction', [], ['context' => 'Search Result']),
+      'facet-fictional-characters-text' => $this->t('Fictional characters', [], ['context' => 'Search Result']),
       'facet-genre-and-form-text' => $this->t('Genre and form', [], ['context' => 'Search Result']),
       'facet-main-languages-text' => $this->t('Main languages', [], ['context' => 'Search Result']),
       'facet-material-types-text' => $this->t('Material types', [], ['context' => 'Search Result']),
@@ -142,7 +144,6 @@ class DplReactAppsController extends ControllerBase {
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
       'subject-number-text' => $this->t('Subject number', [], ['context' => 'Search Result']),
-      'unavailable-text' => $this->t('Unavailable', [], ['context' => 'Search Result']),
     // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -199,13 +200,15 @@ class DplReactAppsController extends ControllerBase {
       'material-url' => self::materialUrl(),
       'search-url' => self::searchResultUrl(),
       // Text.
+      'availability-available-text' => $this->t('Available', [], ['context' => 'Work Page']),
+      'availability-unavailable-text' => $this->t('Unavailable', [], ['context' => 'Work Page']),
       'already-reserved-text' => $this->t('Already reserved', [], ['context' => 'Work Page']),
       'approve-reservation-text' => $this->t('Approve reservation', [], ['context' => 'Work Page']),
       'audience-text' => $this->t('Audience', [], ['context' => 'Work Page']),
-      'available-text' => $this->t('Available', [], ['context' => 'Work Page']),
       'cannot-see-review-text' => $this->t('The review is not accessible', [], ['context' => 'Work Page']),
       'cant-reserve-text' => $this->t("Can't be reserved", [], ['context' => 'Work Page']),
       'cant-view-review-text' => $this->t('Cannot view review', [], ['context' => 'Work Page']),
+      'cant-view-text' => $this->t("Can't be viewed", [], ['context' => 'Work Page']),
       'change-email-text' => $this->t('Change email', [], ['context' => 'Work Page']),
       'change-pickup-location-text' => $this->t('Change pickup location', [], ['context' => 'Work Page']),
       'change-sms-number-text' => $this->t('Change SMS number', [], ['context' => 'Work Page']),
@@ -218,6 +221,7 @@ class DplReactAppsController extends ControllerBase {
       'days-text' => $this->t('Days', [], ['context' => 'Work Page']),
       'description-headline-text' => $this->t('Description', [], ['context' => 'Work Page']),
       'details-list-audience-text' => $this->t('Audience', [], ['context' => 'Work Page']),
+      'details-list-authors-text' => $this->t('Authors', [], ['context' => 'Work Page']),
       'details-list-contributors-text' => $this->t('Contributors', [], ['context' => 'Work Page']),
       'details-list-edition-text' => $this->t('Edition', [], ['context' => 'Work Page']),
       'details-list-first-edition-year-text' => $this->t('Edition year', [], ['context' => 'Work Page']),
@@ -235,7 +239,6 @@ class DplReactAppsController extends ControllerBase {
       'edition-text' => $this->t('Edition', [], ['context' => 'Work Page']),
       'editions-text' => $this->t('Editions', [], ['context' => 'Work Page']),
       'et-al-text' => $this->t('et al.', [], ['context' => 'Work Page']),
-      'facet-fictional-characters-text' => $this->t('Fictional characters', [], ['context' => 'Work Page']),
       'fiction-nonfiction-text' => $this->t('Fiction/nonfiction', [], ['context' => 'Work Page']),
       'film-adaptations-text' => $this->t('Film adaptations', [], ['context' => 'Work Page']),
       'find-on-bookshelf-text' => $this->t('Find on bookshelf', [], ['context' => 'Work Page']),
@@ -305,6 +308,7 @@ class DplReactAppsController extends ControllerBase {
       'modal-reservation-form-sms-header-title-text' => $this->t('Change phone number', [], ['context' => 'Work Page']),
       'modal-reservation-form-sms-input-field-description-text' => $this->t('Input phone number', [], ['context' => 'Work Page']),
       'modal-reservation-form-sms-input-field-label-text' => $this->t('Phone', [], ['context' => 'Work Page']),
+      'not-living-in-municipality-text' => $this->t("You don't live in the municipality where this library is located.", [], ['context' => 'Work Page']),
       'number-description-text' => $this->t('Nr.', [], ['context' => 'Work Page']),
       'number-in-queue-text' => $this->t('You are number @number in the queue', [], ['context' => 'Work Page']),
       'ok-button-text' => $this->t('Ok', [], ['context' => 'Work Page']),
@@ -357,12 +361,12 @@ class DplReactAppsController extends ControllerBase {
       'see-online-text' => $this->t('See online', [], ['context' => 'Work Page']),
       'shift-text' => $this->t('Shift', [], ['context' => 'Work Page']),
       'six-months-text' => $this->t('6 months', [], ['context' => 'Work Page']),
+      'subject-number-text' => $this->t('Subject number', [], ['context' => 'Work Page']),
       'this-month-text' => $this->t('This month', [], ['context' => 'Work Page']),
       'three-months-text' => $this->t('3 months', [], ['context' => 'Work Page']),
       'try-agin-button-text' => $this->t('Try again', [], ['context' => 'Work Page']),
       'two-months-text' => $this->t('2 months', [], ['context' => 'Work Page']),
       'type-text' => $this->t('Type', [], ['context' => 'Work Page']),
-      'unavailable-text' => $this->t('Unavailable', [], ['context' => 'Work Page']),
       'we-have-shopped-text' => $this->t('In stock:', [], ['context' => 'Work Page']),
       'you-have-borrowed-text' => $this->t('You have borrowed', [], ['context' => 'Work Page']),
         // Add external API base urls.
@@ -482,36 +486,26 @@ class DplReactAppsController extends ControllerBase {
     $blockedData = [
       'redirect-on-blocked-url' => $blockedSettings->get('redirect_on_blocked_url') ?? '',
       'blocked-patron-e-link-url' => $blockedSettings->get('blocked_patron_e_link_url') ?? '',
-      'blocked-patron-d-title-text' => t('Blocked patron d title text', [], ['context' => 'Blocked user']),
-      'blocked-patron-d-body-text' => t('Blocked patron d body text', [], ['context' => 'Blocked user']),
-      'blocked-patron-s-title-text' => t('Blocked patron s title text', [], ['context' => 'Blocked user']),
-      'blocked-patron-s-body-text' => t('Blocked patron s body text', [], ['context' => 'Blocked user']),
-      'blocked-patron-f-title-text' => t('Blocked patron f title text', [], ['context' => 'Blocked user']),
-      'blocked-patron-f-body-text' => t('Blocked patron f body text', [], ['context' => 'Blocked user']),
+      'blocked-patron-d-title-text' => t('Blocked patron title text (d)', [], ['context' => 'Blocked user']),
+      'blocked-patron-d-body-text' => t('Blocked patron body text (d)', [], ['context' => 'Blocked user']),
+      'blocked-patron-s-title-text' => t('Blocked patron title text (s)', [], ['context' => 'Blocked user']),
+      'blocked-patron-s-body-text' => t('Blocked patron body text (s)', [], ['context' => 'Blocked user']),
+      'blocked-patron-f-title-text' => t('Blocked patron title text (f)', [], ['context' => 'Blocked user']),
+      'blocked-patron-f-body-text' => t('Blocked patron body text (f)', [], ['context' => 'Blocked user']),
       'blocked-patron-e-title-text' => t('You have exceeded your fee limit', [], ['context' => 'Blocked user']),
       'blocked-patron-e-body-text' => t('You are therefore not able to borrow or reserve materials from the library', [], ['context' => 'Blocked user']),
-      'blocked-patron-w-title-text' => t('Your user is blocked', [], ['context' => 'Blocked user']),
-      'blocked-patron-w-body-text' => t('You therefore cannot reserve, borrow or renew loans. Please contact the library for further information', [], ['context' => 'Blocked user']),
-      'blocked-patron-o-title-text' => t('Blocked reason O modal title', [], ['context' => 'Blocked user']),
-      'blocked-patron-o-body-text' => t('Blocked patron o body text', [], ['context' => 'Blocked user']),
-      'blocked-patron-u-title-text' => t('Your user is blocked', [], ['context' => 'Blocked user']),
-      'blocked-patron-u-body-text' => t('You therefore cannot reserve, borrow or renew loans. Please contact the library for further information', [], ['context' => 'Blocked user']),
+      'blocked-patron-w-title-text' => t('Your user is blocked (w)', [], ['context' => 'Blocked user']),
+      'blocked-patron-w-body-text' => t('You therefore cannot reserve, borrow or renew loans. Please contact the library for further information (w)', [], ['context' => 'Blocked user']),
+      'blocked-patron-o-title-text' => t('Blocked reason modal title (o)', [], ['context' => 'Blocked user']),
+      'blocked-patron-o-body-text' => t('Blocked patron body text (o)', [], ['context' => 'Blocked user']),
+      'blocked-patron-u-title-text' => t('Your user is blocked (u)', [], ['context' => 'Blocked user']),
+      'blocked-patron-u-body-text' => t('You therefore cannot reserve, borrow or renew loans. Please contact the library for further information (u)', [], ['context' => 'Blocked user']),
       'blocked-patron-e-link-text' => t('Pay your fees here', [], ['context' => 'Blocked user']),
       'blocked-patron-close-modal-aria-label-text' => t('Close blocked patron modal', [], ['context' => 'Blocked user (Aria)']),
       'blocked-patron-modal-aria-description-text' => t('This modal alerts you, that your patron has been blocked', [], ['context' => 'Blocked user (Aria)']),
     ];
 
     return $blockedData;
-  }
-
-  /**
-   * Get the instant loan configuration.
-   *
-   * @return mixed[]
-   *   The instant loan configuration.
-   */
-  public static function getInstantLoanConfig(): array {
-    return \Drupal::configFactory()->get('dpl_instant_loan.settings')->get() ?? [];
   }
 
 }

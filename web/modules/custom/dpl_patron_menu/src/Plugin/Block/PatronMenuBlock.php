@@ -132,7 +132,7 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'interest-periods-config' => DplReactAppsController::getInterestPeriods(),
 
       // Urls.
-      'fees-page-url' => $generalSettings->get('fees_page_url'),
+      'fees-page-url' => '/user/me/fees',
       "menu-login-url" => Url::fromRoute('dpl_login.login', [], ['absolute' => TRUE])->toString(),
       "menu-log-out-url" => Url::fromRoute('dpl_login.logout', [], ['absolute' => TRUE])->toString(),
       "menu-sign-up-url" => Url::fromRoute('dpl_patron_reg.information', [], ['absolute' => TRUE])->toString(),
@@ -160,6 +160,10 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
           $this->t('Cancel reservations', [], ['context' => 'Patron menu']),
         ],
       ],
+      'physical-reservations-header-text' => $this->t('Physical reservations', [], ['context' => 'Patron menu']),
+      'digital-reservations-header-text' => $this->t('Digital reservations', [], ['context' => 'Patron menu']),
+      'material-and-author-text' => $this->t('and', [], ['context' => 'Patron menu']),
+      'material-by-author-text' => $this->t('By', [], ['context' => 'Patron menu']),
       'show-more-text' => $this->t("show more", [], ['context' => 'Patron menu']),
       'group-modal-hidden-label-checkbox-on-material-text' => $this->t("Select @label", [], ['context' => 'Patron menu']),
       'group-modal-checkbox-text' => $this->t('Choose all renewable', [], ['context' => 'Patron menu']),
@@ -188,7 +192,7 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'material-details-physical-due-date-label-text' => $this->t("Due date", [], ['context' => 'Patron menu']),
       'material-details-warning-loan-overdue-text' => $this->t("The due date of return is exceeded, therefore you will be charged a fee, when the item is returned", [], ['context' => 'Patron menu']),
       'reservations-ready-for-pickup-text' => $this->t('Reservations ready for pickup', [], ['context' => 'Patron menu']),
-      'pick-up-latest-text' => $this->t('Pick up before', [], ['context' => 'Patron menu']),
+      'pick-up-latest-text' => $this->t('Pick up before @date', [], ['context' => 'Patron menu']),
       'remove-all-reservations-text' => $this->t('Remove reservations', [], ['context' => 'Patron menu']),
       'ready-for-loan-counter-label-text' => $this->t('Ready', [], ['context' => 'Patron menu']),
       'group-modal-reservations-loans-aria-description-text' => $this->t('This modal makes it possible to delete reservations', [], ['context' => 'Patron menu']),

@@ -99,9 +99,9 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       "threshold-config" => $this->getThresholdConfig(),
 
       // Urls.
+      'fees-page-url' => '/user/me/fees',
       'ereolen-my-page-url' => $generalSettings->get('ereolen_my_page_url'),
       'dpl-cms-base-url' => DplReactAppsController::dplCmsBaseUrl(),
-      'fees-page-url' => $generalSettings->get('fees_page_url'),
       'material-overdue-url' => $loanListSettings->get('material_overdue_url'),
 
       // Texts.
@@ -146,8 +146,8 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'loan-list-status-badge-danger-text' => $this->t("Expired", [], ['context' => 'Loan list']),
       'loan-list-status-badge-warning-text' => $this->t("Expiring soon", [], ['context' => 'Loan list']),
       'loan-list-title-text' => $this->t("Your loans", [], ['context' => 'Loan list']),
-      'loan-list-to-be-delivered-digital-material-text' => $this->t("Due date @date", [], ['context' => 'Loan list']),
-      'loan-list-to-be-delivered-text' => $this->t("Due date @date", [], ['context' => 'Loan list']),
+      'loan-list-to-be-delivered-digital-material-text' => $this->t("Due date digital @date", [], ['context' => 'Loan list']),
+      'loan-list-to-be-delivered-text' => $this->t("Due date physical @date", [], ['context' => 'Loan list']),
       'et-al-text' => $this->t("et al.", [], ['context' => 'Loan list']),
       'material-by-author-text' => $this->t("By", [], ['context' => 'Loan list']),
       'material-details-close-modal-aria-label-text' => $this->t("Close material details modal", [], ['context' => 'Loan list (Aria)']),
@@ -167,6 +167,13 @@ class LoanListBlock extends BlockBase implements ContainerFactoryPluginInterface
       'result-pager-status-text' => $this->t("Showing @itemsShown out of @hitcount loans", [], ['context' => 'Loan list']),
       'show-more-text' => $this->t("show more", [], ['context' => 'Loan list']),
       'group-modal-go-to-material-aria-label-text' => $this->t("Go to @label material details", [], ['context' => 'Loan list (Aria)']),
+      'accept-modal-header-text' => $this->t("Your fee is raised", [], ['context' => 'Loan list']),
+      'accept-modal-body-text' => $this->t("If you renew your fee will be raised", [], ['context' => 'Loan list']),
+      'accept-modal-are-you-sure-text' => $this->t("Are you sure you want to renew?", [], ['context' => 'Loan list']),
+      'accept-modal-accept-button-text' => $this->t("Yes, renew", [], ['context' => 'Loan list']),
+      'accept-modal-cancel-button-text' => $this->t("Cancel renewal", [], ['context' => 'Loan list']),
+      'accept-modal-aria-description-text' => $this->t("accept modal aria description text", [], ['context' => 'Loan list (Aria)']),
+      'accept-modal-aria-label-text' => $this->t("accept modal aria label text", [], ['context' => 'Loan list (Aria)']),
     ] + DplReactAppsController::externalApiBaseUrls() + DplReactAppsController::getBlockedSettings();
 
     return [
