@@ -3928,7 +3928,7 @@ msgstr "Luk"
 #: 
 msgctxt "React apps (Global error handling)"
 msgid "An error occurred"
-msgstr "Der opstod en fejl"
+msgstr "Der opstod en uventet fejl, prøv igen senere eller kontakt biblioteket."
 
 #: 
 msgctxt "Work Page"
