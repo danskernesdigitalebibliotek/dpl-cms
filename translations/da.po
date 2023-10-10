@@ -2321,7 +2321,7 @@ msgstr "Adresse"
 #: 
 msgctxt "Patron page"
 msgid "CONTACT INFORMATION"
-msgstr "Kontaktinformation"
+msgstr "Kontaktoplysninger"
 
 #: 
 msgctxt "Patron page"
@@ -3929,4 +3929,9 @@ msgstr "Luk"
 msgctxt "React apps (Global error handling)"
 msgid "An error occurred"
 msgstr "Der opstod en fejl"
+
+#: 
+msgctxt "Work Page"
+msgid "Blocked"
+msgstr "Din låner er blokeret"
 
