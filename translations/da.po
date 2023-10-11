@@ -2456,7 +2456,7 @@ msgstr "Din pinkode blev gemt"
 #: 
 msgctxt "Patron page"
 msgid "The pincode should be minimum @pincodeLengthMin and maximum @pincodeLengthMax characters long"
-msgstr "Pinkoden skal være minimum @pincodeLengthMin og maksimum @pincodeLengthMax karakterer lang "
+msgstr "Pinkoden skal indeholde @pincodeLengthMin cifre"
 
 #: 
 msgctxt "Patron page"
@@ -2935,7 +2935,7 @@ msgstr "Ny pinkode"
 #: 
 msgctxt "Create patron"
 msgid "The pincode should be minimum @pincodeLengthMin and maximum @pincodeLengthMax characters long"
-msgstr "Pinkoden skal være minimum @pincodeLengthMin og maksimum @pincodeLengthMax karakterer lang"
+msgstr "Pinkoden skal indeholde @pincodeLengthMin cifre"
 
 #: 
 msgctxt "Create patron"
@@ -3934,4 +3934,89 @@ msgstr "Der opstod en uventet fejl, prøv igen senere eller kontakt biblioteket.
 msgctxt "Work Page"
 msgid "Blocked"
 msgstr "Din låner er blokeret"
+
+#: 
+msgctxt "Renew loan"
+msgid "Renew"
+msgstr "Forny"
+
+#: 
+msgctxt "Renew loan"
+msgid "Cannot be renewed"
+msgstr "Kan ikke fornys"
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "Ok"
+msgstr "OK"
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "Something went wrong renewing your loans. Please try again."
+msgstr "Noget gik galt med fornyelsen. Prøv venligst igen."
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "Renewing your loans failed"
+msgstr "Dine lån kunne ikke fornys"
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "For some reason, no one of your loans could be renewed."
+msgstr "Dit lån kunne ikke fornyes. Kontakt evt. biblioteket."
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "No loans could be renewed"
+msgstr "Ingen af dine lån kunne fornys"
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "{\"type\":\"plural\",\"text\":[\"1 loan has been renewed.\",\"@count loans have been renewed.\"]}"
+msgstr "{\"type\":\"plural\",\"text\":[\"1 lån blev fornyet.\",\"@count lån blev fornyet.\"]}"
+
+#: 
+msgctxt "Renew loan (group modal)"
+msgid "You have renewed your loans"
+msgstr "Du har fornyet dine lån."
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "Ok"
+msgstr "OK"
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "omething went wrong renewing your loan. Please try again."
+msgstr "Noget gik galt med fornyelsen. Prøv venligst igen."
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "Renewal of your loan failed"
+msgstr "Fornyelsen af dit lån gik ikke igennem"
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "For some reason, your loan could not be renewed."
+msgstr "Dit lån kunne ikke fornyes. Kontakt evt. biblioteket."
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "The loan could not be renewed"
+msgstr "Lånet kunne ikke fornys."
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "1 loan was renewed."
+msgstr "1 lån blev fornyet."
+
+#: 
+msgctxt "Renew loan (material)"
+msgid "You have renewed your loan"
+msgstr "Du har fornyet dit lån."
+
+#: 
+msgctxt "Renew loan"
+msgid "Processing..."
+msgstr "Indlæser...Fornyelsen af dit lån gik iggen igennem"
 
