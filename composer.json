@@ -17,10 +17,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc42",
+                "version": "0.3.0-rc38",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-DDFLSBP-200-formvalidering-ingen-formvalidering-pa-felt-til-mobilnummer/dist.zip",
                     "type": "zip"
                 },
                 "require": {
