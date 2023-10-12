@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc37",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/archive/refs/tags/release-fix/pincode-alerts.zip",
                     "type": "zip"
                 },
                 "require": {
