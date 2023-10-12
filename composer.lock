@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acfebfb27aeba695242178e7281686b5",
+    "content-hash": "46986ce0302f4d31bf48bb4af92f730b",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc37",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-DDFLSBP-208-brugerprofil-mail-skal-ikke-vaere-obligatorisk/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"

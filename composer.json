@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc37",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-DDFLSBP-208-brugerprofil-mail-skal-ikke-vaere-obligatorisk/dist.zip",
                     "type": "zip"
                 },
                 "require": {
