@@ -17,7 +17,7 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc38",
+                "version": "0.3.0-rc39",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/reload/dpl-react/releases/download/release-DDFLSBP-208-brugerprofil-mail-skal-ikke-vaere-obligatorisk/dist.zip",
