@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4ede32106f893632e0867ad2a047cbf",
+    "content-hash": "ee782c219e6813e42c9706e612e33e33",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1089,7 +1089,7 @@
             "version": "0.3.0-rc37",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reload/dpl-react/archive/refs/tags/release-fix/pincode-alerts.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-fix%2Fpincode-alerts/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
