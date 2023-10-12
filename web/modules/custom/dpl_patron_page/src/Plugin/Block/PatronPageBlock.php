@@ -153,6 +153,7 @@ class PatronPageBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'pause-reservation-modal-save-button-label-text' => $this->t('Save', [], ['context' => 'Patron page']),
       'pickup-branches-dropdown-label-text' => $this->t('Choose pickup branch', [], ['context' => 'Patron page']),
       'pickup-branches-dropdown-nothing-selected-text' => $this->t('Nothing selected', [], ['context' => 'Patron page']),
+      'phone-input-message-text' => $this->t('Phone input validation message', [], ['context' => 'Patron page']),
     ] + DplReactAppsController::externalApiBaseUrls();
 
     return [
