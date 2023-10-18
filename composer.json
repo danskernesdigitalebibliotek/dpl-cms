@@ -17,7 +17,7 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.3.0-rc42",
+                "version": "0.3.0-rc43",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/reload/dpl-react/releases/download/release-fix%2Fscroll-behind-modals/dist.zip",
