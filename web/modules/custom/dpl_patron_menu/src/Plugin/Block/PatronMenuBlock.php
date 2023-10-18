@@ -138,8 +138,8 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       "menu-sign-up-url" => Url::fromRoute('dpl_patron_reg.information', [], ['absolute' => TRUE])->toString(),
       'ereolen-my-page-url' => $generalSettings->get('ereolen_my_page_url'),
       'menu-view-your-profile-text-url' => Url::fromRoute('dpl_patron_page.profile', [], ['absolute' => TRUE])->toString(),
-      'menu-notification-loans-expired-url' => url::fromRoute('dpl-patron-page.profile', [], ['absolute' => true])->toString(),
-      'menu-notification-loans-expiring-soon-url' => url::fromRoute('dpl-patron-page.profile', [], ['absolute' => true])->toString(),
+      'menu-notification-loans-expired-url' => url::fromRoute('dpl-patron-page.profile', [], ['absolute' => TRUE])->toString(),
+      'menu-notification-loans-expiring-soon-url' => url::fromRoute('dpl-patron-page.profile', [], ['absolute' => TRUE])->toString(),
       'menu-notification-ready-for-pickup-url' => Url::fromRoute('dpl_patron_page.profile', [], ['absolute' => TRUE])->toString(),
 
       // Texts.
