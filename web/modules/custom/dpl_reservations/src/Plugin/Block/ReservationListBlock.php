@@ -137,7 +137,6 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       'reservation-list-ready-for-pickup-empty-text' => $this->t('At the moment you have 0 reservations ready for pickup', [], ['context' => 'Reservation list']),
       'reservation-list-ready-for-pickup-title-text' => $this->t('Ready for pickup', [], ['context' => 'Reservation list']),
       'reservation-list-ready-text' => $this->t('Ready', [], ['context' => 'Reservation list']),
-      'reservation-pick-up-latest-text' => $this->t('Pick up before @date', [], ['context' => 'Reservation list']),
       'date-inputs-end-date-label-text' => $this->t('End date', [], ['context' => 'Reservation list']),
       'date-inputs-start-date-label-text' => $this->t('Start date', [], ['context' => 'Reservation list']),
       'delete-reservation-modal-aria-description-text' => $this->t('This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations', [], ['context' => 'Reservation list (Aria)']),
@@ -206,5 +205,5 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
       '#data' => $data,
     ];
   }
-}
 
+}
