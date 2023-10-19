@@ -20,7 +20,7 @@
                 "version": "0.3.0-rc42",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip",
+                    "url": "https://github.com/reload/dpl-react/releases/download/release-DDFLSBP-152-samlesag-opfyldte-reserveringer-detaljer-pa-liste-og-i-gruppemodal/dist.zip",
                     "type": "zip"
                 },
                 "require": {
