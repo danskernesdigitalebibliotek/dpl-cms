@@ -55,7 +55,7 @@ msgstr "Vælg mulige"
 #: 
 msgctxt "Loan list"
 msgid "Due date @date"
-msgstr "Afleveres @date"
+msgstr "Afleveringsdato @date"
 
 #: 
 msgctxt "Loan list"
@@ -1625,7 +1625,7 @@ msgstr "Du har 0 reserveringer klar til lån"
 #: 
 msgctxt "Reservation list"
 msgid "At the moment you have 0 physical reservations"
-msgstr "Du har 0 fysiske reserveringer"
+msgstr "Du har ingen reserveringer på fysiske materialer"
 
 #: 
 msgctxt "Reservation list"
@@ -1635,7 +1635,7 @@ msgstr "Du har 0 reserveringer"
 #: 
 msgctxt "Reservation list"
 msgid "At the moment you have 0 reservations on digital items"
-msgstr "Du har 0 reserveringer på digitale materialer"
+msgstr "Du har ingen reserveringer på digitale materialer"
 
 #: 
 msgctxt "Reservation list"
@@ -1715,7 +1715,7 @@ msgstr "Slet reserveringer"
 #: 
 msgctxt "Reservation list"
 msgid "Others are queueing for this material"
-msgstr "Andre står i kø til dette materiale"
+msgstr "Andre lånere venter på materialet"
 
 #: 
 msgctxt "Reservation list"
@@ -1741,11 +1741,6 @@ msgstr "Lån før"
 msgctxt "Reservation list"
 msgid "Pickup branch"
 msgstr "Afhentningssted"
-
-#: 
-msgctxt "Reservation list"
-msgid "Apply changes"
-msgstr "Skift"
 
 #: 
 msgctxt "Reservation list"
@@ -1876,11 +1871,6 @@ msgstr "6 måneder"
 msgctxt "Reservation list"
 msgid "1 year"
 msgstr "1 år"
-
-#: 
-msgctxt "Reservation list"
-msgid "Pick"
-msgstr "Vælg"
 
 #: 
 msgctxt "Reservation list"
@@ -2059,7 +2049,7 @@ msgstr "Forny (@count)"
 #: 
 msgctxt "Dashboard"
 msgid "Due date @date"
-msgstr "Afleveres @date"
+msgstr "Afleveringsdato @date"
 
 #: 
 msgctxt "Dashboard"
@@ -2594,7 +2584,7 @@ msgstr "Bemærk at betalte gebyrer først registreres op til 72 timer efter beta
 #: 
 msgctxt "Fees list"
 msgid "You have 0 unpaid fees or replacement costs"
-msgstr "Du har 0 ubetalte gebyrer eller erstatninger"
+msgstr "Du har ingen ubetalte gebyrer eller erstatninger"
 
 #: 
 msgctxt "Fees list"
@@ -2849,16 +2839,6 @@ msgstr "Fortryd"
 
 #: 
 msgctxt "Create patron"
-msgid "create patron change pickup body text"
-msgstr "Her kan du vælge afhentningssted"
-
-#: 
-msgctxt "Create patron"
-msgid "create patron change pickup header text"
-msgstr "Skift afhentningsbibliotek"
-
-#: 
-msgctxt "Create patron"
 msgid "Confirm"
 msgstr "Bekræft"
 
@@ -2886,16 +2866,6 @@ msgstr "Modtag e-mails om dine lån, reserveringer osv."
 msgctxt "Create patron"
 msgid "E-mail"
 msgstr "E-mail"
-
-#: 
-msgctxt "Create patron"
-msgid "contact info body text"
-msgstr "Kontaktinformation brødtekst"
-
-#: 
-msgctxt "Create patron"
-msgid "contact info header text"
-msgstr "Kontaktoplysninger"
 
 #: 
 msgctxt "Create patron"
@@ -2967,10 +2937,6 @@ msgstr "Information om brugeroprettelse"
 #: 
 msgid "Patron nem-login authentication"
 msgstr "Bruger autentificering med Nem-login"
-
-#: 
-msgid "Patron create"
-msgstr "Opret bruger"
 
 #: 
 msgctxt "Favorites list material component (aria)"
@@ -3504,7 +3470,7 @@ msgstr "Viser @itemsShown ud af @hitcount lån"
 #: 
 msgctxt "Patron menu"
 msgid "Due date @date"
-msgstr "Afleveres @date"
+msgstr "Afleveringsdato @date"
 
 #: 
 msgctxt "Patron menu"
@@ -3514,7 +3480,7 @@ msgstr "Vis detaljer for materialet"
 #: 
 msgctxt "Patron menu"
 msgid "To be returned @date"
-msgstr "Afleveres @date"
+msgstr "Afleveringsfrist @date"
 
 #: 
 msgctxt "Patron menu"
@@ -3673,7 +3639,7 @@ msgstr "Menu"
 #: 
 msgctxt "Dashboard"
 msgid "Others are queueing for this material"
-msgstr "Andre står i kø til dette materiale "
+msgstr "Andre lånere venter på materialet"
 
 #: 
 msgctxt "Dashboard"
@@ -3688,7 +3654,7 @@ msgstr "Nummer @count i køen"
 #: 
 msgctxt "Patron menu"
 msgid "Others are queueing for this material"
-msgstr "Andre står i kø til dette materiale"
+msgstr "Andre lånere venter på materialet"
 
 #: 
 msgctxt "Patron menu"
@@ -3813,12 +3779,12 @@ msgstr "Udløbsdato @date"
 #: 
 msgctxt "Loan list"
 msgid "Due date physical @date"
-msgstr "Afleveres @date"
+msgstr "Afleveringsdato @date"
 
 #: 
 msgctxt "Loan list"
 msgid "Your fee is raised"
-msgstr "Dit gebyr er forhøjet"
+msgstr "Dit gebyr bliver forhøjet"
 
 #: 
 msgctxt "Loan list"
@@ -3888,12 +3854,12 @@ msgstr "accepter pop-up beskrivelsestekst"
 #: 
 msgctxt "dpl_instant_loan"
 msgid "Match Strings"
-msgstr ""
+msgstr "Non-res materialegrupper"
 
 #: 
 msgctxt "dpl_instant_loan"
 msgid "Text used to identify materials which are available for instant loans.<br/> You can write multiple strings - each on a spearate line.<br/> To find a match one of the strings must be present in the material group of such materials."
-msgstr ""
+msgstr "Angiv navnene på alle de materiale-grupper der er til udlån, men ikke er reserverbare; der kan skrives flere materialegrupper – hver skal skrives på en separat linje."
 
 #: 
 msgctxt "Search Result"
@@ -4019,4 +3985,89 @@ msgstr "Du har fornyet dit lån."
 msgctxt "Renew loan"
 msgid "Processing..."
 msgstr "Indlæser...Fornyelsen af dit lån gik iggen igennem"
+
+#: 
+msgctxt "Create patron"
+msgid "Select pickup location in the select"
+msgstr "Vælg afhentningssted"
+
+#: 
+msgctxt "Create patron"
+msgid "Select pickup location"
+msgstr "Vælg afhentningssted"
+
+#: 
+msgctxt "Create patron"
+msgid "This section is for contact information"
+msgstr "Kontaktinformation"
+
+#: 
+msgctxt "Create patron"
+msgid "Contact information"
+msgstr "Kontaktinformation"
+
+#: 
+msgctxt "Reservation list"
+msgid "Shift"
+msgstr "Skift"
+
+#: 
+msgctxt "Reservation list"
+msgid "Choose pickup library"
+msgstr "Vælg afhentningsbibliotek"
+
+#: 
+msgctxt "Reservation list"
+msgid "Decide at which library you want to pickup the material."
+msgstr "Vælg hvor du vil hente dine materialer."
+
+#: 
+msgctxt "Reservation list"
+msgid "Your reservation has been changed"
+msgstr "Din reservering blev ændret"
+
+#: 
+msgctxt "Reservation list"
+msgid "Click the button below to close this window"
+msgstr "Klik på knappen for at lukke dette vindue"
+
+#: 
+msgctxt "Reservation list"
+msgid "Close"
+msgstr "Luk"
+
+#: 
+msgctxt "Reservation list"
+msgid "Change interest deadline"
+msgstr "Skift interesseperiode"
+
+#: 
+msgctxt "Reservation list"
+msgid "Set date for when your interest for the material will expire."
+msgstr "Vælg dato for hvornår din interesseperiode udløber"
+
+#: 
+msgctxt "Reservation list"
+msgid "Choose one"
+msgstr "Vælg en"
+
+#: 
+msgctxt "Reservation list"
+msgid "Change interest period"
+msgstr "Skift interesseperiode"
+
+#: 
+msgctxt "Reservation list"
+msgid "Change pickup location"
+msgstr "Skift afhentningssted"
+
+#: 
+msgctxt "Reservation list"
+msgid "Change the amount of time after which you're no longer interested in this material."
+msgstr "Vælg dato for hvornår din interesseperiode udløber"
+
+#: 
+msgctxt "Reservation list"
+msgid "Change pickup location for your reservation."
+msgstr "Skift afhentningssted"
 
