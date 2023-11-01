@@ -35,7 +35,7 @@ msgstr "Antal listeelemeter på side (desktop)"
 #: 
 msgctxt "Loan list"
 msgid "Read more about fees"
-msgstr "Læs mere om gebyrer"
+msgstr "Læs mere om gebyrer og erstatninger"
 
 #: 
 msgctxt "Loan list (Aria)"
@@ -60,7 +60,7 @@ msgstr "Afleveringsfrist @date"
 #: 
 msgctxt "Loan list"
 msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
-msgstr "Afleveringsfristen er overskredet, du vil derfor blive pålagt et gebyr ved aflevering"
+msgstr "Afleveringsfristen er overskredet, du får et et gebyr, når du afleverer"
 
 #: 
 msgctxt "Loan list"
@@ -115,7 +115,7 @@ msgstr "Du har ingen lån i øjeblikket"
 #: 
 msgctxt "Loan list (Aria)"
 msgid "This button opens a modal that covers the entire page and contains loans with the same due date as the loan currently in focus"
-msgstr "Åbner en pop-up som indeholder lån med samme afleveringsdato som lånet der er i fokus"
+msgstr "Åbner en pop-up som indeholder lån med samme afleveringsfrist som lånet der er i fokus"
 
 #: 
 msgctxt "Loan list"
@@ -125,7 +125,7 @@ msgstr "Vælg @label til fornyelse"
 #: 
 msgctxt "Loan list"
 msgid "You will be charged a fee, when the item is returned"
-msgstr "Du vil blive pålagt et gebyr ved aflevering"
+msgstr "Læs om gebyrer ved overskredne materialer"
 
 #: 
 msgctxt "Loan list"
@@ -175,12 +175,12 @@ msgstr "Overskredet"
 #: 
 msgctxt "Loan list"
 msgid "Expiring soon"
-msgstr "Udløber snart"
+msgstr "Under 6 dage"
 
 #: 
 msgctxt "Loan list"
 msgid "Your loans"
-msgstr "Dine lånte materialer"
+msgstr "Lån"
 
 #: 
 msgctxt "Loan list"
@@ -1087,7 +1087,7 @@ msgstr "i"
 #: 
 msgctxt "Search Header"
 msgid "Start typing in order to search"
-msgstr "Søg efter titel, forfatter eller emne"
+msgstr "Søg på titel, forfatter eller emne"
 
 #: 
 msgctxt "Search Header"
@@ -1108,16 +1108,6 @@ msgstr "Emne"
 msgctxt "Search Header"
 msgid "Work"
 msgstr "Titel"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Disable SMS notifications for reservations"
-msgstr "Slå SMS notifikationer  for reserveringer fra"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "If checked, SMS notifications for patrons will be disabled."
-msgstr "Hvis markeret, vil brugere ikke kunne modtage SMS notifikationer."
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -1600,12 +1590,12 @@ msgstr "Dine reserveringer"
 #: 
 msgctxt "Reservation list"
 msgid "Physical reservations"
-msgstr "Fysiske reserveringer"
+msgstr "Reserverede fysiske materialer"
 
 #: 
 msgctxt "Reservation list"
 msgid "Pause reservations on physical items"
-msgstr "Sæt fysiske reserveringer på pause"
+msgstr "Sæt reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Reservation list"
@@ -1810,17 +1800,17 @@ msgstr "Reserveringer er sat på pause i det følgende tidsrum:"
 #: 
 msgctxt "Reservation list (Aria)"
 msgid "This button opens a modal that covers the entire page and contains the possibility to pause physical reservations"
-msgstr "Sæt fysiske reserveringer på pause"
+msgstr "Sæt reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Reservation list (Aria)"
 msgid "This modal makes it possible to pause your physical reservations"
-msgstr "Denne pop-up gør det muligt at sætte dine fysiske reserveringer på pause"
+msgstr "Denne pop-up gør det muligt at sætte reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Reservation list"
 msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
-msgstr "Sæt fysiske reserveringer på pause i god tid, da reserveringer, der allerede bliver behandlet, ikke bliver sat på pause."
+msgstr "Sæt reserveringer på pause i god tid, da reserveringer i proces ikke kan sættes på pause."
 
 #: 
 msgctxt "Reservation list"
@@ -1880,7 +1870,7 @@ msgstr "Vis flere"
 #: 
 msgctxt "Reservation list"
 msgid "Showing @itemsShown out of @hitcount results"
-msgstr "Viser @itemsShown ud af @hitcount resultater"
+msgstr "Viser @itemsShown ud af @hitcount reserveringer"
 
 #: 
 msgctxt "Reservation list (Aria)"
@@ -1911,11 +1901,6 @@ msgstr "Materialet er klar til dig om @count dage"
 msgctxt "Search Result"
 msgid "Showing results for \"@query\""
 msgstr "Viser resultater for \"@query\""
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Fee page"
-msgstr "Takster for gebyrer og erstatninger"
 
 #: 
 msgctxt "Blocked user"
@@ -2054,27 +2039,27 @@ msgstr "Afleveringsfrist @date"
 #: 
 msgctxt "Dashboard"
 msgid "Read more about fees"
-msgstr "Læs mere om gebyrer"
+msgstr "Læs mere om gebyrer og erstatninger"
 
 #: 
 msgctxt "Dashboard"
 msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
-msgstr "Afleveringsfristen er overskredet, du vil derfor blive pålagt et gebyr ved aflevering"
+msgstr "Afleveringsfristen er overskredet, du får et gebyr, når du afleverer"
 
 #: 
 msgctxt "Dashboard"
 msgid "Longer return time"
-msgstr "Længere afleveringstid"
+msgstr "Over 6 dage til aflevering"
 
 #: 
 msgctxt "Dashboard"
 msgid "Returned too late"
-msgstr "Afleveret for sent"
+msgstr "Afleveringsfrist overskredet"
 
 #: 
 msgctxt "Dashboard"
 msgid "To be returned soon"
-msgstr "Afleveres snart"
+msgstr "Skal snart afleveres"
 
 #: 
 msgctxt "Dashboard"
@@ -2251,17 +2236,17 @@ msgstr "Komponent til anbefalinger (recommender)"
 #: 
 msgctxt "Patron page (aria)"
 msgid "This modal makes it possible to pause your physical reservations"
-msgstr "Denne pop-up gør det muligt at sætte dine fysiske reserveringer på pause"
+msgstr "Denne pop-up gør det muligt at sætte reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Patron page"
 msgid "Pause reservations on physical items"
-msgstr "Sæt fysiske reserveringer på pause"
+msgstr "Sæt reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Patron page"
 msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
-msgstr "Sæt fysiske reserveringer på pause i god tid, da reserveringer der allerede bliver behandlet ikke bliver sat på pause."
+msgstr "Sæt reserveringer på pause i god tid, da reserveringer der allerede bliver behandlet ikke bliver sat på pause."
 
 #: 
 msgctxt "Patron page"
@@ -2286,7 +2271,7 @@ msgstr "Gem"
 #: 
 msgctxt "Patron page"
 msgid "Patron profile page"
-msgstr "Din profil"
+msgstr "Brugerprofil"
 
 #: 
 msgctxt "Patron page"
@@ -2391,7 +2376,7 @@ msgstr "Intet valgt"
 #: 
 msgctxt "Patron page"
 msgid "Pause physical reservations"
-msgstr "Sæt fysiske reserveringer på pause"
+msgstr "Sæt reserveringer af fysiske materialer på pause"
 
 #: 
 msgctxt "Patron page"
@@ -2461,7 +2446,7 @@ msgstr "Ønsker du ikke længere at have en profil på biblioteket?"
 #: 
 msgctxt "Patron page"
 msgid "Delete your profile"
-msgstr "Sådan sletter du din profil"
+msgstr "Sådan sletter du din brugerprofil"
 
 #: 
 msgctxt "Patron page"
@@ -2589,7 +2574,7 @@ msgstr "Du har ingen ubetalte gebyrer eller erstatninger"
 #: 
 msgctxt "Fees list"
 msgid "Fees charged @date"
-msgstr "Gebyrer oprettet @date"
+msgstr "Gebyrer & erstatninger oprettet @date"
 
 #: 
 msgctxt "Fees list (Aria)"
@@ -2639,7 +2624,7 @@ msgstr "Ubetalte gebyrer efter 27/10 2020"
 #: 
 msgctxt "Fees list"
 msgid "Paid fees can take up to 24 hours to registrer."
-msgstr "Betalte gebyrer kan tage op til 72 timer om at blive registreret."
+msgstr "Betalte gebyrer og erstatninger kan tage op til 72 timer om at blive registreret."
 
 #: 
 msgctxt "Fees list"
@@ -2649,7 +2634,7 @@ msgstr "Jeg godkender dette"
 #: 
 msgctxt "Fees list"
 msgid "Fee @fee,-"
-msgstr "Gebyr @fee,-"
+msgstr "Gebyr @fee kr."
 
 #: 
 msgctxt "Fees list"
@@ -2704,20 +2689,20 @@ msgstr "Afleveret @date"
 #: 
 msgctxt "Fees list"
 msgid "Unsettled debt"
-msgstr "UBETALTE GEBYRER"
+msgstr "UBETALTE GEBYRER & ERSTATNINGER"
 
 #: 
 msgctxt "Fees list"
 msgid "see our fees and replacement costs"
-msgstr "Se vores takster"
+msgstr "Se takster"
 
 #: 
 msgid "Fees and Replacement costs URL"
-msgstr "Oplysningsside om takster"
+msgstr "Link til oplysningsside om takster"
 
 #: 
 msgid "File or URL containing the fees and replacement costs"
-msgstr "Oplysningsside om takster"
+msgstr "Link til oplysningsside om takster"
 
 #: 
 msgid "Available payment types url"
@@ -2753,7 +2738,7 @@ msgstr "Vis denne beskrivelse under overskriften"
 
 #: 
 msgid "Fees and replacement costs are handled through the new system \"Mit betalingsoverblik."
-msgstr "Gebyrer og erstatninger håndteres via \"Mit Betalingsoverblik\"."
+msgstr "Gebyrer og erstatninger betales via \"Mit Betalingsoverblik\"."
 
 #: 
 msgid "DPL Fees"
@@ -2770,7 +2755,7 @@ msgstr "Gebyrindstillinger"
 #: 
 msgctxt "Reservation list"
 msgid "Read more about pausing reservations and what that means here"
-msgstr "Læs mere om hvordan du sætter reserveringer på pause og hvad det betyder"
+msgstr "Læs mere om at sætte reserveringer på pause"
 
 #: 
 msgctxt "Dpl patron redirect"
@@ -2980,7 +2965,7 @@ msgstr "Fjern @title fra huskelisten"
 
 #: 
 msgid "Loans"
-msgstr "Dine lånte materialer"
+msgstr "Lån"
 
 #: 
 msgid "Reservations"
@@ -3001,7 +2986,7 @@ msgstr "Dit overblik"
 #: 
 msgctxt "Patron menu"
 msgid "My Account"
-msgstr "Din profil"
+msgstr "Brugerprofil"
 
 #: 
 msgctxt "Patron menu"
@@ -3011,7 +2996,7 @@ msgstr "Overskredne lån"
 #: 
 msgctxt "Patron menu"
 msgid "loans expiring soon"
-msgstr "Udløber snart"
+msgstr "Under 6 dage"
 
 #: 
 msgctxt "Patron menu"
@@ -3154,7 +3139,7 @@ msgstr "Du kan ikke fortryde denne handling"
 #: 
 msgctxt "Dashboard"
 msgid "Fees"
-msgstr "Gebyrer"
+msgstr "Gebyrer & erstatninger"
 
 #: 
 msgctxt "Dashboard"
@@ -3164,7 +3149,7 @@ msgstr "Betal"
 #: 
 msgctxt "Dashboard"
 msgid "@total,-"
-msgstr "@total,-"
+msgstr "@total kr."
 
 #: 
 msgctxt "Dashboard"
@@ -3189,7 +3174,7 @@ msgstr "Slet reserveringer (@amount)"
 #: 
 msgctxt "Dashboard"
 msgid "Expires soon"
-msgstr "Udløber snart"
+msgstr "Under 6 dage"
 
 #: 
 msgctxt "Dashboard"
@@ -3299,7 +3284,7 @@ msgstr "Hent senest @date"
 #: 
 msgctxt "Dashboard"
 msgid "Physical reservations"
-msgstr "Fysiske reserveringer"
+msgstr "Reserverede fysiske materialer"
 
 #: 
 msgctxt "Dashboard"
@@ -3485,7 +3470,7 @@ msgstr "Afleveringsfrist @date"
 #: 
 msgctxt "Patron menu"
 msgid "Read more about fees"
-msgstr "Læs mere om gebyrer"
+msgstr "Læs mere om gebyrer og erstatninger"
 
 #: 
 msgctxt "Patron menu"
@@ -3510,7 +3495,7 @@ msgstr "Materialet er reserveret af en anden"
 #: 
 msgctxt "Patron menu"
 msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
-msgstr "Afleveringsfristen er overskredet, du vil derfor blive pålagt et gebyr ved aflevering"
+msgstr "Afleveringsfristen er overskredet, du får et gebyr, når du afleverer"
 
 #: 
 msgctxt "Patron menu"
@@ -3669,17 +3654,17 @@ msgstr "Nummer @count i køen"
 #: 
 msgctxt "Patron menu"
 msgid "Expires soon"
-msgstr "Udløber snart"
+msgstr "Under 6 dage"
 
 #: 
 msgctxt "Patron menu"
 msgid "Returned too late"
-msgstr "Afleveret for sent"
+msgstr "Afleveringsfrist overskredet"
 
 #: 
 msgctxt "Patron menu"
 msgid "To be returned soon"
-msgstr "Afleveres snart"
+msgstr "Skal snart afleveres"
 
 #: 
 msgctxt "Patron menu"
@@ -3699,7 +3684,7 @@ msgstr "Af"
 #: 
 msgctxt "Patron menu"
 msgid "Physical reservations"
-msgstr "Fysiske reserveringer"
+msgstr "Reserverede fysiske materialer"
 
 #: 
 msgctxt "Patron menu"
@@ -4070,4 +4055,19 @@ msgstr "Vælg dato for hvornår din interesseperiode udløber"
 msgctxt "Reservation list"
 msgid "Change pickup location for your reservation."
 msgstr "Skift afhentningssted"
+
+#: 
+msgctxt "dpl_login"
+msgid "Logged in"
+msgstr "Logget ind"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Enable SMS notifications for reservations"
+msgstr "Slå mulighed for tilvalg af sms notifikationer for reserveringer til"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "If checked, SMS notifications for patrons are enabled."
+msgstr "Hvis valgt, kan brugerne vælge at få tilsendt notifikationer på sms"
 
