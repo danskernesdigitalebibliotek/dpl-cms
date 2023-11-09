@@ -687,7 +687,7 @@ msgstr "Lyt online"
 #: 
 msgctxt "Work Page"
 msgid "Loading"
-msgstr "Indlæser"
+msgstr "Henter..."
 
 #: 
 msgctxt "Work Page"
@@ -837,7 +837,7 @@ msgstr "Du har lånt @count ud af @limit mulige e-bøger denne måned"
 #: 
 msgctxt "Work Page"
 msgid "Order digital copy button loading text"
-msgstr "Bestiller digital kopi"
+msgstr "Bestiller digital kopi..."
 
 #: 
 msgctxt "Work Page"
@@ -1092,7 +1092,7 @@ msgstr "Søg på titel, forfatter eller emne"
 #: 
 msgctxt "Search Header"
 msgid "Loading"
-msgstr "Henter"
+msgstr "Henter..."
 
 #: 
 msgctxt "Search Header"
@@ -4070,4 +4070,329 @@ msgstr "Slå mulighed for tilvalg af sms notifikationer for reserveringer til"
 msgctxt "Library Agency Configuration"
 msgid "If checked, SMS notifications for patrons are enabled."
 msgstr "Hvis valgt, kan brugerne vælge at få tilsendt notifikationer på sms"
+
+#: 
+msgctxt "Search Header"
+msgid "Advanced search"
+msgstr "Avanceret søgning"
+
+#: 
+msgctxt "Search Header"
+msgid "Dropdown with additional search functions"
+msgstr "Dropdown med flere søgefunktioner"
+
+#: 
+msgctxt "advanced search"
+msgid "add @title to favorites list"
+msgstr "Tilføj @title til huskeliste"
+
+#: 
+msgctxt "advanced search"
+msgid "source"
+msgstr "Kilde"
+
+#: 
+msgctxt "advanced search"
+msgid "add row"
+msgstr "Tilføj række"
+
+#: 
+msgctxt "advanced search"
+msgid "all indexes"
+msgstr "Alle indekser"
+
+#: 
+msgctxt "advanced search"
+msgid "audience"
+msgstr "Målgruppe"
+
+#: 
+msgctxt "advanced search"
+msgid "copy string"
+msgstr "Kopier søgestreng"
+
+#: 
+msgctxt "advanced search"
+msgid "creator"
+msgstr "Ophav"
+
+#: 
+msgctxt "advanced search"
+msgid "edition"
+msgstr "Udgave"
+
+#: 
+msgctxt "advanced search"
+msgid "date"
+msgstr "Dato"
+
+#: 
+msgctxt "advanced search"
+msgid "dk5"
+msgstr "DK5"
+
+#: 
+msgctxt "advanced search"
+msgid "edit cql"
+msgstr "Rediger CQL"
+
+#: 
+msgctxt "advanced search"
+msgid "accessibility"
+msgstr "Tilgængelig som:"
+
+#: 
+msgctxt "advanced search"
+msgid "All"
+msgstr "Alle"
+
+#: 
+msgctxt "advanced search"
+msgid "article"
+msgstr "Artikel"
+
+#: 
+msgctxt "advanced search"
+msgid "audio book"
+msgstr "Lydbog"
+
+#: 
+msgctxt "advanced search"
+msgid "book"
+msgstr "Bog"
+
+#: 
+msgctxt "advanced search"
+msgid "ebook"
+msgstr "Ebog"
+
+#: 
+msgctxt "advanced search"
+msgid "fiction"
+msgstr "Fiktion"
+
+#: 
+msgctxt "advanced search"
+msgid "literature form"
+msgstr "Litterær form"
+
+#: 
+msgctxt "advanced search"
+msgid "material type"
+msgstr "Materialetype"
+
+#: 
+msgctxt "advanced search"
+msgid "movie"
+msgstr "Film"
+
+#: 
+msgctxt "advanced search"
+msgid "music"
+msgstr "Musik"
+
+#: 
+msgctxt "advanced search"
+msgid "Non-fiction"
+msgstr "Non-fiktion"
+
+#: 
+msgctxt "advanced search"
+msgid "online"
+msgstr "Online"
+
+#: 
+msgctxt "advanced search"
+msgid "physical"
+msgstr "Fysisk"
+
+#: 
+msgctxt "advanced search"
+msgid "genre"
+msgstr "Genre"
+
+#: 
+msgctxt "advanced search"
+msgid "identifier"
+msgstr "ID"
+
+#: 
+msgctxt "advanced search"
+msgid "search term"
+msgstr "Søgeterm"
+
+#: 
+msgctxt "advanced search"
+msgid "language"
+msgstr "Sprog"
+
+#: 
+msgctxt "advanced search"
+msgid "link to this search"
+msgstr "Link til denne søgning"
+
+#: 
+msgctxt "advanced search"
+msgid "main creator"
+msgstr "Hovedophav"
+
+#: 
+msgctxt "advanced search"
+msgid "main title"
+msgstr "Hovedtitel"
+
+#: 
+msgctxt "advanced search"
+msgid "-"
+msgstr "-"
+
+#: 
+msgctxt "advanced search"
+msgid "CQL search string"
+msgstr "CQL søgestreng"
+
+#: 
+msgctxt "advanced search"
+msgid "publisher"
+msgstr "Udgiver"
+
+#: 
+msgctxt "advanced search"
+msgid "reset"
+msgstr "Nulstil"
+
+#: 
+msgctxt "advanced search"
+msgid "search"
+msgstr "Søg"
+
+#: 
+msgctxt "advanced search"
+msgid "subject"
+msgstr "Emne"
+
+#: 
+msgctxt "advanced search"
+msgid "advanced search"
+msgstr "Avanceret søgning"
+
+#: 
+msgctxt "advanced search"
+msgid "type"
+msgstr "Type"
+
+#: 
+msgctxt "advanced search"
+msgid "close"
+msgstr "Luk"
+
+#: 
+msgctxt "advanced search"
+msgid "an error occurred"
+msgstr "Der opstod en fejl"
+
+#: 
+msgctxt "advanced search"
+msgid "by"
+msgstr "af"
+
+#: 
+msgctxt "advanced search"
+msgid "and"
+msgstr "og"
+
+#: 
+msgctxt "advanced search"
+msgid "not"
+msgstr "ikke"
+
+#: 
+msgctxt "advanced search"
+msgid "or"
+msgstr "eller"
+
+#: 
+msgctxt "advanced search"
+msgid "Link copied to clipboard"
+msgstr "Link kopieret til udklipsholder"
+
+#: 
+msgctxt "advanced search"
+msgid "Copied"
+msgstr "Kopieret"
+
+#: 
+msgctxt "advanced search"
+msgid "CQL search"
+msgstr "CQL søgning"
+
+#: 
+msgctxt "advanced search"
+msgid "et al."
+msgstr "m. fl."
+
+#: 
+msgctxt "advanced search"
+msgid "in series"
+msgstr "i serien"
+
+#: 
+msgctxt "advanced search"
+msgid "Loading results..."
+msgstr "Henter resultater..."
+
+#: 
+msgctxt "advanced search"
+msgid "loading"
+msgstr "Henter..."
+
+#: 
+msgctxt "advanced search"
+msgid "your search has 0 results"
+msgstr "Din søgning havde 0 hits"
+
+#: 
+msgctxt "advanced search"
+msgid "nr."
+msgstr "nr."
+
+#: 
+msgctxt "advanced search"
+msgid "remove @title from favorites list"
+msgstr "Fjern @title fra huskeliste"
+
+#: 
+msgctxt "advanced search"
+msgid "showing @items-shown out of @hitcount results"
+msgstr "Viser @items-shown ud af @hitcount resultater"
+
+#: 
+msgctxt "advanced search"
+msgid "show more"
+msgstr "Vis flere"
+
+#: 
+msgctxt "advanced search"
+msgid "showing materials"
+msgstr "Viser materialer"
+
+#: 
+msgctxt "advanced search"
+msgid "Back to advanced search"
+msgstr "Tilbage til avanceret søgning"
+
+#: 
+msgctxt "Patron page"
+msgid "The phone number must be 6 to 15 characters in length and should be comprised solely of numbers or begin with a +"
+msgstr "Nummeret skal være mellem 6 og 15 cifre"
+
+#: 
+msgctxt "Patron page"
+msgid "Your changes are saved."
+msgstr "Dine ændringer blev gemt"
+
+#: 
+msgctxt "Patron page"
+msgid "Loading..."
+msgstr "Henter..."
 
