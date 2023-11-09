@@ -4363,11 +4363,6 @@ msgstr "Fjern @title fra huskeliste"
 
 #: 
 msgctxt "advanced search"
-msgid "showing @items-shown out of @hitcount results"
-msgstr "Viser @items-shown ud af @hitcount resultater"
-
-#: 
-msgctxt "advanced search"
 msgid "show more"
 msgstr "Vis flere"
 
@@ -4395,4 +4390,9 @@ msgstr "Dine ændringer blev gemt"
 msgctxt "Patron page"
 msgid "Loading..."
 msgstr "Henter..."
+
+#: 
+msgctxt "advanced search"
+msgid "Showing @itemsShown out of @hitcount elements"
+msgstr "Viser @itemsShown ud af @hitcount elementer"
 
