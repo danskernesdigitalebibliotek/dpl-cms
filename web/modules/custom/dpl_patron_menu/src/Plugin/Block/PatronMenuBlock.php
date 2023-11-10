@@ -197,6 +197,7 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       'menu-profile-links-aria-label-text' => $this->t('Profile links', [], ['context' => 'Patron menu (aria)']),
       'menu-sign-up-text' => $this->t('Sign up', [], ['context' => 'Patron menu']),
       'menu-user-icon-aria-label-text' => $this->t('Open user menu', [], ['context' => 'Patron menu (aria)']),
+      'menu-bookmarks-alt-text' => $this->t('List of bookmarks', [], ['context' => 'Patron menu']),
       'menu-view-your-profile-text' => $this->t('My Account', [], ['context' => 'Patron menu']),
       'physical-reservations-header-text' => $this->t('Physical reservations', [], ['context' => 'Patron menu']),
       'pick-up-latest-text' => $this->t('Pick up before @date', [], ['context' => 'Patron menu']),
