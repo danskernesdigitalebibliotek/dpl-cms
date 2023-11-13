@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff14072b9a5933ffe8fc921f590432ec",
+    "content-hash": "af14fc5de306d8a913404c7e5965372f",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1013,10 +1013,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.3.0-rc47",
+            "version": "0.3.0-rc51",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-develop/dist.zip"
+                "url": "https://github.com/reload/dpl-react/releases/download/release-move-material-button-reservable-from-another-library/dist.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -13680,8 +13680,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "danskernesdigitalebibliotek/dpl-design-system": 5,
-        "danskernesdigitalebibliotek/dpl-react": 5,
         "drupal/customerror": 10,
         "drupal/default_content": 15,
         "drupal/inline_all_css": 5,
