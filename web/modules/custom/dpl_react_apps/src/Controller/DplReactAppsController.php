@@ -451,6 +451,17 @@ class DplReactAppsController extends ControllerBase {
       'type-text' => $this->t('Type', [], ['context' => 'Work Page']),
       'we-have-shopped-text' => $this->t('In stock:', [], ['context' => 'Work Page']),
       'you-have-borrowed-text' => $this->t('You have borrowed', [], ['context' => 'Work Page']),
+      'reservable-from-another-library-text' => $this->t("Reservable on another library", [], ['context' => 'Work Page']),
+      'open-order-response-title-text' => $this->t("Order from another library:", [], ['context' => 'Work Page']),
+      'open-order-response-is-reserved-for-you-text' => $this->t("is ordered to your library", [], ['context' => 'Work Page']),
+      'open-order-unknown-user-text' => $this->t("User not found", [], ['context' => 'Work Page']),
+      'open-order-unknown-pickupagency-text' => $this->t("Specified pickup agency not found", [], ['context' => 'Work Page']),
+      'open-order-unknown-error-text' => $this->t("An unknown error occurred", [], ['context' => 'Work Page']),
+      'open-order-service-unavailable-text' => $this->t("Service is currently unavailable", [], ['context' => 'Work Page']),
+      'open-order-owned-wrong-mediumtype-text' => $this->t("Item available but medium type not accepted", [], ['context' => 'Work Page']),
+      'open-order-owned-own-catalogue-text' => $this->t("Item available, order through the library's catalogue", [], ['context' => 'Work Page']),
+      'open-order-status-owned-accepted-text' => $this->t("Your order is accepted", [], ['context' => 'Work Page']),
+
         // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
