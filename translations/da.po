@@ -14,16 +14,6 @@ msgstr "Grundlæggende indstillinger"
 
 #: 
 msgctxt "Loan list (settings)"
-msgid "Material overdue url"
-msgstr "Link til overskredne lån"
-
-#: 
-msgctxt "Loan list (settings)"
-msgid "The link to the material overdue page"
-msgstr "Link til siden med overskredne lån"
-
-#: 
-msgctxt "Loan list (settings)"
 msgid "Page size mobile"
 msgstr "Antal listeelemeter på side (mobil)"
 
@@ -4139,7 +4129,7 @@ msgstr "Rediger CQL"
 #: 
 msgctxt "advanced search"
 msgid "accessibility"
-msgstr "Tilgængelig som:"
+msgstr "Fysisk/online"
 
 #: 
 msgctxt "advanced search"
