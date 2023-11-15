@@ -667,7 +667,7 @@ msgstr "ISBN"
 #: 
 msgctxt "Work Page"
 msgid "Libraries have the material"
-msgstr "biblioteker har materialet"
+msgstr "biblioteker har materialet hjemme"
 
 #: 
 msgctxt "Work Page"
@@ -1118,16 +1118,6 @@ msgstr "Startdato"
 msgctxt "Library Agency Configuration"
 msgid "Pause reservation start date"
 msgstr "Startdato for at kunne sætte reserveringer på pause"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Thresholds"
-msgstr "Varsler"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Set thresholds"
-msgstr "Angivelse af hvor mange dage før udløb bruger skal modtage et varsel "
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -4385,4 +4375,24 @@ msgstr "Henter..."
 msgctxt "advanced search"
 msgid "Showing @itemsShown out of @hitcount elements"
 msgstr "Viser @itemsShown ud af @hitcount elementer"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Expiration warning"
+msgstr "Advarsel om at udløbsdato nærmer sig"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Set expiration warning"
+msgstr "Indstil advarsel vedr. udløbsdato"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Insert the number of days before the expiration of the material, when the reminder \"Expires soon\" should appear."
+msgstr "Indsæt antal dage før udløbsdatoen for et lån, hvor label med teksten \"Udløber snart\" skal vises på lånet."
+
+#: 
+msgctxt "Reservation list"
+msgid "Online access"
+msgstr "Skal hentes online"
 
