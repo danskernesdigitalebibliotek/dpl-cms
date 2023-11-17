@@ -3784,7 +3784,7 @@ msgstr "accepter pop-up label tekst"
 #: 
 msgctxt "Dashboard"
 msgid "Your fee is raised"
-msgstr "Dit gebyr er fohøjet"
+msgstr "Dit gebyr bliver forhøjet"
 
 #: 
 msgctxt "Dashboard"
