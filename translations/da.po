@@ -2787,7 +2787,7 @@ msgstr "Minimumsalder for tilladelse til selvoprettelse"
 
 #: 
 msgid "Redirect on create"
-msgstr "Send brugeresn til denne side ved succesfuld oprettelse"
+msgstr "Send brugeren til denne side ved succesfuld oprettelse"
 
 #: 
 msgid "Redirect to this on user successful created"
