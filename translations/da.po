@@ -2960,10 +2960,6 @@ msgid "Fees & Replacement costs"
 msgstr "Gebyrer & Erstatninger"
 
 #: 
-msgid "My account"
-msgstr "Dit overblik"
-
-#: 
 msgctxt "Patron menu"
 msgid "My Account"
 msgstr "Brugerprofil"
@@ -4405,4 +4401,62 @@ msgstr "Hentes online"
 msgctxt "Patron menu"
 msgid "Online access"
 msgstr "Hentes online"
+
+#: 
+msgid "Dashboard"
+msgstr "Mit overblik"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "Cancel"
+msgstr "Luk"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "Delete"
+msgstr "Slet"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "Processing..."
+msgstr "Indlæser..."
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "Something went wrong deleting your reservation. Please try again."
+msgstr "Noget gik galt med sletningen af din reservering. Prøv igen."
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "Deleting your reservation failed"
+msgstr "Din reservering kunne ikke slettes"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "One reservation was deleted"
+msgstr "Din reservering blev slettet"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "@count reservations were deleted"
+msgstr "@count reserveringer blev slettet"
+
+#: 
+msgctxt "Delete reservation modal"
+msgid "You have deleted your reservation"
+msgstr "Du har slettet din reservering"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Ereolen home link"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Home page in ereolen"
+msgstr ""
+
+#: 
+msgid "List of bookmarks"
+msgstr ""
 
