@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be792a111ada0c6a869637d16b36a17d",
+    "content-hash": "a5d4ae183c35a14c0b73f8e95bf14bbc",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -972,27 +972,6 @@
                 "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
             },
             "time": "2022-12-20T22:53:13+00:00"
-        },
-        {
-            "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2023.49.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/release-release%2F2023-49-0/dist.zip"
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2023.49.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/release-release%2F2023-49-0/dist.zip"
-            },
-            "require": {
-                "composer/installers": "^1.2.0"
-            },
-            "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/fbs-client",
