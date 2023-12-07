@@ -10,7 +10,5 @@ RUN COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev
 COPY . /app
 RUN mkdir -p -v -m775 /app/web/sites/default/files
 
-RUN echo "build name: " ${LAGOON_BUILD_NAME} > build-name.txt
-
 # Define where the Drupal Root is located
 ENV WEBROOT=web
