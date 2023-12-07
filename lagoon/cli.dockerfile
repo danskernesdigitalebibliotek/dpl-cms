@@ -14,10 +14,10 @@ RUN mkdir -p -v -m775 /app/web/sites/default/files
 RUN printenv
 
 RUN echo "----------------------------------- Mikdebug ------------------------------------"
-RUN echo "sha: ${LAGOON_GIT_SHA}"
-RUN echo "ref: ${LAGOON_GIT_REF}"
-RUN echo "ref: ${LAGOON_BUILD_NAME}"
-RUN echo "ref: ${TEMPORARY_IMAGE_NAME}"
+RUN echo "sha: ${LAGOON_GIT_SHA}" > version-debug.txt
+RUN echo "ref: ${LAGOON_GIT_REF}" >> version-debug.txt
+RUN echo "ref: ${LAGOON_BUILD_NAME}" >> version-debug.txt
+RUN echo "ref: ${TEMPORARY_IMAGE_NAME}" >> version-debug.txt
 
 
 # Define where the Drupal Root is located
