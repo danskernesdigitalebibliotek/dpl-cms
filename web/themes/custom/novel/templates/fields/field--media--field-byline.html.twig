@@ -1,0 +1,7 @@
+<figcaption {{ attributes.addClass('media__byline') }}>
+  {% for item in items %}
+    <span {{ item.attributes }}>
+      {{ item.content }}
+    </span>
+  {% endfor %}
+</figcaption>

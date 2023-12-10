@@ -1,0 +1,15 @@
+uuid: fe28a735-7d65-4a02-9904-25a72982b0e1
+langcode: en
+status: true
+dependencies: {  }
+name: paragraph_squared
+label: 'Paragraph, Squared (1:1 / 496x496px)'
+effects:
+  97481898-3ea0-4688-bc16-0010a1fa48a7:
+    uuid: 97481898-3ea0-4688-bc16-0010a1fa48a7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 496
+      height: 496
+      anchor: center-center

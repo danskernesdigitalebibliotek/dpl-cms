@@ -1,0 +1,15 @@
+uuid: 37b0bebe-2aa3-4da3-9faf-3a1f1a025883
+langcode: en
+status: true
+dependencies: {  }
+name: paragraph_wide
+label: 'Paragraph, Wide (896x670px)'
+effects:
+  e74fadf0-428f-4954-a8b2-e864c272feb0:
+    uuid: e74fadf0-428f-4954-a8b2-e864c272feb0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 896
+      height: 670
+      anchor: center-center
