@@ -4449,14 +4449,58 @@ msgstr "Du har slettet din reservering"
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Ereolen home link"
-msgstr ""
+msgstr "Link til eReolen"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Home page in ereolen"
-msgstr ""
+msgstr "eReolen startside"
 
 #: 
 msgid "List of bookmarks"
-msgstr ""
+msgstr "Bogmærkeliste"
+
+#: 
+msgid "Ticket sale not open"
+msgstr "Ikke åbent for billetsalg"
+
+#: 
+msgid "Active"
+msgstr "Aktiv"
+
+#: 
+msgid "Sold out"
+msgstr "Udsolgt"
+
+#: 
+msgid "Canceled"
+msgstr "Aflyst"
+
+#: 
+msgid "Occurred"
+msgstr "Afholdt"
+
+#: 
+msgid "My account"
+msgstr "Min konto"
+
+#: 
+msgid "Event"
+msgstr "Arrangement"
+
+#: 
+msgid "Custom handling related to events."
+msgstr "Indstillinger for arrangementer"
+
+#: 
+msgid "Article"
+msgstr "Artikel"
+
+#: 
+msgid "Functionality related to creating article content."
+msgstr "Funktion relateret til oprettelse af artikelindhold."
+
+#: 
+msgid "By @username"
+msgstr "Af @username"
 
