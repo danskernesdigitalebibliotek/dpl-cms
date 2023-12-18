@@ -39,7 +39,7 @@
                 "version": "2023.50.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2F2023-50-0/dist-release-2023-50-0.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix%2Finvisible-fees/dist-fix-invisible-fees.zip",
                     "type": "zip"
                 },
                 "require": {

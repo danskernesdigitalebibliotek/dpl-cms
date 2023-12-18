@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dec9f153a3bc337868bbbff0082de2d",
+    "content-hash": "5e00103710f205a43998f94491b64fbc",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -987,7 +987,7 @@
             "version": "2023.50.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2F2023-50-0/dist-release-2023-50-0.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix%2Finvisible-fees/dist-fix-invisible-fees.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
