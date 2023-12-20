@@ -10,10 +10,10 @@
 
 use Drupal\Component\Serialization\Json;
 use Drupal\dpl_react\DplReactInterface;
-
-use function Safe\file_get_contents as file_get_contents;
+use function Safe\file_get_contents;
 use function Safe\json_encode;
-use function Safe\sprintf as sprintf;
+use function Safe\preg_match;
+use function Safe\sprintf;
 
 /**
  * Implements hook_library_info_alter().
@@ -138,6 +138,11 @@ function dpl_react_preprocess_dpl_react_app(array &$variables): void {
     $attributes
   );
 
+  // Some data attributes are shared between the apps.
+  // Therefore it makse no sense to render them multiple times
+  // in the different apps.
+  _dpl_react_remove_used_shared_data_attributes($variables['attributes']);
+
   $variables['#attached']['library'][] = sprintf('dpl_react/%s', $variables['name']);
 
   $variables['#cache']['tags'][] = 'dpl_react_app';
@@ -145,6 +150,39 @@ function dpl_react_preprocess_dpl_react_app(array &$variables): void {
 
   // When changes to the interface language occurs then skip cache.
   $variables['#cache']['tags'][] = 'locale';
+}
+
+/**
+ * Removes already used attributes from the attributes array.
+ *
+ * @param mixed[] $attributes
+ *   The attributes array.
+ */
+function _dpl_react_remove_used_shared_data_attributes(array &$attributes): void {
+  $used_attributes = &drupal_static(__FUNCTION__, []);
+  $shared_suffixes = [
+    'text',
+    'url',
+    'config',
+  ];
+  $pattern = '/^data-.*-(' . implode('|', $shared_suffixes) . ')$/';
+
+  foreach ($attributes as $attribute => $value) {
+    // If the attribute does not end with one of the shared suffixes
+    // then we do nothing.
+    if (preg_match($pattern, $attribute) !== 1) {
+      continue;
+    }
+    // If the attribute has not been used before
+    // then we do nothing else than saving that we have used it.
+    if (!in_array($attribute, $used_attributes)) {
+      $used_attributes[$attribute] = $attribute;
+      continue;
+    }
+
+    // Remove the already used attribute from the attributes array.
+    unset($attributes[$attribute]);
+  }
 }
 
 /**
