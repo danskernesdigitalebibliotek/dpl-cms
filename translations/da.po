@@ -1823,11 +1823,6 @@ msgstr "Gebyr"
 
 #: 
 msgctxt "Fees list"
-msgid "Total"
-msgstr "I alt"
-
-#: 
-msgctxt "Fees list"
 msgid "Turned in @date"
 msgstr "Afleveret @date"
 
@@ -2259,7 +2254,7 @@ msgstr "Forny"
 #: 
 msgctxt "Renew loan"
 msgid "Cannot be renewed"
-msgstr "Kan ikke fornys"
+msgstr "Kan ikke fornyes"
 
 #: 
 msgctxt "Renew loan"
@@ -2656,77 +2651,77 @@ msgstr "Af @username"
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Set the interest periods. The format should be [days]-[label]. New periods will first be available in \"Default interest period for reservation\" when the form has been saved."
-msgstr ""
+msgstr "Indstil interesseperioder. Formatet skal være [antal dage]-[label]. Nye interesseperioder vil først være tilgængelige som valgmulighed i \"Default interesseperiode for reserveringer\" efter at formularen er gemt."
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Default interest period for reservation"
-msgstr ""
+msgstr "Default interesseperiode for reserveringer"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Set the default interest period for reservations."
-msgstr ""
+msgstr "Indstil default interesseperiode for reserveringer"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Blocked user"
-msgstr ""
+msgstr "Blokeret bruger"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Blocked user link for modal"
-msgstr ""
+msgstr "Link i modal til blokeret bruger (til fx Mit betalingsoverblik)"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page."
-msgstr ""
+msgstr "Hvis en bruger er blokeret pga. overskredet gebyrgrænse åbner en modal. I denne modal er det muligt at placere et link, enten til en hjælpeside eller direkte til en betalingsside."
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "The interest period @error, does not match the format [days]-[label]."
-msgstr ""
+msgstr "Interesseperioden @error matcher ikke formatet [dage]-[label]."
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "The default interest period should be set to a value in \"Interest periods for reservation\" field."
-msgstr ""
+msgstr "Default interesseperiode skal indstilles i feltet \"Default interesseperiode for reserveringer\"."
 
 #: 
 msgctxt "Patron menu"
 msgid "Dashboard"
-msgstr ""
+msgstr "Mit overblik"
 
 #: 
 msgctxt "Work Page"
 msgid "Close interest period modal"
-msgstr ""
+msgstr "Luk pop-up til valg af interesseperiode"
 
 #: 
 msgctxt "Work Page"
 msgid "Close pickup location modal"
-msgstr ""
+msgstr "Luk pop-up til valg af afhentningssted"
 
 #: 
 msgctxt "Work Page"
 msgid "Digital copy receipt"
-msgstr ""
+msgstr "Kvittering på bestilling af digital kopi"
 
 #: 
 msgctxt "Work Page"
 msgid "Reservable on another library"
-msgstr ""
+msgstr "Kan reserveres fra en anden bibliotekskommune"
 
 #: 
 msgctxt "Work Page"
 msgid "Change interest period modal"
-msgstr ""
+msgstr "Pop-up til at skifte interessperiode"
 
 #: 
 msgctxt "Work Page"
 msgid "Change pickup location modal"
-msgstr ""
+msgstr "Pop-up til at skifte afhendningssted"
 
 #: 
 msgctxt "Global (Aria)"
@@ -2736,7 +2731,7 @@ msgstr "Luk pop-up til blokeret bruger"
 #: 
 msgctxt "Global"
 msgid "Blocked patron body text (d)"
-msgstr ""
+msgstr "Du kan derfor ikke reservere, låne eller forny lån. Kontakt biblioteket for yderligere information "
 
 #: 
 msgctxt "Global"
@@ -2761,12 +2756,12 @@ msgstr "Du har overskredet gebyrgrænsen"
 #: 
 msgctxt "Global"
 msgid "Blocked patron body text (f)"
-msgstr ""
+msgstr "Du kan derfor ikke reservere, låne eller forny lån. Kontakt biblioteket for yderligere information "
 
 #: 
 msgctxt "Global"
 msgid "Blocked patron title text (f)"
-msgstr ""
+msgstr "Din bruger er blokeret"
 
 #: 
 msgctxt "Global (Aria)"
@@ -2776,22 +2771,22 @@ msgstr "Denne pop-up advarer dig om at din bruger er blokeret"
 #: 
 msgctxt "Global"
 msgid "Blocked patron body text (o)"
-msgstr ""
+msgstr "Du kan derfor ikke reservere, låne eller forny lån. Kontakt biblioteket for yderligere information "
 
 #: 
 msgctxt "Global"
 msgid "Blocked reason modal title (o)"
-msgstr ""
+msgstr "Du kan derfor ikke reservere, låne eller forny lån. Kontakt biblioteket for yderligere information "
 
 #: 
 msgctxt "Global"
 msgid "Blocked patron body text (s)"
-msgstr ""
+msgstr "Du kan derfor ikke reservere, låne eller forny lån. Kontakt biblioteket for yderligere information "
 
 #: 
 msgctxt "Global"
 msgid "Blocked patron title text (s)"
-msgstr ""
+msgstr "Din bruger er blokeret"
 
 #: 
 msgctxt "Global"
@@ -2826,67 +2821,67 @@ msgstr "Er du sikker på at du vil forny?"
 #: 
 msgctxt "Global"
 msgid "accept modal aria description text"
-msgstr ""
+msgstr "Accepter"
 
 #: 
 msgctxt "Global"
 msgid "accept modal aria label text"
-msgstr ""
+msgstr "Accepter"
 
 #: 
 msgctxt "Global"
 msgid "If you renew your fee will be raised"
-msgstr ""
+msgstr "Hvis du kun fornyer nogle af dine lån, risikerer du at dit gebyr bliver forhøjet, fordi dine lån opsplittes i flere"
 
 #: 
 msgctxt "Global"
 msgid "Cancel renewal"
-msgstr ""
+msgstr "Forny ikke"
 
 #: 
 msgctxt "Global"
 msgid "Your fee is raised"
-msgstr ""
+msgstr "Dit gebyr kan blive forhøjet"
 
 #: 
 msgctxt "Global"
 msgid "add @title to favorites list"
-msgstr ""
+msgstr "tilføj @title til huskelisten"
 
 #: 
 msgctxt "Global"
 msgid "Animated series"
-msgstr ""
+msgstr "Animeret serie"
 
 #: 
 msgctxt "Global"
 msgid "Audio books"
-msgstr ""
+msgstr "Lydbøger"
 
 #: 
 msgctxt "Global"
 msgid "Books"
-msgstr ""
+msgstr "Bøger"
 
 #: 
 msgctxt "Global"
 msgid "E-books"
-msgstr ""
+msgstr "E-bøger"
 
 #: 
 msgctxt "Global"
 msgid "Movies"
-msgstr ""
+msgstr "Film"
 
 #: 
 msgctxt "Global"
 msgid "Games"
-msgstr ""
+msgstr "Spil"
 
 #: 
 msgctxt "Global"
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: 
 msgctxt "Global"
@@ -2936,7 +2931,7 @@ msgstr "Fra"
 #: 
 msgctxt "Global"
 msgid "This button opens a modal that covers the entire page and contains the possibility to delete a selected reservation, or multiple selected reservations"
-msgstr ""
+msgstr "Denne knap åbner en pop-up som gær det muligt at slette en eller flere reserveringer"
 
 #: 
 msgctxt "Global"
@@ -2991,107 +2986,107 @@ msgstr "Du har slettet din reservering"
 #: 
 msgctxt "Global"
 msgid "Cancel reservations"
-msgstr ""
+msgstr "Slet reserveringer"
 
 #: 
 msgctxt "Global"
 msgid "You cannot regret this action"
-msgstr ""
+msgstr "Du kan ikke fortryde"
 
 #: 
 msgctxt "Global"
 msgid "Digital reservations"
-msgstr ""
+msgstr "Digitale reserveringer"
 
 #: 
 msgctxt "Global"
 msgid "et al."
-msgstr ""
+msgstr "et al."
 
 #: 
 msgctxt "Global"
 msgid "Renewable (@count)"
-msgstr ""
+msgstr "Forny (@count)"
 
 #: 
 msgctxt "Global"
 msgid "Choose all"
-msgstr ""
+msgstr "Vælg alle"
 
 #: 
 msgctxt "Global"
 msgid "This modal groups loans after due date and makes it possible to renew said loans"
-msgstr ""
+msgstr "Denne pop-up grupperer lån efter afleveringsdato og gør det muligt at forny disse lån"
 
 #: 
 msgctxt "Global"
 msgid "Due date @date"
-msgstr ""
+msgstr "Afleveringsfrist @date"
 
 #: 
 msgctxt "Global"
 msgid "Read more about fees"
-msgstr ""
+msgstr "Se vores takster"
 
 #: 
 msgctxt "Global"
 msgid "Close renew loans modal"
-msgstr ""
+msgstr "Luk pop-up til at forny lån"
 
 #: 
 msgctxt "Global"
 msgid "The due date of return is exceeded, therefore you will be charged a fee, when the item is returned"
-msgstr ""
+msgstr "Afleveringsfristen er overskredet, du vil derfor blive pålagt et gebyr når du afleverer"
 
 #: 
 msgctxt "Global"
 msgid "Go to material details"
-msgstr ""
+msgstr "Se detaljer"
 
 #: 
 msgctxt "Global"
 msgid "Select @label for renewal"
-msgstr ""
+msgstr "Vælg @label til fornyelse"
 
 #: 
 msgctxt "Global"
 msgid "This modal makes it possible to renew materials"
-msgstr ""
+msgstr "Denne pop-up gør det muligt at forny dine lån"
 
 #: 
 msgctxt "Global"
 msgid "Close modal with grouped loans"
-msgstr ""
+msgstr "Luk pop-up med grupperede lån"
 
 #: 
 msgctxt "Global"
 msgid "The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library"
-msgstr ""
+msgstr "Materialet er udlånt fra en anden kommune og fornyelsen er derfor betinget af et andet biblioteks accept"
 
 #: 
 msgctxt "Global"
 msgid "The item cannot be renewed further"
-msgstr ""
+msgstr "Lånet kan ikke fornyes yderligere"
 
 #: 
 msgctxt "Global"
 msgid "The item is reserved by another patron"
-msgstr ""
+msgstr "Reserveret af anden låner"
 
 #: 
 msgctxt "Global"
 msgid "Can be returned to all branches of the municipalities libraries"
-msgstr ""
+msgstr "Kan afleveres på alle kommunens biblioteker"
 
 #: 
 msgctxt "Global"
 msgid "Close modal with grouped reservations"
-msgstr ""
+msgstr "Luk pop-up med grupperede reserveringer"
 
 #: 
 msgctxt "Global"
 msgid "This modal makes it possible to delete reservations"
-msgstr ""
+msgstr "Denne pop-up gør det muligt at slette reserveringer"
 
 #: 
 msgctxt "Global"
@@ -3141,7 +3136,7 @@ msgstr "Af"
 #: 
 msgctxt "Global"
 msgid "Close material details modal"
-msgstr ""
+msgstr "Luk pop-up med detaljevisning af materiale"
 
 #: 
 msgctxt "Global"
@@ -3166,7 +3161,7 @@ msgstr "Materialenummer"
 #: 
 msgctxt "Global"
 msgid "This modal shows material details, and makes it possible to renew a material, of that material is renewable"
-msgstr ""
+msgstr "Denne pop-up viser detaljer for materialet og gør det muligt at slette en reservering"
 
 #: 
 msgctxt "Global"
@@ -3186,82 +3181,83 @@ msgstr "Forny dine lån"
 #: 
 msgctxt "Global"
 msgid "Set date for when your interest for the material will expire."
-msgstr ""
+msgstr "Indstil interesseperiode"
 
 #: 
 msgctxt "Global"
 msgid "Change interest deadline"
-msgstr ""
+msgstr "Skift udløbsdato for interesseperiode"
 
 #: 
 msgctxt "Global"
 msgid "Choose pickup library"
-msgstr ""
+msgstr "Vælg afhentningsbibliotek"
 
 #: 
 msgctxt "Global"
 msgid "Decide at which library you want to pickup the material."
-msgstr ""
+msgstr "Vælg hvor du vil afhente dine reserveringer"
 
 #: 
 msgctxt "Global"
 msgid "Your search has 0 results"
-msgstr ""
+msgstr "Din søgning har 0 resultater"
 
 #: 
 msgctxt "Global"
 msgid "nr."
-msgstr ""
+msgstr "nr. "
 
 #: 
 msgctxt "Global"
 msgid "1 month"
-msgstr ""
+msgstr "1 måned"
 
 #: 
 msgctxt "Global"
 msgid "1 year"
-msgstr ""
+msgstr "1 år"
 
 #: 
 msgctxt "Global"
 msgid "out of"
-msgstr ""
+msgstr "ud af"
 
 #: 
 msgctxt "Global"
 msgid "Receive emails about your loans, reservations, and so forth"
-msgstr ""
+msgstr "Modtag e-mails om dine lån, reserveringer osv."
 
 #: 
 msgctxt "Global"
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: 
 msgctxt "Global"
 msgid "patron page contact info body text"
-msgstr ""
+msgstr "Husk at opdatere dine oplysninger, hvis du skifter mobilnummer eller\n"
+"e-mail."
 
 #: 
 msgctxt "Global"
 msgid "CONTACT INFORMATION"
-msgstr ""
+msgstr "KONTAKTOPLYSNINGER"
 
 #: 
 msgctxt "Global"
 msgid "Receive text messages about your loans, reservations, and so forth"
-msgstr ""
+msgstr "Modtag sms om dine lån, reserveringer osv."
 
 #: 
 msgctxt "Global"
 msgid "Phone number"
-msgstr ""
+msgstr "Mobilnummer"
 
 #: 
 msgctxt "Global"
 msgid "Change current pin by entering a new pin and saving"
-msgstr ""
+msgstr "Skift nuværende kode ved at indtaste en ny kode og gem"
 
 #: 
 msgctxt "Global"
@@ -3276,12 +3272,12 @@ msgstr "Bekræft ny pinkode"
 #: 
 msgctxt "Global"
 msgid "This modal makes it possible to pause your physical reservations"
-msgstr ""
+msgstr "Denne pop-up gør det muligt at sætte dine fysiske reserveringer på pause"
 
 #: 
 msgctxt "Global"
 msgid "Pause reservation below inputs text"
-msgstr ""
+msgstr "Du kan sætte dine reserveringer på pause mens du f.eks. er på ferie. Gælder kun fysiske materialer."
 
 #: 
 msgctxt "Global"
@@ -3291,7 +3287,7 @@ msgstr "Sæt dine reserveringer på pause i god tid, da reserveringer som allere
 #: 
 msgctxt "Global"
 msgid "Close pause reservations modal"
-msgstr ""
+msgstr "Luk pop-up til at sætte reserveringer på pause"
 
 #: 
 msgctxt "Global"
@@ -3346,300 +3342,300 @@ msgstr "Pinkoderne er ikke identiske"
 #: 
 msgctxt "Global"
 msgid "Audiobook"
-msgstr ""
+msgstr "Lydbog"
 
 #: 
 msgctxt "Global"
 msgid "E-book"
-msgstr ""
+msgstr "E-bog"
 
 #: 
 msgctxt "Global"
 msgid "Podcast"
-msgstr ""
+msgstr "Podcast"
 
 #: 
 msgctxt "Global"
 msgid "Ready"
-msgstr ""
+msgstr "Klar"
 
 #: 
 msgctxt "Global"
 msgid "Ready for pickup"
-msgstr ""
+msgstr "Klar til lån"
 
 #: 
 msgctxt "Global"
 msgid "Remove reservations (@amount)"
-msgstr ""
+msgstr "Slet reserveringer @count"
 
 #: 
 msgctxt "Global"
 msgid "remove @title from favorites list"
-msgstr ""
+msgstr "fjern @title fra huskelisten"
 
 #: 
 msgctxt "Global"
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: 
 msgctxt "Global"
 msgid "Something went wrong renewing your loans. Please try again."
-msgstr ""
+msgstr "Noget gik galt. Prøv igen senere."
 
 #: 
 msgctxt "Global"
 msgid "Renewing your loans failed"
-msgstr ""
+msgstr "Dine lån kunne ikke fornyes"
 
 #: 
 msgctxt "Global"
 msgid "For some reason, no one of your loans could be renewed."
-msgstr ""
+msgstr "Ingen af dine lån kunne fornyes. Kontakt evt. biblioteket."
 
 #: 
 msgctxt "Global"
 msgid "No loans could be renewed"
-msgstr ""
+msgstr "Ingen lån kunne fornyes"
 
 #: 
 msgctxt "Global"
 msgid "{\"type\":\"plural\",\"text\":[\"1 loan has been renewed.\",\"@count loans have been renewed.\"]}"
-msgstr ""
+msgstr "{\"type\":\"plural\",\"text\":[\"1 lån blev fornyet.\",\"@count lån blev fornyet.\"]}"
 
 #: 
 msgctxt "Global"
 msgid "You have renewed your loans"
-msgstr ""
+msgstr "Du har fornyet dine lån"
 
 #: 
 msgctxt "Global"
 msgid "Something went wrong renewing your loan. Please try again."
-msgstr ""
+msgstr "Noget gik galt. Prøv venligst igen senere."
 
 #: 
 msgctxt "Global"
 msgid "Renewal of your loan failed"
-msgstr ""
+msgstr "Dine lån kunne ikke fornyes"
 
 #: 
 msgctxt "Global"
 msgid "For some reason, your loan could not be renewed."
-msgstr ""
+msgstr "Dit lån kunne ikke fornyes. Kontakt evt. biblioteket."
 
 #: 
 msgctxt "Global"
 msgid "The loan could not be renewed"
-msgstr ""
+msgstr "Lånet kunne ikke fornyes"
 
 #: 
 msgctxt "Global"
 msgid "1 loan was renewed."
-msgstr ""
+msgstr "1 lån blev fornyet"
 
 #: 
 msgctxt "Global"
 msgid "You have renewed your loan"
-msgstr ""
+msgstr "Du har fornyet dit lån"
 
 #: 
 msgctxt "Global"
 msgid "Borrow before @date"
-msgstr ""
+msgstr "Lån før @date"
 
 #: 
 msgctxt "Global"
 msgid "Remove your reservation"
-msgstr ""
+msgstr "Slet din reservering"
 
 #: 
 msgctxt "Global"
 msgid "Apply changes"
-msgstr ""
+msgstr "Gem ændringer"
 
 #: 
 msgctxt "Global"
 msgid "Date of reservation"
-msgstr ""
+msgstr "Reserveringsdato"
 
 #: 
 msgctxt "Global"
 msgid "Not interested after"
-msgstr ""
+msgstr "Ikke interesseret efter"
 
 #: 
 msgctxt "Global"
 msgid "@count queued"
-msgstr ""
+msgstr "@count i køen"
 
 #: 
 msgctxt "Global"
 msgid "Others are queueing for this material"
-msgstr ""
+msgstr "Andre står i kø til dette materiale"
 
 #: 
 msgctxt "Global"
 msgid "Pickup branch"
-msgstr ""
+msgstr "Afhentningssted"
 
 #: 
 msgctxt "Global"
 msgid "Pickup deadline"
-msgstr ""
+msgstr "Afhentningsfrist"
 
 #: 
 msgctxt "Global"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "Global"
 msgid "Ready for you"
-msgstr ""
+msgstr "Klar til dig"
 
 #: 
 msgctxt "Global"
 msgid "Showing @itemsShown out of @hitcount items"
-msgstr ""
+msgstr "Viser @itemsShown ud af @hitcount elementer"
 
 #: 
 msgctxt "Global"
 msgid "Dropdown with additional search functions"
-msgstr ""
+msgstr "Dropdown med yderligere søgefunktioner"
 
 #: 
 msgctxt "Global"
 msgid "Search button"
-msgstr ""
+msgstr "Søgeknap"
 
 #: 
 msgctxt "Global"
 msgid "Search header input"
-msgstr ""
+msgstr "Søgeheader input"
 
 #: 
 msgctxt "Global"
 msgid "Input must contain at least one non-whitespace character."
-msgstr ""
+msgstr "Input skal indehold minimum ét tegn"
 
 #: 
 msgctxt "Global"
 msgid "Shift"
-msgstr ""
+msgstr "Skift"
 
 #: 
 msgctxt "Global"
 msgid "show more"
-msgstr ""
+msgstr "vis flere"
 
 #: 
 msgctxt "Global"
 msgid "6 months"
-msgstr ""
+msgstr "6 måneder"
 
 #: 
 msgctxt "Global"
 msgid "Expires soon"
-msgstr ""
+msgstr "Udløber snart"
 
 #: 
 msgctxt "Global"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: 
 msgctxt "Global"
 msgid "Topic"
-msgstr ""
+msgstr "Emne"
 
 #: 
 msgctxt "Global"
 msgid "Work"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "Global"
 msgid "Subject number"
-msgstr ""
+msgstr "Emnetal"
 
 #: 
 msgctxt "Global"
 msgid "3 months"
-msgstr ""
+msgstr "3 måneder"
 
 #: 
 msgctxt "Global"
 msgid "2 months"
-msgstr ""
+msgstr "2 måneder"
 
 #: 
 msgctxt "Dashboard"
 msgid "See more"
-msgstr ""
+msgstr "Se mere"
 
 #: 
 msgctxt "Dashboard"
 msgid "See your fees and how to pay"
-msgstr ""
+msgstr "Se dine gebyrer og læs hvordan du betaler"
 
 #: 
 msgctxt "Reservation list"
 msgid "Your reservations are paused"
-msgstr ""
+msgstr "Dine reserveringer er sat på pause"
 
 #: 
 msgctxt "Reservation list"
 msgid "Settings"
-msgstr ""
+msgstr "Indstillinger"
 
 #: 
 msgctxt "Fees list"
 msgid "Unsettled debt 1"
-msgstr ""
+msgstr "Ubetalte gebyrer"
 
 #: 
 msgctxt "Fees list"
 msgid "Unsettled debt 2"
-msgstr ""
+msgstr "Ubetalte gebyrer"
 
 #: 
 msgctxt "Patron page"
 msgid "Cancel pause"
-msgstr ""
+msgstr "Slet pause"
 
 #: 
 msgctxt "dpl_event"
 msgid "Access"
-msgstr ""
+msgstr "Adgang"
 
 #: 
 msgid "Buy tickets"
-msgstr ""
+msgstr "Køb billet"
 
 #: 
 msgid "Free"
-msgstr ""
+msgstr "Gratis"
 
 #: 
 msgid "@price kr."
-msgstr ""
+msgstr "@price kr."
 
 #: 
 msgid "DPL Paragraphs"
-msgstr ""
+msgstr "DPL Paragraphs"
 
 #: 
 msgid "Tweaks to various DPL paragraphs"
-msgstr ""
+msgstr "Ændringer til forskellige DPL paragraphs"
 
 #: 
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: 
 msgid "Functionality related to the admin/editor experience"
-msgstr ""
+msgstr "Funktionalitet relateret til administrator/redaktøroplevelsen"
 
 #: 
 msgid "Description"
@@ -3651,13 +3647,53 @@ msgstr "Tid"
 
 #: 
 msgid "Price"
-msgstr ""
+msgstr "Pris"
 
 #: 
 msgid "Place"
-msgstr ""
+msgstr "Sted"
 
 #: 
 msgid "Adresse"
-msgstr ""
+msgstr "Adresse"
+
+#: 
+msgctxt "Work Page"
+msgid "Borchk user no longer exists on agency"
+msgstr "Borchk bruger findes ikke længere i bibliotekssystemet"
+
+#: 
+msgctxt "Work Page"
+msgid "Borchk user not verified"
+msgstr "Borchk bruger er ikke verificeret"
+
+#: 
+msgctxt "Work Page"
+msgid "Error municipality agency ID not found"
+msgstr "Fejl - kommunalt agency ID ikke fundet"
+
+#: 
+msgctxt "Work Page"
+msgid "Unknown user"
+msgstr "Ukendt bruger"
+
+#: 
+msgctxt "Global"
+msgid "All"
+msgstr "Alle"
+
+#: 
+msgctxt "Fees list"
+msgid "Already paid? It can take up to 72 hours register the transaction."
+msgstr "Har du allerede betalt? Der kan gå op til 72 timer før betalingen registreres i vores systemer"
+
+#: 
+msgctxt "Fees list"
+msgid "#"
+msgstr "Materialenummer"
+
+#: 
+msgctxt "Fees list"
+msgid "Total: @total"
+msgstr "I alt: @total"
 
