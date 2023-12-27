@@ -473,5 +473,3 @@ class DplReactAppsController extends ControllerBase {
   }
 
 }
-
-
