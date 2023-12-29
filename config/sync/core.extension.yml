@@ -82,6 +82,8 @@ module:
   schemata: 0
   schemata_json_schema: 0
   serialization: 0
+  smart_date: 0
+  smart_date_recur: 0
   system: 0
   text: 0
   token: 0
