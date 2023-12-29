@@ -17,6 +17,7 @@ dependencies:
     - address
     - entity_reference_revisions
     - link
+    - smart_date
     - text
     - user
 id: node.event.default
@@ -30,6 +31,28 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_event_date:
+    type: smartdate_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+      parts:
+        - start
+        - end
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_event_description:
     type: text_default
@@ -91,6 +114,5 @@ content:
     weight: 0
     region: content
 hidden:
-  field_event_date: true
   field_event_state: true
   langcode: true

@@ -15,10 +15,11 @@ dependencies:
     - node.type.event
   module:
     - address
-    - datetime_range
     - link
     - media_library
     - paragraphs
+    - smart_date
+    - smart_date_recur
     - text
 id: node.event.default
 targetEntityType: node
@@ -27,19 +28,40 @@ mode: default
 content:
   field_event_address:
     type: address_default
-    weight: 31
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_event_date:
-    type: daterange_default
-    weight: 27
+    type: smartdate_default
+    weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: false
+      allday: true
+      remove_seconds: false
+    third_party_settings:
+      smart_date_recur:
+        modal: true
+        allowed_recur_freq_values:
+          MINUTELY: '0'
+          HOURLY: '0'
+          DAILY: DAILY
+          WEEKLY: WEEKLY
+          MONTHLY: MONTHLY
+          YEARLY: YEARLY
   field_event_description:
     type: text_textarea
-    weight: 28
+    weight: 4
     region: content
     settings:
       rows: 5
@@ -47,14 +69,14 @@ content:
     third_party_settings: {  }
   field_event_image:
     type: media_library_widget
-    weight: 33
+    weight: 9
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_event_link:
     type: link_default
-    weight: 30
+    weight: 6
     region: content
     settings:
       placeholder_url: ''
@@ -62,7 +84,7 @@ content:
     third_party_settings: {  }
   field_event_paragraphs:
     type: paragraphs
-    weight: 34
+    weight: 10
     region: content
     settings:
       title: Paragraph
@@ -90,7 +112,7 @@ content:
           dialog_style: tiles
   field_event_place:
     type: string_textfield
-    weight: 32
+    weight: 8
     region: content
     settings:
       size: 60
@@ -98,13 +120,13 @@ content:
     third_party_settings: {  }
   field_event_state:
     type: options_select
-    weight: 26
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_ticket_categories:
     type: paragraphs
-    weight: 29
+    weight: 5
     region: content
     settings:
       title: Paragraph

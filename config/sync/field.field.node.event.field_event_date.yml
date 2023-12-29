@@ -1,4 +1,4 @@
-uuid: 7daffd81-d3da-43b3-861c-f69b841aae6a
+uuid: 70370880-4fe0-4edd-ad80-4fe98b84bd68
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,28 @@ dependencies:
     - field.storage.node.field_event_date
     - node.type.event
   module:
-    - datetime_range
+    - smart_date
+    - smart_date_recur
+third_party_settings:
+  smart_date_recur:
+    allow_recurring: true
+    month_limit: 12
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
 bundle: event
-label: Date
+label: 'Event date'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_duration: 60
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: ''
+    default_date: ''
+    min: ''
+    max: ''
 default_value_callback: ''
 settings: {  }
-field_type: daterange
+field_type: smartdate

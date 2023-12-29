@@ -76,7 +76,7 @@ function dpl_event_schedule_set_occurred(NodeInterface $event): void {
   if (!$event_date_values || empty($event_date_values["end_value"])) {
     return;
   }
-  $event_end_date = new DateTimeImmutable($event_date_values["end_value"]);
+  $event_end_date = (new DateTimeImmutable())->setTimestamp($event_date_values["end_value"]);
   $event_end_timestamp = $event_end_date->getTimestamp();
 
   $job = [
