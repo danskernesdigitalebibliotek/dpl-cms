@@ -1,4 +1,4 @@
-uuid: 7daffd81-d3da-43b3-861c-f69b841aae6a
+uuid: 9414ad94-dfd2-4d96-8032-887b204f2d8b
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_event_date
     - node.type.event
   module:
-    - datetime_range
+    - date_recur
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
@@ -17,5 +17,16 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: daterange
+settings:
+  precreate: P2Y
+  parts:
+    all: true
+    frequencies:
+      SECONDLY: {  }
+      MINUTELY: {  }
+      HOURLY: {  }
+      DAILY: {  }
+      WEEKLY: {  }
+      MONTHLY: {  }
+      YEARLY: {  }
+field_type: date_recur

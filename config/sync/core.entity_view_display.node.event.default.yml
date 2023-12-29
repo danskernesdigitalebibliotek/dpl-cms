@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.date_format.medium
     - field.field.node.event.field_event_address
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_description
@@ -15,6 +16,7 @@ dependencies:
     - node.type.event
   module:
     - address
+    - date_recur
     - entity_reference_revisions
     - link
     - text
@@ -30,6 +32,21 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_event_date:
+    type: date_recur_basic_formatter
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+      show_next: 5
+      count_per_item: true
+      occurrence_format_type: medium
+      same_end_date_format_type: medium
+      interpreter: null
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_event_description:
     type: text_default
@@ -91,6 +108,5 @@ content:
     weight: 0
     region: content
 hidden:
-  field_event_date: true
   field_event_state: true
   langcode: true

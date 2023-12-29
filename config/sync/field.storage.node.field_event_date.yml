@@ -1,17 +1,18 @@
-uuid: fd9331a9-856f-47ee-a93c-65d6bca9308c
+uuid: 43094183-3cf5-4c57-91e1-aad7f41e1fdc
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
+    - date_recur
     - node
 id: node.field_event_date
 field_name: field_event_date
 entity_type: node
-type: daterange
+type: date_recur
 settings:
   datetime_type: datetime
-module: datetime_range
+  rrule_max_length: 256
+module: date_recur
 locked: false
 cardinality: 1
 translatable: true
