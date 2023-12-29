@@ -1,0 +1,57 @@
+uuid: 7744ec7f-85df-478b-948d-1dc957ea9d4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - recurring_events.eventseries_type.default
+  module:
+    - options
+    - recurring_events
+    - text
+_core:
+  default_config_hash: U53j_RaqaehEh393bzj6vrqXorzo8lkcjhQNCNTPjmQ
+id: eventseries.default.default
+targetEntityType: eventseries
+bundle: default
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  event_instances:
+    type: recurring_events_eventinstance_date
+    label: above
+    settings:
+      link: '1'
+      date_format: 'F jS, Y h:iA'
+      separator: ' - '
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  recur_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  consecutive_recurring_date: true
+  custom_date: true
+  daily_recurring_date: true
+  event_registration: true
+  monthly_recurring_date: true
+  weekly_recurring_date: true
+  yearly_recurring_date: true

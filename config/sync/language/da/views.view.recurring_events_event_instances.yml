@@ -1,0 +1,106 @@
+label: Begivenheder
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        title:
+          separator: ', '
+        view_eventseries:
+          text: vis
+        title_2:
+          separator: ', '
+        title_1:
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        date__value:
+          separator: ', '
+        uid:
+          label: Forfatter
+          separator: ', '
+        status:
+          label: Udgivet
+          separator: ', '
+        created:
+          label: Oprettet
+          separator: ', '
+        changed:
+          label: Ændret
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        type:
+          expose:
+            label: Type
+        uid:
+          expose:
+            label: Forfatter
+        status:
+          expose:
+            label: Udgivet
+      title: Begivenheder
+  admin_page:
+    display_title: Side
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      filters:
+        type:
+          expose:
+            label: Type
+        status:
+          expose:
+            label: Udgivet
+          group_info:
+            label: Udgivet
+            group_items:
+              1:
+                title: Udgivet
+              2:
+                title: 'Ikke udgivet'
+  events_listing:
+    display_title: Side
+    display_options:
+      menu:
+        title: Begivenheder
+      fields:
+        title:
+          separator: ', '
+        view_eventseries:
+          text: vis
+        title_2:
+          separator: ', '
+        title_1:
+          separator: ', '
+        date__value:
+          separator: ', '

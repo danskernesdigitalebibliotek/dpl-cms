@@ -1,0 +1,109 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        title:
+          label: Titel
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        recur_type:
+          separator: ', '
+        eventseries_instance_count:
+          label: Instances
+        uid:
+          label: Forfatter
+          separator: ', '
+        status:
+          label: Udgivet
+          separator: ', '
+        created:
+          label: Oprettet
+          separator: ', '
+        changed:
+          label: Ændret
+          separator: ', '
+        operations:
+          label: Handlinger
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Type
+        uid:
+          expose:
+            label: Forfatter
+        status:
+          expose:
+            label: Udgivet
+  admin_page:
+    display_title: Side
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Type
+        recur_type:
+          group_info:
+            group_items:
+              2:
+                title: Dagligt
+              3:
+                title: Ugentligt
+              4:
+                title: Månedligt
+              6:
+                title: Tilpasset
+        status:
+          expose:
+            label: Udgivet
+          group_info:
+            label: Udgivet
+            group_items:
+              1:
+                title: Udgivet
+              2:
+                title: 'Ikke udgivet'
+  eventseries_listing:
+    display_title: Side
+    display_options:
+      filters:
+        title:
+          expose:
+            label: Titel
