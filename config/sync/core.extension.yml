@@ -9,6 +9,8 @@ module:
   config_filter: 0
   crop: 0
   customerror: 0
+  date_recur: 0
+  date_recur_modular: 0
   datetime: 0
   datetime_range: 0
   dpl_admin: 0
@@ -42,6 +44,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  entity_repeat: 0
   enum_field: 0
   field: 0
   field_group: 0
@@ -78,6 +81,7 @@ module:
   purge_queuer_coretags: 0
   purge_tokens: 0
   redis: 0
+  replicate: 0
   rest: 0
   schemata: 0
   schemata_json_schema: 0
