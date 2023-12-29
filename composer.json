@@ -12,6 +12,28 @@
         {
             "type": "package",
             "package": {
+                "name": "drupal/entity_repeat",
+                "type": "drupal-module",
+                "version": "1.1.2",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/entity_repeat.git",
+                    "reference": "1.1.2"
+                },
+                "requires": {
+                    "drupal/core": "^9.3 | ^10",
+                    "drupal/date_recur": "*",
+                    "drupal/date_recur_modular": "*",
+                    "drupal/replicate": "*"
+                },
+                "devRequires": {
+                    "drupal/group": "*"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "drupal/potion",
                 "type": "drupal-module",
                 "version": "dev-2.x",
@@ -86,8 +108,11 @@
         "drupal/core-project-message": "~10.0.11",
         "drupal/core-recommended": "~10.0.11",
         "drupal/customerror": "^1.0@beta",
+        "drupal/date_recur": "^3.2",
+        "drupal/date_recur_modular": "^3.1",
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "~5.0.2",
+        "drupal/entity_repeat": "^1.1",
         "drupal/enum_field": "^1.0",
         "drupal/field_group": "^3.4",
         "drupal/focal_point": "^2.0",
@@ -109,6 +134,7 @@
         "drupal/potion": "dev-2.x#e48d6ee336d960b9d2efb5d88e68402db6d229a6",
         "drupal/purge": "^3.2",
         "drupal/redis": "^1.7",
+        "drupal/replicate": "^1.2",
         "drupal/restui": "^1.21",
         "drupal/twig_tweak": "^3.2.1",
         "drupal/upgrade_status": "^4.0",
@@ -221,6 +247,9 @@
             },
             "drupal/default_content": {
                 "3200212: Overwrite files on import": "https://git.drupalcode.org/project/default_content/-/merge_requests/8.patch"
+            },
+            "drupal/entity_repeat": {
+                "#3398987: Drupal 10 compatibility": "https://www.drupal.org/files/issues/2023-11-03/issues-3398987-D10-compatibility-fixes_0.patch"
             },
             "drupal/focal_point": {
                 "3162210: Preview link accidentally closes the media library": "https://www.drupal.org/files/issues/2020-10-11/preview_link_accidentally_closes_the_media_library-3162210-19.patch"

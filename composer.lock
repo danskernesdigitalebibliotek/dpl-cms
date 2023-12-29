@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0241bc1b10c332c2c9a269c39b9d175",
+    "content-hash": "4ef7a010f71383c1026602b5fc377c9f",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -2931,6 +2931,121 @@
             }
         },
         {
+            "name": "drupal/date_recur",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_recur.git",
+                "reference": "3.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_recur-3.2.0.zip",
+                "reference": "3.2.0",
+                "shasum": "33b6a5e6b10f4cb88c5d0e85ba4657a14ab22628"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "php": ">=8.0",
+                "rlanvin/php-rrule": "^1 || ^2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "drupal/coder": "^8.3",
+                "drupal/token": "^1.5",
+                "mglaman/phpstan-drupal": "^1",
+                "phpstan/phpstan": "^1",
+                "phpstan/phpstan-deprecation-rules": "*"
+            },
+            "suggest": {
+                "drupal/date_recur_interactive": "Provides an interactive recurring date widget."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.2.0",
+                    "datestamp": "1649146514",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                },
+                {
+                    "name": "Frando",
+                    "homepage": "https://www.drupal.org/user/21850"
+                }
+            ],
+            "description": "Recurring Dates Field",
+            "homepage": "https://www.drupal.org/project/date_recur",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/date_recur",
+                "issues": "https://www.drupal.org/project/issues/date_recur"
+            }
+        },
+        {
+            "name": "drupal/date_recur_modular",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_recur_modular.git",
+                "reference": "3.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_recur_modular-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "6fd4e4fc47faa7c0a36893bf2a45a1994bba476b"
+            },
+            "require": {
+                "drupal/core": ">=9.5",
+                "drupal/date_recur": "^3.2",
+                "php": ">=8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.0",
+                    "datestamp": "1687499482",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "description": "Recurring Date Fields Modular Widgets",
+            "homepage": "https://www.drupal.org/project/date_recur_modular",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/date_recur_modular",
+                "issues": "https://www.drupal.org/project/issues/date_recur_modular"
+            }
+        },
+        {
             "name": "drupal/default_content",
             "version": "2.0.0-alpha2",
             "source": {
@@ -3136,6 +3251,16 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
             }
+        },
+        {
+            "name": "drupal/entity_repeat",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_repeat.git",
+                "reference": "1.1.2"
+            },
+            "type": "drupal-module"
         },
         {
             "name": "drupal/enum_field",
@@ -4580,6 +4705,70 @@
             "homepage": "https://www.drupal.org/project/redis",
             "support": {
                 "source": "https://git.drupalcode.org/project/redis"
+            }
+        },
+        {
+            "name": "drupal/replicate",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/replicate.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/replicate-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "614dcc5c8f1f963f2c0e335c784ee14ed59d5b15"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1680029152",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "jgalletta",
+                    "homepage": "https://www.drupal.org/user/1187850"
+                },
+                {
+                    "name": "vbouchet",
+                    "homepage": "https://www.drupal.org/user/1671428"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Replicate provide an API to replicate (duplicate) entities. This modules also provide hooks to control exactly how parts of an entity are duplicated.",
+            "homepage": "https://www.drupal.org/project/replicate",
+            "support": {
+                "source": "https://git.drupalcode.org/project/replicate"
             }
         },
         {
@@ -7660,6 +7849,55 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rlanvin/php-rrule",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rlanvin/php-rrule.git",
+                "reference": "7ddef3d49b7a6461dc070f671f0d94509c9a537b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rlanvin/php-rrule/zipball/7ddef3d49b7a6461dc070f671f0d94509c9a537b",
+                "reference": "7ddef3d49b7a6461dc070f671f0d94509c9a537b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^5.7|^6.5|^8.0"
+            },
+            "suggest": {
+                "ext-intl": "Intl extension is needed for humanReadable()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RRule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Lightweight and fast recurrence rules for PHP (RFC 5545)",
+            "homepage": "https://github.com/rlanvin/php-rrule",
+            "keywords": [
+                "date",
+                "ical",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "support": {
+                "issues": "https://github.com/rlanvin/php-rrule/issues",
+                "source": "https://github.com/rlanvin/php-rrule/tree/v2.4.1"
+            },
+            "time": "2023-06-07T13:15:59+00:00"
         },
         {
             "name": "spatie/color",
