@@ -1819,7 +1819,7 @@ msgstr "FØR 27/10 2020"
 #: 
 msgctxt "Fees list"
 msgid "Fee"
-msgstr "Gebyr"
+msgstr "Beløb"
 
 #: 
 msgctxt "Fees list"
