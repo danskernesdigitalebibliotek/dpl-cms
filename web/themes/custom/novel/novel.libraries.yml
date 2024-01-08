@@ -33,4 +33,3 @@ swiper:
 show-more:
   js:
     assets/dpl-design-system/js/show-more.js: {}
-
