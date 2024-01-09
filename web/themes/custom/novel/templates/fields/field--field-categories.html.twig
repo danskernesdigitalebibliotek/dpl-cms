@@ -2,12 +2,25 @@
 {% set show_more_text = '...'|t %}
 {% set show_less_text = 'Show less'|t %}
 
-{% for item in items %}
-    <span data-show-more-item class="tag tag--fill tag--small">
+{% if items|length > 1 %}
+  <ul id="show-more-item-list">
+    {% for item in items %}
+      <li data-show-more-item class="tag tag--fill tag--small">
         {{ item.content|raw }}
-    </span>
-{% endfor %}
-
-<button class="tag tag--fill tag--small cursor-pointer" aria-expanded="false" data-show-more-button data-show-more-text="{{ show_more_text }}" data-show-less-text="{{ show_less_text }}">
+      </li>
+    {% endfor %}
+  </ul>
+  <button class="tag tag--fill tag--small cursor-pointer"
+          aria-expanded="false"
+          aria-controls="show-more-item-list"
+          data-show-more-button data-show-more-text="{{ show_more_text }}"
+          data-show-less-text="{{ show_less_text }}">
     {{ show_more_text }}
-</button>
+  </button>
+{% else %}
+  {% for item in items %}
+    <span data-show-more-item class="tag tag--fill tag--small">
+      {{ item.content|raw }}
+    </span>
+  {% endfor %}
+{% endif %}
