@@ -3717,3 +3717,143 @@ msgctxt "Patron menu"
 msgid "My account"
 msgstr ""
 
+#: 
+msgid "Instant Loan Settings"
+msgstr "Indstillinger for strakslån"
+
+#: 
+msgid "Configure promotion of materials available for instant loans."
+msgstr ""
+
+#: 
+msgid "Set auth redirect paths for patrons"
+msgstr ""
+
+#: 
+msgid "Administer various settings for a library agency."
+msgstr ""
+
+#: 
+msgid "Favorites list material component"
+msgstr ""
+
+#: 
+msgid "Show favorites list material component"
+msgstr ""
+
+#: 
+msgid "Configure Mapp Intelligence for tracking website interactions."
+msgstr ""
+
+#: 
+msgid "Change recommender settings"
+msgstr ""
+
+#: 
+msgid "Loans"
+msgstr ""
+
+#: 
+msgid "List user loans"
+msgstr ""
+
+#: 
+msgid "Loan list settings"
+msgstr ""
+
+#: 
+msgid "Change loan list settings"
+msgstr ""
+
+#: 
+msgid "Url proxy settings"
+msgstr ""
+
+#: 
+msgid "Configure the host names and replacement patterns for proxy urls."
+msgstr ""
+
+#: 
+msgid "Upload and import configuration from a YAML file"
+msgstr ""
+
+#: 
+msgid "Dashboard"
+msgstr ""
+
+#: 
+msgid "User dashboard"
+msgstr ""
+
+#: 
+msgid "Change Dashboard settings"
+msgstr ""
+
+#: 
+msgid "Favorites"
+msgstr ""
+
+#: 
+msgid "List user favorites"
+msgstr ""
+
+#: 
+msgid "Change favorites list settings"
+msgstr ""
+
+#: 
+msgid "Reservations"
+msgstr ""
+
+#: 
+msgid "List user reservations"
+msgstr ""
+
+#: 
+msgid "Reservation list settings"
+msgstr ""
+
+#: 
+msgid "Change reservation list settings"
+msgstr ""
+
+#: 
+msgid "Fees"
+msgstr ""
+
+#: 
+msgid "List user fees"
+msgstr ""
+
+#: 
+msgid "Fees List settings"
+msgstr ""
+
+#: 
+msgid "Change Fees List Settings"
+msgstr ""
+
+#: 
+msgid "Change basic FBS settings"
+msgstr ""
+
+#: 
+msgid "Change basic publizon settings"
+msgstr ""
+
+#: 
+msgid "Patron page"
+msgstr ""
+
+#: 
+msgid "Patron page displays patron information"
+msgstr ""
+
+#: 
+msgid "Change patron page settings"
+msgstr ""
+
+#: 
+msgid "Change patron registration settings"
+msgstr ""
+
