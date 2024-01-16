@@ -189,7 +189,7 @@ Cypress.Commands.add(
     });
 
     cy.visit("/user/login");
-    cy.contains("Log in with Adgangsplatformen").click();
+    cy.contains("Log ind med Adgangsplatformen").click();
   }
 );
 

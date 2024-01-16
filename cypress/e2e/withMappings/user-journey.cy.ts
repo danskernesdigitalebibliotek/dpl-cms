@@ -15,7 +15,7 @@ describe("User journey", () => {
   it("Shows search results & redirects to material page", () => {
     cy.visit("/search?q=Harry+Potter")
       .getBySel("search-result-header")
-      .should("contain", 'Showing results for "Harry Potter"')
+      .should("contain", 'Viser resultater for "Harry Potter"')
       .getBySel("card-list-item-availability")
       .should("exist");
 
@@ -37,7 +37,7 @@ describe("User journey", () => {
     cy.wait(2000);
     cy.getBySel("material-header-buttons-physical").should(
       "contain",
-      "Reserve bog"
+      "Reserver bog"
     );
   });
 
