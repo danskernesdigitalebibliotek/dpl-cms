@@ -8,6 +8,7 @@ dependencies:
     - node.type.article
     - node.type.campaign
     - node.type.event
+    - taxonomy.vocabulary.categories
   module:
     - file
     - filter
@@ -15,6 +16,7 @@ dependencies:
     - node
     - recurring_events
     - system
+    - taxonomy
     - toolbar
 id: mediator
 label: Mediator
@@ -32,6 +34,7 @@ permissions:
   - 'create campaign content'
   - 'create event content'
   - 'create image media'
+  - 'create terms in categories'
   - 'delete any article content'
   - 'delete any campaign content'
   - 'delete any event content'
@@ -45,6 +48,7 @@ permissions:
   - 'delete own eventseries entity'
   - 'delete own files'
   - 'delete own image media'
+  - 'delete terms in categories'
   - 'edit any article content'
   - 'edit any campaign content'
   - 'edit any event content'
@@ -57,6 +61,7 @@ permissions:
   - 'edit own eventinstance entity'
   - 'edit own eventseries entity'
   - 'edit own image media'
+  - 'edit terms in categories'
   - 'revert all eventinstance revisions'
   - 'revert all eventseries revisions'
   - 'revert event revisions'

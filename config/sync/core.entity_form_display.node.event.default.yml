@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_categories
     - field.field.node.event.field_event_address
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_description
@@ -44,11 +45,37 @@ third_party_settings:
         description: ''
         required_fields: true
         weight: 0
+    group_tagging:
+      children:
+        - field_categories
+      label: Tagging
+      region: content
+      parent_name: ''
+      weight: 12
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+        weight: 0
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_categories:
+    type: entity_reference_autocomplete_tags
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Search categories..'
+    third_party_settings: {  }
   field_event_address:
     type: address_default
     weight: 7

@@ -1,7 +1,9 @@
 <article {{ attributes.addClass('event-page') }}>
   <header class="event-header">
     <section class="event-header__content">
-      <!-- Tag -->
+      <div class="event-header__tag">
+        {{ content.field_categories }}
+      </div>
       {{ content.field_event_date }}
       <h1 class="event-header__title">{{ label }}</h1>
       {{ content.field_event_link }}
@@ -76,3 +78,4 @@
   {{ content.field_event_paragraphs }}
   </section>
 </article>
+{{dd(content)}}
