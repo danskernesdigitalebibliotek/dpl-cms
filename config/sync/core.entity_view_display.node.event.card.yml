@@ -51,6 +51,7 @@ content:
     weight: 1
     region: content
 hidden:
+  field_categories: true
   field_event_address: true
   field_event_description: true
   field_event_image: true

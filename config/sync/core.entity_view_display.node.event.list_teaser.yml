@@ -97,6 +97,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_categories: true
   field_event_paragraphs: true
   field_event_partners: true
   field_event_state: true

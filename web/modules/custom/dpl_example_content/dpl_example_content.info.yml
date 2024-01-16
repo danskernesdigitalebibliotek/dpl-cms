@@ -42,3 +42,6 @@ default_content:
     - 6d5e9b4c-389d-4735-a8a3-82883f64aeb0
     # PDF used in article 1, event 1 and eventseries 1
     - 3403d0ba-cbdc-425d-93f4-6cdabb5378b1
+  taxonomy_term:
+    # Categori in event 1
+    - 4981b021-895f-40cb-a67f-e91c1c0182e4
