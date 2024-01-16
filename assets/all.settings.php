@@ -106,7 +106,7 @@ if (getenv('LAGOON_ENVIRONMENT_TYPE') !== 'production') {
 }
 
 // Setup Redis.
-if (getenv('LAGOON')) {
+if (FALSE && getenv('LAGOON')) {
   // Prepare the module configuration.
   $settings['redis.connection']['interface'] = 'PhpRedis';
   $settings['redis.connection']['host'] = getenv('REDIS_HOST') ?: 'redis';
