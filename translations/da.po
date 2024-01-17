@@ -2482,7 +2482,7 @@ msgstr "Kvittering på bestilling af digital kopi"
 #: 
 msgctxt "Work Page"
 msgid "Reservable on another library"
-msgstr "Kan reserveres fra en anden bibliotekskommune"
+msgstr "Reserver"
 
 #: 
 msgctxt "Global (Aria)"
