@@ -46,22 +46,22 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_teaser_image:
+  event_teaser_image:
     type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: hero_wide
       link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 2
     region: content
-  field_teaser_text:
+  event_teaser_text:
     type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 3
     region: content
   title:
     type: string
@@ -91,5 +91,7 @@ hidden:
   field_event_partners: true
   field_event_place: true
   field_event_state: true
+  field_teaser_image: true
+  field_teaser_text: true
   field_ticket_categories: true
   search_api_excerpt: true
