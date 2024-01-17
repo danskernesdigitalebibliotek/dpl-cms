@@ -216,7 +216,7 @@ function dpl_event_preprocess_field__field_ticket_category_price(array &$variabl
 }
 
 /**
- *
+ * Implement hook_preprocess() for event series.
  */
 function dpl_event_preprocess_eventseries(array &$variables): void {
   $event_series = $variables['eventseries'] ?? NULL;
