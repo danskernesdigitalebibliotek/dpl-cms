@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
+    - field.field.node.event.field_categories
     - field.field.node.event.field_event_address
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_description
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_link
+    - field.field.node.event.field_event_paragraphs
+    - field.field.node.event.field_event_partners
     - field.field.node.event.field_event_place
     - field.field.node.event.field_event_state
     - field.field.node.event.field_teaser_image
@@ -51,6 +54,7 @@ content:
     weight: 1
     region: content
 hidden:
+  field_categories: true
   field_event_address: true
   field_event_description: true
   field_event_image: true
