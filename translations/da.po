@@ -8,21 +8,6 @@ msgstr ""
 "Language: da\n"
 
 #: 
-msgctxt "Loan list (settings)"
-msgid "Basic settings"
-msgstr "Grundlæggende indstillinger"
-
-#: 
-msgctxt "Loan list (settings)"
-msgid "Page size mobile"
-msgstr "Antal listeelemeter på side (mobil)"
-
-#: 
-msgctxt "Loan list (settings)"
-msgid "Page size desktop"
-msgstr "Antal listeelemeter på side (desktop)"
-
-#: 
 msgctxt "Loan list (Aria)"
 msgid "This button shows all loans in the list"
 msgstr "Oplist lån efter afleveringsfrist"
@@ -731,11 +716,6 @@ msgstr "Link til side om reserveringspause"
 
 #: 
 msgctxt "Library Agency Configuration"
-msgid "The link with infomation about reservations"
-msgstr "Her kan brugeren læse om at sætte sine reserveringer på pause"
-
-#: 
-msgctxt "Library Agency Configuration"
 msgid "Excluded branches"
 msgstr "Blacklistede filialer"
 
@@ -811,10 +791,6 @@ msgstr "DPL lån"
 #: 
 msgid "Handle the user profile loan pages"
 msgstr "Håndter indstillinger for brugerprofilens låneoversigt"
-
-#: 
-msgid "Loans settings"
-msgstr "Låneindstillinger"
 
 #: 
 msgid "DPL React User Token"
@@ -951,10 +927,6 @@ msgstr "DPL Login Logout Route"
 #: 
 msgid "Login via Adgangsplatformen"
 msgstr "Login via Adgangsplatformen"
-
-#: 
-msgid "Reservations settings"
-msgstr "Reserveringsindstillinger"
 
 #: 
 msgid "DPL Reservations"
@@ -1163,21 +1135,6 @@ msgid "Agency ID"
 msgstr "Agency ID"
 
 #: 
-msgctxt "Reservation list (settings)"
-msgid "Basic settings"
-msgstr "Grundlæggende indstillinger"
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Page size mobile"
-msgstr "Antal listeelemeter på side (mobil)"
-
-#: 
-msgctxt "Reservation list (settings)"
-msgid "Page size desktop"
-msgstr "Antal listeelemeter på side (desktop)"
-
-#: 
 msgctxt "Reservation list"
 msgid "Borrow before @date"
 msgstr "Lån før @date"
@@ -1201,22 +1158,6 @@ msgstr "Huskeliste"
 msgctxt "Favorites list"
 msgid "Your favorites list is empty"
 msgstr "Din huskeliste er tom"
-
-#: 
-msgid "Basic settings"
-msgstr "Grundlæggende indstillinger"
-
-#: 
-msgid "Page size mobile"
-msgstr "Antal listeelemeter på side (mobil)"
-
-#: 
-msgid "Page size desktop"
-msgstr "Antal listeelemeter på side (desktop)"
-
-#: 
-msgid "Favorites list settings"
-msgstr "Huskeliste indstillinger"
 
 #: 
 msgid "DPL favorites"
@@ -1255,25 +1196,6 @@ msgstr "Du skylder i alt"
 msgctxt "Dashboard"
 msgid "Your profile"
 msgstr "Dit overblik"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Basic settings"
-msgstr "Grundlæggende indstillinger"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Page size mobile"
-msgstr "Antal listeelemeter på side (mobil)"
-
-#: 
-msgctxt "Dashboard (settings)"
-msgid "Page size desktop"
-msgstr "Antal listeelemeter på side (desktop)"
-
-#: 
-msgid "Dashboard settings"
-msgstr "Indstillinger for Dit overblik (Dashboard)"
 
 #: 
 msgid "DPL dashboard"
@@ -1469,27 +1391,6 @@ msgid "You used @this ebooks out of you quota of @that ebooks"
 msgstr "Du har brugt @this ud af din kvote på @that e-bøger"
 
 #: 
-msgid "Delete patron link"
-msgstr "Slet bruger (link)"
-
-#: 
-msgid "Link to a page where it is possible to delete patron"
-msgstr "\n"
-"Link til oplysningsside om hvordan man kan få slettet sin bruger"
-
-#: 
-msgid "Ereolen always available"
-msgstr "E-bøger du altid kan låne"
-
-#: 
-msgid "Pincode length (min)"
-msgstr "Pinkode længde (min)"
-
-#: 
-msgid "Pincode length max"
-msgstr "Pinkode længe (max)"
-
-#: 
 msgid "DPL patron page"
 msgstr "DPL brugerprofil"
 
@@ -1667,50 +1568,6 @@ msgid "see our fees and replacement costs"
 msgstr "Se takster"
 
 #: 
-msgid "Fees and Replacement costs URL"
-msgstr "Link til oplysningsside om takster"
-
-#: 
-msgid "File or URL containing the fees and replacement costs"
-msgstr "Link til oplysningsside om takster"
-
-#: 
-msgid "Available payment types url"
-msgstr "Betalingsmuligheder"
-
-#: 
-msgid "Terms of trade text"
-msgstr "Betalingsbetingelser tekst"
-
-#: 
-msgid "Terms of trade redirect url"
-msgstr "URL til side om betalingsbetingelser"
-
-#: 
-msgid "Payment options image"
-msgstr "Ikoner for betalingsmuligheder"
-
-#: 
-msgid "Image containing the available payment options (300x35)"
-msgstr "Billede som indeholder betalingsmuligheder (300 x 35px)"
-
-#: 
-msgid "Payment overview url"
-msgstr "URL til Mit betalingsoverblik"
-
-#: 
-msgid "Intro text"
-msgstr "Beskrivelse"
-
-#: 
-msgid "Display an intro-text below the headline"
-msgstr "Vis denne beskrivelse under overskriften"
-
-#: 
-msgid "Fees and replacement costs are handled through the new system \"Mit betalingsoverblik."
-msgstr "Gebyrer og erstatninger betales via \"Mit Betalingsoverblik\"."
-
-#: 
 msgid "DPL Fees"
 msgstr "DPL gebyrer"
 
@@ -1765,22 +1622,6 @@ msgstr "Indstillinger for viderestilling af bruger til adgangsplatformen"
 #: 
 msgid "Log in with @client_title"
 msgstr "Log ind med @client_title"
-
-#: 
-msgid "Minimum age to allow self registration"
-msgstr "Minimumsalder for tilladelse til selvoprettelse"
-
-#: 
-msgid "Redirect on create"
-msgstr "Send brugeren til denne side ved succesfuld oprettelse"
-
-#: 
-msgid "Redirect to this on user successful created"
-msgstr "Send bruger til denne side ved succesfuld oprettelse"
-
-#: 
-msgid "Information page"
-msgstr "Informationsside"
 
 #: 
 msgctxt "Create patron"
@@ -1973,11 +1814,6 @@ msgstr "Vælg"
 
 #: 
 msgctxt "Library Agency Configuration"
-msgid "Ereolen link"
-msgstr "eReolen link"
-
-#: 
-msgctxt "Library Agency Configuration"
 msgid "My page in ereolen"
 msgstr "Min side på eReolen"
 
@@ -1992,23 +1828,9 @@ msgid "Intermediates"
 msgstr "Mellemværender"
 
 #: 
-msgctxt "Menu (settings)"
-msgid "Page size mobile"
-msgstr "Antal listeelemeter på side (mobil)"
-
-#: 
-msgctxt "Menu (settings)"
-msgid "Page size desktop"
-msgstr "Antal listeelemeter på side (desktop)"
-
-#: 
 msgctxt "Patron menu"
 msgid "Reservations ready for pickup"
 msgstr "Reserveringer klar til lån"
-
-#: 
-msgid "Menu settings"
-msgstr "Menu"
 
 #: 
 msgctxt "Loan list"
@@ -2453,11 +2275,6 @@ msgstr "Blokeret bruger"
 msgctxt "Library Agency Configuration"
 msgid "Blocked user link for modal"
 msgstr "Link i modal til blokeret bruger (til fx Mit betalingsoverblik)"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page."
-msgstr "Hvis en bruger er blokeret pga. overskredet gebyrgrænse åbner en modal. I denne modal er det muligt at placere et link, enten til en hjælpeside eller direkte til en betalingsside."
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -3128,7 +2945,7 @@ msgstr "Klar til lån"
 #: 
 msgctxt "Global"
 msgid "Remove reservations (@amount)"
-msgstr "Slet reserveringer @count"
+msgstr "Slet reserveringer (@amount)"
 
 #: 
 msgctxt "Global"
@@ -3341,16 +3158,6 @@ msgid "See your fees and how to pay"
 msgstr "Se dine gebyrer og læs hvordan du betaler"
 
 #: 
-msgctxt "Fees list"
-msgid "Unsettled debt 1"
-msgstr "Ubetalte gebyrer"
-
-#: 
-msgctxt "Fees list"
-msgid "Unsettled debt 2"
-msgstr "Ubetalte gebyrer"
-
-#: 
 msgctxt "dpl_event"
 msgid "Access"
 msgstr "Adgang"
@@ -3427,11 +3234,6 @@ msgstr "Ukendt bruger"
 msgctxt "Fees list"
 msgid "Already paid? It can take up to 72 hours register the transaction."
 msgstr "Har du allerede betalt? Der kan gå op til 72 timer før betalingen registreres i vores systemer"
-
-#: 
-msgctxt "Fees list"
-msgid "#"
-msgstr "Materialenummer"
 
 #: 
 msgctxt "Fees list"
@@ -3714,11 +3516,6 @@ msgid "Fees & Replacement costs"
 msgstr "Gebyrer & erstatninger"
 
 #: 
-msgctxt "Patron menu"
-msgid "My account"
-msgstr "Brugerprofil"
-
-#: 
 msgid "Instant Loan Settings"
 msgstr "Indstillinger for strakslån"
 
@@ -3759,14 +3556,6 @@ msgid "List user loans"
 msgstr "Brugerens låneliste"
 
 #: 
-msgid "Loan list settings"
-msgstr "Indstillinger for låneoversigt"
-
-#: 
-msgid "Change loan list settings"
-msgstr "Skift indstillinger for lånoversigt"
-
-#: 
 msgid "Url proxy settings"
 msgstr "Proxyindstillinger"
 
@@ -3787,10 +3576,6 @@ msgid "User dashboard"
 msgstr "Brugerens dashboard (Dit overblik)"
 
 #: 
-msgid "Change Dashboard settings"
-msgstr "Skift indstillinger for Dit overblik (Dashboard)"
-
-#: 
 msgid "Favorites"
 msgstr "Huskeliste"
 
@@ -3799,24 +3584,12 @@ msgid "List user favorites"
 msgstr "Brugerens huskeliste"
 
 #: 
-msgid "Change favorites list settings"
-msgstr "Skift indstillinger for huskeliste"
-
-#: 
 msgid "Reservations"
 msgstr "Reserveringer"
 
 #: 
 msgid "List user reservations"
 msgstr "Brugerens liste over reserveringer"
-
-#: 
-msgid "Reservation list settings"
-msgstr "Indstillinger for reserveringsliste"
-
-#: 
-msgid "Change reservation list settings"
-msgstr "Skift indstillinger for reserveringsliste"
 
 #: 
 msgid "Fees"
@@ -3852,9 +3625,310 @@ msgstr "Brugerprofilen viser brugerinformation"
 
 #: 
 msgid "Change patron page settings"
-msgstr "Indstillinger for brugerprofil"
+msgstr "Skift indstillinger for brugerprofil"
 
 #: 
 msgid "Change patron registration settings"
 msgstr "Indstillinger for brugeroprettelse"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Ereolen my page link"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The link with information about reservations. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "FBI profiles"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Administer which profile should be used in various contexts."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Default profile"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The default profile to use when using the FBI API."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Search profile"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The profile to use when searching for materials."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Material profile"
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The profile to use when requesting data about a material."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Patron menu list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the patron menu list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Patron menu list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Patron menu list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Loan list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the loan list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Loan list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Loan list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Dashboard list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the dashboard list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Dashboard list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Dashboard list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Favorites list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the favorites list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Favorites list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Favorites list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Reservations list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the reservation list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Reservations list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Reservations list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Fees list size settings"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "The number of items to display in the fees list."
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Fees list size on desktop"
+msgstr ""
+
+#: 
+msgctxt "List size (settings)"
+msgid "Fees list size on mobile"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Fees and Replacement costs URL"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "File or URL containing the fees and replacement costs. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Payment overview url"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "URL containing the payment overview. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Intro text"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Display an intro-text below the headline"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Fees and replacement costs are handled through the new system \"Mit betalingsoverblik."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Unsettled debt - paid on site"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Unsettled debt - paid externally"
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Basic settings"
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Delete patron link"
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Link to a page where it is possible to delete patron. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Ereolen always available"
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Pincode length (min)"
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Pincode length max"
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Minimum age to allow self registration"
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Redirect on create"
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Redirect to page when user is successful created. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Information page"
+msgstr ""
+
+#: 
+msgid "List Size Settings"
+msgstr ""
+
+#: 
+msgid "Administer list size settings for a library agency."
+msgstr ""
 
