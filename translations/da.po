@@ -1565,7 +1565,7 @@ msgstr "Afleveret @date"
 #: 
 msgctxt "Fees list"
 msgid "see our fees and replacement costs"
-msgstr "Se takster"
+msgstr "Se takster og læs om betalingsmuligheder"
 
 #: 
 msgid "DPL Fees"
@@ -2295,11 +2295,6 @@ msgstr "Dit overblik"
 msgctxt "Work Page"
 msgid "Digital copy receipt"
 msgstr "Kvittering på bestilling af digital kopi"
-
-#: 
-msgctxt "Work Page"
-msgid "Reservable on another library"
-msgstr "Reserver"
 
 #: 
 msgctxt "Global (Aria)"
@@ -3861,12 +3856,12 @@ msgstr ""
 #: 
 msgctxt "Fees list"
 msgid "Unsettled debt - paid on site"
-msgstr ""
+msgstr "Betales på biblioteket"
 
 #: 
 msgctxt "Fees list"
 msgid "Unsettled debt - paid externally"
-msgstr ""
+msgstr "Betales på Mit betalingsoverblik"
 
 #: 
 msgctxt "Patron page settings form"
@@ -3930,5 +3925,55 @@ msgstr ""
 
 #: 
 msgid "Administer list size settings for a library agency."
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Your material has been ordered from another library"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Item available, order through the librarys catalogue"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Item available but medium type not accepted"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Order from another library:"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Service is currently unavailable"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Your order is accepted"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "An unknown error occurred"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Specified pickup agency not found"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "User not found"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Ordered from another library"
 msgstr ""
 
