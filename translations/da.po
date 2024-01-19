@@ -2509,7 +2509,7 @@ msgstr "Denne knap åbner en pop-up som gær det muligt at slette en eller flere
 #: 
 msgctxt "Global"
 msgid "Cancel"
-msgstr "Afbryd"
+msgstr "OK"
 
 #: 
 msgctxt "Global"
