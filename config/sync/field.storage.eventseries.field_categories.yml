@@ -1,0 +1,23 @@
+uuid: d5bbdcb6-995a-45c3-ad9d-3dd0de41251c
+langcode: en
+status: true
+dependencies:
+  module:
+    - dynamic_entity_reference
+    - recurring_events
+    - taxonomy
+id: eventseries.field_categories
+field_name: field_categories
+entity_type: eventseries
+type: dynamic_entity_reference
+settings:
+  exclude_entity_types: false
+  entity_type_ids:
+    taxonomy_term: taxonomy_term
+module: dynamic_entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
