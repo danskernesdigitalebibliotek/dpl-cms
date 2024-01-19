@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 22d66e5b-3c27-47af-a7f0-29cb2e357be4
+  bundle: article
+  default_langcode: da
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '3 gode til godnat 3-6 år'
+  created:
+    -
+      value: 1705673419
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '3 gode til godnat 3-6 år | DPL CMS'
+  field_override_author:
+    -
+      value: 'Det Digitale Folkebibliotek'
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 18a149f9-18f9-450e-b078-dcf001b057dd
+          bundle: text_body
+          default_langcode: da
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1705673419
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: '<p>Godnathistorien kan være et helle i en travl hverdag. Der hvor børn og voksne kommer tæt på hinanden, får vendt dagen og får ro på inden det er tid til at sige godnat. Vi har fundet tre gode bud på godnat læsning som også egner sig specielt godt til tre forskellige situationer:</p><h2>&nbsp;En til dem der ikke vil sove…</h2><p>”Godnat sagde katten” af Glem Ringtved og Rasmus Bregnhøi.<br>Det er det samme hver aften. Lucas vil ikke sove. Far læser to godnathistorier, men det er slet ikke nok. Far skal finde på sin helt egen historie, og dén historie griber om sig.</p><h2>En til dem der er lidt bange…</h2><p>”Da Carl næsten sov i telt” af Ida Jessen og Hanne Bartholin.<br>Den lille Elefantunge Carl skal sove i telt med sin bedste veninde, Fanny. Da mørket falder på, og det er på tide at lægge sig til at sove, vil Carl allerhelst ind i huset til mor og far.</p><h2>En med hjælp til dem, der ikke kan sove…</h2><p>”En prik og en streg – godnateventyr til at tegne på ryggen” af Mette Hegnhøj.<br>Prik og Streg triller til bageren, bugter sig som slanger og opfinder deres eget alfabet i denne bog helt uden billeder. En bog, der skal læses højt mens Prik og Stregs spilopper tegnes på ryggen.</p>'
+              format: basic
+  field_show_override_author:
+    -
+      value: true
+  field_subtitle:
+    -
+      value: 'Dit børnebibliotek anbefaler tre skønne bøger til hygge ved sengetid. En til dem der er lidt bange, en med hjælp til dem der ikke vil sove og en skøn og hyggelig historie om en prik og en streg til fortælle og tegne på ryggen'

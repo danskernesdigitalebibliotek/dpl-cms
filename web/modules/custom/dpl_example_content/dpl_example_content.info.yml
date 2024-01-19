@@ -10,8 +10,12 @@ default_content:
     # Article 1: From Figma
     # https://www.figma.com/file/Zx9GrkFA3l4ISvyZD2q0Qi/Designsystem?type=design&node-id=7477-39048&mode=dev
     - 2cd0fe5e-4159-4452-86aa-e1a1ac8db4a1
-    # Bibliotekarerne anbefaler læsning til den mørke tid (article)
+    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 982e0d87-f6b8-4b84-8de8-c8c8bcfef557
+    # 3 gode til godnat 3-6 år
+    - 22d66e5b-3c27-47af-a7f0-29cb2e357be4
+    # Debutanttid – Fremtiden er lys!
+    - 54347813-47de-487f-908f-84c367dbce10
   eventseries:
     # Event 1: From Figma
     # https://www.figma.com/file/Zx9GrkFA3l4ISvyZD2q0Qi/Designsystem?type=design&node-id=7477-39713&mode=dev
@@ -31,7 +35,7 @@ default_content:
     - dc33677f-8894-4717-b34b-d985f6ad875f
     # embed video in article 1
     - f0204f0b-1f63-4c76-bb67-e3f7489ee392
-    # Bibliotekarerne anbefaler læsning til den mørke tid (article)
+    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 7b9d1894-7f9a-4f96-a7dc-efa3af5fc902
     - a6a77786-07db-48d8-98ff-3bda54f231bf
   file:
@@ -44,6 +48,6 @@ default_content:
     - 6d5e9b4c-389d-4735-a8a3-82883f64aeb0
     # PDF used in article 1 and eventseries 1
     - 3403d0ba-cbdc-425d-93f4-6cdabb5378b1
-    # Bibliotekarerne anbefaler læsning til den mørke tid (article)
+    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 7fb4d332-81ef-4dc0-af9a-dfcd29ecf367
     - 50b4d50b-9c75-4698-b803-a125b46daaac
