@@ -42,3 +42,6 @@ default_content:
     - 6d5e9b4c-389d-4735-a8a3-82883f64aeb0
     # PDF used in article 1, event 1 and eventseries 1
     - 3403d0ba-cbdc-425d-93f4-6cdabb5378b1
+  taxonomy_term:
+    # Event 1: From Figma
+    - 8f627181-1cd6-42a2-9c71-75d85c966bcb
