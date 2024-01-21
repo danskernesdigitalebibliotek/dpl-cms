@@ -1,3 +1,5 @@
+name: Lagoon integration
+
 on:
   pull_request:
     # We have two groups of jobs in this workflow that reacts on actions:
@@ -10,7 +12,12 @@ on:
     #
     # 2. We forward all events to lagoon via InformLagoon
     types: [ opened, synchronize, reopened, closed, edited ]
-name: Lagoon integration
+
+# Detect if this action is already running, and cancel it.
+# This most likely happened because a second push has been made to a branch.
+concurrency:
+  group: ${{ github.repository_id }}-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
   LAGOON_HOST: "dplplat01.dpl.reload.dk"

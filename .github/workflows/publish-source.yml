@@ -2,6 +2,13 @@
 name: Publish source
 on:
   create
+
+# Detect if this action is already running, and cancel it.
+# This most likely happened because a second push has been made to a branch.
+concurrency:
+  group: ${{ github.repository_id }}-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest

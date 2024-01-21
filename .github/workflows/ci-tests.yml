@@ -1,9 +1,16 @@
 # These workflows takes care of various CI tests.
-on: pull_request
 name: CI Tests
+
+on: pull_request
 env:
   PHP_VERSION: 8.1
   COMPOSER_VERSION: v2
+
+# Detect if this action is already running, and cancel it.
+# This most likely happened because a second push has been made to a branch.
+concurrency:
+  group: ${{ github.repository_id }}-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   ValidateComposer:
@@ -105,6 +112,12 @@ jobs:
 
   LightHouse:
     name: Test site performance using Lighthouse
+
+    # Don't run action if the pull request is a draft.
+    # This is an expensive job to run, so we only want to run it when the
+    # PR is actually ready to be reviewed.
+    if: ${{ github.event.pull_request.draft == false }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -128,6 +141,12 @@ jobs:
 
   Pa11y:
     name: Test accessibility using Pa11y
+
+    # Don't run action if the pull request is a draft.
+    # This is an expensive job to run, so we only want to run it when the
+    # PR is actually ready to be reviewed.
+    if: ${{ github.event.pull_request.draft == false }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -152,6 +171,12 @@ jobs:
 
   Cypress:
     name: Run Cypress functional tests
+
+    # Don't run action if the pull request is a draft.
+    # This is an expensive job to run, so we only want to run it when the
+    # PR is actually ready to be reviewed.
+    if: ${{ github.event.pull_request.draft == false }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -238,6 +263,12 @@ jobs:
 
   CheckOpenApiSpec:
     name: Check OpenAPI specification
+
+    # Don't run action if the pull request is a draft.
+    # This is an expensive job to run, so we only want to run it when the
+    # PR is actually ready to be reviewed.
+    if: ${{ github.event.pull_request.draft == false }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -260,6 +291,12 @@ jobs:
 
   CheckDrupalConfig:
     name: Check Drupal Config
+
+    # Don't run action if the pull request is a draft.
+    # This is an expensive job to run, so we only want to run it when the
+    # PR is actually ready to be reviewed.
+    if: ${{ github.event.pull_request.draft == false }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
