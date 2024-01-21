@@ -25,6 +25,10 @@
     {
       "url": "http://varnish:8080/by_uuid/eventseries/c8177097-1438-493e-8177-e8ef968cc133",
       "screenCapture": "/app/pa11y/screenshots/event-page.png"
+    },
+    {
+      "url": "http://varnish:8080/events",
+      "screenCapture": "/app/pa11y/screenshots/event-list.png"
     }
   ]
 }
