@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: 7wcI6NyqWC9VsglvfEKjmQ9XY_D7lsTWkq0cRM4Ji7A
+initial_image_styles:
+  focal_point_preview: focal_point_preview
+  media_library: media_library
+queue_image_styles: {  }

@@ -98,6 +98,7 @@ module:
   user: 0
   varnish_purge_tags: 0
   varnish_purger: 0
+  image_style_warmer: 10
   views: 10
   paragraphs: 11
   paragraphs_ee: 15
