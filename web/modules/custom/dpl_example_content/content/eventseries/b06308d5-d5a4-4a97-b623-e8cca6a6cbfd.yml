@@ -1,0 +1,192 @@
+_meta:
+  version: '1.0'
+  entity_type: eventseries
+  uuid: b06308d5-d5a4-4a97-b623-e8cca6a6cbfd
+  bundle: default
+  default_langcode: en
+  depends:
+    d759166d-71ee-4bc6-9b96-ab08150de55d: eventinstance
+    ce1c6baa-e9b9-48f3-a5e5-ddffebd2aa50: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Historieklubben på Amager'
+  recur_type:
+    -
+      value: custom
+  consecutive_recurring_date:
+    -
+      value: ''
+      end_value: ''
+      time: '08:00 am'
+      end_time: '11:30 pm'
+      duration: 5
+      duration_units: minute
+      buffer: 0
+      buffer_units: minute
+  daily_recurring_date:
+    -
+      value: ''
+      end_value: ''
+      time: '08:00 am'
+      duration: 900
+      end_time: '08:00 am'
+      duration_or_end_time: duration
+  weekly_recurring_date:
+    -
+      value: ''
+      end_value: ''
+      time: '08:00 am'
+      duration: 900
+      end_time: '08:00 am'
+      duration_or_end_time: duration
+      days: ''
+  monthly_recurring_date:
+    -
+      value: ''
+      end_value: ''
+      time: '08:00 am'
+      duration: 900
+      end_time: '08:00 am'
+      duration_or_end_time: duration
+      days: ''
+      type: ''
+      day_occurrence: ''
+      day_of_month: ''
+  yearly_recurring_date:
+    -
+      value: ''
+      end_value: ''
+      time: '08:00 am'
+      duration: 900
+      end_time: '08:00 am'
+      duration_or_end_time: duration
+      days: ''
+      type: ''
+      day_occurrence: ''
+      day_of_month: ''
+      year_interval: 1
+      months: ''
+  custom_date:
+    -
+      value: '2025-02-08T18:00:00'
+      end_value: '2025-02-08T20:00:00'
+  created:
+    -
+      value: 1705996836
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| DPL CMS'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://dapple-cms.docker/user/login'
+  event_instances:
+    -
+      entity: d759166d-71ee-4bc6-9b96-ab08150de55d
+  field_event_address:
+    -
+      langcode: en
+      country_code: DK
+      locality: 'København S'
+      postal_code: '2300'
+      address_line1: 'Njalsgade 15'
+  field_event_description:
+    -
+      value: '<p>Louis Pio og Augusta. Historieklubben har inviteret forfatter Kristian Himmelstrup, der i 2022 udgav romanen “Pio”. Med udgangspunkt i de historiske fakta, giver Himmelstrup et anderledes billede af den danske fagbevægelses grundlægger Louis Pio.</p>'
+      format: basic
+  field_event_image:
+    -
+      entity: ce1c6baa-e9b9-48f3-a5e5-ddffebd2aa50
+  field_event_link:
+    -
+      uri: 'https://www.google.com/'
+      title: ''
+      options: {  }
+  field_event_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cbaf10ef-0b42-45b9-8dd0-22712969952a
+          bundle: text_body
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1706007554
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_body:
+            -
+              value: '<p>Louis Albert Francois Pio født 14. december 1841 i Roskilde og død 27. juni 1894 i Chicago, USA. Dansk socialist og grundlægger af den socialistiske arbejderbevægelse i Danmark. I 1871 grundlagde han sammen med sin fætter Harald Brix ugebladet Socialisten (fra 1874 Social-Demokraten) - Så langt så godt.<br>Historieklubben har inviteret forfatter Kristian Himmelstrup, der i 2022 udgav romanen “Pio”. Med udgangspunkt i de historiske fakta, giver Himmelstrup et anderledes billede af den danske fagbevægelses grundlægger Louis Pio. Romanens stemmer er Pio og hans kæreste Augusta. Til forskel fra Pios manglende selvkritik magter Augusta med sit perspektiv at give os et mere nuanceret billede af tiden og manden. Romanen blev nomineret til DR-romanprisen 2023.<br><br><strong>Kristian Himmelstrup</strong>&nbsp;er cand.mag. i Dansk - debuterede i 2000 med ”Den udødelige soldat og jeg – Ib Michael og hans forfatterskab”.</p><p><em>Historieklubben På Amager drives i fællesskab af Islands Brygge Bibliotek, Sundby Bibliotek og Solvang Bibliotek.</em><br><em>Vi kalder os en klub, men alle er velkomne og arrangementerne er offentligt tilgængelige.</em></p>'
+              format: basic
+  field_event_partners:
+    -
+      value: 'Sundby Bibliotek'
+    -
+      value: 'Solvang Bibliotek'
+  field_event_place:
+    -
+      value: 'Islands Brygge Bibliotek'
+  field_event_state:
+    -
+      value: Active
+  field_teaser_image:
+    -
+      entity: ce1c6baa-e9b9-48f3-a5e5-ddffebd2aa50
+  field_teaser_text:
+    -
+      value: Historieklubben
+  field_ticket_categories:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3817a45d-a46c-49ba-a68b-ff75f4071d84
+          bundle: event_ticket_category
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1705996836
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_ticket_category_name:
+            -
+              value: Standard
+          field_ticket_category_price:
+            -
+              value: '50.00'

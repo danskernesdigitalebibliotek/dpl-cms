@@ -5,7 +5,7 @@ _meta:
   bundle: default
   default_langcode: en
   depends:
-    b8d8e8e4-4c03-4337-8e25-bb2193bb372b: eventinstance
+    ce72ce30-ed8a-478b-8695-3a02b5514815: eventinstance
     618e176a-a45a-4c36-a197-664230aa0a34: media
     dc33677f-8894-4717-b34b-d985f6ad875f: media
     65432ee1-43f1-4130-9565-5683467d4b5a: media
@@ -101,7 +101,7 @@ default:
         href: 'http://dapple-cms.docker/user/login'
   event_instances:
     -
-      entity: b8d8e8e4-4c03-4337-8e25-bb2193bb372b
+      entity: ce72ce30-ed8a-478b-8695-3a02b5514815
   field_event_address:
     -
       langcode: en

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 27036c81-ae53-4de8-96ac-fbd0660c8bbe
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: foto-sushi-6anudmpILw4-unsplash.jpg
+  uri:
+    -
+      value: 'public://2024-01/foto-sushi-6anudmpILw4-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 24001
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1705996981
