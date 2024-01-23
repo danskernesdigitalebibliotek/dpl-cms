@@ -3166,10 +3166,6 @@ msgid "Free"
 msgstr "Gratis"
 
 #: 
-msgid "@price kr."
-msgstr "@price kr."
-
-#: 
 msgid "DPL Paragraphs"
 msgstr "DPL Paragraphs"
 
@@ -3200,10 +3196,6 @@ msgstr "Pris"
 #: 
 msgid "Place"
 msgstr "Sted"
-
-#: 
-msgid "Adresse"
-msgstr "Adresse"
 
 #: 
 msgctxt "Work Page"
@@ -3488,7 +3480,7 @@ msgstr "Materialenummer @materialNumber"
 
 #: 
 msgid "Partners"
-msgstr "Samarbejdspartnere"
+msgstr "I samarbejde med"
 
 #: 
 msgctxt "Patron menu"
@@ -3975,5 +3967,69 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Ordered from another library"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "<a href=\"@url\">Edit the series here</a>"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "You are currently editing a single event, in an event series. @suffix"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Any changes you make here will only override this single event."
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "If you leave fields empty, the data from the parent series will be used."
+msgstr ""
+
+#: 
+msgid "Expired"
+msgstr ""
+
+#: 
+msgid "Every day"
+msgstr ""
+
+#: 
+msgid "Every @days"
+msgstr ""
+
+#: 
+msgid "Next"
+msgstr "Næste"
+
+#: 
+msgid "Add Event"
+msgstr ""
+
+#: 
+msgid "Events"
+msgstr "Begivenheder"
+
+#: 
+msgid "Address"
+msgstr "Adresse"
+
+#: 
+msgid "Scroll forwards"
+msgstr ""
+
+#: 
+msgid "Scroll backwards"
+msgstr ""
+
+#: 
+msgid "Events in this series"
+msgstr ""
+
+#: 
+msgid "Upcoming events"
 msgstr ""
 
