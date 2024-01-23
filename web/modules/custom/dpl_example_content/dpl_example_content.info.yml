@@ -7,53 +7,34 @@ dependencies:
   - default_content:default_content
 default_content:
   node:
-    # Article 1: From Figma
-    # https://www.figma.com/file/Zx9GrkFA3l4ISvyZD2q0Qi/Designsystem?type=design&node-id=7477-39048&mode=dev
     - 2cd0fe5e-4159-4452-86aa-e1a1ac8db4a1
-    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 982e0d87-f6b8-4b84-8de8-c8c8bcfef557
-    # 3 gode til godnat 3-6 år
     - 22d66e5b-3c27-47af-a7f0-29cb2e357be4
-    # Debutanttid – Fremtiden er lys!
     - 54347813-47de-487f-908f-84c367dbce10
   eventseries:
-    # Event 1: From Figma
-    # https://www.figma.com/file/Zx9GrkFA3l4ISvyZD2q0Qi/Designsystem?type=design&node-id=7477-39713&mode=dev
     - c8177097-1438-493e-8177-e8ef968cc133
-    # Historieklubben på Amager
     - b06308d5-d5a4-4a97-b623-e8cca6a6cbfd
   #eventinstance:
   # Do not export instances of event instances. This will result in
   # duplicate UUIDs for entity reference fields with fallback values.
   media:
-    # Media used in article 1
     - aba3cea8-cee5-42c1-a152-e30c2ab135e2
     - d97a25fd-a6ae-48b9-9a1a-7aec5372688e
     - eef50571-39dc-461a-96ff-b6b7180ade61
-    # Media used in eventseries 1
     - 618e176a-a45a-4c36-a197-664230aa0a34
     - 65432ee1-43f1-4130-9565-5683467d4b5a
-    # Document used in article 1 and eventseries 1
     - dc33677f-8894-4717-b34b-d985f6ad875f
-    # embed video in article 1
     - f0204f0b-1f63-4c76-bb67-e3f7489ee392
-    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 7b9d1894-7f9a-4f96-a7dc-efa3af5fc902
     - a6a77786-07db-48d8-98ff-3bda54f231bf
-    # Historieklubben på Amager
     - ce1c6baa-e9b9-48f3-a5e5-ddffebd2aa50
   file:
-    # Files used in article 1
     - b0fea511-57df-4b49-b127-1c445beacfe7
     - f19a4a4c-80b0-4290-a098-4f2f5fc137a2
     - 4b4fee24-a6ed-497a-b1c4-964c7ed00cfd
-    # Files used in eventseries 1
     - 3d1cb5f0-b6a4-4235-b4b3-705d5185e90e
     - 6d5e9b4c-389d-4735-a8a3-82883f64aeb0
-    # PDF used in article 1 and eventseries 1
     - 3403d0ba-cbdc-425d-93f4-6cdabb5378b1
-    # Bibliotekarerne anbefaler læsning til den mørke tid
     - 7fb4d332-81ef-4dc0-af9a-dfcd29ecf367
     - 50b4d50b-9c75-4698-b803-a125b46daaac
-    # Historieklubben på Amager
     - 27036c81-ae53-4de8-96ac-fbd0660c8bbe
