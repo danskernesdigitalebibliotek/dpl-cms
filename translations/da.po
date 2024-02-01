@@ -3920,17 +3920,17 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Order from another library:"
-msgstr ""
+msgstr "Reserver"
 
 #: 
 msgctxt "Work Page"
 msgid "Service is currently unavailable"
-msgstr ""
+msgstr "Servicen svarer ikke"
 
 #: 
 msgctxt "Work Page"
 msgid "Your order is accepted"
-msgstr ""
+msgstr "Din bestilling er modtaget"
 
 #: 
 msgctxt "Work Page"
@@ -4019,12 +4019,12 @@ msgstr "Kommende arrangementer"
 #: 
 msgctxt "Global"
 msgid "Pause period"
-msgstr ""
+msgstr "Pauseperiode"
 
 #: 
 msgctxt "Global"
 msgid "Choose pause period"
-msgstr ""
+msgstr "Vælg pauseperiode"
 
 #: 
 msgctxt "Fees list"
@@ -4050,23 +4050,23 @@ msgstr "Skriv en introduktion som vises over listen med gebyrer. Hvis dette felt
 #: 
 msgctxt "Fees list settings form"
 msgid "Payment site button configuration"
-msgstr ""
+msgstr "Indstillinger for knap til betaling"
 
 #: 
 msgctxt "Fees list settings form"
 msgid "Payment site url"
-msgstr ""
+msgstr "Link til betalingsside"
 
 #: 
 msgctxt "Fees list settings form"
 msgid "URL containing a link to a payment page. <br>\n"
 "                                         <strong>NB!: The button will only display if this field has been filled.</strong>"
-msgstr ""
+msgstr "Link til betalingsside. OBS! Knappen vises kun, hvis feltet er udfyldt med et link."
 
 #: 
 msgctxt "Fees list settings form"
 msgid "Payment site button label"
-msgstr ""
+msgstr "Tekst på knap til betalingsside"
 
 #: 
 msgctxt "Fees list settings form"
