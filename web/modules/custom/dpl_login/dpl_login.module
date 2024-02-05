@@ -214,6 +214,7 @@ function _dpl_login_user_has_been_processed(array $openid_connect_context): bool
  * Helper method that returns Drupal logger object.
  *
  * @return \Psr\Log\LoggerInterface
+ *   The logger object.
  */
 function _dpl_login_get_user_login_logger(): LoggerInterface {
   $logger_key = "dpl_login";
