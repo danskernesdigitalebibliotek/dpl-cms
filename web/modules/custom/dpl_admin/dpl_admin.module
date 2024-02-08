@@ -5,6 +5,7 @@
  * Functionality for admin / editor UX.
  */
 
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Url;
@@ -182,6 +183,69 @@ function _dpl_admin_form_alter_eventinstance(array &$form, FormStateInterface $f
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter() for the event instance/series form.
+ *
+ * Various alters on eventseries/instances edit form.
+ *
+ * @param array<mixed> $form
+ *   See the $form in dpl_admin_form_alter().
+ */
+function _dpl_admin_form_alter_event(array &$form, FormStateInterface $form_state, string $form_id): void {
+  $form['#validate'][] = '_dpl_admin_form_validate_event';
+}
+
+/**
+ * Implements a form validation for the event instance/series form.
+ *
+ * The reccuring dates module has a bug, where if you set the start and end
+ * date to the same value, it completely crashes every list that the event
+ * series/instance shows up.
+ * We'll add a custom check, to make sure this is not the case.
+ *
+ * @param array<mixed> $form
+ *   See the $form in dpl_admin_form_alter().
+ */
+function _dpl_admin_form_validate_event(array &$form, FormStateInterface $form_state): void {
+  $values = $form_state->getValues();
+
+  // The form keys that the reoccurring date fields, that must be checked.
+  $target_form_keys = [
+    'date',
+    'custom_date',
+    'consecutive_recurring_date',
+    'daily_recurring_date',
+    'weekly_recurring_date',
+    'monthly_recurring_date',
+    'yearly_recurring_date',
+  ];
+
+  foreach ($target_form_keys as $key) {
+    $value = $values[$key] ?? NULL;
+
+    if (!$value) {
+      continue;
+    }
+
+    foreach ($value as $date) {
+      if (!is_array($date)) {
+        continue;
+      }
+
+      $start_date = $date['value'] ?? NULL;
+      $end_date = $date['end_value'] ?? NULL;
+
+      if (!($start_date instanceof DrupalDateTime) || !($end_date instanceof DrupalDateTime)) {
+        continue;
+      }
+
+      if ($start_date->getTimestamp() >= $end_date->getTimestamp()) {
+        $form_state->setErrorByName($key, t('All end dates must be after the start date.'));
+      }
+    }
+  }
+}
+
+/**
  * Implements hook_form_alter().
  *
  * Alter the edit/add forms for eventseries/event instances.
@@ -190,13 +254,19 @@ function _dpl_admin_form_alter_eventinstance(array &$form, FormStateInterface $f
  *   See the $form in hook_form_alter().
  */
 function dpl_admin_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
-  if (in_array($form_id, ['eventseries_default_add_form', 'eventseries_default_edit_form'])) {
+  $is_event_series = in_array($form_id, ['eventseries_default_add_form', 'eventseries_default_edit_form']);
+  $is_event_instance = in_array($form_id, ['eventinstance_default_add_form', 'eventinstance_default_edit_form']);
+
+  if ($is_event_series) {
     _dpl_admin_form_alter_eventseries($form, $form_state, $form_id);
   }
 
-  if (in_array($form_id, ['eventinstance_default_add_form', 'eventinstance_default_edit_form'])) {
+  if ($is_event_instance) {
     _dpl_admin_form_alter_eventinstance($form, $form_state, $form_id);
+  }
 
+  if ($is_event_series || $is_event_instance) {
+    _dpl_admin_form_alter_event($form, $form_state, $form_id);
   }
 }
 
