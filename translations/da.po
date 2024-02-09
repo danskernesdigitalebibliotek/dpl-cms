@@ -1032,7 +1032,7 @@ msgstr "Gem"
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Reservations"
-msgstr "Afhentningssted"
+msgstr "SMS notifikationer"
 
 #: 
 msgctxt "DPL Config Import"
@@ -2679,7 +2679,7 @@ msgstr "henter"
 #: 
 msgctxt "Global"
 msgid "Returned too late"
-msgstr "Afleveret for sent"
+msgstr "Overskredne lån"
 
 #: 
 msgctxt "Global"
@@ -3143,11 +3143,6 @@ msgid "See your fees and how to pay"
 msgstr "Se dine gebyrer og læs hvordan du betaler"
 
 #: 
-msgctxt "dpl_event"
-msgid "Access"
-msgstr "Adgang"
-
-#: 
 msgid "Buy tickets"
 msgstr "Køb billet"
 
@@ -3170,10 +3165,6 @@ msgstr "Administrator"
 #: 
 msgid "Functionality related to the admin/editor experience"
 msgstr "Funktionalitet relateret til administrator/redaktøroplevelsen"
-
-#: 
-msgid "Description"
-msgstr "Beskrivelse"
 
 #: 
 msgid "Time"
@@ -4090,4 +4081,28 @@ msgstr "Hvis en bruger er blokeret på grund af overskredet gebyrgrænse vises e
 "Du kan søge efter en intern url. <br>\n"
 "\n"
 "Du kan tilføje en ekstern url (begynd med http:// eller https://)."
+
+#: 
+msgid "DPL Filtered Paragraphs"
+msgstr ""
+
+#: 
+msgid "Filtered paragraphs, embedding views."
+msgstr ""
+
+#: 
+msgid "..."
+msgstr ""
+
+#: 
+msgid "Show less"
+msgstr ""
+
+#: 
+msgid "Tags"
+msgstr "Tags"
+
+#: 
+msgid "Show all"
+msgstr ""
 
