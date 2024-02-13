@@ -35,8 +35,9 @@ $settings['config_exclude_modules'] = [
   'default_content',
   'devel',
   'field_ui',
-  'views_ui',
+  'purge_ui',
   'restui',
+  'views_ui',
   'upgrade_status',
   'uuid_url',
 ];
