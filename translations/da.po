@@ -137,17 +137,17 @@ msgstr "Pop-up med facetbrowser"
 #: 
 msgctxt "Search Result"
 msgid "Children or adults"
-msgstr "Børn eller voksen"
+msgstr "Børn/voksen"
 
 #: 
 msgctxt "Search Result"
 msgid "Creators"
-msgstr "Ophav"
+msgstr "Forfatter"
 
 #: 
 msgctxt "Search Result"
 msgid "Fiction or non-fiction"
-msgstr "Fiktion eller non-fiktion"
+msgstr "Skøn-/faglitteratur"
 
 #: 
 msgctxt "Search Result"
@@ -157,7 +157,7 @@ msgstr "Genre og form"
 #: 
 msgctxt "Search Result"
 msgid "Main languages"
-msgstr "Hovedsprog"
+msgstr "Sprog"
 
 #: 
 msgctxt "Search Result"
@@ -172,7 +172,7 @@ msgstr "Emner"
 #: 
 msgctxt "Search Result"
 msgid "Work types"
-msgstr "Formater"
+msgstr "Materialetype"
 
 #: 
 msgctxt "Search Result"
@@ -327,7 +327,7 @@ msgstr "Udgaver"
 #: 
 msgctxt "Work Page"
 msgid "Fiction/nonfiction"
-msgstr "Fiktion/non-fiktion"
+msgstr "Skøn-/faglitteratur"
 
 #: 
 msgctxt "Work Page"
@@ -1955,7 +1955,7 @@ msgstr "Kopier søgestreng"
 #: 
 msgctxt "advanced search"
 msgid "creator"
-msgstr "Ophav"
+msgstr "Bidragyder"
 
 #: 
 msgctxt "advanced search"
@@ -2010,7 +2010,7 @@ msgstr "Ebog"
 #: 
 msgctxt "advanced search"
 msgid "fiction"
-msgstr "Fiktion"
+msgstr "Skønlitteratur"
 
 #: 
 msgctxt "advanced search"
@@ -2035,7 +2035,7 @@ msgstr "Musik"
 #: 
 msgctxt "advanced search"
 msgid "Non-fiction"
-msgstr "Non-fiktion"
+msgstr "Faglitteratur"
 
 #: 
 msgctxt "advanced search"
@@ -2075,7 +2075,7 @@ msgstr "Link til denne søgning"
 #: 
 msgctxt "advanced search"
 msgid "main creator"
-msgstr "Hovedophav"
+msgstr "Forfatter"
 
 #: 
 msgctxt "advanced search"
@@ -3226,7 +3226,7 @@ msgstr "Generelle materialetyper"
 #: 
 msgctxt "Search Result"
 msgid "Material types specific"
-msgstr "Specifikke materialetyper"
+msgstr "Specifik materialetype"
 
 #: 
 msgctxt "Search Result"
