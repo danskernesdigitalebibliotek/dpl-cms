@@ -7,3 +7,19 @@ purgers:
     instance_id: 30cd45a1b1
     plugin_id: varnishbundled
     order_index: 3
+processors:
+  -
+    plugin_id: drush_purge_queue_work
+    status: true
+  -
+    plugin_id: drush_purge_invalidate
+    status: true
+  -
+    plugin_id: cron
+    status: true
+  -
+    plugin_id: lateruntime
+    status: false
+  -
+    plugin_id: purge_ui_block_processor
+    status: true
