@@ -3256,7 +3256,7 @@ msgstr "Luk pop-up til at skifte afhentningssted"
 #: 
 msgctxt "Global"
 msgid "Close modal aria-label sms"
-msgstr ""
+msgstr "Luk pop-up"
 
 #: 
 msgctxt "Global"
@@ -4091,18 +4091,68 @@ msgid "Filtered paragraphs, embedding views."
 msgstr ""
 
 #: 
-msgid "..."
-msgstr ""
-
-#: 
-msgid "Show less"
-msgstr ""
-
-#: 
 msgid "Tags"
 msgstr "Tags"
 
 #: 
 msgid "Show all"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "You have added a menu link with a parent. Please notice that this menu link will not be displayed, as we do not support multi-levels in the main menu."
+msgstr ""
+
+#: 
+msgid "Footer item"
+msgstr ""
+
+#: 
+msgid "Name"
+msgstr "Navn"
+
+#: 
+msgid "content"
+msgstr "indhold"
+
+#: 
+msgid "If there is no content the item will be removed."
+msgstr ""
+
+#: 
+msgid "Submit"
+msgstr "Indsend"
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Cancel all changes"
+msgstr ""
+
+#: 
+msgid "Add content"
+msgstr "Tilføj indhold"
+
+#: 
+msgid "Add article"
+msgstr ""
+
+#: 
+msgid "Add campaign"
+msgstr ""
+
+#: 
+msgid "Add page"
+msgstr ""
+
+#: 
+msgid "Footer Settings"
+msgstr ""
+
+#: 
+msgid "Footer"
+msgstr "Sidefod"
+
+#: 
+msgid "Functionality related to footer."
 msgstr ""
 
