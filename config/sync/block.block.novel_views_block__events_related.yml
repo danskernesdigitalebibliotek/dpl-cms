@@ -12,7 +12,7 @@ dependencies:
 id: novel_views_block__events_related
 theme: novel
 region: content
-weight: 4
+weight: -1
 provider: null
 plugin: 'views_block:events-related'
 settings:
