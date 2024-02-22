@@ -9,7 +9,8 @@
 
         {{ content.field_subtitle }}
 
-        {% include '@novel/components/article-header-info.twig' with {'author_name': author_name, 'node': node} %}
+        <p class="article-header__info">
+          {% include '@novel/components/article-header-info.twig' with {'author_name': author_name, 'node': node} %}
           <time class="article-header__date">
               {{ node.created.value|format_date('date_full_month') }}
           </time>
