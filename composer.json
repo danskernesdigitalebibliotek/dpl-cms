@@ -162,7 +162,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "zaporylie/composer-drupal-optimizations": true,
-            "drupal/console-extend-plugin": true
+            "drupal/console-extend-plugin": true,
+            "mnsami/composer-custom-directory-installer": true
         }
     },
     "scripts": {
