@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
     - media.type.video
     - node.type.article
+    - node.type.branch
     - node.type.campaign
     - node.type.page
     - taxonomy.vocabulary.categories
@@ -38,6 +39,7 @@ permissions:
   - 'clone eventinstance entity'
   - 'clone eventseries entity'
   - 'create article content'
+  - 'create branch content'
   - 'create campaign content'
   - 'create image media'
   - 'create media'
@@ -45,13 +47,16 @@ permissions:
   - 'create terms in categories'
   - 'create terms in tags'
   - 'delete any article content'
+  - 'delete any branch content'
   - 'delete any campaign content'
   - 'delete any media'
   - 'delete any page content'
+  - 'delete branch revisions'
   - 'delete eventinstance entity'
   - 'delete eventseries entity'
   - 'delete media'
   - 'delete own article content'
+  - 'delete own branch content'
   - 'delete own campaign content'
   - 'delete own eventinstance entity'
   - 'delete own eventseries entity'
@@ -61,6 +66,7 @@ permissions:
   - 'delete terms in categories'
   - 'delete terms in tags'
   - 'edit any article content'
+  - 'edit any branch content'
   - 'edit any campaign content'
   - 'edit any document media'
   - 'edit any image media'
@@ -69,6 +75,7 @@ permissions:
   - 'edit eventinstance entity'
   - 'edit eventseries entity'
   - 'edit own article content'
+  - 'edit own branch content'
   - 'edit own campaign content'
   - 'edit own document media'
   - 'edit own eventinstance entity'
