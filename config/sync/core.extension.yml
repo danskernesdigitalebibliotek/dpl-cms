@@ -3,12 +3,14 @@ _core:
 module:
   address: 0
   admin_toolbar: 0
+  administerusersbyrole: 0
   basic_auth: 0
   better_exposed_filters: 0
   block: 0
   breakpoint: 0
   ckeditor5: 0
   config_filter: 0
+  config_ignore: 0
   crop: 0
   customerror: 0
   date_range_formatter: 0
@@ -111,6 +113,7 @@ module:
   telephone: 0
   telephone_formatter: 0
   text: 0
+  theme_permission: 0
   token: 0
   toolbar: 0
   twig_tweak: 0
