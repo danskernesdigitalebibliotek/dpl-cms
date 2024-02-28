@@ -9,3 +9,6 @@ frontend:
   css:
     theme:
       assets/dpl_frontend.css: {}
+toggle-alt-text:
+  js:
+    assets/toggle-alt-text.js: {}

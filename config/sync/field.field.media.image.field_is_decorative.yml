@@ -1,0 +1,21 @@
+uuid: 04ddca84-3233-4f9b-b8a0-83ace224b0da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_is_decorative
+    - media.type.image
+id: media.image.field_is_decorative
+field_name: field_is_decorative
+entity_type: media
+bundle: image
+label: 'Is decorative'
+description: 'If the image is only for decorative purposes, it should not have an alt text. Otherwise, the image should have an alt text that describes the image for SEO and screen readers'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Image is decorative'
+  off_label: 'Image is not decorative'
+field_type: boolean

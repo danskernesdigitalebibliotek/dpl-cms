@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.image.field_byline
+    - field.field.media.image.field_is_decorative
     - field.field.media.image.field_media_image
     - image.style.focal_point_preview
     - media.type.image
@@ -28,6 +29,7 @@ content:
 hidden:
   created: true
   field_byline: true
+  field_is_decorative: true
   langcode: true
   name: true
   publish_on: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_byline
+    - field.field.media.image.field_is_decorative
     - field.field.media.image.field_media_image
     - image.style.paragraph_wide
     - media.type.image
@@ -21,6 +22,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_is_decorative:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_media_image:
     type: image

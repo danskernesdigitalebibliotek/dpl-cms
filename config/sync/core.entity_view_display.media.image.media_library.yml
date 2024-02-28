@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.image.field_byline
+    - field.field.media.image.field_is_decorative
     - field.field.media.image.field_media_image
     - image.style.media_library
     - media.type.image
@@ -36,6 +37,7 @@ content:
     region: content
 hidden:
   created: true
+  field_is_decorative: true
   langcode: true
   name: true
   search_api_excerpt: true

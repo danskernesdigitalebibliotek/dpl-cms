@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_byline
+    - field.field.media.image.field_is_decorative
     - field.field.media.image.field_media_image
     - image.style.focal_point_preview
     - media.type.image
@@ -22,9 +23,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_is_decorative:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_media_image:
     type: image_focal_point
-    weight: 2
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
