@@ -1524,11 +1524,6 @@ msgstr "Jeg godkender dette"
 
 #: 
 msgctxt "Fees list"
-msgid "Fee @fee,-"
-msgstr "Gebyr @fee kr."
-
-#: 
-msgctxt "Fees list"
 msgid "Other materials"
 msgstr "Andre materialer"
 
@@ -2169,11 +2164,6 @@ msgstr "Tilbage til avanceret søgning"
 
 #: 
 msgctxt "Patron page"
-msgid "The phone number must be 6 to 15 characters in length and should be comprised solely of numbers or begin with a +"
-msgstr "Nummeret skal være mellem 6 og 15 cifre"
-
-#: 
-msgctxt "Patron page"
 msgid "Your changes are saved."
 msgstr "Dine ændringer blev gemt"
 
@@ -2265,16 +2255,6 @@ msgstr "Default interesseperiode for reserveringer"
 msgctxt "Library Agency Configuration"
 msgid "Set the default interest period for reservations."
 msgstr "Indstil default interesseperiode for reserveringer"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Blocked user"
-msgstr "Blokeret bruger"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Blocked user link for modal"
-msgstr "Link i modal til blokeret bruger (til fx Mit betalingsoverblik)"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -2540,11 +2520,6 @@ msgstr "En reservering blev slettet"
 msgctxt "Global"
 msgid "@count reservations were deleted"
 msgstr "@count reserveringer blev slettet"
-
-#: 
-msgctxt "Global"
-msgid "You have deleted your reservation"
-msgstr "Du har slettet din reservering"
 
 #: 
 msgctxt "Global"
@@ -3202,11 +3177,6 @@ msgstr "Ukendt bruger"
 msgctxt "Fees list"
 msgid "Already paid? It can take up to 72 hours register the transaction."
 msgstr "Har du allerede betalt? Der kan gå op til 72 timer før betalingen registreres i vores systemer"
-
-#: 
-msgctxt "Fees list"
-msgid "Total: @total"
-msgstr "I alt: @total"
 
 #: 
 msgctxt "Search Result"
@@ -3868,20 +3838,6 @@ msgstr "Side som låner omdirigeres til ved oprettelse"
 
 #: 
 msgctxt "Patron registration settings form"
-msgid "Redirect to page when user is successful created. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Her kan du indsætte et link til en velkomstside til nye brugere. <br>\n"
-"\n"
-"Du kan tilføje en relativ sti (fx /velkommen). <br>\n"
-"\n"
-"Du kan søge efter en intern url. <br>\n"
-"\n"
-"Du kan tilføje en ekstern url (begynd med http:// eller https://)."
-
-#: 
-msgctxt "Patron registration settings form"
 msgid "Information page"
 msgstr ""
 
@@ -3980,10 +3936,6 @@ msgid "Next"
 msgstr "Næste"
 
 #: 
-msgid "Add Event"
-msgstr "Tilføj arrangement"
-
-#: 
 msgid "Events"
 msgstr "Begivenheder"
 
@@ -4066,23 +4018,6 @@ msgid "Define the text of the button that links to the payment page. <br>\n"
 msgstr "Definer hvilken tekst der skal vises på knappen til betalingssiden. Hvis intet er angivet her, bruges teksten: \"@text\"."
 
 #: 
-msgctxt "Library Agency Configuration"
-msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page. <br>\n"
-"                                         If left empty, the link will not be shown. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Hvis en bruger er blokeret på grund af overskredet gebyrgrænse vises en pop-up til brugeren ved log in. Dette felt gør det muligt at lave et link i pop-up'en. <br>\n"
-"\n"
-"Hvis feltet ikke er udfyldt vil der ikke blive vist et link.  \n"
-"\n"
-"Du kan tilføje en relativ sti (fx /pause). <br>\n"
-"\n"
-"Du kan søge efter en intern url. <br>\n"
-"\n"
-"Du kan tilføje en ekstern url (begynd med http:// eller https://)."
-
-#: 
 msgid "DPL Filtered Paragraphs"
 msgstr ""
 
@@ -4133,18 +4068,6 @@ msgid "Add content"
 msgstr "Tilføj indhold"
 
 #: 
-msgid "Add article"
-msgstr ""
-
-#: 
-msgid "Add campaign"
-msgstr ""
-
-#: 
-msgid "Add page"
-msgstr ""
-
-#: 
 msgid "Footer Settings"
 msgstr ""
 
@@ -4154,5 +4077,163 @@ msgstr "Sidefod"
 
 #: 
 msgid "Functionality related to footer."
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Redirect to page when user is successfully created. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Blocked user"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Blocked user link for modal"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page. <br>\n"
+"                                         If left empty, the link will not be shown. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fee @fee DKK"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Total @total DKK"
+msgstr ""
+
+#: 
+msgid "The \".version\" file does not have a valid JSON format."
+msgstr ""
+
+#: 
+msgid "The \".version\" file does not contain information about the CMS version."
+msgstr ""
+
+#: 
+msgid "Not found, this could be due to this environment being a PR environment."
+msgstr ""
+
+#: 
+msgid "CMS release version"
+msgstr ""
+
+#: 
+msgid "<code>@version</code>"
+msgstr ""
+
+#: 
+msgctxt "Loan list"
+msgid "No materials can be renewed"
+msgstr ""
+
+#: 
+msgctxt "OpenId Connect Settings"
+msgid "Unable to retrieve token from Adgangsplatformen. Please check if the provided Agency ID is correct."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Reservation deleted"
+msgstr "Din reservering er slettet"
+
+#: 
+msgctxt "Global"
+msgid "Reservations deleted"
+msgstr "Dine reserveringer er slettet"
+
+#: 
+msgctxt "Global"
+msgid "Expires @date"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Loading"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "The phone number must be 6 to 15 characters in length and should be comprised solely of numbers or begin with a +"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Remove reservation (@amount)"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "You are in the reservation queue"
+msgstr ""
+
+#: 
+msgid "Make sure that user is detected as registered after registration"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Event series"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Use event series to create event instances - you can use series, both to create reoccurring events, and single events."
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Create content from scratch"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Create content from templates"
+msgstr ""
+
+#: 
+msgid "Update single events"
+msgstr ""
+
+#: 
+msgid "Retrieve all events"
+msgstr ""
+
+#: 
+msgid "Add new content"
+msgstr ""
+
+#: 
+msgid "Add Content"
+msgstr ""
+
+#: 
+msgid "Load more items"
+msgstr ""
+
+#: 
+msgid "Show more"
+msgstr ""
+
+#: 
+msgid "Email"
+msgstr "E-mail"
+
+#: 
+msgid "Phone"
 msgstr ""
 
