@@ -1615,10 +1615,6 @@ msgid "Patron redirect settings"
 msgstr "Indstillinger for viderestilling af bruger til adgangsplatformen"
 
 #: 
-msgid "Log in with @client_title"
-msgstr "Log ind med @client_title"
-
-#: 
 msgctxt "Create patron"
 msgid "Cancel"
 msgstr "Fortryd"
@@ -1655,10 +1651,6 @@ msgstr "Brugeroprettelse"
 #: 
 msgid "Enable registration of new patrons"
 msgstr "Tilvælg registrering af nye brugere"
-
-#: 
-msgid "Patron registration information"
-msgstr "Information om brugeroprettelse"
 
 #: 
 msgid "Patron nem-login authentication"
@@ -3837,11 +3829,6 @@ msgid "Redirect on create"
 msgstr "Side som låner omdirigeres til ved oprettelse"
 
 #: 
-msgctxt "Patron registration settings form"
-msgid "Information page"
-msgstr ""
-
-#: 
 msgid "List Size Settings"
 msgstr "Indstillinger for listestørrelser"
 
@@ -4109,12 +4096,12 @@ msgstr ""
 #: 
 msgctxt "Fees list"
 msgid "Fee @fee DKK"
-msgstr ""
+msgstr "Gebyr @fee kr. "
 
 #: 
 msgctxt "Fees list"
 msgid "Total @total DKK"
-msgstr ""
+msgstr "Total @total kr."
 
 #: 
 msgid "The \".version\" file does not have a valid JSON format."
@@ -4235,5 +4222,59 @@ msgstr "E-mail"
 
 #: 
 msgid "Phone"
+msgstr ""
+
+#: 
+msgctxt "Material Grid"
+msgid "Show all"
+msgstr ""
+
+#: 
+msgid "CQL search string"
+msgstr ""
+
+#: 
+msgid "Text value"
+msgstr "Tekstværdi"
+
+#: 
+msgid "CQL Search"
+msgstr ""
+
+#: 
+msgid "FBI"
+msgstr ""
+
+#: 
+msgid "Work ID"
+msgstr ""
+
+#: 
+msgid "FBI integration"
+msgstr ""
+
+#: 
+msgid "Integration with with FBI API, https://fbi-api.dbc.dk/."
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Patron registration page url"
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "The url for the patron registration page. <br>\n"
+"                                         You can add a relative url (e.g. /takster). <br>\n"
+"                                         You can search for an internal url. <br>\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgid "DPL static content"
+msgstr ""
+
+#: 
+msgid "Provides static content for new library sites."
 msgstr ""
 
