@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-13 12:14+0100\n"
-"PO-Revision-Date: 2024-03-13 12:14+0100\n"
+"POT-Creation-Date: 2024-03-14 10:01+0100\n"
+"PO-Revision-Date: 2024-03-14 10:01+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -98,59 +98,59 @@ msgstr ""
 
 msgctxt "core.base_field_override.media.image.status:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.media.image.status:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.base_field_override.node.article.promote:label"
 msgid "Promoted to front page"
-msgstr ""
+msgstr "Forfremmet til forsiden"
 
 msgctxt "core.base_field_override.node.article.promote:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.node.article.promote:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.base_field_override.node.branch.promote:label"
 msgid "Promoted to front page"
-msgstr ""
+msgstr "Forfremmet til forsiden"
 
 msgctxt "core.base_field_override.node.branch.promote:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.node.branch.promote:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.base_field_override.node.campaign.promote:label"
 msgid "Promoted to front page"
-msgstr ""
+msgstr "Forfremmet til forsiden"
 
 msgctxt "core.base_field_override.node.campaign.promote:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.node.campaign.promote:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.base_field_override.node.page.promote:label"
 msgid "Promoted to front page"
-msgstr ""
+msgstr "Forfremmet til forsiden"
 
 msgctxt "core.base_field_override.node.page.promote:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.node.page.promote:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.base_field_override.node.user_registration.promote:label"
 msgid "Promoted to front page"
@@ -158,11 +158,11 @@ msgstr ""
 
 msgctxt "core.base_field_override.node.user_registration.promote:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "core.base_field_override.node.user_registration.promote:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "core.date_format.date_full_month:label"
 msgid "Date full month"
@@ -238,7 +238,7 @@ msgstr ""
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
-msgstr ""
+msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
@@ -246,27 +246,27 @@ msgstr ""
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_event_details:label"
 msgid "Event details"
-msgstr ""
+msgstr "Arrangementsdetaljer"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:content:field_event_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:content:field_event_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:content:field_ticket_categories:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:content:field_ticket_categories:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
-msgstr ""
+msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
@@ -274,31 +274,31 @@ msgstr ""
 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_event_details:label"
 msgid "Event details"
-msgstr ""
+msgstr "Arrangementsdetaljer"
 
 msgctxt "core.entity_form_display.eventseries.default.default:content:field_event_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.eventseries.default.default:content:field_event_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.eventseries.default.default:content:field_ticket_categories:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.eventseries.default.default:content:field_ticket_categories:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_article_meta_tags:label"
 msgid "Meta tags"
-msgstr ""
+msgstr "Metatags"
 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
-msgstr ""
+msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
@@ -306,23 +306,23 @@ msgstr ""
 
 msgctxt "core.entity_form_display.node.article.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.node.article.default:content:field_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.node.branch.default:third_party_settings:field_group:group_contact_details:label"
 msgid "Contact details"
-msgstr ""
+msgstr "Kontaktinformation"
 
 msgctxt "core.entity_form_display.node.branch.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.node.branch.default:content:field_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.node.campaign.default:content:field_campaign_rules:settings:title"
 msgid "Paragraph"
@@ -334,27 +334,27 @@ msgstr "Paragraphs"
 
 msgctxt "core.entity_form_display.node.page.default:content:field_hero_title:settings:placeholder"
 msgid "If empty, the regular page title will be shown."
-msgstr ""
+msgstr "Hvis tom, vil sidetitlen blive vist"
 
 msgctxt "core.entity_form_display.node.page.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.node.page.default:content:field_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_display.paragraph.card_grid_manual.default:content:field_grid_content:settings:placeholder"
 msgid "Search content.."
-msgstr ""
+msgstr "Søg efter indhold"
 
 msgctxt "core.entity_form_display.paragraph.event_ticket_category.default:third_party_settings:field_group:group_inline_fields:label"
 msgid "Inline fields"
@@ -362,15 +362,15 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.user_registration_section.default:content:field_user_registration_items:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.paragraph.user_registration_section.default:content:field_user_registration_items:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "core.entity_form_mode.media.media_library:label"
 msgid "Media library"
-msgstr ""
+msgstr "Mediebibliotek"
 
 msgctxt "core.entity_form_mode.user.register:label"
 msgid "Register"
@@ -466,15 +466,15 @@ msgstr ""
 
 msgctxt "core.entity_view_mode.eventinstance.card:label"
 msgid "Card"
-msgstr ""
+msgstr "Card"
 
 msgctxt "core.entity_view_mode.eventinstance.list:label"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 msgctxt "core.entity_view_mode.eventinstance.list_teaser:label"
 msgid "List teaser"
-msgstr ""
+msgstr "Listeteaser"
 
 msgctxt "core.entity_view_mode.eventinstance.nav_spot:label"
 msgid "Nav spot"
@@ -490,7 +490,7 @@ msgstr ""
 
 msgctxt "core.entity_view_mode.eventseries.card:label"
 msgid "Card"
-msgstr ""
+msgstr "Card"
 
 msgctxt "core.entity_view_mode.eventseries.list:label"
 msgid "List"
@@ -530,7 +530,7 @@ msgstr ""
 
 msgctxt "core.entity_view_mode.node.card:label"
 msgid "Card"
-msgstr ""
+msgstr "Card"
 
 msgctxt "core.entity_view_mode.node.full:label"
 msgid "Full content"
@@ -574,7 +574,7 @@ msgstr ""
 
 msgctxt "core.entity_view_mode.paragraph.preview:label"
 msgid "Preview"
-msgstr ""
+msgstr "Gennemse"
 
 msgctxt "core.entity_view_mode.paragraph.token:label"
 msgid "Token"
@@ -602,7 +602,7 @@ msgstr ""
 
 msgctxt "crop.type.focal_point:label"
 msgid "Focal point"
-msgstr ""
+msgstr "Fokuspunkt"
 
 msgctxt "crop.type.focal_point:description"
 msgid "Crop type used by Focal point module."
@@ -610,7 +610,7 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_branch:label"
 msgid "Branch"
-msgstr ""
+msgstr "Bibliotek"
 
 msgctxt "field.field.eventinstance.default.field_categories:label"
 msgid "Categories"
@@ -618,11 +618,11 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_description:label"
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 msgctxt "field.field.eventinstance.default.field_event_address:label"
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 msgctxt "field.field.eventinstance.default.field_event_description:label"
 msgid "Description (DEPRECATED - WILL BE DELETED.)"
@@ -640,7 +640,7 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_event_link:label"
 msgid "Ticket link"
-msgstr ""
+msgstr "Billetlink"
 
 msgctxt "field.field.eventinstance.default.field_event_link:description"
 msgid "Please enter the URL where attendees can buy tickets for this event."
@@ -648,11 +648,11 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_event_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "field.field.eventinstance.default.field_event_partners:label"
 msgid "Partners"
-msgstr ""
+msgstr "I samarbejde med"
 
 msgctxt "field.field.eventinstance.default.field_event_partners:description"
 msgid "A list of partners for the event"
@@ -660,23 +660,23 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_event_place:label"
 msgid "Place"
-msgstr ""
+msgstr "Sted"
 
 msgctxt "field.field.eventinstance.default.field_event_state:label"
 msgid "State"
-msgstr ""
+msgstr "Status"
 
 msgctxt "field.field.eventinstance.default.field_event_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "field.field.eventinstance.default.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "field.field.eventinstance.default.field_teaser_image:label"
 msgid "Teaser image"
-msgstr ""
+msgstr "Teaserbillede"
 
 msgctxt "field.field.eventinstance.default.field_teaser_image:description"
 msgid ""
@@ -690,30 +690,39 @@ msgid ""
 "\n"
 "<hr/>"
 msgstr ""
+"Teaserfelterne bruges til visning af cards. Hvis der ikke er valgt et "
+"billede, vil teksten blive vist på en baggrund af identitestsfarven i "
+"stedet:\n"
+"\n"
+"<img "
+"src=\"/themes/custom/novel/images/teaser-text-image.jpg\" "
+"/>\n"
+"\n"
+"<hr/>"
 
 msgctxt "field.field.eventinstance.default.field_teaser_text:label"
 msgid "Teaser text"
-msgstr ""
+msgstr "Teasertekst"
 
 msgctxt "field.field.eventinstance.default.field_ticket_categories:label"
 msgid "Ticket categories"
-msgstr ""
+msgstr "Billetkategorier"
 
 msgctxt "field.field.eventseries.default.field_branch:label"
 msgid "Branch"
-msgstr ""
+msgstr "Bibliotek"
 
 msgctxt "field.field.eventseries.default.field_categories:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 msgctxt "field.field.eventseries.default.field_description:label"
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 msgctxt "field.field.eventseries.default.field_event_address:label"
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 msgctxt "field.field.eventseries.default.field_event_description:label"
 msgid "Description (DEPRECATED - WILL BE DELETED.)"
@@ -727,11 +736,11 @@ msgstr ""
 
 msgctxt "field.field.eventseries.default.field_event_image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 msgctxt "field.field.eventseries.default.field_event_link:label"
 msgid "Ticket link"
-msgstr ""
+msgstr "Billetlink"
 
 msgctxt "field.field.eventseries.default.field_event_link:description"
 msgid ""
@@ -741,7 +750,7 @@ msgstr ""
 
 msgctxt "field.field.eventseries.default.field_event_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 msgctxt "field.field.eventseries.default.field_event_partners:label"
 msgid "Partners"
@@ -753,7 +762,7 @@ msgstr ""
 
 msgctxt "field.field.eventseries.default.field_event_place:label"
 msgid "Place"
-msgstr ""
+msgstr "Sted"
 
 msgctxt "field.field.eventseries.default.field_event_state:label"
 msgid "State"
@@ -823,7 +832,7 @@ msgstr ""
 
 msgctxt "field.field.node.article.field_branch:label"
 msgid "Branch"
-msgstr ""
+msgstr "Bibliotek"
 
 msgctxt "field.field.node.article.field_canonical_url:label"
 msgid "Canonical url"
@@ -901,7 +910,7 @@ msgstr ""
 
 msgctxt "field.field.node.branch.field_address:label"
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 msgctxt "field.field.node.branch.field_email:label"
 msgid "Email"
@@ -947,7 +956,7 @@ msgstr ""
 
 msgctxt "field.field.node.page.field_branch:label"
 msgid "Branch"
-msgstr ""
+msgstr "Bibliotek"
 
 msgctxt "field.field.node.page.field_display_titles:label"
 msgid "Display titles"
@@ -1678,7 +1687,7 @@ msgstr ""
 
 msgctxt "node.type.branch:name"
 msgid "Branch"
-msgstr ""
+msgstr "Bibliotek"
 
 msgctxt "node.type.branch:description"
 msgid ""
@@ -2474,11 +2483,11 @@ msgstr ""
 
 msgctxt "views.view.branches:label"
 msgid "Branches"
-msgstr ""
+msgstr "Biblioteker"
 
 msgctxt "views.view.branches:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 msgctxt "views.view.branches:display:default:display_options:title"
 msgid "Branches"
@@ -2486,27 +2495,27 @@ msgstr ""
 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 msgctxt "views.view.branches:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.content:label"
 msgid "Content"
@@ -2846,7 +2855,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Unpublished"
@@ -3116,6 +3125,9 @@ msgid ""
 "}}<br>\n"
 "<small>{{ recur_type }}</small>"
 msgstr ""
+"<strong>{{ date__value }}</strong> | {{ date__value_1 "
+"}}<br>\n"
+"<small>{{ recur_type }}</small>"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_day"
 msgid "d M Y"

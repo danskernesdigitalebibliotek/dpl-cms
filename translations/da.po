@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-13 12:14+0100\n"
-"PO-Revision-Date: 2024-03-13 12:14+0100\n"
+"POT-Creation-Date: 2024-03-14 10:01+0100\n"
+"PO-Revision-Date: 2024-03-14 10:01+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3479,7 +3479,7 @@ msgid "Tags"
 msgstr "Tags"
 
 msgid "Show all"
-msgstr ""
+msgstr "Vis alle"
 
 msgctxt "DPL admin UX"
 msgid ""
@@ -3511,13 +3511,13 @@ msgid "Add content"
 msgstr "Tilføj indhold"
 
 msgid "Footer Settings"
-msgstr ""
+msgstr "Footerindstillinger"
 
 msgid "Footer"
 msgstr "Sidefod"
 
 msgid "Functionality related to footer."
-msgstr ""
+msgstr "Funktionalitet relateret til footeren"
 
 msgctxt "Patron registration settings form"
 msgid ""
@@ -3534,7 +3534,7 @@ msgstr ""
 
 msgctxt "Fees list settings form"
 msgid "Blocked user"
-msgstr ""
+msgstr "Blokeret bruger"
 
 msgctxt "Fees list settings form"
 msgid "Blocked user link for modal"
@@ -3578,14 +3578,14 @@ msgid ""
 msgstr ""
 
 msgid "CMS release version"
-msgstr ""
+msgstr "CMS release version"
 
 msgid "<code>@version</code>"
-msgstr ""
+msgstr "<code>@version</code>"
 
 msgctxt "Loan list"
 msgid "No materials can be renewed"
-msgstr ""
+msgstr "Ingen materialer kan fornys"
 
 msgctxt "OpenId Connect Settings"
 msgid ""
@@ -3603,11 +3603,11 @@ msgstr "Dine reserveringer er slettet"
 
 msgctxt "Global"
 msgid "Expires @date"
-msgstr ""
+msgstr "Udløber @date"
 
 msgctxt "Global"
 msgid "Loading"
-msgstr ""
+msgstr "Indlæser..."
 
 msgctxt "Global"
 msgid ""
@@ -3617,60 +3617,63 @@ msgstr ""
 
 msgctxt "Global"
 msgid "Remove reservation (@amount)"
-msgstr ""
+msgstr "Fjern reservering (@amount)"
 
 msgctxt "Global"
 msgid "You are in the reservation queue"
-msgstr ""
+msgstr "Du er i reserveringskø"
 
 msgid "Make sure that user is detected as registered after registration"
 msgstr ""
 
 msgctxt "DPL admin UX"
 msgid "Event series"
-msgstr ""
+msgstr "Arrangementsserier"
 
 msgctxt "DPL admin UX"
 msgid ""
 "Use event series to create event instances - you can use series, both "
 "to create reoccurring events, and single events."
 msgstr ""
+"Brug arrangementsserier til at oprette arrangementer - du kan bruge "
+"serier både til at oprette gentagende arrangementer og enkeltstående "
+"arrangementer."
 
 msgctxt "DPL admin UX"
 msgid "Create content from scratch"
-msgstr ""
+msgstr "Opret indhold fra bunden"
 
 msgctxt "DPL admin UX"
 msgid "Create content from templates"
-msgstr ""
+msgstr "Opret indhold fra skabelon"
 
 msgid "Update single events"
-msgstr ""
+msgstr "Opdater enkeltstående arrangementer"
 
 msgid "Retrieve all events"
-msgstr ""
+msgstr "Hent alle arrangementer"
 
 msgid "Add new content"
-msgstr ""
+msgstr "Tilføj nyt indhold"
 
 msgid "Add Content"
-msgstr ""
+msgstr "Tilføj indhold"
 
 msgid "Load more items"
-msgstr ""
+msgstr "Hent flere"
 
 msgid "Show more"
-msgstr ""
+msgstr "Vis flere"
 
 msgid "Email"
 msgstr "E-mail"
 
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 msgctxt "Material Grid"
 msgid "Show all"
-msgstr ""
+msgstr "Vis alle"
 
 msgid "CQL search string"
 msgstr ""
@@ -3717,7 +3720,7 @@ msgstr ""
 
 msgctxt "Library Agency Configuration"
 msgid "Opening hours link"
-msgstr ""
+msgstr "Link til åbnbingtider"
 
 msgctxt "Library Agency Configuration"
 msgid ""
@@ -3733,21 +3736,23 @@ msgstr ""
 
 msgctxt "DPL event"
 msgid "Automatic unpublication"
-msgstr ""
+msgstr "Automatisk afpublicering"
 
 msgctxt "DPL event"
 msgid "Schedule"
-msgstr ""
+msgstr "Planlæg"
 
 msgctxt "DPL event"
 msgid "Automatic unpublication disabled"
-msgstr ""
+msgstr "Automatisk afpublicering slået fra"
 
 msgctxt "DPL event"
 msgid ""
 "How much time should pass after an event has occurred before it should "
 "be unpublished automatically."
 msgstr ""
+"Hvor længe skal der gå fra et arrangement er afholdt, til det skal "
+"afpubliceres automatisk?"
 
 msgid "Get tickets"
 msgstr ""
@@ -3776,13 +3781,13 @@ msgid "Material Type"
 msgstr ""
 
 msgid "Select the material type."
-msgstr ""
+msgstr "Vælg materialetype"
 
 msgid "Work id with type"
 msgstr ""
 
 msgid "Event settings"
-msgstr ""
+msgstr "Arrangementsindstillinger"
 
 msgid "Configure handling of events."
 msgstr ""
@@ -3794,7 +3799,7 @@ msgid "Better, faster, stronger types"
 msgstr ""
 
 msgid "Opening hours"
-msgstr ""
+msgstr "Åbningstider"
 
 msgctxt "translation handling"
 msgid "Could not create PO file: @destination due to error \"%error\""
@@ -3842,11 +3847,11 @@ msgstr ""
 
 msgctxt "recurring_events.eventinstance_type.default:label"
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 msgctxt "recurring_events.eventseries_type.default:label"
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 msgctxt "search_api.index.events:name"
 msgid "Events"
