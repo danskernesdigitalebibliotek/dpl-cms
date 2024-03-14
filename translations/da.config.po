@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-14 10:09+0100\n"
-"PO-Revision-Date: 2024-03-14 10:09+0100\n"
+"POT-Creation-Date: 2024-03-14 16:07+0100\n"
+"PO-Revision-Date: 2024-03-14 16:07+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -149,18 +149,6 @@ msgid "On"
 msgstr "Til"
 
 msgctxt "core.base_field_override.node.page.promote:settings:off_label"
-msgid "Off"
-msgstr "Fra"
-
-msgctxt "core.base_field_override.node.user_registration.promote:label"
-msgid "Promoted to front page"
-msgstr ""
-
-msgctxt "core.base_field_override.node.user_registration.promote:settings:on_label"
-msgid "On"
-msgstr "Til"
-
-msgctxt "core.base_field_override.node.user_registration.promote:settings:off_label"
 msgid "Off"
 msgstr "Fra"
 
@@ -341,14 +329,6 @@ msgid "Paragraph"
 msgstr "Paragraf"
 
 msgctxt "core.entity_form_display.node.page.default:content:field_paragraphs:settings:title_plural"
-msgid "Paragraphs"
-msgstr "Paragraffer"
-
-msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title"
-msgid "Paragraph"
-msgstr "Paragraf"
-
-msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title_plural"
 msgid "Paragraphs"
 msgstr "Paragraffer"
 
@@ -995,14 +975,6 @@ msgctxt "field.field.node.page.field_subtitle:label"
 msgid "Subtitle"
 msgstr ""
 
-msgctxt "field.field.node.user_registration.body:label"
-msgid "Body"
-msgstr ""
-
-msgctxt "field.field.node.user_registration.field_content:label"
-msgid "Content"
-msgstr ""
-
 msgctxt "field.field.paragraph.accordion.field_accordion_description:label"
 msgid "Accordion description"
 msgstr ""
@@ -1281,58 +1253,6 @@ msgstr ""
 
 msgctxt "field.field.paragraph.text_body.field_body:label"
 msgid "Body"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_anchor:label"
-msgid "Anchor"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_body:label"
-msgid "Body"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:label"
-msgid "Display in navigation"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:description"
-msgid ""
-"Enable this option to display a button at the top of the page for "
-"easier navigation."
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:settings:on_label"
-msgid "On"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:settings:off_label"
-msgid "Off"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_link_target:label"
-msgid "Link target"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_link_target:description"
-msgid "Specify how a linked document should be opened when clicked by a user."
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_navigation_title:label"
-msgid "Navigation button title"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_navigation_title:description"
-msgid ""
-"If the navigation button title is left blank, it will automatically "
-"default to the paragraph title."
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_registration_link:label"
-msgid "Registration Link"
-msgstr ""
-
-msgctxt "field.field.paragraph.user_registration_information.field_title:label"
-msgid "Title"
 msgstr ""
 
 msgctxt "field.field.paragraph.user_registration_item.field_anchor:label"
@@ -1709,14 +1629,6 @@ msgctxt "node.type.page:name"
 msgid "Page"
 msgstr ""
 
-msgctxt "node.type.user_registration:name"
-msgid "User registration"
-msgstr ""
-
-msgctxt "node.type.user_registration:description"
-msgid "Information on how to register as a user."
-msgstr ""
-
 msgctxt "paragraphs.paragraphs_type.accordion:label"
 msgid "Accordion"
 msgstr ""
@@ -1831,16 +1743,6 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.text_body:description"
 msgid "A basic, formatted body of text."
-msgstr ""
-
-msgctxt "paragraphs.paragraphs_type.user_registration_information:label"
-msgid "User Registration Information"
-msgstr ""
-
-msgctxt "paragraphs.paragraphs_type.user_registration_information:description"
-msgid ""
-"The \"User Registration Information\" paragraph type is used to "
-"display relevant information about the user registration process."
 msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.user_registration_item:label"

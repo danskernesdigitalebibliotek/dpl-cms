@@ -3474,10 +3474,6 @@ msgid "Configure Mapp Intelligence for tracking website interactions."
 msgstr "Indstillinger for Mapp"
 
 #: 
-msgid "Change recommender settings"
-msgstr "Skift indstillinger for recommender"
-
-#: 
 msgid "Loans"
 msgstr "Lån"
 
@@ -4048,7 +4044,7 @@ msgstr "Indsend"
 #: 
 msgctxt "DPL admin UX"
 msgid "Cancel all changes"
-msgstr ""
+msgstr "Fortryd alle ændringer"
 
 #: 
 msgid "Add content"
@@ -4072,7 +4068,11 @@ msgid "Redirect to page when user is successfully created. <br>\n"
 "                                         You can add a relative url (e.g. /takster). <br>\n"
 "                                         You can search for an internal url. <br>\n"
 "                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr ""
+msgstr "\n"
+"Redirect til en side når en bruger er oprettet. <br>\n"
+"                                         Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
+"                                         Du kan søge efter en intern URL. <br>\n"
+"                                         Du kan tilføje en eksterne URL (begyndende med \"http://\" eller \"https://\")."
 
 #: 
 msgctxt "Fees list settings form"
@@ -4082,7 +4082,7 @@ msgstr "Blokeret bruger"
 #: 
 msgctxt "Fees list settings form"
 msgid "Blocked user link for modal"
-msgstr ""
+msgstr "Link til blokeret bruger som vises i modal"
 
 #: 
 msgctxt "Fees list settings form"
@@ -4091,7 +4091,12 @@ msgid "If a user is blocked because of fees a modal appears. This field makes it
 "                                         You can add a relative url (e.g. /takster). <br>\n"
 "                                         You can search for an internal url. <br>\n"
 "                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr ""
+msgstr "\n"
+"Hvis en bruger er blokeret på grund af overskredet gebyrgrænse  vises en modal. Dette felt gør det muligt at tilføje et link i modalen, f.x. til en side om takster, betalingsmuligheder eller en hjælpeside. <br>\n"
+"Hvis feltet er tomt, vises ikke et link. <br>\n"
+"Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
+"Du kan søge efter en intern URL. <br>\n"
+"Du kan tilføje en ekstern URL (begyndende med \"http://\" eller \"https://\")."
 
 #: 
 msgctxt "Fees list"
@@ -4239,28 +4244,28 @@ msgstr "Tekstværdi"
 
 #: 
 msgid "CQL Search"
-msgstr ""
+msgstr "CQL søgning"
 
 #: 
 msgid "FBI"
-msgstr ""
+msgstr "FBI"
 
 #: 
 msgid "Work ID"
-msgstr ""
+msgstr "VærkID"
 
 #: 
 msgid "FBI integration"
-msgstr ""
+msgstr "FBI integration"
 
 #: 
 msgid "Integration with with FBI API, https://fbi-api.dbc.dk/."
-msgstr ""
+msgstr "Integration til FBI API, https://fbi-api.dbc.dk/."
 
 #: 
 msgctxt "Patron registration settings form"
 msgid "Patron registration page url"
-msgstr ""
+msgstr "URL til brugeroprettelsesside"
 
 #: 
 msgctxt "Patron registration settings form"
@@ -4268,7 +4273,10 @@ msgid "The url for the patron registration page. <br>\n"
 "                                         You can add a relative url (e.g. /takster). <br>\n"
 "                                         You can search for an internal url. <br>\n"
 "                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr ""
+msgstr "Side til brugeroprettelse. \n"
+"                                         Du kan tilfæje en relativ sti (f.x. /opret). <br>\n"
+"                                         Du kan søge efter en intern URL. <br>\n"
+"                                         Du kan tilføje en eksterne URL (begyndende med \"http://\" eller \"https://\")."
 
 #: 
 msgid "DPL static content"
@@ -4597,21 +4605,6 @@ msgid "Off"
 msgstr "Fra"
 
 #: 
-msgctxt "core.base_field_override.node.user_registration.promote:label"
-msgid "Promoted to front page"
-msgstr ""
-
-#: 
-msgctxt "core.base_field_override.node.user_registration.promote:settings:on_label"
-msgid "On"
-msgstr "Til"
-
-#: 
-msgctxt "core.base_field_override.node.user_registration.promote:settings:off_label"
-msgid "Off"
-msgstr "Fra"
-
-#: 
 msgctxt "core.date_format.date_full_month:label"
 msgid "Date full month"
 msgstr "Date full month"
@@ -4833,16 +4826,6 @@ msgstr "Paragraf"
 
 #: 
 msgctxt "core.entity_form_display.node.page.default:content:field_paragraphs:settings:title_plural"
-msgid "Paragraphs"
-msgstr "Paragraffer"
-
-#: 
-msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title"
-msgid "Paragraph"
-msgstr "Paragraf"
-
-#: 
-msgctxt "core.entity_form_display.node.user_registration.default:content:field_content:settings:title_plural"
 msgid "Paragraphs"
 msgstr "Paragraffer"
 
@@ -5590,16 +5573,6 @@ msgid "Subtitle"
 msgstr ""
 
 #: 
-msgctxt "field.field.node.user_registration.body:label"
-msgid "Body"
-msgstr ""
-
-#: 
-msgctxt "field.field.node.user_registration.field_content:label"
-msgid "Content"
-msgstr ""
-
-#: 
 msgctxt "field.field.paragraph.accordion.field_accordion_description:label"
 msgid "Accordion description"
 msgstr ""
@@ -5899,66 +5872,6 @@ msgstr ""
 #: 
 msgctxt "field.field.paragraph.text_body.field_body:label"
 msgid "Body"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_anchor:label"
-msgid "Anchor"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_body:label"
-msgid "Body"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:label"
-msgid "Display in navigation"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:description"
-msgid "Enable this option to display a button at the top of the page for easier navigation."
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:settings:on_label"
-msgid "On"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_display_in_navigation:settings:off_label"
-msgid "Off"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_link_target:label"
-msgid "Link target"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_link_target:description"
-msgid "Specify how a linked document should be opened when clicked by a user."
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_navigation_title:label"
-msgid "Navigation button title"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_navigation_title:description"
-msgid "If the navigation button title is left blank, it will automatically default to the paragraph title."
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_registration_link:label"
-msgid "Registration Link"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.user_registration_information.field_title:label"
-msgid "Title"
 msgstr ""
 
 #: 
@@ -6417,16 +6330,6 @@ msgid "Page"
 msgstr ""
 
 #: 
-msgctxt "node.type.user_registration:name"
-msgid "User registration"
-msgstr ""
-
-#: 
-msgctxt "node.type.user_registration:description"
-msgid "Information on how to register as a user."
-msgstr ""
-
-#: 
 msgctxt "paragraphs.paragraphs_type.accordion:label"
 msgid "Accordion"
 msgstr ""
@@ -6559,16 +6462,6 @@ msgstr ""
 #: 
 msgctxt "paragraphs.paragraphs_type.text_body:description"
 msgid "A basic, formatted body of text."
-msgstr ""
-
-#: 
-msgctxt "paragraphs.paragraphs_type.user_registration_information:label"
-msgid "User Registration Information"
-msgstr ""
-
-#: 
-msgctxt "paragraphs.paragraphs_type.user_registration_information:description"
-msgid "The \"User Registration Information\" paragraph type is used to display relevant information about the user registration process."
 msgstr ""
 
 #: 
@@ -9757,5 +9650,34 @@ msgstr ""
 #: 
 msgctxt "views.view.watchdog:display:page:display_title"
 msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "React apps (Global error handling)"
+msgid "Close error message"
+msgstr ""
+
+#: 
+msgid "<br><br>\"@title\" is being used in configuration. Before you can delete it, you need to remove it from the following configuration fields:"
+msgstr ""
+
+#: 
+msgid "<br><a href=\":url\">@title</a>"
+msgstr ""
+
+#: 
+msgid "DPL Protected Nodes"
+msgstr ""
+
+#: 
+msgid "This modules handles protected nodes by checking if a node is being used as a reference in configuration."
+msgstr ""
+
+#: 
+msgid "Make a profile for"
+msgstr ""
+
+#: 
+msgid "Error warning icon"
 msgstr ""
 
