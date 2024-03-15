@@ -1,0 +1,2 @@
+label: 'Trigger Logic'
+description: 'Choose if all triggers should match (AND) for a campaign to be displayed or just one of them (OR).'

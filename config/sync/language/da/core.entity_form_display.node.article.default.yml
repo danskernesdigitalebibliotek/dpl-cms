@@ -1,0 +1,13 @@
+third_party_settings:
+  field_group:
+    group_article_meta_tags:
+      label: Metatags
+    group_teaser_card:
+      label: 'Teaser card'
+    group_tagging:
+      label: Tagging
+content:
+  field_paragraphs:
+    settings:
+      title: Paragraf
+      title_plural: Paragraffer

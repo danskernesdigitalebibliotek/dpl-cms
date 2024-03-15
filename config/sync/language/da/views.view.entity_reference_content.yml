@@ -1,0 +1,42 @@
+label: 'Entity reference - content'
+description: 'Used by content reference fields, such as "field_contents".'
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        type:
+          separator: ', '
+        nid:
+          separator: ', '
+        status:
+          settings:
+            format_custom_false: Afpubliceret
+            format_custom_true: Publiceret
+          separator: ', '
+        title:
+          alter:
+            text: "<div>\r\n<strong>{{ title }}</strong><br/>\r\n<small>{{ nid }} - {{ type }} - ({{ status }})</small>\r\n</div>"
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      arguments:
+        type:
+          exception:
+            title: All
+  entity_reference_1:
+    display_title: 'Entity Reference'

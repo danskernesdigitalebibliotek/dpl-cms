@@ -1,0 +1,18 @@
+settings:
+  allowed_values:
+    -
+      label: '4'
+    -
+      label: '8'
+    -
+      label: '12'
+    -
+      label: '16'
+    -
+      label: '20'
+    -
+      label: '24'
+    -
+      label: '28'
+    -
+      label: '32'

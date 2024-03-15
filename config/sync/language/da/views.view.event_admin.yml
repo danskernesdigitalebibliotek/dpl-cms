@@ -1,0 +1,104 @@
+label: 'Event - admin'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Event - admin'
+      fields:
+        eventseries_id:
+          label: Series
+          alter:
+            text: '{{ eventseries_id }}'
+          separator: ', '
+        id:
+          label: ID
+          separator: ', '
+        title:
+          label: Title
+        recur_type:
+          separator: ', '
+        date__value_1:
+          admin_label: 'Event Instance entity: Event Date time'
+          settings:
+            one_day: 'H:i - {H}:{i}'
+            one_month: 'H:i - {H}:{i}'
+            several_months: 'H:i - {H}:{i}'
+            several_years: 'H:i - {H}:{i}'
+          separator: ', '
+        date__value:
+          label: 'Event Date'
+          alter:
+            text: "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br>\r\n<small>{{ recur_type }}</small>"
+          settings:
+            one_day: 'd M Y'
+            one_month: 'd - {d} M Y '
+            several_months: 'd M - {d} {M} Y'
+            several_years: 'd M Y - {d} {M} {Y}'
+          separator: ', '
+        event_state:
+          label: 'Event state'
+        status:
+          label: 'Publication status'
+          settings:
+            format_custom_false: ␣Afpubliceret
+            format_custom_true: Publiceret
+          separator: ', '
+        edit_eventseries:
+          label: 'Series links'
+          alter:
+            text: '<div class="button button--small">{{ edit_eventseries }}</div>'
+          text: 'Edit series'
+        operations:
+          label: 'Instance links'
+        title_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        combine:
+          expose:
+            label: Search
+            placeholder: 'Search by title, ID..'
+        date__value:
+          expose:
+            label: 'Event Date'
+          group_info:
+            label: 'Date filters'
+            group_items:
+              1:
+                title: 'Show all events'
+              2:
+                title: 'Only upcoming events'
+              3:
+                title: 'Only expired events'
+        status:
+          expose:
+            label: 'Publication status'
+          group_info:
+            label: Publikationsstatus
+            group_items:
+              1:
+                title: Publiceret
+              2:
+                title: Afpubliceret
+  overview:
+    display_title: Page
+    display_options:
+      menu:
+        title: Events

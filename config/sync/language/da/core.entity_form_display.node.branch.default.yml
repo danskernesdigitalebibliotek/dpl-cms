@@ -1,0 +1,9 @@
+third_party_settings:
+  field_group:
+    group_contact_details:
+      label: Kontaktinformation
+content:
+  field_paragraphs:
+    settings:
+      title: Paragraf
+      title_plural: Paragraffer

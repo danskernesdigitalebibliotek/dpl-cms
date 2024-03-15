@@ -1,0 +1,5 @@
+label: "Override the author\t"
+description: "By default, the author is set to the Drupal user that owns the content.<br>\r\nIf you want to override this, with a manual text, you can check this."
+settings:
+  on_label: 'On'
+  off_label: 'Off'

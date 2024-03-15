@@ -1,0 +1,5 @@
+label: 'Image position right'
+description: "This determines whether the image should be positioned to the left or right. \r\nIf left untoggled (default behaviour) the image is positioned to the left, if toggled on, the image will be positioned to the right. "
+settings:
+  on_label: 'On'
+  off_label: 'Off'

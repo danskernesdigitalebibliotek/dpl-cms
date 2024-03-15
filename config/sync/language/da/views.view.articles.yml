@@ -1,0 +1,38 @@
+label: Articles
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: Articles
+      fields:
+        title:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Showing @current_items out of @total results'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+      filters:
+        field_categories_target_id:
+          expose:
+            label: 'Article category'
+  page_1:
+    display_title: Page

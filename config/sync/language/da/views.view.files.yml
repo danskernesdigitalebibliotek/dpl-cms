@@ -1,56 +1,54 @@
-label: Filer
-description: 'Find og håndtér filer.'
+label: Files
+description: 'Find and manage files.'
 display:
   default:
-    display_title: Standard
+    display_title: Default
     display_options:
-      title: Filer
+      title: Files
       fields:
         fid:
           label: Fid
         filename:
-          label: Navn
+          label: Name
           separator: ', '
         filemime:
           label: 'MIME type'
         filesize:
-          label: Størrelse
+          label: Size
         status:
           label: Status
           settings:
-            format_custom_false: Midlertidig
+            format_custom_false: Temporary
             format_custom_true: Permanent
         created:
-          label: Upload-dato
+          label: 'Upload date'
         changed:
-          label: Ændringsdato
+          label: 'Changed date'
         count:
-          label: 'Brugt i'
-          alter:
-            path: 'admin/content/files/usage/{{ fid }}'
+          label: 'Used in'
       pager:
         options:
           tags:
-            next: 'Næste ›'
-            previous: '‹ Forrige'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
-            items_per_page_label: 'Antal elementer'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskydning
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       empty:
         area_text_custom:
-          content: 'Ingen tilgængelige filer.'
+          content: 'No files available.'
       filters:
         filename:
           expose:
-            label: Filnavn
+            label: Filename
         filemime:
           expose:
             label: 'MIME type'
@@ -58,10 +56,10 @@ display:
           expose:
             label: Status
   page_1:
-    display_title: Filoversigt
+    display_title: 'Files overview'
     display_options:
       menu:
-        title: Filer
+        title: Files
   page_2:
     display_title: 'File usage'
     display_options:
@@ -70,22 +68,22 @@ display:
         entity_label:
           label: Entity
         type:
-          label: Entity-type
+          label: 'Entity type'
         module:
-          label: 'Registrerer modul'
+          label: 'Registering module'
         count:
-          label: 'Brug antal'
+          label: 'Use count'
       pager:
         options:
           tags:
-            next: 'Næste ›'
-            previous: '‹ Forrige'
+            next: 'Next ›'
+            previous: '‹ Previous'
           expose:
-            items_per_page_label: 'Antal elementer'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskydning
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       arguments:
         fid:
           exception:
-            title: Alle
-          title: 'Information om brug af filen {{ arguments.fid }}'
+            title: All
+          title: 'File usage information for {{ arguments.fid }}'

@@ -1,69 +1,69 @@
-label: Indhold
-description: 'Find og håndtér indhold.'
+label: Content
+description: 'Find and manage content.'
 display:
   default:
-    display_title: Standard
+    display_title: Default
     display_options:
-      title: Indhold
+      title: Content
       fields:
         title:
-          label: Titel
+          label: Title
         type:
-          label: Indholdstype
+          label: 'Content type'
           separator: ', '
         name:
           label: Forfatter
         status:
           label: Status
           settings:
-            format_custom_false: 'Ikke udgivet'
-            format_custom_true: Udgivet
+            format_custom_false: Afpubliceret
+            format_custom_true: Publiceret
         changed:
-          label: Opdateret
+          label: Updated
         operations:
-          label: Handlinger
+          label: Operations
       pager:
         options:
           tags:
-            next: 'Næste ›'
-            previous: '‹ Forrige'
-            first: '« Første'
-            last: 'Sidste »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       empty:
         area_text_custom:
-          content: 'Der er intet indhold at vise.'
+          content: 'No content available.'
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Indholdstype
+            label: 'Content type'
         status:
           expose:
             label: Status
           group_info:
-            label: Publiceringsstatus
+            label: Publikationsstatus
             group_items:
               1:
-                title: Udgivet
+                title: Publiceret
               2:
-                title: 'Ikke udgivet'
+                title: Afpubliceret
         langcode:
           expose:
-            label: Sprog
+            label: Language
   page_1:
-    display_title: Side
+    display_title: Page
     display_options:
       menu:
-        title: Indhold
+        title: Content
       tab_options:
-        title: Indhold
-        description: 'Find og håndtér indhold'
+        title: Content
+        description: 'Find og håndter indhold'

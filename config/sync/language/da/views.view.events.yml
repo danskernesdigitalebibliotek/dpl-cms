@@ -1,0 +1,42 @@
+label: Events
+description: 'This view displays a list of upcoming events from current day and onwards.'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: Events
+      fields:
+        field_event_date:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Showing @current_items out of @total results'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+  all:
+    display_title: Page
+    display_options:
+      filters:
+        event_categories:
+          expose:
+            label: 'Event category'
+  related:
+    display_title: 'Related events'

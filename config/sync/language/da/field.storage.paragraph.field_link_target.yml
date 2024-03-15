@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: 'Open the linked document in the same window or tab (default)'
+    -
+      label: 'Open the linked document in a new window or tab'

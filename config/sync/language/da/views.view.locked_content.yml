@@ -4,52 +4,52 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Udfør
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Antal elementer'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskydning
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         node_bulk_form:
-          label: 'Formular til bulk-handlinger på indholdselementer'
-          action_title: Handling
+          label: 'Node operations bulk form'
+          action_title: Action
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
-          label: Indholdstype
+          label: 'Content type'
           separator: ', '
         name:
           separator: ', '
         operations:
-          label: Handlinger
+          label: Operations
       filters:
         status:
           expose:
-            label: Publiceringsstatus
+            label: Publikationsstatus
           group_info:
-            label: Publiceringsstatus
+            label: Publikationsstatus
             group_items:
               1:
-                title: Udgivet
+                title: Publiceret
               2:
-                title: 'Ikke udgivet'
+                title: Afpubliceret
         type:
           expose:
-            label: Indholdstype
+            label: 'Content type'
         title:
           expose:
-            label: Titel
+            label: Title
   page_1:
-    display_title: Side
+    display_title: Page

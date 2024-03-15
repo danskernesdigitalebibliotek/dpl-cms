@@ -1,0 +1,4 @@
+label: Publiceret
+settings:
+  on_label: Til
+  off_label: Fra

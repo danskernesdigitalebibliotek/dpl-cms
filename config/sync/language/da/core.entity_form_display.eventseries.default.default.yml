@@ -1,0 +1,17 @@
+third_party_settings:
+  field_group:
+    group_teaser_card:
+      label: 'Teaser card'
+    group_tagging:
+      label: Tagging
+    group_event_details:
+      label: Arrangementsdetaljer
+content:
+  field_event_paragraphs:
+    settings:
+      title: Paragraf
+      title_plural: Paragraffer
+  field_ticket_categories:
+    settings:
+      title: Paragraf
+      title_plural: Paragraffer

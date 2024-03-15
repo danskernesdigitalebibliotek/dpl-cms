@@ -1,0 +1,8 @@
+content:
+  date:
+    settings:
+      date_format: 'Y-m-d\TH:i:s'
+      one_day: 'd F Y'
+      one_month: 'd - {d} F Y'
+      several_months: 'd F - {d} {F} Y'
+      several_years: 'd F Y - {d} {F} {Y}'

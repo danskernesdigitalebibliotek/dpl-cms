@@ -1,0 +1,8 @@
+content:
+  field_hero_title:
+    settings:
+      placeholder: 'Hvis tom, vil sidetitlen blive vist'
+  field_paragraphs:
+    settings:
+      title: Paragraf
+      title_plural: Paragraffer

@@ -1,0 +1,5 @@
+label: 'Display titles'
+description: 'Som default vises titel og manchettekst ikke på indholdstypen sider.  Hvis du vil have dem vist, kan du slå det til her.'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

@@ -1,0 +1,4 @@
+label: 'Vis manchettekster'
+settings:
+  on_label: Til
+  off_label: Fra

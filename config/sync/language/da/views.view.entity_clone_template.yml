@@ -1,14 +1,16 @@
 display:
   default:
-    display_title: Master
     display_options:
+      footer:
+        area_text_custom:
+          content: "<div class=\"admin-item\">\r\n<p>\r\nYou can use existing content templates, to quickly re-use content structures that you have already created.\r\n</p>\r\n<p>\r\nTo create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.\r\n</p>\r\n<p>\r\nOnce you've done this, the template will be shown here.\r\n</p>\r\n</div>"
       exposed_form:
         options:
-          submit_button: Udfør
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         nid:
           separator: ', '
@@ -18,3 +20,27 @@ display:
           separator: ', '
         title:
           separator: ', '
+    display_title: Master
+  block:
+    display_title: Block
+    display_options:
+      fields:
+        type:
+          separator: ', '
+        title:
+          alter:
+            text: '<strong>{{ title__value }}</strong> <small>({{ type }})</small>'
+          separator: ', '
+        entity_clone_template_image__target_id:
+          separator: ', '
+        nid:
+          separator: ', '
+        nothing:
+          alter:
+            text: '<a class="button" href="/entity_clone/node/{{ nid }}">{{ ''Use template''|trans }}</a>'
+  page:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Create from template'
+        description: 'Create Content from a defined template'

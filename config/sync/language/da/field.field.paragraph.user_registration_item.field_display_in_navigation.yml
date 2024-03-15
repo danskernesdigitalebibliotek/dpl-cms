@@ -1,0 +1,5 @@
+label: 'Display in navigation'
+description: 'Enable this option to display a button at the top of the page for easier navigation.'
+settings:
+  on_label: 'On'
+  off_label: 'Off'

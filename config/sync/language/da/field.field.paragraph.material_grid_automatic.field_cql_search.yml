@@ -1,0 +1,2 @@
+label: 'CQL Search'
+description: "This field is for inserting a CQL string based on a search. \r\n\r\nPlease be aware, that it is necessary to copy the exact CQL string, including the quotations. i.e: ( 'harry potter')\r\n\r\nA valid CQL search string can be generated, by performing a query through the advanced search, and copying the CQL string from there. "

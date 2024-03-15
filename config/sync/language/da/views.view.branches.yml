@@ -1,0 +1,18 @@
+label: Biblioteker
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: Branches
+      fields:
+        title:
+          separator: ', '
+      exposed_form:
+        options:
+          submit_button: Anvend
+          reset_button_label: Nulstil
+          exposed_sorts_label: 'Sorter efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+  page:
+    display_title: Side

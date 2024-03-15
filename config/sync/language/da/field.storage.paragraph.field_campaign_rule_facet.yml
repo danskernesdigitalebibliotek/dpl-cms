@@ -1,0 +1,22 @@
+settings:
+  allowed_values:
+    -
+      label: Access
+    -
+      label: 'Children or adult materials'
+    -
+      label: Creators
+    -
+      label: 'Fiction or non-fiction'
+    -
+      label: 'Fictional character'
+    -
+      label: 'Genre and form'
+    -
+      label: 'Main languages'
+    -
+      label: 'Material types'
+    -
+      label: Subjects
+    -
+      label: 'Work types'

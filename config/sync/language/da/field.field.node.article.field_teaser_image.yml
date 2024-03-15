@@ -1,0 +1,2 @@
+label: Teaserbillede
+description: "The teaser fields are used for the card of display.\r\nIf no image has been selected, the text will be shown instead:\r\n\r\n<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\r\n\r\n<hr/>"

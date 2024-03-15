@@ -1,0 +1,41 @@
+label: 'Entity reference - event instance'
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        id:
+          separator: ', '
+        status:
+          settings:
+            format_custom_false: Afpubliceret
+            format_custom_true: Publiceret
+          separator: ', '
+        date__value:
+          settings:
+            one_day: 'd F Y'
+            one_month: 'd - {d} F Y'
+            several_months: 'd F - {d} {F} Y'
+            several_years: 'd F Y - {d} {F} {Y}'
+          separator: ', '
+        title:
+          alter:
+            text: "<div>\r\n<strong>{{ title }}</strong><br/>\r\n<small>{{ id }} - <strong>{{date__value}}</strong> {{\_date__value_1 }} - ({{ status }})</small>\r\n</div>"
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+  entity_reference_1:
+    display_title: 'Entity Reference'

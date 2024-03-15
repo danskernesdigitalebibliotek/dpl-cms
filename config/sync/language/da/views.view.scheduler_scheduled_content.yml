@@ -1,28 +1,29 @@
+label: 'Scheduled Content'
 display:
   default:
     display_options:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ forrige'
-            next: 'næste ›'
-            first: '« første'
-            last: 'sidste »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
         node_bulk_form:
-          action_title: Handling
+          action_title: Action
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
-          label: Indholdstype
+          label: 'Content Type'
           separator: ', '
         name:
           label: Forfatter
@@ -30,50 +31,53 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Udgivet
-            format_custom_false: 'Ikke udgivet'
+            format_custom_true: Publiceret
+            format_custom_false: Afpubliceret
           separator: ', '
         publish_on:
-          label: 'Udgiv den'
+          label: 'Publish on'
           separator: ', '
         unpublish_on:
-          label: 'Afpublicér den'
+          label: 'Unpublish on'
           separator: ', '
         operations:
-          label: Handlinger
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Indholdstype
+            label: 'Content type'
         status:
           expose:
             label: Status
           group_info:
-            label: Publiceringsstatus
+            label: Publikationsstatus
             group_items:
               1:
-                title: Udgivet
+                title: Publiceret
               2:
-                title: 'Ikke udgivet'
+                title: Afpubliceret
         langcode:
           expose:
-            label: Sprog
+            label: Language
+      title: 'Scheduled Content'
     display_title: Master
   overview:
     display_options:
+      menu:
+        title: 'Scheduled Content'
       tab_options:
-        title: Indhold
+        title: Content
   user_page:
     display_options:
       menu:
-        title: Planlagt
+        title: Scheduled
       tab_options:
-        title: Indhold
+        title: Content
       arguments:
         uid:
           exception:
-            title: Alle
-    display_title: Bruger
+            title: All
+    display_title: User
