@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-18 14:23+0100\n"
-"PO-Revision-Date: 2024-03-18 14:23+0100\n"
+"POT-Creation-Date: 2024-03-18 14:52+0100\n"
+"PO-Revision-Date: 2024-03-18 14:52+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -546,7 +546,7 @@ msgstr "Teaser"
 
 msgctxt "core.entity_view_mode.node.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 msgctxt "core.entity_view_mode.paragraph.alternative:label"
 msgid "Alternative"
@@ -558,11 +558,11 @@ msgstr "Gennemse"
 
 msgctxt "core.entity_view_mode.paragraph.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 msgctxt "core.entity_view_mode.path_alias.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 msgctxt "core.entity_view_mode.taxonomy_term.full:label"
 msgid "Taxonomy term page"
@@ -578,7 +578,7 @@ msgstr ""
 
 msgctxt "core.entity_view_mode.user.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 msgctxt "crop.type.focal_point:label"
 msgid "Focal point"
@@ -988,11 +988,11 @@ msgstr ""
 
 msgctxt "field.field.node.page.field_display_titles:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "field.field.node.page.field_display_titles:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgctxt "field.field.node.page.field_hero_title:label"
 msgid "Hero title"
