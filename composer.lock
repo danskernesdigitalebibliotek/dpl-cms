@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c494a95a970fa932ddd842c031d9ed3",
+    "content-hash": "6331ce30e9738e894855e0e988a54b25",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1111,7 +1111,7 @@
             "version": "2024.11.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-13/dist-release-brahma-13.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-495-availability-labels-og-udgaver-pa-vaerkvisningssiden-skal-afgraenses-pa-agency_version-1/dist-ddflsbp-495-availability-labels-og-udgaver-pa-vaerkvisningssiden-skal-afgraenses-pa-agency-version-1.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"

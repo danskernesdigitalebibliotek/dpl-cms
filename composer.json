@@ -39,7 +39,7 @@
                 "version": "2024.11.1",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-13/dist-release-brahma-13.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-495-availability-labels-og-udgaver-pa-vaerkvisningssiden-skal-afgraenses-pa-agency_version-1/dist-ddflsbp-495-availability-labels-og-udgaver-pa-vaerkvisningssiden-skal-afgraenses-pa-agency-version-1.zip",
                     "type": "zip"
                 },
                 "require": {
