@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-18 13:26+0100\n"
-"PO-Revision-Date: 2024-03-18 13:26+0100\n"
+"POT-Creation-Date: 2024-03-18 14:23+0100\n"
+"PO-Revision-Date: 2024-03-18 14:23+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3484,9 +3484,12 @@ msgid ""
 "link will not be displayed, as we do not support multi-levels in the "
 "main menu."
 msgstr ""
+"Du har tilføjet et menupunkt i en sekundær menu. Vær opmærksom på "
+"at menupunktet ikke vil blive vist, da vi ikke understøtter flere "
+"niveauer i hovedmenuen."
 
 msgid "Footer item"
-msgstr ""
+msgstr "Footermenu"
 
 msgid "Name"
 msgstr "Navn"
@@ -3495,7 +3498,7 @@ msgid "content"
 msgstr "indhold"
 
 msgid "If there is no content the item will be removed."
-msgstr ""
+msgstr "Hvis der ikke er indhold i feltet vil blokken blive fjernet."
 
 msgid "Submit"
 msgstr "Indsend"
@@ -3694,7 +3697,7 @@ msgid "Show all"
 msgstr "Vis alle"
 
 msgid "CQL search string"
-msgstr ""
+msgstr "CQL Søgestreng"
 
 msgid "Text value"
 msgstr "Tekstværdi"
@@ -3781,13 +3784,13 @@ msgstr ""
 "afpubliceres automatisk?"
 
 msgid "Get tickets"
-msgstr ""
+msgstr "Hent billetter"
 
 msgid "Updated @count description fields on @entity_type"
 msgstr ""
 
 msgid "(Locked by @username)"
-msgstr ""
+msgstr "(Låst af @username)"
 
 msgid "The material type"
 msgstr ""
