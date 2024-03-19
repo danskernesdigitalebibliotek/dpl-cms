@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-19 15:46+0100\n"
-"PO-Revision-Date: 2024-03-19 15:46+0100\n"
+"POT-Creation-Date: 2024-03-19 16:44+0100\n"
+"PO-Revision-Date: 2024-03-19 16:44+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3859,26 +3859,26 @@ msgstr "Fil dannet på : @destination"
 
 msgctxt "translation handling"
 msgid "Config translations were imported from: @source"
-msgstr ""
+msgstr "Konfigurationsoversættelser blev importeret fra: @source"
 
 msgid "Could not create temporary file."
-msgstr ""
+msgstr "Kunne ikke skabe en midlertidig fil"
 
 msgctxt "translation handling"
 msgid "Config translations could not be imported from: @url"
-msgstr ""
+msgstr "Konfigurationsoversættelser kunne ikke importeres fra: @url"
 
 msgctxt "translation handling"
 msgid "Config translations were imported from: @url"
-msgstr ""
+msgstr "Konfigurationsoversættelser blev importeret fra: @url"
 
 msgctxt "translation handling"
 msgid "Failed to fetch file due to error \"%error\""
-msgstr ""
+msgstr "Kunne ikke hente fil pga fejl \"%error\""
 
 msgctxt "translation handling"
 msgid "Failed to save file due to error \"%error\""
-msgstr ""
+msgstr "Kunne ikke gemme fil pga fejl \"%error\""
 
 msgid "Could not create temp PO file."
 msgstr "Kunne ikke skabe en midlertidig PO-fil."
