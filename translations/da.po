@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-19 17:25+0100\n"
-"PO-Revision-Date: 2024-03-19 17:25+0100\n"
+"POT-Creation-Date: 2024-03-19 19:57+0100\n"
+"PO-Revision-Date: 2024-03-19 19:57+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2940,7 +2940,7 @@ msgstr ""
 
 msgctxt "Global"
 msgid "Screen reader modal description for sms"
-msgstr ""
+msgstr "Skærmlæser modulbeskrivelse til sms"
 
 msgctxt "Fees list"
 msgid "# @materialNumber"
@@ -3469,10 +3469,10 @@ msgstr ""
 "Hvis intet er angivet her, bruges teksten: \"@text\"."
 
 msgid "DPL Filtered Paragraphs"
-msgstr ""
+msgstr "DPL-filtrerede afsnit"
 
 msgid "Filtered paragraphs, embedding views."
-msgstr ""
+msgstr "Filtrerede afsnit, indlejring af visninger."
 
 msgid "Tags"
 msgstr "Tags"
@@ -3907,15 +3907,15 @@ msgstr ""
 
 msgctxt "search_api.server.db:name"
 msgid "DB"
-msgstr ""
+msgstr "DB"
 
 msgctxt "search_api.server.db_search:name"
 msgid "DB Search"
-msgstr ""
+msgstr "DB søgning"
 
 msgctxt "React apps (Global error handling)"
 msgid "Close error message"
-msgstr ""
+msgstr "Luk fejlbesked"
 
 msgid ""
 "<br><br>\"@title\" is being used in configuration. Before you can "
@@ -3927,15 +3927,17 @@ msgid "<br><a href=\":url\">@title</a>"
 msgstr ""
 
 msgid "DPL Protected Nodes"
-msgstr ""
+msgstr "DPL-beskyttede noder"
 
 msgid ""
 "This modules handles protected nodes by checking if a node is being "
 "used as a reference in configuration."
 msgstr ""
+"Disse moduler håndterer beskyttede noder ved at tjekke, om en node "
+"bliver brugt som reference i konfigurationen."
 
 msgid "Make a profile for"
-msgstr ""
+msgstr "Lav en profil for"
 
 msgid "Error warning icon"
 msgstr ""
