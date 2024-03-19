@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-19 12:37+0100\n"
-"PO-Revision-Date: 2024-03-19 12:37+0100\n"
+"POT-Creation-Date: 2024-03-19 14:57+0100\n"
+"PO-Revision-Date: 2024-03-19 14:57+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 msgctxt "block.block.claro_messages:settings:label"
 msgid "Status messages"
-msgstr ""
+msgstr "Status meddelelser"
 
 msgctxt "block.block.claro_page_title:settings:label"
 msgid "Page title"
@@ -82,7 +82,7 @@ msgstr ""
 
 msgctxt "block.block.novel_local_tasks:settings:label"
 msgid "Tabs"
-msgstr ""
+msgstr "Faner"
 
 msgctxt "block.block.novel_messages:settings:label"
 msgid "Status messages"
@@ -90,7 +90,7 @@ msgstr "Statusbeskeder"
 
 msgctxt "block.block.novel_tools:settings:label"
 msgid "Tools"
-msgstr ""
+msgstr "Værktøjer"
 
 msgctxt "core.base_field_override.media.image.status:label"
 msgid "Published"
@@ -230,7 +230,7 @@ msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_event_details:label"
 msgid "Event details"
@@ -258,7 +258,7 @@ msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_event_details:label"
 msgid "Event details"
@@ -290,7 +290,7 @@ msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "core.entity_form_display.node.article.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
@@ -566,7 +566,7 @@ msgstr "Token"
 
 msgctxt "core.entity_view_mode.taxonomy_term.full:label"
 msgid "Taxonomy term page"
-msgstr ""
+msgstr "Taksonomi term side"
 
 msgctxt "core.entity_view_mode.user.compact:label"
 msgid "Compact"
@@ -1038,7 +1038,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_term:label"
 msgid "Term"
-msgstr ""
+msgstr "Term"
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_tags:label"
 msgid "Filter tags"
@@ -1374,11 +1374,11 @@ msgstr ""
 
 msgctxt "field.field.paragraph.user_registration_item.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:label"
 msgid "User registration items"
-msgstr ""
+msgstr "Brugerregistrering elementer"
 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:description"
 msgid "Add a new \"User registration item\" to the list."
@@ -1466,7 +1466,7 @@ msgstr ""
 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:9:label"
 msgid "Work types"
-msgstr ""
+msgstr "Arbejdstyper"
 
 msgctxt "field.storage.paragraph.field_link_target:settings:allowed_values:0:label"
 msgid "Open the linked document in the same window or tab (default)"
@@ -1530,7 +1530,7 @@ msgstr ""
 
 msgctxt "image.style.small_preview:label"
 msgid "Small preview"
-msgstr ""
+msgstr "Lille forhåndsvisning"
 
 msgctxt "language.entity.da:label"
 msgid "Danish"
@@ -1562,7 +1562,7 @@ msgstr ""
 
 msgctxt "media.type.video:label"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgctxt "metatag.metatag_defaults.403:label"
 msgid "403 access denied"
@@ -1574,11 +1574,11 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.403:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.403:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.404:label"
 msgid "404 page not found"
@@ -1586,11 +1586,11 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.404:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.404:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.front:label"
 msgid "Front page"
@@ -1598,11 +1598,11 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.front:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.front:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[side:url]"
 
 msgctxt "metatag.metatag_defaults.global:label"
 msgid "Global"
@@ -1610,11 +1610,11 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.global:tags:canonical_url"
 msgid "[current-page:url]"
-msgstr ""
+msgstr "[nuværende-side:url]"
 
 msgctxt "metatag.metatag_defaults.global:tags:title"
 msgid "[current-page:title] | [site:name]"
-msgstr ""
+msgstr "[nuværende-side:titel] | [side:navn]"
 
 msgctxt "metatag.metatag_defaults.node:label"
 msgid "Content"
@@ -1626,31 +1626,31 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.node:tags:description"
 msgid "[node:summary]"
-msgstr ""
+msgstr "[node:opsummering]"
 
 msgctxt "metatag.metatag_defaults.node:tags:title"
 msgid "[node:title] | [site:name]"
-msgstr ""
+msgstr "[node:titel] | [side:navn]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:label"
 msgid "Taxonomy term"
-msgstr ""
+msgstr "Taksonomi term"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:canonical_url"
 msgid "[term:url]"
-msgstr ""
+msgstr "[term:url]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:description"
 msgid "[term:description]"
-msgstr ""
+msgstr "[term:beskrivelse]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:title"
 msgid "[term:name] | [site:name]"
-msgstr ""
+msgstr "[term:navn] | [site:navn]"
 
 msgctxt "metatag.metatag_defaults.user:label"
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 msgctxt "metatag.metatag_defaults.user:tags:canonical_url"
 msgid "[user:url]"
@@ -1658,11 +1658,11 @@ msgstr ""
 
 msgctxt "metatag.metatag_defaults.user:tags:description"
 msgid "[site:name]"
-msgstr ""
+msgstr "[side:navn]"
 
 msgctxt "metatag.metatag_defaults.user:tags:title"
 msgid "[user:display-name] | [site:name]"
-msgstr ""
+msgstr "[bruger:brugernavn] | [site:navn]"
 
 msgctxt "node.type.article:name"
 msgid "Article"
@@ -1808,7 +1808,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.text_body:label"
 msgid "Text body"
-msgstr ""
+msgstr "Brødtekst"
 
 msgctxt "paragraphs.paragraphs_type.text_body:description"
 msgid "A basic, formatted body of text."
@@ -1816,7 +1816,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.user_registration_item:label"
 msgid "User registration item"
-msgstr ""
+msgstr "Brugerregistrering element"
 
 msgctxt "paragraphs.paragraphs_type.user_registration_item:description"
 msgid ""
@@ -1826,7 +1826,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.user_registration_section:label"
 msgid "User registration section"
-msgstr ""
+msgstr "Brugerregistrering sektion"
 
 msgctxt "paragraphs.paragraphs_type.user_registration_section:description"
 msgid ""
@@ -1836,7 +1836,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.video:label"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgctxt "paragraphs.paragraphs_type.video:description"
 msgid "Enter the URL for the video you want to include."
@@ -1864,7 +1864,7 @@ msgstr ""
 
 msgctxt "system.action.media_unpublish_action:label"
 msgid "Unpublish media"
-msgstr ""
+msgstr "Afpublicer mediet"
 
 msgctxt "system.action.node_break_lock_action:label"
 msgid "Break lock node"
@@ -1900,7 +1900,7 @@ msgstr ""
 
 msgctxt "system.action.node_unpublish_action:label"
 msgid "Unpublish content"
-msgstr ""
+msgstr "Afpublicer indhold"
 
 msgctxt "system.action.taxonomy_term_publish_action:label"
 msgid "Publish taxonomy term"
@@ -1928,7 +1928,7 @@ msgstr ""
 
 msgctxt "system.action.user_unblock_user_action:label"
 msgid "Unblock the selected user(s)"
-msgstr ""
+msgstr "Bloker valgte bruger(e)"
 
 msgctxt "system.maintenance:message"
 msgid ""
@@ -1958,15 +1958,15 @@ msgstr ""
 
 msgctxt "system.menu.main:description"
 msgid "Site section links"
-msgstr ""
+msgstr "Side sektion links"
 
 msgctxt "system.menu.tools:label"
 msgid "Tools"
-msgstr ""
+msgstr "Værktøjer"
 
 msgctxt "system.menu.tools:description"
 msgid "User tool links, often added by modules"
-msgstr ""
+msgstr "Brugerværktøj links, ofte tilføjet via moduler"
 
 msgctxt "system.site:name"
 msgid "DPL CMS"
@@ -2119,6 +2119,9 @@ msgid ""
 "\n"
 "[user:edit-url]"
 msgstr ""
+"[bruger:brugernavn] har ansøgt om en konto\n"
+"\n"
+"[bruger:rediger-url]"
 
 msgctxt "user.mail:status_activated:subject"
 msgid "Account details for [user:display-name] at [site:name] (approved)"
@@ -2238,7 +2241,7 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:name:label"
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:status:label"
 msgid "Status"
@@ -2306,7 +2309,7 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -2506,7 +2509,7 @@ msgstr "Indhold"
 
 msgctxt "views.view.content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.content:display:default:display_options:fields:type:label"
 msgid "Content type"
@@ -2578,7 +2581,7 @@ msgstr ""
 
 msgctxt "views.view.content:display:default:display_options:filters:title:expose:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.content:display:default:display_options:filters:type:expose:label"
 msgid "Content type"
@@ -2646,7 +2649,7 @@ msgstr ""
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -2694,7 +2697,7 @@ msgstr ""
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -2820,7 +2823,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -2902,7 +2905,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -2948,7 +2951,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -2964,7 +2967,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3002,7 +3005,7 @@ msgstr ""
 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3022,7 +3025,7 @@ msgstr ""
 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3082,7 +3085,7 @@ msgstr ""
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:admin_label"
 msgid "Event Instance entity: Event Date time"
@@ -3180,7 +3183,7 @@ msgstr ""
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3196,7 +3199,7 @@ msgstr ""
 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3288,7 +3291,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:default:display_options:fields:filesize:label"
 msgid "Size"
-msgstr ""
+msgstr "Størrelse"
 
 msgctxt "views.view.files:display:default:display_options:fields:status:label"
 msgid "Status"
@@ -3296,7 +3299,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Temporary"
-msgstr ""
+msgstr "Midlertidig"
 
 msgctxt "views.view.files:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Permanent"
@@ -3352,7 +3355,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3464,7 +3467,7 @@ msgstr ""
 
 msgctxt "views.view.locked_content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.locked_content:display:default:display_options:fields:type:label"
 msgid "Content type"
@@ -3496,7 +3499,7 @@ msgstr ""
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3512,7 +3515,7 @@ msgstr ""
 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3584,7 +3587,7 @@ msgstr ""
 
 msgctxt "views.view.media:display:default:display_options:fields:bundle:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.media:display:default:display_options:fields:uid:label"
 msgid "Author"
@@ -3648,7 +3651,7 @@ msgstr ""
 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3668,11 +3671,11 @@ msgstr ""
 
 msgctxt "views.view.media:display:default:display_options:filters:bundle:expose:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.media:display:default:display_options:filters:status:expose:label"
 msgid "True"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.media:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
@@ -3748,7 +3751,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3820,7 +3823,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:widget:display_title"
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 msgctxt "views.view.media_library:display:widget:display_options:arguments:bundle:exception:title"
 msgid "All"
@@ -3832,7 +3835,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:widget:display_options:header:display_link_table:label"
 msgid "Table"
-msgstr ""
+msgstr "Tabel"
 
 msgctxt "views.view.media_library:display:widget_table:display_title"
 msgid "Widget (table)"
@@ -3864,11 +3867,11 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:widget_table:display_options:header:display_link_table:label"
 msgid "Table"
-msgstr ""
+msgstr "Tabel"
 
 msgctxt "views.view.scheduled_jobs:label"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_title"
 msgid "Default"
@@ -3876,7 +3879,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:title"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:jid:label"
 msgid "ID"
@@ -3888,7 +3891,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:type:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:id:label"
 msgid "Job ID"
@@ -3904,7 +3907,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3920,7 +3923,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -3944,7 +3947,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:page_1:display_options:menu:title"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs "
 
 msgctxt "views.view.scheduler_scheduled_content:label"
 msgid "Scheduled Content"
@@ -4028,7 +4031,7 @@ msgstr ""
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -4141,7 +4144,7 @@ msgstr "Find og håndter planlagt indhold"
 
 msgctxt "views.view.taxonomy_term:label"
 msgid "Taxonomy term"
-msgstr ""
+msgstr "Taksonomi term"
 
 msgctxt "views.view.taxonomy_term:description"
 msgid "Content belonging to a certain taxonomy term."
@@ -4173,7 +4176,7 @@ msgstr ""
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -4221,7 +4224,7 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:name:label"
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:label"
 msgid "Status"
@@ -4289,7 +4292,7 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -4305,7 +4308,7 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -4397,7 +4400,7 @@ msgstr ""
 
 msgctxt "views.view.watchdog:display:default:display_options:fields:type:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.watchdog:display:default:display_options:fields:timestamp:label"
 msgid "Date"
@@ -4429,7 +4432,7 @@ msgstr ""
 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -4445,7 +4448,7 @@ msgstr ""
 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -4465,7 +4468,7 @@ msgstr ""
 
 msgctxt "views.view.watchdog:display:default:display_options:filters:type:expose:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "views.view.watchdog:display:default:display_options:filters:severity:expose:label"
 msgid "Severity"
