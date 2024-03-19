@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-18 14:52+0100\n"
-"PO-Revision-Date: 2024-03-18 14:52+0100\n"
+"POT-Creation-Date: 2024-03-19 11:43+0100\n"
+"PO-Revision-Date: 2024-03-19 11:43+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3650,7 +3650,7 @@ msgstr ""
 
 msgctxt "DPL admin UX"
 msgid "Event series"
-msgstr "Arrangementer"
+msgstr "Arrangement(er)"
 
 msgctxt "DPL admin UX"
 msgid ""
@@ -3793,7 +3793,7 @@ msgid "(Locked by @username)"
 msgstr "(Låst af @username)"
 
 msgid "The material type"
-msgstr ""
+msgstr "Materialetype"
 
 msgid ""
 "This is the work ID used to retrieve the material information. "
@@ -3813,19 +3813,19 @@ msgstr ""
 "og systemet vil vise denne type, hvis den er tilgængelig."
 
 msgid "Material Type"
-msgstr ""
+msgstr "Materialetype"
 
 msgid "Select the material type."
 msgstr "Vælg materialetype"
 
 msgid "Work id with type"
-msgstr ""
+msgstr "VærkID med type"
 
 msgid "Event settings"
 msgstr "Arrangementsindstillinger"
 
 msgid "Configure handling of events."
-msgstr ""
+msgstr "Indstillinger for arrangementer"
 
 msgid "DrupalTyped"
 msgstr ""
