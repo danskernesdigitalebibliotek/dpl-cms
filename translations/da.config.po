@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-19 11:43+0100\n"
-"PO-Revision-Date: 2024-03-19 11:43+0100\n"
+"POT-Creation-Date: 2024-03-19 12:00+0100\n"
+"PO-Revision-Date: 2024-03-19 12:00+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 msgctxt "block.block.claro_page_title:settings:label"
 msgid "Page title"
-msgstr ""
+msgstr "Sidetitel"
 
 msgctxt "block.block.claro_primary_local_tasks:settings:label"
 msgid "Primary tabs"
@@ -1696,7 +1696,7 @@ msgstr ""
 
 msgctxt "node.type.page:name"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "paragraphs.paragraphs_type.accordion:label"
 msgid "Accordion"
@@ -2270,7 +2270,7 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:access:label"
 msgid "Last access"
-msgstr ""
+msgstr "Sidste adgang"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:access:settings:future_format"
 msgid "@interval hence"
@@ -2286,19 +2286,19 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -2370,7 +2370,7 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:menu:title"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:menu:description"
 msgid "Find and manage people - for admin or sub-admin"
@@ -2378,7 +2378,7 @@ msgstr ""
 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:tab_options:title"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:tab_options:description"
 msgid "Manage user accounts, roles, and permissions."
@@ -2450,7 +2450,7 @@ msgstr ""
 
 msgctxt "views.view.articles:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.branches:label"
 msgid "Branches"
@@ -2538,19 +2538,19 @@ msgstr ""
 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -2741,15 +2741,15 @@ msgstr ""
 
 msgctxt "views.view.entity_clone_template:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.entity_clone_template:display:page:display_options:menu:title"
 msgid "Create from template"
-msgstr ""
+msgstr "Opret fra skabelon"
 
 msgctxt "views.view.entity_clone_template:display:page:display_options:menu:description"
 msgid "Create Content from a defined template"
-msgstr ""
+msgstr "Opret indhold ud fra en foruddefineret skabelon"
 
 msgctxt "views.view.entity_reference_content:label"
 msgid "Entity reference - content"
@@ -2786,7 +2786,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle - "
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -2868,7 +2868,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr " - Alle - "
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3150,11 +3150,11 @@ msgstr ""
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3234,7 +3234,7 @@ msgstr "Afpubliceret"
 
 msgctxt "views.view.event_admin:display:overview:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.event_admin:display:overview:display_options:menu:title"
 msgid "Events"
@@ -3306,11 +3306,11 @@ msgstr ""
 
 msgctxt "views.view.files:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3318,7 +3318,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3366,7 +3366,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_1:display_options:menu:title"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 msgctxt "views.view.files:display:page_2:display_title"
 msgid "File usage"
@@ -3398,11 +3398,11 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3410,7 +3410,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3466,11 +3466,11 @@ msgstr ""
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3538,7 +3538,7 @@ msgstr ""
 
 msgctxt "views.view.locked_content:display:page_1:display_options:menu:title"
 msgid "Locked content"
-msgstr ""
+msgstr "Låst indhold"
 
 msgctxt "views.view.media:label"
 msgid "Media"
@@ -3594,19 +3594,19 @@ msgstr ""
 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3614,7 +3614,7 @@ msgstr ""
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr " - Alle - "
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3674,11 +3674,11 @@ msgstr ""
 
 msgctxt "views.view.media:display:media_page_list:display_title"
 msgid "Media"
-msgstr ""
+msgstr "Medier"
 
 msgctxt "views.view.media:display:media_page_list:display_options:menu:title"
 msgid "Media"
-msgstr ""
+msgstr "Medier"
 
 msgctxt "views.view.media_library:label"
 msgid "Media library"
@@ -3702,11 +3702,11 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3714,7 +3714,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle - "
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -3746,7 +3746,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:default:display_options:sorts:created:expose:label"
 msgid "Newest first"
-msgstr ""
+msgstr "Nyeste først"
 
 msgctxt "views.view.media_library:display:default:display_options:sorts:name:expose:label"
 msgid "Name (A-Z)"
@@ -3770,7 +3770,7 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.media_library:display:page:display_options:fields:media_bulk_form:action_title"
 msgid "Action"
@@ -3778,15 +3778,15 @@ msgstr ""
 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:alter:text"
 msgid "Edit {{ name }}"
-msgstr ""
+msgstr "Rediger {{ name }}"
 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:alter:alt"
 msgid "Edit {{ name }}"
-msgstr ""
+msgstr "Rediger {{ name }}"
 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:text"
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 msgctxt "views.view.media_library:display:page:display_options:fields:delete_media:alter:text"
 msgid "Delete {{ name }}"
@@ -3878,7 +3878,7 @@ msgstr ""
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:next:label"
 msgid "Next execution"
-msgstr ""
+msgstr "Næste hændelse"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3986,19 +3986,19 @@ msgstr ""
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:next"
 msgid "next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:previous"
 msgid "‹ previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:first"
 msgid "« first"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:last"
 msgid "last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -4094,7 +4094,7 @@ msgstr ""
 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:arguments:uid:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:display_description"
 msgid ""
@@ -4111,15 +4111,15 @@ msgstr ""
 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:menu:title"
 msgid "Scheduled"
-msgstr ""
+msgstr "Planlagt"
 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:tab_options:title"
 msgid "Content"
-msgstr ""
+msgstr "Indhold"
 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:tab_options:description"
 msgid "Find and manage scheduled content"
-msgstr ""
+msgstr "Find og håndter planlagt indhold"
 
 msgctxt "views.view.taxonomy_term:label"
 msgid "Taxonomy term"
@@ -4139,7 +4139,7 @@ msgstr ""
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -4179,7 +4179,7 @@ msgstr ""
 
 msgctxt "views.view.taxonomy_term:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.user_admin_people:label"
 msgid "People"
@@ -4235,7 +4235,7 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:access:label"
 msgid "Last access"
-msgstr ""
+msgstr "Sidste adgang"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:access:settings:future_format"
 msgid "@interval hence"
@@ -4251,19 +4251,19 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
