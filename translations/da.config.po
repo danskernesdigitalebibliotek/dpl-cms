@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-20 16:20+0100\n"
-"PO-Revision-Date: 2024-03-20 16:20+0100\n"
+"POT-Creation-Date: 2024-03-20 16:32+0100\n"
+"PO-Revision-Date: 2024-03-20 16:32+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2483,7 +2483,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -2989,7 +2989,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3071,7 +3071,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3133,7 +3133,7 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3189,7 +3189,7 @@ msgstr ""
 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3367,7 +3367,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3523,7 +3523,7 @@ msgstr "‹ Forrige"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3615,7 +3615,7 @@ msgstr "‹ Forrige"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3683,7 +3683,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3819,7 +3819,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -3903,11 +3903,11 @@ msgstr "Standard"
 
 msgctxt "views.view.media_library:display:default:display_options:title"
 msgid "Media"
-msgstr ""
+msgstr "Medie"
 
 msgctxt "views.view.media_library:display:default:display_options:fields:media_bulk_form:action_title"
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:tags:first"
 msgid "« First"
@@ -3919,7 +3919,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -4091,7 +4091,7 @@ msgstr "Næste hændelse"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -4350,7 +4350,7 @@ msgstr "Standard"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -4482,7 +4482,7 @@ msgstr "Sidste »"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr "Items per side"
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -4622,7 +4622,7 @@ msgstr ""
 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"

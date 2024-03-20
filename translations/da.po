@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-20 16:20+0100\n"
-"PO-Revision-Date: 2024-03-20 16:20+0100\n"
+"POT-Creation-Date: 2024-03-20 16:32+0100\n"
+"PO-Revision-Date: 2024-03-20 16:32+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -96,13 +96,13 @@ msgid "Your loans"
 msgstr "Lån"
 
 msgid "React DDB Library"
-msgstr "React DPL Library"
+msgstr "React DPL Bibliotek"
 
 msgid "Library is present"
-msgstr "Library er "
+msgstr "Bibliotek er"
 
 msgid "DDB React library is missing (@dir)"
-msgstr "DPL React library mangler (@dir) "
+msgstr "DPL React bibliotek mangler (@dir) "
 
 msgctxt "Search Result"
 msgid "+ more filters"
@@ -727,7 +727,7 @@ msgid "General Settings"
 msgstr "Generelle indstillinger"
 
 msgid "DPL Library Agency"
-msgstr "DPL Library Agency"
+msgstr "DPL Biblioteks Agency"
 
 msgid "Module for handling library agency configuration and functionality"
 msgstr "Modul til at håndtere indstillinger for biblioteket og funktionalitet"
@@ -785,7 +785,7 @@ msgid "Provides example content for demo sites."
 msgstr "Indeholder eksempelindhold til demosider."
 
 msgid "DPL Library Token"
-msgstr "DPL biblioteks token"
+msgstr "DPL Biblioteks token"
 
 msgid "Handles fetching and storage of a library token"
 msgstr "Håndterer hentning og lagring af en biblioteks token"
@@ -1611,7 +1611,7 @@ msgstr "Forfattere"
 
 msgctxt "Work Page"
 msgid "You don't live in the municipality where this library is located."
-msgstr "Du er ikke bosiddende i kommunen som dette bibliotek er tilknyttet"
+msgstr "Du er ikke bosiddende i kommunen som dette bibliotek er tilknyttet."
 
 msgctxt "React apps (Global error handling)"
 msgid "Close"
