@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-20 16:09+0100\n"
-"PO-Revision-Date: 2024-03-20 16:09+0100\n"
+"POT-Creation-Date: 2024-03-20 16:17+0100\n"
+"PO-Revision-Date: 2024-03-20 16:17+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2698,10 +2698,10 @@ msgid "Free"
 msgstr "Gratis"
 
 msgid "DPL Paragraphs"
-msgstr "DPL Paragraphs"
+msgstr "DPL Paragraffer"
 
 msgid "Tweaks to various DPL paragraphs"
-msgstr "Ændringer til forskellige DPL paragraphs"
+msgstr "Ændringer til forskellige DPL paragraffer"
 
 msgid "Admin"
 msgstr "Administrator"
