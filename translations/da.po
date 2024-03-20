@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-19 19:57+0100\n"
-"PO-Revision-Date: 2024-03-19 19:57+0100\n"
+"POT-Creation-Date: 2024-03-20 16:09+0100\n"
+"PO-Revision-Date: 2024-03-20 16:09+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3469,10 +3469,10 @@ msgstr ""
 "Hvis intet er angivet her, bruges teksten: \"@text\"."
 
 msgid "DPL Filtered Paragraphs"
-msgstr "DPL-filtrerede afsnit"
+msgstr "DPL Filtrerede paragraffer"
 
 msgid "Filtered paragraphs, embedding views."
-msgstr "Filtrerede afsnit, indlejring af visninger."
+msgstr "Filtrerede paragraffer, indlejring af visninger."
 
 msgid "Tags"
 msgstr "Tags"
@@ -3911,7 +3911,7 @@ msgstr "DB"
 
 msgctxt "search_api.server.db_search:name"
 msgid "DB Search"
-msgstr "DB søgning"
+msgstr "DB Søgning"
 
 msgctxt "React apps (Global error handling)"
 msgid "Close error message"
