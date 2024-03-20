@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-20 16:32+0100\n"
-"PO-Revision-Date: 2024-03-20 16:32+0100\n"
+"POT-Creation-Date: 2024-03-20 16:43+0100\n"
+"PO-Revision-Date: 2024-03-20 16:43+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3384,7 +3384,7 @@ msgid "Next"
 msgstr "Næste"
 
 msgid "Events"
-msgstr "Begivenheder"
+msgstr "Arrangementer"
 
 msgid "Address"
 msgstr "Adresse"
@@ -3903,7 +3903,7 @@ msgstr "Default"
 
 msgctxt "search_api.index.events:name"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 msgctxt "search_api.server.db:name"
 msgid "DB"
