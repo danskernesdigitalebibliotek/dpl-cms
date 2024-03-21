@@ -177,8 +177,7 @@
     },
     "scripts": {
         "post-drupal-scaffold-cmd": [
-            "[[ ! -d /app/web/sites/default/files/modules_local ]] && mkdir -p /app/web/sites/default/files/modules_local || exit 0",
-            "[[ ! -L /app/web/modules/local ]] && ln -s /app/web/sites/default/files/modules_local /app/web/modules/local || exit 0"
+
         ]
     },
     "extra": {

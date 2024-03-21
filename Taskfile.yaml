@@ -1,0 +1,65 @@
+version: "3"
+
+dotenv: [".task.env"]
+
+env:
+  SKIP_LANGUAGE_IMPORT: false
+  DRUSH_EXEC: "./vendor/bin/drush"
+
+tasks:
+  drupal:cache-clear:
+    cmds:
+      - ${DRUSH_EXEC} cache:rebuild -y
+
+  drupal:enable-dev-tools:
+    desc: Enable dev modules and settings, which are not to be used in Prod. They are config-ignored
+    cmds:
+      - ${DRUSH_EXEC} install -y devel dpl_example_content field_ui uuid_url views_ui dblog
+
+  drupal:create-users:
+    desc: Create test users, with test roles
+    cmds:
+      - ${DRUSH_EXEC} user:create editor --password="test"
+      - ${DRUSH_EXEC} user:role:add 'editor' editor
+
+      - ${DRUSH_EXEC} user:create administrator --password="test"
+      - ${DRUSH_EXEC} user:role:add 'administrator' administrator
+
+      - ${DRUSH_EXEC} user:create mediator --password="test"
+      - ${DRUSH_EXEC} user:role:add 'mediator' mediator
+
+      - ${DRUSH_EXEC} user:create local_administrator --password="test"
+      - ${DRUSH_EXEC} user:role:add 'local_administrator' local_administrator
+
+      - ${DRUSH_EXEC} user:create patron --password="test"
+      - ${DRUSH_EXEC} user:role:add 'patron' patron
+
+  drupal:update:
+    desc: Install/update composer dependencies
+    cmds:
+      - cp -n .env.example .env || true
+      - composer install
+      - composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
+      - $(cd dev-scripts/dpl-react; composer install)
+  drupal:locale:
+    desc: Update translation strings
+    cmds:
+      - |
+        if [ "${SKIP_LANGUAGE_IMPORT}" == true ]; then
+          echo "Skipping language import due to SKIP_LANGUAGE_IMPORT environment variable"
+        else
+          ${DRUSH_EXEC} locale-check
+          ${DRUSH_EXEC} locale-update
+          ${DRUSH_EXEC} dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
+        fi
+  drupal:reset:
+    desc: Clean install the instance
+    cmds:
+      - task -t Taskfile.yaml composer:update
+      - ${DRUSH_EXEC} site-install --existing-config -y
+      - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
+      - task -t Taskfile.yaml drupal:locale
+      - task -t Taskfile.yaml drupal:cache-clear
+      - task -t Taskfile.yaml drupal:enable-dev-tools
+      - task -t Taskfile.yaml drupal:create-users
+      - ${DRUSH_EXEC} user-login
