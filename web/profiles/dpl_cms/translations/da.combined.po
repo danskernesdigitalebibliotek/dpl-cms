@@ -99,15 +99,15 @@ msgstr "Lån"
 
 #: 
 msgid "React DDB Library"
-msgstr "React DPL Library"
+msgstr "React DPL Bibliotek"
 
 #: 
 msgid "Library is present"
-msgstr "Library er "
+msgstr "Bibliotek er"
 
 #: 
 msgid "DDB React library is missing (@dir)"
-msgstr "DPL React library mangler (@dir) "
+msgstr "DPL React bibliotek mangler (@dir) "
 
 #: 
 msgctxt "Search Result"
@@ -834,7 +834,7 @@ msgstr "Generelle indstillinger"
 
 #: 
 msgid "DPL Library Agency"
-msgstr "DPL Library Agency"
+msgstr "DPL Biblioteks Agency"
 
 #: 
 msgid "Module for handling library agency configuration and functionality"
@@ -906,7 +906,7 @@ msgstr "Indeholder eksempelindhold til demosider."
 
 #: 
 msgid "DPL Library Token"
-msgstr "DPL biblioteks token"
+msgstr "DPL Biblioteks token"
 
 #: 
 msgid "Handles fetching and storage of a library token"
@@ -1857,7 +1857,7 @@ msgstr "Forfattere"
 #: 
 msgctxt "Work Page"
 msgid "You don't live in the municipality where this library is located."
-msgstr "Du er ikke bosiddende i kommunen som dette bibliotek er tilknyttet"
+msgstr "Du er ikke bosiddende i kommunen som dette bibliotek er tilknyttet."
 
 #: 
 msgctxt "React apps (Global error handling)"
@@ -1892,7 +1892,7 @@ msgstr "Indlæser...Fornyelsen af dit lån gik iggen igennem"
 #: 
 msgctxt "Create patron"
 msgid "Select pickup location in the select"
-msgstr "Vælg afhentningssted"
+msgstr "Vælg dit standard afhentningssted. Du kan vælge et andet afhentningssted når du foretager en reservering."
 
 #: 
 msgctxt "Create patron"
@@ -2241,12 +2241,12 @@ msgstr "Indstil interesseperioder. Formatet skal være [antal dage]-[label]. Nye
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Default interest period for reservation"
-msgstr "Default interesseperiode for reserveringer"
+msgstr "Standard interesseperiode for reserveringer"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Set the default interest period for reservations."
-msgstr "Indstil default interesseperiode for reserveringer"
+msgstr "Indstil standard interesseperiode for reserveringer"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -2256,7 +2256,7 @@ msgstr "Interesseperioden @error matcher ikke formatet [dage]-[label]."
 #: 
 msgctxt "Library Agency Configuration"
 msgid "The default interest period should be set to a value in \"Interest periods for reservation\" field."
-msgstr "Default interesseperiode skal indstilles i feltet \"Default interesseperiode for reserveringer\"."
+msgstr "Standard interesseperiode skal indstilles i feltet \"Standard interesseperiode for reserveringer\"."
 
 #: 
 msgctxt "Patron menu"
@@ -3119,11 +3119,11 @@ msgstr "Gratis"
 
 #: 
 msgid "DPL Paragraphs"
-msgstr "DPL Paragraphs"
+msgstr "DPL Paragraffer"
 
 #: 
 msgid "Tweaks to various DPL paragraphs"
-msgstr "Ændringer til forskellige DPL paragraphs"
+msgstr "Ændringer til forskellige DPL paragraffer"
 
 #: 
 msgid "Admin"
@@ -3399,7 +3399,7 @@ msgstr "Din reservering er blevet ændret"
 #: 
 msgctxt "Global"
 msgid "Screen reader modal description for email"
-msgstr ""
+msgstr "Skærmlæser modulbeskrivelse for email"
 
 #: 
 msgctxt "Global"
@@ -3414,7 +3414,7 @@ msgstr ""
 #: 
 msgctxt "Global"
 msgid "Screen reader modal description for sms"
-msgstr ""
+msgstr "Skærmlæser modulbeskrivelse til sms"
 
 #: 
 msgctxt "Fees list"
@@ -3589,7 +3589,7 @@ msgstr "Indstil hvilke profiler der skal anvendes i hvilken kontekst."
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Default profile"
-msgstr "Default profil"
+msgstr "Standardprofil"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -3920,7 +3920,7 @@ msgstr "Næste"
 
 #: 
 msgid "Events"
-msgstr "Begivenheder"
+msgstr "Arrangementer"
 
 #: 
 msgid "Address"
@@ -4002,11 +4002,11 @@ msgstr "Definer hvilken tekst der skal vises på knappen til betalingssiden. Hvi
 
 #: 
 msgid "DPL Filtered Paragraphs"
-msgstr ""
+msgstr "DPL Filtrerede paragraffer"
 
 #: 
 msgid "Filtered paragraphs, embedding views."
-msgstr ""
+msgstr "Filtrerede paragraffer, indlejring af visninger."
 
 #: 
 msgid "Tags"
@@ -4019,11 +4019,11 @@ msgstr "Vis alle"
 #: 
 msgctxt "DPL admin UX"
 msgid "You have added a menu link with a parent. Please notice that this menu link will not be displayed, as we do not support multi-levels in the main menu."
-msgstr ""
+msgstr "Du har tilføjet et menupunkt i en sekundær menu. Vær opmærksom på at menupunktet ikke vil blive vist, da vi ikke understøtter flere niveauer i hovedmenuen."
 
 #: 
 msgid "Footer item"
-msgstr ""
+msgstr "Footermenu"
 
 #: 
 msgid "Name"
@@ -4035,7 +4035,7 @@ msgstr "indhold"
 
 #: 
 msgid "If there is no content the item will be removed."
-msgstr ""
+msgstr "Hvis der ikke er indhold i feltet vil blokken blive fjernet."
 
 #: 
 msgid "Submit"
@@ -4110,15 +4110,15 @@ msgstr "Total @total kr."
 
 #: 
 msgid "The \".version\" file does not have a valid JSON format."
-msgstr ""
+msgstr "\".version\" filen har ikke et validt JSON format."
 
 #: 
 msgid "The \".version\" file does not contain information about the CMS version."
-msgstr ""
+msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
 
 #: 
 msgid "Not found, this could be due to this environment being a PR environment."
-msgstr ""
+msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
 
 #: 
 msgid "CMS release version"
@@ -4136,7 +4136,7 @@ msgstr "Ingen materialer kan fornys"
 #: 
 msgctxt "OpenId Connect Settings"
 msgid "Unable to retrieve token from Adgangsplatformen. Please check if the provided Agency ID is correct."
-msgstr ""
+msgstr "Kan ikke hente token fra Adgangsplatformen. Tjek venligst, om det angivne Agency ID er korrekt."
 
 #: 
 msgctxt "Global"
@@ -4161,7 +4161,7 @@ msgstr "Indlæser..."
 #: 
 msgctxt "Global"
 msgid "The phone number must be 6 to 15 characters in length and should be comprised solely of numbers or begin with a +"
-msgstr ""
+msgstr "Mobilnummeret skal være mellem 6 og 15 cifre "
 
 #: 
 msgctxt "Global"
@@ -4175,17 +4175,17 @@ msgstr "Du er i reserveringskø"
 
 #: 
 msgid "Make sure that user is detected as registered after registration"
-msgstr ""
+msgstr "Tjek at brugeren er oprettet efter registrering"
 
 #: 
 msgctxt "DPL admin UX"
 msgid "Event series"
-msgstr "Arrangementsserier"
+msgstr "Arrangement(er)"
 
 #: 
 msgctxt "DPL admin UX"
 msgid "Use event series to create event instances - you can use series, both to create reoccurring events, and single events."
-msgstr "Brug arrangementsserier til at oprette arrangementer - du kan bruge serier både til at oprette gentagende arrangementer og enkeltstående arrangementer."
+msgstr "Brug denne paragraf til at oprette arrangementer - du kan både oprette gentagende arrangementer og enkeltstående arrangementer."
 
 #: 
 msgctxt "DPL admin UX"
@@ -4236,7 +4236,7 @@ msgstr "Vis alle"
 
 #: 
 msgid "CQL search string"
-msgstr ""
+msgstr "CQL Søgestreng"
 
 #: 
 msgid "Text value"
@@ -4280,11 +4280,11 @@ msgstr "Side til brugeroprettelse. \n"
 
 #: 
 msgid "DPL static content"
-msgstr ""
+msgstr "DPL fast indhold"
 
 #: 
 msgid "Provides static content for new library sites."
-msgstr ""
+msgstr "Sørger for faste sider på nye bibliotekshjemmesider."
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -4297,7 +4297,10 @@ msgid "The link with information about opening hours. <br>\n"
 "                                         You can add a relative url (e.g. /takster). <br>\n"
 "                                         You can search for an internal url. <br>\n"
 "                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr ""
+msgstr "Link til information om åbningstider. <br>\n"
+"                                         Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
+"                                         Du kan søge efter en intern URL. <br>\n"
+"                                         Du kan tilføje en ekstern URL (begyndende med \"http://\" eller \"https://\")."
 
 #: 
 msgctxt "DPL event"
@@ -4321,19 +4324,19 @@ msgstr "Hvor længe skal der gå fra et arrangement er afholdt, til det skal afp
 
 #: 
 msgid "Get tickets"
-msgstr ""
+msgstr "Hent billetter"
 
 #: 
 msgid "Updated @count description fields on @entity_type"
-msgstr ""
+msgstr "Opdaterede @count beskrivelsesfelter på @entity_type"
 
 #: 
 msgid "(Locked by @username)"
-msgstr ""
+msgstr "(Låst af @username)"
 
 #: 
 msgid "The material type"
-msgstr ""
+msgstr "Materialetype"
 
 #: 
 msgid "This is the work ID used to retrieve the material information. Example: work-of:870970-basis:136336282.\n"
@@ -4344,7 +4347,7 @@ msgstr "Dette er det VærkID som anvendes til at hente informationer om værket.
 
 #: 
 msgid "Material Type"
-msgstr ""
+msgstr "Materialetype"
 
 #: 
 msgid "Select the material type."
@@ -4352,7 +4355,7 @@ msgstr "Vælg materialetype"
 
 #: 
 msgid "Work id with type"
-msgstr ""
+msgstr "VærkID med type"
 
 #: 
 msgid "Event settings"
@@ -4360,15 +4363,15 @@ msgstr "Arrangementsindstillinger"
 
 #: 
 msgid "Configure handling of events."
-msgstr ""
+msgstr "Indstillinger for arrangementer"
 
 #: 
 msgid "DrupalTyped"
-msgstr ""
+msgstr "DrupelTyped"
 
 #: 
 msgid "Better, faster, stronger types"
-msgstr ""
+msgstr "Bedre, hurtigere, stærkere typer"
 
 #: 
 msgid "Opening hours"
@@ -4377,133 +4380,133 @@ msgstr "Åbningstider"
 #: 
 msgctxt "translation handling"
 msgid "Could not create PO file: @destination due to error \"%error\""
-msgstr ""
+msgstr "Kunne ikke danne en PO fil: @destination pga fejlen \"%error\""
 
 #: 
 msgctxt "translation handling"
 msgid "File created on: @destination"
-msgstr ""
+msgstr "Fil dannet på : @destination"
 
 #: 
 msgctxt "translation handling"
 msgid "Config translations were imported from: @source"
-msgstr ""
+msgstr "Konfigurationsoversættelser blev importeret fra: @source"
 
 #: 
 msgid "Could not create temporary file."
-msgstr ""
+msgstr "Kunne ikke skabe en midlertidig fil"
 
 #: 
 msgctxt "translation handling"
 msgid "Config translations could not be imported from: @url"
-msgstr ""
+msgstr "Konfigurationsoversættelser kunne ikke importeres fra: @url"
 
 #: 
 msgctxt "translation handling"
 msgid "Config translations were imported from: @url"
-msgstr ""
+msgstr "Konfigurationsoversættelser blev importeret fra: @url"
 
 #: 
 msgctxt "translation handling"
 msgid "Failed to fetch file due to error \"%error\""
-msgstr ""
+msgstr "Kunne ikke hente fil pga fejl \"%error\""
 
 #: 
 msgctxt "translation handling"
 msgid "Failed to save file due to error \"%error\""
-msgstr ""
+msgstr "Kunne ikke gemme fil pga fejl \"%error\""
 
 #: 
 msgid "Could not create temp PO file."
-msgstr ""
+msgstr "Kunne ikke skabe en midlertidig PO-fil."
 
 #: 
 msgctxt "translation handling"
 msgid "Could not locate temp PO file."
-msgstr ""
+msgstr "Kunne ikke lokalisere midlertidig PO-fil."
 
 #: 
 msgid "DPL PO"
-msgstr ""
+msgstr "DPL PO"
 
 #: 
 msgid "PO file handling. Export/import, splitting etc."
-msgstr ""
+msgstr "PO filhåndtering. Export/Import, opdeling etc."
 
 #: 
 msgctxt "block.block.claro_breadcrumbs:settings:label"
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Brødkrummer"
 
 #: 
 msgctxt "block.block.claro_content:settings:label"
 msgid "Main page content"
-msgstr ""
+msgstr "Forsideindhold"
 
 #: 
 msgctxt "block.block.claro_local_actions:settings:label"
 msgid "Primary admin actions"
-msgstr ""
+msgstr "Primære administratorhandlinger"
 
 #: 
 msgctxt "block.block.claro_messages:settings:label"
 msgid "Status messages"
-msgstr ""
+msgstr "Status meddelelser"
 
 #: 
 msgctxt "block.block.claro_page_title:settings:label"
 msgid "Page title"
-msgstr ""
+msgstr "Sidetitel"
 
 #: 
 msgctxt "block.block.claro_primary_local_tasks:settings:label"
 msgid "Primary tabs"
-msgstr ""
+msgstr "Primære tabs"
 
 #: 
 msgctxt "block.block.claro_secondary_local_tasks:settings:label"
 msgid "Secondary tabs"
-msgstr ""
+msgstr "Sekundære tabs"
 
 #: 
 msgctxt "block.block.gin_breadcrumbs:settings:label"
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Brødkrummer"
 
 #: 
 msgctxt "block.block.gin_content:settings:label"
 msgid "Main page content"
-msgstr ""
+msgstr "Forsideindhold"
 
 #: 
 msgctxt "block.block.gin_local_actions:settings:label"
 msgid "Primary admin actions"
-msgstr ""
+msgstr "Primære administratorhandlinger"
 
 #: 
 msgctxt "block.block.gin_messages:settings:label"
 msgid "Status messages"
-msgstr ""
+msgstr "Statusbeskeder"
 
 #: 
 msgctxt "block.block.gin_page_title:settings:label"
 msgid "Page title"
-msgstr ""
+msgstr "Sidetitel"
 
 #: 
 msgctxt "block.block.gin_primary_local_tasks:settings:label"
 msgid "Primary tabs"
-msgstr ""
+msgstr "Primære tabs"
 
 #: 
 msgctxt "block.block.gin_secondary_local_tasks:settings:label"
 msgid "Secondary tabs"
-msgstr ""
+msgstr "Sekundære tabs"
 
 #: 
 msgctxt "block.block.novel_admin:settings:label"
 msgid "Administration"
-msgstr ""
+msgstr "Administration"
 
 #: 
 msgctxt "block.block.novel_branding:settings:label"
@@ -4513,22 +4516,22 @@ msgstr ""
 #: 
 msgctxt "block.block.novel_local_actions:settings:label"
 msgid "Primary admin actions"
-msgstr ""
+msgstr "Primære administratorhandlinger"
 
 #: 
 msgctxt "block.block.novel_local_tasks:settings:label"
 msgid "Tabs"
-msgstr ""
+msgstr "Faner"
 
 #: 
 msgctxt "block.block.novel_messages:settings:label"
 msgid "Status messages"
-msgstr ""
+msgstr "Statusbeskeder"
 
 #: 
 msgctxt "block.block.novel_tools:settings:label"
 msgid "Tools"
-msgstr ""
+msgstr "Værktøjer"
 
 #: 
 msgctxt "core.base_field_override.media.image.status:label"
@@ -4628,47 +4631,47 @@ msgstr "d. M Y"
 #: 
 msgctxt "core.date_format.fallback:label"
 msgid "Fallback date format"
-msgstr ""
+msgstr "Fallback datoformat"
 
 #: 
 msgctxt "core.date_format.html_date:label"
 msgid "HTML Date"
-msgstr ""
+msgstr "HTML Dato"
 
 #: 
 msgctxt "core.date_format.html_datetime:label"
 msgid "HTML Datetime"
-msgstr ""
+msgstr "HTML Dato"
 
 #: 
 msgctxt "core.date_format.html_month:label"
 msgid "HTML Month"
-msgstr ""
+msgstr "HTML Måned"
 
 #: 
 msgctxt "core.date_format.html_time:label"
 msgid "HTML Time"
-msgstr ""
+msgstr "HTML Tidspunkt"
 
 #: 
 msgctxt "core.date_format.html_week:label"
 msgid "HTML Week"
-msgstr ""
+msgstr "HTML Uge"
 
 #: 
 msgctxt "core.date_format.html_year:label"
 msgid "HTML Year"
-msgstr ""
+msgstr "HTML År"
 
 #: 
 msgctxt "core.date_format.html_yearless_date:label"
 msgid "HTML Yearless date"
-msgstr ""
+msgstr "HTML Årstalsfri dato"
 
 #: 
 msgctxt "core.date_format.long:label"
 msgid "Default long date"
-msgstr ""
+msgstr "Standard lang dato"
 
 #: 
 msgctxt "core.date_format.long:pattern"
@@ -4678,7 +4681,7 @@ msgstr "l, F j, Y - H:i"
 #: 
 msgctxt "core.date_format.medium:label"
 msgid "Default medium date"
-msgstr ""
+msgstr "Standard mellem dato"
 
 #: 
 msgctxt "core.date_format.medium:pattern"
@@ -4688,7 +4691,7 @@ msgstr "D, m/d/Y - H:i"
 #: 
 msgctxt "core.date_format.short:label"
 msgid "Default short date"
-msgstr ""
+msgstr "Standard kort dato"
 
 #: 
 msgctxt "core.date_format.short:pattern"
@@ -4703,7 +4706,7 @@ msgstr "Teaser card"
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_event_details:label"
@@ -4738,7 +4741,7 @@ msgstr "Teaser card"
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_event_details:label"
@@ -4778,7 +4781,7 @@ msgstr "Teaser card"
 #: 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "core.entity_form_display.node.article.default:content:field_paragraphs:settings:title"
@@ -4808,17 +4811,17 @@ msgstr "Paragraffer"
 #: 
 msgctxt "core.entity_form_display.node.campaign.default:content:field_campaign_rules:settings:title"
 msgid "Paragraph"
-msgstr "Paragraph"
+msgstr "Paragraf"
 
 #: 
 msgctxt "core.entity_form_display.node.campaign.default:content:field_campaign_rules:settings:title_plural"
 msgid "Paragraphs"
-msgstr "Paragraphs"
+msgstr "Paragraffer"
 
 #: 
 msgctxt "core.entity_form_display.node.page.default:content:field_hero_title:settings:placeholder"
 msgid "If empty, the regular page title will be shown."
-msgstr "Hvis tom, vil sidetitlen blive vist"
+msgstr "Hvis tom, vil sidetitlen blive vist."
 
 #: 
 msgctxt "core.entity_form_display.node.page.default:content:field_paragraphs:settings:title"
@@ -4858,7 +4861,7 @@ msgstr "Mediebibliotek"
 #: 
 msgctxt "core.entity_form_mode.user.register:label"
 msgid "Register"
-msgstr ""
+msgstr "Registrer"
 
 #: 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:date_format"
@@ -4968,7 +4971,7 @@ msgstr ""
 #: 
 msgctxt "core.entity_view_mode.block.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: 
 msgctxt "core.entity_view_mode.eventinstance.card:label"
@@ -4988,7 +4991,7 @@ msgstr "Listeteaser"
 #: 
 msgctxt "core.entity_view_mode.eventinstance.nav_spot:label"
 msgid "Nav spot"
-msgstr ""
+msgstr "Navigationsspot"
 
 #: 
 msgctxt "core.entity_view_mode.eventinstance.nav_teaser:label"
@@ -4998,7 +5001,7 @@ msgstr "Navigationsteaser"
 #: 
 msgctxt "core.entity_view_mode.eventinstance.stacked_event:label"
 msgid "Stacked event"
-msgstr ""
+msgstr "Stakkede arrangementer"
 
 #: 
 msgctxt "core.entity_view_mode.eventseries.card:label"
@@ -5008,12 +5011,12 @@ msgstr "Card"
 #: 
 msgctxt "core.entity_view_mode.eventseries.list:label"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 #: 
 msgctxt "core.entity_view_mode.eventseries.nav_spot:label"
 msgid "Nav spot"
-msgstr ""
+msgstr "Navigationsspot"
 
 #: 
 msgctxt "core.entity_view_mode.eventseries.nav_teaser:label"
@@ -5023,7 +5026,7 @@ msgstr "Navigationsteaser"
 #: 
 msgctxt "core.entity_view_mode.file.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Tokel"
 
 #: 
 msgctxt "core.entity_view_mode.media.full:label"
@@ -5033,22 +5036,22 @@ msgstr ""
 #: 
 msgctxt "core.entity_view_mode.media.hero_wide:label"
 msgid "Hero wide (4/3)"
-msgstr ""
+msgstr "Hero (4/3)"
 
 #: 
 msgctxt "core.entity_view_mode.media.media_library:label"
 msgid "Media library"
-msgstr ""
+msgstr "Mediebibliotek"
 
 #: 
 msgctxt "core.entity_view_mode.media.paragraph_squared:label"
 msgid "Paragraph, squared"
-msgstr ""
+msgstr "Paragraf, kvadratisk"
 
 #: 
 msgctxt "core.entity_view_mode.media.paragraph_wide:label"
 msgid "Paragraph, wide"
-msgstr ""
+msgstr "Paragraf, bredformat"
 
 #: 
 msgctxt "core.entity_view_mode.node.card:label"
@@ -5068,7 +5071,7 @@ msgstr "Listeteaser"
 #: 
 msgctxt "core.entity_view_mode.node.nav_spot:label"
 msgid "Nav spot"
-msgstr ""
+msgstr "Navigationsspot"
 
 #: 
 msgctxt "core.entity_view_mode.node.nav_teaser:label"
@@ -5078,12 +5081,12 @@ msgstr "Navigationsteaser"
 #: 
 msgctxt "core.entity_view_mode.node.rss:label"
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: 
 msgctxt "core.entity_view_mode.node.search_index:label"
 msgid "Search index"
-msgstr ""
+msgstr "Søgeindeks"
 
 #: 
 msgctxt "core.entity_view_mode.node.search_result:label"
@@ -5098,47 +5101,47 @@ msgstr "Teaser"
 #: 
 msgctxt "core.entity_view_mode.node.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: 
 msgctxt "core.entity_view_mode.paragraph.alternative:label"
 msgid "Alternative"
-msgstr ""
+msgstr "Alternativ"
 
 #: 
 msgctxt "core.entity_view_mode.paragraph.preview:label"
 msgid "Preview"
-msgstr "Gennemse"
+msgstr "Forhåndsvisning"
 
 #: 
 msgctxt "core.entity_view_mode.paragraph.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: 
 msgctxt "core.entity_view_mode.path_alias.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: 
 msgctxt "core.entity_view_mode.taxonomy_term.full:label"
 msgid "Taxonomy term page"
-msgstr ""
+msgstr "Taksonomi term side"
 
 #: 
 msgctxt "core.entity_view_mode.user.compact:label"
 msgid "Compact"
-msgstr ""
+msgstr "Kompakt"
 
 #: 
 msgctxt "core.entity_view_mode.user.full:label"
 msgid "User account"
-msgstr ""
+msgstr "Brugerkonto"
 
 #: 
 msgctxt "core.entity_view_mode.user.token:label"
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: 
 msgctxt "crop.type.focal_point:label"
@@ -5148,7 +5151,7 @@ msgstr "Fokuspunkt"
 #: 
 msgctxt "crop.type.focal_point:description"
 msgid "Crop type used by Focal point module."
-msgstr ""
+msgstr "Beskæringstype anvendt af fokuspunkt modulet"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_branch:label"
@@ -5158,7 +5161,7 @@ msgstr "Bibliotek"
 #: 
 msgctxt "field.field.eventinstance.default.field_categories:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_description:label"
@@ -5173,17 +5176,17 @@ msgstr "Adresse"
 #: 
 msgctxt "field.field.eventinstance.default.field_event_description:label"
 msgid "Description (DEPRECATED - WILL BE DELETED.)"
-msgstr ""
+msgstr "Beskrivelse (DETTE FELT BLIVER SLETTET)"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_description:description"
 msgid "This field will be deleted in the future. Please use the other description field."
-msgstr ""
+msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet beskrivelsesfelt."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_link:label"
@@ -5193,7 +5196,7 @@ msgstr "Billetlink"
 #: 
 msgctxt "field.field.eventinstance.default.field_event_link:description"
 msgid "Please enter the URL where attendees can buy tickets for this event."
-msgstr ""
+msgstr "Angiv URL til billetsalg"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_paragraphs:label"
@@ -5208,7 +5211,7 @@ msgstr "I samarbejde med"
 #: 
 msgctxt "field.field.eventinstance.default.field_event_partners:description"
 msgid "A list of partners for the event"
-msgstr ""
+msgstr "En liste over samarbejdspartnere"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_place:label"
@@ -5282,12 +5285,12 @@ msgstr "Adresse"
 #: 
 msgctxt "field.field.eventseries.default.field_event_description:label"
 msgid "Description (DEPRECATED - WILL BE DELETED.)"
-msgstr ""
+msgstr "Beskrivelse (DETTE FELT BLIVER SLETTET)"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_description:description"
 msgid "This field will be deleted in the future. Please use the other description field."
-msgstr ""
+msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet beskrivelsesfelt."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_image:label"
@@ -5302,7 +5305,7 @@ msgstr "Billetlink"
 #: 
 msgctxt "field.field.eventseries.default.field_event_link:description"
 msgid "Please enter the URL where attendees can buy/get tickets for this event."
-msgstr ""
+msgstr "Skriv URL hvor billetter kan købes/hentes til arrangementet."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_paragraphs:label"
@@ -5312,12 +5315,12 @@ msgstr "Paragraffer"
 #: 
 msgctxt "field.field.eventseries.default.field_event_partners:label"
 msgid "Partners"
-msgstr ""
+msgstr "I samarbejde med"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_partners:description"
 msgid "A list of partners for the event"
-msgstr ""
+msgstr "En liste over samarbejdspartnere"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_place:label"
@@ -5327,12 +5330,12 @@ msgstr "Sted"
 #: 
 msgctxt "field.field.eventseries.default.field_event_state:label"
 msgid "State"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "field.field.eventseries.default.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "field.field.eventseries.default.field_teaser_image:label"
@@ -5361,39 +5364,41 @@ msgstr "Teasertekst"
 #: 
 msgctxt "field.field.eventseries.default.field_ticket_categories:label"
 msgid "Ticket categories"
-msgstr ""
+msgstr "Billetkategorier"
 
 #: 
 msgctxt "field.field.media.document.field_media_file:label"
 msgid "File"
-msgstr ""
+msgstr "Fil"
 
 #: 
 msgctxt "field.field.media.image.field_byline:label"
 msgid "Byline"
-msgstr ""
+msgstr "Billedtekst"
 
 #: 
 msgctxt "field.field.media.image.field_byline:description"
 msgid "Used for public credit and copyright information. Will usually be displayed along with the media."
-msgstr ""
+msgstr "Bruges til fotokreditering og info om copyright. Vises som regel ved siden af billedet."
 
 #: 
 msgctxt "field.field.media.image.field_media_image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 #: 
 msgctxt "field.field.media.image.field_media_image:description"
 msgid "You can set a focal point, by clicking on the preview on the image, moving the white target.<br>\n"
 "By setting a focal point, you tell the system which part of the image to keep in focus when it gets cropped.<br>\n"
 "Use the \"preview\" function, to see how your image will be cropped across image styles."
-msgstr ""
+msgstr "Du kan sætte et fokuspunkt ved at klikke på preview på billedet og flytte det hvide punkt. <br>\n"
+"Ved at sætte et fokuspunkt kan du fortælle systemet, hvilken del af billedet der skal være i fokus når det beskæres. <br>\n"
+"Brug \"preview\" funktionen for at se hvordan dit billede vil blive beskåret  i forskellige visninger."
 
 #: 
 msgctxt "field.field.media.video.field_media_oembed_video:label"
 msgid "Remote video URL"
-msgstr ""
+msgstr "URL til video"
 
 #: 
 msgctxt "field.field.node.article.field_branch:label"
@@ -5403,49 +5408,49 @@ msgstr "Bibliotek"
 #: 
 msgctxt "field.field.node.article.field_canonical_url:label"
 msgid "Canonical url"
-msgstr ""
+msgstr "Canonical URL"
 
 #: 
 msgctxt "field.field.node.article.field_canonical_url:description"
 msgid "Please provide a canonical URL if this content has been duplicated from other websites. This helps signal to search engines that the preferred source of this content is the specified canonical URL, preventing potential duplicate content issues and ensuring proper attribution to the original source."
-msgstr ""
+msgstr "Oplys en canonical URL hvis indholdet i artiklen er kopieret fra en anden hjemmeside (fx kopieret fra et andet biblioteks hjemmeside). Dette hjælper med at signalere til søgemaskiner at kilden til indholdet er den specificerede side, og sikrer at den originale kilde krediteres."
 
 #: 
 msgctxt "field.field.node.article.field_categories:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: 
 msgctxt "field.field.node.article.field_override_author:label"
 msgid "Override author"
-msgstr ""
+msgstr "Overskriv forfatter"
 
 #: 
 msgctxt "field.field.node.article.field_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 #: 
 msgctxt "field.field.node.article.field_show_override_author:label"
 msgid "Override the author\t"
-msgstr ""
+msgstr "Overskriv forfatteren ␣"
 
 #: 
 msgctxt "field.field.node.article.field_show_override_author:description"
 msgid "By default, the author is set to the Drupal user that owns the content.<br>\n"
 "If you want to override this, with a manual text, you can check this."
-msgstr "Som default sættes forfatteren til at være den indloggede redaktør. <br>\n"
+msgstr "Som standard sættes forfatteren til at være den indloggede redaktør. <br>\n"
 "Hvis du vil overskrive navnet kan du gøre det manuelt ved at sætte checkmark her."
 
 #: 
 msgctxt "field.field.node.article.field_show_override_author:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.node.article.field_show_override_author:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.node.article.field_subtitle:label"
@@ -5455,7 +5460,7 @@ msgstr "Manchet"
 #: 
 msgctxt "field.field.node.article.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "field.field.node.article.field_teaser_image:label"
@@ -5489,52 +5494,52 @@ msgstr "Adresse"
 #: 
 msgctxt "field.field.node.branch.field_email:label"
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: 
 msgctxt "field.field.node.branch.field_main_media:label"
 msgid "Main media"
-msgstr ""
+msgstr "Hovedbillede"
 
 #: 
 msgctxt "field.field.node.branch.field_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 #: 
 msgctxt "field.field.node.branch.field_phone:label"
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_link:label"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_rules:label"
 msgid "Triggers"
-msgstr ""
+msgstr "Triggers"
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_rules_logic:label"
 msgid "Trigger Logic"
-msgstr ""
+msgstr "Triggerlogik"
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_rules_logic:description"
 msgid "Choose if all triggers should match (AND) for a campaign to be displayed or just one of them (OR)."
-msgstr ""
+msgstr "Vælg om alle triggers skal matche (AND) for at en kampagne vises, eller kun én af dem (OR) "
 
 #: 
 msgctxt "field.field.node.campaign.field_campaign_text:label"
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: 
 msgctxt "field.field.node.page.field_branch:label"
@@ -5544,38 +5549,39 @@ msgstr "Bibliotek"
 #: 
 msgctxt "field.field.node.page.field_display_titles:label"
 msgid "Display titles"
-msgstr ""
+msgstr "Vis titler"
 
 #: 
 msgctxt "field.field.node.page.field_display_titles:description"
 msgid "By default, titles and subtitles are not displayed on pages. If you wish to have it displayed, you can enable this setting."
-msgstr "Som default vises titel og manchettekst ikke på indholdstypen sider.  Hvis du vil have dem vist, kan du slå det til her."
+msgstr "Som standard vises titel og manchettekst ikke på indholdstypen sider.  Hvis du vil have dem vist, kan du slå det til her."
 
 #: 
 msgctxt "field.field.node.page.field_display_titles:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.node.page.field_display_titles:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.node.page.field_hero_title:label"
 msgid "Hero title"
-msgstr ""
+msgstr "Hero titel"
 
 #: 
 msgctxt "field.field.node.page.field_hero_title:description"
 msgid "The title that is shown at the top of the page.<br>\n"
 "<strong>If this is empty, the standard page title will be used instead.</strong>"
-msgstr ""
+msgstr "Titel som vises i toppen af siden. <br>\n"
+"<strong>Hvis denne er tom, vil standard sidetitel blive anvendt.</strong>"
 
 #: 
 msgctxt "field.field.node.page.field_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraffer"
 
 #: 
 msgctxt "field.field.node.page.field_subtitle:label"
@@ -5585,17 +5591,17 @@ msgstr "Manchet"
 #: 
 msgctxt "field.field.paragraph.accordion.field_accordion_description:label"
 msgid "Accordion description"
-msgstr ""
+msgstr "Accordion beskrivelse"
 
 #: 
 msgctxt "field.field.paragraph.accordion.field_accordion_title:label"
 msgid "Accordion title"
-msgstr ""
+msgstr "Accordion titel"
 
 #: 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_facet:label"
 msgid "Facet"
-msgstr ""
+msgstr "Facet"
 
 #: 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_ranking_max:label"
@@ -5605,22 +5611,22 @@ msgstr ""
 #: 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_ranking_max:description"
 msgid "The upper limit for a placement/ranking of a term inside a facet group"
-msgstr ""
+msgstr "Den øvre grænse for en placering/rankering af et udtryk i en facetgruppe"
 
 #: 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_term:label"
 msgid "Term"
-msgstr ""
+msgstr "Term"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_tags:label"
 msgid "Filter tags"
-msgstr ""
+msgstr "Filtrer tags"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_manual.field_grid_content:label"
@@ -5635,94 +5641,96 @@ msgstr "Overskrift"
 #: 
 msgctxt "field.field.paragraph.content_slider.field_content_references:label"
 msgid "Contents"
-msgstr ""
+msgstr "Indhold"
 
 #: 
 msgctxt "field.field.paragraph.content_slider.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "field.field.paragraph.event_ticket_category.field_ticket_category_name:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "field.field.paragraph.event_ticket_category.field_ticket_category_price:label"
 msgid "Price"
-msgstr ""
+msgstr "Pris"
 
 #: 
 msgctxt "field.field.paragraph.files.field_files:label"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_categories:label"
 msgid "Hero categories"
-msgstr ""
+msgstr "Hero kategori"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_content_type:label"
 msgid "Hero content type"
-msgstr ""
+msgstr "Hero indholdstype"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_date:label"
 msgid "Hero date"
-msgstr ""
+msgstr "Hero dato"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_description:label"
 msgid "Hero description"
-msgstr ""
+msgstr "Hero beskrivelse"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_image:label"
 msgid "Hero image"
-msgstr ""
+msgstr "Hero billede"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_link:label"
 msgid "Hero link"
-msgstr ""
+msgstr "Hero link"
 
 #: 
 msgctxt "field.field.paragraph.hero.field_hero_title:label"
 msgid "Hero title"
-msgstr ""
+msgstr "Hero titel"
 
 #: 
 msgctxt "field.field.paragraph.language_selector.field_language_icon:label"
 msgid "Language icon"
-msgstr ""
+msgstr "Sprogikon"
 
 #: 
 msgctxt "field.field.paragraph.language_selector.field_link_language:label"
 msgid "Link to a different language"
-msgstr ""
+msgstr "Link til et andet sprog"
 
 #: 
 msgctxt "field.field.paragraph.links.field_link:label"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:label"
 msgid "Amount of materials"
-msgstr ""
+msgstr "Antal materialer/værker"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:description"
 msgid "Determines the amount of materials that will be shown, based on the CQL string. \n"
 "\n"
 "Obs: If for example a CQL string has 11 results, and an editor chooses 12. The list will display 8 instead of 11, since the grid should be able to increment by 4. "
-msgstr ""
+msgstr "Bestemmer antallet af værker som vises, baseret på CQL strengen.\n"
+"\n"
+"Bemærk: Hvis en CQL-søgning giver 11 resultater og du som redaktør har valgt at vise 12, vises kun de første 8, da komponenten kun kan vise et antal der er deleligt med 4."
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:label"
 msgid "CQL Search"
-msgstr ""
+msgstr "CQL Søgning"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:description"
@@ -5731,7 +5739,11 @@ msgid "This field is for inserting a CQL string based on a search. \n"
 "Please be aware, that it is necessary to copy the exact CQL string, including the quotations. i.e: ( 'harry potter')\n"
 "\n"
 "A valid CQL search string can be generated, by performing a query through the advanced search, and copying the CQL string from there. "
-msgstr ""
+msgstr "Dette felt er til at indsætte en CQL-streng baseret på en søgning. \n"
+"\n"
+"Vær opmærksom på, at det er nødvendigt at kopiere den nøjagtige CQL-streng, inklusive anførselstegnene. f.eks: ( 'harry potter')\n"
+"\n"
+"En gyldig CQL-søgestreng kan genereres ved at udføre en forespørgsel via den avancerede søgning og kopiere CQL-strengen derfra.␣"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_title:label"
@@ -5774,17 +5786,17 @@ msgstr "Komponenten viser kun værker i intervaller af 4. \n"
 #: 
 msgctxt "field.field.paragraph.material_grid_manual.field_work_id:label"
 msgid "Work ID (DEPRECATED)"
-msgstr ""
+msgstr "VærkID udgår"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_manual.field_work_id:description"
 msgid "This field will be deleted in the future. Please use another work id field."
-msgstr ""
+msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet arbejdsidfelt."
 
 #: 
 msgctxt "field.field.paragraph.medias.field_medias:label"
 msgid "Medias"
-msgstr ""
+msgstr "Medier"
 
 #: 
 msgctxt "field.field.paragraph.nav_grid_manual.field_content_references:label"
@@ -5819,52 +5831,57 @@ msgstr "Indhold"
 #: 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:label"
 msgid "Image position right"
-msgstr ""
+msgstr "Højrestil billede"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:description"
 msgid "This determines whether the image should be positioned to the left or right. \n"
 "If left untoggled (default behaviour) the image is positioned to the left, if toggled on, the image will be positioned to the right. "
-msgstr ""
+msgstr "Denne knap bruges til at bestemme om forsidebilledet skal højre- eller venstrestilles. \n"
+"Standard er at billedet er venstrestillet, men hvis knappen slås til  højrestilles billedet."
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_description:label"
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_description:description"
 msgid "This is the description for a recommendation. \n"
 "\n"
 "If you add a description, the title of the the material will not be automatically generated. "
-msgstr ""
+msgstr "Dette er beskrivelsesteksten for en anbefaling. \n"
+"\n"
+"Hvis du tilføjer en beskrivelse vil titlen på materialet ikke blive genereret automatisk."
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_title:description"
 msgid "The title of the recommended material.\n"
 "\n"
 "If you add a title, the description for the material will not be automatically generated. "
-msgstr ""
+msgstr "Dette er titlen på et anbefalet materiale. \n"
+"\n"
+"Hvis du tilføjer en titel vil beskrivelsesteksten for materialet ikke blive genereret automatisk. "
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:label"
 msgid "Work ID"
-msgstr ""
+msgstr "VærkID"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:description"
@@ -5877,202 +5894,202 @@ msgstr "Dette er det VærkID som anvendes til at hente informationer om værket.
 #: 
 msgctxt "field.field.paragraph.recommendation.field_work_id:label"
 msgid "Work ID (DEPRECATED)"
-msgstr ""
+msgstr "VærkID (Udgår)"
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_work_id:description"
 msgid "This field will be deleted in the future. Please use another work id field."
-msgstr ""
+msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet arbejdsidfelt."
 
 #: 
 msgctxt "field.field.paragraph.text_body.field_body:label"
 msgid "Body"
-msgstr ""
+msgstr "Brødtekst"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_anchor:label"
 msgid "Anchor"
-msgstr ""
+msgstr "Anker"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_body:label"
 msgid "Body"
-msgstr ""
+msgstr "Brødtekst"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_display_in_navigation:label"
 msgid "Display in navigation"
-msgstr ""
+msgstr "Vis i navigation"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_display_in_navigation:description"
 msgid "Enable this option to display a button at the top of the page for easier navigation."
-msgstr ""
+msgstr "Aktivér denne indstilling for at få vist en knap øverst på siden, så det er nemmere at navigere."
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_display_in_navigation:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_display_in_navigation:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_link_target:label"
 msgid "Link target"
-msgstr ""
+msgstr "Linkmål"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_link_target:description"
 msgid "Specify how a linked document should be opened when clicked by a user."
-msgstr ""
+msgstr "Angiv hvordan et linket dokument skal åbne når en bruger klikker på linket."
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_navigation_title:label"
 msgid "Navigation button title"
-msgstr ""
+msgstr "Titel på navigationsknap"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_navigation_title:description"
 msgid "If the navigation button title is left blank, it will automatically default to the paragraph title."
-msgstr ""
+msgstr "Hvis titelfeltet på navigationsknappen ikke udfyldes, vil den automatisk få paragraf-titlen."
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_registration_link:label"
 msgid "Registration Link"
-msgstr ""
+msgstr "Registreringslink"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_item.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:label"
 msgid "User registration items"
-msgstr ""
+msgstr "Brugerregistrering elementer"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:description"
 msgid "Add a new \"User registration item\" to the list."
-msgstr ""
+msgstr "Tilføj et nyt \"Brugerregistreringslink\" til listen."
 
 #: 
 msgctxt "field.field.paragraph.video.field_embed_video:label"
 msgid "Embed video"
-msgstr ""
+msgstr "Indlejr video"
 
 #: 
 msgctxt "field.storage.node.field_campaign_rules_logic:settings:allowed_values:0:label"
 msgid "AND"
-msgstr ""
+msgstr "AND"
 
 #: 
 msgctxt "field.storage.node.field_campaign_rules_logic:settings:allowed_values:1:label"
 msgid "OR"
-msgstr ""
+msgstr "OR"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:0:label"
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:1:label"
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:2:label"
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:3:label"
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:4:label"
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:5:label"
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:6:label"
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: 
 msgctxt "field.storage.paragraph.field_amount_of_materials:settings:allowed_values:7:label"
 msgid "32"
-msgstr ""
+msgstr "32"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:0:label"
 msgid "Access"
-msgstr ""
+msgstr "Adgang"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:1:label"
 msgid "Children or adult materials"
-msgstr ""
+msgstr "Børne- eller voksenmaterialer"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:2:label"
 msgid "Creators"
-msgstr ""
+msgstr "Ophav"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:3:label"
 msgid "Fiction or non-fiction"
-msgstr ""
+msgstr "Skøn-/faglitteratur"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:4:label"
 msgid "Fictional character"
-msgstr ""
+msgstr "Fiktiv person"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:5:label"
 msgid "Genre and form"
-msgstr ""
+msgstr "Genre og form"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:6:label"
 msgid "Main languages"
-msgstr ""
+msgstr "Hovedsprog"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:7:label"
 msgid "Material types"
-msgstr ""
+msgstr "Materialetyper"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:8:label"
 msgid "Subjects"
-msgstr ""
+msgstr "Emner"
 
 #: 
 msgctxt "field.storage.paragraph.field_campaign_rule_facet:settings:allowed_values:9:label"
 msgid "Work types"
-msgstr ""
+msgstr "Værktyper"
 
 #: 
 msgctxt "field.storage.paragraph.field_link_target:settings:allowed_values:0:label"
 msgid "Open the linked document in the same window or tab (default)"
-msgstr ""
+msgstr "Åbn det linkede dokument i samme vindue eller tab (standard) "
 
 #: 
 msgctxt "field.storage.paragraph.field_link_target:settings:allowed_values:1:label"
 msgid "Open the linked document in a new window or tab"
-msgstr ""
+msgstr "Åbn det linkede dokument i et nyt vindue eller tab"
 
 #: 
 msgctxt "filter.format.basic:name"
@@ -6092,27 +6109,27 @@ msgstr ""
 #: 
 msgctxt "image.style.campaign_image:label"
 msgid "Campaign image (? x 150px)"
-msgstr ""
+msgstr "Kampagnebillede (? x 150px)"
 
 #: 
 msgctxt "image.style.entity_clone_template_preview:label"
 msgid "Entity Clone Template Preview"
-msgstr ""
+msgstr "Forhåndsvisning af skabelon"
 
 #: 
 msgctxt "image.style.flag_icon:label"
 msgid "Flag icon"
-msgstr ""
+msgstr "Flagikon"
 
 #: 
 msgctxt "image.style.focal_point_preview:label"
 msgid "Focal Point Preview"
-msgstr ""
+msgstr "Forhåndsvisning af fokuspunkt"
 
 #: 
 msgctxt "image.style.hero_wide:label"
 msgid "Hero wide (4/3)"
-msgstr ""
+msgstr "Hero bredformat (4/3)"
 
 #: 
 msgctxt "image.style.linkit_result_thumbnail:label"
@@ -6122,72 +6139,72 @@ msgstr ""
 #: 
 msgctxt "image.style.logo:label"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: 
 msgctxt "image.style.media_library:label"
 msgid "Media Library thumbnail (220 x 220px)"
-msgstr ""
+msgstr "Mediebibliotek thumbnail (220 x 220 px)"
 
 #: 
 msgctxt "image.style.paragraph_squared:label"
 msgid "Paragraph, Squared (1:1 / 496x496px)"
-msgstr ""
+msgstr "Paragraf, Kvadratisk (1:1 / 496x496px)"
 
 #: 
 msgctxt "image.style.paragraph_wide:label"
 msgid "Paragraph, Wide (896x670px)"
-msgstr ""
+msgstr "Paragraf, Bredformat (896x670px)"
 
 #: 
 msgctxt "image.style.small_preview:label"
 msgid "Small preview"
-msgstr ""
+msgstr "Lille forhåndsvisning"
 
 #: 
 msgctxt "language.entity.da:label"
 msgid "Danish"
-msgstr ""
+msgstr "Dansk"
 
 #: 
 msgctxt "language.entity.en:label"
 msgid "English"
-msgstr ""
+msgstr "Engelsk"
 
 #: 
 msgctxt "language.entity.und:label"
 msgid "Not specified"
-msgstr ""
+msgstr "Ikke specificeret"
 
 #: 
 msgctxt "language.entity.zxx:label"
 msgid "Not applicable"
-msgstr ""
+msgstr "Kan ikke anvendes"
 
 #: 
 msgctxt "linkit.linkit_profile.default:label"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "media.type.document:label"
 msgid "Document"
-msgstr ""
+msgstr "Dokument"
 
 #: 
 msgctxt "media.type.image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 #: 
 msgctxt "media.type.video:label"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: 
 msgctxt "metatag.metatag_defaults.403:label"
 msgid "403 access denied"
-msgstr ""
+msgstr "403 adgang nægtet"
 
 #: 
 msgctxt "metatag.metatag_defaults.403:tags:robots"
@@ -6207,7 +6224,7 @@ msgstr ""
 #: 
 msgctxt "metatag.metatag_defaults.404:label"
 msgid "404 page not found"
-msgstr ""
+msgstr "404 side ikke fundet"
 
 #: 
 msgctxt "metatag.metatag_defaults.404:tags:canonical_url"
@@ -6222,7 +6239,7 @@ msgstr ""
 #: 
 msgctxt "metatag.metatag_defaults.front:label"
 msgid "Front page"
-msgstr ""
+msgstr "Forside"
 
 #: 
 msgctxt "metatag.metatag_defaults.front:tags:canonical_url"
@@ -6237,7 +6254,7 @@ msgstr ""
 #: 
 msgctxt "metatag.metatag_defaults.global:label"
 msgid "Global"
-msgstr ""
+msgstr "Global"
 
 #: 
 msgctxt "metatag.metatag_defaults.global:tags:canonical_url"
@@ -6272,7 +6289,7 @@ msgstr ""
 #: 
 msgctxt "metatag.metatag_defaults.taxonomy_term:label"
 msgid "Taxonomy term"
-msgstr ""
+msgstr "Taksonomi term"
 
 #: 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:canonical_url"
@@ -6292,7 +6309,7 @@ msgstr ""
 #: 
 msgctxt "metatag.metatag_defaults.user:label"
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 #: 
 msgctxt "metatag.metatag_defaults.user:tags:canonical_url"
@@ -6312,12 +6329,12 @@ msgstr ""
 #: 
 msgctxt "node.type.article:name"
 msgid "Article"
-msgstr ""
+msgstr "Artikel"
 
 #: 
 msgctxt "node.type.article:description"
 msgid "Use articles for news-worthy content, that does not get updated regularly."
-msgstr ""
+msgstr "Brug artikler til nyhedspræget indhold med en begrænset levetid."
 
 #: 
 msgctxt "node.type.branch:name"
@@ -6327,7 +6344,7 @@ msgstr "Bibliotek"
 #: 
 msgctxt "node.type.branch:description"
 msgid "Branches of a library - for example physical departments around the kommune. Used to mark relevant content."
-msgstr ""
+msgstr "Afdelinger af biblioteket - fx filialer og hovedbibliotek. Bruges til at skabe en flot landingpage med relevant indhold. "
 
 #: 
 msgctxt "node.type.campaign:name"
@@ -6337,27 +6354,27 @@ msgstr "Kampagne (Mikkel tester 20.18)"
 #: 
 msgctxt "node.type.campaign:description"
 msgid "Campaign to be shown among search results depending on matching facets and terms"
-msgstr ""
+msgstr "Kampagne som kan vises sammen med søgeresultatet, afhængig af matchende facetter og søgertermer"
 
 #: 
 msgctxt "node.type.page:name"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.accordion:label"
 msgid "Accordion"
-msgstr ""
+msgstr "Accordion"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.campaign_rule:label"
 msgid "Campaign Rule"
-msgstr ""
+msgstr "Kampagneregel"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.campaign_rule:description"
 msgid "A rule for selecting a matching campaign"
-msgstr ""
+msgstr "En regel til at vælge en matchende kampagne"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.card_grid_automatic:label"
@@ -6372,57 +6389,57 @@ msgstr "Nyhedskomponent - manuel"
 #: 
 msgctxt "paragraphs.paragraphs_type.content_slider:label"
 msgid "Content slider"
-msgstr ""
+msgstr "Slider"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.event_ticket_category:label"
 msgid "Ticket category"
-msgstr ""
+msgstr "Billetkategori"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.event_ticket_category:description"
 msgid "A combination of ticket category name and price for an event. "
-msgstr ""
+msgstr "En kombination af navn på billetkategori og pris på et arrangement. "
 
 #: 
 msgctxt "paragraphs.paragraphs_type.files:label"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.files:description"
 msgid "Links with icons. Designed for jpg, jpeg, png, pdf, mp3, mov, mp4, mpeg files"
-msgstr ""
+msgstr "Link med ikoner. Designet til jpg, jpeg, png, pdf, mp3, mov, mp4, og mpeg filer"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.hero:label"
 msgid "Hero"
-msgstr ""
+msgstr "Hero"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.hero:description"
 msgid "A hero section with an image, informative text, category, and a \"call to action\" link."
-msgstr ""
+msgstr "En Hero til placering øverst på forsiden med et billede, informativ tekst, kategori og et link til fremhævet indhold."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.language_selector:label"
 msgid "Language selector"
-msgstr ""
+msgstr "Sprogvælger"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.language_selector:description"
 msgid "Enables website visitors to choose their preferred language."
-msgstr ""
+msgstr "Giver besøgende på sitet mulighed for at vælge foretrukket sprog"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.links:label"
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.links:description"
 msgid "Links with icons. Designed for internal/external links and links to search results. "
-msgstr ""
+msgstr "Links med ikoner. Designet til interne/eksterne links og links til søgeresultater ␣."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.material_grid_automatic:label"
@@ -6447,7 +6464,7 @@ msgstr "En komponent som viser en liste af manuelt udvalgte værker."
 #: 
 msgctxt "paragraphs.paragraphs_type.medias:label"
 msgid "Media(s)"
-msgstr ""
+msgstr "Medie(r)"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.nav_grid_manual:label"
@@ -6462,92 +6479,92 @@ msgstr "Navigationsspot - manuel"
 #: 
 msgctxt "paragraphs.paragraphs_type.recommendation:label"
 msgid "Recommendation"
-msgstr ""
+msgstr "Anbefaling"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.recommendation:description"
 msgid "This paragraph is used to recommend a material. "
-msgstr ""
+msgstr "Dette afsnit bruges til at anbefale et materiale.␣"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.text_body:label"
 msgid "Text body"
-msgstr ""
+msgstr "Brødtekst"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.text_body:description"
 msgid "A basic, formatted body of text."
-msgstr ""
+msgstr "En basal, formateret brødtekst"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_item:label"
 msgid "User registration item"
-msgstr ""
+msgstr "Brugerregistreringselement"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_item:description"
 msgid "The \"User registration item\" paragraph type is used to display relevant information about the user registration process."
-msgstr ""
+msgstr "Paragraftypen \"Brugerregistrerings item\" anvendes til at vise relevant information om brugerregistreringsprocessen."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_section:label"
 msgid "User registration section"
-msgstr ""
+msgstr "Brugerregistreringsafsnit"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_section:description"
 msgid "The \"User registration section\" paragraph type is used to display \"User registration item\" paragraphs."
-msgstr ""
+msgstr "Paragraftypen \"Brugerregistreringsafsnit\" bruges til at vise paragraffer af typen \"Brugerregistreringselementer\"."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.video:label"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.video:description"
 msgid "Enter the URL for the video you want to include."
-msgstr ""
+msgstr "Indtast URL'en til den video, du vil inkludere."
 
 #: 
 msgctxt "recurring_events.eventinstance_type.default:label"
 msgid "Default"
-msgstr "Default"
+msgstr "Standard"
 
 #: 
 msgctxt "recurring_events.eventseries_type.default:label"
 msgid "Default"
-msgstr "Default"
+msgstr "Standard"
 
 #: 
 msgctxt "search_api.index.events:name"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 #: 
 msgctxt "search_api.server.db:name"
 msgid "DB"
-msgstr ""
+msgstr "DB"
 
 #: 
 msgctxt "search_api.server.db_search:name"
 msgid "DB Search"
-msgstr ""
+msgstr "DB Søgning"
 
 #: 
 msgctxt "system.action.eventinstance_break_lock_action:label"
 msgid "Break lock eventinstance"
-msgstr ""
+msgstr "Bryd lås på arrangementsinstans"
 
 #: 
 msgctxt "system.action.eventseries_break_lock_action:label"
 msgid "Break lock eventseries"
-msgstr ""
+msgstr "Bryd lås på arrangementsserie"
 
 #: 
 msgctxt "system.action.media_delete_action:label"
 msgid "Delete media"
-msgstr ""
+msgstr "Slet medie"
 
 #: 
 msgctxt "system.action.media_publish_action:label"
@@ -6557,12 +6574,12 @@ msgstr ""
 #: 
 msgctxt "system.action.media_save_action:label"
 msgid "Save media"
-msgstr ""
+msgstr "Gem medie"
 
 #: 
 msgctxt "system.action.media_unpublish_action:label"
 msgid "Unpublish media"
-msgstr ""
+msgstr "Afpublicer mediet"
 
 #: 
 msgctxt "system.action.node_break_lock_action:label"
@@ -6597,17 +6614,17 @@ msgstr ""
 #: 
 msgctxt "system.action.node_save_action:label"
 msgid "Save content"
-msgstr ""
+msgstr "Gem indhold"
 
 #: 
 msgctxt "system.action.node_unpromote_action:label"
 msgid "Remove content from front page"
-msgstr ""
+msgstr "Fjern indhold fra forsiden"
 
 #: 
 msgctxt "system.action.node_unpublish_action:label"
 msgid "Unpublish content"
-msgstr ""
+msgstr "Afpublicer indhold"
 
 #: 
 msgctxt "system.action.taxonomy_term_publish_action:label"
@@ -6617,7 +6634,7 @@ msgstr ""
 #: 
 msgctxt "system.action.taxonomy_term_unpublish_action:label"
 msgid "Unpublish taxonomy term"
-msgstr ""
+msgstr "Afpublicer taksonomi term"
 
 #: 
 msgctxt "system.action.user_add_role_action.external_system:label"
@@ -6632,67 +6649,67 @@ msgstr ""
 #: 
 msgctxt "system.action.user_cancel_user_action:label"
 msgid "Cancel the selected user account(s)"
-msgstr ""
+msgstr "Annuller de(n) valgte brugerkonto(er)"
 
 #: 
 msgctxt "system.action.user_remove_role_action.external_system:label"
 msgid "Remove the External system role from the selected user(s)"
-msgstr ""
+msgstr "Fjern den eksterne systemrolle fra valgte bruger(e)"
 
 #: 
 msgctxt "system.action.user_unblock_user_action:label"
 msgid "Unblock the selected user(s)"
-msgstr ""
+msgstr "Bloker valgte bruger(e)"
 
 #: 
 msgctxt "system.maintenance:message"
 msgid "@site is currently under maintenance. We should be back shortly. Thank you for your patience."
-msgstr ""
+msgstr "@site er i øjeblikket under vedligeholdelse. Vi er tilbage om kort tid. Tak for din tålmodighed."
 
 #: 
 msgctxt "system.menu.admin:label"
 msgid "Administration"
-msgstr ""
+msgstr "Administration"
 
 #: 
 msgctxt "system.menu.admin:description"
 msgid "Administrative task links"
-msgstr ""
+msgstr "Links til administrative opgaver"
 
 #: 
 msgctxt "system.menu.devel:label"
 msgid "Development"
-msgstr ""
+msgstr "Udvikling"
 
 #: 
 msgctxt "system.menu.devel:description"
 msgid "Links related to Devel module."
-msgstr ""
+msgstr "Links relateret til Devel-modulet."
 
 #: 
 msgctxt "system.menu.main:label"
 msgid "Main navigation"
-msgstr ""
+msgstr "Hovednavigation"
 
 #: 
 msgctxt "system.menu.main:description"
 msgid "Site section links"
-msgstr ""
+msgstr "Side sektion links"
 
 #: 
 msgctxt "system.menu.tools:label"
 msgid "Tools"
-msgstr ""
+msgstr "Værktøjer"
 
 #: 
 msgctxt "system.menu.tools:description"
 msgid "User tool links, often added by modules"
-msgstr ""
+msgstr "Brugerværktøj links, ofte tilføjet via moduler"
 
 #: 
 msgctxt "system.site:name"
 msgid "DPL CMS"
-msgstr ""
+msgstr "DPL CMS"
 
 #: 
 msgctxt "taxonomy.vocabulary.categories:name"
@@ -6724,7 +6741,19 @@ msgid "[user:display-name],\n"
 "This link expires in one day and nothing will happen if it is not used.\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name],\n"
+"\n"
+"En anmodning om at slette din konto er foretaget hos [site:name]. \n"
+"\n"
+"Du kan nu slette din konto på [site:url-brief] ved at klikke på dette link eller kopiere og indsætte det i din browser: \n"
+"\n"
+"[user:cancel-url]\n"
+"\n"
+"BEMÆRK: Sletningen af din konto kan ikke ændres. \n"
+"\n"
+"Dette link udløber om én dag, og der sker intet, hvis det ikke bruges. \n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:password_reset:subject"
@@ -6744,12 +6773,22 @@ msgid "[user:display-name],\n"
 "This link can only be used once to log in and will lead you to a page where you can set your password. It expires after one day and nothing will happen if it's not used.\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name], \n"
+"\n"
+"Der er foretaget en anmodning om at nulstille din adgangskode for din konto hos [site:name]. \n"
+"\n"
+"Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser: \n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"Dette link kan kun bruges til at logge ind én gang og vil føre dig til en side, hvor du kan indstille din adgangskode. Det udløber efter én dag, og der sker intet, hvis det ikke bliver brugt. \n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:register_admin_created:subject"
 msgid "An administrator created an account for you at [site:name]"
-msgstr ""
+msgstr "En administrator har oprettet en konto til dig på [site:name]."
 
 #: 
 msgctxt "user.mail:register_admin_created:body"
@@ -6767,7 +6806,20 @@ msgid "[user:display-name],\n"
 "password: Your password\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name]\n"
+"\n"
+"En administrator hos [site:name] har lavet en konto til dig. Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser: \n"
+"\n"
+"[user:one-time-login-url]\n"
+"\n"
+"Dette kan kun bruges til at logge ind én gang og vil føre dig til en side, hvor du kan indstille din adgangskode. \n"
+"\n"
+"Efter du har indstillet din adgangskode, kan du logge ind på [site:login-url] i fremtiden ved at bruge: \n"
+"\n"
+"brugernavn: [user:name]\n"
+"Adgangskode: Din adgangskode\n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:register_no_approval_required:subject"
@@ -6790,7 +6842,20 @@ msgid "[user:display-name],\n"
 "password: Your password\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name], \n"
+"\n"
+"Tak for at registrere dig hos [site:name]. Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser: \n"
+"\n"
+"[user:one-time-login-url] \n"
+"\n"
+"Dette link kan kun bruges én gang til at logge ind og vil føre dig til en side, hvor du kan indstille din adgangskode. \n"
+"\n"
+"Efter du har indstillet din adgangskode, vil du være i stand til at logge ind på [site:login-url] i fremtiden ved at bruge: \n"
+"\n"
+"brugernavn: [user:name]\n"
+"Adgangskode: Din adgangskode\n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:register_pending_approval:subject"
@@ -6804,7 +6869,11 @@ msgid "[user:display-name],\n"
 "Thank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name], \n"
+"\n"
+"Tak for at registrere dig hos [site:name]. Din ansøgning til en konto afventer i øjeblikket godkendelse. Når den er godkendt, vil du modtage en mail indeholdende information om, hvordan man logger ind, indstiller din adgangskode og andre detaljer. \n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:register_pending_approval_admin:subject"
@@ -6816,7 +6885,9 @@ msgctxt "user.mail:register_pending_approval_admin:body"
 msgid "[user:display-name] has applied for an account.\n"
 "\n"
 "[user:edit-url]"
-msgstr ""
+msgstr "[user:display-name] har ansøgt om en konto\n"
+"\n"
+"[user:edit-url]"
 
 #: 
 msgctxt "user.mail:status_activated:subject"
@@ -6841,7 +6912,22 @@ msgid "[user:display-name],\n"
 "password: Your password\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name],\n"
+"\n"
+"Din konto hos [site:name] er aktiveret. \n"
+"\n"
+"Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser: \n"
+"\n"
+"[user:one-time-login-url] \n"
+"\n"
+"Dette kan kun bruges én gang til at logge ind og vil føre dig til en side, hvor du kan indstille din adgangskode. \n"
+"\n"
+"Når du har indstillet din adgangskode, vil du være i stand til at logge ind hos [site:login-url] i fremtiden ved at bruge: \n"
+"\n"
+"Brugernavn: [user:account-name]\n"
+"Adgangskode: Din adgangskode\n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:status_blocked:subject"
@@ -6855,7 +6941,11 @@ msgid "[user:display-name],\n"
 "Your account on [site:name] has been blocked.\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name], \n"
+"\n"
+"Din konto hos [site:name] er blokeret. \n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.mail:status_canceled:subject"
@@ -6869,12 +6959,16 @@ msgid "[user:display-name],\n"
 "Your account on [site:name] has been canceled.\n"
 "\n"
 "--  [site:name] team"
-msgstr ""
+msgstr "[user:display-name], \n"
+"\n"
+"Din konto hos [site:name] er slettet. \n"
+"\n"
+"--  [site:name] team"
 
 #: 
 msgctxt "user.role.administrator:label"
 msgid "Administrator"
-msgstr ""
+msgstr "Administrator"
 
 #: 
 msgctxt "user.role.anonymous:label"
@@ -6884,27 +6978,27 @@ msgstr ""
 #: 
 msgctxt "user.role.authenticated:label"
 msgid "Authenticated user"
-msgstr ""
+msgstr "Godkendt bruger"
 
 #: 
 msgctxt "user.role.editor:label"
 msgid "Editor"
-msgstr ""
+msgstr "Redaktør"
 
 #: 
 msgctxt "user.role.external_system:label"
 msgid "External system"
-msgstr ""
+msgstr "Eksternt system"
 
 #: 
 msgctxt "user.role.local_administrator:label"
 msgid "Local Administrator"
-msgstr ""
+msgstr "Lokal administrator"
 
 #: 
 msgctxt "user.role.mediator:label"
 msgid "Mediator"
-msgstr ""
+msgstr "Formidler"
 
 #: 
 msgctxt "user.role.patron:label"
@@ -6914,122 +7008,122 @@ msgstr ""
 #: 
 msgctxt "user.settings:anonymous"
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonym"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:label"
 msgid "People (administerusersbyrole)"
-msgstr ""
+msgstr "Brugere (administerusersbyrole)"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:description"
 msgid "Find and manage people - for admin or sub-admin"
-msgstr ""
+msgstr "Find og administrer brugere - til admin eller sub-admin"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_title"
 msgid "Master"
-msgstr ""
+msgstr "Master"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:title"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:user_bulk_form:label"
 msgid "Bulk update"
-msgstr ""
+msgstr "Masseopdatering"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:name:label"
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Blocked"
-msgstr ""
+msgstr "Blokeret"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:roles_target_id:label"
 msgid "Roles"
-msgstr ""
+msgstr "Roller"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:created:label"
 msgid "Member for"
-msgstr ""
+msgstr "Medlem af"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:created:settings:future_format"
 msgid "@interval"
-msgstr ""
+msgstr "@interval"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:created:settings:past_format"
 msgid "@interval"
-msgstr ""
+msgstr "@interval"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:access:label"
 msgid "Last access"
-msgstr ""
+msgstr "Sidste adgang"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:access:settings:future_format"
 msgid "@interval hence"
-msgstr ""
+msgstr "@interval fra nu af"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:access:settings:past_format"
 msgid "@interval ago"
-msgstr ""
+msgstr "@interval siden"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:offset_label"
@@ -7039,117 +7133,118 @@ msgstr ""
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "\n"
+"Filtrer"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:empty:area_text_custom:content"
 msgid "No people available."
-msgstr ""
+msgstr "Ingen redaktionelle brugere tilgængelige."
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:combine:expose:label"
 msgid "Name or email contains"
-msgstr ""
+msgstr "Navn eller email indeholder"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:status:group_info:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:status:group_info:group_items:1:title"
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:status:group_info:group_items:2:title"
 msgid "Blocked"
-msgstr ""
+msgstr "Blokeret"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:roles_target_id:expose:label"
 msgid "Role"
-msgstr ""
+msgstr "Rolle"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:filters:permission:expose:label"
 msgid "Permission"
-msgstr ""
+msgstr "Tilladelse"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:use_more_text"
 msgid "more"
-msgstr ""
+msgstr "mere"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:menu:title"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:menu:description"
 msgid "Find and manage people - for admin or sub-admin"
-msgstr ""
+msgstr "Find og administrer brugere - til admin eller sub-admin"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:tab_options:title"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:page_1:display_options:tab_options:description"
 msgid "Manage user accounts, roles, and permissions."
-msgstr ""
+msgstr "Administrer brugerkonti, roller og tilladelser."
 
 #: 
 msgctxt "views.view.articles:label"
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: 
 msgctxt "views.view.articles:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:title"
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle - "
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:pager:options:expose:offset_label"
@@ -7159,37 +7254,37 @@ msgstr ""
 #: 
 msgctxt "views.view.articles:display:default:display_options:pager:options:views_infinite_scroll:button_text"
 msgid "Showing @current_items out of @total results"
-msgstr ""
+msgstr "Viser @current_items ud af @total artikler"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Bekræft"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
@@ -7199,17 +7294,17 @@ msgstr ""
 #: 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Avancererede indstillinger"
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:filters:field_categories_target_id:expose:label"
 msgid "Article category"
-msgstr ""
+msgstr "Artikelkategori"
 
 #: 
 msgctxt "views.view.articles:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.branches:label"
@@ -7219,12 +7314,12 @@ msgstr "Biblioteker"
 #: 
 msgctxt "views.view.branches:display:default:display_title"
 msgid "Default"
-msgstr "Default"
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.branches:display:default:display_options:title"
 msgid "Branches"
-msgstr ""
+msgstr "Biblioteker"
 
 #: 
 msgctxt "views.view.branches:display:default:display_options:exposed_form:options:submit_button"
@@ -7264,12 +7359,12 @@ msgstr "Indhold"
 #: 
 msgctxt "views.view.content:description"
 msgid "Find and manage content."
-msgstr ""
+msgstr "Find og administrer indhold."
 
 #: 
 msgctxt "views.view.content:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:title"
@@ -7279,7 +7374,7 @@ msgstr "Indhold"
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:type:label"
@@ -7289,12 +7384,12 @@ msgstr "Indholdstype"
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:name:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:status:settings:format_custom_false"
@@ -7309,67 +7404,68 @@ msgstr "Publiceret"
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:changed:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "\n"
+"Filter"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:empty:area_text_custom:content"
 msgid "No content available."
-msgstr ""
+msgstr "Ingen logbeskeder tilgængelige."
 
 #: 
 msgctxt "views.view.content:display:default:display_options:filters:title:expose:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:filters:type:expose:label"
@@ -7384,7 +7480,7 @@ msgstr "Status"
 #: 
 msgctxt "views.view.content:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.content:display:default:display_options:filters:status:group_info:group_items:1:title"
@@ -7424,62 +7520,62 @@ msgstr "Find og håndter indhold"
 #: 
 msgctxt "views.view.content_paragraphs:label"
 msgid "Content lists, embedded in Paragraphs"
-msgstr ""
+msgstr "Indholdslister, indlejret i paragraffer"
 
 #: 
 msgctxt "views.view.content_paragraphs:description"
 msgid "Lists for displaying content, through embedded views in paragraphs. Also allows the editor to set filter options in the paragraphs, that will be sent along using contextual filters. See dpl_filter_paragraphs.module"
-msgstr ""
+msgstr "Lister til visning af indhold gennem indlejrede visninger i afsnit. Giver også redaktøren mulighed for at indstille filterindstillinger i afsnittene, som vil blive sendt med ved hjælp af kontekstuelle filtre. Se dpl_filter_paragraphs.module"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_tags_target_id:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
 msgid "Card grid"
-msgstr ""
+msgstr "Nyhedskomponent"
 
 #: 
 msgctxt "views.view.entity_clone_template:label"
 msgid "Entity Clone Template"
-msgstr ""
+msgstr "Gem som skabelon"
 
 #: 
 msgctxt "views.view.entity_clone_template:description"
 msgid "List all the template entities eligible to be cloned"
-msgstr ""
+msgstr "Liste over alle skabelonenheder, der kan klones"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_title"
@@ -7489,7 +7585,7 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:title"
 msgid "Entity Clone Template"
-msgstr ""
+msgstr "Gem son skabelon"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
@@ -7499,27 +7595,27 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
@@ -7534,7 +7630,18 @@ msgid "<div class=\"admin-item\">\n"
 "Once you've done this, the template will be shown here.\n"
 "</p>\n"
 "</div>"
-msgstr ""
+msgstr "\n"
+"<div class=\"admin-item\">\n"
+"<p>\n"
+"Du kan bruge eksisterende indholdsskabeloner til hurtigt at genbruge indholdsstrukturer.\n"
+"</p>\n"
+"<p>\n"
+"For at oprette nye skabeloner, skal du lave nyt indhold fra bunden, og derefter vælge at gemme det som en skabelon. Sædvanligvis vises denne mulighed i den højre sidebar i redigeringsmode.\n"
+"</p>\n"
+"<p>\n"
+"Når du har gjort dette, vil skabelonen blive vist her.\n"
+"</p>\n"
+"</div>"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:block:display_title"
@@ -7554,17 +7661,17 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_clone_template:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:page:display_options:menu:title"
 msgid "Create from template"
-msgstr ""
+msgstr "Opret fra skabelon"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:page:display_options:menu:description"
 msgid "Create Content from a defined template"
-msgstr ""
+msgstr "Opret indhold ud fra en foruddefineret skabelon"
 
 #: 
 msgctxt "views.view.entity_reference_content:label"
@@ -7574,12 +7681,12 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_content:description"
 msgid "Used by content reference fields, such as \"field_contents\"."
-msgstr ""
+msgstr "Bruges af indholdsreferencefelter, såsom \"field_contents\"."
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:fields:status:settings:format_custom_false"
@@ -7602,12 +7709,12 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle - "
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:offset_label"
@@ -7617,32 +7724,32 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:arguments:type:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:entity_reference_1:display_title"
@@ -7652,12 +7759,12 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_instance:label"
 msgid "Entity reference - event instance"
-msgstr ""
+msgstr "Enhedsreference - arrangementsinstans"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_title"
 msgid "Default"
-msgstr "Default"
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:status:settings:format_custom_false"
@@ -7700,12 +7807,12 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:offset_label"
@@ -7715,42 +7822,42 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:entity_reference_1:display_title"
 msgid "Entity Reference"
-msgstr ""
+msgstr "Enhedsreference"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:label"
 msgid "Entity reference - event series"
-msgstr ""
+msgstr "Enhedsreference - arrangementsserie"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:fields:status:settings:format_custom_false"
@@ -7773,12 +7880,12 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:offset_label"
@@ -7788,62 +7895,62 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:entity_reference_1:display_title"
 msgid "Entity Reference"
-msgstr ""
+msgstr "Enhedsreference"
 
 #: 
 msgctxt "views.view.events:label"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 #: 
 msgctxt "views.view.events:description"
 msgid "This view displays a list of upcoming events from current day and onwards."
-msgstr ""
+msgstr "Denne visning viser en liste over kommende begivenheder fra den aktuelle dag og frem."
 
 #: 
 msgctxt "views.view.events:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:title"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:offset_label"
@@ -7853,97 +7960,97 @@ msgstr ""
 #: 
 msgctxt "views.view.events:display:default:display_options:pager:options:views_infinite_scroll:button_text"
 msgid "Showing @current_items out of @total results"
-msgstr ""
+msgstr "Viser @current_items ud af @total resultater"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
-msgstr ""
+msgstr "basal"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Avancererede indstillinger"
 
 #: 
 msgctxt "views.view.events:display:all:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.events:display:all:display_options:filters:event_categories:expose:label"
 msgid "Event category"
-msgstr ""
+msgstr "Arrangementskategori"
 
 #: 
 msgctxt "views.view.events:display:related:display_title"
 msgid "Related events"
-msgstr ""
+msgstr "Relaterede begivenheder"
 
 #: 
 msgctxt "views.view.event_admin:label"
 msgid "Event - admin"
-msgstr ""
+msgstr "Arrangements administration"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:title"
 msgid "Event - admin"
-msgstr ""
+msgstr "Arrangements administration"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:eventseries_id:label"
 msgid "Series"
-msgstr ""
+msgstr "Serie"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:eventseries_id:alter:text"
 msgid "{{ eventseries_id }}"
-msgstr ""
+msgstr "{{ eventseries_id }}"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:id:label"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:admin_label"
@@ -7973,7 +8080,7 @@ msgstr ""
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:label"
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:alter:text"
@@ -8005,12 +8112,12 @@ msgstr ""
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:event_state:label"
 msgid "Event state"
-msgstr ""
+msgstr "Arrangementsstatus"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:status:label"
 msgid "Publication status"
-msgstr ""
+msgstr "Publiceringsdato"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:status:settings:format_custom_false"
@@ -8025,42 +8132,42 @@ msgstr "Publiceret"
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:label"
 msgid "Series links"
-msgstr ""
+msgstr "Links til serier"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:alter:text"
 msgid "<div class=\"button button--small\">{{ edit_eventseries }}</div>"
-msgstr ""
+msgstr "<div class=\"button button--small\">{{ edit_eventseries }}</div>"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:text"
 msgid "Edit series"
-msgstr ""
+msgstr "Rediger serie"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:operations:label"
 msgid "Instance links"
-msgstr ""
+msgstr "Links til instanser"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:offset_label"
@@ -8070,72 +8177,72 @@ msgstr ""
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:combine:expose:placeholder"
 msgid "Search by title, ID.."
-msgstr ""
+msgstr "Søg efter titel, ID.."
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:expose:label"
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:label"
 msgid "Date filters"
-msgstr ""
+msgstr "Datofiltre"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:1:title"
 msgid "Show all events"
-msgstr ""
+msgstr "Vis alle begivenheder"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:2:title"
 msgid "Only upcoming events"
-msgstr ""
+msgstr "Kun kommende arrangementer"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:3:title"
 msgid "Only expired events"
-msgstr ""
+msgstr "Kun afholdte arrangementer"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:status:expose:label"
 msgid "Publication status"
-msgstr ""
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:filters:status:group_info:group_items:1:title"
@@ -8150,87 +8257,87 @@ msgstr "Afpubliceret"
 #: 
 msgctxt "views.view.event_admin:display:overview:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.event_admin:display:overview:display_options:menu:title"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 #: 
 msgctxt "views.view.files:label"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: 
 msgctxt "views.view.files:description"
 msgid "Find and manage files."
-msgstr ""
+msgstr "Find og håndter filer"
 
 #: 
 msgctxt "views.view.files:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:title"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:fid:label"
 msgid "Fid"
-msgstr ""
+msgstr "Fid"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:filename:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:filemime:label"
 msgid "MIME type"
-msgstr ""
+msgstr "MIME type"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:filesize:label"
 msgid "Size"
-msgstr ""
+msgstr "Størrelse"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Temporary"
-msgstr ""
+msgstr "Midlertidig"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Permanent"
-msgstr ""
+msgstr "Permanent"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:created:label"
 msgid "Upload date"
-msgstr ""
+msgstr "Upload dato"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:changed:label"
 msgid "Changed date"
-msgstr ""
+msgstr "Ændringsdato"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:count:label"
 msgid "Used in"
-msgstr ""
+msgstr "Anvendt i"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:count:alter:path"
 msgid "admin/content/files/usage/{{ fid }}"
-msgstr ""
+msgstr "admin/content/files/usage/{{ fid }}"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:fields:count:format_plural_string"
@@ -8240,22 +8347,22 @@ msgstr ""
 #: 
 msgctxt "views.view.files:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:offset_label"
@@ -8265,67 +8372,67 @@ msgstr ""
 #: 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:empty:area_text_custom:content"
 msgid "No files available."
-msgstr ""
+msgstr "Ingen filer tilgængelige."
 
 #: 
 msgctxt "views.view.files:display:default:display_options:filters:filename:expose:label"
 msgid "Filename"
-msgstr ""
+msgstr "Filnavn"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:filters:filemime:expose:label"
 msgid "MIME type"
-msgstr ""
+msgstr "MIME type"
 
 #: 
 msgctxt "views.view.files:display:default:display_options:filters:status:expose:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.files:display:page_1:display_title"
 msgid "Files overview"
-msgstr ""
+msgstr "Filter overblik"
 
 #: 
 msgctxt "views.view.files:display:page_1:display_options:menu:title"
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_title"
 msgid "File usage"
-msgstr ""
+msgstr "Filanvendelse"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:title"
 msgid "File usage"
-msgstr ""
+msgstr "Filanvendelse"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:fields:entity_label:label"
@@ -8340,12 +8447,12 @@ msgstr ""
 #: 
 msgctxt "views.view.files:display:page_2:display_options:fields:module:label"
 msgid "Registering module"
-msgstr ""
+msgstr "Registreringsmodul"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:fields:count:label"
 msgid "Use count"
-msgstr ""
+msgstr "Brug antal"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:fields:count:format_plural_string"
@@ -8355,22 +8462,22 @@ msgstr ""
 #: 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:offset_label"
@@ -8380,17 +8487,17 @@ msgstr ""
 #: 
 msgctxt "views.view.files:display:page_2:display_options:arguments:fid:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.files:display:page_2:display_options:arguments:fid:title"
 msgid "File usage information for {{ arguments.fid }}"
-msgstr ""
+msgstr "Filanvendelses information for {{ arguments.fid }}"
 
 #: 
 msgctxt "views.view.locked_content:label"
 msgid "Locked content"
-msgstr ""
+msgstr "Låst indhold"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_title"
@@ -8400,7 +8507,7 @@ msgstr ""
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:title"
 msgid "Locked content"
-msgstr ""
+msgstr "Låst indhold"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:node_bulk_form:label"
@@ -8410,52 +8517,52 @@ msgstr ""
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:node_bulk_form:action_title"
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:type:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:timestamp:label"
 msgid "Lock Date/Time"
-msgstr ""
+msgstr "Lås dato/tid"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:name:label"
 msgid "Lock owner"
-msgstr ""
+msgstr "Låsens ejer"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:offset_label"
@@ -8465,42 +8572,42 @@ msgstr ""
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:empty:area_text_custom:content"
 msgid "There is no content currently locked."
-msgstr ""
+msgstr "Der er intet låst indhold i øjeblikket."
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:filters:status:expose:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:filters:status:group_info:group_items:1:title"
@@ -8515,22 +8622,22 @@ msgstr "Afpubliceret"
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:filters:type:expose:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.locked_content:display:default:display_options:filters:title:expose:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.locked_content:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.locked_content:display:page_1:display_options:menu:title"
 msgid "Locked content"
-msgstr ""
+msgstr "Låst indhold"
 
 #: 
 msgctxt "views.view.media:label"
@@ -8540,42 +8647,42 @@ msgstr ""
 #: 
 msgctxt "views.view.media:description"
 msgid "Find and manage media."
-msgstr ""
+msgstr "Find og administrer medie."
 
 #: 
 msgctxt "views.view.media:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:title"
 msgid "Media"
-msgstr ""
+msgstr "Medie"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:media_bulk_form:action_title"
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:name:label"
 msgid "Media name"
-msgstr ""
+msgstr "Medienavn"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:bundle:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:uid:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:status:settings:format_custom_false"
@@ -8590,42 +8697,42 @@ msgstr "Publiceret"
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:changed:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:offset_label"
@@ -8635,52 +8742,52 @@ msgstr ""
 #: 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:empty:area_text_custom:content"
 msgid "No media available."
-msgstr ""
+msgstr "Intet medie tilgængelig."
 
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:name:expose:label"
 msgid "Media name"
-msgstr ""
+msgstr "Medienavn"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:bundle:expose:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:status:expose:label"
 msgid "True"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:status:group_info:group_items:1:title"
@@ -8695,62 +8802,62 @@ msgstr "Afpubliceret"
 #: 
 msgctxt "views.view.media:display:default:display_options:filters:langcode:expose:label"
 msgid "Language"
-msgstr ""
+msgstr "Sprog"
 
 #: 
 msgctxt "views.view.media:display:media_page_list:display_title"
 msgid "Media"
-msgstr ""
+msgstr "Medier"
 
 #: 
 msgctxt "views.view.media:display:media_page_list:display_options:menu:title"
 msgid "Media"
-msgstr ""
+msgstr "Medier"
 
 #: 
 msgctxt "views.view.media_library:label"
 msgid "Media library"
-msgstr ""
+msgstr "Mediebibliotek"
 
 #: 
 msgctxt "views.view.media_library:description"
 msgid "Find and manage media."
-msgstr ""
+msgstr "Find og administrer medie."
 
 #: 
 msgctxt "views.view.media_library:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:title"
 msgid "Media"
-msgstr ""
+msgstr "Medie"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:fields:media_bulk_form:action_title"
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:offset_label"
@@ -8760,67 +8867,67 @@ msgstr ""
 #: 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply filters"
-msgstr ""
+msgstr "Anvend filtre"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:empty:area_text_custom:content"
 msgid "No media available."
-msgstr ""
+msgstr "Intet medie tilgængelig."
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:sorts:created:expose:label"
 msgid "Newest first"
-msgstr ""
+msgstr "Nyeste først"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:sorts:name:expose:label"
 msgid "Name (A-Z)"
-msgstr ""
+msgstr "Navn (A-Z)"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:sorts:name_1:expose:label"
 msgid "Name (Z-A)"
-msgstr ""
+msgstr "Navn (Z-A)"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:filters:bundle:expose:label"
 msgid "Media type"
-msgstr ""
+msgstr "Medietype"
 
 #: 
 msgctxt "views.view.media_library:display:default:display_options:filters:bundle:group_info:label"
 msgid "Media type"
-msgstr ""
+msgstr "Medietype"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:media_bulk_form:action_title"
@@ -8830,57 +8937,57 @@ msgstr ""
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:alter:text"
 msgid "Edit {{ name }}"
-msgstr ""
+msgstr "Rediger {{ name }}"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:alter:alt"
 msgid "Edit {{ name }}"
-msgstr ""
+msgstr "Rediger {{ name }}"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:edit_media:text"
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:delete_media:alter:text"
 msgid "Delete {{ name }}"
-msgstr ""
+msgstr "Slet {{ name }}"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:delete_media:alter:alt"
 msgid "Delete {{ name }}"
-msgstr ""
+msgstr "Slet {{ name }}"
 
 #: 
 msgctxt "views.view.media_library:display:page:display_options:fields:delete_media:text"
 msgid "Delete"
-msgstr ""
+msgstr "Slet"
 
 #: 
 msgctxt "views.view.media_library:display:widget:display_title"
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 #: 
 msgctxt "views.view.media_library:display:widget:display_options:arguments:bundle:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.media_library:display:widget:display_options:header:display_link_grid:label"
 msgid "Grid"
-msgstr ""
+msgstr "Gitter"
 
 #: 
 msgctxt "views.view.media_library:display:widget:display_options:header:display_link_table:label"
 msgid "Table"
-msgstr ""
+msgstr "Tabel"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_title"
 msgid "Widget (table)"
-msgstr ""
+msgstr "Widget (tabel)"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:fields:thumbnail__target_id:label"
@@ -8890,82 +8997,82 @@ msgstr ""
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:fields:name:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:fields:uid:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:fields:changed:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:arguments:bundle:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:header:display_link_grid:label"
 msgid "Grid"
-msgstr ""
+msgstr "Gitter"
 
 #: 
 msgctxt "views.view.media_library:display:widget_table:display_options:header:display_link_table:label"
 msgid "Table"
-msgstr ""
+msgstr "Tabel"
 
 #: 
 msgctxt "views.view.scheduled_jobs:label"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:title"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:jid:label"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:name:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:type:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:id:label"
 msgid "Job ID"
-msgstr ""
+msgstr "Job ID"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:fields:next:label"
 msgid "Next execution"
-msgstr ""
+msgstr "Næste hændelse"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:offset_label"
@@ -8975,52 +9082,52 @@ msgstr ""
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:filters:name:expose:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:filters:id:expose:label"
 msgid "Job ID"
-msgstr ""
+msgstr "Job ID"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.scheduled_jobs:display:page_1:display_options:menu:title"
 msgid "Scheduled jobs"
-msgstr ""
+msgstr "Planlagte jobs"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:label"
 msgid "Scheduled Content"
-msgstr ""
+msgstr "Planlagt indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:description"
@@ -9040,17 +9147,17 @@ msgstr "Planlagt indhold"
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:node_bulk_form:action_title"
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:type:label"
 msgid "Content Type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:name:label"
@@ -9060,7 +9167,7 @@ msgstr "Forfatter"
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:status:settings:format_custom_false"
@@ -9075,87 +9182,87 @@ msgstr "Publiceret"
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:publish_on:label"
 msgid "Publish on"
-msgstr ""
+msgstr "Publicer den"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:unpublish_on:label"
 msgid "Unpublish on"
-msgstr ""
+msgstr "Afpubliceringsdato"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:next"
 msgid "next ›"
-msgstr ""
+msgstr "Næste  ›"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:previous"
 msgid "‹ previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:first"
 msgid "« first"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:pager:options:tags:last"
 msgid "last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:empty:area_text_custom:content"
 msgid "No scheduled content."
-msgstr ""
+msgstr "Intet planlagt indhold."
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:title:expose:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:type:expose:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:status:expose:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:status:group_info:label"
 msgid "Published status"
-msgstr "Publikationsstatus"
+msgstr "Publiceringsstatus"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:status:group_info:group_items:1:title"
@@ -9170,37 +9277,37 @@ msgstr "Afpubliceret"
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:filters:langcode:expose:label"
 msgid "Language"
-msgstr ""
+msgstr "Sprog"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_title"
 msgid "Content Overview"
-msgstr ""
+msgstr "Overblik over indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:display_description"
 msgid "Overview of all scheduled content, as a tab on main 'content admin' page"
-msgstr ""
+msgstr "Overblik over alt planlagt indhold, som en fane på hoved 'indhold administrator' -side"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:display_comment"
 msgid "Revision nid relationship is required because the content type is only stored at 'content' level, not 'content revision' level."
-msgstr ""
+msgstr "Revision nid-forhold er påkrævet, fordi indholdstypen kun gemmes på 'indhold'-niveau, ikke 'indholdsrevision'-niveau."
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:menu:title"
 msgid "Scheduled Content"
-msgstr ""
+msgstr "Planlagt indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:menu:description"
 msgid "Content that is scheduled for publishing or unpublishing"
-msgstr ""
+msgstr "Indhold der er er planlagt til publicering eller afpublicering"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:tab_options:title"
 msgid "Content"
-msgstr ""
+msgstr "Indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:overview:display_options:tab_options:description"
@@ -9210,22 +9317,22 @@ msgstr ""
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_title"
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:empty:area_text_custom:content"
 msgid "No scheduled content for user {{ arguments.uid }}"
-msgstr ""
+msgstr "Intet planlagt indhold for bruger {{ arguments.uid }}"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:arguments:uid:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:display_description"
 msgid "Scheduled content tab on user profile, showing just that user's scheduled content"
-msgstr ""
+msgstr "Fanen planlagt indhold på brugerprofilen viser kun den pågældende brugers planlagte indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:display_comment"
@@ -9235,42 +9342,42 @@ msgstr ""
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:menu:title"
 msgid "Scheduled"
-msgstr ""
+msgstr "Planlagt"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:tab_options:title"
 msgid "Content"
-msgstr ""
+msgstr "Indhold"
 
 #: 
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:tab_options:description"
 msgid "Find and manage scheduled content"
-msgstr ""
+msgstr "Find og håndter planlagt indhold"
 
 #: 
 msgctxt "views.view.taxonomy_term:label"
 msgid "Taxonomy term"
-msgstr ""
+msgstr "Taksonomi term"
 
 #: 
 msgctxt "views.view.taxonomy_term:description"
 msgid "Content belonging to a certain taxonomy term."
-msgstr ""
+msgstr "Indhold, der hører til et bestemt taksonomisk begreb."
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:offset_label"
@@ -9280,32 +9387,32 @@ msgstr ""
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:title"
@@ -9315,127 +9422,127 @@ msgstr ""
 #: 
 msgctxt "views.view.taxonomy_term:display:feed_1:display_title"
 msgid "Feed"
-msgstr ""
+msgstr "Feed"
 
 #: 
 msgctxt "views.view.taxonomy_term:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.user_admin_people:label"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 #: 
 msgctxt "views.view.user_admin_people:description"
 msgid "Find and manage people interacting with your site."
-msgstr ""
+msgstr "Find og administrer redaktionelle brugere"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:title"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:user_bulk_form:label"
 msgid "Bulk update"
-msgstr ""
+msgstr "Masseopdatering"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:name:label"
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Blocked"
-msgstr ""
+msgstr "Blokeret"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:roles_target_id:label"
 msgid "Roles"
-msgstr ""
+msgstr "Roller"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:created:label"
 msgid "Member for"
-msgstr ""
+msgstr "Medlem af"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:created:settings:future_format"
 msgid "@interval"
-msgstr ""
+msgstr "@interval"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:created:settings:past_format"
 msgid "@interval"
-msgstr ""
+msgstr "@interval"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:access:label"
 msgid "Last access"
-msgstr ""
+msgstr "Sidste adgang"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:access:settings:future_format"
 msgid "@interval hence"
-msgstr ""
+msgstr "@interval fra nu"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:access:settings:past_format"
 msgid "@interval ago"
-msgstr ""
+msgstr "@interval siden"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Handlinger"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:offset_label"
@@ -9445,77 +9552,77 @@ msgstr ""
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:empty:area_text_custom:content"
 msgid "No people available."
-msgstr ""
+msgstr "Ingen redaktionelle brugere tilgængelige."
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:combine:expose:label"
 msgid "Name or email contains"
-msgstr ""
+msgstr "Navn eller email indeholder"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:status:group_info:label"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:status:group_info:group_items:1:title"
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:status:group_info:group_items:2:title"
 msgid "Blocked"
-msgstr ""
+msgstr "Blokeret"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id:expose:label"
 msgid "Role"
-msgstr ""
+msgstr "Roller"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:permission:expose:label"
 msgid "Permission"
-msgstr ""
+msgstr "Tilladelse"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:use_more_text"
 msgid "more"
-msgstr ""
+msgstr "mere"
 
 #: 
 msgctxt "views.view.user_admin_people:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.user_admin_people:display:page_1:display_options:menu:title"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 #: 
 msgctxt "views.view.user_admin_people:display:page_1:display_options:menu:description"
@@ -9525,12 +9632,12 @@ msgstr ""
 #: 
 msgctxt "views.view.user_admin_people:display:page_1:display_options:tab_options:title"
 msgid "People"
-msgstr ""
+msgstr "Redaktionelle brugere"
 
 #: 
 msgctxt "views.view.user_admin_people:display:page_1:display_options:tab_options:description"
 msgid "Manage user accounts, roles, and permissions."
-msgstr ""
+msgstr "Administrer brugerkonti, roller og tilladelser."
 
 #: 
 msgctxt "views.view.watchdog:label"
@@ -9540,52 +9647,52 @@ msgstr ""
 #: 
 msgctxt "views.view.watchdog:description"
 msgid "Recent log messages"
-msgstr ""
+msgstr "Seneste logbeskeder"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:title"
 msgid "Recent log messages"
-msgstr ""
+msgstr "Nylige logbeskeder"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:nothing:admin_label"
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:wid:label"
 msgid "WID"
-msgstr ""
+msgstr "WID"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:severity:label"
 msgid "Severity"
-msgstr ""
+msgstr "Alvorlighedsgrad"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:type:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:timestamp:label"
 msgid "Date"
-msgstr ""
+msgstr "Dato"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:message:label"
 msgid "Message"
-msgstr ""
+msgstr "Besked"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:message:alter:path"
 msgid "admin/reports/dblog/event/{{ wid }}"
-msgstr ""
+msgstr "admin/reports/dblog/event/{{ wid }}"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:message:alter:alt"
@@ -9595,22 +9702,22 @@ msgstr ""
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:name:label"
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:fields:link:label"
 msgid "Operations"
-msgstr ""
+msgstr "Handlinger"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Enheder pr. side"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:offset_label"
@@ -9620,57 +9727,57 @@ msgstr ""
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:empty:area:admin_label"
 msgid "No log messages available."
-msgstr ""
+msgstr "Ingen logbeskeder tilgængelige."
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:empty:area:content"
 msgid "No log messages available."
-msgstr ""
+msgstr "Ingen logbeskeder tilgængelige."
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:filters:type:expose:label"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: 
 msgctxt "views.view.watchdog:display:default:display_options:filters:severity:expose:label"
 msgid "Severity"
-msgstr ""
+msgstr "Alvorlighedsgrad"
 
 #: 
 msgctxt "views.view.watchdog:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "React apps (Global error handling)"
 msgid "Close error message"
-msgstr ""
+msgstr "Luk fejlbesked"
 
 #: 
 msgid "<br><br>\"@title\" is being used in configuration. Before you can delete it, you need to remove it from the following configuration fields:"
@@ -9682,15 +9789,15 @@ msgstr ""
 
 #: 
 msgid "DPL Protected Nodes"
-msgstr ""
+msgstr "DPL-beskyttede noder"
 
 #: 
 msgid "This modules handles protected nodes by checking if a node is being used as a reference in configuration."
-msgstr ""
+msgstr "Disse moduler håndterer beskyttede noder ved at tjekke, om en node bliver brugt som reference i konfigurationen."
 
 #: 
 msgid "Make a profile for"
-msgstr ""
+msgstr "Lav en profil for"
 
 #: 
 msgid "Error warning icon"
