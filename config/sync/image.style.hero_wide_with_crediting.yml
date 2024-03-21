@@ -1,0 +1,17 @@
+uuid: f19a9b76-1c31-4351-bf0d-db79042103b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_wide_with_crediting
+label: 'Hero wide (4/3) with crediting'
+effects:
+  646ca0bc-bead-4b5e-85d9-89319ffa5868:
+    uuid: 646ca0bc-bead-4b5e-85d9-89319ffa5868
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      crop_type: focal_point
