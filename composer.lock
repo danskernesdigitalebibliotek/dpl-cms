@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f55d3da64ec2d881b96c8707c530d719",
+    "content-hash": "47ff6c5bb134e911a541aa354e2af29f",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -3413,6 +3413,72 @@
                 "source": "git://git.drupal.org/project/facets.git",
                 "issues": "https://www.drupal.org/project/issues/facets",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/facets_date_range",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/facets_date_range.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets_date_range-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "5bf800b69efa18ec1c11662297e3f7f51956ca4e"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9.2 || ^10",
+                "drupal/facets": "^1.6 || ^2.0 || ^3.0",
+                "php": "^7.4 || ^8"
+            },
+            "require-dev": {
+                "drupal/search_api": "^1.24"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1677597400",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Dias",
+                    "homepage": "https://www.drupal.org/u/saidatom"
+                },
+                {
+                    "name": "Claudiu Cristea",
+                    "homepage": "https://www.drupal.org/u/claudiu.cristea"
+                },
+                {
+                    "name": "Ilias Dimopoulos",
+                    "homepage": "https://www.drupal.org/u/idimopoulos-0"
+                },
+                {
+                    "name": "Pieter Frenssen",
+                    "homepage": "https://www.drupal.org/u/pfrenssen"
+                },
+                {
+                    "name": "saidatom",
+                    "homepage": "https://www.drupal.org/user/1846674"
+                }
+            ],
+            "description": "Provides a Date Range widget in facets.",
+            "homepage": "https://drupal.org/project/facets_date_range",
+            "support": {
+                "source": "https://git.drupalcode.org/project/facets_date_range",
+                "issues": "https://drupal.org/project/issues/facets_date_range"
             }
         },
         {
@@ -16781,6 +16847,7 @@
     "stability-flags": {
         "drupal/customerror": 10,
         "drupal/default_content": 15,
+        "drupal/facets_date_range": 10,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
         "drupal/multivalue_form_element": 10,

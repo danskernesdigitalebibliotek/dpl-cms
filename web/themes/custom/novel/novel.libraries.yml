@@ -24,6 +24,27 @@ slider:
   dependencies:
     - novel/swiper
 
+date-range:
+  js:
+    assets/dpl-design-system/js/date-range.js: {}
+  dependencies:
+    - novel/flatpickr
+
+
+flatpickr:
+  remote: "https://github.com/flatpickr/flatpickr"
+  license:
+    name: MIT
+    url: https://github.com/flatpickr/flatpickr/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    "https://cdn.jsdelivr.net/npm/flatpickr@4/dist/flatpickr.min.js":
+      { type: external }
+  css:
+    theme:
+      "https://cdn.jsdelivr.net/npm/flatpickr@4/dist/flatpickr.min.css":
+        { type: external }
+
 swiper:
   remote: "https://github.com/nolimits4web/swiper.git"
   license:

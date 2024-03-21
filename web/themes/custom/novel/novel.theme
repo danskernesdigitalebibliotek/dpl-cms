@@ -326,3 +326,14 @@ function novel_preprocess_views_view_unformatted(&$variables): void {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess().
+ */
+function novel_preprocess_facets_item_list__date_range(array &$variables): void {
+  $variables['items']['min']['value']['#attributes']['class'][] = "date-range__from";
+  $variables['items']['max']['value']['#attributes']['class'][] = "date-range__to";
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['#attached']['drupalSettings']['dateRange']['language'] = $language;
+}
