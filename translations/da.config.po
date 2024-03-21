@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-20 17:01+0100\n"
-"PO-Revision-Date: 2024-03-20 17:01+0100\n"
+"POT-Creation-Date: 2024-03-21 08:33+0100\n"
+"PO-Revision-Date: 2024-03-21 08:33+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2439,7 +2439,7 @@ msgstr "Roller"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:created:label"
 msgid "Member for"
-msgstr "Medlem af"
+msgstr "Medlem siden"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:created:settings:future_format"
 msgid "@interval"
@@ -4438,7 +4438,7 @@ msgstr "Roller"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:created:label"
 msgid "Member for"
-msgstr "Medlem af"
+msgstr "Medlem siden"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:created:settings:future_format"
 msgid "@interval"
