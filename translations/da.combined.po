@@ -3455,7 +3455,7 @@ msgstr "Indstillinger for strakslån"
 
 #: 
 msgid "Set auth redirect paths for patrons"
-msgstr ""
+msgstr "Indstil sti til omdirigering ved autorisering af slutbrugere"
 
 #: 
 msgid "Administer various settings for a library agency."
@@ -3890,7 +3890,8 @@ msgstr "<a href=\"@url\">Redigér hele serien her</a>"
 #: 
 msgctxt "DPL admin UX"
 msgid "You are currently editing a single event, in an event series. @suffix"
-msgstr "Du redigerer en enkelt begivenhed i en arrangementsserie. @suffix"
+msgstr "Du redigerer en enkelt begivenhed i en arrangementsserie. \n"
+"@suffix"
 
 #: 
 msgctxt "DPL admin UX"
@@ -6639,7 +6640,7 @@ msgstr "Afpublicer taksonomi term"
 #: 
 msgctxt "system.action.user_add_role_action.external_system:label"
 msgid "Add the External system role to the selected user(s)"
-msgstr ""
+msgstr "Tilføj ekstern systemrolle til de(n) valgte bruger(e)"
 
 #: 
 msgctxt "system.action.user_block_user_action:label"
@@ -7003,7 +7004,7 @@ msgstr "Formidler"
 #: 
 msgctxt "user.role.patron:label"
 msgid "Patron"
-msgstr ""
+msgstr "Slutbruger"
 
 #: 
 msgctxt "user.settings:anonymous"
@@ -7630,8 +7631,7 @@ msgid "<div class=\"admin-item\">\n"
 "Once you've done this, the template will be shown here.\n"
 "</p>\n"
 "</div>"
-msgstr "\n"
-"<div class=\"admin-item\">\n"
+msgstr "<div class=\"admin-item\">\n"
 "<p>\n"
 "Du kan bruge eksisterende indholdsskabeloner til hurtigt at genbruge indholdsstrukturer.\n"
 "</p>\n"
