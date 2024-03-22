@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-22 13:55+0100\n"
-"PO-Revision-Date: 2024-03-22 13:55+0100\n"
+"POT-Creation-Date: 2024-03-22 16:22+0100\n"
+"PO-Revision-Date: 2024-03-22 16:22+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1933,7 +1933,7 @@ msgstr "Klæbrig"
 
 msgctxt "system.action.node_make_unsticky_action:label"
 msgid "Make content unsticky"
-msgstr "Ikke-klæbrig"
+msgstr "Fjern klæbrig"
 
 msgctxt "system.action.node_promote_action:label"
 msgid "Promote content to front page"
@@ -1957,7 +1957,7 @@ msgstr "Afpublicer indhold"
 
 msgctxt "system.action.taxonomy_term_publish_action:label"
 msgid "Publish taxonomy term"
-msgstr "Udgiv taksonomi term"
+msgstr "Udgiv taksonomiterm"
 
 msgctxt "system.action.taxonomy_term_unpublish_action:label"
 msgid "Unpublish taxonomy term"
@@ -1969,7 +1969,7 @@ msgstr "Tilføj ekstern systemrolle til de(n) valgte bruger(e)"
 
 msgctxt "system.action.user_block_user_action:label"
 msgid "Block the selected user(s)"
-msgstr "Blokér valgt(e) bruger"
+msgstr "Bloker valgte bruger(e)"
 
 msgctxt "system.action.user_cancel_user_action:label"
 msgid "Cancel the selected user account(s)"
@@ -3298,19 +3298,19 @@ msgstr "Arrangementsinstans: Afholdelsestidspunkt"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:one_day"
 msgid "H:i - {H}:{i}"
-msgstr ""
+msgstr "H:i - {H}:{i}"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:one_month"
 msgid "H:i - {H}:{i}"
-msgstr ""
+msgstr "H:i - {H}:{i}"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:several_months"
 msgid "H:i - {H}:{i}"
-msgstr ""
+msgstr "H:i - {H}:{i}"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:several_years"
 msgid "H:i - {H}:{i}"
-msgstr ""
+msgstr "H:i - {H}:{i}"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:label"
 msgid "Event Date"
@@ -3328,19 +3328,21 @@ msgstr ""
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_day"
 msgid "d M Y"
-msgstr ""
+msgstr "d M Y"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_month"
 msgid "d - {d} M Y "
 msgstr ""
+"\n"
+"d - {d} M Y"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:several_months"
 msgid "d M - {d} {M} Y"
-msgstr ""
+msgstr "d M - {d} {M} Y"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:several_years"
 msgid "d M Y - {d} {M} {Y}"
-msgstr ""
+msgstr "d M Y - {d} {M} {Y}"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:event_state:label"
 msgid "Event state"
@@ -3528,7 +3530,7 @@ msgstr "admin/content/files/usage/{{ fid }}"
 
 msgctxt "views.view.files:display:default:display_options:fields:count:format_plural_string"
 msgid "1 place\003@count places"
-msgstr ""
+msgstr "1 place\003@count places"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:tags:next"
 msgid "Next ›"
@@ -3604,7 +3606,7 @@ msgstr "Filanvendelse"
 
 msgctxt "views.view.files:display:page_2:display_options:fields:entity_label:label"
 msgid "Entity"
-msgstr ""
+msgstr "Instans"
 
 msgctxt "views.view.files:display:page_2:display_options:fields:type:label"
 msgid "Entity type"
