@@ -5,6 +5,10 @@
   Drupal.behaviors.dateRange = {
     attach(context, settings) {
       window.DateRange.init(context, {
+        locale: settings.dateRange.language,
+        altInput: true,
+        // A rather compact format that mimics what we use elsewhere.
+        altFormat: "j. M Y",
       });
     },
   };
