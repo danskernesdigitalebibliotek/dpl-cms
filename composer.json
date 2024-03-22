@@ -269,6 +269,13 @@
             "drupal/entity_clone_template": {
                 "3424597: Fix error when creating entity of type without templates": "https://git.drupalcode.org/project/entity_clone_template/-/merge_requests/3.patch"
             },
+            "drupal/facets": {
+                "3390386: Make helper functions globally usable": "https://git.drupalcode.org/project/facets/-/commit/5f9ce05ffa3390a279a5c78534213c7e710f577e.patch"
+            },
+            "drupal/facets_date_range": {
+                "3273136: Selecting date clears other facet values when using AJAX" : "https://git.drupalcode.org/project/facets_date_range/-/commit/de9dca31c2e43c845d2ac4691b5917445792b980.patch",
+                "3273551: Selecting date causes page reload when AJAX is enabled": "https://www.drupal.org/files/issues/2023-09-28/3273551_selecting_causes_page_reload_ajax_enabled_3.patch"
+            },
             "drupal/focal_point": {
                 "3162210: Preview link accidentally closes the media library": "https://www.drupal.org/files/issues/2020-10-11/preview_link_accidentally_closes_the_media_library-3162210-19.patch"
             },

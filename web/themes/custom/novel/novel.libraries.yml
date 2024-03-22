@@ -27,9 +27,11 @@ slider:
 date-range:
   js:
     assets/dpl-design-system/js/date-range.js: {}
+    js/date-range.js: {}
   dependencies:
+    - core/drupal
+    - core/drupalSettings
     - novel/flatpickr
-
 
 flatpickr:
   remote: "https://github.com/flatpickr/flatpickr"
