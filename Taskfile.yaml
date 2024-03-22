@@ -55,7 +55,7 @@ tasks:
   drupal:reset:
     desc: Clean install the instance
     cmds:
-      - task -t Taskfile.yaml composer:update
+      - task -t Taskfile.yaml drupal:update
       - ${DRUSH_EXEC} site-install --existing-config -y
       - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
       - task -t Taskfile.yaml drupal:locale
