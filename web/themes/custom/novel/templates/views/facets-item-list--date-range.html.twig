@@ -1,0 +1,38 @@
+{# Cache logic that we duplicate from the parent template
+   cms/web/modules/contrib/facets/templates/facets-item-list.html.twig #}
+{% if cache_hash %}
+  <!-- facets cacheable metadata
+    hash: {{ cache_hash }}
+  {% if cache_contexts %}
+    contexts: {{ cache_contexts }}
+  {%- endif %}
+  {% if cache_tags %}
+    tags: {{ cache_tags }}
+  {%- endif %}
+  {% if cache_max_age %}
+    max age: {{ cache_max_age }}
+  {%- endif %}
+  -->
+{%- endif %}
+
+{{ attach_library("novel/date-range") }}
+
+<label class="input-label" id="facet_{{ facet.id }}_label">{{ facet.label }}</label>
+<div class="date-range date-range--filter">
+  <input type="text" class="date-range__input"/>
+  {# We need the facets-widget-date_range class to be available as it is
+     required in cms/web/modules/contrib/facets_date_range/js/date-range.js #}
+  <div class="date-range__values facets-widget-date_range">
+    {% if items or empty %}
+    {%- if items -%}
+    <{{ list_type }}{{ attributes }}>
+    {%- for item in items -%}
+      <li{{ item.attributes }}>{{ item.value }}</li>
+    {%- endfor -%}
+    </{{ list_type }}>
+    {%- else -%}
+      {{- empty -}}
+      {%- endif -%}
+    {%- endif %}
+  </div>
+</div>
