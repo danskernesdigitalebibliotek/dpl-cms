@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-03-21 17:21+0100\n"
-"PO-Revision-Date: 2024-03-21 17:21+0100\n"
+"POT-Creation-Date: 2024-03-22 13:55+0100\n"
+"PO-Revision-Date: 2024-03-22 13:55+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "Administration"
 
 msgctxt "block.block.novel_branding:settings:label"
 msgid "Site branding"
-msgstr ""
+msgstr "Side branding"
 
 msgctxt "block.block.novel_local_actions:settings:label"
 msgid "Primary admin actions"
@@ -222,7 +222,7 @@ msgstr "Standard kort dato"
 
 msgctxt "core.date_format.short:pattern"
 msgid "m/d/Y - H:i"
-msgstr ""
+msgstr "m/d/Y - H:i"
 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
@@ -338,7 +338,7 @@ msgstr "Søg efter indhold"
 
 msgctxt "core.entity_form_display.paragraph.event_ticket_category.default:third_party_settings:field_group:group_inline_fields:label"
 msgid "Inline fields"
-msgstr ""
+msgstr "Indlejrede felter"
 
 msgctxt "core.entity_form_display.paragraph.user_registration_section.default:content:field_user_registration_items:settings:title"
 msgid "Paragraph"
@@ -358,87 +358,87 @@ msgstr "Registrer"
 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
-msgstr ""
+msgstr "Y-m-d\\TH:i:s"
 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_day"
 msgid "d F Y"
-msgstr ""
+msgstr "d F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_month"
 msgid "d - {d} F Y"
-msgstr ""
+msgstr "d - {d} F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_months"
 msgid "d F - {d} {F} Y"
-msgstr ""
+msgstr "d F - {d} {F} Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_years"
 msgid "d F Y - {d} {F} {Y}"
-msgstr ""
+msgstr "d F Y - {d} {F} {Y}"
 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
-msgstr ""
+msgstr "Y-m-d\\TH:i:s"
 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_day"
 msgid "d F Y"
-msgstr ""
+msgstr "d F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_month"
 msgid "d - {d} F Y"
-msgstr ""
+msgstr "d - {d} F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_months"
 msgid "d F - {d} {F} Y"
-msgstr ""
+msgstr "d F - {d} {F} Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_years"
 msgid "d F Y - {d} {F} {Y}"
-msgstr ""
+msgstr "d F Y - {d} {F} {Y}"
 
 msgctxt "core.entity_view_display.eventinstance.default.list:content:date:settings:separator"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
-msgstr ""
+msgstr "Y-m-d\\TH:i:s"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_day"
 msgid "d. M Y"
-msgstr ""
+msgstr "d. M Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_month"
 msgid "d. - {d}. M Y"
-msgstr ""
+msgstr "d. - {d}. M Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_months"
 msgid "d. M - {d}. {M} Y"
-msgstr ""
+msgstr "d. M - {d}. {M} Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_years"
 msgid "d. M Y - {d}. {M} {Y}"
-msgstr ""
+msgstr "d. M Y - {d}. {M} {Y}"
 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
-msgstr ""
+msgstr "Y-m-d\\TH:i:s"
 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_day"
 msgid "d. M Y"
-msgstr ""
+msgstr "d. M Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_month"
 msgid "d. - {d}. M Y"
-msgstr ""
+msgstr "d. - {d}. M Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_months"
 msgid "d. M - {d}. {M} Y"
-msgstr ""
+msgstr "d. M - {d}. {M} Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_years"
 msgid "d. M Y - {d}. {M} {Y}"
-msgstr ""
+msgstr "d. M Y - {d}. {M} {Y}"
 
 msgctxt "core.entity_view_mode.block.token:label"
 msgid "Token"
@@ -514,7 +514,7 @@ msgstr "Card"
 
 msgctxt "core.entity_view_mode.node.full:label"
 msgid "Full content"
-msgstr ""
+msgstr "Alt indhold"
 
 msgctxt "core.entity_view_mode.node.list_teaser:label"
 msgid "List teaser"
@@ -538,7 +538,7 @@ msgstr "Søgeindeks"
 
 msgctxt "core.entity_view_mode.node.search_result:label"
 msgid "Search result highlighting input"
-msgstr ""
+msgstr "Input til highlights i søgeresultatet"
 
 msgctxt "core.entity_view_mode.node.teaser:label"
 msgid "Teaser"
@@ -1036,13 +1036,14 @@ msgstr "Facet"
 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_ranking_max:label"
 msgid "Term Ranking Maximum"
-msgstr ""
+msgstr "Rankering blandt hyppigste værdier"
 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_ranking_max:description"
 msgid "The upper limit for a placement/ranking of a term inside a facet group"
 msgstr ""
-"Den øvre grænse for en placering/rankering af et udtryk i en "
-"facetgruppe"
+"Ønskes kampagnen vist, hvis værdien fx er blandt de 7 hyppigst "
+"repræsenterede i søgesættet, sættes ”Rankering blandt hyppigste "
+"værdier” til 7."
 
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_term:label"
 msgid "Term"
@@ -1548,7 +1549,7 @@ msgstr "Hero bredformat (4/3)"
 
 msgctxt "image.style.linkit_result_thumbnail:label"
 msgid "Linkit result thumbnail"
-msgstr ""
+msgstr "Thumbanil"
 
 msgctxt "image.style.logo:label"
 msgid "Logo"
@@ -1608,15 +1609,15 @@ msgstr "403 adgang nægtet"
 
 msgctxt "metatag.metatag_defaults.403:tags:robots"
 msgid "noindex"
-msgstr ""
+msgstr "intet indeks"
 
 msgctxt "metatag.metatag_defaults.403:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.403:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.404:label"
 msgid "404 page not found"
@@ -1624,11 +1625,11 @@ msgstr "404 side ikke fundet"
 
 msgctxt "metatag.metatag_defaults.404:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.404:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.front:label"
 msgid "Front page"
@@ -1636,11 +1637,11 @@ msgstr "Forside"
 
 msgctxt "metatag.metatag_defaults.front:tags:canonical_url"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.front:tags:shortlink"
 msgid "[site:url]"
-msgstr ""
+msgstr "[site:url]"
 
 msgctxt "metatag.metatag_defaults.global:label"
 msgid "Global"
@@ -1648,11 +1649,11 @@ msgstr "Global"
 
 msgctxt "metatag.metatag_defaults.global:tags:canonical_url"
 msgid "[current-page:url]"
-msgstr ""
+msgstr "[current-page:url]"
 
 msgctxt "metatag.metatag_defaults.global:tags:title"
 msgid "[current-page:title] | [site:name]"
-msgstr ""
+msgstr "[current-page:title] | [site:name]"
 
 msgctxt "metatag.metatag_defaults.node:label"
 msgid "Content"
@@ -1660,7 +1661,7 @@ msgstr "Indhold"
 
 msgctxt "metatag.metatag_defaults.node:tags:canonical_url"
 msgid "[node:field_canonical_url:uri]"
-msgstr ""
+msgstr "[node:field_canonical_url:uri]"
 
 msgctxt "metatag.metatag_defaults.node:tags:description"
 msgid "[node:summary]"
@@ -1668,7 +1669,7 @@ msgstr "[node:summary]"
 
 msgctxt "metatag.metatag_defaults.node:tags:title"
 msgid "[node:title] | [site:name]"
-msgstr ""
+msgstr "[node:title] | [site:name]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:label"
 msgid "Taxonomy term"
@@ -1676,7 +1677,7 @@ msgstr "Taksonomi term"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:canonical_url"
 msgid "[term:url]"
-msgstr ""
+msgstr "[term:url]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:description"
 msgid "[term:description]"
@@ -1684,7 +1685,7 @@ msgstr "[term:description]"
 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:title"
 msgid "[term:name] | [site:name]"
-msgstr ""
+msgstr "[term:name] | [site:name]"
 
 msgctxt "metatag.metatag_defaults.user:label"
 msgid "User"
@@ -1692,7 +1693,7 @@ msgstr "Bruger"
 
 msgctxt "metatag.metatag_defaults.user:tags:canonical_url"
 msgid "[user:url]"
-msgstr ""
+msgstr "[user:url]"
 
 msgctxt "metatag.metatag_defaults.user:tags:description"
 msgid "[site:name]"
@@ -1700,7 +1701,7 @@ msgstr "[site:name]"
 
 msgctxt "metatag.metatag_defaults.user:tags:title"
 msgid "[user:display-name] | [site:name]"
-msgstr ""
+msgstr "[user:display-name] | [site:name]"
 
 msgctxt "node.type.article:name"
 msgid "Article"
@@ -1726,7 +1727,7 @@ msgstr ""
 
 msgctxt "node.type.campaign:name"
 msgid "Campaign"
-msgstr "Kampagne (Mikkel tester 20.18)"
+msgstr "Kampagne"
 
 msgctxt "node.type.campaign:description"
 msgid ""
@@ -1920,7 +1921,7 @@ msgstr "Afpublicer billede"
 
 msgctxt "system.action.node_break_lock_action:label"
 msgid "Break lock node"
-msgstr ""
+msgstr "Bryd lås på element"
 
 msgctxt "system.action.node_delete_action:label"
 msgid "Delete content"
@@ -1928,11 +1929,11 @@ msgstr "Slet indhold"
 
 msgctxt "system.action.node_make_sticky_action:label"
 msgid "Make content sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "system.action.node_make_unsticky_action:label"
 msgid "Make content unsticky"
-msgstr ""
+msgstr "Ikke-klæbrig"
 
 msgctxt "system.action.node_promote_action:label"
 msgid "Promote content to front page"
@@ -1940,7 +1941,7 @@ msgstr "Forfrem til forsiden"
 
 msgctxt "system.action.node_publish_action:label"
 msgid "Publish content"
-msgstr ""
+msgstr "Udgiv indhold"
 
 msgctxt "system.action.node_save_action:label"
 msgid "Save content"
@@ -1956,7 +1957,7 @@ msgstr "Afpublicer indhold"
 
 msgctxt "system.action.taxonomy_term_publish_action:label"
 msgid "Publish taxonomy term"
-msgstr ""
+msgstr "Udgiv taksonomi term"
 
 msgctxt "system.action.taxonomy_term_unpublish_action:label"
 msgid "Unpublish taxonomy term"
@@ -1968,7 +1969,7 @@ msgstr "Tilføj ekstern systemrolle til de(n) valgte bruger(e)"
 
 msgctxt "system.action.user_block_user_action:label"
 msgid "Block the selected user(s)"
-msgstr ""
+msgstr "Blokér valgt(e) bruger"
 
 msgctxt "system.action.user_cancel_user_action:label"
 msgid "Cancel the selected user account(s)"
@@ -2036,7 +2037,7 @@ msgstr "Tags"
 
 msgctxt "user.mail:cancel_confirm:subject"
 msgid "Account cancellation request for [user:display-name] at [site:name]"
-msgstr ""
+msgstr "Anmodning om sletning af konto for [user:display-name] ved [site:name]"
 
 msgctxt "user.mail:cancel_confirm:body"
 msgid ""
@@ -2174,7 +2175,7 @@ msgstr ""
 
 msgctxt "user.mail:register_no_approval_required:subject"
 msgid "Account details for [user:display-name] at [site:name]"
-msgstr ""
+msgstr "Kontodetaljer for [user:display-name] ved [site:name]"
 
 msgctxt "user.mail:register_no_approval_required:body"
 msgid ""
@@ -2226,6 +2227,8 @@ msgid ""
 "Account details for [user:display-name] at [site:name] (pending admin "
 "approval)"
 msgstr ""
+"Kontodetaljer for [user:display-name] ved [site:name] (afventer "
+"godkendelse fra administrator) "
 
 msgctxt "user.mail:register_pending_approval:body"
 msgid ""
@@ -2254,6 +2257,8 @@ msgid ""
 "Account details for [user:display-name] at [site:name] (pending admin "
 "approval)"
 msgstr ""
+"Kontodetaljer for [user:display-name] ved [site:name] (afventer "
+"godkendelse fra administrator)"
 
 msgctxt "user.mail:register_pending_approval_admin:body"
 msgid ""
@@ -2267,7 +2272,7 @@ msgstr ""
 
 msgctxt "user.mail:status_activated:subject"
 msgid "Account details for [user:display-name] at [site:name] (approved)"
-msgstr ""
+msgstr "Kontodetaljer for [user:display-name] ved [site:name] (accepteret)"
 
 msgctxt "user.mail:status_activated:body"
 msgid ""
@@ -2323,7 +2328,7 @@ msgstr ""
 
 msgctxt "user.mail:status_blocked:subject"
 msgid "Account details for [user:display-name] at [site:name] (blocked)"
-msgstr ""
+msgstr "Kontodetaljer for [user:display-name] ved [site:name] (blokeret)"
 
 msgctxt "user.mail:status_blocked:body"
 msgid ""
@@ -2343,7 +2348,7 @@ msgstr ""
 
 msgctxt "user.mail:status_canceled:subject"
 msgid "Account details for [user:display-name] at [site:name] (canceled)"
-msgstr ""
+msgstr "Kontodetaljer for [user:display-name] ved [site:name] (slettet)"
 
 msgctxt "user.mail:status_canceled:body"
 msgid ""
@@ -2367,7 +2372,7 @@ msgstr "Administrator"
 
 msgctxt "user.role.anonymous:label"
 msgid "Anonymous user"
-msgstr ""
+msgstr "Anonym bruger"
 
 msgctxt "user.role.authenticated:label"
 msgid "Authenticated user"
@@ -2621,7 +2626,7 @@ msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
-msgstr ""
+msgstr "basic"
 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
@@ -2863,7 +2868,7 @@ msgstr "Liste over alle skabelonenheder, der kan klones"
 
 msgctxt "views.view.entity_clone_template:display:default:display_title"
 msgid "Master"
-msgstr ""
+msgstr "Master"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:title"
 msgid "Entity Clone Template"
@@ -2871,7 +2876,7 @@ msgstr "Gem son skabelon"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
 msgid "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
-msgstr ""
+msgstr "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -2927,17 +2932,19 @@ msgstr ""
 
 msgctxt "views.view.entity_clone_template:display:block:display_title"
 msgid "Block"
-msgstr ""
+msgstr "Blokér"
 
 msgctxt "views.view.entity_clone_template:display:block:display_options:fields:title:alter:text"
 msgid "<strong>{{ title__value }}</strong> <small>({{ type }})</small>"
-msgstr ""
+msgstr "<strong>{{ title__value }}</strong> <small>({{ type }})</small>"
 
 msgctxt "views.view.entity_clone_template:display:block:display_options:fields:nothing:alter:text"
 msgid ""
 "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Use "
 "template'|trans }}</a>"
 msgstr ""
+"<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Use "
+"template'|trans }}</a>"
 
 msgctxt "views.view.entity_clone_template:display:page:display_title"
 msgid "Page"
@@ -2953,7 +2960,7 @@ msgstr "Opret indhold ud fra en foruddefineret skabelon"
 
 msgctxt "views.view.entity_reference_content:label"
 msgid "Entity reference - content"
-msgstr ""
+msgstr "Instansreference - indhold"
 
 msgctxt "views.view.entity_reference_content:description"
 msgid "Used by content reference fields, such as \"field_contents\"."
@@ -2979,6 +2986,11 @@ msgid ""
 "}} - ({{ status }})</small>\n"
 "</div>"
 msgstr ""
+"<div>\n"
+"<strong>{{ title }}</strong><br/>\n"
+"<small>{{ nid }} - {{ type "
+"}} - ({{ status }})</small>\n"
+"</div>"
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3018,7 +3030,7 @@ msgstr "Alle"
 
 msgctxt "views.view.entity_reference_content:display:entity_reference_1:display_title"
 msgid "Entity Reference"
-msgstr ""
+msgstr "Instans reference"
 
 msgctxt "views.view.entity_reference_event_instance:label"
 msgid "Entity reference - event instance"
@@ -3038,19 +3050,19 @@ msgstr "Publiceret"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_day"
 msgid "d F Y"
-msgstr ""
+msgstr "d F Y"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_month"
 msgid "d - {d} F Y"
-msgstr ""
+msgstr "d - {d} F Y"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_months"
 msgid "d F - {d} {F} Y"
-msgstr ""
+msgstr "d F - {d} {F} Y"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_years"
 msgid "d F Y - {d} {F} {Y}"
-msgstr ""
+msgstr "d F Y - {d} {F} {Y}"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title:alter:text"
 msgid ""
@@ -3061,6 +3073,12 @@ msgid ""
 "}})</small>\n"
 "</div>"
 msgstr ""
+"<div>\n"
+"<strong>{{ title }}</strong><br/>\n"
+"<small>{{ id }} - "
+"<strong>{{date__value}}</strong> {{ date__value_1 }} - ({{ status "
+"}})</small>\n"
+"</div>"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3123,6 +3141,12 @@ msgid ""
 "}})</small>\n"
 "</div>"
 msgstr ""
+"<div>\n"
+"<strong>{{ title }}</strong><br/>\n"
+"<small>{{ id }} - "
+"<strong>{{eventseries_start_date}}</strong> - ({{ status "
+"}})</small>\n"
+"</div>"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -3222,7 +3246,7 @@ msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
-msgstr "basal"
+msgstr "basic"
 
 msgctxt "views.view.events:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
@@ -3270,7 +3294,7 @@ msgstr "Titel"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:admin_label"
 msgid "Event Instance entity: Event Date time"
-msgstr ""
+msgstr "Arrangementsinstans: Afholdelsestidspunkt"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:one_day"
 msgid "H:i - {H}:{i}"
@@ -3584,7 +3608,7 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_2:display_options:fields:type:label"
 msgid "Entity type"
-msgstr ""
+msgstr "Instans type"
 
 msgctxt "views.view.files:display:page_2:display_options:fields:module:label"
 msgid "Registering module"
@@ -3596,7 +3620,7 @@ msgstr "Brug antal"
 
 msgctxt "views.view.files:display:page_2:display_options:fields:count:format_plural_string"
 msgid "1\003@count"
-msgstr ""
+msgstr "1\003@count"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:tags:next"
 msgid "Next ›"
@@ -3632,7 +3656,7 @@ msgstr "Låst indhold"
 
 msgctxt "views.view.locked_content:display:default:display_title"
 msgid "Master"
-msgstr ""
+msgstr "Master"
 
 msgctxt "views.view.locked_content:display:default:display_options:title"
 msgid "Locked content"
@@ -4140,7 +4164,7 @@ msgstr "Find og håndter planlagt indhold."
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_title"
 msgid "Master"
-msgstr ""
+msgstr "Master"
 
 msgctxt "views.view.scheduler_scheduled_content:display:default:display_options:title"
 msgid "Scheduled Content"
@@ -4603,7 +4627,7 @@ msgstr "admin/reports/dblog/event/{{ wid }}"
 
 msgctxt "views.view.watchdog:display:default:display_options:fields:message:alter:alt"
 msgid "{{ message }}"
-msgstr ""
+msgstr "{{ message }}"
 
 msgctxt "views.view.watchdog:display:default:display_options:fields:name:label"
 msgid "User"
