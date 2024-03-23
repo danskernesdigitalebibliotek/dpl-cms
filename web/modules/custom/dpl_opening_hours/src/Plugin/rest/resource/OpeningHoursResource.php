@@ -30,8 +30,8 @@ use Symfony\Component\Routing\Route;
  *          "items" = {
  *            "type" = "object",
  *            "properties" = {
- *              "id" => {
- *                "type" => "integer",
+ *              "id" = {
+ *                "type" = "integer",
  *                "description" = "An serial unique id of the opening hours instance.",
  *              },
  *              "category" = {
