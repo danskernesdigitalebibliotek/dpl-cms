@@ -55,6 +55,13 @@
 
   {{ drupal_block('system_messages_block') }}
 
+  {% if breadcrumb %}
+    {% include '@novel/components/breadcrumb.html.twig'
+      with {
+      'links': breadcrumb,
+    } only %}
+  {% endif %}
+
   <main id="main-content" role="main">
     {{ page.content }}
   </main>

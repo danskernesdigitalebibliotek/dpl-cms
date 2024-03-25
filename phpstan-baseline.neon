@@ -1,6 +1,66 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Function dpl_breadcrumb_field_options\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Function dpl_breadcrumb_form_alter\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Function dpl_breadcrumb_token_info\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Function dpl_breadcrumb_tokens\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Function dpl_breadcrumb_tokens\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Function dpl_breadcrumb_tokens\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/dpl_breadcrumb.module
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:getBaseBreadcrumb\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:getBreadcrumb\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:getCategoryBreadcrumb\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:getMenuBreadcrumb\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:menuLoop\\(\\) has parameter \\$breadcrumb with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
+			message: "#^Method Drupal\\\\dpl_breadcrumb\\\\Services\\\\BreadcrumbHelper\\:\\:menuLoop\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: web/modules/custom/dpl_breadcrumb/src/Services/BreadcrumbHelper.php
+
+		-
 			message: "#^Call to deprecated method legacyConfig\\(\\) of class Drupal\\\\dpl_react\\\\DplReactConfigBase\\.$#"
 			count: 1
 			path: web/modules/custom/dpl_dashboard/src/DplDashboardSettings.php

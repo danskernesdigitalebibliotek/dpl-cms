@@ -1,0 +1,122 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Used for allowed_values_function callback in field_breadcrumb_parent.
+ *
+ * @see field.storage.node.field_menu_link_relation.yml
+ */
+function dpl_breadcrumb_field_options(): array {
+  $menu_key = \Drupal::service('dpl_breadcrumb.breadcrumb_helper')->getMenuId();
+
+  // We want to load the menu links as a visual tree, the same that is shown
+  // when selecting a menu parent in the drop down. E.g.:
+  // - Parent
+  // -- Child
+  // --- Another child.
+  $menu_links = \Drupal::service('menu.parent_form_selector')
+    ->getParentSelectOptions('', [$menu_key => NULL]);
+
+  // Removing the first menu link, as it's a type of general menu label.
+  array_shift($menu_links);
+
+  $menu_links_unprefixed = [];
+
+  // All the menu links have a prefix with something like:
+  // menu-name:menu_link_content:uuid.
+  // We only want the uuid.
+  foreach ($menu_links as $menu_link_key => $menu_link) {
+    $menu_link_key_unprefixed = str_replace("{$menu_key}:menu_link_content:", '', $menu_link_key);
+
+    $menu_links_unprefixed[$menu_link_key_unprefixed] = $menu_link;
+  }
+
+  return $menu_links_unprefixed;
+}
+
+/**
+ * Custom helper function for preparing breadcrumb.
+ *
+ * We get it based on a node's field_breadcrumb_parent.
+ */
+function dpl_breadcrumb_preprocess_page(array &$variables): void {
+  $node = $variables['node'] ?? NULL;
+
+  if (empty($node)) {
+    return;
+  }
+
+  $variables['breadcrumb'] =
+    \Drupal::service('dpl_breadcrumb.breadcrumb_helper')->getBreadcrumb($node);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function dpl_breadcrumb_form_alter(array &$form, FormStateInterface $form_state, string $form_id): array {
+  $field_key = 'field_breadcrumb_parent';
+
+  if (!str_starts_with($form_id, 'node_') || !str_ends_with($form_id, '_edit_form') || empty($form[$field_key]['widget'])) {
+    return $form;
+  }
+
+  $field = &$form[$field_key]['widget'];
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  $breadcrumb_uuid =
+    \Drupal::service('dpl_breadcrumb.breadcrumb_helper')->getBreadcrumbItemUuid($node);
+
+  if (!empty($breadcrumb_uuid)) {
+    $field['#disabled'] = TRUE;
+    $field['#default_value'] = [$breadcrumb_uuid];
+    $field['#description'] = t('This content already exists in the content structure, so you cannot choose bla bla bla..', [], ['context' => 'DPL admin UX']);
+  }
+
+  return $form;
+}
+
+/**
+ * Implements hook_token_info().
+ *
+ * Introducing our custom token, used to build pretty breadcrumb URLs.
+ */
+function dpl_breadcrumb_token_info(): array {
+  return [
+    'types' => [
+      'dpl_breadcrumb' => [
+        'name' => 'DPL Breadcrumb',
+      ],
+    ],
+    'tokens' => [
+      'dpl_breadcrumb' => [
+        'breadcrumb-url-alias' => [
+          'name' => 'Breadcrumb URL alias',
+        ],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_tokens().
+ *
+ * Used to create the URL alias, based on breadcrumb.
+ */
+function dpl_breadcrumb_tokens(string $type, array $tokens, array $data): array {
+  $token_original = $tokens['breadcrumb-url-alias'] ?? NULL;
+  $node = $data['node'] ?? NULL;
+
+  if ($type !== 'dpl_breadcrumb' || empty($token_original) || !($node instanceof Node)) {
+    return [];
+  }
+
+  $breadcrumb =
+    \Drupal::service('dpl_breadcrumb.breadcrumb_helper')->getBreadcrumbUrlString($node);
+
+  return [
+    $token_original => $breadcrumb,
+  ];
+}
