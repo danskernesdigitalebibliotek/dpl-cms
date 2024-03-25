@@ -33,7 +33,7 @@ final class OpeningHoursResource extends OpeningHoursResourceBase {
           Request::METHOD_GET => [
             'branch_id' => [
               'name' => 'branch_id',
-              'type' => 'int',
+              'type' => 'integer',
               'description' => 'The id of the branch for which to retrieve opening hours.',
               'in' => 'query',
               'required' => FALSE,
