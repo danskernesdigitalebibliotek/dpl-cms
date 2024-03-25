@@ -13,6 +13,7 @@ dependencies:
     - node.type.campaign
     - node.type.page
     - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.content_structure
     - taxonomy.vocabulary.tags
   module:
     - administerusersbyrole
@@ -88,6 +89,7 @@ permissions:
   - 'create media'
   - 'create page content'
   - 'create terms in categories'
+  - 'create terms in content_structure'
   - 'create terms in tags'
   - 'create users'
   - 'create video media'
@@ -121,6 +123,7 @@ permissions:
   - 'delete own video media'
   - 'delete page revisions'
   - 'delete terms in categories'
+  - 'delete terms in content_structure'
   - 'delete terms in tags'
   - 'dpl admin access pages'
   - 'edit admin menu'
@@ -146,6 +149,7 @@ permissions:
   - 'edit own page content'
   - 'edit own video media'
   - 'edit terms in categories'
+  - 'edit terms in content_structure'
   - 'edit terms in tags'
   - 'edit themes novel'
   - 'edit users by role'

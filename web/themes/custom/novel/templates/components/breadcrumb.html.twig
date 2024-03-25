@@ -1,0 +1,19 @@
+<div>
+    <nav role="navigation">
+      <h2 class="hide-visually">
+        {{ 'Breadcrumb'|t }}
+      </h2>
+
+      {% for item in links|reverse %}
+        {% if item.route_name %}
+          <a href="{{ url(item.route_name, item.route_parameters) }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+
+        {% if not loop.last %}
+          >
+        {% endif %}
+      {% endfor %}
+    </nav>
+</div>

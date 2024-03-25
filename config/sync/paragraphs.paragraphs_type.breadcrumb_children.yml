@@ -1,0 +1,10 @@
+uuid: 9ec44262-802a-4927-8f35-c9534b149b9f
+langcode: en
+status: true
+dependencies: {  }
+id: breadcrumb_children
+label: 'Breadcrumb children - automatic'
+icon_uuid: null
+icon_default: null
+description: 'Automatically display all content that is set to a chosen breadcrumb target'
+behavior_plugins: {  }
