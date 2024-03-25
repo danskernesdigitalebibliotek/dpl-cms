@@ -89,7 +89,7 @@ abstract class OpeningHoursResourceBase extends ResourceBase {
           "end_time",
           "branch_id",
         ]
-      )
+      ),
     ];
   }
 
