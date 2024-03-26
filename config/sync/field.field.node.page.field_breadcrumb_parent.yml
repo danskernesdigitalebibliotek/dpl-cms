@@ -1,0 +1,21 @@
+uuid: 8908b97a-9a7b-425e-80b1-f0c1332dd09b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_breadcrumb_parent
+    - node.type.page
+  module:
+    - options
+id: node.page.field_breadcrumb_parent
+field_name: field_breadcrumb_parent
+entity_type: node
+bundle: page
+label: 'Breadcrumb parent'
+description: 'Bla bla, choose a link that <a href="/admin/structure/menu/manage/content-structure" target="_blank">you create here</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

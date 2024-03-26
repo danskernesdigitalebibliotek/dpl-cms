@@ -1,0 +1,8 @@
+uuid: 97e568aa-c586-4663-8ed9-6b4772f39e3f
+langcode: da
+status: true
+dependencies: {  }
+id: content-structure
+label: 'Content structure'
+description: ''
+locked: false
