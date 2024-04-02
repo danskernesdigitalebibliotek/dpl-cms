@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-02 14:49+0200\n"
-"PO-Revision-Date: 2024-04-02 14:49+0200\n"
+"POT-Creation-Date: 2024-04-02 14:54+0200\n"
+"PO-Revision-Date: 2024-04-02 14:54+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -12127,13 +12127,13 @@ msgid "The duration unites of the events"
 msgstr ""
 
 msgid "Buffer"
-msgstr ""
+msgstr "Pause mellem enkelte instanser"
 
 msgid "The time between consecutive events"
 msgstr "Tidsrummet mellem hver instans "
 
 msgid "Buffer Units"
-msgstr ""
+msgstr "Pause enheder"
 
 msgid "The units used for the time between consecutive events"
 msgstr "Enheder til angivelse af tid mellem fortløbende arangementer"
@@ -12319,7 +12319,7 @@ msgid "Event End Time"
 msgstr ""
 
 msgid "Event Duration"
-msgstr ""
+msgstr "Varighed"
 
 msgid "Set Duration"
 msgstr ""
@@ -12370,7 +12370,7 @@ msgid "Final Event Starts At"
 msgstr "Sidste instans starter"
 
 msgid "Event Buffer"
-msgstr ""
+msgstr "Pause"
 
 msgid "Please configure the Consecutive Recurring Date settings"
 msgstr ""
@@ -12385,10 +12385,10 @@ msgid "Please select a duration units value from the list"
 msgstr ""
 
 msgid "Please enter a buffer greater than or equal to 0"
-msgstr ""
+msgstr "Indtast en værdi større eller lig med 0"
 
 msgid "Please select a buffer units value from the list"
-msgstr ""
+msgstr "Vælg en tidsenhed fra listen"
 
 msgid "Please configure the Weekly Recurring Date settings"
 msgstr ""
