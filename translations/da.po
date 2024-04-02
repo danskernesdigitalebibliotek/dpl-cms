@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-02 14:54+0200\n"
-"PO-Revision-Date: 2024-04-02 14:54+0200\n"
+"POT-Creation-Date: 2024-04-02 15:01+0200\n"
+"PO-Revision-Date: 2024-04-02 15:01+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4038,7 +4038,7 @@ msgstr ""
 
 msgctxt "Address label"
 msgid "Island"
-msgstr ""
+msgstr "Ø"
 
 msgctxt "Address label"
 msgid "Oblast"
@@ -11048,7 +11048,7 @@ msgid "Test module for Multi-value form element."
 msgstr ""
 
 msgid "Log in with @client_title"
-msgstr ""
+msgstr "Log ind med @client_title"
 
 msgid "Enabled OpenID Connect clients"
 msgstr ""
@@ -12310,7 +12310,7 @@ msgid "Create Events Between"
 msgstr ""
 
 msgid "And"
-msgstr "Og"
+msgstr "Og (Lotte test)"
 
 msgid "Event Start Time"
 msgstr ""
