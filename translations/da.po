@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-02 15:36+0200\n"
-"PO-Revision-Date: 2024-04-02 15:36+0200\n"
+"POT-Creation-Date: 2024-04-02 15:46+0200\n"
+"PO-Revision-Date: 2024-04-02 15:46+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3388,7 +3388,7 @@ msgid "Next"
 msgstr "Næste"
 
 msgid "Events"
-msgstr "Arrangementer (test Lotte)"
+msgstr "Arrangementer"
 
 msgid "Address"
 msgstr "Adresse"
@@ -12371,10 +12371,10 @@ msgid "Please configure the Monthly Recurring Date settings"
 msgstr ""
 
 msgid "First Event Starts At"
-msgstr "Første instans starter"
+msgstr "Første instans begynder"
 
 msgid "Final Event Starts At"
-msgstr "Sidste instans starter"
+msgstr "Sidste instans begynder"
 
 msgid "Event Buffer"
 msgstr "Pause"
