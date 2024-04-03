@@ -39,7 +39,7 @@
                 "version": "2024.13.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-13/dist-release-brahma-13.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/untagged-96452c5a7030f50e440b/dist-release-brahma-13.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -74,8 +74,8 @@
         "brick/math": "^0.12.1",
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
-        "danskernesdigitalebibliotek/dpl-design-system": "^2024.13",
-        "danskernesdigitalebibliotek/dpl-react": "^2024.13",
+        "danskernesdigitalebibliotek/dpl-design-system": "*",
+        "danskernesdigitalebibliotek/dpl-react": "*",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
