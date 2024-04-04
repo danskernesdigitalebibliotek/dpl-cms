@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c494a95a970fa932ddd842c031d9ed3",
+    "content-hash": "8cf857ee924a4a9fe9b49583ca72cc22",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1108,10 +1108,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.11.1",
+            "version": "2024.14.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-13/dist-release-brahma-13.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/demo-brahma-sprint-13/dist-demo-brahma-sprint-13-11987cd48ae9dff34cf513c4f5ff404a9f72afde.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
