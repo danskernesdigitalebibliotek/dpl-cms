@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-02 15:46+0200\n"
-"PO-Revision-Date: 2024-04-02 15:46+0200\n"
+"POT-Creation-Date: 2024-04-04 11:41+0200\n"
+"PO-Revision-Date: 2024-04-04 11:41+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1155,7 +1155,7 @@ msgctxt "Patron page"
 msgid "patron page pause reservations body text"
 msgstr ""
 "Du kan sætte dine reserveringer på pause mens du f.eks. er på "
-"ferie. Gælder kun fysiske materialer."
+"ferie."
 
 msgctxt "Patron page"
 msgid "Pause your reservations"
@@ -2439,7 +2439,7 @@ msgctxt "Global"
 msgid "Pause reservation below inputs text"
 msgstr ""
 "Du kan sætte dine reserveringer på pause mens du f.eks. er på "
-"ferie. Gælder kun fysiske materialer."
+"ferie."
 
 msgctxt "Global"
 msgid ""
@@ -2455,7 +2455,7 @@ msgstr "Luk pop-up til at sætte reserveringer på pause"
 
 msgctxt "Global"
 msgid "Pause reservations on physical items"
-msgstr "Sæt dine reserveringer på pause (kun fysiske materialer)"
+msgstr "Sæt dine reserveringer på pause"
 
 msgctxt "Global"
 msgid "Read more"
@@ -12013,7 +12013,7 @@ msgid "The eventseries type."
 msgstr ""
 
 msgid "The title of the event entity."
-msgstr ""
+msgstr "Titlen på arrangementsinstansen."
 
 msgid "Recur Type"
 msgstr "Gentagelsesmønster"
@@ -12279,7 +12279,7 @@ msgid "10 years"
 msgstr "10 år"
 
 msgid "Please configure the Yearly Recurring Date settings"
-msgstr "Indstil den årlige gentagelsesdato"
+msgstr "Indstil det årlige gentagelsesmønster"
 
 msgid "Please enter a start date"
 msgstr ""
@@ -13691,13 +13691,13 @@ msgid "Event Instance Inherited Title"
 msgstr ""
 
 msgid "The title of the event instance."
-msgstr ""
+msgstr "Titlen på arrangementsinstansen."
 
 msgid "Event Instance Inherited Description"
 msgstr ""
 
 msgid "The description of the event instance."
-msgstr ""
+msgstr "Beskrivelse af arrangementsinstansen."
 
 msgid "Event Instance Start Date"
 msgstr ""
@@ -13721,13 +13721,13 @@ msgid "Event Series Title"
 msgstr ""
 
 msgid "The title of the event series."
-msgstr ""
+msgstr "Titlen på arrangementsserien."
 
 msgid "Event Series Body"
 msgstr ""
 
 msgid "The description of the event series."
-msgstr ""
+msgstr "Beskrivelse af arrangementsserien."
 
 msgid "Event Instance entity"
 msgstr ""
@@ -13796,7 +13796,7 @@ msgid "Adds event series to groups both publicly and privately."
 msgstr ""
 
 msgid "The title of the event series to add to the group"
-msgstr ""
+msgstr "Titel på den arrangementsserie du vil tilføje til gruppen"
 
 msgid "registrant type"
 msgstr ""
@@ -13978,10 +13978,10 @@ msgid "Delete orphaned event instances"
 msgstr ""
 
 msgid "Recurring Events"
-msgstr ""
+msgstr "Gentagende arrangementer"
 
 msgid "Provides the ability to create recurring events"
-msgstr ""
+msgstr "Giver mulighed for at skabe gentagende arrangementer"
 
 msgid "Add event"
 msgstr ""
