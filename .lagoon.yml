@@ -94,7 +94,7 @@ environments:
         schedule: "M/30 * * * *"
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
-  pr-581:
+  pr-965:
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"
