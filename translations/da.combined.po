@@ -2606,11 +2606,6 @@ msgstr "Reserveret af anden låner"
 
 #: 
 msgctxt "Global"
-msgid "Can be returned to all branches of the municipalities libraries"
-msgstr "Kan afleveres på alle kommunens biblioteker"
-
-#: 
-msgctxt "Global"
 msgid "Close modal with grouped reservations"
 msgstr "Luk pop-up med grupperede reserveringer"
 
@@ -3565,20 +3560,6 @@ msgstr "Link til Min side på eReolen"
 
 #: 
 msgctxt "Library Agency Configuration"
-msgid "The link with information about reservations. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Her kan du indsætte et link til en hjælpeside om at sætte reserveringer på pause. <br>\n"
-"\n"
-"Du kan tilføje en relativ sti (fx /pause). <br>\n"
-"\n"
-"Du kan søge efter en intern url. <br>\n"
-"\n"
-"Du kan tilføje en ekstern url (begynd med http:// eller https://)."
-
-#: 
-msgctxt "Library Agency Configuration"
 msgid "FBI profiles"
 msgstr "VIP profiler"
 
@@ -3749,20 +3730,6 @@ msgstr "URL "
 
 #: 
 msgctxt "Fees list settings form"
-msgid "File or URL containing the fees and replacement costs. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Her kan du indsætte et link til en hjælpeside hvor brugeren kan læse om takster, gebyrer og betalingsmuligheder. <br>\n"
-"\n"
-"Du kan tilføje en relativ sti (fx /takster). <br>\n"
-"\n"
-"Du kan søge efter en intern url. <br>\n"
-"\n"
-"Du kan tilføje en ekstern url (begynd med http:// eller https://)."
-
-#: 
-msgctxt "Fees list settings form"
 msgid "Intro text"
 msgstr "Indledende tekst"
 
@@ -3785,20 +3752,6 @@ msgstr "Grundlæggende indstillinger"
 msgctxt "Patron page settings form"
 msgid "Delete patron link"
 msgstr "Url til side om hvordan man bliver slettet som bruger af biblioteket."
-
-#: 
-msgctxt "Patron page settings form"
-msgid "Link to a page where it is possible to delete patron. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Her kan du indsætte et link til en hjælpeside om hvordan man bliver slettet som bruger på biblioteket. <br>\n"
-"\n"
-"Du kan tilføje en relativ sti (fx /brugernedlæggelse). <br>\n"
-"\n"
-"Du kan søge efter en intern url. <br>\n"
-"\n"
-"Du kan tilføje en ekstern url (begynd med http:// eller https://)."
 
 #: 
 msgctxt "Patron page settings form"
@@ -3971,12 +3924,6 @@ msgstr "Gå til betalingsside"
 
 #: 
 msgctxt "Fees list settings form"
-msgid "Display an intro-text below the headline <br>\n"
-"      If nothing is written here the text: \"@text\" will be used."
-msgstr "Skriv en introduktion som vises over listen med gebyrer. Hvis dette felt ikke er udfyldt vil teksten: \"@text\" blive vist."
-
-#: 
-msgctxt "Fees list settings form"
 msgid "Payment site button configuration"
 msgstr "Indstillinger for knap til betaling"
 
@@ -3987,20 +3934,8 @@ msgstr "Link til betalingsside"
 
 #: 
 msgctxt "Fees list settings form"
-msgid "URL containing a link to a payment page. <br>\n"
-"                                         <strong>NB!: The button will only display if this field has been filled.</strong>"
-msgstr "Link til betalingsside. OBS! Knappen vises kun, hvis feltet er udfyldt med et link."
-
-#: 
-msgctxt "Fees list settings form"
 msgid "Payment site button label"
 msgstr "Tekst på knap til betalingsside"
-
-#: 
-msgctxt "Fees list settings form"
-msgid "Define the text of the button that links to the payment page. <br>\n"
-"                                  If nothing is written here the text: \"@text\" will be used."
-msgstr "Definer hvilken tekst der skal vises på knappen til betalingssiden. Hvis intet er angivet her, bruges teksten: \"@text\"."
 
 #: 
 msgid "DPL Filtered Paragraphs"
@@ -4024,20 +3959,8 @@ msgid "You have added a menu link with a parent. Please notice that this menu li
 msgstr "Du har tilføjet et menupunkt i en sekundær menu. Vær opmærksom på at menupunktet ikke vil blive vist, da vi ikke understøtter flere niveauer i hovedmenuen."
 
 #: 
-msgid "Footer item"
-msgstr "Footermenu"
-
-#: 
 msgid "Name"
 msgstr "Navn"
-
-#: 
-msgid "content"
-msgstr "indhold"
-
-#: 
-msgid "If there is no content the item will be removed."
-msgstr "Hvis der ikke er indhold i feltet vil blokken blive fjernet."
 
 #: 
 msgid "Submit"
@@ -4065,18 +3988,6 @@ msgid "Functionality related to footer."
 msgstr "Funktionalitet relateret til footeren"
 
 #: 
-msgctxt "Patron registration settings form"
-msgid "Redirect to page when user is successfully created. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "\n"
-"Redirect til en side når en bruger er oprettet. <br>\n"
-"                                         Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
-"                                         Du kan søge efter en intern URL. <br>\n"
-"                                         Du kan tilføje en eksterne URL (begyndende med \"http://\" eller \"https://\")."
-
-#: 
 msgctxt "Fees list settings form"
 msgid "Blocked user"
 msgstr "Blokeret bruger"
@@ -4085,30 +3996,6 @@ msgstr "Blokeret bruger"
 msgctxt "Fees list settings form"
 msgid "Blocked user link for modal"
 msgstr "Link til blokeret bruger som vises i modal"
-
-#: 
-msgctxt "Fees list settings form"
-msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page. <br>\n"
-"                                         If left empty, the link will not be shown. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "\n"
-"Hvis en bruger er blokeret på grund af overskredet gebyrgrænse  vises en modal. Dette felt gør det muligt at tilføje et link i modalen, f.x. til en side om takster, betalingsmuligheder eller en hjælpeside. <br>\n"
-"Hvis feltet er tomt, vises ikke et link. <br>\n"
-"Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
-"Du kan søge efter en intern URL. <br>\n"
-"Du kan tilføje en ekstern URL (begyndende med \"http://\" eller \"https://\")."
-
-#: 
-msgctxt "Fees list"
-msgid "Fee @fee DKK"
-msgstr "Gebyr @fee"
-
-#: 
-msgctxt "Fees list"
-msgid "Total @total DKK"
-msgstr "Total @total kr."
 
 #: 
 msgid "The \".version\" file does not have a valid JSON format."
@@ -4270,17 +4157,6 @@ msgid "Patron registration page url"
 msgstr "URL til brugeroprettelsesside"
 
 #: 
-msgctxt "Patron registration settings form"
-msgid "The url for the patron registration page. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Side til brugeroprettelse. \n"
-"                                         Du kan tilfæje en relativ sti (f.x. /opret). <br>\n"
-"                                         Du kan søge efter en intern URL. <br>\n"
-"                                         Du kan tilføje en eksterne URL (begyndende med \"http://\" eller \"https://\")."
-
-#: 
 msgid "DPL static content"
 msgstr "DPL fast indhold"
 
@@ -4292,17 +4168,6 @@ msgstr "Sørger for faste sider på nye bibliotekshjemmesider."
 msgctxt "Library Agency Configuration"
 msgid "Opening hours link"
 msgstr "Link til åbnbingtider"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "The link with information about opening hours. <br>\n"
-"                                         You can add a relative url (e.g. /takster). <br>\n"
-"                                         You can search for an internal url. <br>\n"
-"                                         You can add an external url (starting with \"http://\" or \"https://\")."
-msgstr "Link til information om åbningstider. <br>\n"
-"                                         Du kan tilføje en relativ sti (f.x. /takster). <br>\n"
-"                                         Du kan søge efter en intern URL. <br>\n"
-"                                         Du kan tilføje en ekstern URL (begyndende med \"http://\" eller \"https://\")."
 
 #: 
 msgctxt "DPL event"
@@ -5176,16 +5041,6 @@ msgid "Address"
 msgstr "Adresse"
 
 #: 
-msgctxt "field.field.eventinstance.default.field_event_description:label"
-msgid "Description (DEPRECATED - WILL BE DELETED.)"
-msgstr "Beskrivelse (DETTE FELT BLIVER SLETTET)"
-
-#: 
-msgctxt "field.field.eventinstance.default.field_event_description:description"
-msgid "This field will be deleted in the future. Please use the other description field."
-msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet beskrivelsesfelt."
-
-#: 
 msgctxt "field.field.eventinstance.default.field_event_image:label"
 msgid "Image"
 msgstr "Billede"
@@ -5241,20 +5096,6 @@ msgid "Teaser image"
 msgstr "Teaserbillede"
 
 #: 
-msgctxt "field.field.eventinstance.default.field_teaser_image:description"
-msgid "The teaser fields are used for the card of display.\n"
-"If no image has been selected, the text will be shown instead:\n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
-msgstr "Teaserfelterne bruges til visning af cards. Hvis der ikke er valgt et billede, vil teksten blive vist på en baggrund af identitestsfarven i stedet:\n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
-
-#: 
 msgctxt "field.field.eventinstance.default.field_teaser_text:label"
 msgid "Teaser text"
 msgstr "Teasertekst"
@@ -5283,16 +5124,6 @@ msgstr "Manchet"
 msgctxt "field.field.eventseries.default.field_event_address:label"
 msgid "Address"
 msgstr "Adresse"
-
-#: 
-msgctxt "field.field.eventseries.default.field_event_description:label"
-msgid "Description (DEPRECATED - WILL BE DELETED.)"
-msgstr "Beskrivelse (DETTE FELT BLIVER SLETTET)"
-
-#: 
-msgctxt "field.field.eventseries.default.field_event_description:description"
-msgid "This field will be deleted in the future. Please use the other description field."
-msgstr "Dette felt vil blive slettet i fremtiden. Brug venligst det andet beskrivelsesfelt."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_image:label"
@@ -5345,20 +5176,6 @@ msgid "Teaser image"
 msgstr "Teaserbillede"
 
 #: 
-msgctxt "field.field.eventseries.default.field_teaser_image:description"
-msgid "The teaser fields are used for the card of display.\n"
-"If no image has been selected, the text will be shown instead:\n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
-msgstr "Teaser-felterne bruges til det card, der repræsenterer indholdet i de forskellige formidlingskomponenter.  Hvis der ikke er valgt et billede, vil teaserteksten blive vist i stedet: \n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
-
-#: 
 msgctxt "field.field.eventseries.default.field_teaser_text:label"
 msgid "Teaser text"
 msgstr "Teasertekst"
@@ -5387,15 +5204,6 @@ msgstr "Bruges til fotokreditering og info om copyright. Vises som regel ved sid
 msgctxt "field.field.media.image.field_media_image:label"
 msgid "Image"
 msgstr "Billede"
-
-#: 
-msgctxt "field.field.media.image.field_media_image:description"
-msgid "You can set a focal point, by clicking on the preview on the image, moving the white target.<br>\n"
-"By setting a focal point, you tell the system which part of the image to keep in focus when it gets cropped.<br>\n"
-"Use the \"preview\" function, to see how your image will be cropped across image styles."
-msgstr "Du kan sætte et fokuspunkt ved at klikke på preview på billedet og flytte det hvide punkt. <br>\n"
-"Ved at sætte et fokuspunkt kan du fortælle systemet, hvilken del af billedet der skal være i fokus når det beskæres. <br>\n"
-"Brug \"preview\" funktionen for at se hvordan dit billede vil blive beskåret  i forskellige visninger."
 
 #: 
 msgctxt "field.field.media.video.field_media_oembed_video:label"
@@ -5438,13 +5246,6 @@ msgid "Override the author\t"
 msgstr "Overskriv forfatteren ␣"
 
 #: 
-msgctxt "field.field.node.article.field_show_override_author:description"
-msgid "By default, the author is set to the Drupal user that owns the content.<br>\n"
-"If you want to override this, with a manual text, you can check this."
-msgstr "Som standard sættes forfatteren til at være den indloggede redaktør. <br>\n"
-"Hvis du vil overskrive navnet kan du gøre det manuelt ved at sætte checkmark her."
-
-#: 
 msgctxt "field.field.node.article.field_show_override_author:settings:on_label"
 msgid "On"
 msgstr "Til"
@@ -5468,20 +5269,6 @@ msgstr "Tags"
 msgctxt "field.field.node.article.field_teaser_image:label"
 msgid "Teaser image"
 msgstr "Teaserbillede"
-
-#: 
-msgctxt "field.field.node.article.field_teaser_image:description"
-msgid "The teaser fields are used for the card of display.\n"
-"If no image has been selected, the text will be shown instead:\n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
-msgstr "Teaser-felterne bruges til det card, der repræsenterer indholdet i de forskellige formidlingskomponenter.  Hvis der ikke er valgt et billede, vil teaserteksten blive vist i stedet: \n"
-"\n"
-"<img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" />\n"
-"\n"
-"<hr/>"
 
 #: 
 msgctxt "field.field.node.article.field_teaser_text:label"
@@ -5574,13 +5361,6 @@ msgid "Hero title"
 msgstr "Hero titel"
 
 #: 
-msgctxt "field.field.node.page.field_hero_title:description"
-msgid "The title that is shown at the top of the page.<br>\n"
-"<strong>If this is empty, the standard page title will be used instead.</strong>"
-msgstr "Titel som vises i toppen af siden. <br>\n"
-"<strong>Hvis denne er tom, vil standard sidetitel blive anvendt.</strong>"
-
-#: 
 msgctxt "field.field.node.page.field_paragraphs:label"
 msgid "Paragraphs"
 msgstr "Paragraphs"
@@ -5619,11 +5399,6 @@ msgstr "Ønskes kampagnen vist, hvis værdien fx er blandt de 7 hyppigst repræs
 msgctxt "field.field.paragraph.campaign_rule.field_campaign_rule_term:label"
 msgid "Term"
 msgstr "Term"
-
-#: 
-msgctxt "field.field.paragraph.card_grid_automatic.field_filter_tags:label"
-msgid "Filter tags"
-msgstr "Filtrer tags"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_title:label"
@@ -5721,31 +5496,9 @@ msgid "Amount of materials"
 msgstr "Antal materialer/værker"
 
 #: 
-msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:description"
-msgid "Determines the amount of materials that will be shown, based on the CQL string. \n"
-"\n"
-"Obs: If for example a CQL string has 11 results, and an editor chooses 12. The list will display 8 instead of 11, since the grid should be able to increment by 4. "
-msgstr "Bestemmer antallet af værker som vises, baseret på CQL strengen.\n"
-"\n"
-"Bemærk: Hvis en CQL-søgning giver 11 resultater og du som redaktør har valgt at vise 12, vises kun de første 8, da komponenten kun kan vise et antal der er deleligt med 4."
-
-#: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:label"
 msgid "CQL Search"
 msgstr "CQL Søgning"
-
-#: 
-msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:description"
-msgid "This field is for inserting a CQL string based on a search. \n"
-"\n"
-"Please be aware, that it is necessary to copy the exact CQL string, including the quotations. i.e: ( 'harry potter')\n"
-"\n"
-"A valid CQL search string can be generated, by performing a query through the advanced search, and copying the CQL string from there. "
-msgstr "Dette felt er til at indsætte en CQL-streng baseret på en søgning. \n"
-"\n"
-"Vær opmærksom på, at det er nødvendigt at kopiere den nøjagtige CQL-streng, inklusive anførselstegnene. f.eks: ( 'harry potter')\n"
-"\n"
-"En gyldig CQL-søgestreng kan genereres ved at udføre en forespørgsel via den avancerede søgning og kopiere CQL-strengen derfra.␣"
 
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_title:label"
@@ -5771,19 +5524,6 @@ msgstr "Titel på materialekomponenten. Efterlad dette felt blankt, hvis du ikke
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_work_ids:label"
 msgid "Work IDs"
 msgstr "VærkID'er"
-
-#: 
-msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_work_ids:description"
-msgid "The grid will only display materials in internvals of 4. \n"
-"\n"
-"Example work ID: work-of:870970-basis:136336282.\n"
-"\n"
-"If you need to link to a specific type, select it from the dropdown and the system will display that, if it is available."
-msgstr "Komponenten viser kun værker i intervaller af 4. \n"
-"\n"
-"Eksempel på et VærkID work-of:870970-basis:136336282\n"
-"\n"
-"Hvis du vil fremhæve en specifik materialetype, vælges typen i dropdown og systemet vil vise denne type, hvis den er tilgængelig."
 
 #: 
 msgctxt "field.field.paragraph.material_grid_manual.field_work_id:label"
@@ -5836,13 +5576,6 @@ msgid "Image position right"
 msgstr "Højrestil billede"
 
 #: 
-msgctxt "field.field.paragraph.recommendation.field_image_position_right:description"
-msgid "This determines whether the image should be positioned to the left or right. \n"
-"If left untoggled (default behaviour) the image is positioned to the left, if toggled on, the image will be positioned to the right. "
-msgstr "Denne knap bruges til at bestemme om forsidebilledet skal højre- eller venstrestilles. \n"
-"Standard er at billedet er venstrestillet, men hvis knappen slås til  højrestilles billedet."
-
-#: 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:settings:on_label"
 msgid "On"
 msgstr "Til"
@@ -5858,40 +5591,14 @@ msgid "Description"
 msgstr "Beskrivelse"
 
 #: 
-msgctxt "field.field.paragraph.recommendation.field_recommendation_description:description"
-msgid "This is the description for a recommendation. \n"
-"\n"
-"If you add a description, the title of the the material will not be automatically generated. "
-msgstr "Dette er beskrivelsesteksten for en anbefaling. \n"
-"\n"
-"Hvis du tilføjer en beskrivelse vil titlen på materialet ikke blive genereret automatisk."
-
-#: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_title:label"
 msgid "Title"
 msgstr "Titel"
 
 #: 
-msgctxt "field.field.paragraph.recommendation.field_recommendation_title:description"
-msgid "The title of the recommended material.\n"
-"\n"
-"If you add a title, the description for the material will not be automatically generated. "
-msgstr "Dette er titlen på et anbefalet materiale. \n"
-"\n"
-"Hvis du tilføjer en titel vil beskrivelsesteksten for materialet ikke blive genereret automatisk. "
-
-#: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:label"
 msgid "Work ID"
 msgstr "VærkID"
-
-#: 
-msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:description"
-msgid "This is the work ID used to retrieve the material information. Example: work-of:870970-basis:136336282.\n"
-"Currently this is retrieved by performing a search for a material manually, and copying this value from the URL.\n"
-"If you need to link to a specific type, select it from the dropdown and the system will display that, if it is available."
-msgstr "Dette er det VærkID som anvendes til at hente informationer om værket. Eksempel: work-of:870970-basis:136336282.\n"
-"P.t. hentes dette ved manuelt at fremsøge et værk og kopiere værdien fra URL'en. Hvis du vil fremhæve en specifik materialetype, vælges typen i dropdown og systemet vil vise denne type, hvis den er tilgængelig."
 
 #: 
 msgctxt "field.field.paragraph.recommendation.field_work_id:label"
@@ -7620,26 +7327,6 @@ msgid "Desc"
 msgstr "Faldende"
 
 #: 
-msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
-msgid "<div class=\"admin-item\">\n"
-"<p>\n"
-"You can use existing content templates, to quickly re-use content structures that you have already created.\n"
-"</p>\n"
-"<p>\n"
-"To create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.\n"
-"</p>\n"
-"<p>\n"
-"Once you've done this, the template will be shown here.\n"
-"</p>\n"
-"</div>"
-msgstr "Du kan bruge eksisterende indholdsskabeloner til hurtigt at genbruge indholdsstrukturer.\n"
-"\n"
-"For at oprette nye skabeloner, skal du lave nyt indhold fra bunden, og derefter vælge at gemme det som en skabelon. Sædvanligvis vises denne mulighed i den højre sidebar i redigeringsmode.\n"
-"\n"
-"Når du har gjort dette, vil skabelonen blive vist her.\n"
-""
-
-#: 
 msgctxt "views.view.entity_clone_template:display:block:display_title"
 msgid "Block"
 msgstr "Blokér"
@@ -7693,17 +7380,6 @@ msgstr "Afpubliceret"
 msgctxt "views.view.entity_reference_content:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
 msgstr "Publiceret"
-
-#: 
-msgctxt "views.view.entity_reference_content:display:default:display_options:fields:title:alter:text"
-msgid "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ nid }} - {{ type }} - ({{ status }})</small>\n"
-"</div>"
-msgstr "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ nid }} - {{ type }} - ({{ status }})</small>\n"
-"</div>"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:items_per_page_label"
@@ -7796,17 +7472,6 @@ msgid "d F Y - {d} {F} {Y}"
 msgstr "d F Y - {d} {F} {Y}"
 
 #: 
-msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title:alter:text"
-msgid "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ id }} - <strong>{{date__value}}</strong> {{ date__value_1 }} - ({{ status }})</small>\n"
-"</div>"
-msgstr "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ id }} - <strong>{{date__value}}</strong> {{ date__value_1 }} - ({{ status }})</small>\n"
-"</div>"
-
-#: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
 msgstr "Enheder pr. side"
@@ -7870,17 +7535,6 @@ msgstr "Afpubliceret"
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
 msgstr "Publiceret"
-
-#: 
-msgctxt "views.view.entity_reference_event_series:display:default:display_options:fields:title:alter:text"
-msgid "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ id }} - <strong>{{eventseries_start_date}}</strong> - ({{ status }})</small>\n"
-"</div>"
-msgstr "<div>\n"
-"<strong>{{ title }}</strong><br/>\n"
-"<small>{{ id }} - <strong>{{eventseries_start_date}}</strong> - ({{ status }})</small>\n"
-"</div>"
 
 #: 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:items_per_page_label"
@@ -8013,11 +7667,6 @@ msgid "Page"
 msgstr "Side"
 
 #: 
-msgctxt "views.view.events:display:all:display_options:filters:event_categories:expose:label"
-msgid "Event category"
-msgstr "Arrangementskategori"
-
-#: 
 msgctxt "views.view.events:display:related:display_title"
 msgid "Related events"
 msgstr "Relaterede arrangementer"
@@ -8086,13 +7735,6 @@ msgstr "H:i - {H}:{i}"
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:label"
 msgid "Event Date"
 msgstr "Arrangementsdato"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:alter:text"
-msgid "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br>\n"
-"<small>{{ recur_type }}</small>"
-msgstr "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br>\n"
-"<small>{{ recur_type }}</small>"
 
 #: 
 msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_day"
@@ -9785,14 +9427,6 @@ msgstr "Side"
 msgctxt "React apps (Global error handling)"
 msgid "Close error message"
 msgstr "Luk fejlbesked"
-
-#: 
-msgid "<br><br>\"@title\" is being used in configuration. Before you can delete it, you need to remove it from the following configuration fields:"
-msgstr "<br><br>\"@title\"  anvendes i konfigurationen. Før du kan slette siden, skal du fjerne den fra følgende konfigurationsfelter og erstatte den med et nyt link:"
-
-#: 
-msgid "<br><a href=\":url\">@title</a>"
-msgstr "<br><a href=\":url\">@title</a>"
 
 #: 
 msgid "DPL Protected Nodes"
@@ -23500,5 +23134,677 @@ msgstr "Visning uendelig scroll"
 
 #: 
 msgid "A pager which allows an infinite scroll effect for views."
+msgstr ""
+
+#: 
+msgctxt "DPL Event"
+msgid "Use the address from associated branch as fallback."
+msgstr ""
+
+#: 
+msgctxt "Patron page settings form"
+msgid "Link to a page where it is possible to delete patron.<br />You can add a relative url (e.g. /takster). <br />You can search for an internal url. <br />You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The link with information about reservations. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr "The link with information about reservations. <br />You can add a relative url (e.g. /pausefunktion). <br />You can search for an internal url. <br />You can add an external url (starting with \"http://\" or \"https://\")."
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "The link with information about opening hours. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr "The link with information about opening hours.<br />You can add a relative url (e.g. /branches). <br />You can search for an internal url. <br />You can add an external url (starting with \"http://\" or \"https://\")."
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "The url for the patron registration page. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Patron registration settings form"
+msgid "Redirect to page when user is successfully created. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgid "<br /><br />\"@title\" is being used in configuration. Before you can delete it, you need to remove it from the following configuration fields:"
+msgstr ""
+
+#: 
+msgid "<br /><a href=\":url\">@title</a>"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "File or URL containing the fees and replacement costs. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Display an intro-text below the headline <br />\n"
+"      If nothing is written here the text: \"@text\" will be used."
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "URL containing a link to a payment page. <br />\n"
+"                                         <strong>NB!: The button will only display if this field has been filled.</strong>"
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "Define the text of the button that links to the payment page. <br />\n"
+"                                  If nothing is written here the text: \"@text\" will be used."
+msgstr ""
+
+#: 
+msgctxt "Fees list settings form"
+msgid "If a user is blocked because of fees a modal appears. This field makes it possible to place a link in the modal to e.g. payment options or help page. <br />\n"
+"                                         If left empty, the link will not be shown. <br />\n"
+"                                         You can add a relative url (e.g. /takster). <br />\n"
+"                                         You can search for an internal url. <br />\n"
+"                                         You can add an external url (starting with \"http://\" or \"https://\")."
+msgstr ""
+
+#: 
+msgid "DPL: Branch address fallback"
+msgstr ""
+
+#: 
+msgid "TwentyThree"
+msgstr ""
+
+#: 
+msgid "Integrate the TwentyThree video platform into the Media module with oEmbed support"
+msgstr ""
+
+#: 
+msgid "Branch"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_teaser_card:label"
+msgid "Teaser card"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.taxonomy_term.opening_hours_categories.default:content:field_opening_hours_color:settings:default_colors"
+msgid "#ac725e,#d06b64,#f83a22,#fa573c,#ff7537,#ffad46,#42d692,#16a765,#7bd148,#b3dc6c,#fbe983,#92e1c0,#9fe1e7,#9fc6e7,#4986e7,#9a9cff,#b99aff,#c2c2c2,#cabdbf,#cca6ac,#f691b2,#cd74e6,#a47ae2"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.taxonomy_term.opening_hours_categories.default:content:field_opening_hours_color:settings:format"
+msgid "hex"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.branch:name"
+msgid "Branch"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.branch:missing_label"
+msgid "others"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.branch:url_alias"
+msgid "branch"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.branch:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.event_categories:name"
+msgid "Event category"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.event_categories:missing_label"
+msgid "others"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.event_categories:url_alias"
+msgid "event_categories"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.event_categories:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+#: 
+msgctxt "facets.facet_source.search_api__views_page__events__all:name"
+msgid "search_api:views_page__events__all"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_branch:description"
+msgid "When connecting a branch, it will also use the address of this branch as the event address. If you want to use another address then provide an event address."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_address:description"
+msgid "Use this value to specific a different address than the event branch."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_teaser_image:description"
+msgid "The teaser fields are used for the card of display.<br />If no image has been selected, the text will be shown instead:<br /><br /><img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br /><hr/>"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_branch:description"
+msgid "When connecting a branch, it will also overwrite the event address with the address from the branch."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_address:description"
+msgid "Use this value to specific a different address than the event branch."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_teaser_image:description"
+msgid "The teaser fields are used for the card of display.<br />If no image has been selected, the text will be shown instead:<br /><br /><img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br /><hr/>"
+msgstr ""
+
+#: 
+msgctxt "field.field.media.image.field_media_image:description"
+msgid "You can set a focal point, by clicking on the preview on the image, moving the white target.<br /><br />By setting a focal point, you tell the system which part of the image to keep in focus when it gets cropped.<br /><br />Use the \"preview\" function, to see how your image will be cropped across image styles."
+msgstr ""
+
+#: 
+msgctxt "field.field.node.article.field_show_override_author:description"
+msgid "By default, the author is set to the Drupal user that owns the content.<br /><br />If you want to override this, with a manual text, you can check this."
+msgstr ""
+
+#: 
+msgctxt "field.field.node.article.field_teaser_image:description"
+msgid "The teaser fields are used for the card of display.<br />If no image has been selected, the text will be shown instead:<br /><br /><img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br /><hr/>"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_hero_title:description"
+msgid "The title that is shown at the top of the page.<br /><br /><strong>If this is empty, the standard page title will be used instead.</strong>"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_teaser_image:label"
+msgid "Teaser image"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_teaser_image:description"
+msgid "The teaser fields are used for the card of display.<br />If no image has been selected, the text will be shown instead:<br /><br /><img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br /><hr/>"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_teaser_text:label"
+msgid "Teaser text"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:description"
+msgid "Determines the amount of materials that will be shown, based on the CQL string. <br /><br />Obs: If for example a CQL string has 11 results, and an editor chooses 12. The list will display 8 instead of 11, since the grid should be able to increment by 4. "
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:description"
+msgid "This field is for inserting a CQL string based on a search. <br /><br />Please be aware, that it is necessary to copy the exact CQL string, including the quotations. i.e: ( 'harry potter')<br /><br />A valid CQL search string can be generated, by performing a query through the advanced search, and copying the CQL string from there. "
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_work_ids:description"
+msgid "The grid will only display materials in internvals of 4. <br /><br />Example work ID: work-of:870970-basis:136336282.<br /><br />If you need to link to a specific type, select it from the dropdown and the system will display that, if it is available."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.recommendation.field_image_position_right:description"
+msgid "This determines whether the image should be positioned to the left or right. <br />If left untoggled (default behaviour) the image is positioned to the left, if toggled on, the image will be positioned to the right. "
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.recommendation.field_recommendation_description:description"
+msgid "This is the description for a recommendation. <br /><br />If you add a description, the title of the the material will not be automatically generated. "
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.recommendation.field_recommendation_title:description"
+msgid "The title of the recommended material.<br /><br />If you add a title, the description for the material will not be automatically generated. "
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:description"
+msgid "This is the work ID used to retrieve the material information. Example: work-of:870970-basis:136336282.<br />Currently this is retrieved by performing a search for a material manually, and copying this value from the URL.<br />If you need to link to a specific type, select it from the dropdown and the system will display that, if it is available."
+msgstr ""
+
+#: 
+msgctxt "field.storage.taxonomy_term.field_opening_hours_color:settings:format"
+msgid "#HEXHEX"
+msgstr ""
+
+#: 
+msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
+msgid "Opening hours categories"
+msgstr "Opening hours categories"
+
+#: 
+msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
+msgid "<div class=\"admin-item\"><br /><p><br />You can use existing content templates, to quickly re-use content structures that you have already created.<br /></p><br /><p><br />To create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.<br /></p><br /><p><br />Once you've done this, the template will be shown here.<br /></p><br /></div>"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_content:display:default:display_options:fields:title:alter:text"
+msgid "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ nid }} - {{ type }} - ({{ status }})</small><br /></div>"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title:alter:text"
+msgid "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ id }} - <strong>{{date__value}}</strong> {{ date__value_1 }} - ({{ status }})</small><br /></div>"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_series:display:default:display_options:fields:title:alter:text"
+msgid "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ id }} - <strong>{{eventseries_start_date}}</strong> - ({{ status }})</small><br /></div>"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:alter:text"
+msgid "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br /><small>{{ recur_type }}</small>"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Fee @fee"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Total @total"
+msgstr ""
+
+#: 
+msgid "DPL error pages"
+msgstr ""
+
+#: 
+msgid "Provides content for error (404 & 403) pages."
+msgstr ""
+
+#: 
+msgctxt "Opening Hours"
+msgid "Opening Hours"
+msgstr ""
+
+#: 
+msgctxt "Opening Hours"
+msgid "Show opening hours for week"
+msgstr ""
+
+#: 
+msgctxt "Opening Hours"
+msgid "Week"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours"
+msgid "Remove event"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours"
+msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours"
+msgid "Start time"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours"
+msgid "End time"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours"
+msgid "Save"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Footer columns"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Name"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Content"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "If there is no content the item will be removed."
+msgstr ""
+
+#: 
+msgid "Secondary links"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Link title"
+msgstr ""
+
+#: 
+msgid "Instagram"
+msgstr ""
+
+#: 
+msgid "Youtube"
+msgstr ""
+
+#: 
+msgid "Spotify"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Social media URLs"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "The link will only be displayed if there is content."
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "View content that has set this breadcrumb as a parent"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "TODO - A text that describes that this node already exists in the content structure and cannot be edited."
+msgstr ""
+
+#: 
+msgid "Articles"
+msgstr "Artikler"
+
+#: 
+msgid "Create individual opening hours"
+msgstr ""
+
+#: 
+msgid "List all opening hours"
+msgstr ""
+
+#: 
+msgid "Update individual opening hours"
+msgstr ""
+
+#: 
+msgid "Delete individual opening hours"
+msgstr ""
+
+#: 
+msgid "Example content for DPL Breadcrumb"
+msgstr ""
+
+#: 
+msgid "This module adds a lot of tightly-knit content, only related to the breadcrumb, and is not part of DPL example content module, for sake of maintainability."
+msgstr ""
+
+#: 
+msgid "Opening Hours"
+msgstr ""
+
+#: 
+msgid "DPL Opening Hours"
+msgstr ""
+
+#: 
+msgid "Handling of opening hours for branches."
+msgstr ""
+
+#: 
+msgid "Add new"
+msgstr "Tilføj ny"
+
+#: 
+msgid "DPL Breadcrumb"
+msgstr ""
+
+#: 
+msgid "Breadcrumbs and automatic URL aliases, based on content structure."
+msgstr ""
+
+#: 
+msgid "DPL static content: Opening hours categories"
+msgstr ""
+
+#: 
+msgid "Adds default opening hours categories"
+msgstr ""
+
+#: 
+msgid "Breadcrumb children"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
+msgid "Filters"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
+msgid "Choose the filters, that defines what content is shown."
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:content:field_filter_categories:settings:placeholder"
+msgid "Search categories.."
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:content:field_filter_tags:settings:placeholder"
+msgid "Search tags.."
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.media.card:label"
+msgid "Card"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.branch.field_promoted_on_lists:label"
+msgid "Display at the top of the list"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.branch.field_promoted_on_lists:description"
+msgid "If you want this branch to be shown at the top on /branches, you can check this.<br><br />If you set this option on multiple branches, the promoted list will also be alphabetized"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.branch.field_promoted_on_lists:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.branch.field_promoted_on_lists:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_breadcrumb_parent:label"
+msgid "Breadcrumb parent"
+msgstr ""
+
+#: 
+msgctxt "field.field.node.page.field_breadcrumb_parent:description"
+msgid "TODO: A text about how the structure tree works.<br><br />\"If you want to make this page central, you need to save it first, and then <a href=\"/admin/structure/taxonomy/manage/breadcrumb_structure/add\" target=\"_blank\">add it as a reference in the content structure tree</a>"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_breadcrumb_target:label"
+msgid "Breadcrumb target"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_breadcrumb_target:description"
+msgid "Choose a parent in the breadcrumb structure, from which the children will be displayed. <br><br />Only one level of children will be shown."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_title:label"
+msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_branches:label"
+msgid "Filter by branches"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_categories:label"
+msgid "Filter by categories"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_tags:label"
+msgid "Filter by tags"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_content:label"
+msgid "Content"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children:label"
+msgid "Show children on page"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children:description"
+msgid "Should a list of contents that reference this breadcrumb, be shown automatically on this page?"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.opening_hours_categories.field_opening_hours_color:label"
+msgid "Color"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.opening_hours_categories.field_opening_hours_color:description"
+msgid "A color used to represent opening hours instances in administrative interfaces."
+msgstr ""
+
+#: 
+msgctxt "image.style.card_large:label"
+msgid "Card - Large - 551:312"
+msgstr ""
+
+#: 
+msgctxt "image.style.card_medium:label"
+msgid "Card - Medium - 321:426"
+msgstr ""
+
+#: 
+msgctxt "image.style.card_x_large:label"
+msgid "Card - X-Large - 1:1"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.breadcrumb_children:label"
+msgid "Breadcrumb children"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.breadcrumb_children:description"
+msgid "Automatically display all content that is referencing your chosen breadcrumb item."
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.opening_hours:label"
+msgid "Opening Hours"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.opening_hours:description"
+msgid "This is a paragraph for displaying the opening hours for the branch it is applied to. \n"
+"\n"
+"Opening hours are created under the settings of a branch. \n"
+""
+msgstr ""
+
+#: 
+msgctxt "pathauto.pattern.breadcrumb_pattern:label"
+msgid "Breadcrumb pattern"
+msgstr ""
+
+#: 
+msgctxt "system.action.pathauto_update_alias_node:label"
+msgid "Update URL alias"
+msgstr ""
+
+#: 
+msgctxt "system.action.pathauto_update_alias_user:label"
+msgid "Update URL alias"
+msgstr ""
+
+#: 
+msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
+msgid "Breadcrumb and URL structure"
+msgstr "Breadcrumb and URL structure"
+
+#: 
+msgctxt "taxonomy.vocabulary.opening_hours_categories:description"
+msgid "Types of opening hours, e.g. \"Open\" or \"Telephone time\""
+msgstr "Types of opening hours, e.g. \"Open\" or \"Telephone time\""
+
+#: 
+msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
+msgid "All"
+msgstr ""
+
+#: 
+msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
+msgid "All"
 msgstr ""
 
