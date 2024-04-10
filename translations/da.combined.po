@@ -1778,7 +1778,7 @@ msgstr "Gebyrer & erstatninger"
 #: 
 msgctxt "Dashboard"
 msgid "@total,-"
-msgstr "@total kr."
+msgstr "@total"
 
 #: 
 msgctxt "Dashboard"
@@ -3996,26 +3996,6 @@ msgstr "Blokeret bruger"
 msgctxt "Fees list settings form"
 msgid "Blocked user link for modal"
 msgstr "Link til blokeret bruger som vises i modal"
-
-#: 
-msgid "The \".version\" file does not have a valid JSON format."
-msgstr "\".version\" filen har ikke et validt JSON format."
-
-#: 
-msgid "The \".version\" file does not contain information about the CMS version."
-msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
-
-#: 
-msgid "Not found, this could be due to this environment being a PR environment."
-msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
-
-#: 
-msgid "CMS release version"
-msgstr "CMS release version"
-
-#: 
-msgid "<code>@version</code>"
-msgstr "<code>@version</code>"
 
 #: 
 msgctxt "Loan list"
@@ -7599,7 +7579,7 @@ msgstr "Standard"
 #: 
 msgctxt "views.view.events:display:default:display_options:title"
 msgid "Events"
-msgstr "Arrangementer (test lotte)"
+msgstr "Arrangementer"
 
 #: 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:items_per_page_label"
@@ -23807,4 +23787,24 @@ msgstr ""
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
 msgid "All"
 msgstr ""
+
+#: 
+msgid "The \".version\" file does not have a valid JSON format."
+msgstr "\".version\" filen har ikke et validt JSON format."
+
+#: 
+msgid "The \".version\" file does not contain information about the CMS version."
+msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
+
+#: 
+msgid "Not found, this could be due to this environment being a PR environment."
+msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
+
+#: 
+msgid "CMS release version"
+msgstr "CMS release version"
+
+#: 
+msgid "<code>@version</code>"
+msgstr "<code>@version</code>"
 

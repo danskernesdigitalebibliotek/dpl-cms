@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-09 11:55+0200\n"
-"PO-Revision-Date: 2024-04-09 11:55+0200\n"
+"POT-Creation-Date: 2024-04-10 12:43+0200\n"
+"PO-Revision-Date: 2024-04-10 12:43+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1540,7 +1540,7 @@ msgstr "Gebyrer & erstatninger"
 
 msgctxt "Dashboard"
 msgid "@total,-"
-msgstr "@total kr."
+msgstr "@total"
 
 msgctxt "Dashboard"
 msgid "Loans"
@@ -3420,25 +3420,6 @@ msgstr "Blokeret bruger"
 msgctxt "Fees list settings form"
 msgid "Blocked user link for modal"
 msgstr "Link til blokeret bruger som vises i modal"
-
-msgid "The \".version\" file does not have a valid JSON format."
-msgstr "\".version\" filen har ikke et validt JSON format."
-
-msgid ""
-"The \".version\" file does not contain information about the CMS "
-"version."
-msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
-
-msgid ""
-"Not found, this could be due to this environment being a PR "
-"environment."
-msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
-
-msgid "CMS release version"
-msgstr "CMS release version"
-
-msgid "<code>@version</code>"
-msgstr "<code>@version</code>"
 
 msgctxt "Loan list"
 msgid "No materials can be renewed"
@@ -16172,4 +16153,23 @@ msgstr ""
 
 msgid "Breadcrumb children"
 msgstr ""
+
+msgid "The \".version\" file does not have a valid JSON format."
+msgstr "\".version\" filen har ikke et validt JSON format."
+
+msgid ""
+"The \".version\" file does not contain information about the CMS "
+"version."
+msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
+
+msgid ""
+"Not found, this could be due to this environment being a PR "
+"environment."
+msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
+
+msgid "CMS release version"
+msgstr "CMS release version"
+
+msgid "<code>@version</code>"
+msgstr "<code>@version</code>"
 
