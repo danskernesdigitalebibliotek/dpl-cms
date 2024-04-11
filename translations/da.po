@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-11 14:33+0200\n"
-"PO-Revision-Date: 2024-04-11 14:33+0200\n"
+"POT-Creation-Date: 2024-04-11 15:59+0200\n"
+"PO-Revision-Date: 2024-04-11 15:59+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -16095,7 +16095,7 @@ msgstr ""
 
 msgctxt "DPL admin UX"
 msgid "View content that has set this breadcrumb as a parent"
-msgstr ""
+msgstr "Vis indhold, som har dette brødkrummeelement som en sideforælder."
 
 msgctxt "DPL admin UX"
 msgid ""
@@ -16140,10 +16140,12 @@ msgid "Add new"
 msgstr "Tilføj ny"
 
 msgid "DPL Breadcrumb"
-msgstr ""
+msgstr "Brødkrummer"
 
 msgid "Breadcrumbs and automatic URL aliases, based on content structure."
 msgstr ""
+"Brødkrummer og automatiske URL-aliasser, baseret på "
+"indholdsstruktur."
 
 msgid "DPL static content: Opening hours categories"
 msgstr "Åbningstidskategorier (statisk indhold)"
@@ -16152,7 +16154,7 @@ msgid "Adds default opening hours categories"
 msgstr "Tilføjer standard åbningstidskategorier"
 
 msgid "Breadcrumb children"
-msgstr ""
+msgstr "Sidebørn"
 
 msgid "The \".version\" file does not have a valid JSON format."
 msgstr "\".version\" filen har ikke et validt JSON format."
