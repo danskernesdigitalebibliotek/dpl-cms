@@ -6173,7 +6173,7 @@ msgstr "Anbefaling"
 #: 
 msgctxt "paragraphs.paragraphs_type.recommendation:description"
 msgid "This paragraph is used to recommend a material. "
-msgstr "Denne paragraph bruges til at anbefale et materiale.␣"
+msgstr "Denne paragraph bruges til at anbefale et enkelt materiale."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.text_body:label"
@@ -6213,7 +6213,7 @@ msgstr "Video"
 #: 
 msgctxt "paragraphs.paragraphs_type.video:description"
 msgid "Enter the URL for the video you want to include."
-msgstr "Indtast URL'en til den video, du vil inkludere."
+msgstr "Indtast URL'en til den video, du vil indlejre."
 
 #: 
 msgctxt "recurring_events.eventinstance_type.default:label"
@@ -15974,7 +15974,7 @@ msgstr ""
 
 #: 
 msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
-msgstr "En farve i heksadecimalt format, f.eks. '#0000ff' for blå; må inkludere '#' symbolet. Brugt af nogle browsere til at kontrollere baggrundsfarven til værktøjslinjen, farven brugt til et ikon, etc. "
+msgstr "En farve i heksadecimalt format, f.eks. '#0000ff' for blå; skal inkludere '#' symbolet. Brugt af nogle browsere til at kontrollere baggrundsfarven til værktøjslinjen, farve brugt til ikon, etc. "
 
 #: 
 msgid "MSApplication - Allow domain meta tags"

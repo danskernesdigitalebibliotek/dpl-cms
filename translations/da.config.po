@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-11 10:36+0200\n"
-"PO-Revision-Date: 2024-04-11 10:36+0200\n"
+"POT-Creation-Date: 2024-04-11 11:53+0200\n"
+"PO-Revision-Date: 2024-04-11 11:53+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1603,7 +1603,7 @@ msgstr "Anbefaling"
 
 msgctxt "paragraphs.paragraphs_type.recommendation:description"
 msgid "This paragraph is used to recommend a material. "
-msgstr "Denne paragraph bruges til at anbefale et materiale.␣"
+msgstr "Denne paragraph bruges til at anbefale et enkelt materiale."
 
 msgctxt "paragraphs.paragraphs_type.text_body:label"
 msgid "Text body"
@@ -1643,7 +1643,7 @@ msgstr "Video"
 
 msgctxt "paragraphs.paragraphs_type.video:description"
 msgid "Enter the URL for the video you want to include."
-msgstr "Indtast URL'en til den video, du vil inkludere."
+msgstr "Indtast URL'en til den video, du vil indlejre."
 
 msgctxt "system.action.eventinstance_break_lock_action:label"
 msgid "Break lock eventinstance"
