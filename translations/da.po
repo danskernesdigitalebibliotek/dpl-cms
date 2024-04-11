@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-11 11:53+0200\n"
-"PO-Revision-Date: 2024-04-11 11:53+0200\n"
+"POT-Creation-Date: 2024-04-11 12:05+0200\n"
+"PO-Revision-Date: 2024-04-11 12:05+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -16023,35 +16023,35 @@ msgstr ""
 
 msgctxt "Opening Hours"
 msgid "Opening Hours"
-msgstr ""
+msgstr "Åbningstider"
 
 msgctxt "Opening Hours"
 msgid "Show opening hours for week"
-msgstr ""
+msgstr "Vis ugens åbningstider"
 
 msgctxt "Opening Hours"
 msgid "Week"
-msgstr ""
+msgstr "Uge"
 
 msgctxt "DPL Opening Hours"
 msgid "Remove event"
-msgstr ""
+msgstr "Slet event"
 
 msgctxt "DPL Opening Hours"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "DPL Opening Hours"
 msgid "Start time"
-msgstr ""
+msgstr "Starter"
 
 msgctxt "DPL Opening Hours"
 msgid "End time"
-msgstr ""
+msgstr "Slutter"
 
 msgctxt "DPL Opening Hours"
 msgid "Save"
-msgstr ""
+msgstr "Gem"
 
 msgctxt "DPL admin UX"
 msgid "Footer columns"
@@ -16107,16 +16107,16 @@ msgid "Articles"
 msgstr "Artikler"
 
 msgid "Create individual opening hours"
-msgstr ""
+msgstr "Lav individuelle åbningstider"
 
 msgid "List all opening hours"
-msgstr ""
+msgstr "Vis alle åbningstider"
 
 msgid "Update individual opening hours"
-msgstr ""
+msgstr "Opdater enkelte åbningstider"
 
 msgid "Delete individual opening hours"
-msgstr ""
+msgstr "Slet enkelte åbningstider"
 
 msgid "Example content for DPL Breadcrumb"
 msgstr ""
@@ -16128,13 +16128,13 @@ msgid ""
 msgstr ""
 
 msgid "Opening Hours"
-msgstr ""
+msgstr "Åbningstider"
 
 msgid "DPL Opening Hours"
-msgstr ""
+msgstr "Åbningstider"
 
 msgid "Handling of opening hours for branches."
-msgstr ""
+msgstr "Håndterer åbningstider for biblioteker."
 
 msgid "Add new"
 msgstr "Tilføj ny"
@@ -16146,10 +16146,10 @@ msgid "Breadcrumbs and automatic URL aliases, based on content structure."
 msgstr ""
 
 msgid "DPL static content: Opening hours categories"
-msgstr ""
+msgstr "Åbningstidskategorier (statisk indhold)"
 
 msgid "Adds default opening hours categories"
-msgstr ""
+msgstr "Tilføjer standard åbningstidskategorier"
 
 msgid "Breadcrumb children"
 msgstr ""
