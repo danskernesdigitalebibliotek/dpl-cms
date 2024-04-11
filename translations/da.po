@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-11 14:28+0200\n"
-"PO-Revision-Date: 2024-04-11 14:28+0200\n"
+"POT-Creation-Date: 2024-04-11 14:33+0200\n"
+"PO-Revision-Date: 2024-04-11 14:33+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3547,7 +3547,7 @@ msgstr "Sørger for faste sider på nye bibliotekshjemmesider."
 
 msgctxt "Library Agency Configuration"
 msgid "Opening hours link"
-msgstr "Link til åbnbingtider"
+msgstr "Link til åbningstider"
 
 msgctxt "DPL event"
 msgid "Automatic unpublication"
@@ -16039,7 +16039,7 @@ msgstr "Slet åbningstid"
 
 msgctxt "DPL Opening Hours"
 msgid "Title"
-msgstr "Titel"
+msgstr "Kategori"
 
 msgctxt "DPL Opening Hours"
 msgid "Start time"
