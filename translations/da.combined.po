@@ -9431,22 +9431,22 @@ msgstr "Opdaterede navnene og underafdelingerne på hver adresse."
 #: 
 msgctxt "Address label"
 msgid "First name"
-msgstr ""
+msgstr "Fornavn"
 
 #: 
 msgctxt "Address label"
 msgid "Middle name"
-msgstr ""
+msgstr "Mellemnavn"
 
 #: 
 msgctxt "Address label"
 msgid "Last name"
-msgstr ""
+msgstr "Efternavn"
 
 #: 
 msgctxt "Address label"
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #: 
 msgctxt "Address label"
@@ -9461,7 +9461,7 @@ msgstr "Adresse linje 2"
 #: 
 msgctxt "Address label"
 msgid "Postal code"
-msgstr ""
+msgstr "Postnr."
 
 #: 
 msgctxt "Address label"
@@ -9476,7 +9476,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Locality (e.g. City)"
-msgstr ""
+msgstr "By"
 
 #: 
 msgctxt "Address label"
@@ -9486,12 +9486,12 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Street address"
-msgstr ""
+msgstr "Gadenavn"
 
 #: 
 msgctxt "Address label"
 msgid "Street address line 2"
-msgstr ""
+msgstr "Gadenavn linie 2"
 
 #: 
 msgctxt "Address label"
@@ -9501,7 +9501,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Area"
-msgstr ""
+msgstr "Område"
 
 #: 
 msgctxt "Address label"
@@ -9601,7 +9601,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Pin code"
-msgstr ""
+msgstr "Pinkode"
 
 #: 
 msgctxt "Address label"
@@ -16788,7 +16788,7 @@ msgstr ""
 
 #: 
 msgid "Street address"
-msgstr ""
+msgstr "Gadenavn"
 
 #: 
 msgid "Audio secure URL"
@@ -18306,7 +18306,7 @@ msgstr "Årligt"
 
 #: 
 msgid "Custom Date(s) and Time(s)"
-msgstr ""
+msgstr "Dato(er) og Tidspunkt(er)"
 
 #: 
 msgid "Excluded Dates"
@@ -23285,7 +23285,7 @@ msgstr ""
 #: 
 msgctxt "field.field.eventinstance.default.field_event_address:description"
 msgid "Use this value to specific a different address than the event branch."
-msgstr ""
+msgstr "Brug dette felt til at angive en anden adresse end det tilknyttede bibliotek."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_teaser_image:description"
@@ -23300,7 +23300,7 @@ msgstr ""
 #: 
 msgctxt "field.field.eventseries.default.field_event_address:description"
 msgid "Use this value to specific a different address than the event branch."
-msgstr ""
+msgstr "Brug dette felt til at angive en anden adresse end det tilknyttede bibliotek."
 
 #: 
 msgctxt "field.field.eventseries.default.field_teaser_image:description"

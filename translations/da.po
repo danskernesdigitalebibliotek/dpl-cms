@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-10 12:43+0200\n"
-"PO-Revision-Date: 2024-04-10 12:43+0200\n"
+"POT-Creation-Date: 2024-04-11 09:20+0200\n"
+"PO-Revision-Date: 2024-04-11 09:20+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3711,19 +3711,19 @@ msgstr "Opdaterede navnene og underafdelingerne på hver adresse."
 
 msgctxt "Address label"
 msgid "First name"
-msgstr ""
+msgstr "Fornavn"
 
 msgctxt "Address label"
 msgid "Middle name"
-msgstr ""
+msgstr "Mellemnavn"
 
 msgctxt "Address label"
 msgid "Last name"
-msgstr ""
+msgstr "Efternavn"
 
 msgctxt "Address label"
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 msgctxt "Address label"
 msgid "Address line 1"
@@ -3735,7 +3735,7 @@ msgstr "Adresse linje 2"
 
 msgctxt "Address label"
 msgid "Postal code"
-msgstr ""
+msgstr "Postnr."
 
 msgctxt "Address label"
 msgid "Sorting code"
@@ -3747,7 +3747,7 @@ msgstr ""
 
 msgctxt "Address label"
 msgid "Locality (e.g. City)"
-msgstr ""
+msgstr "By"
 
 msgctxt "Address label"
 msgid "Administrative area (e.g. State or Province)"
@@ -3755,11 +3755,11 @@ msgstr ""
 
 msgctxt "Address label"
 msgid "Street address"
-msgstr ""
+msgstr "Gadenavn"
 
 msgctxt "Address label"
 msgid "Street address line 2"
-msgstr ""
+msgstr "Gadenavn linie 2"
 
 msgctxt "Address label"
 msgid "Cedex"
@@ -3767,7 +3767,7 @@ msgstr ""
 
 msgctxt "Address label"
 msgid "Area"
-msgstr ""
+msgstr "Område"
 
 msgctxt "Address label"
 msgid "Canton"
@@ -3847,7 +3847,7 @@ msgstr ""
 
 msgctxt "Address label"
 msgid "Pin code"
-msgstr ""
+msgstr "Pinkode"
 
 msgctxt "Address label"
 msgid "Zip code"
@@ -10524,7 +10524,7 @@ msgid "Longitude"
 msgstr ""
 
 msgid "Street address"
-msgstr ""
+msgstr "Gadenavn"
 
 msgid "Audio secure URL"
 msgstr ""
@@ -11791,7 +11791,7 @@ msgid "Yearly Event"
 msgstr "Årligt"
 
 msgid "Custom Date(s) and Time(s)"
-msgstr ""
+msgstr "Dato(er) og Tidspunkt(er)"
 
 msgid "Excluded Dates"
 msgstr ""
