@@ -39,7 +39,7 @@
                 "version": "2024.14.1",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-14/dist-release-brahma-14.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-536-kan-vi-fa-forsider-pa-flere-poster/dist-ddflsbp-536-kan-vi-fa-forsider-pa-flere-poster.zip",
                     "type": "zip"
                 },
                 "require": {

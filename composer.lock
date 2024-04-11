@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74a8a30859111baf51ad3d8bdfa1c1af",
+    "content-hash": "6d041ad1437d101dcf81cb9a3137e037",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1111,7 +1111,7 @@
             "version": "2024.14.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-14/dist-release-brahma-14.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-536-kan-vi-fa-forsider-pa-flere-poster/dist-ddflsbp-536-kan-vi-fa-forsider-pa-flere-poster.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
