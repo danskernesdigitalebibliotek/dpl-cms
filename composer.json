@@ -153,7 +153,6 @@
         "drupal/view_unpublished": "^1.1",
         "drupal/views_infinite_scroll": "^2.0",
         "drush/drush": "^12",
-        "mnsami/composer-custom-directory-installer": "^2.0",
         "myclabs/php-enum": "^1.8",
         "npm-asset/select2": "^4.0",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -194,7 +193,6 @@
             "phpstan/extension-installer": true,
             "zaporylie/composer-drupal-optimizations": true,
             "drupal/console-extend-plugin": true,
-            "mnsami/composer-custom-directory-installer": true,
             "oomphinc/composer-installers-extender": true
         }
     },
