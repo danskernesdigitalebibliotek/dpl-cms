@@ -148,7 +148,6 @@
         "drupal/view_unpublished": "^1.1",
         "drupal/views_infinite_scroll": "^2.0",
         "drush/drush": "^12",
-        "mnsami/composer-custom-directory-installer": "^2.0",
         "myclabs/php-enum": "^1.8",
         "phpdocumentor/reflection-docblock": "^5.3",
         "spatie/color": "^1.5",
@@ -186,8 +185,7 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "zaporylie/composer-drupal-optimizations": true,
-            "drupal/console-extend-plugin": true,
-            "mnsami/composer-custom-directory-installer": true
+            "drupal/console-extend-plugin": true
         }
     },
     "scripts": {
