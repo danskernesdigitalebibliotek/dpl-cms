@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-15 14:30+0200\n"
-"PO-Revision-Date: 2024-04-15 14:30+0200\n"
+"POT-Creation-Date: 2024-04-16 11:47+0200\n"
+"PO-Revision-Date: 2024-04-16 11:47+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2370,26 +2370,6 @@ msgctxt "views.view.articles:display:default:display_options:exposed_form:option
 msgid "Desc"
 msgstr "Faldende"
 
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required"
-msgid "Select any filter and click on Apply to see results"
-msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
-
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
-msgid "basic"
-msgstr "basic"
-
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
-msgid "Advanced options"
-msgstr "Avancererede indstillinger"
-
-msgctxt "views.view.articles:display:default:display_options:filters:field_categories_target_id:expose:label"
-msgid "Article category"
-msgstr "Artikelkategori"
-
-msgctxt "views.view.articles:display:page_1:display_title"
-msgid "Page"
-msgstr "Side"
-
 msgctxt "views.view.branches:label"
 msgid "Branches"
 msgstr "Biblioteker"
@@ -4379,10 +4359,6 @@ msgctxt "facets.facet.branch:widget:config:default_option_label"
 msgid "- Any -"
 msgstr "- Alle -"
 
-msgctxt "facets.facet.event_categories:name"
-msgid "Event category"
-msgstr ""
-
 msgctxt "facets.facet.event_categories:missing_label"
 msgid "others"
 msgstr ""
@@ -4422,6 +4398,8 @@ msgid ""
 "src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br "
 "/><hr/>"
 msgstr ""
+"Teaserfelterne bruges til cards som blikfang for arrangementet. Hvis "
+"der ikke er valgt et teaserbillede, vil teksten vises i stedet."
 
 msgctxt "field.field.eventseries.default.field_branch:description"
 msgid ""
@@ -4554,17 +4532,6 @@ msgstr ""
 msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
 msgid "Opening hours categories"
 msgstr "Opening hours categories"
-
-msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
-msgid ""
-"<div class=\"admin-item\"><br /><p><br />You can use existing content "
-"templates, to quickly re-use content structures that you have already "
-"created.<br /></p><br /><p><br />To create new templates that can be "
-"re-used, you need to create a new content from scratch, and choose to "
-"expose it as a template. Usually, this option is available in the "
-"sidebar in the edit form.<br /></p><br /><p><br />Once you've done "
-"this, the template will be shown here.<br /></p><br /></div>"
-msgstr ""
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:fields:title:alter:text"
 msgid ""
@@ -4786,4 +4753,119 @@ msgstr ""
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
 msgid "All"
 msgstr "Alle"
+
+msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:third_party_settings:field_group:group_related_children:label"
+msgid "Related children"
+msgstr ""
+
+msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:content:field_children_title:settings:placeholder"
+msgid "Related content for \"@title\""
+msgstr ""
+
+msgctxt "core.entity_view_mode.media.list_teaser:label"
+msgid "List teaser (4:3)"
+msgstr ""
+
+msgctxt "facets.facet.content_branch:name"
+msgid "Branch"
+msgstr ""
+
+msgctxt "facets.facet.content_branch:missing_label"
+msgid "others"
+msgstr ""
+
+msgctxt "facets.facet.content_branch:url_alias"
+msgid "branch"
+msgstr ""
+
+msgctxt "facets.facet.content_branch:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+msgctxt "facets.facet.content_categories:name"
+msgid "Category"
+msgstr ""
+
+msgctxt "facets.facet.content_categories:missing_label"
+msgid "others"
+msgstr ""
+
+msgctxt "facets.facet.content_categories:url_alias"
+msgid "categories"
+msgstr ""
+
+msgctxt "facets.facet.content_categories:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+msgctxt "facets.facet.event_categories:name"
+msgid "Category"
+msgstr ""
+
+msgctxt "facets.facet_source.search_api__views_page__articles__all:name"
+msgid "search_api:views_page__articles__all"
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:label"
+msgid "Children title"
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:description"
+msgid ""
+"The title that is shown above the list of referenced content. Will not "
+"be shown, if there are no children displayed."
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:label"
+msgid "Show children subtitles"
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:description"
+msgid ""
+"If this is checked, the children teasers will be expanded with "
+"possible subtitle descriptions."
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:off_label"
+msgid "Off"
+msgstr ""
+
+msgctxt "image.style.list_teaser_4_3:label"
+msgid "List teaser (4:3)"
+msgstr ""
+
+msgctxt "node.type.page:description"
+msgid ""
+"Pages can be used for various types of content, either temporary or "
+"permanent. A page can be simple, containing text about, for example, "
+"loan rules, or it can serve as a structural unit designed to display "
+"other pages in a section for communication or navigation."
+msgstr ""
+
+msgctxt "pathauto.pattern.breadcrumb_pattern_event_instance:label"
+msgid "Breadcrumb pattern (event instance)"
+msgstr ""
+
+msgctxt "pathauto.pattern.breadcrumb_pattern_event_series:label"
+msgid "Breadcrumb pattern (event series)"
+msgstr ""
+
+msgctxt "views.view.articles:display:all:display_title"
+msgid "Page"
+msgstr ""
+
+msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
+msgid ""
+"<div class=\"admin-item\"><p>You can use existing content templates, "
+"to quickly re-use content structures that you have already "
+"created.</p><p>To create new templates that can be re-used, you need "
+"to create a new content from scratch, and choose to expose it as a "
+"template. Usually, this option is available in the sidebar in the edit "
+"form.</p><p>Once you've done this, the template will be shown "
+"here.</p><br /></div>"
+msgstr ""
 

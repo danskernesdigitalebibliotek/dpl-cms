@@ -6231,11 +6231,6 @@ msgid "Events"
 msgstr "Arrangementer"
 
 #: 
-msgctxt "search_api.server.db:name"
-msgid "DB"
-msgstr "DB"
-
-#: 
 msgctxt "search_api.server.db_search:name"
 msgid "DB Search"
 msgstr "DB Søgning"
@@ -6969,31 +6964,6 @@ msgstr "Stigende"
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
 msgstr "Faldende"
-
-#: 
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required"
-msgid "Select any filter and click on Apply to see results"
-msgstr "Vælg et filter og klik på \"Anvend\" for at se resultaterne"
-
-#: 
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
-msgid "basic"
-msgstr "basic"
-
-#: 
-msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
-msgid "Advanced options"
-msgstr "Avancererede indstillinger"
-
-#: 
-msgctxt "views.view.articles:display:default:display_options:filters:field_categories_target_id:expose:label"
-msgid "Article category"
-msgstr "Artikelkategori"
-
-#: 
-msgctxt "views.view.articles:display:page_1:display_title"
-msgid "Page"
-msgstr "Side"
 
 #: 
 msgctxt "views.view.branches:label"
@@ -10108,7 +10078,7 @@ msgstr ""
 
 #: 
 msgid "Create new users"
-msgstr ""
+msgstr "Opret nye brugere"
 
 #: 
 msgid "Grants access to <a href=\":create\">create users</a>."
@@ -10680,7 +10650,7 @@ msgstr "@entity kan ikke slettes, fordi den blev låst af @user fra @time"
 
 #: 
 msgid "Content lock"
-msgstr ""
+msgstr "Indholdslås"
 
 #: 
 msgid "@type locked"
@@ -10748,15 +10718,15 @@ msgstr "Bruger \"alle\" indstillinger"
 
 #: 
 msgid "Lock broken. Anyone can now edit this content translation."
-msgstr ""
+msgstr "Låsen er brudt. Alle kan nu redigere denne indholdsoversættelse."
 
 #: 
 msgid "Lock broken. Anyone can now edit this content."
-msgstr ""
+msgstr "Låsen er brudt. Alle kan nu redigere dette indhold."
 
 #: 
 msgid "Break Lock for content @label"
-msgstr ""
+msgstr "Bryd lås for @label"
 
 #: 
 msgid "Confirm break lock"
@@ -10844,7 +10814,7 @@ msgstr ""
 
 #: 
 msgid "This content is now locked against simultaneous editing. This content will remain locked if you navigate away from this page without saving or unlocking it."
-msgstr ""
+msgstr "Dette indhold er nu låst for samtidig redigering. Indholdet vil forblive låst, hvis du forlader siden uden at gemme."
 
 #: 
 msgid "Click here to @link"
@@ -10856,7 +10826,7 @@ msgstr ""
 
 #: 
 msgid "This content is now locked by you against simultaneous editing. This content will remain locked if you navigate away from this page without saving or unlocking it."
-msgstr ""
+msgstr "Dette indhold er nu låst af dig for samtidig redigering. Indholdet vil forblive låst, hvis du forlader siden uden at gemme."
 
 #: 
 msgid "Unlock"
@@ -10904,7 +10874,7 @@ msgstr "Dette indhold bliver redigeret af @name og er derfor låst for at forhin
 
 #: 
 msgid "This content is now locked against simultaneous editing."
-msgstr ""
+msgstr "Dette indhold er nu låst for samtidig redigering. "
 
 #: 
 msgid "This content is now locked by you against simultaneous editing."
@@ -10972,7 +10942,7 @@ msgstr ""
 
 #: 
 msgid "Content lock settings"
-msgstr ""
+msgstr "Indstillinger for indholdslås"
 
 #: 
 msgid "Prefetch cache test"
@@ -10984,7 +10954,7 @@ msgstr "Indstillinger"
 
 #: 
 msgid "Content lock test"
-msgstr ""
+msgstr "Test af indholdslås"
 
 #: 
 msgid "compact"
@@ -11596,7 +11566,7 @@ msgstr "Modulets navn"
 
 #: 
 msgid "Default content"
-msgstr ""
+msgstr "Standardindhold"
 
 #: 
 msgid "Imports default content when a module is enabled"
@@ -13066,7 +13036,8 @@ msgstr "Er du sikker på, at du ønsker at slette %name?"
 
 #: 
 msgid "content @type: deleted @label."
-msgstr ""
+msgstr "\n"
+"Indhold @type: slettet @label."
 
 #: 
 msgid "Included Entity Types"
@@ -13802,7 +13773,7 @@ msgstr ""
 
 #: 
 msgid "Start typing to find content or paste a URL and click on the suggestion below."
-msgstr ""
+msgstr "Begynd at skrive for at finde indhold eller indsæt en URL og klik på et forslag nedenunder."
 
 #: 
 msgid "Profile"
@@ -14802,7 +14773,7 @@ msgstr ""
 
 #: 
 msgid "Date Created"
-msgstr ""
+msgstr "Oprettelsesdato"
 
 #: 
 msgid "Date of creation of the resource."
@@ -17508,7 +17479,7 @@ msgstr "%name er forbundet til et eksternt autentifikationssystem"
 
 #: 
 msgid "OpenID Connect"
-msgstr ""
+msgstr "OpenID Connect (Adgangsplatformen)"
 
 #: 
 msgid "Automatically connect existing users enabled"
@@ -17536,7 +17507,7 @@ msgstr ""
 
 #: 
 msgid "OpenID Connect login"
-msgstr ""
+msgstr "Login til Adgangsplatformen"
 
 #: 
 msgid "Connected Accounts"
@@ -17548,7 +17519,7 @@ msgstr ""
 
 #: 
 msgid "Configure OpenID Connect, choose active OpenID Connect clients etc."
-msgstr ""
+msgstr "Indstil credentials til adgangsplatformen, ID og secret."
 
 #: 
 msgid "A pluggable client implementation for the OpenID Connect protocol."
@@ -17906,7 +17877,7 @@ msgstr ""
 
 #: 
 msgid "Select the days of the week available when creating events."
-msgstr ""
+msgstr "Vælg de dage på ugen som skal være mulige at vælge når man opretter et arrangement."
 
 #: 
 msgid "Event Specific Excluded Dates"
@@ -18354,7 +18325,7 @@ msgstr "Om denne begivenhed gentager sig baseret på ugedage eller dage i måned
 
 #: 
 msgid "Day Occurrence"
-msgstr ""
+msgstr "Dag i måneden"
 
 #: 
 msgid "Which occurence of the day(s) of the week should event take place"
@@ -18382,7 +18353,7 @@ msgstr ""
 
 #: 
 msgid "The days of the week on which this event occurs"
-msgstr ""
+msgstr "Hvilke dage på ugen finder arrangementet sted"
 
 #: 
 msgid "The time the events begin each day"
@@ -18634,7 +18605,7 @@ msgstr "Vælg et gentagelsesmønster fra listen"
 
 #: 
 msgid "Please select a day occurrence from the list"
-msgstr ""
+msgstr "Vælg en gentagelsesdag fra oversigten"
 
 #: 
 msgid "Please select week days from the list"
@@ -18654,7 +18625,7 @@ msgstr ""
 
 #: 
 msgid "Create Events Between"
-msgstr ""
+msgstr "Startdato"
 
 #: 
 msgid "And"
@@ -18719,7 +18690,7 @@ msgstr "Sidste"
 
 #: 
 msgid "Days of the Week"
-msgstr ""
+msgstr "Ugedage"
 
 #: 
 msgid "Days of the Month"
@@ -18767,7 +18738,7 @@ msgstr "Vælg en tidsenhed fra listen"
 
 #: 
 msgid "Please configure the Weekly Recurring Date settings"
-msgstr ""
+msgstr "Indstil de ugentlige gentagelsesmønstre."
 
 #: 
 msgid "Invalid event title"
@@ -18935,7 +18906,7 @@ msgstr "Tilføj ny instans til %name"
 
 #: 
 msgid "Create %name Event"
-msgstr ""
+msgstr "Opret %name arrangement"
 
 #: 
 msgid "Edit %type Event %title"
@@ -21866,7 +21837,7 @@ msgstr ""
 
 #: 
 msgid "Create new menu"
-msgstr ""
+msgstr "Opret ny menu"
 
 #: 
 msgid "View %menu_name menu in the menu list"
@@ -23253,11 +23224,6 @@ msgid "- Any -"
 msgstr "- Alle -"
 
 #: 
-msgctxt "facets.facet.event_categories:name"
-msgid "Event category"
-msgstr ""
-
-#: 
 msgctxt "facets.facet.event_categories:missing_label"
 msgid "others"
 msgstr ""
@@ -23290,7 +23256,7 @@ msgstr "Brug dette felt til at angive en anden adresse end det tilknyttede bibli
 #: 
 msgctxt "field.field.eventinstance.default.field_teaser_image:description"
 msgid "The teaser fields are used for the card of display.<br />If no image has been selected, the text will be shown instead:<br /><br /><img src=\"/themes/custom/novel/images/teaser-text-image.jpg\" /><br /><br /><hr/>"
-msgstr ""
+msgstr "Teaserfelterne bruges til cards som blikfang for arrangementet. Hvis der ikke er valgt et teaserbillede, vil teksten vises i stedet."
 
 #: 
 msgctxt "field.field.eventseries.default.field_branch:description"
@@ -23386,11 +23352,6 @@ msgstr ""
 msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
 msgid "Opening hours categories"
 msgstr "Opening hours categories"
-
-#: 
-msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
-msgid "<div class=\"admin-item\"><br /><p><br />You can use existing content templates, to quickly re-use content structures that you have already created.<br /></p><br /><p><br />To create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.<br /></p><br /><p><br />Once you've done this, the template will be shown here.<br /></p><br /></div>"
-msgstr ""
 
 #: 
 msgctxt "views.view.entity_reference_content:display:default:display_options:fields:title:alter:text"
@@ -23522,20 +23483,6 @@ msgid "The link will only be displayed if there is content."
 msgstr ""
 
 #: 
-msgctxt "DPL admin UX"
-msgid "View content that has set this breadcrumb as a parent"
-msgstr "Vis indhold, som har dette brødkrummeelement som en sideforælder."
-
-#: 
-msgctxt "DPL admin UX"
-msgid "TODO - A text that describes that this node already exists in the content structure and cannot be edited."
-msgstr ""
-
-#: 
-msgid "Articles"
-msgstr "Artikler"
-
-#: 
 msgid "Create individual opening hours"
 msgstr "Lav individuelle åbningstider"
 
@@ -23590,10 +23537,6 @@ msgstr "Åbningstidskategorier (statisk indhold)"
 #: 
 msgid "Adds default opening hours categories"
 msgstr "Tilføjer standard åbningstidskategorier"
-
-#: 
-msgid "Breadcrumb children"
-msgstr "Sidebørn"
 
 #: 
 msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
@@ -23809,4 +23752,168 @@ msgstr "CMS release version"
 #: 
 msgid "<code>@version</code>"
 msgstr "<code>@version</code>"
+
+#: 
+msgctxt "Opening Hours"
+msgid "The library is closed this day"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Content that has set this breadcrumb as a parent"
+msgstr ""
+
+#: 
+msgctxt "DPL breadcrumb"
+msgid "Related content for \"@title\""
+msgstr ""
+
+#: 
+msgctxt "DPL Breadcrumbs"
+msgid "TODO - A text that describes that this node already exists in the content structure and cannot be edited."
+msgstr ""
+
+#: 
+msgctxt "DPL Breadcrumbs"
+msgid "Articles"
+msgstr ""
+
+#: 
+msgctxt "DPL Breadcrumbs"
+msgid "Events"
+msgstr ""
+
+#: 
+msgid "Logout"
+msgstr "Log ud"
+
+#: 
+msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:third_party_settings:field_group:group_related_children:label"
+msgid "Related children"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:content:field_children_title:settings:placeholder"
+msgid "Related content for \"@title\""
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.media.list_teaser:label"
+msgid "List teaser (4:3)"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_branch:name"
+msgid "Branch"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_branch:missing_label"
+msgid "others"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_branch:url_alias"
+msgid "branch"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_branch:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_categories:name"
+msgid "Category"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_categories:missing_label"
+msgid "others"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_categories:url_alias"
+msgid "categories"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.content_categories:widget:config:default_option_label"
+msgid "- Any -"
+msgstr ""
+
+#: 
+msgctxt "facets.facet.event_categories:name"
+msgid "Category"
+msgstr ""
+
+#: 
+msgctxt "facets.facet_source.search_api__views_page__articles__all:name"
+msgid "search_api:views_page__articles__all"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:label"
+msgid "Children title"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:description"
+msgid "The title that is shown above the list of referenced content. Will not be shown, if there are no children displayed."
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:label"
+msgid "Show children subtitles"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:description"
+msgid "If this is checked, the children teasers will be expanded with possible subtitle descriptions."
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "image.style.list_teaser_4_3:label"
+msgid "List teaser (4:3)"
+msgstr ""
+
+#: 
+msgctxt "node.type.page:description"
+msgid "Pages can be used for various types of content, either temporary or permanent. A page can be simple, containing text about, for example, loan rules, or it can serve as a structural unit designed to display other pages in a section for communication or navigation."
+msgstr ""
+
+#: 
+msgctxt "pathauto.pattern.breadcrumb_pattern_event_instance:label"
+msgid "Breadcrumb pattern (event instance)"
+msgstr ""
+
+#: 
+msgctxt "pathauto.pattern.breadcrumb_pattern_event_series:label"
+msgid "Breadcrumb pattern (event series)"
+msgstr ""
+
+#: 
+msgctxt "search_api.index.content:name"
+msgid "Content"
+msgstr ""
+
+#: 
+msgctxt "views.view.articles:display:all:display_title"
+msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
+msgid "<div class=\"admin-item\"><p>You can use existing content templates, to quickly re-use content structures that you have already created.</p><p>To create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.</p><p>Once you've done this, the template will be shown here.</p><br /></div>"
+msgstr ""
 
