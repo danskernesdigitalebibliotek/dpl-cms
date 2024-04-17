@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-17 09:16+0200\n"
-"PO-Revision-Date: 2024-04-17 09:16+0200\n"
+"POT-Creation-Date: 2024-04-17 09:41+0200\n"
+"PO-Revision-Date: 2024-04-17 09:41+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6114,16 +6114,16 @@ msgid "Provide a Drupal Views to select templates from content types"
 msgstr ""
 
 msgid "Entity Clone Template"
-msgstr ""
+msgstr "Gem som skabelon"
 
 msgid "Allow this content type to define Entity Clone templates"
-msgstr ""
+msgstr "Tillad dette indhold at blive gemt som skabelon"
 
 msgid "Entity Clone Content"
 msgstr ""
 
 msgid "Enable Entity Clone Template"
-msgstr ""
+msgstr "Tillad oprettelse af skabeloner"
 
 msgid ""
 "Allow a content to be defined as a content template for this content "
@@ -6133,7 +6133,7 @@ msgstr ""
 "indholdstype."
 
 msgid "Entity Clone Template active"
-msgstr ""
+msgstr "Skabelon aktiv"
 
 msgid "Stores whether the current Entity a template for cloning or not."
 msgstr ""
