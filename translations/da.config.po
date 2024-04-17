@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-17 10:33+0200\n"
-"PO-Revision-Date: 2024-04-17 10:33+0200\n"
+"POT-Creation-Date: 2024-04-17 13:37+0200\n"
+"PO-Revision-Date: 2024-04-17 13:37+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1833,6 +1833,8 @@ msgstr ""
 msgctxt "user.mail:password_reset:subject"
 msgid "Replacement login information for [user:display-name] at [site:name]"
 msgstr ""
+"Information om erstatningslogin for [user:display-name] på "
+"[site:name]"
 
 msgctxt "user.mail:password_reset:body"
 msgid ""
@@ -2246,7 +2248,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -2344,7 +2346,7 @@ msgstr "- Alle - "
 
 msgctxt "views.view.articles:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.articles:display:default:display_options:pager:options:views_infinite_scroll:button_text"
 msgid "Showing @current_items out of @total results"
@@ -2686,7 +2688,7 @@ msgstr "- Alle - "
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.entity_reference_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -2758,7 +2760,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -2810,7 +2812,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.entity_reference_event_series:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -2866,7 +2868,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.events:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.events:display:default:display_options:pager:options:views_infinite_scroll:button_text"
 msgid "Showing @current_items out of @total results"
@@ -2992,7 +2994,7 @@ msgstr "Publiceringsdato"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:status:settings:format_custom_false"
 msgid " Unpublished"
-msgstr "␣Afpubliceret"
+msgstr "Afpubliceret"
 
 msgctxt "views.view.event_admin:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
@@ -3032,7 +3034,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -3188,7 +3190,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.files:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.files:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -3280,7 +3282,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.files:display:page_2:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.files:display:page_2:display_options:arguments:fid:exception:title"
 msgid "All"
@@ -3348,7 +3350,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.locked_content:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.locked_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -3484,7 +3486,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.media:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.media:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -3584,7 +3586,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.media_library:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.media_library:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply filters"
@@ -3756,7 +3758,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.scheduled_jobs:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -4015,7 +4017,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -4147,7 +4149,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -4289,7 +4291,7 @@ msgstr "- Alle -"
 
 msgctxt "views.view.watchdog:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.watchdog:display:default:display_options:exposed_form:options:submit_button"
 msgid "Filter"
@@ -4508,12 +4510,17 @@ msgid ""
 "description, the title of the the material will not be automatically "
 "generated. "
 msgstr ""
+"Dette er beskrivelsen af det anbefalede materiale. Hvis du tilføjer "
+"en beskrivelsestekst, vil titlen på materialet ikke blive "
+"autoudfyldt."
 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_title:description"
 msgid ""
 "The title of the recommended material.<br /><br />If you add a title, "
 "the description for the material will not be automatically generated. "
 msgstr ""
+"Titlen på det anbefalede materiale. Hvis du tilføjer en titel, vil "
+"beskrivelsesteksten af materialet ikke blive autoudfyldt."
 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:description"
 msgid ""
@@ -4732,11 +4739,11 @@ msgstr "Brødkrumme mønster"
 
 msgctxt "system.action.pathauto_update_alias_node:label"
 msgid "Update URL alias"
-msgstr ""
+msgstr "Opdater URL alias"
 
 msgctxt "system.action.pathauto_update_alias_user:label"
 msgid "Update URL alias"
-msgstr ""
+msgstr "Opdater URL alias"
 
 msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
 msgid "Breadcrumb and URL structure"
@@ -4776,7 +4783,7 @@ msgstr ""
 
 msgctxt "facets.facet.content_branch:url_alias"
 msgid "branch"
-msgstr ""
+msgstr "filial"
 
 msgctxt "facets.facet.content_branch:widget:config:default_option_label"
 msgid "- Any -"
@@ -4792,7 +4799,7 @@ msgstr ""
 
 msgctxt "facets.facet.content_categories:url_alias"
 msgid "categories"
-msgstr ""
+msgstr "kategorier"
 
 msgctxt "facets.facet.content_categories:widget:config:default_option_label"
 msgid "- Any -"

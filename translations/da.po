@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-17 10:33+0200\n"
-"PO-Revision-Date: 2024-04-17 10:33+0200\n"
+"POT-Creation-Date: 2024-04-17 13:37+0200\n"
+"PO-Revision-Date: 2024-04-17 13:37+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3956,7 +3956,7 @@ msgid "The language code"
 msgstr ""
 
 msgid "The two-letter country code"
-msgstr ""
+msgstr "Den tocifrede landekode"
 
 msgid "The top-level administrative subdivision of the country"
 msgstr ""
@@ -4518,7 +4518,7 @@ msgid "Exposed filter widget:"
 msgstr ""
 
 msgid "Sort options"
-msgstr ""
+msgstr "Sorteringsmuligheder"
 
 msgid "Advanced sort options"
 msgstr ""
@@ -4824,13 +4824,13 @@ msgid "The @type being locked."
 msgstr ""
 
 msgid "Lock owner"
-msgstr ""
+msgstr "Låsens ejer"
 
 msgid "The user locking the node."
 msgstr ""
 
 msgid "Lock Date/Time"
-msgstr ""
+msgstr "Lås Dato/Tid"
 
 msgid "Timestamp of the lock"
 msgstr ""
@@ -4848,13 +4848,13 @@ msgid "Form operation of the lock"
 msgstr ""
 
 msgid "Is Locked"
-msgstr ""
+msgstr "Er låst"
 
 msgid "Whether the node is currently locked"
 msgstr "Om noden er låst i øjeblikket"
 
 msgid "Break link"
-msgstr ""
+msgstr "Bryd link"
 
 msgid "Link to break the content lock."
 msgstr ""
@@ -4875,7 +4875,7 @@ msgid "Break Lock for content @label"
 msgstr "Bryd lås for @label"
 
 msgid "Confirm break lock"
-msgstr ""
+msgstr "Bekræft bryd lås"
 
 msgid "Verbose"
 msgstr "Udførlig rapport"
@@ -4971,7 +4971,7 @@ msgstr ""
 "forblive låst, hvis du forlader siden uden at gemme."
 
 msgid "Click here to @link"
-msgstr ""
+msgstr "Klik her for @link"
 
 msgid ""
 "This content translation is now locked by you against simultaneous "
@@ -5040,7 +5040,7 @@ msgid "This content is now locked by you against simultaneous editing."
 msgstr ""
 
 msgid "has been updated."
-msgstr ""
+msgstr "er blevet opdateret"
 
 msgid "This content translation is being edited by the user"
 msgstr ""
@@ -5088,7 +5088,7 @@ msgstr ""
 "hvilket kan skabe konflikt."
 
 msgid "Break Lock"
-msgstr ""
+msgstr "Bryd lås"
 
 msgid "Content lock settings"
 msgstr "Indstillinger for indholdslås"
@@ -5123,10 +5123,10 @@ msgid "<a href=\":image_widget_crop\">Image widget crop</a>"
 msgstr ""
 
 msgid "<a href=\":focal_point\">Focal point</a>"
-msgstr ""
+msgstr "<a href=\":focal_point\">Fokuspunkt</a>"
 
 msgid "Technical details"
-msgstr ""
+msgstr "Tekniske detaljer"
 
 msgid ""
 "Initial discussion can be found on <a href=\":manual\">manual crop "
@@ -5145,7 +5145,7 @@ msgid "Image field"
 msgstr "Billedfelt"
 
 msgid "- Skip field -"
-msgstr ""
+msgstr " - Spring felt over -"
 
 msgid "Select field that stores image which needs to be cropped."
 msgstr ""
@@ -5189,7 +5189,7 @@ msgid "Describe this crop type."
 msgstr ""
 
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Aspekt ratio"
 
 msgid ""
 "Set an aspect ratio <b>eg: 16:9</b> or leave this empty for arbitrary "
@@ -5476,7 +5476,7 @@ msgid "access denied"
 msgstr "adgang nægtet"
 
 msgid "requested page not found"
-msgstr ""
+msgstr "side ikke fundet"
 
 msgid ""
 "Custom error is not configured for @error errors. Please ensure that "
@@ -5484,7 +5484,7 @@ msgid ""
 msgstr ""
 
 msgid "Site information settings page"
-msgstr ""
+msgstr "Indstillinger for siteinformation"
 
 msgid "Code @code settings"
 msgstr ""
@@ -5511,10 +5511,10 @@ msgid "Enable login form for anonymous users."
 msgstr ""
 
 msgid "Redirects"
-msgstr ""
+msgstr "Omdirigeringer"
 
 msgid "Redirect list"
-msgstr ""
+msgstr "Liste over omdirigeringer"
 
 msgid ""
 "These are custom redirect pairs, one per line. Each pair requires a "
@@ -5699,7 +5699,7 @@ msgid "Exclude the selected items"
 msgstr ""
 
 msgid "Select items"
-msgstr ""
+msgstr "Vælg"
 
 msgid "Select at least one entity type ID."
 msgstr ""
@@ -7050,7 +7050,7 @@ msgid "Preview link: @status"
 msgstr ""
 
 msgid "Default focal point: @offsets"
-msgstr ""
+msgstr "Standard fokuspunkt: @offsets"
 
 msgid ""
 "The @title field should be in the form \"leftoffset,topoffset\" where "
@@ -13730,7 +13730,7 @@ msgid "Add Series Type"
 msgstr "Tilføj serietype"
 
 msgid "Add An Event Series Type"
-msgstr ""
+msgstr "Tilføj en arrangementsserie"
 
 msgid "Event Instance Types"
 msgstr ""
@@ -13751,7 +13751,7 @@ msgid "Provides the ability to create recurring events"
 msgstr "Giver mulighed for at skabe gentagende arrangementer"
 
 msgid "Add event"
-msgstr ""
+msgstr "Tilføj arrangement"
 
 msgid "Edit Event Instance"
 msgstr ""
@@ -15884,6 +15884,10 @@ msgid ""
 "url. <br />You can add an external url (starting with \"http://\" or "
 "\"https://\")."
 msgstr ""
+"Link til en side hvor det forklares hvordan man bliver slettet som "
+"bruger. Du kan tilføje en relativ sti (f.x. /personoplysninger). Du "
+"kan fremsøge en intern URL. Du kan tilføje en ekstern URL "
+"(begyndende med http:// eller https://)"
 
 msgctxt "Library Agency Configuration"
 msgid ""
@@ -15928,6 +15932,9 @@ msgid ""
 "                                         You "
 "can add an external url (starting with \"http://\" or \"https://\")."
 msgstr ""
+"Link til brugeroprettelsessiden. Du kan tilføje en relativ sti (f.x. "
+"/opret). Du kan fremsøge en intern URL. Du kan tilføje en ekstern "
+"URL (begyndende med http:// eller https://)"
 
 msgctxt "Patron registration settings form"
 msgid ""
@@ -15941,6 +15948,9 @@ msgid ""
 "       You can add an external url (starting with \"http://\" or "
 "\"https://\")."
 msgstr ""
+"Redirect til en side når en bruger har oprettet sig. Du kan tilføje "
+"en relativ sti (f.x. /velkommen). Du kan fremsøge en intern URL. Du "
+"kan tilføje en ekstern URL (begyndende med http:// eller https://)"
 
 msgid ""
 "<br /><br />\"@title\" is being used in configuration. Before you can "
@@ -15963,6 +15973,10 @@ msgid ""
 "       You can add an external url (starting with \"http://\" or "
 "\"https://\")."
 msgstr ""
+"Fil eller URL som indeholder oplysninger om gebyrer og erstatninger. "
+"Du kan tilføje en relativ sti (f.x. /takster). Du kan fremsøge en "
+"intern URL. Du kan tilføje en ekstern URL (begyndende med http:// "
+"eller https://)"
 
 msgctxt "Fees list settings form"
 msgid ""
