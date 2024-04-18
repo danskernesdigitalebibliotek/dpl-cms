@@ -16,7 +16,7 @@ default:
       value: main
   link:
     -
-      uri: 'internal:/events'
+      uri: 'internal:/arrangementer'
       title: ''
       options: {  }
   external:

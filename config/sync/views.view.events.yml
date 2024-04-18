@@ -300,7 +300,7 @@ display:
         filters: true
         filter_groups: true
       display_extenders: {  }
-      path: events
+      path: arrangementer
     cache_metadata:
       max-age: -1
       contexts:
