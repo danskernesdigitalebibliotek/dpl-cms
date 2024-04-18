@@ -2265,11 +2265,6 @@ msgid "Dashboard"
 msgstr "Dit overblik"
 
 #: 
-msgctxt "Work Page"
-msgid "Digital copy receipt"
-msgstr "Kvittering på bestilling af digital kopi"
-
-#: 
 msgctxt "Global (Aria)"
 msgid "Close blocked patron modal"
 msgstr "Luk pop-up til blokeret bruger"
@@ -2588,21 +2583,6 @@ msgstr "Denne pop-up gør det muligt at forny dine lån"
 msgctxt "Global"
 msgid "Close modal with grouped loans"
 msgstr "Luk pop-up med grupperede lån"
-
-#: 
-msgctxt "Global"
-msgid "The item has been lent to you by another library and renewal is therefore conditional of the acceptance by that library"
-msgstr "Materialet er udlånt fra en anden kommune og fornyelsen er derfor betinget af et andet biblioteks accept"
-
-#: 
-msgctxt "Global"
-msgid "The item cannot be renewed further"
-msgstr "Lånet kan ikke fornyes yderligere"
-
-#: 
-msgctxt "Global"
-msgid "The item is reserved by another patron"
-msgstr "Reserveret af anden låner"
 
 #: 
 msgctxt "Global"
@@ -3140,26 +3120,6 @@ msgstr "Pris"
 #: 
 msgid "Place"
 msgstr "Sted"
-
-#: 
-msgctxt "Work Page"
-msgid "Borchk user no longer exists on agency"
-msgstr "Vi kan ikke finde din bruger i bibliotekssystemet"
-
-#: 
-msgctxt "Work Page"
-msgid "Borchk user not verified"
-msgstr "Din bruger er ikke verificeret"
-
-#: 
-msgctxt "Work Page"
-msgid "Error municipality agency ID not found"
-msgstr "Fejl - kommunalt agency ID ikke fundet"
-
-#: 
-msgctxt "Work Page"
-msgid "Unknown user"
-msgstr "Ukendt bruger"
 
 #: 
 msgctxt "Fees list"
@@ -6544,7 +6504,7 @@ msgstr "[user:display-name], \n"
 #: 
 msgctxt "user.mail:register_pending_approval:subject"
 msgid "Account details for [user:display-name] at [site:name] (pending admin approval)"
-msgstr "Kontodetaljer for [user:display-name] ved [site:name] (afventer godkendelse fra administrator) "
+msgstr "Kontodetaljer for [user:display-name] ved [site:name] (afventer godkendelse fra administrator)"
 
 #: 
 msgctxt "user.mail:register_pending_approval:body"
@@ -9486,7 +9446,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Department"
-msgstr ""
+msgstr "Afdeling"
 
 #: 
 msgctxt "Address label"
@@ -9526,7 +9486,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Province"
-msgstr ""
+msgstr "Provins"
 
 #: 
 msgctxt "Address label"
@@ -9536,7 +9496,7 @@ msgstr "Stat"
 #: 
 msgctxt "Address label"
 msgid "City"
-msgstr ""
+msgstr "By"
 
 #: 
 msgctxt "Address label"
@@ -9600,11 +9560,11 @@ msgstr ""
 
 #: 
 msgid "The value of a contextual filter"
-msgstr ""
+msgstr "Værdien af et kontekstuelt filter"
 
 #: 
 msgid "The value of an exposed filter"
-msgstr ""
+msgstr "Værdien af et eksponeret filter"
 
 #: 
 msgid "Country contextual filter"
@@ -9644,7 +9604,7 @@ msgstr ""
 
 #: 
 msgid "This filter must be exposed to use a contextual filter to specify the country."
-msgstr ""
+msgstr "Dette filter skal være eksponeret for at bruge et kontekstuelt filter til at angive landet."
 
 #: 
 msgid "The country filter must be defined for this filter to work using 'exposed filter' for the 'Country source'."
@@ -9652,11 +9612,11 @@ msgstr ""
 
 #: 
 msgid "This filter must be exposed to use a filter to specify the country."
-msgstr ""
+msgstr "Dette filter skal være eksponeret for at bruge et filter til at angive landet."
 
 #: 
 msgid "The predefined country must be set for this filter to work."
-msgstr ""
+msgstr "Det prædefinerede land skal være angivet for, at dette filter kan fungere."
 
 #: 
 msgid "The  source for the country must be defined for this filter to work."
@@ -9664,7 +9624,7 @@ msgstr ""
 
 #: 
 msgid "You can only select options here if you use a predefined country for the 'Country source'."
-msgstr ""
+msgstr "Du kan kun vælge indstillinger her, hvis du bruger et foruddefineret land som 'Landekilde'."
 
 #: 
 msgid "exposed: country set via contextual filter"
@@ -9716,7 +9676,7 @@ msgstr ""
 
 #: 
 msgid "The postal code"
-msgstr ""
+msgstr "Postnummeret"
 
 #: 
 msgid "The sorting code"
@@ -9732,7 +9692,7 @@ msgstr ""
 
 #: 
 msgid "The organization"
-msgstr ""
+msgstr "Organisationen"
 
 #: 
 msgid "The given name"
@@ -9884,7 +9844,7 @@ msgstr ""
 
 #: 
 msgid "Payment method"
-msgstr ""
+msgstr "Betalingsmetode"
 
 #: 
 msgid "Credit card"
@@ -9900,7 +9860,7 @@ msgstr ""
 
 #: 
 msgid "The street is \"@street\" and the country code is @country_code."
-msgstr ""
+msgstr "Gaden er @street og landekoden er @country_code."
 
 #: 
 msgid "Address Field Diff"
@@ -10010,7 +9970,7 @@ msgstr ""
 
 #: 
 msgid "This permission only works when combined with %base"
-msgstr ""
+msgstr "Denne tilladelse virker kun, når den kombineres med %base"
 
 #: 
 msgid "About"
@@ -10034,7 +9994,7 @@ msgstr "Indstillinger"
 
 #: 
 msgid "Use the <a href=\":config\">configuration settings</a> to classify each role."
-msgstr ""
+msgstr "Brug <a href=\":config\">configuration settings</a> til at klassificere hver rolle."
 
 #: 
 msgid "Core permissions"
@@ -10110,7 +10070,7 @@ msgstr ""
 
 #: 
 msgid "There will be 4 extra permissions (assign/edit/cancel/view) for each role configured as <i>custom</i>."
-msgstr ""
+msgstr "Der vil være 4 ekstra tilladelser (tildel/rediger/annuller/vis) for hver rolle, der er konfigureret som <i>custom</i>."
 
 #: 
 msgid "Assign role without permission to edit users"
@@ -10150,7 +10110,7 @@ msgstr ""
 
 #: 
 msgid "What is wanted is for the membership secretary to be able to view and edit members, but not other roles, therefore the roles are configured as follows:"
-msgstr ""
+msgstr "Man ønsker, at medlemssekretæren skal kunne se og redigere medlemmer, men ikke andre roller, og derfor er rollerne konfigureret som følger:"
 
 #: 
 msgid "Administrator (Forbidden by default)"
@@ -10290,7 +10250,7 @@ msgstr ""
 
 #: 
 msgid "This section lets you select additional options for exposed sorts. Some options are only available in certain situations. If you do not see the options you expect, please see the <a href=\":link\">BEF settings documentation page</a> for more details."
-msgstr ""
+msgstr "Denne sektion lader dig vælge yderligere muligheder for udsatte sorteringer. Nogle muligheder er kun tilgængelige i bestemte situationer. Hvis du ikke kan se de muligheder, du forventer, se venligst <a href=\":link\">BEF settings documentation page</a> for flere detaljer."
 
 #: 
 msgid "No sort elements have been exposed yet."
@@ -10386,7 +10346,7 @@ msgstr ""
 
 #: 
 msgid "This cannot be left blank if the above option is checked"
-msgstr ""
+msgstr "Dette felt kan ikke efterlades tomt, hvis den ovenstående mulighed er afkrydset"
 
 #: 
 msgid "Make sort options collapsible"
@@ -10402,11 +10362,11 @@ msgstr ""
 
 #: 
 msgid "This cannot be left blank or there will be no way to show/hide sort options."
-msgstr ""
+msgstr "Dette felt kan ikke efterlades tomt, for så kan man ikke vise/skjule sorteringsmuligheder."
 
 #: 
 msgid "This is a secondary option"
-msgstr ""
+msgstr "Dette er en sekundær mulighed"
 
 #: 
 msgid "Places this element in the secondary options portion of the exposed form."
@@ -10442,7 +10402,7 @@ msgstr "Avancerede filter muligheder"
 
 #: 
 msgid "The options will be sorted alphabetically."
-msgstr ""
+msgstr "Mulighederne vil blive sorteret alfabetisk."
 
 #: 
 msgid "Placeholder text"
@@ -10498,7 +10458,7 @@ msgstr ""
 
 #: 
 msgid "The step must be a positive number of up to 5 decimal places."
-msgstr ""
+msgstr "Trinnet skal være et positivt nummer med op til 5 decimaler."
 
 #: 
 msgid "Animation speed"
@@ -10674,7 +10634,7 @@ msgstr "Lås Dato/Tid"
 
 #: 
 msgid "Timestamp of the lock"
-msgstr ""
+msgstr "Tidsstempel for låsen"
 
 #: 
 msgid "Lock Language"
@@ -10766,7 +10726,7 @@ msgstr ""
 
 #: 
 msgid "To allow editing multiple translations concurrently you need to install %module"
-msgstr ""
+msgstr "For at tillade redigere af flere oversættelser på samme tid skal du installere %module"
 
 #: 
 msgid "Lock form using JS."
@@ -10914,7 +10874,7 @@ msgstr ""
 
 #: 
 msgid "Timeout settings"
-msgstr ""
+msgstr "Timeout-indstillinger"
 
 #: 
 msgid "Content Lock Timeout"
@@ -10970,7 +10930,7 @@ msgstr ""
 
 #: 
 msgid "This is API module. In order to crop your images you need a UI module. There are currently two UI modules that use Crop API:"
-msgstr ""
+msgstr "Dette er et API modul. For at kunne beskære dine billeder skal du bruge et UI-modul. Der er i øjeblikket to UI-moduler, der bruger Crop API:"
 
 #: 
 msgid "<a href=\":image_widget_crop\">Image widget crop</a>"
@@ -10994,7 +10954,7 @@ msgstr ""
 
 #: 
 msgid "There are no file or image fields on this bundle at the moment. In order to configure crop add at least one such field and come back."
-msgstr ""
+msgstr "Der er ikke nogen fil- eller billedfelter i denne pakke i øjeblikket. For at konfigurere beskæringen skal du tilføje mindst ét sådant felt og vende tilbage."
 
 #: 
 msgid "Image field"
@@ -11397,90 +11357,6 @@ msgid "Provides storage and API for image crops."
 msgstr ""
 
 #: 
-msgid "Enter the error pages that will be seen by your visitors when they get the respective errors. You can enter any HTML text. You can point the users to the FAQ, inform them that you reorganized the site, ask them to report the error, login or register, ...etc."
-msgstr ""
-
-#: 
-msgid "System default"
-msgstr "Standard"
-
-#: 
-msgid "access denied"
-msgstr "adgang nægtet"
-
-#: 
-msgid "requested page not found"
-msgstr "side ikke fundet"
-
-#: 
-msgid "Custom error is not configured for @error errors. Please ensure that the default @error page is set to be /customerror/@error on the @link."
-msgstr ""
-
-#: 
-msgid "Site information settings page"
-msgstr "Indstillinger for siteinformation"
-
-#: 
-msgid "Code @code settings"
-msgstr ""
-
-#: 
-msgid "Title for @code"
-msgstr ""
-
-#: 
-msgid "Title of @code error page"
-msgstr ""
-
-#: 
-msgid "Description for @code"
-msgstr ""
-
-#: 
-msgid "This text will be displayed if a @code (@desc) error occurs."
-msgstr ""
-
-#: 
-msgid "Theme"
-msgstr "Tema"
-
-#: 
-msgid "Theme to be used on the error page."
-msgstr ""
-
-#: 
-msgid "Enable login form for anonymous users."
-msgstr ""
-
-#: 
-msgid "Redirects"
-msgstr "Omdirigeringer"
-
-#: 
-msgid "Redirect list"
-msgstr "Liste over omdirigeringer"
-
-#: 
-msgid "These are custom redirect pairs, one per line. Each pair requires a path to match (which is a regular expression) and a destination separated by a space. The keyword <em>&lt;front></em> is allowed as a destination. If you are unfamilar with regular expressions, a simple search string will work, but will match any part of the URl. For example <em>index.html &lt;front></em> will match both <em>http://example.com/index.html &amp; http://example.com/archive/index.html</em>."
-msgstr ""
-
-#: 
-msgid "Enables the creation of custom error pages for 404 and 403 errors."
-msgstr "Aktiverer mulighed for oprettelse af brugerdefinerede fejlsider for 404 og 403 fejl."
-
-#: 
-msgid "Custom Error"
-msgstr ""
-
-#: 
-msgid "Enables the creation of custom error pages for 404 and 403 errors, as well as redirects for 404s."
-msgstr ""
-
-#: 
-msgid "Custom error"
-msgstr "Brugerdefineret fejl"
-
-#: 
 msgid "Date format for single date"
 msgstr ""
 
@@ -11510,7 +11386,7 @@ msgstr "Et brugerdefineret datoformat. Se mulige værdier i <a href=\"@url\">PHP
 
 #: 
 msgid "Use letters in braces for end date elements, for example, {d} means the day of the end date."
-msgstr ""
+msgstr "Brug bogstaver i parentes til slutdatoelementer, for eksempel {d} betyder dagen for slutdatoen."
 
 #: 
 msgid "These format values are translated, for example, t(\"d F Y\") instead of \"d F Y\" will be used as the actual date format."
@@ -11630,7 +11506,7 @@ msgstr ""
 
 #: 
 msgid "to report problems."
-msgstr ""
+msgstr "til at reportere problemer."
 
 #: 
 msgid "@id (@type)"
@@ -11752,7 +11628,7 @@ msgstr ""
 
 #: 
 msgid "There are no test entity entities matching \"%value\"."
-msgstr ""
+msgstr "Der er ingen testenheder, der matcher \"%value\"."
 
 #: 
 msgid "Preview"
@@ -12164,7 +12040,7 @@ msgstr "Tillad indhold at blive defineret som en skabelon"
 
 #: 
 msgid "When checked, this page is eligible to be a template when cloning content."
-msgstr ""
+msgstr "Når markeret, kan denne side bruges som skabelon ved kloning af indhold."
 
 #: 
 msgid "Define the current content as a template when cloning content"
@@ -12188,7 +12064,7 @@ msgstr ""
 
 #: 
 msgid "The submission of the current form can cause the deletion of entities that are still used, backup all data first."
-msgstr ""
+msgstr "Indsendelse af den aktuelle formular kan medføre sletning af enheder, der stadig bruges, tag backup af alle data først."
 
 #: 
 msgid "Delete orphaned composite entities revisions that are no longer referenced. If there are no revisions left, the entity will be deleted as long as it is not used."
@@ -12572,7 +12448,7 @@ msgstr "Vægt"
 
 #: 
 msgid "Weight: @weight"
-msgstr ""
+msgstr "Vægt: @weight"
 
 #: 
 msgid "Display element open by default."
@@ -12832,7 +12708,7 @@ msgstr "HTML-element"
 
 #: 
 msgid "This fieldgroup renders the inner content in a HTML element with classes and attributes."
-msgstr ""
+msgstr "Denne feltgruppe gengiver det indre indhold i et HTML-element med klasser og attributter."
 
 #: 
 msgid "Fieldset"
@@ -13016,7 +12892,7 @@ msgstr ""
 
 #: 
 msgid "The selected plugin @plugin does not support @source_type fields. The supported field types are: @field_types"
-msgstr ""
+msgstr "Den valgt plugin @plugin understøtter ikke @source_type felter. De understøttede felttyper er: @field_types"
 
 #: 
 msgid "You cannot inherit if the source and destination entities and bundles are the same."
@@ -13213,7 +13089,7 @@ msgstr "Du skal have defineret mindst én <a href=\":url\">billedstil</a>, der b
 
 #: 
 msgid "This preview image above may have been scaled to fit on the page."
-msgstr ""
+msgstr "Billedforhåndsvisningen ovenfor kan være blevet skaleret, så den passer til siden."
 
 #: 
 msgid "Images preview"
@@ -13273,7 +13149,7 @@ msgstr ""
 
 #: 
 msgid "This module changes the layout of the administration menu, and is actively compatible with <a href=\"@href\" target=\"_blank\">Gin Admin</a>."
-msgstr ""
+msgstr "Dette modul ændrer layoutet for administrationsmenuen og er aktivt kompatibelt med <a href=\"@href\" target=\"_blank\"> Gin Admin</a>."
 
 #: 
 msgid "Gin"
@@ -13345,7 +13221,7 @@ msgstr ""
 
 #: 
 msgid "The type of the job."
-msgstr ""
+msgstr "Typen af job."
 
 #: 
 msgid "Job ID"
@@ -13361,7 +13237,7 @@ msgstr "Periode"
 
 #: 
 msgid "Time period after which job is to be executed."
-msgstr ""
+msgstr "Tidsperiode for, hvornår et job skal udføres."
 
 #: 
 msgid "Crontab"
@@ -13389,7 +13265,7 @@ msgstr ""
 
 #: 
 msgid "Timestamp when a job was last executed."
-msgstr ""
+msgstr "Tidsstempel for, hvornår et job sidst blev udført."
 
 #: 
 msgid "Next execution"
@@ -13397,7 +13273,7 @@ msgstr ""
 
 #: 
 msgid "Timestamp when a job is to be executed."
-msgstr ""
+msgstr "Tidsstempel for, hvornår et job skal udføres."
 
 #: 
 msgid "Scheduled"
@@ -13405,7 +13281,7 @@ msgstr "Planlagt"
 
 #: 
 msgid "Timestamp when a job was scheduled."
-msgstr ""
+msgstr "Tidsstempel for, hvornår et job blev planlagt."
 
 #: 
 msgid "Job Scheduler Queue: %name"
@@ -13445,7 +13321,7 @@ msgstr ""
 
 #: 
 msgid "Use the same URL aliases regardless of language."
-msgstr ""
+msgstr "Brug de samme URL-aliaser uanset sprog."
 
 #: 
 msgid "Profile Name"
@@ -13545,7 +13421,7 @@ msgstr ""
 
 #: 
 msgid "Thumbnail style: @thumbnail_style"
-msgstr ""
+msgstr "Thumbnail stil: @thumbnail_style"
 
 #: 
 msgid "File extensions"
@@ -13577,7 +13453,7 @@ msgstr ""
 
 #: 
 msgid "Thumbnail image style"
-msgstr ""
+msgstr "Thumbnail billedstil"
 
 #: 
 msgid "Metadata: @metadata"
@@ -13937,7 +13813,7 @@ msgstr ""
 
 #: 
 msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
-msgstr ""
+msgstr "Dette modul gør det muligt for et websted automatisk at levere strukturerede metadata, også kaldet \"metatags\", om webstedet og individuelle sider."
 
 #: 
 msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
@@ -13969,7 +13845,7 @@ msgstr ""
 
 #: 
 msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
-msgstr ""
+msgstr "For at tilsidesætte metatags for individuelle enheder, f.eks. for individuelle noder, skal du tilføje feltet \"Metatag\" via feltindstillingerne for den pågældende enhed eller bundle-type."
 
 #: 
 msgid "Configure global meta tag default values below. Meta tags may be left as the default."
@@ -14105,7 +13981,7 @@ msgstr ""
 
 #: 
 msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
-msgstr ""
+msgstr "Forskellige muligheder for den feltwidget, der bruges på enhedsformularer, f.eks. på indholdstypeformularer."
 
 #: 
 msgid "Scroll maximum height"
@@ -14117,7 +13993,7 @@ msgstr ""
 
 #: 
 msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
-msgstr ""
+msgstr "For at aktivere scrolling indtast en værdi og dets enheder, f.eks. 500px, 8rem osv. Hvis du fjerner denne værdi, fjernes scrollingen."
 
 #: 
 msgid "Are you sure you want to revert %name to its default values?"
@@ -14165,7 +14041,7 @@ msgstr ""
 
 #: 
 msgid "This will be able to extract the URL from an image field if the field is configured properly."
-msgstr ""
+msgstr "Dette vil kunne udtrække URL'en fra et billedfelt, hvis feltet er konfigureret korrekt."
 
 #: 
 msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
@@ -14221,7 +14097,7 @@ msgstr ""
 
 #: 
 msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
-msgstr ""
+msgstr "Brug et taltegn som tekstuddrag for dette søgeresultat. \"0\" er lig med \"nosnippet\". \"-1\" vil lade søgemaskinen bestemme den mest effektive længde."
 
 #: 
 msgid "Max Video Preview"
@@ -14229,7 +14105,7 @@ msgstr ""
 
 #: 
 msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
-msgstr ""
+msgstr "Brug maksimalt et antal sekunder som videouddrag for videoer på denne side i søgeresultater. \"0\" vil bruge et statisk billede. \"-1\" betyder, at der ikke er nogen grænse."
 
 #: 
 msgid "Max Image Preview"
@@ -14257,7 +14133,7 @@ msgstr "Vælg"
 
 #: 
 msgid "Unavailable after date"
-msgstr ""
+msgstr "Utilgængelig efter dato"
 
 #: 
 msgid "Do not show this page in search results after the specified date"
@@ -14321,11 +14197,11 @@ msgstr ""
 
 #: 
 msgid "Use sidebar: Yes"
-msgstr ""
+msgstr "Brug sidebjælke: Ja"
 
 #: 
 msgid "Use sidebar: No"
-msgstr ""
+msgstr "Brug sidebjælke: Nej"
 
 #: 
 msgid "Use details container: Yes"
@@ -14393,7 +14269,7 @@ msgstr ""
 
 #: 
 msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
-msgstr ""
+msgstr "Du er på vej til at omvende custom mega tags for %display_name forevisning på %view_name visning. Denne handling kan ikke laves om."
 
 #: 
 msgid "Reverted meta tags for @view_name : @display_name"
@@ -14497,11 +14373,11 @@ msgstr ""
 
 #: 
 msgid "There were no overridden Metatag records."
-msgstr ""
+msgstr "Der var ingen tilsidesatte Metatag records."
 
 #: 
 msgid "There were no overridden Metatag records that needed to be updated to store the data using JSON."
-msgstr ""
+msgstr "Der var ingen tilsidesatte Metatag records, der havde behov for at blive opdateret til at gemme data ved hjælp af JSON."
 
 #: 
 msgid "Processed @processed of @total updating Metatag records with the Publisher or Name meta tags."
@@ -14509,7 +14385,7 @@ msgstr ""
 
 #: 
 msgid "There were no Metatag records to update."
-msgstr ""
+msgstr "Der var ingen Metatag records at opdatere."
 
 #: 
 msgid "Removed meta tags from the @config Metatag configuration."
@@ -14585,7 +14461,7 @@ msgstr ""
 
 #: 
 msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
-msgstr ""
+msgstr "Webstedets cacher skal genopbygges for at sikre, at Metatag fungerer efter hensigten."
 
 #: 
 msgid "Summary Card"
@@ -14653,7 +14529,7 @@ msgstr ""
 
 #: 
 msgid "The path must begin with /"
-msgstr ""
+msgstr "Stien skal begynde med /"
 
 #: 
 msgid "The admin routes should not have metatags."
@@ -14665,11 +14541,11 @@ msgstr ""
 
 #: 
 msgid "There are already metatags created for this route."
-msgstr ""
+msgstr "Der er allerede skabt metatags for denne rute."
 
 #: 
 msgid "The path does not exist as an internal Drupal route."
-msgstr ""
+msgstr "Stien eksisterer ikke som en intern Drupalrute."
 
 #: 
 msgid "Created metatags for the path: @url. Internal route: @route."
@@ -14705,7 +14581,7 @@ msgstr ""
 
 #: 
 msgid "The URL of media which should represent the content."
-msgstr ""
+msgstr "URL'en til det medie, der skal repræsentere indholdet."
 
 #: 
 msgid "URL"
@@ -14745,7 +14621,7 @@ msgstr ""
 
 #: 
 msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
-msgstr ""
+msgstr "Disse tags er ikke en del af Metadata Element Set men kan være brugbare i bestemte scenarier."
 
 #: 
 msgid "Medium"
@@ -15029,7 +14905,7 @@ msgstr ""
 
 #: 
 msgid "The size or duration of the resource."
-msgstr ""
+msgstr "Størrelsen eller varigheden af materialet."
 
 #: 
 msgid "Date Copyrighted"
@@ -15053,7 +14929,7 @@ msgstr ""
 
 #: 
 msgid "The policy governing the addition of items to a collection."
-msgstr ""
+msgstr "Den politik, der styrer tilføjelsen af genstande til en samling."
 
 #: 
 msgid "Spatial Coverage"
@@ -15101,7 +14977,7 @@ msgstr "Thumbnail"
 
 #: 
 msgid "Use a url of a valid image."
-msgstr ""
+msgstr "Brug en URL af et gyldigt billede."
 
 #: 
 msgid "Dublin Core"
@@ -15117,7 +14993,7 @@ msgstr ""
 
 #: 
 msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
-msgstr ""
+msgstr "Det rumlige eller tidsmæssige emne for ressourcen, ressourcens rumlige anvendelighed eller den jurisdiktion, som ressourcen er relevant under. Det rumlige emne og den rumlige anvendelighed kan være et navngivet sted eller et sted, der er specificeret ved dets geografiske koordinater. Tidsmæssigt emne kan være en navngiven periode, dato eller datointerval. En jurisdiktion kan være en navngiven administrativ enhed eller et geografisk sted, som ressourcen gælder for. Anbefalet best practice er at bruge et kontrolleret vokabular som Thesaurus of Geographic Names [TGN]. Hvor det er relevant, kan navngivne steder eller tidsperioder bruges i stedet for numeriske identifikatorer såsom koordinatsæt eller datointervaller."
 
 #: 
 msgid "Relation"
@@ -15349,7 +15225,7 @@ msgstr "Google"
 
 #: 
 msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
-msgstr ""
+msgstr "Dette meta tag kommunikerer med Google. Der er i øjeblikket to direktiver, der understøttes: 'nositelinkssearchbox' for ikke at vise sitelinks-søgefeltet, og 'notranslate' for at bede Google om ikke at tilbyde en oversættelse af siden. Begge muligheder kan tilføjes, bare adskil dem med et komma. Se <a href='https://support.google.com/webmasters/answer/79812? hl=en'>meta tags that Google understands</a> for yderligere detaljer."
 
 #: 
 msgid "Author"
@@ -15525,7 +15401,7 @@ msgstr ""
 
 #: 
 msgid "A PNG image that is 16px wide by 16px high."
-msgstr "Et PNG-billede, der er 16px bredt og 16px højt. "
+msgstr "Et PNG-billede, der er 16px bredt og 16px højt."
 
 #: 
 msgid "Apple touch icon (precomposed): 120px x 120px"
@@ -15541,7 +15417,7 @@ msgstr ""
 
 #: 
 msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
-msgstr "Et PNG-billede, der er 114px bredt og 114px højt. Brugt med iPhone med @2x skærmbillede kørende iOS <= 6. "
+msgstr "Et PNG-billede, der er 114px bredt og 114px højt. Brugt med iPhone med @2x skærmbillede kørende iOS <= 6."
 
 #: 
 msgid "Mask icon (SVG)"
@@ -15577,7 +15453,7 @@ msgstr ""
 
 #: 
 msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
-msgstr "Et PNG-billede, der er 180px bredt og 180px højt. Brugt med iPhone 6 Plus med @3x skærmbillede. "
+msgstr "Et PNG-billede, der er 180px bredt og 180px højt. Brugt med iPhone 6 Plus med @3x skærmbillede."
 
 #: 
 msgid "Apple touch icon (precomposed): 57px x 57px"
@@ -15645,7 +15521,7 @@ msgstr ""
 
 #: 
 msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
-msgstr ""
+msgstr "Disse metatags er designet til at henvise besøgende til versioner af den aktuelle side på andre sprog."
 
 #: 
 msgid "Hreflang per language"
@@ -15653,7 +15529,7 @@ msgstr ""
 
 #: 
 msgid "This plugin will be cloned from these settings for each enabled language."
-msgstr ""
+msgstr "Dette plugin vil blive klonet fra disse indstillinger for hvert aktiveret sprog."
 
 #: 
 msgid "Default locale (x-default)"
@@ -15661,7 +15537,7 @@ msgstr ""
 
 #: 
 msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
-msgstr ""
+msgstr "Dette skal pege på den version af siden, der er til det primære sprog, f.eks. den originale version af en artikel, der er oversat til andre sprog."
 
 #: 
 msgid "Metatag display extender"
@@ -15769,7 +15645,7 @@ msgstr ""
 
 #: 
 msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
-msgstr ""
+msgstr "Sidens titel, som skal være kortfattet; det vil blive afkortet til 70 tegn af Twitter. Dette felt er påkrævet, medmindre feltet 'type' er indstillet til 'foto'."
 
 #: 
 msgid "Creator's Twitter account ID"
@@ -15869,7 +15745,7 @@ msgstr ""
 
 #: 
 msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
-msgstr ""
+msgstr "Disse <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> viser dig en forhåndsvisning af, hvordan dit indhold vil se ud, når det deles med Facebook, og fejlfinde eventuelle problemer med dine Open Graph-tags."
 
 #: 
 msgid "Retailer Item ID"
@@ -15941,7 +15817,7 @@ msgstr ""
 
 #: 
 msgid "Theme Color"
-msgstr ""
+msgstr "Tema Farve"
 
 #: 
 msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
@@ -16126,7 +16002,7 @@ msgstr ""
 
 #: 
 msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
-msgstr ""
+msgstr "Dette informerer IOS-enheder om at vise et banner til en bestemt app. Hvis den bruges, skal den angive værdien 'app-id', mens værdierne 'affiliate-data' og 'app-argument' er valgfrie."
 
 #: 
 msgid "Application name"
@@ -16202,7 +16078,7 @@ msgstr ""
 
 #: 
 msgid "These meta tags are used to confirm site ownership for search engines and other services."
-msgstr ""
+msgstr "Disse metatags bliver brugt til at bekræfte hjemmesideejerskab for søgemaskiner og andre sercives."
 
 #: 
 msgid "Pocket"
@@ -16363,11 +16239,11 @@ msgstr "Windows app URL skema"
 
 #: 
 msgid "Web URL"
-msgstr ""
+msgstr "Web URL"
 
 #: 
 msgid "The web URL; defaults to the URL for the content that contains this tag."
-msgstr ""
+msgstr "Web URL'en; standardiserer til URL'en for indhold, der indeholder dette tag."
 
 #: 
 msgid "iOS app store ID"
@@ -16423,7 +16299,7 @@ msgstr ""
 
 #: 
 msgid "Video width"
-msgstr ""
+msgstr "Video bredde"
 
 #: 
 msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
@@ -16459,7 +16335,7 @@ msgstr "Video URL"
 
 #: 
 msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
-msgstr ""
+msgstr "URL til en video, som skal repræsentere indholdet. For at opnå de bedste resultater skal du bruge en kilde, der er mindst 1200 x 630 pixels stor, men mindst 600 x 316 pixels er et anbefalet minimum. Understøttede objekttyper omfatter video.episode, video.movie, video.other og video.tv_show."
 
 #: 
 msgid "Article section"
@@ -16467,7 +16343,7 @@ msgstr ""
 
 #: 
 msgid "The primary section of this website the content belongs to."
-msgstr ""
+msgstr "Den primære sektion på denne hjemmeside, som indholdet hører til."
 
 #: 
 msgid "Book author"
@@ -16499,7 +16375,7 @@ msgstr ""
 
 #: 
 msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
-msgstr ""
+msgstr "Ordet, der optræder før indholdets titel i en sætning. Standarden ignorerer denne værdi, den 'automatiske' værdi burde være nok, hvis dette faktisk er nødvendigt."
 
 #: 
 msgid "Content type"
@@ -16507,7 +16383,7 @@ msgstr "Indholdstype"
 
 #: 
 msgid "The type of the content, e.g., <em>movie</em>."
-msgstr ""
+msgstr "Typen af indhold, f.eks. <em>movie</em>."
 
 #: 
 msgid "Tag words"
@@ -16555,15 +16431,15 @@ msgstr ""
 
 #: 
 msgid "Video height"
-msgstr ""
+msgstr "Video højde"
 
 #: 
 msgid "Video type"
-msgstr ""
+msgstr "Video type"
 
 #: 
 msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
-msgstr ""
+msgstr "Typen af video refereret ovenfor. Skal enten være video.episode, video.movie, video.other, og video.tv_show. Bemærk: Der skal kun være én værdi for hver video, og at have flere, end der er videoer, kan forårsage problemer."
 
 #: 
 msgid "Image Secure URL"
@@ -16599,7 +16475,7 @@ msgstr ""
 
 #: 
 msgid "Video duration (seconds)"
-msgstr ""
+msgstr "Video varighed (sekunder)"
 
 #: 
 msgid "The length of the video in seconds"
@@ -16651,7 +16527,7 @@ msgstr ""
 
 #: 
 msgid "The TV show this series belongs to."
-msgstr ""
+msgstr "Den tv-serie, som denne serie tilhører."
 
 #: 
 msgid "Latitude"
@@ -16663,7 +16539,7 @@ msgstr ""
 
 #: 
 msgid "The person's last name."
-msgstr ""
+msgstr "Personens efternavn."
 
 #: 
 msgid "Image width"
@@ -16671,7 +16547,7 @@ msgstr ""
 
 #: 
 msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
-msgstr ""
+msgstr "Bredden på de ovenstående billed(er). Note: hvis både de usikre og sikre billeder er givet, skal de begge være samme størrelse."
 
 #: 
 msgid "Phone number"
@@ -16687,11 +16563,11 @@ msgstr ""
 
 #: 
 msgid "Video Secure URL"
-msgstr ""
+msgstr "Video Sikker URL"
 
 #: 
 msgid "The secure URL (HTTPS) of an video which should represent the content."
-msgstr ""
+msgstr "Den sikre URL (HTTPS) af en video, som repræsenterer indholdet."
 
 #: 
 msgid "Postal/ZIP code"
@@ -16727,11 +16603,11 @@ msgstr ""
 
 #: 
 msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
-msgstr ""
+msgstr "Typen af billede refereret ovenfor. Skal enten være 'billede/gif' for et GIF billede, 'billede/jpeg' for et JPG/JPEG billede, eller 'billede/png' for et PNG billede. Bemærk: Der skal kun være én værdi for hvert billede, og at have flere, end der er billeder, kan forårsage problemer."
 
 #: 
 msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
-msgstr ""
+msgstr "URL'en til et billede, der skal repræsentere indholdet. Billedet skal være mindst 200 x 200 pixels stort; 600 x 316 pixels er en anbefalet minimumsstørrelse, og for de bedste resultater skal du bruge et billede, der er mindst 1200 x 630 pixels stort. Understøtter PNG-, JPEG- og GIF-formater. Bør ikke bruges, hvis og:image:url bruges. Bemærk: Hvis der tilføjes flere billeder, vil mange tjenester (f.eks. Facebook) som standard vælge det største billede, ikke nødvendigvis det første."
 
 #: 
 msgid "Scriptwriter(s)"
@@ -16767,11 +16643,11 @@ msgstr ""
 
 #: 
 msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
-msgstr ""
+msgstr "Den sikre URL til en lydfil, som komplimenterer dette objekt. Alle 'http://' URLs vil automatisk blive konverteret til 'https://'."
 
 #: 
 msgid "The title of the content, e.g., <em>The Rock</em>."
-msgstr ""
+msgstr "Titlen på indhold, f.eks., <em>The Rock</em>."
 
 #: 
 msgid "Image height"
@@ -16927,7 +16803,7 @@ msgstr ""
 
 #: 
 msgid "Verifies ownership of a site for search engines and other services."
-msgstr ""
+msgstr "Verificerer ejerskabet af en hjemmeside for søgemaskiner og andre tjenester."
 
 #: 
 msgid "Metatag: App Links"
@@ -17179,7 +17055,7 @@ msgstr ""
 
 #: 
 msgid "You can connect your account with these external providers."
-msgstr ""
+msgstr "Du kan forbinde din bruger med disse eksterne udbydere."
 
 #: 
 msgid "Provider: @title"
@@ -17271,7 +17147,7 @@ msgstr ""
 
 #: 
 msgid "Unknown error."
-msgstr ""
+msgstr "Ukendt fejl."
 
 #: 
 msgid "Could not authenticate with @provider."
@@ -17379,7 +17255,7 @@ msgstr "Website"
 
 #: 
 msgid "Web page or blog URL"
-msgstr ""
+msgstr "Web side eller blog URL"
 
 #: 
 msgid "Preferred e-mail address"
@@ -17419,7 +17295,7 @@ msgstr ""
 
 #: 
 msgid "True if the phone number has been verified; otherwise false"
-msgstr ""
+msgstr "Sandt hvis telefonnummeret er blevet verificeret, ellers falsk"
 
 #: 
 msgid "Preferred postal address"
@@ -17431,7 +17307,7 @@ msgstr "Opdateret på"
 
 #: 
 msgid "Time the information was last updated"
-msgstr ""
+msgstr "Tidspunkt for, hvornår informationen sidst blev opdateret"
 
 #: 
 msgid "A pluggable client implementation for the OpenID Connect protocol. You can enable available OpenID Connect clients within the <a href=\":settings\">OpenID Connect settings</a> page. For more information, see the <a href=\":documentation\">online documentation for the OpenID Connect module</a>."
@@ -17471,7 +17347,7 @@ msgstr ""
 
 #: 
 msgid "The user's time zone."
-msgstr ""
+msgstr "Brugerens tidszone."
 
 #: 
 msgid "%name is connected to an external authentication system."
@@ -17644,7 +17520,7 @@ msgstr ""
 
 #: 
 msgid "Use arrows for drag & drop"
-msgstr ""
+msgstr "Brug pile til træk & slip"
 
 #: 
 msgid "Paragraphs Editor Enhancements"
@@ -17652,7 +17528,7 @@ msgstr ""
 
 #: 
 msgid "Use off-canvas instead of modal dialog"
-msgstr ""
+msgstr "Use off-canvas instead of modal dialog"
 
 #: 
 msgid "Display Paragraphs in dialog as"
@@ -17785,7 +17661,7 @@ msgstr ""
 
 #: 
 msgid "Unable to determine"
-msgstr ""
+msgstr "Ude af stand til at bestemme"
 
 #: 
 msgid "Delete Orphaned Instances"
@@ -18137,7 +18013,7 @@ msgstr ""
 
 #: 
 msgid "This text will be displayed on the <em>Add event</em> page."
-msgstr ""
+msgstr "Denne tekst vil blive vist på <em>Add event</em> side."
 
 #: 
 msgid "Created the %label event series type."
@@ -18429,7 +18305,7 @@ msgstr "Vælg at indstille enten varighed eller sluttidspunkt."
 
 #: 
 msgid "Year interval"
-msgstr ""
+msgstr "Årsinterval"
 
 #: 
 msgid "Number of years between occurrences"
@@ -18445,7 +18321,7 @@ msgstr ""
 
 #: 
 msgid "Year Interval"
-msgstr ""
+msgstr "Årsinterval"
 
 #: 
 msgid "Link date to the referenced entity"
@@ -19098,7 +18974,7 @@ msgstr ""
 
 #: 
 msgid "When users are registering for events, show the available capacity?"
-msgstr ""
+msgstr "Når brugere tilmelder sig et arrangement, vis den tilgængelige kapacitet?"
 
 #: 
 msgid "Choose where registrant form redirects"
@@ -19122,7 +18998,7 @@ msgstr "Brugerdefineret URL"
 
 #: 
 msgid "Type custom URL here"
-msgstr ""
+msgstr "Indtast brugerdefineret URL here"
 
 #: 
 msgid "Registrant Display"
@@ -19130,7 +19006,7 @@ msgstr ""
 
 #: 
 msgid "Use the administration theme when managing registrations"
-msgstr ""
+msgstr "Brug administrationstemaet, når du administrerer registreringer"
 
 #: 
 msgid "Control which roles can \"View the administration theme\" on the <a href=\":permissions\">Permissions page</a>."
@@ -19170,7 +19046,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user successfully registers for an event."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger succesfuldt tilmelder sig et arrangement."
 
 #: 
 msgid "Successful Registration (Waitlist)"
@@ -19178,7 +19054,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user successfully registers for an event's waitlist."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger succesfuldt tilmelder sig et arrangements venteliste."
 
 #: 
 msgid "Successful Update"
@@ -19186,7 +19062,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user successfully updates a registration for an event."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger succesfuldt opdaterer en tilmelding til et arrangement."
 
 #: 
 msgid "Successful Update (Waitlist)"
@@ -19194,7 +19070,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user successfully updates a registration for an event's waitlist."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger succesfuldt opdaterer en tilmelding til et arrangements venteliste."
 
 #: 
 msgid "Duplicate Registration"
@@ -19202,7 +19078,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user tries to register a second time for the same event."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger prøver at tilmelde sig for anden gang til samme arrangement."
 
 #: 
 msgid "Registration Window Closed"
@@ -19210,7 +19086,7 @@ msgstr ""
 
 #: 
 msgid "This message will show in the message area when a user tries to register for an event for which registrations are closed."
-msgstr ""
+msgstr "Denne besked vil blive vist i beskedområdet, når en bruger prøver at registrere til et arrangement, hvor tilmeldingen er lukket."
 
 #: 
 msgid "Email Notifications"
@@ -19271,7 +19147,7 @@ msgstr ""
 
 #: 
 msgid "You are cancelling your registration for %email for %event. Once you do this, there may no longer be any spaces left for this event and you may not be able to register again."
-msgstr ""
+msgstr "Du annullerer nu din tilmelding af %email til %event. Når du har gjort dette, er der muligvis ikke flere pladser tilbage til dette arrangement og du kan muligvis ikke tilmelde dig igen."
 
 #: 
 msgid "Go Back - Keep Registration"
@@ -19303,7 +19179,7 @@ msgstr ""
 
 #: 
 msgid "You are resending the registration email for %email for %event."
-msgstr ""
+msgstr "Du gensender tilmeldingsemailen for %email til %event."
 
 #: 
 msgid "Email Subject"
@@ -19339,11 +19215,11 @@ msgstr ""
 
 #: 
 msgid "Unfortunately, there are no spaces left for this @type. However, we can add you to the waitlist. If a space becomes available, the first registrant on the waitlist will be automatically registered."
-msgstr ""
+msgstr "Beklager, der er ikke flere pladser tilbage til @type. Du kan dog tilmelde dig ventelisten. Hvis en plads bliver ledig, den første registrerede på ventelisten bliver automatisk registreret."
 
 #: 
 msgid "Unfortunately, this @type is at capacity and there are no spaces available."
-msgstr ""
+msgstr "Beklager, @type har nået sin kapacitet, og der er ikke flere pladser tilgængelige."
 
 #: 
 msgid "Registration is closed."
@@ -19351,7 +19227,7 @@ msgstr ""
 
 #: 
 msgid "Unfortunately, registration for this @type is closed."
-msgstr ""
+msgstr "Beklager, tilmeldingen til @type er lukket."
 
 #: 
 msgid "Spaces Available: @availability"
@@ -19371,15 +19247,15 @@ msgstr "Opdater registrering"
 
 #: 
 msgid "Unfortunately, registration has closed."
-msgstr ""
+msgstr "Beklager, tilmeldingen er lukket."
 
 #: 
 msgid "Unfortunately, this event is now full and you must join the waitlist."
-msgstr ""
+msgstr "Beklager, dette arrangement er nu fyldt, og du må tilmelde dig ventelisten."
 
 #: 
 msgid "Unfortunately, this event is now full."
-msgstr ""
+msgstr "Beklager, dette arrangement er nu fyldt."
 
 #: 
 msgid "You've already registered for this event."
@@ -19639,7 +19515,7 @@ msgstr ""
 
 #: 
 msgid "This will show/hide the \"Enable Waiting List\" checkbox in the Add/Edit Series form"
-msgstr ""
+msgstr "Dette vil vise/skjule afkrydsningsfeltet \"Aktivér venteliste\" i formularen Tilføj/rediger serie."
 
 #: 
 msgid "On"
@@ -20791,7 +20667,7 @@ msgstr "Planlægning"
 
 #: 
 msgid "The object representing the scheduled @entity_type"
-msgstr ""
+msgstr "Objektet, der repræsenterer den planlagte @entity_type"
 
 #: 
 msgid "After saving a new @entity_type that is scheduled for publishing"
@@ -20919,7 +20795,7 @@ msgstr ""
 
 #: 
 msgid "Unpublish a @entity_type_singular immediately"
-msgstr ""
+msgstr "Afpublicér @entity_type_singular med det samme"
 
 #: 
 msgid "@entity_type_label for unpublishing"
@@ -20971,7 +20847,7 @@ msgstr "afpublicering"
 
 #: 
 msgid "The settings below are common to all entity types."
-msgstr ""
+msgstr "Indstillingerne nedenfor er fælles for alle enhedstyper."
 
 #: 
 msgid "Date only"
@@ -20983,7 +20859,7 @@ msgstr ""
 
 #: 
 msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
-msgstr ""
+msgstr "Når der kun indtastes en dato, vil klokkeslættet som standard være en specifik værdi, men brugeren kan ændre dette, hvis det er nødvendigt."
 
 #: 
 msgid "Default time"
@@ -20995,7 +20871,7 @@ msgstr ""
 
 #: 
 msgid "Time settings"
-msgstr ""
+msgstr "Tidsindstillinger"
 
 #: 
 msgid "Hide the seconds."
@@ -21003,7 +20879,7 @@ msgstr ""
 
 #: 
 msgid "When entering a time, only show hours and minutes in the input field."
-msgstr ""
+msgstr "Når der indtastet et klokkeslæt, vis kun timer og minutter i inputfeltet."
 
 #: 
 msgid "The default time should be in the format @format"
@@ -21091,7 +20967,7 @@ msgstr ""
 
 #: 
 msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
-msgstr ""
+msgstr "Den tidligere oprettelsesdato var @old_creation_date, nu opdateret til at matche udgivelsesdatoen."
 
 #: 
 msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
@@ -21099,7 +20975,7 @@ msgstr ""
 
 #: 
 msgid "View @type"
-msgstr ""
+msgstr "Se @type"
 
 #: 
 msgid "@label settings"
@@ -21131,7 +21007,7 @@ msgstr ""
 
 #: 
 msgid "Unknown entity types (@unknown)"
-msgstr ""
+msgstr "Ukendt indholdselement (@unknown)"
 
 #: 
 msgid "Scheduler fields removed from @entityType"
@@ -21497,7 +21373,7 @@ msgstr ""
 
 #: 
 msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
-msgstr ""
+msgstr "Der er et problem med @entity '@type' - De oversættelige indstillinger for statusfeltet '%status' og Planlægnings-feltet '%scheduler_field' skal matche, enten begge til eller begge fra."
 
 #: 
 msgid "Publish on"
@@ -21667,7 +21543,7 @@ msgstr ""
 
 #: 
 msgid "Unpublish a content item immediately"
-msgstr ""
+msgstr "Afpublicér et indholdselement med det samme"
 
 #: 
 msgid "Set date for publishing a content item"
@@ -21865,11 +21741,11 @@ msgstr ""
 
 #: 
 msgid "There are no menu links yet."
-msgstr ""
+msgstr "Der er ingen menulinks endnu."
 
 #: 
 msgid "There are no @label yet, or you do not have the permission to view a menu."
-msgstr ""
+msgstr "Der er ikke noget @labet endnu, eller du har ikke tilladelse til at se denne menu."
 
 #: 
 msgid "menus"
@@ -21945,7 +21821,7 @@ msgstr ""
 
 #: 
 msgid "There are errors with some installed themes. Visit the <a href=\":link\">status report page</a> for more information."
-msgstr ""
+msgstr "Der er fejl med nogle installerede temaer. Besøg <a href=\":link\">status report page</a> for mere information."
 
 #: 
 msgid "Screenshot for @theme theme"
@@ -22020,8 +21896,8 @@ msgstr[1] ""
 #: 
 msgid "Uninstalled theme"
 msgid_plural "Uninstalled themes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Afinstalleret tema"
+msgstr[1] "Afinstallerede temaer"
 
 #: 
 msgid "administer themes %themename"
@@ -22029,7 +21905,7 @@ msgstr "Administrer temaer %themename"
 
 #: 
 msgid "uninstall themes %themename"
-msgstr ""
+msgstr "Afinstaller temaer %themename"
 
 #: 
 msgid "install themes %themename"
@@ -22045,7 +21921,7 @@ msgstr ""
 
 #: 
 msgid "Theme Permission"
-msgstr ""
+msgstr "Tema Tilladelse"
 
 #: 
 msgid "Tokens"
@@ -22777,11 +22653,11 @@ msgstr "Skema"
 
 #: 
 msgid "Verify SSL certificate"
-msgstr ""
+msgstr "Verificér SSL certifikat"
 
 #: 
 msgid "Uncheck to disable certificate verification (this is insecure!)."
-msgstr ""
+msgstr "Fjern markeringen for at deaktivere certifikatbekræftelse (dette er usikkert!)."
 
 #: 
 msgid "Headers"
@@ -22827,11 +22703,11 @@ msgstr ""
 
 #: 
 msgid "When you uncheck this setting, capacity will be based on the sum of both timeouts. By default, capacity will automatically adjust (up and down) based on measured time data."
-msgstr ""
+msgstr "Når du fjerner markeringen af denne indstilling, vil kapaciteten blive baseret på summen af begge timeouts. Som standard vil kapaciteten automatisk justeres (oppe og nede) baseret på den målte tidsdata."
 
 #: 
 msgid "Timeout"
-msgstr ""
+msgstr "Timeout"
 
 #: 
 msgid "The timeout of the request in seconds."
@@ -22863,7 +22739,7 @@ msgstr "Behandl 4XX- og 5XX-svar som en mislykket ugyldiggørelse."
 
 #: 
 msgid "The sum of both timeouts cannot be higher than 10.00 as this would affect performance too negatively."
-msgstr ""
+msgstr "Summen af begge timeouts kan ikke være højere end 10.00, fordi dette vil påvirke performance for negativt."
 
 #: 
 msgid "The sum of both timeouts cannot be lower as 0.4 as this can lead to too many failures under real usage conditions."
@@ -22911,7 +22787,7 @@ msgstr ""
 
 #: 
 msgid "To specify which entities that should have image purged on edit, go to @output_admin_link"
-msgstr ""
+msgstr "For at specificere hvilke enheder, der skal have slettet billeder ved redigering, go til @output_admin_link"
 
 #: 
 msgid "No content entities were found"
@@ -22955,7 +22831,7 @@ msgstr ""
 
 #: 
 msgid "Verifies that only fully configured Varnish purgers load."
-msgstr ""
+msgstr "Verificerer, at kun fuldt konfigurerede Varnish-purgere indlæses."
 
 #: 
 msgid "Purger for varnish. Purges page caches from varnish. Works together with the purge module."
@@ -22999,7 +22875,7 @@ msgstr ""
 
 #: 
 msgid "This module allows you to grant access for specific user roles to view unpublished nodes of a specific type. Access control is quite granular in this regard."
-msgstr ""
+msgstr "Dette modul tillader dig at give adgang til en specifik brugerroller til at se upublicerede nodes af en specifik type. Adgangskontrol er ret detaljeret i denne henseende."
 
 #: 
 msgid "Visit the <a href=\":project_link\">View Unpublished project pages</a> on Drupal.org for more information."
@@ -23155,7 +23031,7 @@ msgstr ""
 msgctxt "Fees list settings form"
 msgid "URL containing a link to a payment page. <br />\n"
 "                                         <strong>NB!: The button will only display if this field has been filled.</strong>"
-msgstr ""
+msgstr "URL til betalingsside. NB: Knappen vil kun blive vist hvis feltet er udfyldt."
 
 #: 
 msgctxt "Fees list settings form"
@@ -23279,7 +23155,7 @@ msgstr "Teaserfelterne bruges til cards som blikfang for indholdet. Hvis der ikk
 #: 
 msgctxt "field.field.media.image.field_media_image:description"
 msgid "You can set a focal point, by clicking on the preview on the image, moving the white target.<br /><br />By setting a focal point, you tell the system which part of the image to keep in focus when it gets cropped.<br /><br />Use the \"preview\" function, to see how your image will be cropped across image styles."
-msgstr ""
+msgstr "Du kan indstille et fokuspunkt ved at klikke på forhåndsvisningen af billedet og flytte det hvide mål.<br /><br />Ved at indstille et fokuspunkt fortæller du systemet, hvilken del af billedet der skal være i fokus, når det beskæres.<br /><br />Brug funktionen \"forhåndsvisning\" til at se, hvordan dit billede vil blive beskåret på tværs af billedstil."
 
 #: 
 msgctxt "field.field.node.article.field_show_override_author:description"
@@ -23294,7 +23170,7 @@ msgstr "Teaserfelterne bruges til cards som blikfang for indholdet. Hvis der ikk
 #: 
 msgctxt "field.field.node.page.field_hero_title:description"
 msgid "The title that is shown at the top of the page.<br /><br /><strong>If this is empty, the standard page title will be used instead.</strong>"
-msgstr ""
+msgstr "Titlen, der er vist øverst på siden.<br /><br /> <strong>Hvis den er tom, bliver standardsiden brugt i stedet.</strong>."
 
 #: 
 msgctxt "field.field.node.page.field_teaser_image:label"
@@ -23344,7 +23220,7 @@ msgstr "Titlen på det anbefalede materiale. Hvis du tilføjer en titel, vil bes
 #: 
 msgctxt "field.field.paragraph.recommendation.field_recommendation_work_id:description"
 msgid "This is the work ID used to retrieve the material information. Example: work-of:870970-basis:136336282.<br />Currently this is retrieved by performing a search for a material manually, and copying this value from the URL.<br />If you need to link to a specific type, select it from the dropdown and the system will display that, if it is available."
-msgstr ""
+msgstr "Dette er det arbejds-ID, der bruges til at hente materialeoplysningerne. Eksempel: work-of:870970-basis:136336282.<br />I øjeblikket hentes dette ved at udføre en søgning efter et materiale manuelt og kopiere denne værdi fra URL'en.<br />Hvis du har brug for at linke til en bestemt type, skal du vælge den fra rullemenuen, og systemet vil vise den, hvis den er tilgængelig."
 
 #: 
 msgctxt "field.storage.taxonomy_term.field_opening_hours_color:settings:format"
@@ -23379,12 +23255,12 @@ msgstr ""
 #: 
 msgctxt "Fees list"
 msgid "Fee @fee"
-msgstr ""
+msgstr "Gebyr @fee"
 
 #: 
 msgctxt "Fees list"
 msgid "Total @total"
-msgstr ""
+msgstr "Total @total"
 
 #: 
 msgid "DPL error pages"
@@ -23469,7 +23345,7 @@ msgstr ""
 
 #: 
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: 
 msgid "Spotify"
@@ -23774,7 +23650,7 @@ msgstr ""
 #: 
 msgctxt "DPL Breadcrumbs"
 msgid "TODO - A text that describes that this node already exists in the content structure and cannot be edited."
-msgstr ""
+msgstr "TODO - En tekst, der beskriver, at denne node allerede findes i indholdsstrukturen og ikke kan redigeres."
 
 #: 
 msgctxt "DPL Breadcrumbs"
@@ -23863,7 +23739,7 @@ msgstr ""
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:description"
 msgid "The title that is shown above the list of referenced content. Will not be shown, if there are no children displayed."
-msgstr ""
+msgstr "Titlen, der vises over listen af refereret indhold. Vil ikke blive vist, hvis der ikke vises nogen børn."
 
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:label"
@@ -23919,4 +23795,1861 @@ msgstr ""
 msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
 msgid "<div class=\"admin-item\"><p>You can use existing content templates, to quickly re-use content structures that you have already created.</p><p>To create new templates that can be re-used, you need to create a new content from scratch, and choose to expose it as a template. Usually, this option is available in the sidebar in the edit form.</p><p>Once you've done this, the template will be shown here.</p><br /></div>"
 msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Lent by another library"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Can't be renewed further"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Reserved by another patron"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Borchk user blocked by agency text"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Borchk user no longer exists on agency"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Borchk user not verified"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "The agency is not subscribed to the service. You can order the digital copy by contacting the agency."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "The pickup branch is not valid. You can order the digital copy by contacting the agency."
+msgstr "Afhentningsfilialen er ikke gyldig. Du kan bestille den digitale kopi ved at kontakte institutionen."
+
+#: 
+msgctxt "Global"
+msgid "The client configuration is missing. You can order the digital copy by contacting the agency."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Error missing municipality agency ID"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Error municipality agency ID not found"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "The material is not reservable. You can order the digital copy by contacting the agency."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "You are not logged in. You can order the digital copy by contacting the agency."
+msgstr "Du er ikke logget ind. Du kan bestille en digital kopi ved at kontakte institutionen."
+
+#: 
+msgctxt "Global"
+msgid "The digital copy has been ordered. You will receive an email when the digital copy is ready."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Digital copy receipt"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Unknown user"
+msgstr "Ukendt bruger"
+
+#: 
+msgctxt "field.field.paragraph.webform.field_webform:label"
+msgid "Webform"
+msgstr "Webformular"
+
+#: 
+msgctxt "field.field.paragraph.webform.field_webform:description"
+msgid "Choose the name of the webform that should be shown in the paragraph."
+msgstr ""
+
+#: 
+msgctxt "filter.format.webform_default:name"
+msgid "Webform (Default) - DO NOT EDIT"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.webform:label"
+msgid "Webform"
+msgstr "Webformular"
+
+#: 
+msgctxt "paragraphs.paragraphs_type.webform:description"
+msgid "Paragraph used for embedding a webform."
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_archive_action:label"
+msgid "Archive webform"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_close_action:label"
+msgid "Close webform"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_delete_action:label"
+msgid "Delete webform"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_open_action:label"
+msgid "Open webform"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_submission_delete_action:label"
+msgid "Delete submission"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_submission_make_lock_action:label"
+msgid "Lock submission"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_submission_make_sticky_action:label"
+msgid "Star/flag submission"
+msgstr ""
+
+#: 
+msgctxt "system.action.webform_submission_make_unlock_action:label"
+msgid "Unlock submission"
+msgstr "Lås op for indsendelse"
+
+#: 
+msgctxt "system.action.webform_submission_make_unsticky_action:label"
+msgid "Unstar/unflag submission"
+msgstr "Fjern stjerne/flag fra indsendelse"
+
+#: 
+msgctxt "system.action.webform_unarchive_action:label"
+msgid "Restore webform"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:label"
+msgid "Webform submissions"
+msgstr "Indsendelse via webformular"
+
+#: 
+msgctxt "views.view.webform_submissions:description"
+msgid "Default webform submissions views."
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_title"
+msgid "Master"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:title"
+msgid "Webform submissions"
+msgstr "Indsendelse via webformular"
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:sid:label"
+msgid "#"
+msgstr "#"
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:in_draft:label"
+msgid "Draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:created:label"
+msgid "Created"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:remote_addr:label"
+msgid "IP address"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:view_webform_submission:label"
+msgid "Operations"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:fields:view_webform_submission:text"
+msgid "view"
+msgstr "se"
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:tags:first"
+msgid "« First"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:tags:last"
+msgid "Last »"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:empty:area_text_custom:content"
+msgid "No submissions available."
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:arguments:in_draft:exception:title"
+msgid "All"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:default:display_options:header:result:content"
+msgid "Displaying @start - @end of @total"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_title"
+msgid "Embed: Administer"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:webform_submission_bulk_form:label"
+msgid "Webform submission operations bulk form"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:webform_submission_bulk_form:action_title"
+msgid "Action"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:sid:label"
+msgid "#"
+msgstr "#"
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:in_draft:label"
+msgid "Draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:sticky:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:locked:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:created:label"
+msgid "Created"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:completed:label"
+msgid "Completed"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:remote_addr:label"
+msgid "IP address"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:operations:label"
+msgid "Operations"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:in_draft:expose:label"
+msgid "Is draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:sticky:expose:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:locked:expose:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_administer:display_options:display_description"
+msgid "Administer submissions."
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_default:display_title"
+msgid "Embed: Default"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_default:display_options:display_description"
+msgid "Display submissions."
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_title"
+msgid "Embed: Manage"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:webform_submission_bulk_form:label"
+msgid "Webform submission operations bulk form"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:webform_submission_bulk_form:action_title"
+msgid "Action"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:sid:label"
+msgid "#"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:in_draft:label"
+msgid "Draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:sticky:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:locked:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:created:label"
+msgid "Created"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:completed:label"
+msgid "Completed"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:remote_addr:label"
+msgid "IP address"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:view_webform_submission:label"
+msgid "Operations"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:view_webform_submission:text"
+msgid "view"
+msgstr "Vis"
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:edit_webform_submission:label"
+msgid "Operations"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:edit_webform_submission:text"
+msgid "edit"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:in_draft:expose:label"
+msgid "Is draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:sticky:expose:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:locked:expose:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_manage:display_options:display_description"
+msgid "Manage submissions."
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_title"
+msgid "Embed: Review"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sid:label"
+msgid "#"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:in_draft:label"
+msgid "Draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sticky:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:locked:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:created:label"
+msgid "Created"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:completed:label"
+msgid "Completed"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:remote_addr:label"
+msgid "IP address"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:view_webform_submission:label"
+msgid "Operations"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:view_webform_submission:text"
+msgid "view"
+msgstr "Vis"
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:filters:in_draft:expose:label"
+msgid "Is draft"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:filters:sticky:expose:label"
+msgid "Sticky"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:filters:locked:expose:label"
+msgid "Locked"
+msgstr ""
+
+#: 
+msgctxt "views.view.webform_submissions:display:embed_review:display_options:display_description"
+msgid "Review submissions."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_open_message"
+msgid "This form has not yet been opened to submissions."
+msgstr "Denne formular er endnu ikke blevet åbnet for indsendelser."
+
+#: 
+msgctxt "webform.settings:settings:default_form_close_message"
+msgid "Sorry… This form is closed to new submissions."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_exception_message"
+msgid "Unable to display this webform. Please contact the site administrator."
+msgstr "Ude af stand til at vise denne webformular. Kontakt venligst sidens administrator."
+
+#: 
+msgctxt "webform.settings:settings:default_submit_button_label"
+msgid "Submit"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_delete_button_label"
+msgid "Delete"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_confidential_message"
+msgid "This form is confidential. You must <a href=\"[site:login-url]/logout?destination=[current-page:url:relative]\">Log out</a> to submit it."
+msgstr "Denne formular er fortrolig. Du må <a href=\"[site:login-url]/logout?destination=[current-page:url:relative]\">Log out</a> for at indsende det."
+
+#: 
+msgctxt "webform.settings:settings:default_form_access_denied_message"
+msgid "Please login to access this form."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_required_label"
+msgid "Indicates required field"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_prev_button_label"
+msgid "< Previous"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_next_button_label"
+msgid "Next >"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_start_label"
+msgid "Start"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_confirmation_label"
+msgid "Complete"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_toggle_show_label"
+msgid "Show all"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_wizard_toggle_hide_label"
+msgid "Hide all"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_next_button_label"
+msgid "Preview"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_prev_button_label"
+msgid "< Previous"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_label"
+msgid "Preview"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_title"
+msgid "[webform:title]: Preview"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_message"
+msgid "Please review your submission. Your submission is not complete until you press the \"Submit\" button!"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_draft_button_label"
+msgid "Save Draft"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_draft_saved_message"
+msgid "Submission saved. You may return to this form later and it will restore the current values."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_draft_loaded_message"
+msgid "A partially-completed form was found. Please complete the remaining portions."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_draft_pending_single_message"
+msgid "You have a pending draft for this webform. <a href=\"#\">Load your pending draft</a>."
+msgstr "Du har en afventende kladde til denne webformular. <a href=\"#\">Load your pending draft</a>."
+
+#: 
+msgctxt "webform.settings:settings:default_draft_pending_multiple_message"
+msgid "You have pending drafts for this webform. <a href=\"#\">View your pending drafts</a>."
+msgstr "Du har afventende kladder til denne webformular. <a href=\"#\">View your pending drafts</a>."
+
+#: 
+msgctxt "webform.settings:settings:default_confirmation_message"
+msgid "New submission added to [webform:title]."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_confirmation_back_label"
+msgid "Back to form"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_submission_label"
+msgid "[webform_submission:submitted-to]: Submission #[webform_submission:serial]"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_submission_access_denied_message"
+msgid "Please login to access this submission."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_submission_exception_message"
+msgid "Unable to process this submission. Please contact the site administrator."
+msgstr "Ude af stand til at behandle denne indsendelse. Kontakt venligst sidens administrator."
+
+#: 
+msgctxt "webform.settings:settings:default_submission_locked_message"
+msgid "This submission has been locked."
+msgstr "Denne indsendelse er låst."
+
+#: 
+msgctxt "webform.settings:settings:default_previous_submission_message"
+msgid "You have already submitted this webform. <a href=\"#\">View your previous submission</a>."
+msgstr "You have already submitted this webform. <a href=\"#\">View your previous submissions</a>."
+
+#: 
+msgctxt "webform.settings:settings:default_previous_submissions_message"
+msgid "You have already submitted this webform. <a href=\"#\">View your previous submissions</a>."
+msgstr "Du har allerede indsendt denne webformular. <a href=\"#\">View your previous submissions</a>."
+
+#: 
+msgctxt "webform.settings:settings:default_autofill_message"
+msgid "This submission has been autofilled with your previous submission."
+msgstr "Denne indsendelse er autofyldt med dine tidligere indsendelser."
+
+#: 
+msgctxt "webform.settings:settings:default_limit_total_message"
+msgid "No more submissions are permitted."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_limit_user_message"
+msgid "No more submissions are permitted."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:dialog_options:narrow:title"
+msgid "Narrow"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:dialog_options:normal:title"
+msgid "Normal"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:dialog_options:wide:title"
+msgid "Wide"
+msgstr "Bred"
+
+#: 
+msgctxt "webform.settings:element:empty_message"
+msgid "{Empty}"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:element:default_more_title"
+msgid "More"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:element:default_section_title_tag"
+msgid "h2"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:file:file_private_redirect_message"
+msgid "Please login to access the uploaded file."
+msgstr ""
+
+#: 
+msgctxt "webform.settings:mail:default_from_name"
+msgid "[site:name]"
+msgstr "[site:name]"
+
+#: 
+msgctxt "webform.settings:mail:default_subject"
+msgid "Webform submission from: [webform_submission:source-title]"
+msgstr "Indsendelse via webformular fra: [webform_submission:source-title]"
+
+#: 
+msgctxt "webform.settings:mail:default_body_text"
+msgid "Submitted on [webform_submission:created]\n"
+"Submitted by: [webform_submission:user]\n"
+"\n"
+"Submitted values are:\n"
+"[webform_submission:values]\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.settings:mail:default_body_html"
+msgid "<p>Submitted on [webform_submission:created]</p>\n"
+"<p>Submitted by: [webform_submission:user]</p>\n"
+"<p>Submitted values are:</p>\n"
+"[webform_submission:values]\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.settings:test:types"
+msgid "checkbox:\n"
+"  - true\n"
+"color:\n"
+"  - '#ffffcc'\n"
+"  - '#ffffcc'\n"
+"  - '#ccffff'\n"
+"email:\n"
+"  - 'example@example.com'\n"
+"  - 'test@test.com'\n"
+"  - 'random@random.com'\n"
+"language_select:\n"
+"  - en\n"
+"machine_name:\n"
+"  - 'loremipsum'\n"
+"  - 'oratione'\n"
+"  - 'dixisset'\n"
+"tel:\n"
+"  - '123-456-7890'\n"
+"  - '098-765-4321'\n"
+"textarea:\n"
+"  - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negat esse eam, inquit, propter se expetendam. Primum Theophrasti, Strato, physicum se voluit; Id mihi magnum videtur. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.'\n"
+"  - 'Huius, Lyco, oratione locuples, rebus ipsis ielunior. Duo Reges: constructio interrete. Sed haec in pueris; Sed utrum hortandus es nobis, Luci, inquit, an etiam tua sponte propensus es? Sapiens autem semper beatus est et est aliquando in dolore; Immo videri fortasse. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Et ille ridens: Video, inquit, quid agas;'\n"
+"  - 'Quae cum dixisset, finem ille. Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat. Progredientibus autem aetatibus sensim tardeve potius quasi nosmet ipsos cognoscimus. Gloriosa ostentatio in constituendo summo bono. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duarum enim vitarum nobis erunt instituta capienda. Comprehensum, quod cognitum non habet? Qui enim existimabit posse se miserum esse beatus non erit. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Nunc omni virtuti vitium contrario nomine opponitur.'\n"
+"text_format:\n"
+"  - value: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negat esse eam, inquit, propter se expetendam. Primum Theophrasti, Strato, physicum se voluit; Id mihi magnum videtur. Itaque mihi non satis videmini considerare quod iter sit naturae quaeque progressio. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.</p>'\n"
+"  - value: '<p>Huius, Lyco, oratione locuples, rebus ipsis ielunior. Duo Reges: constructio interrete. Sed haec in pueris; Sed utrum hortandus es nobis, Luci, inquit, an etiam tua sponte propensus es? Sapiens autem semper beatus est et est aliquando in dolore; Immo videri fortasse. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Et ille ridens: Video, inquit, quid agas;</p>'\n"
+"  - value: '<p>Quae cum dixisset, finem ille. Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat. Progredientibus autem aetatibus sensim tardeve potius quasi nosmet ipsos cognoscimus. Gloriosa ostentatio in constituendo summo bono. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duarum enim vitarum nobis erunt instituta capienda. Comprehensum, quod cognitum non habet? Qui enim existimabit posse se miserum esse beatus non erit. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Nunc omni virtuti vitium contrario nomine opponitur.</p>'\n"
+"url:\n"
+"  - 'http://example.com'\n"
+"  - 'http://test.com'\n"
+"webform_email_confirm:\n"
+"  - 'example@example.com'\n"
+"  - 'test@test.com'\n"
+"  - 'random@random.com'\n"
+"webform_email_multiple:\n"
+"  - 'example@example.com, test@test.com, random@random.com'\n"
+"webform_time:\n"
+"  - '09:00'\n"
+"  - '17:00'\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.settings:test:names"
+msgid "first_name:\n"
+"  - 'John'\n"
+"  - 'Paul'\n"
+"  - 'Ringo'\n"
+"  - 'George'\n"
+"last_name:\n"
+"  - 'Lennon'\n"
+"  - 'McCartney'\n"
+"  - 'Starr'\n"
+"  - 'Harrison'\n"
+"address:\n"
+"  - '10 Main Street'\n"
+"  - '11 Brook Alley Road. APT 1'\n"
+"zip:\n"
+"  - '11111'\n"
+"  - '12345'\n"
+"  - '12345-6789'\n"
+"postal_code:\n"
+"  - '11111'\n"
+"  - '12345'\n"
+"  - '12345-6789'\n"
+"phone:\n"
+"  - '123-456-7890'\n"
+"  - '098-765-4321'\n"
+"fax:\n"
+"  - '123-456-7890'\n"
+"  - '098-765-4321'\n"
+"city:\n"
+"  - 'Springfield'\n"
+"  - 'Pleasantville'\n"
+"  - 'Hill Valley'\n"
+"url:\n"
+"  - 'http://example.com'\n"
+"  - 'http://test.com'\n"
+"default:\n"
+"  - 'Loremipsum'\n"
+"  - 'Oratione'\n"
+"  - 'Dixisset'\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:title"
+msgid "Contact"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:description"
+msgid "<p>Basic email contact webform.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:elements"
+msgid "name:\n"
+"  '#title': 'Your Name'\n"
+"  '#type': textfield\n"
+"  '#required': true\n"
+"  '#default_value': '[current-user:display-name]'\n"
+"email:\n"
+"  '#title': 'Your Email'\n"
+"  '#type': email\n"
+"  '#required': true\n"
+"  '#default_value': '[current-user:mail]'\n"
+"subject:\n"
+"  '#title': Subject\n"
+"  '#type': textfield\n"
+"  '#required': true\n"
+"  '#test': 'Testing contact webform from [site:name]'\n"
+"message:\n"
+"  '#title': Message\n"
+"  '#type': textarea\n"
+"  '#required': true\n"
+"  '#test': 'Please ignore this email.'\n"
+"actions:\n"
+"  '#type': webform_actions\n"
+"  '#title': 'Submit button(s)'\n"
+"  '#submit__label': 'Send message'\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:settings:confirmation_url"
+msgid "<front>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:settings:confirmation_message"
+msgid "Your message has been sent."
+msgstr "Din besked er sendt."
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_confirmation:label"
+msgid "Email confirmation"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_confirmation:settings:from_name"
+msgid "_default"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_confirmation:settings:subject"
+msgid "[webform_submission:values:subject:raw]"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_confirmation:settings:body"
+msgid "[webform_submission:values:message:value]"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_notification:label"
+msgid "Email notification"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_notification:settings:from_name"
+msgid "[webform_submission:values:name:raw]"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_notification:settings:subject"
+msgid "[webform_submission:values:subject:raw]"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_notification:settings:body"
+msgid "[webform_submission:values:message:value]"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.country_codes:label"
+msgid "Country codes"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.country_codes:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.country_names:label"
+msgid "Country names"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.country_names:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.days:label"
+msgid "Days"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.days:category"
+msgid "Date and time"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.days:options"
+msgid "Sunday: Sunday\n"
+"Monday: Monday\n"
+"Tuesday: Tuesday\n"
+"Wednesday: Wednesday\n"
+"Thursday: Thursday\n"
+"Friday: Friday\n"
+"Saturday: Saturday\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.education:label"
+msgid "Education"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.education:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.education:options"
+msgid "High School: High School\n"
+"Associate Degree: Associate Degree\n"
+"Graduate or Professional Degree: Graduate or Professional Degree\n"
+"Some College: Some College\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.employment_status:label"
+msgid "Employment status"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.employment_status:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.employment_status:options"
+msgid "'Full Time': 'Full Time'\n"
+"'Part Time': 'Part Time'\n"
+"'Military': 'Military'\n"
+"Unemployed: Unemployed\n"
+"Retired: Retired\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.ethnicity:label"
+msgid "Ethnicity"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.ethnicity:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.ethnicity:options"
+msgid "Caucasian: Caucasian\n"
+"'Latino/Hispanic': 'Latino/Hispanic'\n"
+"'Middle Eastern': 'Middle Eastern'\n"
+"African: African\n"
+"Caribbean: Caribbean\n"
+"'South Asian': 'South Asian'\n"
+"'East Asian': 'East Asian'\n"
+"Mixed: Mixed\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.gender:label"
+msgid "Gender"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.gender:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.gender:options"
+msgid "Man: Man\n"
+"Woman: Woman\n"
+"Non-binary: Non-binary\n"
+"Agender/Genderless: Agender/Genderless\n"
+"Androgyne/Androgynous: Androgyne/Androgynous\n"
+"Aporagender: Aporagender\n"
+"Bigender: Bigender\n"
+"Demi-agender: Demi-agender\n"
+"Demi-boy: Demi-boy\n"
+"Demi-fluid: Demi-fluid\n"
+"Demi-girl: Demi-girl\n"
+"Demi-gender: Demi-gender\n"
+"Demi-non-binary: Demi-non-binary\n"
+"Genderqueer: Genderqueer\n"
+"Genderflux: Genderflux\n"
+"Genderfluid: Genderfluid\n"
+"Gender-indifferent: Gender-indifferent\n"
+"Gender-neutral: Gender-neutral\n"
+"Graygender: Graygender\n"
+"Intergender: Intergender\n"
+"Maverique: Maverique\n"
+"Maxigender: Maxigender\n"
+"Multigender/Polygender: Multigender/Polygender\n"
+"Neutrois: Neutrois\n"
+"Pangender/Omnigender: Pangender/Omnigender\n"
+"Trigender: Trigender\n"
+"Two-spirit: Two-spirit\n"
+"'Prefer Not to Answer': 'Prefer Not to Answer'\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.industry:label"
+msgid "Industry"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.industry:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.industry:options"
+msgid "Accounting/Finance: Accounting/Finance\n"
+"Advertising/Public Relations: Advertising/Public Relations\n"
+"Aerospace/Aviation: Aerospace/Aviation\n"
+"Arts/Entertainment/Publishing: Arts/Entertainment/Publishing\n"
+"Automotive: Automotive\n"
+"Banking/Mortgage: Banking/Mortgage\n"
+"Business Development: Business Development\n"
+"Business Opportunity: Business Opportunity\n"
+"Clerical/Administrative: Clerical/Administrative\n"
+"Construction/Facilities: Construction/Facilities\n"
+"Consumer Goods: Consumer Goods\n"
+"Customer Service: Customer Service\n"
+"Education/Training: Education/Training\n"
+"Energy/Utilities: Energy/Utilities\n"
+"Engineering: Engineering\n"
+"Government/Military: Government/Military\n"
+"Healthcare: Healthcare\n"
+"Hospitality/Travel: Hospitality/Travel\n"
+"Human Resources: Human Resources\n"
+"Installation/Maintenance: Installation/Maintenance\n"
+"Insurance: Insurance\n"
+"Internet: Internet\n"
+"Law Enforcement/Security: Law Enforcement/Security\n"
+"Legal: Legal\n"
+"Management/Executive: Management/Executive\n"
+"Manufacturing/Operations: Manufacturing/Operations\n"
+"Marketing: Marketing\n"
+"Non-Profit/Volunteer: Non-Profit/Volunteer\n"
+"Pharmaceutical/Biotech: Pharmaceutical/Biotech\n"
+"Professional Services: Professional Services\n"
+"Real Estate: Real Estate\n"
+"Restaurant/Food Service: Restaurant/Food Service\n"
+"Retail: Retail\n"
+"Sales: Sales\n"
+"Science/Research: Science/Research\n"
+"Skilled Labor: Skilled Labor\n"
+"Technology: Technology\n"
+"Telecommunications: Telecommunications\n"
+"Transportation/Logistics: Transportation/Logistics\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.languages:label"
+msgid "Languages"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.languages:category"
+msgid "Language"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_agreement:label"
+msgid "Likert: Agreement"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_agreement:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_agreement:options"
+msgid "1: Strongly Disagree\n"
+"2: Disagree\n"
+"3: Neutral\n"
+"4: Agree\n"
+"5: Strongly Agree\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_comparison:label"
+msgid "Likert: Comparison"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_comparison:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_comparison:options"
+msgid "1: Much Worse\n"
+"2: Somewhat Worse\n"
+"3: About the Same\n"
+"4: Somewhat Better\n"
+"5: Much Better\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_importance:label"
+msgid "Likert: Importance"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_importance:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_importance:options"
+msgid "1: Not at all Important\n"
+"2: Somewhat Important\n"
+"3: Neutral\n"
+"4: Important\n"
+"5: Very Important\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_quality:label"
+msgid "Likert: Quality"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_quality:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_quality:options"
+msgid "1: Poor\n"
+"2: Fair\n"
+"3: Good\n"
+"4: Very good\n"
+"5: Excellent\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_satisfaction:label"
+msgid "Likert: Satisfaction"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_satisfaction:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_satisfaction:options"
+msgid "1: Very Unsatisfied\n"
+"2: Unsatisfied\n"
+"3: Neutral\n"
+"4: Satisfied\n"
+"5: Very Satisfied\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_ten_scale:label"
+msgid "Likert: Ten Scale"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_ten_scale:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_ten_scale:options"
+msgid "1: 1\n"
+"2: 2\n"
+"3: 3\n"
+"4: 4\n"
+"5: 5\n"
+"6: 6\n"
+"7: 7\n"
+"8: 8\n"
+"9: 9\n"
+"10: 10\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_would_you:label"
+msgid "Likert: Would You"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_would_you:category"
+msgid "Likert"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.likert_would_you:options"
+msgid "1: Definitely Not\n"
+"2: Probably Not\n"
+"3: Not Sure\n"
+"4: Probably\n"
+"5: Definitely\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.marital_status:label"
+msgid "Marital status"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.marital_status:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.marital_status:options"
+msgid "Single: Single\n"
+"Married: Married\n"
+"Divorced: Divorced\n"
+"Widowed: Widowed\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.months:label"
+msgid "Months"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.months:category"
+msgid "Date and time"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.months:options"
+msgid "January: January\n"
+"February: February\n"
+"March: March\n"
+"April: April\n"
+"May: May\n"
+"June: June\n"
+"July: July\n"
+"August: August\n"
+"September: September\n"
+"October: October\n"
+"November: November\n"
+"December: December\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.phone_types:label"
+msgid "Phone type"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.phone_types:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.phone_types:options"
+msgid "Home: Home\n"
+"Office: Office\n"
+"Cell: Cell\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_codes:label"
+msgid "Province codes"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_codes:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_codes:options"
+msgid "AB: Alberta\n"
+"BC: 'British Columbia'\n"
+"MB: Manitoba\n"
+"NB: 'New Brunswick'\n"
+"NL: 'Newfoundland and Labrador'\n"
+"NS: 'Nova Scotia'\n"
+"NT: 'Northwest Territories'\n"
+"NU: Nunavut\n"
+"'ON': Ontario\n"
+"PE: 'Prince Edward Island'\n"
+"QC: Quebec\n"
+"SK: Saskatchewan\n"
+"YT: Yukon\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_names:label"
+msgid "Province names"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_names:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.province_names:options"
+msgid "Alberta: Alberta\n"
+"'British Columbia': 'British Columbia'\n"
+"Manitoba: Manitoba\n"
+"'New Brunswick': 'New Brunswick'\n"
+"'Newfoundland and Labrador': 'Newfoundland and Labrador'\n"
+"'Nova Scotia': 'Nova Scotia'\n"
+"'Northwest Territories': 'Northwest Territories'\n"
+"Nunavut: Nunavut\n"
+"Ontario: Ontario\n"
+"'Prince Edward Island': 'Prince Edward Island'\n"
+"Quebec: Quebec\n"
+"Saskatchewan: Saskatchewan\n"
+"Yukon: Yukon\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.relationship:label"
+msgid "Relationship"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.relationship:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.relationship:options"
+msgid "Parent: Parent\n"
+"'Significant Other': 'Significant Other'\n"
+"Sibling: Sibling\n"
+"Child: Child\n"
+"Friend: Friend\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex:label"
+msgid "Sex"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex:options"
+msgid "Male: Male\n"
+"Female: Female\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex_icao:label"
+msgid "Sex - International Civil Aviation Organization (ICAO)"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex_icao:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.sex_icao:options"
+msgid "M: Male\n"
+"F: Female\n"
+"X: Unspecified\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.size:label"
+msgid "Size"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.size:category"
+msgid "General"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.size:options"
+msgid "Extra Small: Extra Small\n"
+"Small: Small\n"
+"Medium: Medium\n"
+"Large: Large\n"
+"Extra Large: Extra Large\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_codes:label"
+msgid "State codes"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_codes:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_codes:options"
+msgid "AL: Alabama\n"
+"AK: Alaska\n"
+"AZ: Arizona\n"
+"AR: Arkansas\n"
+"CA: California\n"
+"CO: Colorado\n"
+"CT: Connecticut\n"
+"DE: Delaware\n"
+"DC: 'District of Columbia'\n"
+"FL: Florida\n"
+"GA: Georgia\n"
+"GU: Guam\n"
+"HI: Hawaii\n"
+"ID: Idaho\n"
+"IL: Illinois\n"
+"IN: Indiana\n"
+"IA: Iowa\n"
+"KS: Kansas\n"
+"KY: Kentucky\n"
+"LA: Louisiana\n"
+"ME: Maine\n"
+"MD: Maryland\n"
+"MA: Massachusetts\n"
+"MI: Michigan\n"
+"MN: Minnesota\n"
+"MS: Mississippi\n"
+"MO: Missouri\n"
+"MT: Montana\n"
+"NE: Nebraska\n"
+"NV: Nevada\n"
+"NH: 'New Hampshire'\n"
+"NJ: 'New Jersey'\n"
+"NM: 'New Mexico'\n"
+"NY: 'New York'\n"
+"NC: 'North Carolina'\n"
+"ND: 'North Dakota'\n"
+"OH: Ohio\n"
+"OK: Oklahoma\n"
+"OR: Oregon\n"
+"PA: Pennsylvania\n"
+"RI: 'Rhode Island'\n"
+"SC: 'South Carolina'\n"
+"SD: 'South Dakota'\n"
+"TN: Tennessee\n"
+"TX: Texas\n"
+"UT: Utah\n"
+"VT: Vermont\n"
+"VA: Virginia\n"
+"WA: Washington\n"
+"WV: 'West Virginia'\n"
+"WI: Wisconsin\n"
+"WY: Wyoming\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_names:label"
+msgid "State names"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_names:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_names:options"
+msgid "Alabama: Alabama\n"
+"Alaska: Alaska\n"
+"Arizona: Arizona\n"
+"Arkansas: Arkansas\n"
+"California: California\n"
+"Colorado: Colorado\n"
+"Connecticut: Connecticut\n"
+"Delaware: Delaware\n"
+"'District of Columbia': 'District of Columbia'\n"
+"Florida: Florida\n"
+"Georgia: Georgia\n"
+"Hawaii: Hawaii\n"
+"Idaho: Idaho\n"
+"Illinois: Illinois\n"
+"Indiana: Indiana\n"
+"Iowa: Iowa\n"
+"Kansas: Kansas\n"
+"Kentucky: Kentucky\n"
+"Louisiana: Louisiana\n"
+"Maine: Maine\n"
+"Maryland: Maryland\n"
+"Massachusetts: Massachusetts\n"
+"Michigan: Michigan\n"
+"Minnesota: Minnesota\n"
+"Mississippi: Mississippi\n"
+"Missouri: Missouri\n"
+"Montana: Montana\n"
+"Nebraska: Nebraska\n"
+"Nevada: Nevada\n"
+"'New Hampshire': 'New Hampshire'\n"
+"'New Jersey': 'New Jersey'\n"
+"'New Mexico': 'New Mexico'\n"
+"'New York': 'New York'\n"
+"'North Carolina': 'North Carolina'\n"
+"'North Dakota': 'North Dakota'\n"
+"Ohio: Ohio\n"
+"Oklahoma: Oklahoma\n"
+"Oregon: Oregon\n"
+"Pennsylvania: Pennsylvania\n"
+"'Rhode Island': 'Rhode Island'\n"
+"'South Carolina': 'South Carolina'\n"
+"'South Dakota': 'South Dakota'\n"
+"Tennessee: Tennessee\n"
+"Texas: Texas\n"
+"Utah: Utah\n"
+"Vermont: Vermont\n"
+"Virginia: Virginia\n"
+"Washington: Washington\n"
+"'West Virginia': 'West Virginia'\n"
+"Wisconsin: Wisconsin\n"
+"Wyoming: Wyoming\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_codes:label"
+msgid "State/Province codes"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_codes:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_codes:options"
+msgid "AL: Alabama\n"
+"AK: Alaska\n"
+"AS: 'American Samoa'\n"
+"AZ: Arizona\n"
+"AR: Arkansas\n"
+"AE: 'Armed Forces (Canada, Europe, Africa, or Middle East)'\n"
+"AA: 'Armed Forces Americas'\n"
+"AP: 'Armed Forces Pacific'\n"
+"CA: California\n"
+"CO: Colorado\n"
+"CT: Connecticut\n"
+"DE: Delaware\n"
+"DC: 'District of Columbia'\n"
+"FM: 'Federated States of Micronesia'\n"
+"FL: Florida\n"
+"GA: Georgia\n"
+"GU: Guam\n"
+"HI: Hawaii\n"
+"ID: Idaho\n"
+"IL: Illinois\n"
+"IN: Indiana\n"
+"IA: Iowa\n"
+"KS: Kansas\n"
+"KY: Kentucky\n"
+"LA: Louisiana\n"
+"ME: Maine\n"
+"MH: 'Marshall Islands'\n"
+"MD: Maryland\n"
+"MA: Massachusetts\n"
+"MI: Michigan\n"
+"MN: Minnesota\n"
+"MS: Mississippi\n"
+"MO: Missouri\n"
+"MT: Montana\n"
+"NE: Nebraska\n"
+"NV: Nevada\n"
+"NH: 'New Hampshire'\n"
+"NJ: 'New Jersey'\n"
+"NM: 'New Mexico'\n"
+"NY: 'New York'\n"
+"NC: 'North Carolina'\n"
+"ND: 'North Dakota'\n"
+"MP: 'Northern Mariana Islands'\n"
+"OH: Ohio\n"
+"OK: Oklahoma\n"
+"OR: Oregon\n"
+"PW: Palau\n"
+"PA: Pennsylvania\n"
+"PR: 'Puerto Rico'\n"
+"RI: 'Rhode Island'\n"
+"SC: 'South Carolina'\n"
+"SD: 'South Dakota'\n"
+"TN: Tennessee\n"
+"TX: Texas\n"
+"UT: Utah\n"
+"VT: Vermont\n"
+"VI: 'Virgin Islands'\n"
+"VA: Virginia\n"
+"WA: Washington\n"
+"WV: 'West Virginia'\n"
+"WI: Wisconsin\n"
+"WY: Wyoming\n"
+"AB: Alberta\n"
+"BC: 'British Columbia'\n"
+"MB: Manitoba\n"
+"NB: 'New Brunswick'\n"
+"NL: 'Newfoundland and Labrador'\n"
+"NS: 'Nova Scotia'\n"
+"NT: 'Northwest Territories'\n"
+"NU: Nunavut\n"
+"'ON': Ontario\n"
+"PE: 'Prince Edward Island'\n"
+"QC: Quebec\n"
+"SK: Saskatchewan\n"
+"YT: Yukon\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_names:label"
+msgid "State/Province names"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_names:category"
+msgid "Geographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.state_province_names:options"
+msgid "Alabama: Alabama\n"
+"Alaska: Alaska\n"
+"'American Samoa': 'American Samoa'\n"
+"Arizona: Arizona\n"
+"Arkansas: Arkansas\n"
+"'Armed Forces (Canada, Europe, Africa, or Middle East)': 'Armed Forces (Canada, Europe, Africa, or Middle East)'\n"
+"'Armed Forces Americas': 'Armed Forces Americas'\n"
+"'Armed Forces Pacific': 'Armed Forces Pacific'\n"
+"California: California\n"
+"Colorado: Colorado\n"
+"Connecticut: Connecticut\n"
+"Delaware: Delaware\n"
+"'District of Columbia': 'District of Columbia'\n"
+"'Federated States of Micronesia': 'Federated States of Micronesia'\n"
+"Florida: Florida\n"
+"Georgia: Georgia\n"
+"Guam: Guam\n"
+"Hawaii: Hawaii\n"
+"Idaho: Idaho\n"
+"Illinois: Illinois\n"
+"Indiana: Indiana\n"
+"Iowa: Iowa\n"
+"Kansas: Kansas\n"
+"Kentucky: Kentucky\n"
+"Louisiana: Louisiana\n"
+"Maine: Maine\n"
+"'Marshall Islands': 'Marshall Islands'\n"
+"Maryland: Maryland\n"
+"Massachusetts: Massachusetts\n"
+"Michigan: Michigan\n"
+"Minnesota: Minnesota\n"
+"Mississippi: Mississippi\n"
+"Missouri: Missouri\n"
+"Montana: Montana\n"
+"Nebraska: Nebraska\n"
+"Nevada: Nevada\n"
+"'New Hampshire': 'New Hampshire'\n"
+"'New Jersey': 'New Jersey'\n"
+"'New Mexico': 'New Mexico'\n"
+"'New York': 'New York'\n"
+"'North Carolina': 'North Carolina'\n"
+"'North Dakota': 'North Dakota'\n"
+"'Northern Mariana Islands': 'Northern Mariana Islands'\n"
+"Ohio: Ohio\n"
+"Oklahoma: Oklahoma\n"
+"Oregon: Oregon\n"
+"Palau: Palau\n"
+"Pennsylvania: Pennsylvania\n"
+"'Puerto Rico': 'Puerto Rico'\n"
+"'Rhode Island': 'Rhode Island'\n"
+"'South Carolina': 'South Carolina'\n"
+"'South Dakota': 'South Dakota'\n"
+"Tennessee: Tennessee\n"
+"Texas: Texas\n"
+"Utah: Utah\n"
+"Vermont: Vermont\n"
+"'Virgin Islands': 'Virgin Islands'\n"
+"Virginia: Virginia\n"
+"Washington: Washington\n"
+"'West Virginia': 'West Virginia'\n"
+"Wisconsin: Wisconsin\n"
+"Wyoming: Wyoming\n"
+"Alberta: Alberta\n"
+"'British Columbia': 'British Columbia'\n"
+"Manitoba: Manitoba\n"
+"'New Brunswick': 'New Brunswick'\n"
+"'Newfoundland and Labrador': 'Newfoundland and Labrador'\n"
+"'Nova Scotia': 'Nova Scotia'\n"
+"'Northwest Territories': 'Northwest Territories'\n"
+"Nunavut: Nunavut\n"
+"Ontario: Ontario\n"
+"'Prince Edward Island': 'Prince Edward Island'\n"
+"Quebec: Quebec\n"
+"Saskatchewan: Saskatchewan\n"
+"Yukon: Yukon\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.time_zones:label"
+msgid "Time zones"
+msgstr "Tidszoner"
+
+#: 
+msgctxt "webform.webform_options.time_zones:category"
+msgid "Date and time"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.titles:label"
+msgid "Titles"
+msgstr "Titler"
+
+#: 
+msgctxt "webform.webform_options.titles:category"
+msgid "Demographic"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.titles:options"
+msgid "Miss: Miss\n"
+"Ms: Ms\n"
+"Mr: Mr\n"
+"Mrs: Mrs\n"
+"Dr: Dr\n"
+""
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.translations:label"
+msgid "Translations"
+msgstr "Oversættelser"
+
+#: 
+msgctxt "webform.webform_options.translations:category"
+msgid "Language"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.yes_no:label"
+msgid "Yes/No"
+msgstr "Ja/Nej"
+
+#: 
+msgctxt "webform.webform_options.yes_no:category"
+msgid "General"
+msgstr ""
+
+#: 
+msgctxt "webform.webform_options.yes_no:options"
+msgid "Yes: Yes\n"
+"No: No\n"
+""
+msgstr "Ja: Ja\n"
+"Nej: Nej"
 
