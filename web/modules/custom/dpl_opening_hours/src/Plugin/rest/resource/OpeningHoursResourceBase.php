@@ -141,8 +141,7 @@ abstract class OpeningHoursResourceBase extends ResourceBase {
                   "format" => "date",
                   "description" => $this->formatMultilineDescription(
                     "The end date of the repetition. If the end date is not on the same week day as the first " .
-                    "instance then the preceding occurrence of the weekday will be the last instance. " .
-                    "\n\n" .
+                    "instance then the preceding occurrence of the weekday will be the last instance. \n\n" .
                     "This field must be provided if type is 'weekly'",
                   ),
                 ],
