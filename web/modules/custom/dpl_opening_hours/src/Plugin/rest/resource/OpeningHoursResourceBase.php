@@ -129,8 +129,10 @@ abstract class OpeningHoursResourceBase extends ResourceBase {
                 "weekly",
               ],
             ],
-            // If a repetition type has additional data then a corresponding property with the name
-            // "[repetition_type]_data" and the type object must be added. This object must contain all this data.
+            // If a repetition type requires additional data then a
+            // corresponding property with the name "[repetition_type]_data"
+            // and the type "object" must be added. The properties of this
+            // object must contain all this data.
             "weekly_data" => [
               "type" => "object",
               "properties" => [
