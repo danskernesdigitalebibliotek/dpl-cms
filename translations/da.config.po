@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-18 19:40+0200\n"
-"PO-Revision-Date: 2024-04-18 19:40+0200\n"
+"POT-Creation-Date: 2024-04-22 10:53+0200\n"
+"PO-Revision-Date: 2024-04-22 10:53+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4815,7 +4815,7 @@ msgstr ""
 
 msgctxt "facets.facet.content_categories:name"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "facets.facet.content_categories:missing_label"
 msgid "others"
@@ -4831,7 +4831,7 @@ msgstr ""
 
 msgctxt "facets.facet.event_categories:name"
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 msgctxt "facets.facet_source.search_api__views_page__articles__all:name"
 msgid "search_api:views_page__articles__all"
