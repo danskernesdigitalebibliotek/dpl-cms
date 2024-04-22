@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.list_teaser
     - field.field.node.page.field_branch
+    - field.field.node.page.field_breadcrumb_parent
     - field.field.node.page.field_display_titles
     - field.field.node.page.field_hero_title
     - field.field.node.page.field_paragraphs
@@ -23,7 +24,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: hero_wide
+      view_mode: list_teaser
       link: false
     third_party_settings: {  }
     weight: 5
@@ -43,6 +44,7 @@ content:
     region: content
 hidden:
   field_branch: true
+  field_breadcrumb_parent: true
   field_display_titles: true
   field_hero_title: true
   field_paragraphs: true
