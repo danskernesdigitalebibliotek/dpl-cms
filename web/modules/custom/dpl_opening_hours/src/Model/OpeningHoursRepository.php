@@ -102,7 +102,7 @@ class OpeningHoursRepository {
   public function upsert(OpeningHoursInstance $instance): OpeningHoursInstance {
     $data = $this->toFields($instance);
 
-    $numRowsAffected = $this->connection->upsert(self::DATABASE_TABLE)
+    $this->connection->upsert(self::DATABASE_TABLE)
       ->key('id')
       ->fields(array_keys($data), array_values($data))
       ->execute();
