@@ -6,6 +6,7 @@ use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursCreatePOSTRequest a
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursCreatePOSTRequestRepetition;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInner as OpeningHoursResponse;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInnerCategory as OpeningHoursCategory;
+use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInnerRepetition as OpeningHoursRepetition;
 use Drupal\dpl_opening_hours\Model\OpeningHoursInstance;
 use Drupal\dpl_opening_hours\Model\Repetition\NoRepetition;
 use Drupal\node\NodeStorageInterface;
@@ -90,7 +91,11 @@ class OpeningHoursMapper {
       ->setCategory($category)
       ->setDate(new DateTime($instance->startTime->format('Y-m-d')))
       ->setStartTime($instance->startTime->format("H:i"))
-      ->setEndTime($instance->endTime->format('H:i'));
+      ->setEndTime($instance->endTime->format('H:i'))
+      ->setRepetition(
+        (new OpeningHoursRepetition())
+          ->setType(OpeningHoursRepetitionType::None->value)
+      );
   }
 
 }

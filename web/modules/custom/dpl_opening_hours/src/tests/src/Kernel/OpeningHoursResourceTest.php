@@ -3,11 +3,13 @@
 namespace Drupal\Tests\dpl_opening_hours\Kernel;
 
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursCreatePOSTRequest as OpeningHoursRequest;
+use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursCreatePOSTRequestRepetition as OpeningHoursRepetitionRequest;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInner as OpeningHoursResponse;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInnerCategory as OpeningHoursCategory;
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\TypedData\TypedDataInterface;
+use Drupal\dpl_opening_hours\Mapping\OpeningHoursRepetitionType;
 use Drupal\dpl_opening_hours\Plugin\rest\resource\OpeningHoursCreateResource;
 use Drupal\dpl_opening_hours\Plugin\rest\resource\OpeningHoursDeleteResource;
 use Drupal\dpl_opening_hours\Plugin\rest\resource\OpeningHoursResource;
@@ -36,7 +38,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
    */
   public function setUp(): void {
     parent::setUp();
-    $this->installSchema('dpl_opening_hours', ['dpl_opening_hours_instance']);
+    $this->installSchema('dpl_opening_hours', ['dpl_opening_hours_instance', 'dpl_opening_hours_repetition']);
   }
 
   /**
@@ -88,6 +90,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
     $this->assertEquals("17:00", $responseData->getEndTime());
     $this->assertEquals(1, $responseData->getBranchId());
     $this->assertEquals("Open", $responseData->getCategory()?->getTitle());
+    $this->assertEquals(OpeningHoursRepetitionType::None->value, $responseData->getRepetition()?->getType());
   }
 
   /**
@@ -106,6 +109,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
     $this->assertEquals("17:00", $openingHours->getEndTime());
     $this->assertEquals("Open", $openingHours->getCategory()?->getTitle());
     $this->assertEquals(1, $openingHours->getBranchId());
+    $this->assertEquals(OpeningHoursRepetitionType::None->value, $openingHours->getRepetition()?->getType());
   }
 
   /**
@@ -159,7 +163,12 @@ class OpeningHoursResourceTest extends KernelTestBase {
       // It is a bit tricky to set up multiple categories so do not change
       // these values for npw.
       ->setCategory($responseData->getCategory())
-      ->setBranchId(2);
+      ->setBranchId(2)
+      ->setRepetition(
+        (new OpeningHoursRepetitionRequest())
+          ->setId($responseData->getRepetition()?->getId())
+          ->setType($responseData->getRepetition()?->getType())
+      );
     /** @var \DanskernesDigitaleBibliotek\CMS\Api\Service\JmsSerializer $serializer */
     $serializer = $this->container->get('dpl_opening_hours.serializer');
     $updateRequest = new Request(content: $serializer->serialize($updateData, 'application/json'));
@@ -173,6 +182,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
     $this->assertEquals("10:00", $updateData->getStartTime());
     $this->assertEquals("18:00", $updateData->getEndTime());
     $this->assertEquals(2, $updateData->getBranchId());
+    $this->assertEquals(OpeningHoursRepetitionType::None->value, $updateData->getRepetition()?->getType());
   }
 
   /**
@@ -200,7 +210,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
     string $startTime,
     string $endTime,
     string $categoryTitle,
-    int $branchId
+    int $branchId,
   ): OpeningHoursResponse {
     $createResource = OpeningHoursCreateResource::create($this->container, [], '', '');
 
@@ -212,7 +222,11 @@ class OpeningHoursResourceTest extends KernelTestBase {
       ->setStartTime($startTime)
       ->setEndTime($endTime)
       ->setCategory((new OpeningHoursCategory())->setTitle($categoryTitle))
-      ->setBranchId($branchId);
+      ->setBranchId($branchId)
+      ->setRepetition(
+        (new OpeningHoursRepetitionRequest())
+          ->setType(OpeningHoursRepetitionType::None->value)
+      );
     $request = new Request(content: $serializer->serialize($requestData, 'application/json'));
     $response = $createResource->post($request);
     /** @var \DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInner $responseData */
