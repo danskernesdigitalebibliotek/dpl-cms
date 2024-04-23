@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-22 10:53+0200\n"
-"PO-Revision-Date: 2024-04-22 10:53+0200\n"
+"POT-Creation-Date: 2024-04-23 13:42+0200\n"
+"PO-Revision-Date: 2024-04-23 13:42+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4160,7 +4160,7 @@ msgid "Cancel users\\u{00A0}includes role %role"
 msgstr ""
 
 msgid "View users\\u{00A0}includes role %role"
-msgstr ""
+msgstr "Vis users\\u{00A0}includes role %role"
 
 msgid "Assign roles includes role %role"
 msgstr ""
@@ -4589,6 +4589,10 @@ msgid ""
 "selections\" and edit the filter settings and check \"Show hierarchy "
 "in dropdown\"."
 msgstr ""
+"Når et forælderafkrydsningsfelt er markeret, markér alle dets "
+"børn. Hvis denne mulighed er deaktiveret, skal du redigere filteret "
+"og markere \"Tillad flere valg\" og redigere filterindstillingerne og "
+"markere \"Vis hierarki i dropdown\"."
 
 msgid "Display inline"
 msgstr ""
@@ -5532,7 +5536,7 @@ msgid "The ID of the entity to export."
 msgstr ""
 
 msgid "Write out the exported content to a file instead of stdout"
-msgstr ""
+msgstr "Skriv det eksporterede indhold til en fil i stedet for stdout"
 
 msgid "Exports an entity and all its referenced entities."
 msgstr ""
@@ -10114,7 +10118,7 @@ msgid "The app ID for the app store."
 msgstr ""
 
 msgid "Windows Universal app name"
-msgstr ""
+msgstr "Windows Universal app navn"
 
 msgid "The name of the app (suitable for display)"
 msgstr ""
@@ -14404,6 +14408,8 @@ msgid ""
 "You can read more in the <a href=\"@readme\">readme</a> file or our <a "
 "href=\"@project\">project page on Drupal.org</a>."
 msgstr ""
+"Du kan læse mere i <a href=\"@readme\">readme</a> filen eller vores "
+"<a href=\"@project\">project page on Drupal.org</a>."
 
 msgid ""
 "When you have set up Drupal's standard crontab job cron.php then "
@@ -16278,25 +16284,6 @@ msgstr "Åbningstidskategorier (statisk indhold)"
 msgid "Adds default opening hours categories"
 msgstr "Tilføjer standard åbningstidskategorier"
 
-msgid "The \".version\" file does not have a valid JSON format."
-msgstr "\".version\" filen har ikke et validt JSON format."
-
-msgid ""
-"The \".version\" file does not contain information about the CMS "
-"version."
-msgstr "\".version\" filen indeholder ikke information om CMS-versionen."
-
-msgid ""
-"Not found, this could be due to this environment being a PR "
-"environment."
-msgstr "Ikke fundet, dette kan skyldes at miljøet er et udviklermiljø."
-
-msgid "CMS release version"
-msgstr "CMS release version"
-
-msgid "<code>@version</code>"
-msgstr "<code>@version</code>"
-
 msgctxt "Opening Hours"
 msgid "The library is closed this day"
 msgstr ""
@@ -16411,4 +16398,43 @@ msgstr ""
 msgctxt "Global"
 msgid "Unknown user"
 msgstr "Ukendt bruger"
+
+msgid "Mock-title field"
+msgstr ""
+
+msgid ""
+"This is a mock title field, unused and read only. It is required, for "
+"eventinstances to work with entity reference autocomplete fields."
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Reserve @materialType"
+msgstr ""
+
+msgctxt "DPL admin UX"
+msgid "CMS release version"
+msgstr ""
+
+msgctxt "DPL admin UX"
+msgid "<code>@version</code>"
+msgstr ""
+
+msgctxt "DPL admin UX"
+msgid "CMS version: @version"
+msgstr ""
+
+msgid "DPL static content: Views aliases"
+msgstr ""
+
+msgid "Adds path aliases to core views pages"
+msgstr ""
+
+msgid "Redirects"
+msgstr ""
+
+msgid "Add redirect"
+msgstr "Tilføj omdirigering"
+
+msgid "Show less"
+msgstr ""
 

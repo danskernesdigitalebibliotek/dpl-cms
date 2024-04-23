@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-22 10:53+0200\n"
-"PO-Revision-Date: 2024-04-22 10:53+0200\n"
+"POT-Creation-Date: 2024-04-23 13:42+0200\n"
+"PO-Revision-Date: 2024-04-23 13:42+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4339,7 +4339,7 @@ msgstr "Teaser card"
 
 msgctxt "core.entity_form_display.taxonomy_term.opening_hours_categories.default:content:field_opening_hours_color:settings:default_colors"
 msgid "#ac725e,#d06b64,#f83a22,#fa573c,#ff7537,#ffad46,#42d692,#16a765,#7bd148,#b3dc6c,#fbe983,#92e1c0,#9fe1e7,#9fc6e7,#4986e7,#9a9cff,#b99aff,#c2c2c2,#cabdbf,#cca6ac,#f691b2,#cd74e6,#a47ae2"
-msgstr ""
+msgstr "#ac725e,#d06b64,#f83a22,#fa573c,#ff7537,#ffad46,#42d692,#16a765,#7bd148,#b3dc6c,#fbe983,#92e1c0,#9fe1e7,#9fc6e7,#4986e7,#9a9cff,#b99aff,#c2c2c2,#cabdbf,#cca6ac,#f691b2,#cd74e6,#a47ae2"
 
 msgctxt "core.entity_view_display.taxonomy_term.opening_hours_categories.default:content:field_opening_hours_color:settings:format"
 msgid "hex"
@@ -4560,10 +4560,6 @@ msgctxt "field.storage.taxonomy_term.field_opening_hours_color:settings:format"
 msgid "#HEXHEX"
 msgstr ""
 
-msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
-msgid "Opening hours categories"
-msgstr "Åbningstidskategorier"
-
 msgctxt "views.view.entity_reference_content:display:default:display_options:fields:title:alter:text"
 msgid ""
 "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ nid }} - "
@@ -4596,14 +4592,6 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
 msgid "Choose the filters, that defines what content is shown."
-msgstr ""
-
-msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:content:field_filter_categories:settings:placeholder"
-msgid "Search categories.."
-msgstr ""
-
-msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:content:field_filter_tags:settings:placeholder"
-msgid "Search tags.."
 msgstr ""
 
 msgctxt "core.entity_view_mode.media.card:label"
@@ -4772,10 +4760,6 @@ msgstr "Opdater URL alias"
 msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
 msgid "Breadcrumb and URL structure"
 msgstr "Breadcrumb and URL structure"
-
-msgctxt "taxonomy.vocabulary.opening_hours_categories:description"
-msgid "Types of opening hours, e.g. \"Open\" or \"Telephone time\""
-msgstr "Kategorier af åbningstider, f.eks. \"Åbent\" eller \"Telefontid\""
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
 msgid "All"
@@ -5136,7 +5120,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:sid:label"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:in_draft:label"
 msgid "Draft"
@@ -5200,7 +5184,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sid:label"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:in_draft:label"
 msgid "Draft"
@@ -5706,7 +5690,7 @@ msgstr ""
 
 msgctxt "webform.webform.contact:handlers:email_confirmation:settings:body"
 msgid "[webform_submission:values:message:value]"
-msgstr ""
+msgstr "[webform_submission:values:message:value]"
 
 msgctxt "webform.webform.contact:handlers:email_notification:label"
 msgid "Email notification"
@@ -6733,4 +6717,368 @@ msgid ""
 msgstr ""
 "Ja: Ja\n"
 "Nej: Nej"
+
+msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:label"
+msgid "Filters"
+msgstr ""
+
+msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:format_settings:description"
+msgid ""
+"Add any tag, category or branch that should by included as a filter "
+"for the filtered event list. "
+msgstr ""
+
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:date_format"
+msgid "Y-m-d\\TH:i:s"
+msgstr ""
+
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_day"
+msgid "d F Y"
+msgstr ""
+
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_month"
+msgid "d - {d} F Y"
+msgstr ""
+
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_months"
+msgid "d F - {d} {F} Y"
+msgstr ""
+
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_years"
+msgid "d F Y - {d} {F} {Y}"
+msgstr ""
+
+msgctxt "core.entity_view_mode.eventinstance.list_teaser_stacked_parent:label"
+msgid "List teaser stacked parent"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:label"
+msgid "Amount of events"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:description"
+msgid ""
+"Select the amount of events you want to display. <br /><br />If the "
+"amount displayed is less than what you put here, it is likely because "
+"there are not enough results based on your selected filters. "
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:label"
+msgid "Filter by branches"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:description"
+msgid "Add any branch you want to include"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_categories:label"
+msgid "Filter by categories"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_categories:description"
+msgid "Add a category you want to include"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_tags:label"
+msgid "Filter by tags"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_tags:description"
+msgid "Add a tag you want to include"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_title:label"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "field.field.paragraph.manual_event_list.field_events:label"
+msgid "Events"
+msgstr ""
+
+msgctxt "field.field.paragraph.manual_event_list.field_title:label"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:0:label"
+msgid "1"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:1:label"
+msgid "2"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:2:label"
+msgid "3"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:3:label"
+msgid "4"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:4:label"
+msgid "5"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:5:label"
+msgid "6"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:6:label"
+msgid "7"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:7:label"
+msgid "8"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:8:label"
+msgid "9"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:9:label"
+msgid "10"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:10:label"
+msgid "11"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:11:label"
+msgid "12"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:12:label"
+msgid "13"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:13:label"
+msgid "14"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:14:label"
+msgid "15"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:15:label"
+msgid "16"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.filtered_event_list:label"
+msgid "Filtered event list"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.filtered_event_list:description"
+msgid ""
+"This paragraph displays a generated a list of events, based on "
+"specified filters for tags, categories and branches. "
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.manual_event_list:label"
+msgid "Manual event list"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.manual_event_list:description"
+msgid "This paragraph will show a list of events that are manually selected."
+msgstr ""
+
+msgctxt "system.action.redirect_delete_action:label"
+msgid "Delete redirect"
+msgstr ""
+
+msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
+msgid "Åbningstidskategorier"
+msgstr "Åbningstidskategorier"
+
+msgctxt "taxonomy.vocabulary.opening_hours_categories:description"
+msgid "Kategorier af åbningstider, f.eks. \"Åbent\" eller \"Telefontid\""
+msgstr "Kategorier af åbningstider, f.eks. \"Åbent\" eller \"Telefontid\""
+
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title_2:admin_label"
+msgid "Event Series Title"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:label"
+msgid "Filtered events"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:description"
+msgid ""
+"This view displays a filtered list of upcoming events sorted by date "
+"ascending. Filters include categories, tags and branches"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_categories:exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:branch:exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt "views.view.redirect:label"
+msgid "Redirect"
+msgstr ""
+
+msgctxt "views.view.redirect:description"
+msgid "List of redirects"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_title"
+msgid "Master"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:title"
+msgid "Redirect"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:fields:redirect_bulk_form:action_title"
+msgid "With selection"
+msgstr "Med udvælgelse"
+
+msgctxt "views.view.redirect:display:default:display_options:fields:redirect_source__path:label"
+msgid "From"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:fields:created:label"
+msgid "Created"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:next"
+msgid "next ›"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:first"
+msgid "« first"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:last"
+msgid "last »"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:submit_button"
+msgid "Filter"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:empty:area_text_custom:content"
+msgid "There is no redirect yet."
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:redirect_source__path:expose:label"
+msgid "From"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:redirect_redirect__uri:expose:label"
+msgid "To"
+msgstr "Til"
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:expose:label"
+msgid "Status code"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:label"
+msgid "Status code"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:1:title"
+msgid "300 Multiple Choices"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:2:title"
+msgid "301 Moved Permanently"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:3:title"
+msgid "302 Found"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:4:title"
+msgid "303 See Other"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:5:title"
+msgid "304 Not Modified"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:6:title"
+msgid "305 Use Proxy"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:status_code:group_info:group_items:7:title"
+msgid "307 Temporary Redirect"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:filters:language:expose:label"
+msgid "Original language"
+msgstr ""
+
+msgctxt "views.view.redirect:display:default:display_options:header:area:content:value"
+msgid ""
+"Use redirects, when you want to have dynamic URLs. E.g. when you've "
+"used a URL on a printed poster, and you may want to change the link to "
+"a different page."
+msgstr ""
+
+msgctxt "views.view.redirect:display:page_1:display_title"
+msgid "Page"
+msgstr ""
 
