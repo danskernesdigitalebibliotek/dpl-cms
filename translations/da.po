@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-23 16:03+0200\n"
-"PO-Revision-Date: 2024-04-23 16:03+0200\n"
+"POT-Creation-Date: 2024-04-24 13:53+0200\n"
+"PO-Revision-Date: 2024-04-24 13:53+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3821,7 +3821,7 @@ msgid "Country code"
 msgstr "Landekode"
 
 msgid "Country source"
-msgstr ""
+msgstr "Landekode"
 
 msgid "A predefined country code"
 msgstr ""
@@ -3932,7 +3932,7 @@ msgid "The top-level administrative subdivision of the country"
 msgstr ""
 
 msgid "The locality (i.e. city)"
-msgstr ""
+msgstr "Lokalitet (by)"
 
 msgid "The dependent locality (i.e. neighbourhood)"
 msgstr ""
@@ -4054,7 +4054,7 @@ msgid ""
 msgstr ""
 
 msgid "The country name"
-msgstr ""
+msgstr "Land"
 
 msgid "Address requires the commerceguys/addressing library."
 msgstr ""
@@ -4066,7 +4066,7 @@ msgid "Save"
 msgstr "Gem"
 
 msgid "County"
-msgstr ""
+msgstr "Land"
 
 msgid ""
 "Submitted: @country_code / @administrative_area / "
@@ -4077,7 +4077,7 @@ msgid "Payment method"
 msgstr "Betalingsmetode"
 
 msgid "Credit card"
-msgstr ""
+msgstr "Kreditkort"
 
 msgid "Cash on delivery"
 msgstr ""
@@ -4121,7 +4121,7 @@ msgid "Provides functionality for handling postal addresses."
 msgstr ""
 
 msgid "Address test"
-msgstr ""
+msgstr "Adresse test"
 
 msgid "Provides functionality for testing the address module."
 msgstr ""
@@ -4139,7 +4139,7 @@ msgid "Allowed"
 msgstr "Tilladt"
 
 msgid "Forbidden"
-msgstr ""
+msgstr "Forbudt"
 
 msgid "Custom"
 msgstr "Tilpasset"
@@ -4231,7 +4231,7 @@ msgid ""
 msgstr ""
 
 msgid "New permissions"
-msgstr ""
+msgstr "Nye tilladelser"
 
 msgid "Access the users overview page"
 msgstr ""
@@ -4251,7 +4251,7 @@ msgid "Allow empty user mail when managing users"
 msgstr ""
 
 msgid "Create and manage users that have no email address."
-msgstr ""
+msgstr "Opret brugere uden email"
 
 msgid ""
 "Allows assigning of any roles that have been configured as "
@@ -4520,7 +4520,7 @@ msgid ""
 msgstr ""
 
 msgid "Rewrite the text displayed"
-msgstr ""
+msgstr "Genskriv den viste tekst"
 
 msgid ""
 "Use this field to rewrite the text displayed for combined sort options "
@@ -4697,7 +4697,7 @@ msgid "The number of milliseconds to run the animation (e.g. 1000)."
 msgstr ""
 
 msgid "Orientation"
-msgstr ""
+msgstr "Orientering"
 
 msgid "Horizontal"
 msgstr "Horisontal"
@@ -4799,7 +4799,7 @@ msgid ""
 msgstr ""
 
 msgid "BEF Test"
-msgstr ""
+msgstr "BEF Test"
 
 msgid ""
 "Prevents multiple users from trying to edit a single node "
@@ -4831,7 +4831,7 @@ msgid "Timestamp of the lock"
 msgstr "Tidsstempel for låsen"
 
 msgid "Lock Language"
-msgstr ""
+msgstr "Lås sprog"
 
 msgid "Language of the lock"
 msgstr ""
@@ -5927,7 +5927,7 @@ msgid ""
 msgstr ""
 
 msgid "Redirect to"
-msgstr ""
+msgstr "Omdiriger"
 
 msgid "Edit form"
 msgstr ""
@@ -5997,7 +5997,7 @@ msgid "New Label"
 msgstr ""
 
 msgid "New Id"
-msgstr ""
+msgstr "Nyt Id"
 
 msgid "Clone all <em>@label</em> entities."
 msgstr "Klon alt <em>@label</em> indhold"
@@ -7331,7 +7331,7 @@ msgid "Thumbnail image style"
 msgstr "Thumbnail billedstil"
 
 msgid "Metadata: @metadata"
-msgstr ""
+msgstr "Metadata: @metadata"
 
 msgid "Bundle filter: @bundle_filter"
 msgstr ""
@@ -7395,7 +7395,7 @@ msgid "Limit the amount of results displayed when searching."
 msgstr ""
 
 msgid "E-mail @email"
-msgstr ""
+msgstr "E-mail@email"
 
 msgid "E-mail"
 msgstr "E-mail"
@@ -7817,7 +7817,7 @@ msgid "Install the Maxlength module to enable this option."
 msgstr ""
 
 msgid "Meta Tags:"
-msgstr ""
+msgstr "Meta Tags:"
 
 msgid "length"
 msgstr ""
@@ -8046,7 +8046,7 @@ msgid "Tag"
 msgstr "Tag"
 
 msgid "Metatag"
-msgstr ""
+msgstr "Metatag"
 
 msgid "Place field in sidebar"
 msgstr ""
@@ -8146,7 +8146,7 @@ msgid "Edit @language translation for %view: %display metatags"
 msgstr ""
 
 msgid "Metatags"
-msgstr ""
+msgstr "Metatags"
 
 msgid "Successfully updated @language translation."
 msgstr "@language oversættelse opdateret."
@@ -8183,7 +8183,7 @@ msgstr ""
 "felt."
 
 msgid "Meta tags"
-msgstr ""
+msgstr "Meta tags"
 
 msgid "Overridden"
 msgstr "Tilsidesat"
@@ -8390,7 +8390,7 @@ msgid "Enables metatags for custom routes"
 msgstr ""
 
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 msgid ""
 "A set of meta tags used to control how the site's content is consumed "
@@ -8484,7 +8484,7 @@ msgid "Date of creation of the resource."
 msgstr ""
 
 msgid "Abstract"
-msgstr ""
+msgstr "Abstract"
 
 msgid "A summary of the resource."
 msgstr ""
@@ -8592,7 +8592,7 @@ msgstr ""
 "peget op af den beskrevne ressource."
 
 msgid "Audience"
-msgstr ""
+msgstr "Publikum"
 
 msgid "A class of entity for whom the resource is intended or useful."
 msgstr ""
@@ -8638,7 +8638,7 @@ msgid ""
 msgstr ""
 
 msgid "Table Of Contents"
-msgstr ""
+msgstr "Indhold"
 
 msgid "A list of subunits of the resource."
 msgstr ""
@@ -8860,7 +8860,7 @@ msgid ""
 msgstr ""
 
 msgid "Rights"
-msgstr ""
+msgstr "Rettigheder"
 
 msgid ""
 "Information about rights held in and over the resource. Typically, "
@@ -8948,7 +8948,7 @@ msgid ""
 msgstr ""
 
 msgid "Publisher"
-msgstr ""
+msgstr "Udgiver"
 
 msgid ""
 "An entity responsible for making the resource available. Examples of a "
@@ -8969,7 +8969,7 @@ msgid "Meta tags that might not be needed by many sites."
 msgstr ""
 
 msgid "Expires"
-msgstr ""
+msgstr "Udløber"
 
 msgid ""
 "Control when the browser's internal cache of the current page should "
@@ -9251,7 +9251,7 @@ msgid "Advanced meta tags form"
 msgstr ""
 
 msgid "facebook"
-msgstr ""
+msgstr "facebook"
 
 msgid ""
 "A set of meta tags specially for controlling advanced functionality "
@@ -9270,7 +9270,7 @@ msgid ""
 msgstr ""
 
 msgid "Facebook Pages"
-msgstr ""
+msgstr "Facebook Pages"
 
 msgid "Facebook Instant Articles claim URL token."
 msgstr ""
@@ -9744,7 +9744,7 @@ msgid "Mobile & UI Adjustments"
 msgstr ""
 
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 msgid "Custom meta tags used by the Android OS, browser, etc."
 msgstr ""
@@ -10182,7 +10182,7 @@ msgid ""
 msgstr ""
 
 msgid "iPad app store ID"
-msgstr ""
+msgstr "iPad app store ID"
 
 msgid "Windows Phone app URL scheme"
 msgstr "Windows Phone-appens URL-skema"
@@ -10201,7 +10201,7 @@ msgstr ""
 "dette tag."
 
 msgid "iOS app store ID"
-msgstr ""
+msgstr "iOS app store ID"
 
 msgid "Android app name"
 msgstr ""
@@ -10216,7 +10216,7 @@ msgid "Windows app name"
 msgstr "Windows app navn"
 
 msgid "iPhone app store ID"
-msgstr ""
+msgstr "iPhone app store ID"
 
 msgid "iPhone app URL scheme"
 msgstr ""
@@ -10256,7 +10256,7 @@ msgid ""
 msgstr ""
 
 msgid "First name"
-msgstr ""
+msgstr "Fornavn"
 
 msgid "The first name of the person who's Profile page this is."
 msgstr ""
@@ -10347,7 +10347,7 @@ msgid "Locality"
 msgstr "Lokalitet"
 
 msgid "See also"
-msgstr ""
+msgstr "Se også"
 
 msgid "URLs to related content"
 msgstr "URL'er til relateret indhold"
@@ -10372,7 +10372,7 @@ msgstr ""
 "skal bruges."
 
 msgid "Book tag(s)"
-msgstr ""
+msgstr "Bog tag(s)"
 
 msgid "Video height"
 msgstr "Video højde"
@@ -10484,7 +10484,7 @@ msgid "Latitude"
 msgstr ""
 
 msgid "Last name"
-msgstr ""
+msgstr "Efternavn"
 
 msgid "The person's last name."
 msgstr "Personens efternavn."
@@ -10515,7 +10515,7 @@ msgid "The secure URL (HTTPS) of an video which should represent the content."
 msgstr "Den sikre URL (HTTPS) af en video, som repræsenterer indholdet."
 
 msgid "Postal/ZIP code"
-msgstr ""
+msgstr "Postnummer"
 
 msgid "Content modification date & time"
 msgstr ""
@@ -10528,10 +10528,10 @@ msgid ""
 msgstr ""
 
 msgid "Release Date"
-msgstr ""
+msgstr "Udgivelsesdato"
 
 msgid "The date the book was released."
-msgstr ""
+msgstr "Udgivelsesdato"
 
 msgid "Locale"
 msgstr "Lokalitet"
@@ -10581,7 +10581,7 @@ msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
 msgstr ""
 
 msgid "Fax number"
-msgstr ""
+msgstr "Fax nummer"
 
 msgid "Article expiration date & time"
 msgstr ""
@@ -10628,10 +10628,10 @@ msgid ""
 msgstr ""
 
 msgid "ISBN"
-msgstr ""
+msgstr "ISBN"
 
 msgid "The Book's ISBN"
-msgstr ""
+msgstr "Bogens ISBN"
 
 msgid "Username"
 msgstr "Brugernavn"
@@ -10649,7 +10649,7 @@ msgid "A metatag tag for testing."
 msgstr ""
 
 msgid "Metatag: Pinterest"
-msgstr ""
+msgstr "Metatag: Pinterest"
 
 msgid "Provides support for Pinterest's custom meta tags."
 msgstr ""
@@ -10677,7 +10677,7 @@ msgid ""
 msgstr ""
 
 msgid "Metatag: Facebook"
-msgstr ""
+msgstr "Metatag: Facebook"
 
 msgid ""
 "A set of meta tags specially for controlling advanced functionality "
@@ -11087,7 +11087,7 @@ msgid "Surname(s) or last name(s)"
 msgstr ""
 
 msgid "Middle name"
-msgstr ""
+msgstr "Mellemnavn"
 
 msgid "Middle name(s)"
 msgstr "Mellemnavn(e)"
@@ -11129,7 +11129,7 @@ msgid "True if the e-mail address has been verified; otherwise false"
 msgstr "Sandt, hvis e-mailadressen er blevet verificeret; ellers falsk"
 
 msgid "Birthdate"
-msgstr ""
+msgstr "Fødselsdag"
 
 msgid "Birthday"
 msgstr "Fødselsdato"
@@ -11141,16 +11141,16 @@ msgid "Time zone"
 msgstr "Tidszone"
 
 msgid "Preferred telephone number"
-msgstr ""
+msgstr "Foretrukket telefonnummer"
 
 msgid "Phone number verified"
-msgstr ""
+msgstr "Verificeret telefonnummer"
 
 msgid "True if the phone number has been verified; otherwise false"
 msgstr "Sandt hvis telefonnummeret er blevet verificeret, ellers falsk"
 
 msgid "Preferred postal address"
-msgstr ""
+msgstr "Foretrukket postadresse"
 
 msgid "Updated at"
 msgstr "Opdateret på"
@@ -12035,7 +12035,7 @@ msgid "No link"
 msgstr "Intet link"
 
 msgid "Format: %format"
-msgstr ""
+msgstr "Format: %format"
 
 msgid "Separator: %separator"
 msgstr "Separator: %separator"
@@ -12202,7 +12202,7 @@ msgid "Days of the Week"
 msgstr "Ugedage"
 
 msgid "Days of the Month"
-msgstr ""
+msgstr "Dato"
 
 msgid "Please configure the Monthly Recurring Date settings"
 msgstr ""
@@ -12283,10 +12283,10 @@ msgid "6 hours"
 msgstr "6 timer"
 
 msgid "7 hours"
-msgstr ""
+msgstr "7 timer"
 
 msgid "8 hours"
-msgstr ""
+msgstr "8 timer"
 
 msgid "9 hours"
 msgstr "9 timer"
@@ -12322,16 +12322,16 @@ msgid "19 hours"
 msgstr "19 timer"
 
 msgid "20 hours"
-msgstr ""
+msgstr "20 timer"
 
 msgid "21 hours"
-msgstr ""
+msgstr "21 timer"
 
 msgid "22 hours"
-msgstr ""
+msgstr "22 timer"
 
 msgid "23 hours"
-msgstr ""
+msgstr "23 timer"
 
 msgid "24 hours"
 msgstr "24 timer"
@@ -12763,13 +12763,13 @@ msgid "You are resending the registration email for %email for %event."
 msgstr "Du gensender tilmeldingsemailen for %email til %event."
 
 msgid "Email Subject"
-msgstr ""
+msgstr "Email Emne"
 
 msgid "The subject of the email to send to the registrant"
 msgstr "Emnet for e-mail, der skal sendes til registranten"
 
 msgid "Email Message"
-msgstr ""
+msgstr "Email Besked"
 
 msgid "The message for the email to send to the registrant"
 msgstr ""
@@ -13433,7 +13433,7 @@ msgid ""
 msgstr ""
 
 msgid "Geographic Position"
-msgstr ""
+msgstr "Geografisk position"
 
 msgid ""
 "The global position for the event. The value must be two "
@@ -14563,7 +14563,7 @@ msgid "Always open the fieldset or vertical tab"
 msgstr ""
 
 msgid "Show message"
-msgstr ""
+msgstr "Vis besked"
 
 msgid "Show a confirmation message when a scheduled %type @singular is saved"
 msgstr ""
