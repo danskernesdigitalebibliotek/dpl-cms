@@ -83,14 +83,15 @@ class OpeningHoursResourceTest extends KernelTestBase {
    * Test that an opening hours instance can be created.
    */
   public function testCreation(): void {
-    $responseData = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
-    $this->assertNotEmpty($responseData->getId());
-    $this->assertDateEquals(new DateTime(), $responseData->getDate());
-    $this->assertEquals("09:00", $responseData->getStartTime());
-    $this->assertEquals("17:00", $responseData->getEndTime());
-    $this->assertEquals(1, $responseData->getBranchId());
-    $this->assertEquals("Open", $responseData->getCategory()?->getTitle());
-    $this->assertEquals(OpeningHoursRepetitionType::None->value, $responseData->getRepetition()?->getType());
+    $responseOpeningHours = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
+    $this->assertNotEmpty($responseOpeningHours->getId());
+    $this->assertDateEquals(new DateTime(), $responseOpeningHours->getDate());
+    $this->assertEquals("09:00", $responseOpeningHours->getStartTime());
+    $this->assertEquals("17:00", $responseOpeningHours->getEndTime());
+    $this->assertEquals(1, $responseOpeningHours->getBranchId());
+    $this->assertEquals("Open", $responseOpeningHours->getCategory()?->getTitle());
+    $this->assertNotEmpty($responseOpeningHours->getRepetition()?->getId());
+    $this->assertEquals(OpeningHoursRepetitionType::None->value, $responseOpeningHours->getRepetition()?->getType());
   }
 
   /**
@@ -137,9 +138,9 @@ class OpeningHoursResourceTest extends KernelTestBase {
    * Test creation of multiple opening hours.
    */
   public function testMultipleCreation(): void {
-    $response1Data = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
-    $response2Data = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
-    $this->assertNotEquals($response1Data->getId(), $response2Data->getId(), "Two created opening hours must not have the same id.");
+    $responseOpeningHours1 = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
+    $responseOpeningHours2 = $this->createOpeningHours(new DateTime(), "09:00", "17:00", "Open", 1);
+    $this->assertNotEquals($responseOpeningHours1->getId(), $responseOpeningHours2->getId(), "Two created opening hours must not have the same id.");
 
     $openingHoursList = $this->listOpeningHours();
     $this->assertCount(2, $openingHoursList);
@@ -149,9 +150,8 @@ class OpeningHoursResourceTest extends KernelTestBase {
    * Test that an opening hours instance can be updated.
    */
   public function testUpdate(): void {
-    $responseData = $this->createOpeningHours(new DateTime(), '09:00', '17:00', 'Open', 1);
-
-    $id = $responseData->getId();
+    $createdOpeningHours = $this->createOpeningHours(new DateTime(), '09:00', '17:00', 'Open', 1);
+    $id = $createdOpeningHours->getId();
     $this->assertNotNull($id);
 
     $updateResource = OpeningHoursUpdateResource::create($this->container, [], '', '');
@@ -162,12 +162,12 @@ class OpeningHoursResourceTest extends KernelTestBase {
       ->setEndTime("18:00")
       // It is a bit tricky to set up multiple categories so do not change
       // these values for npw.
-      ->setCategory($responseData->getCategory())
+      ->setCategory($createdOpeningHours->getCategory())
       ->setBranchId(2)
       ->setRepetition(
         (new OpeningHoursRepetitionRequest())
-          ->setId($responseData->getRepetition()?->getId())
-          ->setType($responseData->getRepetition()?->getType())
+          ->setId($createdOpeningHours->getRepetition()?->getId())
+          ->setType($createdOpeningHours->getRepetition()?->getType())
       );
     /** @var \DanskernesDigitaleBibliotek\CMS\Api\Service\JmsSerializer $serializer */
     $serializer = $this->container->get('dpl_opening_hours.serializer');
@@ -175,9 +175,9 @@ class OpeningHoursResourceTest extends KernelTestBase {
 
     $updateResponse = $updateResource->patch($id, $updateRequest);
     /** @var \DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInner $updateData */
-    $updateData = $serializer->deserialize($updateResponse->getContent(), OpeningHoursResponse::class, 'application/json');
+    $updatedOpeningHours = $serializer->deserialize($updateResponse->getContent(), OpeningHoursResponse::class, 'application/json');
 
-    $this->assertEquals($updateData->getId(), $updateData->getId(), "Opening hour ids should not change across updates");
+    $this->assertEquals($createdOpeningHours->getId(), $updatedOpeningHours->getId(), "Opening hour ids should not change across updates");
     $this->assertDateEquals(new DateTime("tomorrow"), $updateData->getDate(), "Opening hour dates should change when updated");
     $this->assertEquals("10:00", $updateData->getStartTime());
     $this->assertEquals("18:00", $updateData->getEndTime());
@@ -189,9 +189,9 @@ class OpeningHoursResourceTest extends KernelTestBase {
    * Test that an opening hours instance can be deleted.
    */
   public function testDelete(): void {
-    $responseData = $this->createOpeningHours(new DateTime(), '09:00', '17:00', 'Open', 1);
-
-    $id = $responseData->getId();
+    $createdOpeningHours = $this->createOpeningHours(new DateTime(), '09:00', '17:00', 'Open', 1);
+    
+    $id = $createdOpeningHours->getId();
     $this->assertNotNull($id);
 
     $deleteResource = OpeningHoursDeleteResource::create($this->container, [], '', '');
@@ -204,6 +204,8 @@ class OpeningHoursResourceTest extends KernelTestBase {
 
   /**
    * Helper function for creating opening hours.
+   *
+   * @return OpeningHoursResponse[]
    */
   protected function createOpeningHours(
     \DateTime $date,
@@ -229,9 +231,7 @@ class OpeningHoursResourceTest extends KernelTestBase {
       );
     $request = new Request(content: $serializer->serialize($requestData, 'application/json'));
     $response = $createResource->post($request);
-    /** @var \DanskernesDigitaleBibliotek\CMS\Api\Model\DplOpeningHoursListGET200ResponseInner $responseData */
-    $responseData = $serializer->deserialize($response->getContent(), OpeningHoursResponse::class, 'application/json');
-    return $responseData;
+    return $serializer->deserialize($response->getContent(), OpeningHoursResponse::class, 'application/json');
   }
 
   /**

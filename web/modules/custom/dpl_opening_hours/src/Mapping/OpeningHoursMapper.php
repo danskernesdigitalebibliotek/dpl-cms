@@ -58,6 +58,10 @@ class OpeningHoursMapper {
       throw new \InvalidArgumentException("Invalid repetition type '{$repetitionData->getType()}'");
     }
 
+    $repetition = match($repetitionType) {
+      OpeningHoursRepetitionType::None => new NoRepetition($repetitionData->getId()),
+    };
+
     try {
       return new OpeningHoursInstance(
         $request->getId(),
@@ -65,7 +69,7 @@ class OpeningHoursMapper {
         $categoryTerm,
         new DateTimeImmutable($request->getDate()?->format('Y-m-d') . " " . $request->getStartTime()),
         new DateTimeImmutable($request->getDate()?->format('Y-m-d') . " " . $request->getEndTime()),
-        new NoRepetition()
+        $repetition
       );
     }
     catch (\Exception $e) {
@@ -76,14 +80,22 @@ class OpeningHoursMapper {
   /**
    * Map a value object to an OpenAPI response.
    */
-  public function toResponse(OpeningHoursInstance $instance) : OpeningHoursResponse {
+  public function toResponse(OpeningHoursInstance $instance) : OpeningHoursResponse
+  {
     $colorField = $instance->categoryTerm->get('field_opening_hours_color')->first();
     if (!$colorField) {
       throw new \LogicException('Unable to retrieve color');
     }
     $category = (new OpeningHoursCategory())
-      ->setTitle((string) $instance->categoryTerm->label())
+      ->setTitle((string)$instance->categoryTerm->label())
       ->setColor($colorField->getString());
+
+    $repetition_type = match ($instance->repetition::class) {
+      NoRepetition::class => OpeningHoursRepetitionType::None->value,
+    };
+    $repetition = (new OpeningHoursRepetition())
+      ->setId($instance->repetition->id)
+      ->setType($repetition_type);
 
     return (new OpeningHoursResponse())
       ->setId($instance->id)
@@ -93,8 +105,7 @@ class OpeningHoursMapper {
       ->setStartTime($instance->startTime->format("H:i"))
       ->setEndTime($instance->endTime->format('H:i'))
       ->setRepetition(
-        (new OpeningHoursRepetition())
-          ->setType(OpeningHoursRepetitionType::None->value)
+        $repetition
       );
   }
 

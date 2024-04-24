@@ -118,6 +118,7 @@ class OpeningHoursRepository {
       $repetition_id = $instance->repetition->id;
     }
     $data['repetition_id'] = $repetition_id;
+    $repetiton = new NoRepetition($repetition_id);
 
     $this->connection->upsert(self::INSTANCE_TABLE)
       ->key('id')
@@ -131,7 +132,8 @@ class OpeningHoursRepository {
       $instance->branch,
       $instance->categoryTerm,
       $instance->startTime,
-      $instance->endTime
+      $instance->endTime,
+      $repetiton,
     );
   }
 
