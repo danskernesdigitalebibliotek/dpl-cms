@@ -217,6 +217,8 @@ function _dpl_login_is_user_associated_with_agency(array $context) : bool {
  */
 function _dpl_login_user_is_registered(AccessToken $token): bool {
   try {
+    $logger = \Drupal::logger('dpl_login');
+    $logger->notice('Patron request with token: @token.', ['@token' => $token->token]);
     $patron = _dpl_login_get_patron($token);
   }
   // @todo We expect that an API Exception means that the user is not registered.
