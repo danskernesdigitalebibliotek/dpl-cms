@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8568fb14d909414384dde76f3fae4d6",
+    "content-hash": "6541ea20502dfdfa13da43a976ca9a30",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1149,19 +1149,19 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.17.0-rc1",
+            "version": "2024.18.0-rc2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-release/hermod-sprint-12/dist-release-hermod-sprint-12.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFFORM-662-frontend/dist-ddfform-662-frontend.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.17.0-rc1",
+            "version": "2024.18.0-rc2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release/hermod-sprint-12/dist-release-hermod-sprint-12.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFFORM-662-frontend/dist-ddfform-662-frontend.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
