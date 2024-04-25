@@ -9696,7 +9696,7 @@ msgstr "Organisationen"
 
 #: 
 msgid "The given name"
-msgstr ""
+msgstr "Det givne navn"
 
 #: 
 msgid "The additional name"
@@ -9704,7 +9704,7 @@ msgstr ""
 
 #: 
 msgid "The family name"
-msgstr ""
+msgstr "Familienavnet"
 
 #: 
 msgid "Language override"
@@ -10290,7 +10290,7 @@ msgstr ""
 
 #: 
 msgid "This section lets you select additional options for exposed filters. Some options are only available in certain situations. If you do not see the options you expect, please see the <a href=\":link\">BEF settings documentation page</a> for more details."
-msgstr ""
+msgstr "I denne sektion kan du vælge yderligere indstillinger for eksponerede filtre. Nogle indstillinger er kun tilgængelige i visse situationer. Hvis du ikke kan se de forventede indstillinger, se venligst <a href=\":link\">BEF settings documentation page</a> for flere detaljer."
 
 #: 
 msgid "Exposed filter @filter"
@@ -10490,7 +10490,7 @@ msgstr ""
 
 #: 
 msgid "The number of milliseconds to run the animation (e.g. 1000)."
-msgstr ""
+msgstr "Antallet af millisekunder for at animationen kører (f.eks. 1000)."
 
 #: 
 msgid "Orientation"
@@ -10510,7 +10510,7 @@ msgstr ""
 
 #: 
 msgid "The slider max value must be greater than the slider min value."
-msgstr ""
+msgstr "Sliderens maks. værdi skal være større end sliderens min. værdi."
 
 #: 
 msgid "The slider step option for %name cannot have more than 5 decimal places."
@@ -12600,7 +12600,7 @@ msgstr ""
 
 #: 
 msgid "The field group project is a follow-up on the field group module in <a href=\"@linkcck\">CCK</a>. The release will only exist for Drupal 7 release and higher, so since the existence of the Fields API in core.</br>By moving field group to a separate module, this may open some new perspectives."
-msgstr ""
+msgstr "Feltgruppeprojektet er en opfølgning på feltgruppemodulet i <a href=\"@linkcck\">CCK</a>. Udgivelsen vil kun eksistere for Drupal 7-versioner og nyere, siden det eksisterer i kernen af Fiels API. Ved at flytte feltgruppen til et separat modul, kan det åbne nogle nye perspektiver."
 
 #: 
 msgid "More Information"
@@ -12660,7 +12660,7 @@ msgstr ""
 
 #: 
 msgid "The group %label has been deleted from the %type content type."
-msgstr ""
+msgstr "Gruppen %label er blevet slettet fra %type indholdstypen."
 
 #: 
 msgid "Body is a child of %group"
@@ -12684,7 +12684,7 @@ msgstr "Fane"
 
 #: 
 msgid "This fieldgroup renders the content as a tab."
-msgstr ""
+msgstr "Denne feltgruppe gengiver indholdet som en fane."
 
 #: 
 msgid "Details Sidebar"
@@ -13193,7 +13193,7 @@ msgstr ""
 
 #: 
 msgid "The number of jobs to perform in one run. Defaults to 200"
-msgstr ""
+msgstr "Antallet af jobs, der skal udføres i ét. Standardindstilling er 200"
 
 #: 
 msgid "Executing time"
@@ -13217,7 +13217,7 @@ msgstr ""
 
 #: 
 msgid "The name of the job."
-msgstr ""
+msgstr "Navnet på jobbet."
 
 #: 
 msgid "The type of the job."
@@ -13405,7 +13405,7 @@ msgstr "System"
 
 #: 
 msgid "The front page for this site."
-msgstr ""
+msgstr "Forsiden af denne hjemmeside."
 
 #: 
 msgid "Limit matches to the following file extensions: @file_extensions"
@@ -14053,7 +14053,7 @@ msgstr ""
 
 #: 
 msgid "This will be truncated to a maximum of %max characters after any tokens are processed."
-msgstr ""
+msgstr "Dette vil blive afkortet til maksimalt %max tegn, efter at eventuelle tokens er behandlet."
 
 #: 
 msgid "- None -"
@@ -14629,7 +14629,7 @@ msgstr "Medium"
 
 #: 
 msgid "The material or physical carrier of the resource."
-msgstr ""
+msgstr "Den materielle eller fysiske bærer af ressourcen."
 
 #: 
 msgid "Has Format"
@@ -14785,7 +14785,7 @@ msgstr ""
 
 #: 
 msgid "The frequency with which items are added to a collection."
-msgstr ""
+msgstr "Den hyppighed, hvormed elementer tilføjes til en samling."
 
 #: 
 msgid "Provenance"
@@ -14953,7 +14953,7 @@ msgstr ""
 
 #: 
 msgid "The document status, e.g. \"draft\"."
-msgstr ""
+msgstr "Status for dokumentet, f.eks. \"kladde\"."
 
 #: 
 msgid "Department"
@@ -15045,7 +15045,7 @@ msgstr "Format"
 
 #: 
 msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
-msgstr ""
+msgstr "Materialets filformat, fysiske medium eller dimensioner. Eksempler på dimensioner er størrelse og varighed. Anbefalet bedste praksis er at bruge et kontrolleret ordforråd som f.eks. listen over Internet Media Types [MIME]."
 
 #: 
 msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
@@ -15593,7 +15593,7 @@ msgstr ""
 
 #: 
 msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
-msgstr ""
+msgstr "Bredden på medieafspillerens iframe i pixels. Påkrævet ved brug af Player Card-typen."
 
 #: 
 msgid "Google Play app's custom URL scheme"
@@ -15677,7 +15677,7 @@ msgstr ""
 
 #: 
 msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
-msgstr ""
+msgstr "Den fulde URL til indlæsning af en medieafspiller, specifikt en iframe til en indlejret video i stedet for URL'en til en side, der indeholder en afspiller. Påkrævet ved brug af Player Card typen."
 
 #: 
 msgid "iPhone app's custom URL scheme"
@@ -15693,7 +15693,7 @@ msgstr ""
 
 #: 
 msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
-msgstr ""
+msgstr "Den fulde URL til en MP4-video (h.264) eller lyd (AAC) har forrang over det andet medieafspillerfelt."
 
 #: 
 msgid "Twitter card type"
@@ -16311,7 +16311,7 @@ msgstr "Fornavn"
 
 #: 
 msgid "The first name of the person who's Profile page this is."
-msgstr ""
+msgstr "Fornavnet på den person, hvis profilside dette er."
 
 #: 
 msgid "Site name"
@@ -16359,7 +16359,7 @@ msgstr ""
 
 #: 
 msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
-msgstr ""
+msgstr "MIME-typen af lydfilen. Eksempler er 'application/mp3' for en MP3-fil."
 
 #: 
 msgid "Article author"
@@ -16479,7 +16479,7 @@ msgstr "Video varighed (sekunder)"
 
 #: 
 msgid "The length of the video in seconds"
-msgstr ""
+msgstr "Længden på videoen i sekunder"
 
 #: 
 msgid "Image 'alt'"
@@ -16595,7 +16595,7 @@ msgstr "Lokalitet"
 
 #: 
 msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
-msgstr ""
+msgstr "Lokaliteten, som disse tags er markeret i, skal være i formatet language_TERRITORY. Standard er 'en_US'."
 
 #: 
 msgid "Image type"
@@ -16655,7 +16655,7 @@ msgstr ""
 
 #: 
 msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
-msgstr ""
+msgstr "Højden på ovenstående billede(r). Bemærk: Hvis der leveres både usikrede og sikrede billeder, skal de begge have samme størrelse."
 
 #: 
 msgid "Alternative locales"
@@ -17171,11 +17171,11 @@ msgstr ""
 
 #: 
 msgid "The e-mail address is not valid: @email"
-msgstr ""
+msgstr "Emailadressen er ikke gyldig: @email"
 
 #: 
 msgid "The e-mail address is already taken: @email"
-msgstr ""
+msgstr "Emailadressen benyttes allerede: @email"
 
 #: 
 msgid "Only administrators can register new accounts."
@@ -17439,7 +17439,7 @@ msgstr ""
 
 #: 
 msgid "The machine name you entered is reserved. Please use another one."
-msgstr ""
+msgstr "Det maskinnavn, du har indtastet, er reserveret. Brug venligst et andet."
 
 #: 
 msgid "The Paragraphs category ordering has been saved."
@@ -18213,7 +18213,7 @@ msgstr "Dag i måned"
 
 #: 
 msgid "The days of the month on which the event takes place"
-msgstr ""
+msgstr "Dagene på måneden, hvor arrangementet finder sted"
 
 #: 
 msgid "Monthly Type"
@@ -18249,7 +18249,7 @@ msgstr "Varighed"
 
 #: 
 msgid "The duration of the events"
-msgstr ""
+msgstr "Varigheden af arrangementerne"
 
 #: 
 msgid "Duration Units"
@@ -18257,7 +18257,7 @@ msgstr ""
 
 #: 
 msgid "The duration unites of the events"
-msgstr ""
+msgstr "Arrangementernes varighed forenes"
 
 #: 
 msgid "Buffer"
@@ -18289,7 +18289,7 @@ msgstr "Tidspunktet arrangementet begynder"
 
 #: 
 msgid "The duration of the event in minutes"
-msgstr ""
+msgstr "Varigheden af arrangementet i minutter"
 
 #: 
 msgid "The time the event ends"
@@ -20883,7 +20883,7 @@ msgstr "Når der indtastet et klokkeslæt, vis kun timer og minutter i inputfelt
 
 #: 
 msgid "The default time should be in the format @format"
-msgstr ""
+msgstr "Standardtiden skal være i formatet @format"
 
 #: 
 msgid "Lightweight cron settings"
@@ -21209,7 +21209,7 @@ msgstr ""
 
 #: 
 msgid "The default time is @default_time."
-msgstr ""
+msgstr "Standardtiden er @default_time."
 
 #: 
 msgid "Enter a date and time."
@@ -22209,7 +22209,7 @@ msgstr "Domæne"
 
 #: 
 msgid "The domain name to use for the language."
-msgstr ""
+msgstr "Domænenavnet, der skal bruges til sproget."
 
 #: 
 msgid "Path prefix"
@@ -22541,7 +22541,7 @@ msgstr ""
 
 #: 
 msgid "Token value for @token was '@actual', expected value '@expected'."
-msgstr ""
+msgstr "Token værdi for @token var '@actual', forventet værdi '@expected'."
 
 #: 
 msgid "Failed to generate token @token."
@@ -22929,7 +22929,7 @@ msgstr ""
 
 #: 
 msgid "The following tokens are supported:"
-msgstr ""
+msgstr "Følgende tokens er støttet:"
 
 #: 
 msgid "Automatically Load Content"
@@ -23354,7 +23354,7 @@ msgstr "Links til sociale medier"
 #: 
 msgctxt "DPL admin UX"
 msgid "The link will only be displayed if there is content."
-msgstr ""
+msgstr "Dette link vil kun blive vist, hvis der er indhold."
 
 #: 
 msgid "Create individual opening hours"
@@ -23595,7 +23595,7 @@ msgstr "Alle"
 #: 
 msgctxt "Opening Hours"
 msgid "The library is closed this day"
-msgstr ""
+msgstr "Biblioteket er lukket denne dag"
 
 #: 
 msgctxt "DPL admin UX"
@@ -23814,7 +23814,7 @@ msgstr ""
 #: 
 msgctxt "Global"
 msgid "The material is not reservable. You can order the digital copy by contacting the agency."
-msgstr ""
+msgstr "Materialet kan ikke reserveres. Du kan bestille den digitale kopi ved at kontakte institutionen."
 
 #: 
 msgctxt "Global"
@@ -23824,7 +23824,7 @@ msgstr "Du er ikke logget ind. Du kan bestille en digital kopi ved at kontakte i
 #: 
 msgctxt "Global"
 msgid "The digital copy has been ordered. You will receive an email when the digital copy is ready."
-msgstr ""
+msgstr "Den digitale kopi er allerede bestilt. Du vil modtage en email, når den digitale kopi er klar."
 
 #: 
 msgctxt "Global"
