@@ -64,7 +64,7 @@ describe("Adgangsplatformen", () => {
   // not be able to do anything else other than registering or cancelling.
   // Check that the header and footer sections is not vissible.
   it("does not show header and footer section for unregistered user", () => {
-    cy.setupAdgangsplatformenRegisterMappinngs({
+    cy.setupAdgangsplatformenRegisterMappings({
       authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
       accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
       userCPR: 1412749999,
@@ -93,7 +93,7 @@ describe("Adgangsplatformen", () => {
   });
 
   it("can register a new user and expose the right tokens for the react apps", () => {
-    cy.setupAdgangsplatformenRegisterMappinngs({
+    cy.setupAdgangsplatformenRegisterMappings({
       authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
       accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
       userCPR: 1412749999,
@@ -114,6 +114,12 @@ describe("Adgangsplatformen", () => {
       );
     });
 
+    cy.setupAdgangsplatformenPostRegisterMappings({
+      authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
+      accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
+      userCPR: 1412749999,
+    });
+
     cy.get('[data-cy="phone-input"]').type("12345678");
     cy.get('[data-cy="email-address-input"]').type("john@doe.com");
     cy.get('[data-cy="pincode-input"]').type("1234");
@@ -131,7 +137,7 @@ describe("Adgangsplatformen", () => {
   });
 
   it("can cancel user registration from the user registration page", () => {
-    cy.setupAdgangsplatformenRegisterMappinngs({
+    cy.setupAdgangsplatformenRegisterMappings({
       authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
       accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
       userCPR: 1412749999,

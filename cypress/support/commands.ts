@@ -234,7 +234,7 @@ Cypress.Commands.add(
   }
 );
 Cypress.Commands.add(
-  "setupAdgangsplatformenRegisterMappinngs",
+  "setupAdgangsplatformenRegisterMappings",
   ({
     authorizationCode,
     accessToken,
@@ -296,6 +296,29 @@ Cypress.Commands.add(
   }
 );
 
+Cypress.Commands.add(
+  "setupAdgangsplatformenPostRegisterMappings",
+  ({
+    authorizationCode,
+    accessToken,
+    userCPR,
+    userGuid,
+  }: {
+    authorizationCode: string;
+    accessToken: string;
+    userCPR?: number;
+    userGuid?: string;
+  }) => {
+    adgangsplatformenLoginOauthMappings({
+      userIsAlreadyRegistered: true,
+      authorizationCode,
+      accessToken,
+      userCPR,
+      userGuid,
+    });
+  }
+);
+
 const visible = (checkVisible: boolean) => (checkVisible ? ":visible" : "");
 Cypress.Commands.add("getBySel", (selector, checkVisible = false, ...args) => {
   return cy.get(`[data-cy="${selector}"]${visible(checkVisible)}`, ...args);
@@ -322,7 +345,13 @@ declare global {
         userCPR?: number;
         userGuid?: string;
       }): Chainable<null>;
-      setupAdgangsplatformenRegisterMappinngs(params: {
+      setupAdgangsplatformenRegisterMappings(params: {
+        authorizationCode: string;
+        accessToken: string;
+        userCPR?: number;
+        userGuid?: string;
+      }): Chainable<null>;
+      setupAdgangsplatformenPostRegisterMappings(params: {
         authorizationCode: string;
         accessToken: string;
         userCPR?: number;
