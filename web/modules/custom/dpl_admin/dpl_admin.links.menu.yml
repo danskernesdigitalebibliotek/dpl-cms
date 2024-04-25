@@ -3,18 +3,49 @@ dpl_admin.add_content:
   parent: system.admin_content
   route_name: dpl_admin.add_content
   weight: 5
+
+dpl_admin.dpl:
+  title: "DDF settings"
+  route_name: system.admin_config
+  parent: system.admin
+  weight: 100
+
+dpl_admin.novel_theme:
+  title: "Theme apperance"
+  parent: dpl_admin.dpl
+  route_name: system.theme_settings_theme
+  route_parameters: { theme: "novel" }
+
+dpl_admin.menus:
+  title: "Menus"
+  parent: dpl_admin.dpl
+  route_name: entity.menu.collection
+
+dpl_admin.taxonomies:
+  title: "Taxonomies"
+  parent: dpl_admin.dpl
+  route_name: entity.taxonomy_vocabulary.collection
+
 dpl_admin.redirect:
   title: "Redirects"
-  parent: system.admin
+  parent: dpl_admin.dpl
   route_name: redirect.list
   weight: 10
+
 dpl_admin.redirect_add:
   title: "Add redirect"
   parent: dpl_admin.redirect
   route_name: redirect.add
   weight: 1
+
 dpl_admin.logout:
   title: "Logout"
   parent: system.admin
   route_name: user.logout
   weight: 9999
+
+dpl_admin.drupal:
+  title: "Drupal"
+  route_name: system.admin_config
+  parent: system.admin
+  weight: 100

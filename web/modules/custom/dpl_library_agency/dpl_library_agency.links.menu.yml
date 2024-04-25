@@ -1,7 +1,7 @@
 dpl_library_agency.settings:
   title: "Library Agency"
   route_name: dpl_library_agency.settings
-  parent: system.admin_config
+  parent: dpl_admin.dpl
   weight: -1000
 
 dpl_library_agency.general_settings_form:
