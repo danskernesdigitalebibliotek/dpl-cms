@@ -74,7 +74,7 @@ function dpl_login_openid_connect_pre_authorize(AccountInterface|FALSE $account,
     $token = AccessToken::createFromOpenidConnectContext($context);
   }
   catch (AccessTokenCreationException $e) {
-    $logger->error('Authorization blocked. Unable to create access token: @message', [
+    $logger->error('Openid pre authorize: Authorization blocked. Unable to create access token: @message', [
       '@message' => $e->getMessage(),
     ]);
     return FALSE;
@@ -119,7 +119,7 @@ function dpl_login_openid_connect_pre_authorize(AccountInterface|FALSE $account,
     return !(count($patron_deny_reasons) > 0);
   }
   catch (ApiException $e) {
-    $logger->error('Authorization blocked. Unable to get patron information: @message', [
+    $logger->error('Openid pre authorize: Authorization blocked. Unable to get patron information: @message', [
       '@message' => $e->getMessage(),
     ]);
     return FALSE;
@@ -226,7 +226,7 @@ function _dpl_login_user_is_registered(AccessToken $token): bool {
   // later inspection.
   catch (ApiException $e) {
     $logger = \Drupal::logger('dpl_login');
-    $logger->error('Authorization blocked. Unable to create access token: @message', [
+    $logger->error('User is registered check: Authorization blocked. Unable to get patron information: @message', [
       '@message' => $e->getMessage(),
     ]);
     return FALSE;
