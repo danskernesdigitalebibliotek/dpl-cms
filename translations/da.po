@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-26 10:29+0200\n"
-"PO-Revision-Date: 2024-04-26 10:29+0200\n"
+"POT-Creation-Date: 2024-04-26 11:31+0200\n"
+"PO-Revision-Date: 2024-04-26 11:31+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -580,7 +580,7 @@ msgstr "Reserveringer på dette materiale"
 
 msgctxt "Work Page"
 msgid "Reserve book"
-msgstr "Reserver bog"
+msgstr "Ryserver bog"
 
 msgctxt "Work Page"
 msgid "Reserve"
@@ -5856,7 +5856,7 @@ msgid "If the cloned entity should be saved with all translations."
 msgstr ""
 
 msgid "Available translations"
-msgstr ""
+msgstr "Tilgængelige oversættelser"
 
 msgid "Clone"
 msgstr "Klon"
@@ -7829,7 +7829,7 @@ msgid "Meta Tags:"
 msgstr "Meta Tags:"
 
 msgid "length"
-msgstr ""
+msgstr "Længde"
 
 msgid "Meta Tags: Trimming Options"
 msgstr ""
@@ -8569,7 +8569,7 @@ msgid "Date on which the resource was changed."
 msgstr ""
 
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 msgid ""
 "A legal document giving official permission to do something with the "
@@ -8760,10 +8760,10 @@ msgid "Date Copyrighted"
 msgstr ""
 
 msgid "Date of copyright."
-msgstr ""
+msgstr "Copyrightdato"
 
 msgid "Date Issued"
-msgstr ""
+msgstr "Udstedelsesdato"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
 msgstr ""
@@ -8796,7 +8796,7 @@ msgid "The document status, e.g. \"draft\"."
 msgstr "Status for dokumentet, f.eks. \"kladde\"."
 
 msgid "Department"
-msgstr ""
+msgstr "Afdeling"
 
 msgid "Department tag."
 msgstr ""
@@ -8942,7 +8942,7 @@ msgid "The name given to the resource."
 msgstr "Navnet givet til materialet."
 
 msgid "Contributor"
-msgstr ""
+msgstr "Bidragyder"
 
 msgid ""
 "An entity responsible for making contributions to the resource. "
@@ -9214,7 +9214,7 @@ msgstr ""
 "anbefales, at titlen ikke er mere end 55-65 tegn, inklusive mellemrum."
 
 msgid "Geographical position"
-msgstr ""
+msgstr "Geografisk position"
 
 msgid ""
 "Geo-spatial information in 'latitude; longitude' format, e.g. "
