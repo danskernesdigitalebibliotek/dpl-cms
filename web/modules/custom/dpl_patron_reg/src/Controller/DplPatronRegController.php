@@ -18,7 +18,6 @@ use Drupal\openid_connect\Plugin\OpenIDConnectClientInterface;
 use Drupal\openid_connect\Plugin\OpenIDConnectClientManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
@@ -144,19 +143,46 @@ class DplPatronRegController extends ControllerBase {
    * @param \Symfony\Component\HttpFoundation\Request $request
    *   Symfony request object.
    *
-   * @return \Symfony\Component\HttpFoundation\Response
-   *   A redirect to the authorization endpoint.
+   * @return mixed[]
+   *   A page that informs the user that they are now registered
+   *   and redirects to login.
    */
-  public function postRegister(Request $request): Response {
-    $_SESSION['openid_connect_op'] = 'connect';
-    $_SESSION['openid_connect_connect_uid'] = $this->currentUser()->id();
-
-    if ($current_path = $request->query->get('current-path')) {
-      $_SESSION['openid_connect_destination'] = $current_path;
+  public function postRegister(Request $request): array {
+    $current_path = NULL;
+    if ($current_path = (string) $request->query->get('current-path')) {
+      $current_path = Url::fromUri('internal:/' . ltrim($current_path, '/'))
+        ->toString(TRUE)
+        ->getGeneratedUrl();
     }
 
-    $scopes = $this->claims->getScopes($this->client);
-    return $this->client->authorize($scopes);
+    $markup = <<<EOD
+<div class="post-register" style="display: flex;justify-content: center;">
+  <div class="post-register__info-box">
+    <p class="text-body-large mt-32">
+      Du er nu registreret som bruger og skal logge ind igen for at kunne betjene løsningen
+    </p>
+    <p class="text-body-medium-regular mt-32">
+      Du vil blive sendt til Adgansgplatformen for at logge ind igen om <span id="seconds"></span> sekunder
+    </p>
+    </div>
+</div>
+EOD;
+
+    return [
+      '#attached' => [
+        'library' => [
+          'dpl_patron_reg/dpl_patron_reg',
+        ],
+        'drupalSettings' => [
+          'dpl_patron_reg' => [
+            'currentPath' => $current_path,
+          ],
+        ],
+      ],
+      [
+        '#markup' => $markup,
+      ],
+    ];
   }
 
 }

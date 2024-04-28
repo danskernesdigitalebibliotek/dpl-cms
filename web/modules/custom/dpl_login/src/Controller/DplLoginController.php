@@ -58,7 +58,7 @@ class DplLoginController extends ControllerBase {
    *
    * @throws \Drupal\dpl_login\Exception\MissingConfigurationException
    */
-  public function logout(): TrustedRedirectResponse|RedirectResponse {
+  public function logout(Request $request): TrustedRedirectResponse|RedirectResponse {
     // It is a global problem if the logout endpoint has not been configured.
     if (!$logout_endpoint = $this->config->getLogoutEndpoint()) {
       throw new MissingConfigurationException('Adgangsplatformen plugin config variable logout_endpoint is missing');
@@ -77,16 +77,16 @@ class DplLoginController extends ControllerBase {
       return $this->redirect('<front>');
     }
 
-    $redirect_uri = Url::fromRoute('<front>', [], ["absolute" => TRUE])
-      ->toString(TRUE)
-      ->getGeneratedUrl();
+    if (!$redirect_url = $this->getCurrentPathConvertedToUrl($request)) {
+      $redirect_url = Url::fromRoute('<front>', [], ["absolute" => TRUE]);
+    }
 
     // Remote logout service url.
     $url = Url::fromUri($logout_endpoint, [
       'query' => [
         'singlelogout' => 'true',
         'access_token' => $access_token->token,
-        'redirect_uri' => $redirect_uri,
+        'redirect_uri' => $redirect_url->toString(TRUE)->getGeneratedUrl(),
       ],
     ]);
 
@@ -134,20 +134,30 @@ class DplLoginController extends ControllerBase {
    *   A redirect to either the original redirect or to the frontpage.
    */
   public function loginHandler(Request $request): TrustedRedirectResponse {
-    if ($current_path = (string) $request->query->get('current-path')) {
+    if ($current_path = $this->getCurrentPathConvertedToUrl($request)) {
       $accessToken = $this->userTokens->getCurrent();
       if ($accessToken && $accessToken->type === AccessTokenType::UNREGISTERED_USER) {
         $url = Url::fromRoute('dpl_patron_reg.create')->toString(TRUE);
         return new TrustedRedirectResponse($url->getGeneratedUrl());
       }
       if ($accessToken && $accessToken->type === AccessTokenType::USER) {
-        $url = Url::fromUri('internal:/' . ltrim($current_path, '/'))->toString(TRUE);
-        return new TrustedRedirectResponse($url->getGeneratedUrl());
+        return new TrustedRedirectResponse($current_path->toString(TRUE)->getGeneratedUrl());
       }
     }
 
     $url = Url::fromRoute('<front>', [], ["absolute" => TRUE])->toString(TRUE);
     return new TrustedRedirectResponse($url->getGeneratedUrl());
+  }
+
+  /**
+   * If a current path is set in request, convert it to a URL object.
+   */
+  protected function getCurrentPathConvertedToUrl(Request $request): URL | NULL {
+    if (!$current_path = (string) $request->query->get('current-path')) {
+      return NULL;
+    }
+
+    return Url::fromUri('internal:/' . ltrim($current_path, '/'), ['absolute' => TRUE]);
   }
 
 }

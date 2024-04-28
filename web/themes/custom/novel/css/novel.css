@@ -2,3 +2,13 @@
   min-height: 100vh;
   background-color: #f6f5f0;
 }
+
+.post-register {
+  display: flex;
+  justify-content: center;
+}
+
+.post-register__info-box {
+  margin: auto;
+  max-width: 500px;
+}

@@ -100,6 +100,11 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
     $redirect_on_user_created_url = $config->get('redirect_on_user_created_url') ?? dpl_react_apps_ensure_url_is_string(
       Url::fromRoute('dpl_dashboard.list')->toString()
     );
+    $post_register_url = Url::fromRoute(
+      'dpl_patron_reg.post_register',
+      [],
+      ['query' => ['current-path' => $redirect_on_user_created_url]]
+    )->toString(TRUE)->getGeneratedUrl();
 
     $data = [
       // Configuration.
@@ -122,9 +127,9 @@ class PatronRegistrationBlock extends BlockBase implements ContainerFactoryPlugi
 
       // Urls.
       'redirect-on-user-created-url' => Url::fromRoute(
-        'dpl_patron_reg.post_register',
+        'dpl_login.logout',
         [],
-        ['query' => ['current-path' => $redirect_on_user_created_url]]
+        ['query' => ['current-path' => $post_register_url]]
       )->toString(),
     ] + DplReactAppsController::externalApiBaseUrls();
 

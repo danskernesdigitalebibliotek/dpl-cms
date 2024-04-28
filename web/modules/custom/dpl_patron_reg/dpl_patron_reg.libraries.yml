@@ -1,0 +1,3 @@
+dpl_patron_reg:
+  js:
+    js/dpl_patron_reg.js: {}
