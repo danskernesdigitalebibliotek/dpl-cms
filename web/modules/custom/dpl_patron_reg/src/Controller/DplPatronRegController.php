@@ -147,6 +147,7 @@ class DplPatronRegController extends ControllerBase {
   public function postRegister(Request $request): RedirectResponse {
     $access_token = $this->unregisteredUserTokensProvider->getAccessToken();
     $logger = $this->getLogger('dpl_patron_reg');
+    $logger->info('postRegister - Token is: @token.', ['@token' => $access_token->token]);
 
     // Swap unregistered user token with registered user token.
     if ($access_token && _dpl_login_delete_previous_user_tokens()) {
