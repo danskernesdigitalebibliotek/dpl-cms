@@ -20,3 +20,4 @@ import "./commands";
 // require('./commands')
 
 import "cypress-plugin-api";
+import "@chromatic-com/cypress/support";
