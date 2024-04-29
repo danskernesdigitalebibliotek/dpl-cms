@@ -221,7 +221,7 @@ abstract class OpeningHoursResourceBase extends ResourceBase {
    * break tags for Swagger UI. Duplicate whitespaces added for local
    * readability is also stripped.
    */
-  private function formatMultilineDescription(string $description): string {
+  protected function formatMultilineDescription(string $description): string {
     $no_newlines = preg_replace("/\n/", '<br/>', $description);
     $no_extra_whitespace = preg_replace("/\s+/", " ", $no_newlines);
     return $no_extra_whitespace;
