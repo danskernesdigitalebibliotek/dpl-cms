@@ -47,7 +47,7 @@ jobs:
         run: |
           echo "{\"strictSSL\": false}" > $RUNNER_TEMP/wait-on.config.json
       - name: Wait for environment to become available
-        uses: iFaxity/wait-on-action@v1.1.0
+        uses: iFaxity/wait-on-action@v1.2.0
         with:
           resource: ${{ steps.environment.outputs.url }}
           # Time in ms. Wait for 15 mins for deployment to complete. We have
