@@ -38,12 +38,12 @@ final class OpeningHoursDeleteResource extends OpeningHoursResourceBase {
                 "The id of the repetition to delete. \n" .
                 "If this is provided then all opening hours from the provided instance " .
                 "to the final instance in the provided repetition will be deleted."
-               ),
+              ),
               'in' => 'query',
               'required' => FALSE,
             ],
           ],
-       ],
+        ],
       ],
       [
         'responses' => [
