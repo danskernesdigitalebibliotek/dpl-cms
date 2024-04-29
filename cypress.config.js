@@ -12,6 +12,8 @@ module.exports = defineConfig({
   env: {
     // Tests should take or enable screenshots themselves.
     disableAutoSnapshot: true,
+    // Set a high timeout to allow resources to download.
+    resourceArchiveTimeout: 10000,
     // Environment variables for services are set in docker-compose.ci.yml for
     // CI and Taskfile.yml for local development.
   },
