@@ -14,7 +14,7 @@ tasks:
   drupal:enable-dev-tools:
     desc: Enable dev modules and settings, which are not to be used in Prod. They are config-ignored
     cmds:
-      - ${DRUSH_EXEC} install -y devel dpl_example_content field_ui uuid_url views_ui dblog
+      - ${DRUSH_EXEC} install -y devel dpl_example_content dpl_example_breadcrumb field_ui restui uuid_url views_ui dblog
 
   drupal:create-users:
     desc: Create test users, with test roles
@@ -38,9 +38,10 @@ tasks:
     desc: Install/update composer dependencies
     cmds:
       - cp -n .env.example .env || true
-      - composer install
+      - composer install --no-cache
       - composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
-      - $(cd dev-scripts/dpl-react; composer install)
+      - composer drupal:scaffold
+      - $(cd dev-scripts/dpl-react; composer install --no-cache)
   drupal:locale:
     desc: Update translation strings
     cmds:
