@@ -72,6 +72,7 @@ function dpl_login_openid_connect_pre_authorize(AccountInterface|FALSE $account,
 
   try {
     $token = AccessToken::createFromOpenidConnectContext($context);
+    $logger->info('Pre authorize hook - Token is: @token.', ['@token' => $token->token]);
   }
   catch (AccessTokenCreationException $e) {
     $logger->error('Authorization blocked. Unable to create access token: @message', [
@@ -148,6 +149,7 @@ function dpl_login_openid_connect_post_authorize(AccountInterface $account, arra
   $access_token = AccessToken::createFromOpenidConnectContext($context);
   $token_provider = _dpl_login_get_access_token_provider($access_token);
   $logger = _dpl_login_get_authorization_logger($access_token);
+  $logger->info('Post authorize hook - Token is: @token.', ['@token' => $access_token->token]);
 
   if (_dpl_login_delete_previous_user_tokens()) {
     $token_provider->setAccessToken($access_token);
