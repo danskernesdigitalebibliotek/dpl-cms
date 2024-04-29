@@ -10,7 +10,8 @@ module.exports = defineConfig({
     },
   },
   env: {
-    // This is intentionally left empty.
+    // Tests should take or enable screenshots themselves.
+    disableAutoSnapshot: true,
     // Environment variables for services are set in docker-compose.ci.yml for
     // CI and Taskfile.yml for local development.
   },
