@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-04-29 16:34+0200\n"
-"PO-Revision-Date: 2024-04-29 16:34+0200\n"
+"POT-Creation-Date: 2024-05-01 13:14+0200\n"
+"PO-Revision-Date: 2024-05-01 13:14+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3201,7 +3201,7 @@ msgstr ""
 
 msgctxt "Work Page"
 msgid "Your material has been ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Bestil fra et andet bibliotek"
 
 msgctxt "Work Page"
 msgid "Item available, order through the librarys catalogue"
@@ -3237,7 +3237,7 @@ msgstr "Bruger ikke fundet"
 
 msgctxt "Work Page"
 msgid "Ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Bestil fra et andet bibliotek"
 
 msgctxt "DPL admin UX"
 msgid "<a href=\"@url\">Edit the series here</a>"
@@ -16462,26 +16462,6 @@ msgctxt "Opening Hours"
 msgid "Week"
 msgstr "Uge"
 
-msgctxt "DPL Opening Hours"
-msgid "Remove event"
-msgstr "Slet åbningstid"
-
-msgctxt "DPL Opening Hours"
-msgid "Title"
-msgstr "Kategori"
-
-msgctxt "DPL Opening Hours"
-msgid "Start time"
-msgstr "Starter"
-
-msgctxt "DPL Opening Hours"
-msgid "End time"
-msgstr "Slutter"
-
-msgctxt "DPL Opening Hours"
-msgid "Save"
-msgstr "Gem"
-
 msgctxt "DPL admin UX"
 msgid "Footer columns"
 msgstr ""
@@ -16726,4 +16706,64 @@ msgstr "Tilføj omdirigering"
 
 msgid "Show less"
 msgstr "Vis mindre"
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Do you want to add this repeated opening hour?"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Opening hour"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "End date"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "End time"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Every"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Repeat opening hour weekly every @weekDayName from @startDate"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Start date"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Start time"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Repeated opening hour"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "I'm sure"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Save"
+msgstr ""
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Remove event"
+msgstr ""
+
+msgid ""
+"@field_name has been set to basic format on @count paragraphs of type "
+"@type"
+msgstr ""
+
+msgid "Event series"
+msgstr ""
 

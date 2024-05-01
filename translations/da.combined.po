@@ -3749,7 +3749,7 @@ msgstr "Indstil hvor mange elementer der skal vises på en liste inden for hver 
 #: 
 msgctxt "Work Page"
 msgid "Your material has been ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Bestil fra et andet bibliotek"
 
 #: 
 msgctxt "Work Page"
@@ -3794,7 +3794,7 @@ msgstr "Bruger ikke fundet"
 #: 
 msgctxt "Work Page"
 msgid "Ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Bestil fra et andet bibliotek"
 
 #: 
 msgctxt "DPL admin UX"
@@ -7581,247 +7581,6 @@ msgstr "Side"
 msgctxt "views.view.events:display:related:display_title"
 msgid "Related events"
 msgstr "Relaterede arrangementer"
-
-#: 
-msgctxt "views.view.event_admin:label"
-msgid "Event - admin"
-msgstr "Arrangements administration"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:title"
-msgid "Event - admin"
-msgstr "Arrangements administration"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:eventseries_id:label"
-msgid "Series"
-msgstr "Serie"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:eventseries_id:alter:text"
-msgid "{{ eventseries_id }}"
-msgstr "{{ eventseries_id }}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:id:label"
-msgid "ID"
-msgstr "ID"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:title:label"
-msgid "Title"
-msgstr "Titel"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:admin_label"
-msgid "Event Instance entity: Event Date time"
-msgstr "Arrangementsinstans: Afholdelsestidspunkt"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:one_day"
-msgid "H:i - {H}:{i}"
-msgstr "H:i - {H}:{i}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:one_month"
-msgid "H:i - {H}:{i}"
-msgstr "H:i - {H}:{i}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:several_months"
-msgid "H:i - {H}:{i}"
-msgstr "H:i - {H}:{i}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value_1:settings:several_years"
-msgid "H:i - {H}:{i}"
-msgstr "H:i - {H}:{i}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:label"
-msgid "Event Date"
-msgstr "Arrangementsdato"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_day"
-msgid "d M Y"
-msgstr "d M Y"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:one_month"
-msgid "d - {d} M Y "
-msgstr "\n"
-"d - {d} M Y"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:several_months"
-msgid "d M - {d} {M} Y"
-msgstr "d M - {d} {M} Y"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:settings:several_years"
-msgid "d M Y - {d} {M} {Y}"
-msgstr "d M Y - {d} {M} {Y}"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:event_state:label"
-msgid "Event state"
-msgstr "Arrangementsstatus"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:status:label"
-msgid "Publication status"
-msgstr "Publiceringsdato"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:status:settings:format_custom_false"
-msgid " Unpublished"
-msgstr "Afpubliceret"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:status:settings:format_custom_true"
-msgid "Published"
-msgstr "Publiceret"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:label"
-msgid "Series links"
-msgstr "Links til serier"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:alter:text"
-msgid "<div class=\"button button--small\">{{ edit_eventseries }}</div>"
-msgstr "<div class=\"button button--small\">{{ edit_eventseries }}</div>"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:edit_eventseries:text"
-msgid "Edit series"
-msgstr "Rediger serie"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:operations:label"
-msgid "Instance links"
-msgstr "Links til instanser"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:first"
-msgid "« First"
-msgstr "« Første"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:pager:options:tags:last"
-msgid "Last »"
-msgstr "Sidste »"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_label"
-msgid "Items per page"
-msgstr "Enheder pr. side"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
-msgid "- All -"
-msgstr "- Alle -"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:pager:options:expose:offset_label"
-msgid "Offset"
-msgstr "Offset"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:combine:expose:label"
-msgid "Search"
-msgstr "Søg"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:combine:expose:placeholder"
-msgid "Search by title, ID.."
-msgstr "Søg efter titel, ID.."
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:expose:label"
-msgid "Event Date"
-msgstr "Arrangementsdato"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:label"
-msgid "Date filters"
-msgstr "Datofiltre"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:1:title"
-msgid "Show all events"
-msgstr "Vis alle arrangementer"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:2:title"
-msgid "Only upcoming events"
-msgstr "Kun kommende arrangementer"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:date__value:group_info:group_items:3:title"
-msgid "Only expired events"
-msgstr "Kun afholdte arrangementer"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:status:expose:label"
-msgid "Publication status"
-msgstr "Publiceringsstatus"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:status:group_info:label"
-msgid "Published status"
-msgstr "Publiceringsstatus"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:status:group_info:group_items:1:title"
-msgid "Published"
-msgstr "Publiceret"
-
-#: 
-msgctxt "views.view.event_admin:display:default:display_options:filters:status:group_info:group_items:2:title"
-msgid "Unpublished"
-msgstr "Afpubliceret"
-
-#: 
-msgctxt "views.view.event_admin:display:overview:display_title"
-msgid "Page"
-msgstr "Side"
-
-#: 
-msgctxt "views.view.event_admin:display:overview:display_options:menu:title"
-msgid "Events"
-msgstr "Arrangementer"
 
 #: 
 msgctxt "views.view.files:label"
@@ -23253,11 +23012,6 @@ msgid "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ id }} - <stro
 msgstr "<div><br /><strong>{{ title }}</strong><br/><br /><small>{{ id }} - <strong>{{eventseries_start_date}}</strong> - ({{ status }})</small><br /></div>"
 
 #: 
-msgctxt "views.view.event_admin:display:default:display_options:fields:date__value:alter:text"
-msgid "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br /><small>{{ recur_type }}</small>"
-msgstr "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br /><small>{{ recur_type }}</small>"
-
-#: 
 msgctxt "Fees list"
 msgid "Fee @fee"
 msgstr "Gebyr @fee"
@@ -23289,31 +23043,6 @@ msgstr "Vis ugens åbningstider"
 msgctxt "Opening Hours"
 msgid "Week"
 msgstr "Uge"
-
-#: 
-msgctxt "DPL Opening Hours"
-msgid "Remove event"
-msgstr "Slet åbningstid"
-
-#: 
-msgctxt "DPL Opening Hours"
-msgid "Title"
-msgstr "Kategori"
-
-#: 
-msgctxt "DPL Opening Hours"
-msgid "Start time"
-msgstr "Starter"
-
-#: 
-msgctxt "DPL Opening Hours"
-msgid "End time"
-msgstr "Slutter"
-
-#: 
-msgctxt "DPL Opening Hours"
-msgid "Save"
-msgstr "Gem"
 
 #: 
 msgctxt "DPL admin UX"
@@ -26480,5 +26209,428 @@ msgstr "Brug omdirigering, når du ønsker dynamiske URL'er. F.eks. når du har 
 #: 
 msgctxt "views.view.redirect:display:page_1:display_title"
 msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Do you want to add this repeated opening hour?"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Opening hour"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "End date"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "End time"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Every"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Repeat opening hour weekly every @weekDayName from @startDate"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Start date"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Start time"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Repeated opening hour"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Cancel"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "I'm sure"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Save"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Remove event"
+msgstr ""
+
+#: 
+msgid "@field_name has been set to basic format on @count paragraphs of type @type"
+msgstr ""
+
+#: 
+msgid "Event series"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_author:label"
+msgid "Author"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_author_name:label"
+msgid "Author name"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_author_name:description"
+msgid "This will be used as the front-facing name on articles."
+msgstr ""
+
+#: 
+msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:field_author_name:label"
+msgid "Author name"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:label"
+msgid "Event instance list"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:description"
+msgid "This event instance list is used to display eventinstances under the \"edit instances\" tab for an event series."
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:title"
+msgid "Event instance list"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:id:label"
+msgid "ID"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:title:label"
+msgid "Event title"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:label"
+msgid "Event Date"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:alter:text"
+msgid "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br />"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:settings:separator"
+msgid "-"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:changed:label"
+msgid "Updated"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:settings:format_custom_false"
+msgid "Unpublished"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:settings:format_custom_true"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:fields:operations:label"
+msgid "Operations links"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:arguments:eventseries_id:exception:title"
+msgid "All"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:combine:expose:label"
+msgid "Search"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:combine:expose:placeholder"
+msgid "Search by title, ID.."
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:expose:label"
+msgid "Event Date"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:label"
+msgid "Date filters"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:1:title"
+msgid "Show all events"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:2:title"
+msgid "Only upcoming events"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:3:title"
+msgid "Only expired events"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:expose:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:group_items:1:title"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:group_items:2:title"
+msgid "Unpublished"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:page_1:display_title"
+msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_instance_list:display:page_1:display_options:menu:title"
+msgid "Edit Instances"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:label"
+msgid "Event series admin"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:description"
+msgid "This is the view for displaying a list of event series. Used on admin/content/eventseries"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:title"
+msgid "Event series admin"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:id:label"
+msgid "ID"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:title:label"
+msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_instance_count:label"
+msgid "Event instances"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_start_date:label"
+msgid "Series start date"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:changed:label"
+msgid "Updated"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:settings:format_custom_false"
+msgid "Unpublished"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:settings:format_custom_true"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:fields:operations:label"
+msgid "Operations links"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:label"
+msgid "Combine fields filter"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:placeholder"
+msgid "Search by title, ID.."
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:expose:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:label"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:group_items:1:title"
+msgid "Published"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:group_items:2:title"
+msgid "Unpublished"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:page_1:display_title"
+msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "views.view.event_series_admin:display:page_1:display_options:menu:title"
+msgid "Event series"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
+msgid "Name"
 msgstr ""
 
