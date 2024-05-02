@@ -1777,11 +1777,6 @@ msgstr "Gebyrer & erstatninger"
 
 #: 
 msgctxt "Dashboard"
-msgid "@total,-"
-msgstr "@total"
-
-#: 
-msgctxt "Dashboard"
 msgid "Loans"
 msgstr "Lån"
 
@@ -3749,7 +3744,7 @@ msgstr "Indstil hvor mange elementer der skal vises på en liste inden for hver 
 #: 
 msgctxt "Work Page"
 msgid "Your material has been ordered from another library"
-msgstr "Bestil fra et andet bibliotek"
+msgstr "Bestilt fra et andet bibliotek"
 
 #: 
 msgctxt "Work Page"
@@ -11649,7 +11644,7 @@ msgstr "Om indstillingen \"Tag ejerskab\" skal være markeret som standard på e
 
 #: 
 msgid "Entities referenced by field <em>@label (@field_id)</em>."
-msgstr ""
+msgstr "Enheder refereret af feltet <em>@label (@field_id)</em>."
 
 #: 
 msgid "Circular reference detected"
@@ -12055,7 +12050,7 @@ msgstr ""
 
 #: 
 msgid "Entity with parent type and ID."
-msgstr ""
+msgstr "Enhed med overordnet type og ID."
 
 #: 
 msgid "Entity Host Base Field ERR"
@@ -12764,7 +12759,7 @@ msgstr "Kildeenhed"
 
 #: 
 msgid "Enter the name of the %bundle from which to inherit data."
-msgstr ""
+msgstr "Indtast navnet på %bundle, hvorfra data skal arves."
 
 #: 
 msgid "Add a new field inheritance field to this entity type and bundle."
@@ -13444,7 +13439,7 @@ msgstr "Tilgængelige symboler"
 
 #: 
 msgid "Edit %label profile"
-msgstr ""
+msgstr "Rediger %label profil"
 
 #: 
 msgid "Edit %label matcher"
@@ -14292,7 +14287,7 @@ msgstr "Rute / Sti"
 
 #: 
 msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
-msgstr ""
+msgstr "Indtast ruten (sti) for denne nye konfiguration, startende med et skråstreg.<br />Bemærk: denne skal allerede eksistere som en sti i Drupal."
 
 #: 
 msgid "The path must begin with /"
@@ -17442,7 +17437,7 @@ msgstr ""
 
 #: 
 msgid "Event Creation"
-msgstr ""
+msgstr "Arrangør"
 
 #: 
 msgid "Event Series Time Intervals"
@@ -17458,7 +17453,7 @@ msgstr ""
 
 #: 
 msgid "Enter the earliest an event can start, in h:ia format. For example 08:00am."
-msgstr ""
+msgstr "Indtast arrangementets starttidspunkt, i h:ia format. For eksempel kl. 08:00am."
 
 #: 
 msgid "Event Series Maximum Time"
@@ -17466,7 +17461,7 @@ msgstr ""
 
 #: 
 msgid "Enter the latest an event can start, in h:ia format. For example 11:45pm."
-msgstr ""
+msgstr "Indtast det seneste tidspunkt, hvor arrangementet starter, i h:ia format. For eksempel kl. 11:45pm."
 
 #: 
 msgid "PHP date/time format"
@@ -17474,11 +17469,11 @@ msgstr ""
 
 #: 
 msgid "Event Series Date Format"
-msgstr ""
+msgstr "Arrangementseries datoformat"
 
 #: 
 msgid "Enter the @link used when listing event dates. Default is F jS, Y h:iA."
-msgstr ""
+msgstr "Indtast det @link, der bruges, når arrangementdatoer listes. Standard er F jS, Y h:iA."
 
 #: 
 msgid "Event Series Time Format"
@@ -17486,7 +17481,7 @@ msgstr ""
 
 #: 
 msgid "Enter the @link used when selecting times. Default is h:i A."
-msgstr ""
+msgstr "Indtast det @link, der bruges, når tider vælges. Standard er h:i A."
 
 #: 
 msgid "Monday"
@@ -17518,7 +17513,7 @@ msgstr "Søndag"
 
 #: 
 msgid "Event Series Days"
-msgstr ""
+msgstr "Arrangementseries dage"
 
 #: 
 msgid "Select the days of the week available when creating events."
@@ -17598,7 +17593,7 @@ msgstr ""
 
 #: 
 msgid "Event Display"
-msgstr ""
+msgstr "Arrangementsvisning"
 
 #: 
 msgid "Event Series Items"
@@ -17638,7 +17633,7 @@ msgstr "Startdato"
 
 #: 
 msgid "Enter the start date of this exclusion range"
-msgstr ""
+msgstr "Indtast startdatoen for dette udelukkelsesinterval"
 
 #: 
 msgid "End date"
@@ -17646,7 +17641,7 @@ msgstr "Slutdato"
 
 #: 
 msgid "Enter the end date of this exclusion range"
-msgstr ""
+msgstr "Indtast slutdatoen for dette udelukkelsesinterval"
 
 #: 
 msgid "Created the %label Excluded dates."
@@ -17694,15 +17689,15 @@ msgstr "Gendan indholds som deles mellem oversættelser"
 
 #: 
 msgid "Event Instance Date Format"
-msgstr ""
+msgstr "Arrangementinstans datoformat"
 
 #: 
 msgid "Event Instance Items"
-msgstr ""
+msgstr "Arrangementinstans emner"
 
 #: 
 msgid "Enter the number of items to show per page in the default event instance listing table."
-msgstr ""
+msgstr "Indtast antallet af elementer, der skal vises pr. side i standardtabellen for arrangementinstanser."
 
 #: 
 msgid "Deleting this event series type will also delete the corresponding event instance type."
@@ -17722,11 +17717,11 @@ msgstr ""
 
 #: 
 msgid "Enter the start date of this inclusion range"
-msgstr ""
+msgstr "Indtast startdatoen for dette inklusionsinterval"
 
 #: 
 msgid "Enter the end date of this inclusion range"
-msgstr ""
+msgstr "Indtast slutdatoen for dette inklusionsinterval"
 
 #: 
 msgid "Created the %label Included dates."
@@ -17846,11 +17841,11 @@ msgstr "Brødtekst"
 
 #: 
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 #: 
 msgid "Event Series ID"
-msgstr ""
+msgstr "Arrangementseries ID"
 
 #: 
 msgid "The ID of the event series entity."
@@ -18106,7 +18101,7 @@ msgstr "Skilletegn"
 
 #: 
 msgid "Enter the separator to use between start and end dates."
-msgstr ""
+msgstr "Indtast separatoren, der skal bruges mellem start- og slutdatoer."
 
 #: 
 msgid "Link to the referenced entity"
@@ -18531,7 +18526,7 @@ msgstr "Time(r)"
 
 #: 
 msgid "Event Name"
-msgstr ""
+msgstr "Arrangementsnavn"
 
 #: 
 msgid "Updated"
@@ -18587,7 +18582,7 @@ msgstr "Nuværende version"
 
 #: 
 msgid "Event instance type"
-msgstr ""
+msgstr "Arrangementinstans type"
 
 #: 
 msgid "Included dates"
@@ -18755,7 +18750,7 @@ msgstr "Denne side, hvor formularen vises"
 
 #: 
 msgid "Event instance page"
-msgstr ""
+msgstr "Arrangementinstans side"
 
 #: 
 msgid "Event series page"
@@ -18787,7 +18782,7 @@ msgstr ""
 
 #: 
 msgid "Enter the number of items to show per page in the default registrant listing table."
-msgstr ""
+msgstr "Indtast antallet af elementer, der skal vises pr. side i standardtabellen for ´deltagere."
 
 #: 
 msgid "Registrant Date Format"
@@ -18795,7 +18790,7 @@ msgstr ""
 
 #: 
 msgid "Enter the @link used when listing registrants. Default is F jS, Y h:iA."
-msgstr ""
+msgstr "Indtast det @link, der bruges, når deltagere listes. Standard er F jS, Y h:iA."
 
 #: 
 msgid "Registrant Title"
@@ -18803,7 +18798,7 @@ msgstr ""
 
 #: 
 msgid "Enter the format for the title field"
-msgstr ""
+msgstr "Indtast formatet for titelfeltet"
 
 #: 
 msgid "Registration Messages"
@@ -19060,11 +19055,11 @@ msgstr "Brugere på venteliste"
 
 #: 
 msgid "Enter the subject of the email to send to the registrants."
-msgstr ""
+msgstr "Indtast emnelinjen for e-mailen, der skal sendes til deltagerne."
 
 #: 
 msgid "Enter the message of the email to send to the registrants."
-msgstr ""
+msgstr "Indtast beskeden i e-mailen, der skal sendes til deltagerne."
 
 #: 
 msgid "Send Email(s)"
@@ -19116,7 +19111,7 @@ msgstr "Typen af registreret."
 
 #: 
 msgid "Event Instance ID"
-msgstr ""
+msgstr "Arrangementinstans ID"
 
 #: 
 msgid "The ID of the eventinstance entity."
@@ -19160,7 +19155,7 @@ msgstr "Tilgængelighed."
 
 #: 
 msgid "Event Registration Access"
-msgstr ""
+msgstr "Adgang for registrering"
 
 #: 
 msgid "Enable Registration"
@@ -19192,7 +19187,7 @@ msgstr "Kapacitet"
 
 #: 
 msgid "Enter the number of registrants that can attend the event."
-msgstr ""
+msgstr "Indtast antallet af deltagere, der kan deltage i arrangementet."
 
 #: 
 msgid "Select whether to enable a waitlist."
@@ -19320,7 +19315,7 @@ msgstr ""
 
 #: 
 msgid "Entire Series Registration"
-msgstr ""
+msgstr "Registrering for hele serien"
 
 #: 
 msgid "Choose between open or scheduled registration. Open registration ends when the event begins."
@@ -19452,7 +19447,7 @@ msgstr ""
 
 #: 
 msgid "Event Registration"
-msgstr ""
+msgstr "Arrangementsregistrering"
 
 #: 
 msgid "Availability Count"
@@ -19536,7 +19531,7 @@ msgstr ""
 
 #: 
 msgid "Event Registration Reminders"
-msgstr ""
+msgstr "Påmindelse om registrering"
 
 #: 
 msgid "Reminder Date"
@@ -19596,7 +19591,7 @@ msgstr ""
 
 #: 
 msgid "Event Series"
-msgstr ""
+msgstr "Arrangementserie"
 
 #: 
 msgid "Tokens for the eventseries entity type."
@@ -19620,7 +19615,7 @@ msgstr "Send en e-mail til tilmeldte, når arrangementets navn ændres?"
 
 #: 
 msgid "Event Instance"
-msgstr ""
+msgstr "Arrangementinstans"
 
 #: 
 msgid "Event Instance tokens from the Recurring Events Registration module."
@@ -19636,7 +19631,7 @@ msgstr ""
 
 #: 
 msgid "Event Registration Type"
-msgstr ""
+msgstr "Arrangementsregistreringstype"
 
 #: 
 msgid "The registration type of the event instance."
@@ -19728,7 +19723,7 @@ msgstr "Tilmeldinger til serier: %name"
 
 #: 
 msgid "Event iCalendar Link"
-msgstr ""
+msgstr "Arrangement iCalendar link"
 
 #: 
 msgid "iCalendar"
@@ -19932,7 +19927,7 @@ msgstr "Beskrivelse af arrangementsinstansen."
 
 #: 
 msgid "Event Instance Start Date"
-msgstr ""
+msgstr "Arrangementinstans startdato"
 
 #: 
 msgid "The start date of the event instance."
@@ -19940,7 +19935,7 @@ msgstr ""
 
 #: 
 msgid "Event Instance End Date"
-msgstr ""
+msgstr "Arrangementinstans slutdato"
 
 #: 
 msgid "The end date of the event instance."
@@ -19948,7 +19943,7 @@ msgstr ""
 
 #: 
 msgid "Event Instance URL"
-msgstr ""
+msgstr "Arrangementinstans URL"
 
 #: 
 msgid "The URL of the event instance."
@@ -19972,7 +19967,7 @@ msgstr "Beskrivelse af arrangementsserien."
 
 #: 
 msgid "Event Instance entity"
-msgstr ""
+msgstr "Arrangementinstans enhed"
 
 #: 
 msgid "Event series entity"
@@ -20080,7 +20075,7 @@ msgstr "Gemmer en konfiguration til registrering af et arrangement"
 
 #: 
 msgid "Event registration widget"
-msgstr ""
+msgstr "Widget for arrangementsregistrering"
 
 #: 
 msgid "Adds Registrant entities to groups."
@@ -20092,7 +20087,7 @@ msgstr "Gemmer en konfiguration af påmindelser om begivenhedsregistrering"
 
 #: 
 msgid "Event registration reminders widget"
-msgstr ""
+msgstr "Widget for påmindelse om registrering"
 
 #: 
 msgid "Event iCal property mapping"
@@ -20232,7 +20227,7 @@ msgstr ""
 
 #: 
 msgid "Event Instance Settings"
-msgstr ""
+msgstr "Arrangementinstans indstillinger"
 
 #: 
 msgid "Configure Event Series and Instances."
@@ -20256,7 +20251,7 @@ msgstr ""
 
 #: 
 msgid "Event instance listing."
-msgstr ""
+msgstr "Arrangementinstans liste."
 
 #: 
 msgid "Configure Event Series Entity"
@@ -20284,7 +20279,7 @@ msgstr "Tilføj en arrangementsserie"
 
 #: 
 msgid "Event Instance Types"
-msgstr ""
+msgstr "Arrangementinstans typer"
 
 #: 
 msgid "Configure Event Instance Types"
@@ -20332,7 +20327,7 @@ msgstr ""
 
 #: 
 msgid "Event Instance types"
-msgstr ""
+msgstr "Arrangementinstans typer"
 
 #: 
 msgid "Add Event Series Type"
@@ -20604,7 +20599,7 @@ msgstr ""
 
 #: 
 msgid "Entity Types"
-msgstr ""
+msgstr "Enhedstyper"
 
 #: 
 msgid "no entity types defined"
@@ -23387,7 +23382,7 @@ msgstr ""
 #: 
 msgctxt "facets.facet.content_branch:name"
 msgid "Branch"
-msgstr ""
+msgstr "Afdeling"
 
 #: 
 msgctxt "facets.facet.content_branch:missing_label"
@@ -24015,21 +24010,6 @@ msgid "Review submissions."
 msgstr "Gennemgå indsendelser."
 
 #: 
-msgctxt "webform.settings:settings:default_form_open_message"
-msgid "This form has not yet been opened to submissions."
-msgstr "Denne formular er endnu ikke blevet åbnet for indsendelser."
-
-#: 
-msgctxt "webform.settings:settings:default_form_close_message"
-msgid "Sorry… This form is closed to new submissions."
-msgstr "Beklager... Denne formular er lukket for nye indsendelser."
-
-#: 
-msgctxt "webform.settings:settings:default_form_exception_message"
-msgid "Unable to display this webform. Please contact the site administrator."
-msgstr "Ude af stand til at vise denne webformular. Kontakt venligst sidens administrator."
-
-#: 
 msgctxt "webform.settings:settings:default_submit_button_label"
 msgid "Submit"
 msgstr "Indsend"
@@ -24043,16 +24023,6 @@ msgstr "Nulstil"
 msgctxt "webform.settings:settings:default_delete_button_label"
 msgid "Delete"
 msgstr "Slet"
-
-#: 
-msgctxt "webform.settings:settings:default_form_confidential_message"
-msgid "This form is confidential. You must <a href=\"[site:login-url]/logout?destination=[current-page:url:relative]\">Log out</a> to submit it."
-msgstr "Denne formular er fortrolig. Du må <a href=\"[site:login-url]/logout?destination=[current-page:url:relative]\">Log out</a> for at indsende det."
-
-#: 
-msgctxt "webform.settings:settings:default_form_access_denied_message"
-msgid "Please login to access this form."
-msgstr ""
 
 #: 
 msgctxt "webform.settings:settings:default_form_required_label"
@@ -24110,11 +24080,6 @@ msgid "[webform:title]: Preview"
 msgstr "[webform:title]: Forhåndsvisning"
 
 #: 
-msgctxt "webform.settings:settings:default_preview_message"
-msgid "Please review your submission. Your submission is not complete until you press the \"Submit\" button!"
-msgstr ""
-
-#: 
 msgctxt "webform.settings:settings:default_draft_button_label"
 msgid "Save Draft"
 msgstr "Gem udkast"
@@ -24138,11 +24103,6 @@ msgstr "Du har en afventende kladde til denne webformular. <a href=\"#\">Load yo
 msgctxt "webform.settings:settings:default_draft_pending_multiple_message"
 msgid "You have pending drafts for this webform. <a href=\"#\">View your pending drafts</a>."
 msgstr "Du har afventende kladder til denne webformular. <a href=\"#\">View your pending drafts</a>."
-
-#: 
-msgctxt "webform.settings:settings:default_confirmation_message"
-msgid "New submission added to [webform:title]."
-msgstr ""
 
 #: 
 msgctxt "webform.settings:settings:default_confirmation_back_label"
@@ -24222,11 +24182,6 @@ msgstr ""
 #: 
 msgctxt "webform.settings:element:default_section_title_tag"
 msgid "h2"
-msgstr ""
-
-#: 
-msgctxt "webform.settings:file:file_private_redirect_message"
-msgid "Please login to access the uploaded file."
 msgstr ""
 
 #: 
@@ -24353,53 +24308,9 @@ msgid "first_name:\n"
 msgstr ""
 
 #: 
-msgctxt "webform.webform.contact:title"
-msgid "Contact"
-msgstr "Kontakt"
-
-#: 
-msgctxt "webform.webform.contact:description"
-msgid "<p>Basic email contact webform.</p>"
-msgstr "<p>email kontakt webform.</p>"
-
-#: 
-msgctxt "webform.webform.contact:elements"
-msgid "name:\n"
-"  '#title': 'Your Name'\n"
-"  '#type': textfield\n"
-"  '#required': true\n"
-"  '#default_value': '[current-user:display-name]'\n"
-"email:\n"
-"  '#title': 'Your Email'\n"
-"  '#type': email\n"
-"  '#required': true\n"
-"  '#default_value': '[current-user:mail]'\n"
-"subject:\n"
-"  '#title': Subject\n"
-"  '#type': textfield\n"
-"  '#required': true\n"
-"  '#test': 'Testing contact webform from [site:name]'\n"
-"message:\n"
-"  '#title': Message\n"
-"  '#type': textarea\n"
-"  '#required': true\n"
-"  '#test': 'Please ignore this email.'\n"
-"actions:\n"
-"  '#type': webform_actions\n"
-"  '#title': 'Submit button(s)'\n"
-"  '#submit__label': 'Send message'\n"
-""
-msgstr ""
-
-#: 
 msgctxt "webform.webform.contact:settings:confirmation_url"
 msgid "<front>"
 msgstr "<front>"
-
-#: 
-msgctxt "webform.webform.contact:settings:confirmation_message"
-msgid "Your message has been sent."
-msgstr "Din besked er sendt."
 
 #: 
 msgctxt "webform.webform.contact:handlers:email_confirmation:label"
@@ -24407,19 +24318,9 @@ msgid "Email confirmation"
 msgstr "Mail-bekræftelse"
 
 #: 
-msgctxt "webform.webform.contact:handlers:email_confirmation:settings:from_name"
-msgid "_default"
-msgstr "_standard"
-
-#: 
 msgctxt "webform.webform.contact:handlers:email_confirmation:settings:subject"
 msgid "[webform_submission:values:subject:raw]"
 msgstr "[webform_submission:values:subject:raw]"
-
-#: 
-msgctxt "webform.webform.contact:handlers:email_confirmation:settings:body"
-msgid "[webform_submission:values:message:value]"
-msgstr "[webform_submission:values:message:value]"
 
 #: 
 msgctxt "webform.webform.contact:handlers:email_notification:label"
@@ -24427,19 +24328,9 @@ msgid "Email notification"
 msgstr "Email notifikation"
 
 #: 
-msgctxt "webform.webform.contact:handlers:email_notification:settings:from_name"
-msgid "[webform_submission:values:name:raw]"
-msgstr "[webform_submission:values:name:raw]"
-
-#: 
 msgctxt "webform.webform.contact:handlers:email_notification:settings:subject"
 msgid "[webform_submission:values:subject:raw]"
 msgstr "[webform_submission:values:subject:raw]"
-
-#: 
-msgctxt "webform.webform.contact:handlers:email_notification:settings:body"
-msgid "[webform_submission:values:message:value]"
-msgstr "[webform_submission:values:message:value]"
 
 #: 
 msgctxt "webform.webform_options.country_codes:label"
@@ -24535,7 +24426,7 @@ msgstr "'Fuldtid': 'Fuldtid'\n"
 #: 
 msgctxt "webform.webform_options.ethnicity:label"
 msgid "Ethnicity"
-msgstr ""
+msgstr "Etnicitet"
 
 #: 
 msgctxt "webform.webform_options.ethnicity:category"
@@ -26286,17 +26177,17 @@ msgstr ""
 
 #: 
 msgid "Event series"
-msgstr ""
+msgstr "Arrangementserie"
 
 #: 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_author:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: 
 msgctxt "field.field.user.user.field_author_name:label"
 msgid "Author name"
-msgstr ""
+msgstr "Forfatternavn"
 
 #: 
 msgctxt "field.field.user.user.field_author_name:description"
@@ -26306,12 +26197,12 @@ msgstr ""
 #: 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:field_author_name:label"
 msgid "Author name"
-msgstr ""
+msgstr "Forfatternavn"
 
 #: 
 msgctxt "views.view.event_instance_list:label"
 msgid "Event instance list"
-msgstr ""
+msgstr "Arrangementinstans liste"
 
 #: 
 msgctxt "views.view.event_instance_list:description"
@@ -26326,7 +26217,7 @@ msgstr "Standard"
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:title"
 msgid "Event instance list"
-msgstr ""
+msgstr "Arrangementinstans liste"
 
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:id:label"
@@ -26341,7 +26232,7 @@ msgstr ""
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:label"
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:alter:text"
@@ -26436,7 +26327,7 @@ msgstr "Søg efter titel, ID..."
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:expose:label"
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:label"
@@ -26491,7 +26382,7 @@ msgstr ""
 #: 
 msgctxt "views.view.event_series_admin:label"
 msgid "Event series admin"
-msgstr ""
+msgstr "Admin for arrangementserie"
 
 #: 
 msgctxt "views.view.event_series_admin:description"
@@ -26506,7 +26397,7 @@ msgstr "Standard"
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:title"
 msgid "Event series admin"
-msgstr ""
+msgstr "Admin for arrangementserie"
 
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:id:label"
@@ -26521,7 +26412,7 @@ msgstr "Titel"
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_instance_count:label"
 msgid "Event instances"
-msgstr ""
+msgstr "Arrangementinstanser"
 
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_start_date:label"
@@ -26631,10 +26522,196 @@ msgstr ""
 #: 
 msgctxt "views.view.event_series_admin:display:page_1:display_options:menu:title"
 msgid "Event series"
-msgstr ""
+msgstr "Arrangementserie"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
 msgid "Name"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Liked"
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Login"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Invalid search"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Your search is invalid. Please try again. In order to perform a valid search, you need to include at least three letters."
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "@total"
+msgstr ""
+
+#: 
+msgid "DPL Mail"
+msgstr ""
+
+#: 
+msgid "Handles mail related features and configuration"
+msgstr ""
+
+#: 
+msgid "DPL static content: Contact page"
+msgstr ""
+
+#: 
+msgid "Adds default contact page and contact webform categories"
+msgstr ""
+
+#: 
+msgid "DPL Webform"
+msgstr ""
+
+#: 
+msgid "Handles custom webform configuration"
+msgstr ""
+
+#: 
+msgid "Status message icon"
+msgstr ""
+
+#: 
+msgid "Liked"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.webform_email_categories.field_email:label"
+msgid "Email"
+msgstr ""
+
+#: 
+msgctxt "field.field.taxonomy_term.webform_email_categories.field_email:description"
+msgid "Add which email to send form submissions of this category to."
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.user_registration_linklist:label"
+msgid "User registration linklist"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.user_registration_linklist:description"
+msgid "This paragraph determines the placement of shortcuts to individual User Registration Section paragraphs. It allows administrators to specify where these shortcuts should appear."
+msgstr ""
+
+#: 
+msgctxt "taxonomy.vocabulary.webform_email_categories:name"
+msgid "Webform email categories"
+msgstr "Webform email categories"
+
+#: 
+msgctxt "taxonomy.vocabulary.webform_email_categories:description"
+msgid "List of email categories used for sending webform submissions. Each category is associated with an email address."
+msgstr "List of email categories used for sending webform submissions. Each category is associated with an email address."
+
+#: 
+msgctxt "webform.settings:settings:default_form_open_message"
+msgid "<p>This form has not yet been opened to submissions.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_close_message"
+msgid "<p>Sorry… This form is closed to new submissions.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_exception_message"
+msgid "<p>Unable to display this webform. Please contact the site administrator.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_confidential_message"
+msgid "<p>This form is confidential. You must <a href=\"[site:login-url]/logout?destination=[current-page:url:relative]\">Log out</a> to submit it.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_form_access_denied_message"
+msgid "<p>Please login to access this form.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_preview_message"
+msgid "<p>Please review your submission. Your submission is not complete until you press the \"Submit\" button!</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:settings:default_confirmation_message"
+msgid "<p>New submission added to [webform:title].</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.settings:file:file_private_redirect_message"
+msgid "<p>Please login to access the uploaded file.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:title"
+msgid "Kontaktformular"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:description"
+msgid "<p>Standard kontaktformular.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:elements"
+msgid "name:\n"
+"  '#type': textfield\n"
+"  '#title': 'Dit navn'\n"
+"  '#required': true\n"
+"email:\n"
+"  '#type': email\n"
+"  '#title': 'Din e-mailadresse'\n"
+"  '#required': true\n"
+"category:\n"
+"  '#type': webform_term_select\n"
+"  '#title': Kategori\n"
+"  '#required': true\n"
+"  '#vocabulary': webform_email_categories\n"
+"subject:\n"
+"  '#type': textfield\n"
+"  '#title': Emne\n"
+"  '#required': true\n"
+"  '#test': 'Testing contact webform from [site:name]'\n"
+"message:\n"
+"  '#type': textarea\n"
+"  '#title': Besked\n"
+"  '#required': true\n"
+"  '#test': 'Please ignore this email.'\n"
+"actions:\n"
+"  '#type': webform_actions\n"
+"  '#title': 'Submit button(s)'\n"
+"  '#submit__label': 'Send besked'\n"
+"notice:\n"
+"  '#type': webform_markup\n"
+"  '#markup': '<p>BEMÆRK! Indsæt aldrig CPR-nummer eller følsomme oplysninger i formularen.</p><p>Læs mere om <a href=\"/privatlivspolitik\" target=\"_blank\">behandling af persondata i vores privatlivspolitik.</a></p>'"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:settings:confirmation_message"
+msgid "<p>Your submission has been received. You will receive a confirmation mail soon.</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_confirmation:settings:body"
+msgid "<p>Hello [webform_submission:values:name]&nbsp;</p><p>We hereby confirm that we have received the following inquiry:</p><p>Time of arrival: [webform_submission:created]</p><p>Inquiry:<br>[webform_submission:values:subject]</p><p>[webform_submission:values:message]</p><p>---------</p><p>We will get back to you as soon as possible on the following mail: [webform_submission:values:email]&nbsp;<br><br>Kind regards</p>"
+msgstr ""
+
+#: 
+msgctxt "webform.webform.contact:handlers:email_notification:settings:body"
+msgid "<p>A new inquiry has arrived with the following info:</p><p>Name: [webform_submission:values:name]&nbsp;</p><p>Email: [webform_submission:values:email]&nbsp;</p><p>Time of arrival: [webform_submission:created]</p><p>Category: [webform_submission:values:category]</p><p>Subject: [webform_submission:values:subject]</p><p>Message: [webform_submission:values:message]</p>"
 msgstr ""
 

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-02 10:59+0200\n"
-"PO-Revision-Date: 2024-05-02 10:59+0200\n"
+"POT-Creation-Date: 2024-05-02 16:47+0200\n"
+"PO-Revision-Date: 2024-05-02 16:47+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1537,10 +1537,6 @@ msgstr "Du har lånt @count ud af @limit mulige e-lydbøger denne måned"
 msgctxt "Dashboard"
 msgid "Fees"
 msgstr "Gebyrer & erstatninger"
-
-msgctxt "Dashboard"
-msgid "@total,-"
-msgstr "@total"
 
 msgctxt "Dashboard"
 msgid "Loans"
@@ -3201,7 +3197,7 @@ msgstr ""
 
 msgctxt "Work Page"
 msgid "Your material has been ordered from another library"
-msgstr "Bestil fra et andet bibliotek"
+msgstr "Bestilt fra et andet bibliotek"
 
 msgctxt "Work Page"
 msgid "Item available, order through the librarys catalogue"
@@ -5987,7 +5983,7 @@ msgstr ""
 "enhedsklonformularen."
 
 msgid "Entities referenced by field <em>@label (@field_id)</em>."
-msgstr ""
+msgstr "Enheder refereret af feltet <em>@label (@field_id)</em>."
 
 msgid "Circular reference detected"
 msgstr ""
@@ -6422,7 +6418,7 @@ msgid "ERR Composite relationship test"
 msgstr ""
 
 msgid "Entity with parent type and ID."
-msgstr ""
+msgstr "Enhed med overordnet type og ID."
 
 msgid "Entity Host Base Field ERR"
 msgstr ""
@@ -7043,7 +7039,7 @@ msgid "Source Entity"
 msgstr "Kildeenhed"
 
 msgid "Enter the name of the %bundle from which to inherit data."
-msgstr ""
+msgstr "Indtast navnet på %bundle, hvorfra data skal arves."
 
 msgid "Add a new field inheritance field to this entity type and bundle."
 msgstr ""
@@ -7611,7 +7607,7 @@ msgid "Available tokens"
 msgstr "Tilgængelige symboler"
 
 msgid "Edit %label profile"
-msgstr ""
+msgstr "Rediger %label profil"
 
 msgid "Edit %label matcher"
 msgstr ""
@@ -8473,6 +8469,9 @@ msgid ""
 "Enter the route (path) for this new configuration, starting with a "
 "leading slash.<br />Note: this must already exist as a path in Drupal."
 msgstr ""
+"Indtast ruten (sti) for denne nye konfiguration, startende med et "
+"skråstreg.<br />Bemærk: denne skal allerede eksistere som en sti i "
+"Drupal."
 
 msgid "The path must begin with /"
 msgstr "Stien skal begynde med /"
@@ -11711,7 +11710,7 @@ msgid ""
 msgstr ""
 
 msgid "Event Creation"
-msgstr ""
+msgstr "Arrangør"
 
 msgid "Event Series Time Intervals"
 msgstr ""
@@ -11732,6 +11731,8 @@ msgid ""
 "Enter the earliest an event can start, in h:ia format. For example "
 "08:00am."
 msgstr ""
+"Indtast arrangementets starttidspunkt, i h:ia format. For eksempel kl. "
+"08:00am."
 
 msgid "Event Series Maximum Time"
 msgstr ""
@@ -11740,23 +11741,27 @@ msgid ""
 "Enter the latest an event can start, in h:ia format. For example "
 "11:45pm."
 msgstr ""
+"Indtast det seneste tidspunkt, hvor arrangementet starter, i h:ia "
+"format. For eksempel kl. 11:45pm."
 
 msgid "PHP date/time format"
 msgstr ""
 
 msgid "Event Series Date Format"
-msgstr ""
+msgstr "Arrangementseries datoformat"
 
 msgid ""
 "Enter the @link used when listing event dates. Default is F jS, Y "
 "h:iA."
 msgstr ""
+"Indtast det @link, der bruges, når arrangementdatoer listes. Standard "
+"er F jS, Y h:iA."
 
 msgid "Event Series Time Format"
 msgstr ""
 
 msgid "Enter the @link used when selecting times. Default is h:i A."
-msgstr ""
+msgstr "Indtast det @link, der bruges, når tider vælges. Standard er h:i A."
 
 msgid "Monday"
 msgstr "Mandag"
@@ -11780,7 +11785,7 @@ msgid "Sunday"
 msgstr "Søndag"
 
 msgid "Event Series Days"
-msgstr ""
+msgstr "Arrangementseries dage"
 
 msgid "Select the days of the week available when creating events."
 msgstr ""
@@ -11854,7 +11859,7 @@ msgid "Select the plugin to use when creating event instances."
 msgstr ""
 
 msgid "Event Display"
-msgstr ""
+msgstr "Arrangementsvisning"
 
 msgid "Event Series Items"
 msgstr ""
@@ -11888,13 +11893,13 @@ msgid "Start date"
 msgstr "Startdato"
 
 msgid "Enter the start date of this exclusion range"
-msgstr ""
+msgstr "Indtast startdatoen for dette udelukkelsesinterval"
 
 msgid "End date"
 msgstr "Slutdato"
 
 msgid "Enter the end date of this exclusion range"
-msgstr ""
+msgstr "Indtast slutdatoen for dette udelukkelsesinterval"
 
 msgid "Created the %label Excluded dates."
 msgstr "Oprettede %label Udelukkede datoer."
@@ -11942,15 +11947,17 @@ msgid "Revert content shared among translations"
 msgstr "Gendan indholds som deles mellem oversættelser"
 
 msgid "Event Instance Date Format"
-msgstr ""
+msgstr "Arrangementinstans datoformat"
 
 msgid "Event Instance Items"
-msgstr ""
+msgstr "Arrangementinstans emner"
 
 msgid ""
 "Enter the number of items to show per page in the default event "
 "instance listing table."
 msgstr ""
+"Indtast antallet af elementer, der skal vises pr. side i "
+"standardtabellen for arrangementinstanser."
 
 msgid ""
 "Deleting this event series type will also delete the corresponding "
@@ -11973,10 +11980,10 @@ msgid "Label for the Included dates."
 msgstr ""
 
 msgid "Enter the start date of this inclusion range"
-msgstr ""
+msgstr "Indtast startdatoen for dette inklusionsinterval"
 
 msgid "Enter the end date of this inclusion range"
-msgstr ""
+msgstr "Indtast slutdatoen for dette inklusionsinterval"
 
 msgid "Created the %label Included dates."
 msgstr "Oprettede %label Inkluderede datoer."
@@ -12076,10 +12083,10 @@ msgid "Body"
 msgstr "Brødtekst"
 
 msgid "Event Date"
-msgstr ""
+msgstr "Arrangementsdato"
 
 msgid "Event Series ID"
-msgstr ""
+msgstr "Arrangementseries ID"
 
 msgid "The ID of the event series entity."
 msgstr ""
@@ -12292,7 +12299,7 @@ msgid "Separator"
 msgstr "Skilletegn"
 
 msgid "Enter the separator to use between start and end dates."
-msgstr ""
+msgstr "Indtast separatoren, der skal bruges mellem start- og slutdatoer."
 
 msgid "Link to the referenced entity"
 msgstr "Link til den refererede entity"
@@ -12612,7 +12619,7 @@ msgid "Hour(s)"
 msgstr "Time(r)"
 
 msgid "Event Name"
-msgstr ""
+msgstr "Arrangementsnavn"
 
 msgid "Updated"
 msgstr "Opdateret"
@@ -12654,7 +12661,7 @@ msgid "Current revision"
 msgstr "Nuværende version"
 
 msgid "Event instance type"
-msgstr ""
+msgstr "Arrangementinstans type"
 
 msgid "Included dates"
 msgstr ""
@@ -12790,7 +12797,7 @@ msgid "Current page where form appears"
 msgstr "Denne side, hvor formularen vises"
 
 msgid "Event instance page"
-msgstr ""
+msgstr "Arrangementinstans side"
 
 msgid "Event series page"
 msgstr ""
@@ -12821,6 +12828,8 @@ msgid ""
 "Enter the number of items to show per page in the default registrant "
 "listing table."
 msgstr ""
+"Indtast antallet af elementer, der skal vises pr. side i "
+"standardtabellen for ´deltagere."
 
 msgid "Registrant Date Format"
 msgstr ""
@@ -12829,12 +12838,14 @@ msgid ""
 "Enter the @link used when listing registrants. Default is F jS, Y "
 "h:iA."
 msgstr ""
+"Indtast det @link, der bruges, når deltagere listes. Standard er F "
+"jS, Y h:iA."
 
 msgid "Registrant Title"
 msgstr ""
 
 msgid "Enter the format for the title field"
-msgstr ""
+msgstr "Indtast formatet for titelfeltet"
 
 msgid "Registration Messages"
 msgstr "Tilmeldingsbeskeder"
@@ -13126,10 +13137,10 @@ msgid "Waitlisted Users"
 msgstr "Brugere på venteliste"
 
 msgid "Enter the subject of the email to send to the registrants."
-msgstr ""
+msgstr "Indtast emnelinjen for e-mailen, der skal sendes til deltagerne."
 
 msgid "Enter the message of the email to send to the registrants."
-msgstr ""
+msgstr "Indtast beskeden i e-mailen, der skal sendes til deltagerne."
 
 msgid "Send Email(s)"
 msgstr "Send email(s)"
@@ -13174,7 +13185,7 @@ msgid "The registrant type."
 msgstr "Typen af registreret."
 
 msgid "Event Instance ID"
-msgstr ""
+msgstr "Arrangementinstans ID"
 
 msgid "The ID of the eventinstance entity."
 msgstr ""
@@ -13207,7 +13218,7 @@ msgid "Availability."
 msgstr "Tilgængelighed."
 
 msgid "Event Registration Access"
-msgstr ""
+msgstr "Adgang for registrering"
 
 msgid "Enable Registration"
 msgstr "Aktiver registrering"
@@ -13231,7 +13242,7 @@ msgid "Capacity"
 msgstr "Kapacitet"
 
 msgid "Enter the number of registrants that can attend the event."
-msgstr ""
+msgstr "Indtast antallet af deltagere, der kan deltage i arrangementet."
 
 msgid "Select whether to enable a waitlist."
 msgstr "Vælg, om du vil aktivere en venteliste."
@@ -13352,7 +13363,7 @@ msgid "Individual Event Registration"
 msgstr ""
 
 msgid "Entire Series Registration"
-msgstr ""
+msgstr "Registrering for hele serien"
 
 msgid ""
 "Choose between open or scheduled registration. Open registration ends "
@@ -13459,7 +13470,7 @@ msgid "No default body configured for @key emails in @config_name."
 msgstr ""
 
 msgid "Event Registration"
-msgstr ""
+msgstr "Arrangementsregistrering"
 
 msgid "Availability Count"
 msgstr "Tilgængelighedsantal"
@@ -13534,7 +13545,7 @@ msgid "Show a button linking to the registration page for this event instance"
 msgstr ""
 
 msgid "Event Registration Reminders"
-msgstr ""
+msgstr "Påmindelse om registrering"
 
 msgid "Reminder Date"
 msgstr ""
@@ -13583,7 +13594,7 @@ msgid ""
 msgstr ""
 
 msgid "Event Series"
-msgstr ""
+msgstr "Arrangementserie"
 
 msgid "Tokens for the eventseries entity type."
 msgstr "Tokens for eventseries-enhedstypen."
@@ -13601,7 +13612,7 @@ msgid "Send an email to registrants when the event name changes?"
 msgstr "Send en e-mail til tilmeldte, når arrangementets navn ændres?"
 
 msgid "Event Instance"
-msgstr ""
+msgstr "Arrangementinstans"
 
 msgid "Event Instance tokens from the Recurring Events Registration module."
 msgstr ""
@@ -13613,7 +13624,7 @@ msgid "The URL for registering for an event instance."
 msgstr ""
 
 msgid "Event Registration Type"
-msgstr ""
+msgstr "Arrangementsregistreringstype"
 
 msgid "The registration type of the event instance."
 msgstr ""
@@ -13682,7 +13693,7 @@ msgid "Registrations for series: %name"
 msgstr "Tilmeldinger til serier: %name"
 
 msgid "Event iCalendar Link"
-msgstr ""
+msgstr "Arrangement iCalendar link"
 
 msgid "iCalendar"
 msgstr ""
@@ -13856,19 +13867,19 @@ msgid "The description of the event instance."
 msgstr "Beskrivelse af arrangementsinstansen."
 
 msgid "Event Instance Start Date"
-msgstr ""
+msgstr "Arrangementinstans startdato"
 
 msgid "The start date of the event instance."
 msgstr ""
 
 msgid "Event Instance End Date"
-msgstr ""
+msgstr "Arrangementinstans slutdato"
 
 msgid "The end date of the event instance."
 msgstr ""
 
 msgid "Event Instance URL"
-msgstr ""
+msgstr "Arrangementinstans URL"
 
 msgid "The URL of the event instance."
 msgstr ""
@@ -13886,7 +13897,7 @@ msgid "The description of the event series."
 msgstr "Beskrivelse af arrangementsserien."
 
 msgid "Event Instance entity"
-msgstr ""
+msgstr "Arrangementinstans enhed"
 
 msgid "Event series entity"
 msgstr ""
@@ -13971,7 +13982,7 @@ msgid "Stores an event registration configuration"
 msgstr "Gemmer en konfiguration til registrering af et arrangement"
 
 msgid "Event registration widget"
-msgstr ""
+msgstr "Widget for arrangementsregistrering"
 
 msgid "Adds Registrant entities to groups."
 msgstr ""
@@ -13980,7 +13991,7 @@ msgid "Stores an event registration reminders configuration"
 msgstr "Gemmer en konfiguration af påmindelser om begivenhedsregistrering"
 
 msgid "Event registration reminders widget"
-msgstr ""
+msgstr "Widget for påmindelse om registrering"
 
 msgid "Event iCal property mapping"
 msgstr ""
@@ -14085,7 +14096,7 @@ msgid "Event Series Settings"
 msgstr ""
 
 msgid "Event Instance Settings"
-msgstr ""
+msgstr "Arrangementinstans indstillinger"
 
 msgid "Configure Event Series and Instances."
 msgstr ""
@@ -14103,7 +14114,7 @@ msgid "Event series listing."
 msgstr ""
 
 msgid "Event instance listing."
-msgstr ""
+msgstr "Arrangementinstans liste."
 
 msgid "Configure Event Series Entity"
 msgstr ""
@@ -14124,7 +14135,7 @@ msgid "Add An Event Series Type"
 msgstr "Tilføj en arrangementsserie"
 
 msgid "Event Instance Types"
-msgstr ""
+msgstr "Arrangementinstans typer"
 
 msgid "Configure Event Instance Types"
 msgstr ""
@@ -14160,7 +14171,7 @@ msgid "Event Series types"
 msgstr ""
 
 msgid "Event Instance types"
-msgstr ""
+msgstr "Arrangementinstans typer"
 
 msgid "Add Event Series Type"
 msgstr "Tilføj type af arrangement-serie"
@@ -14416,7 +14427,7 @@ msgid ""
 msgstr ""
 
 msgid "Entity Types"
-msgstr ""
+msgstr "Enhedstyper"
 
 msgid "no entity types defined"
 msgstr ""
@@ -16854,5 +16865,51 @@ msgid ""
 msgstr ""
 
 msgid "Event series"
+msgstr "Arrangementserie"
+
+msgctxt "Global"
+msgid "Liked"
+msgstr ""
+
+msgctxt "Global"
+msgid "Login"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Invalid search"
+msgstr ""
+
+msgctxt "Search Result"
+msgid ""
+"Your search is invalid. Please try again. In order to perform a valid "
+"search, you need to include at least three letters."
+msgstr ""
+
+msgctxt "Dashboard"
+msgid "@total"
+msgstr ""
+
+msgid "DPL Mail"
+msgstr ""
+
+msgid "Handles mail related features and configuration"
+msgstr ""
+
+msgid "DPL static content: Contact page"
+msgstr ""
+
+msgid "Adds default contact page and contact webform categories"
+msgstr ""
+
+msgid "DPL Webform"
+msgstr ""
+
+msgid "Handles custom webform configuration"
+msgstr ""
+
+msgid "Status message icon"
+msgstr ""
+
+msgid "Liked"
 msgstr ""
 
