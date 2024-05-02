@@ -55,6 +55,9 @@ $config['dpl_react_apps.settings']['services'] = [
   'material-list' => ['base_url' => 'https://prod.materiallist.dandigbib.org'],
 ];
 
+// Add tracer for Webprofiler module
+$settings['tracer_plugin'] = 'stopwatch_tracer';
+
 if (getenv('CI')) {
   // Curl settings needed to make PHP ignore SSL errors when using Wiremock as
   // a proxy. We do not have a proper SSL setup with trusted certificates.
