@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-01 13:14+0200\n"
-"PO-Revision-Date: 2024-05-01 13:14+0200\n"
+"POT-Creation-Date: 2024-05-02 08:50+0200\n"
+"PO-Revision-Date: 2024-05-02 08:50+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4304,6 +4304,10 @@ msgid ""
 "results, and an editor chooses 12. The list will display 8 instead of "
 "11, since the grid should be able to increment by 4. "
 msgstr ""
+"Bestemmer mængden af materialer, der vil blive vist, baseret på "
+"CQL-strengen. <br /><br />Obs: Hvis for eksempel en CQL-streng har 11 "
+"resultater, og en redaktør vælger 12. Listen vil vise 8 i stedet for "
+"11, da gitteret skal kunne øges med 4."
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:description"
 msgid ""
@@ -4506,7 +4510,7 @@ msgstr "Fra"
 
 msgctxt "field.field.taxonomy_term.opening_hours_categories.field_opening_hours_color:label"
 msgid "Color"
-msgstr ""
+msgstr "Farve"
 
 msgctxt "field.field.taxonomy_term.opening_hours_categories.field_opening_hours_color:description"
 msgid ""
@@ -4585,11 +4589,11 @@ msgstr "Alle"
 
 msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:third_party_settings:field_group:group_related_children:label"
 msgid "Related children"
-msgstr ""
+msgstr "Relaterede sider"
 
 msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:content:field_children_title:settings:placeholder"
 msgid "Related content for \"@title\""
-msgstr ""
+msgstr "Relateret indhold til @title"
 
 msgctxt "core.entity_view_mode.media.list_teaser:label"
 msgid "List teaser (4:3)"
@@ -4736,11 +4740,11 @@ msgstr "Arkiver webformular"
 
 msgctxt "system.action.webform_close_action:label"
 msgid "Close webform"
-msgstr ""
+msgstr "Lukket webformular"
 
 msgctxt "system.action.webform_delete_action:label"
 msgid "Delete webform"
-msgstr ""
+msgstr "Slet webformular"
 
 msgctxt "system.action.webform_open_action:label"
 msgid "Open webform"
@@ -4748,7 +4752,7 @@ msgstr ""
 
 msgctxt "system.action.webform_submission_delete_action:label"
 msgid "Delete submission"
-msgstr ""
+msgstr "Stop indsendelse"
 
 msgctxt "system.action.webform_submission_make_lock_action:label"
 msgid "Lock submission"
@@ -4776,7 +4780,7 @@ msgstr "Indsendelse via webformular"
 
 msgctxt "views.view.webform_submissions:description"
 msgid "Default webform submissions views."
-msgstr ""
+msgstr "Standard visning af webformular efter indsendelse."
 
 msgctxt "views.view.webform_submissions:display:default:display_title"
 msgid "Master"
@@ -4792,11 +4796,11 @@ msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:fields:in_draft:label"
 msgid "Draft"
-msgstr ""
+msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:fields:created:label"
 msgid "Created"
-msgstr ""
+msgstr "Oprettet"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:fields:remote_addr:label"
 msgid "IP address"
@@ -4848,7 +4852,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:empty:area_text_custom:content"
 msgid "No submissions available."
@@ -4860,7 +4864,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:default:display_options:header:result:content"
 msgid "Displaying @start - @end of @total"
-msgstr ""
+msgstr "Viser @start - @end af @total"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_title"
 msgid "Embed: Administer"
@@ -4880,7 +4884,7 @@ msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:in_draft:label"
 msgid "Draft"
-msgstr ""
+msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:sticky:label"
 msgid "Sticky"
@@ -4892,7 +4896,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:created:label"
 msgid "Created"
-msgstr ""
+msgstr "Oprettet"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:completed:label"
 msgid "Completed"
@@ -4928,7 +4932,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_default:display_options:display_description"
 msgid "Display submissions."
-msgstr ""
+msgstr "Vis indsendelser."
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_title"
 msgid "Embed: Manage"
@@ -4948,7 +4952,7 @@ msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:in_draft:label"
 msgid "Draft"
-msgstr ""
+msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:sticky:label"
 msgid "Sticky"
@@ -4960,7 +4964,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:created:label"
 msgid "Created"
-msgstr ""
+msgstr "Oprettet"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:completed:label"
 msgid "Completed"
@@ -4984,7 +4988,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:edit_webform_submission:text"
 msgid "edit"
-msgstr ""
+msgstr "rediger"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:in_draft:expose:label"
 msgid "Is draft"
@@ -5012,7 +5016,7 @@ msgstr "#"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:in_draft:label"
 msgid "Draft"
-msgstr ""
+msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sticky:label"
 msgid "Sticky"
@@ -5024,7 +5028,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:created:label"
 msgid "Created"
-msgstr ""
+msgstr "Oprettet"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:completed:label"
 msgid "Completed"
@@ -5056,7 +5060,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:display_description"
 msgid "Review submissions."
-msgstr ""
+msgstr "Gennemgå indsendelser."
 
 msgctxt "webform.settings:settings:default_form_open_message"
 msgid "This form has not yet been opened to submissions."
@@ -5074,15 +5078,15 @@ msgstr ""
 
 msgctxt "webform.settings:settings:default_submit_button_label"
 msgid "Submit"
-msgstr ""
+msgstr "Indsend"
 
 msgctxt "webform.settings:settings:default_reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "webform.settings:settings:default_delete_button_label"
 msgid "Delete"
-msgstr ""
+msgstr "Slet"
 
 msgctxt "webform.settings:settings:default_form_confidential_message"
 msgid ""
@@ -5157,6 +5161,8 @@ msgid ""
 "Submission saved. You may return to this form later and it will "
 "restore the current values."
 msgstr ""
+"Indsendelse gemt. Du kan vende tilbage til denne formular senere, og "
+"den vil gendanne de aktuelle værdier."
 
 msgctxt "webform.settings:settings:default_draft_loaded_message"
 msgid ""
@@ -5463,7 +5469,7 @@ msgstr ""
 
 msgctxt "webform.webform.contact:title"
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 msgctxt "webform.webform.contact:description"
 msgid "<p>Basic email contact webform.</p>"
@@ -5517,7 +5523,7 @@ msgstr "Din besked er sendt."
 
 msgctxt "webform.webform.contact:handlers:email_confirmation:label"
 msgid "Email confirmation"
-msgstr ""
+msgstr "Mail-bekræftelse"
 
 msgctxt "webform.webform.contact:handlers:email_confirmation:settings:from_name"
 msgid "_default"
@@ -5533,7 +5539,7 @@ msgstr "[webform_submission:values:message:value]"
 
 msgctxt "webform.webform.contact:handlers:email_notification:label"
 msgid "Email notification"
-msgstr ""
+msgstr "Email notifikation"
 
 msgctxt "webform.webform.contact:handlers:email_notification:settings:from_name"
 msgid "[webform_submission:values:name:raw]"
@@ -5565,11 +5571,11 @@ msgstr ""
 
 msgctxt "webform.webform_options.days:label"
 msgid "Days"
-msgstr ""
+msgstr "Dage"
 
 msgctxt "webform.webform_options.days:category"
 msgid "Date and time"
-msgstr ""
+msgstr "Dato og tid"
 
 msgctxt "webform.webform_options.days:options"
 msgid ""
@@ -5595,11 +5601,11 @@ msgstr ""
 
 msgctxt "webform.webform_options.education:label"
 msgid "Education"
-msgstr ""
+msgstr "Uddannelse"
 
 msgctxt "webform.webform_options.education:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.education:options"
 msgid ""
@@ -5614,11 +5620,11 @@ msgstr ""
 
 msgctxt "webform.webform_options.employment_status:label"
 msgid "Employment status"
-msgstr ""
+msgstr "Ansættelsesstatus"
 
 msgctxt "webform.webform_options.employment_status:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.employment_status:options"
 msgid ""
@@ -5643,7 +5649,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.ethnicity:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.ethnicity:options"
 msgid ""
@@ -5678,7 +5684,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.gender:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.gender:options"
 msgid ""
@@ -5732,7 +5738,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.industry:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.industry:options"
 msgid ""
@@ -6067,7 +6073,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.marital_status:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.marital_status:options"
 msgid ""
@@ -6089,7 +6095,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.months:category"
 msgid "Date and time"
-msgstr ""
+msgstr "Dato og tid"
 
 msgctxt "webform.webform_options.months:options"
 msgid ""
@@ -6117,7 +6123,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.phone_types:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.phone_types:options"
 msgid ""
@@ -6228,7 +6234,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.relationship:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.relationship:options"
 msgid ""
@@ -6247,7 +6253,7 @@ msgstr "Køn"
 
 msgctxt "webform.webform_options.sex:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.sex:options"
 msgid ""
@@ -6262,7 +6268,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.sex_icao:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.sex_icao:options"
 msgid ""
@@ -7022,7 +7028,7 @@ msgstr "Tidszoner"
 
 msgctxt "webform.webform_options.time_zones:category"
 msgid "Date and time"
-msgstr ""
+msgstr "Dato og tid"
 
 msgctxt "webform.webform_options.titles:label"
 msgid "Titles"
@@ -7030,7 +7036,7 @@ msgstr "Titler"
 
 msgctxt "webform.webform_options.titles:category"
 msgid "Demographic"
-msgstr ""
+msgstr "Demografisk"
 
 msgctxt "webform.webform_options.titles:options"
 msgid ""
@@ -7085,19 +7091,19 @@ msgstr ""
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_day"
 msgid "d F Y"
-msgstr ""
+msgstr "d F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_month"
 msgid "d - {d} F Y"
-msgstr ""
+msgstr "d - {d} F Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_months"
 msgid "d F - {d} {F} Y"
-msgstr ""
+msgstr "d F - {d} {F} Y"
 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_years"
 msgid "d F Y - {d} {F} {Y}"
-msgstr ""
+msgstr "d F Y - {d} {F} {Y}"
 
 msgctxt "core.entity_view_mode.eventinstance.list_teaser_stacked_parent:label"
 msgid "List teaser stacked parent"
@@ -7236,7 +7242,7 @@ msgstr ""
 
 msgctxt "system.action.redirect_delete_action:label"
 msgid "Delete redirect"
-msgstr ""
+msgstr "Slet omdirigering"
 
 msgctxt "taxonomy.vocabulary.opening_hours_categories:name"
 msgid "Åbningstidskategorier"
@@ -7262,7 +7268,7 @@ msgstr ""
 
 msgctxt "views.view.filtered_event_list:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -7270,7 +7276,7 @@ msgstr "Anvend"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
@@ -7282,7 +7288,7 @@ msgstr ""
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
 msgid "All"
@@ -7298,7 +7304,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:label"
 msgid "Redirect"
-msgstr ""
+msgstr "Omdiriger"
 
 msgctxt "views.view.redirect:description"
 msgid "List of redirects"
@@ -7310,7 +7316,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:display:default:display_options:title"
 msgid "Redirect"
-msgstr ""
+msgstr "Omdiriger"
 
 msgctxt "views.view.redirect:display:default:display_options:fields:redirect_bulk_form:action_title"
 msgid "With selection"
@@ -7322,7 +7328,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:display:default:display_options:fields:created:label"
 msgid "Created"
-msgstr ""
+msgstr "Oprettet"
 
 msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:next"
 msgid "next ›"
@@ -7358,7 +7364,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
@@ -7370,7 +7376,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.redirect:display:default:display_options:empty:area_text_custom:content"
 msgid "There is no redirect yet."
@@ -7466,7 +7472,7 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:title"
 msgid "Event instance list"
@@ -7494,19 +7500,19 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:changed:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Unpublished"
-msgstr ""
+msgstr "Afpubliceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:operations:label"
 msgid "Operations links"
@@ -7530,11 +7536,11 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -7542,7 +7548,7 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:arguments:eventseries_id:exception:title"
 msgid "All"
@@ -7550,11 +7556,11 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:combine:expose:placeholder"
 msgid "Search by title, ID.."
-msgstr ""
+msgstr "Søg efter titel, ID..."
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:expose:label"
 msgid "Event Date"
@@ -7562,11 +7568,11 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:label"
 msgid "Date filters"
-msgstr ""
+msgstr "Filtrering efter dato"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:1:title"
 msgid "Show all events"
-msgstr ""
+msgstr "Vis alle arrangementer"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:2:title"
 msgid "Only upcoming events"
@@ -7578,19 +7584,19 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:expose:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:group_items:1:title"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:group_info:group_items:2:title"
 msgid "Unpublished"
-msgstr ""
+msgstr "Afpubliceret"
 
 msgctxt "views.view.event_instance_list:display:page_1:display_title"
 msgid "Page"
@@ -7612,7 +7618,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:title"
 msgid "Event series admin"
@@ -7624,7 +7630,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_instance_count:label"
 msgid "Event instances"
@@ -7636,19 +7642,19 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:changed:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:settings:format_custom_false"
 msgid "Unpublished"
-msgstr ""
+msgstr "Afpubliceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:operations:label"
 msgid "Operations links"
@@ -7672,11 +7678,11 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -7684,7 +7690,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:label"
 msgid "Combine fields filter"
@@ -7692,19 +7698,19 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:placeholder"
 msgid "Search by title, ID.."
-msgstr ""
+msgstr "Søg efter titel, ID..."
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:expose:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:label"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:group_items:1:title"
 msgid "Published"
-msgstr ""
+msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:group_items:2:title"
 msgid "Unpublished"
