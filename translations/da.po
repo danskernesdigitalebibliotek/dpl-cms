@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-02 08:50+0200\n"
-"PO-Revision-Date: 2024-05-02 08:50+0200\n"
+"POT-Creation-Date: 2024-05-02 09:51+0200\n"
+"PO-Revision-Date: 2024-05-02 09:51+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -5180,7 +5180,7 @@ msgid ""
 msgstr ""
 
 msgid "Crop configuration"
-msgstr "Beskær konfiguration"
+msgstr "Beskærings konfiguration"
 
 msgid ""
 "There are no file or image fields on this bundle at the moment. In "
@@ -5305,7 +5305,7 @@ msgid "Entity provider @id not found."
 msgstr ""
 
 msgid "Crop ID"
-msgstr "Beskær ID"
+msgstr "Beskærings ID"
 
 msgid "The crop ID."
 msgstr ""
@@ -5389,10 +5389,10 @@ msgid "The log entry explaining the changes in this revision."
 msgstr "Logbeskeden som beskriver ændringerne i denne version."
 
 msgid "Crop type"
-msgstr "Beskær type"
+msgstr "Beskærings type"
 
 msgid "Crop type to be used for the image style."
-msgstr "Beskær"
+msgstr "Beskæring som skal anvendes til denne billedtype."
 
 msgid "Automatic crop provider"
 msgstr ""
@@ -5470,7 +5470,7 @@ msgid "Are you sure you want to delete the crop type @name?"
 msgstr "Er du sikker på, at du vil slette beskæringstypen @name?"
 
 msgid "Crop API"
-msgstr "Beskær API"
+msgstr "Beskærings API"
 
 msgid ""
 "This branch of Crop API is not compatible with the version of Media "
@@ -5509,7 +5509,7 @@ msgid "Applies manually provided crop to the image."
 msgstr ""
 
 msgid "Crop types"
-msgstr "Beskær typer"
+msgstr "Beskærings typer"
 
 msgid "Media entity crop"
 msgstr ""
@@ -5933,7 +5933,7 @@ msgid "@type"
 msgstr "@type"
 
 msgid "Clone form settings"
-msgstr "Kopier form settings"
+msgstr "Klon formularindstillinger"
 
 msgid ""
 "For each type of child entity (the entity that's referenced by the "
@@ -6164,9 +6164,7 @@ msgstr ""
 "indhold."
 
 msgid "Define the current content as a template when cloning content"
-msgstr ""
-"Definer det nuværende indhold som en skabelon ved kopiering af "
-"indhold"
+msgstr "Definer det nuværende indhold som en skabelon ved kloning af indhold"
 
 msgid "Set an image for the Content template"
 msgstr "Indstil et billede til indholdsskabelonen"
@@ -6967,7 +6965,7 @@ msgstr ""
 "er de samme."
 
 msgid "Created the %label field inheritance."
-msgstr "Oprettet %label feltarv."
+msgstr "Oprettede %label feltarv."
 
 msgid "Saved the %label field inheritance."
 msgstr ""
@@ -7152,9 +7150,7 @@ msgstr ""
 msgid ""
 "Crops image while keeping its focal point as close to centered as "
 "possible."
-msgstr ""
-"Beskærer billedet samtidig med at holde fokuspunktet så centralt som "
-"muligt."
+msgstr "Beskærer billedet og holder fokuspunktet så centralt som muligt."
 
 msgid "Focal Point Scale and Crop"
 msgstr ""
@@ -7184,7 +7180,7 @@ msgid "Edit %title"
 msgstr "Redigér %title"
 
 msgid "Back to Administration"
-msgstr "Tilbage til admin"
+msgstr "Tilbage til Administration"
 
 msgid ""
 "This module changes the layout of the administration menu, and is "
@@ -7340,7 +7336,7 @@ msgid "The text will be displayed on the <em>profile collection</em> page."
 msgstr "Teksten vil blive vist på <em>profile collection</em> siden."
 
 msgid "Created new profile %label."
-msgstr "Oprettet ny profil %label."
+msgstr "Oprettede ny profil %label."
 
 msgid "Updated profile %label."
 msgstr "Opdateret profil %label."
@@ -7865,7 +7861,7 @@ msgstr ""
 "at metatags bliver brugt."
 
 msgid "Created the %label Metatag defaults."
-msgstr "Oprettet %label Meta tag standarder."
+msgstr "Oprettede %label Meta tag standarder."
 
 msgid "Saved the %label Metatag defaults."
 msgstr "Gemte %label Metatag standarder."
@@ -8240,7 +8236,7 @@ msgid ""
 msgstr ""
 
 msgid "Do you want to revert meta tags for @view_name : @display_name?"
-msgstr "Vil du gendanne meta tags for @view_name : @display_name?"
+msgstr "Vil du gendanne metatags for @view_name : @display_name?"
 
 msgid ""
 "You are about to revert the custom meta tags for the %display_name "
@@ -8496,7 +8492,7 @@ msgid "The path does not exist as an internal Drupal route."
 msgstr "Stien eksisterer ikke som en intern Drupalrute."
 
 msgid "Created metatags for the path: @url. Internal route: @route."
-msgstr "Oprettet meta tags for stien: @url. Intern rute: @route."
+msgstr "Oprettede meta tags for stien: @url. Intern rute: @route."
 
 msgid "The metatags could not be created for the path: @url."
 msgstr "Metatags kunne ikke oprettes for stien: @url."
@@ -8861,7 +8857,7 @@ msgid "Date (often a range) of validity of a resource."
 msgstr "Dato (ofte et interval) for en ressources gyldighed."
 
 msgid "Temporal Coverage"
-msgstr "Midlertidig dæknin"
+msgstr "Midlertidig dækning"
 
 msgid "Temporal characteristics of the resource."
 msgstr "Midlertidige karakteristika af ressourcen."
@@ -9013,7 +9009,7 @@ msgid ""
 msgstr ""
 
 msgid "Creator"
-msgstr "Formidler"
+msgstr "Forfatter"
 
 msgid ""
 "An entity primarily responsible for making the resource. Examples of a "
@@ -9247,7 +9243,7 @@ msgid ""
 msgstr ""
 
 msgid "Previous page URL"
-msgstr "Forudgående side URL"
+msgstr "URL til forrige side"
 
 msgid "Used for paginated content by providing URL with rel='prev' link."
 msgstr "Bruges til pagineret indhold ved at give URL med rel='prev'-link."
@@ -10564,10 +10560,10 @@ msgid "The type of the content, e.g., <em>movie</em>."
 msgstr "Typen af indhold, f.eks. <em>movie</em>."
 
 msgid "Tag words"
-msgstr "Tag ord"
+msgstr "Tags"
 
 msgid "Tag words associated with this video."
-msgstr "Tag ord forbundet med denne video."
+msgstr "Tags forbundet med denne video."
 
 msgid "Locality"
 msgstr "Lokalitet"
@@ -10705,7 +10701,7 @@ msgid "The roles of the actor(s)."
 msgstr ""
 
 msgid "Series"
-msgstr "Serier"
+msgstr "Serie"
 
 msgid "The TV show this series belongs to."
 msgstr "Den tv-serie, som denne serie tilhører."
@@ -11045,7 +11041,7 @@ msgid "Multiple Fields Remove Button"
 msgstr ""
 
 msgid "Add remove button for multi showing fields."
-msgstr "Tilføj fjernknap for felter med multivisning."
+msgstr "Tilføj \"fjern\"-knap for felter med multivisning."
 
 msgid "Add another item"
 msgstr "Tilføj endnu et element"
@@ -11087,7 +11083,7 @@ msgid "Multiple two"
 msgstr ""
 
 msgid "Texfield two"
-msgstr "Tekstefelt to"
+msgstr "Tekstfelt to"
 
 msgid "Partial required"
 msgstr ""
@@ -11901,7 +11897,7 @@ msgid "Enter the end date of this exclusion range"
 msgstr ""
 
 msgid "Created the %label Excluded dates."
-msgstr "Oprettet %label Udelukkede datoer."
+msgstr "Oprettede %label Udelukkede datoer."
 
 msgid "Saved the %label Excluded dates."
 msgstr ""
@@ -11983,7 +11979,7 @@ msgid "Enter the end date of this inclusion range"
 msgstr ""
 
 msgid "Created the %label Included dates."
-msgstr "Oprettet %label Inkluderede datoer."
+msgstr "Oprettede %label Inkluderede datoer."
 
 msgid "Saved the %label Included dates."
 msgstr ""
@@ -12027,13 +12023,15 @@ msgid "This text will be displayed on the <em>Add event</em> page."
 msgstr "Denne tekst vil blive vist på <em>Add event</em> side."
 
 msgid "Created the %label event series type."
-msgstr "Oprettet %label arrangement serietype."
+msgstr "Oprettede %label arrangement serietype."
 
 msgid "Saved the %label event series type."
 msgstr ""
 
 msgid "Are you sure you want to delete event %name and its instances?"
-msgstr "Er du sikker på, at du vil slette arrangementer %name ?"
+msgstr ""
+"Er du sikker på, at du vil slette arrangementet %name og dets "
+"instanser?"
 
 msgid ""
 "This event series contains %count events taking place on the following "
@@ -12060,7 +12058,7 @@ msgid "Label for the Event instance type."
 msgstr ""
 
 msgid "Created the %label event instance type."
-msgstr "Oprettet %label arrangement instanstype."
+msgstr "Oprettede %label arrangement instanstype."
 
 msgid "Saved the %label event instance type."
 msgstr ""
@@ -13412,7 +13410,7 @@ msgid "seconds"
 msgstr "sekunder"
 
 msgid "before the event starts"
-msgstr "Før arrangementet begynder"
+msgstr "før arrangementet begynder"
 
 msgid "Select when to close registration"
 msgstr "Vælg, hvornår der skal lukkes for tilmelding"
@@ -14165,7 +14163,7 @@ msgid "Event Instance types"
 msgstr ""
 
 msgid "Add Event Series Type"
-msgstr "Tilføj type af arrangement-serier"
+msgstr "Tilføj type af arrangement-serie"
 
 msgid "Add Excluded dates"
 msgstr "Tilføj udelukkede datoer"
@@ -14793,7 +14791,7 @@ msgid "The default time is @default_time."
 msgstr "Standardtiden er @default_time."
 
 msgid "Enter a date and time."
-msgstr "Indtast en dato og tid."
+msgstr "Indtast en dato og et tidspunkt."
 
 msgid "Leave the date blank for no scheduled publishing."
 msgstr ""
@@ -16042,7 +16040,7 @@ msgid "Port"
 msgstr "Port"
 
 msgid "Request Method"
-msgstr "Påkræv metode"
+msgstr "Påkrævet metode"
 
 msgid "Scheme"
 msgstr "Skema"
@@ -16293,7 +16291,7 @@ msgid "Automatic infinite scroll"
 msgstr "Automatisk \"infinite scroll\""
 
 msgid "Click to load"
-msgstr "Klik for load"
+msgstr "Klik for at indlæse"
 
 msgid "Initially load all pages"
 msgstr ""
@@ -16812,7 +16810,7 @@ msgstr "Slutdato"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "End time"
-msgstr "Sluttid"
+msgstr "Sluttidspunkt"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Every"

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-02 08:50+0200\n"
-"PO-Revision-Date: 2024-05-02 08:50+0200\n"
+"POT-Creation-Date: 2024-05-02 09:51+0200\n"
+"PO-Revision-Date: 2024-05-02 09:51+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4522,15 +4522,15 @@ msgstr ""
 
 msgctxt "image.style.card_large:label"
 msgid "Card - Large - 551:312"
-msgstr "Kort - Stort - 551:312"
+msgstr "Card - Stort - 551:312"
 
 msgctxt "image.style.card_medium:label"
 msgid "Card - Medium - 321:426"
-msgstr "Kort - Mellem - 321:426"
+msgstr "Card - Mellem - 321:426"
 
 msgctxt "image.style.card_x_large:label"
 msgid "Card - X-Large - 1:1"
-msgstr "Kort - X-Stort - 1:1"
+msgstr "Card- X-Stort - 1:1"
 
 msgctxt "paragraphs.paragraphs_type.breadcrumb_children:label"
 msgid "Breadcrumb children"
@@ -4613,7 +4613,7 @@ msgstr "filial"
 
 msgctxt "facets.facet.content_branch:widget:config:default_option_label"
 msgid "- Any -"
-msgstr "- Enhver -"
+msgstr "- Alle -"
 
 msgctxt "facets.facet.content_categories:name"
 msgid "Category"
@@ -4629,7 +4629,7 @@ msgstr "kategorier"
 
 msgctxt "facets.facet.content_categories:widget:config:default_option_label"
 msgid "- Any -"
-msgstr "- Enhver -"
+msgstr "- Alle -"
 
 msgctxt "facets.facet.event_categories:name"
 msgid "Category"
@@ -4740,7 +4740,7 @@ msgstr "Arkiver webformular"
 
 msgctxt "system.action.webform_close_action:label"
 msgid "Close webform"
-msgstr "Lukket webformular"
+msgstr "Luk webformular"
 
 msgctxt "system.action.webform_delete_action:label"
 msgid "Delete webform"
@@ -4852,7 +4852,7 @@ msgstr ""
 
 msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr "Beskriv"
+msgstr "Faldende"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:empty:area_text_custom:content"
 msgid "No submissions available."
@@ -7288,7 +7288,7 @@ msgstr ""
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr "Beskriv"
+msgstr "Faldende"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
 msgid "All"
@@ -7376,7 +7376,7 @@ msgstr ""
 
 msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr "Beskriv"
+msgstr "Faldende"
 
 msgctxt "views.view.redirect:display:default:display_options:empty:area_text_custom:content"
 msgid "There is no redirect yet."
@@ -7548,7 +7548,7 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr "Beskriv"
+msgstr "Faldende"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:arguments:eventseries_id:exception:title"
 msgid "All"
@@ -7690,7 +7690,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr "Beskriv"
+msgstr "Faldende"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:label"
 msgid "Combine fields filter"
