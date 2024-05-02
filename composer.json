@@ -39,7 +39,7 @@
                 "version": "2024.18.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-15-1/dist-release-brahma-15-1.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen/dist-ddflsbp-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -54,7 +54,7 @@
                 "type": "drupal-library",
                 "version": "2024.18.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-release%2Fbrahma-15-1/dist-release-brahma-15-1.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFLSBP-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen/dist-ddflsbp-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen.zip",
                     "type": "zip"
                 }
             }

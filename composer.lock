@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbb185bf016af0f04e5712362de44fee",
+    "content-hash": "8d4a7024b4bffd266d75d0d17a6f2192",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1152,7 +1152,7 @@
             "version": "2024.18.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-release%2Fbrahma-15-1/dist-release-brahma-15-1.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFLSBP-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen/dist-ddflsbp-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen.zip"
             },
             "type": "drupal-library"
         },
@@ -1161,7 +1161,7 @@
             "version": "2024.18.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-release%2Fbrahma-15-1/dist-release-brahma-15-1.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen/dist-ddflsbp-615-efter-registrering-skal-laner-force-logges-ud-og-blive-sendt-til-login-i-adgangsplatformen.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
