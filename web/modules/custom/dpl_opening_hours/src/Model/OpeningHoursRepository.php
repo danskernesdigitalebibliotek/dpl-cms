@@ -153,18 +153,20 @@ class OpeningHoursRepository {
    * Update a single opening hours instance.
    *
    * @return OpeningHoursInstance[]
-   *    The updated instances
+   *   The updated instances
    */
   public function update(OpeningHoursInstance $instance): array {
     $storedInstance = $this->load($instance->id);
     if (!$instance->repetition->id) {
       if ($instance->repetition::class === NoRepetition::class) {
         $this->delete($instance->id);
-      } else {
+      }
+      else {
         $this->delete($instance->id, $storedInstance->repetition->id);
       }
       return $this->insert($instance);
-    } else {
+    }
+    else {
       $data = $this->toFields($instance);
 
       // For now this intentionally does not handle repetitions.
@@ -180,7 +182,8 @@ class OpeningHoursRepository {
         $instance->startTime,
         $instance->endTime,
         $instance->repetition
-      )];
+        ),
+      ];
     }
   }
 

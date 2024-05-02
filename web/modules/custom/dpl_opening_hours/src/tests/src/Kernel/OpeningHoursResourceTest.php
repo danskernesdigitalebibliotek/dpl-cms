@@ -19,7 +19,6 @@ use Drupal\dpl_opening_hours\Plugin\rest\resource\OpeningHoursUpdateResource;
 use Drupal\KernelTests\KernelTestBase;
 use Drupal\node\NodeInterface;
 use Drupal\node\NodeStorageInterface;
-use Drupal\recurring_events\Plugin\Field\FieldType\WeeklyRecurringDate;
 use Drupal\taxonomy\TermInterface;
 use Drupal\taxonomy\TermStorageInterface;
 use Prophecy\Argument;
@@ -311,6 +310,9 @@ class OpeningHoursResourceTest extends KernelTestBase {
     $this->assertCount(1, array_filter($repetitionIds, fn ($id) => $id === $updatedOpeningHours->getRepetition()->getId()), "After update there should be one instance of the new repetition");
   }
 
+  /**
+   * Test that updating a repetition with a repetition yields a new repetition.
+   */
   public function testUpdateNewWeeklyRepetition(): void {
     $startDate = new DateTime('now');
     $endDate = new DateTime("+2weeks");
