@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-02 16:49+0200\n"
-"PO-Revision-Date: 2024-05-02 16:49+0200\n"
+"POT-Creation-Date: 2024-05-03 09:43+0200\n"
+"PO-Revision-Date: 2024-05-03 09:43+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -16813,7 +16813,7 @@ msgstr "Vil du tilføje denne gentagne åbningstid?"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Opening hour"
-msgstr ""
+msgstr "Åbningstid"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "End date"
@@ -16825,7 +16825,7 @@ msgstr "Sluttidspunkt"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Every"
-msgstr ""
+msgstr "Hver"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Repeat opening hour weekly every @weekDayName from @startDate"
@@ -16833,7 +16833,7 @@ msgstr "Gentag ugentlig åbningstid hver @weekDayName fra @startDate"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Start date"
-msgstr ""
+msgstr "Startdato"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Start time"
@@ -16845,11 +16845,11 @@ msgstr "Gentagen åbningstid"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Cancel"
-msgstr ""
+msgstr "Fortryd"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "I'm sure"
-msgstr ""
+msgstr "Jeg er sikker"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Save"
@@ -16857,7 +16857,7 @@ msgstr "Gem"
 
 msgctxt "DPL Opening Hours Editor"
 msgid "Remove event"
-msgstr ""
+msgstr "Fjern åbningstid"
 
 msgid ""
 "@field_name has been set to basic format on @count paragraphs of type "

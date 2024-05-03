@@ -26114,7 +26114,7 @@ msgstr "Vil du tilføje denne gentagne åbningstid?"
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "Opening hour"
-msgstr ""
+msgstr "Åbningstid"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
@@ -26129,7 +26129,7 @@ msgstr "Sluttidspunkt"
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "Every"
-msgstr ""
+msgstr "Hver"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
@@ -26139,7 +26139,7 @@ msgstr "Gentag ugentlig åbningstid hver @weekDayName fra @startDate"
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "Start date"
-msgstr ""
+msgstr "Startdato"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
@@ -26154,12 +26154,12 @@ msgstr "Gentagen åbningstid"
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "Cancel"
-msgstr ""
+msgstr "Fortryd"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "I'm sure"
-msgstr ""
+msgstr "Jeg er sikker"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
@@ -26169,7 +26169,7 @@ msgstr "Gem"
 #: 
 msgctxt "DPL Opening Hours Editor"
 msgid "Remove event"
-msgstr ""
+msgstr "Fjern åbningstid"
 
 #: 
 msgid "@field_name has been set to basic format on @count paragraphs of type @type"
