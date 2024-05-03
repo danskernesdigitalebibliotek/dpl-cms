@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-03 09:45+0200\n"
-"PO-Revision-Date: 2024-05-03 09:45+0200\n"
+"POT-Creation-Date: 2024-05-03 10:56+0200\n"
+"PO-Revision-Date: 2024-05-03 10:56+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7022,7 +7022,7 @@ msgstr "Tilføj enhver forgrening, du vil inkludere"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_categories:label"
 msgid "Filter by categories"
-msgstr ""
+msgstr "Filtrer efter kategori"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_categories:description"
 msgid "Add a category you want to include"
@@ -7030,7 +7030,7 @@ msgstr "Tilføj en kategori, du vil inkludere"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_tags:label"
 msgid "Filter by tags"
-msgstr ""
+msgstr "Filtrer efter tags"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_tags:description"
 msgid "Add a tag you want to include"
@@ -7042,7 +7042,7 @@ msgstr "Titel"
 
 msgctxt "field.field.paragraph.manual_event_list.field_events:label"
 msgid "Events"
-msgstr ""
+msgstr "Arrangementer"
 
 msgctxt "field.field.paragraph.manual_event_list.field_title:label"
 msgid "Title"
@@ -7121,6 +7121,8 @@ msgid ""
 "This paragraph displays a generated a list of events, based on "
 "specified filters for tags, categories and branches. "
 msgstr ""
+"Denne paragraph viser en liste af arrangementer filtreret på "
+"kategori, tags og filialer."
 
 msgctxt "paragraphs.paragraphs_type.manual_event_list:label"
 msgid "Manual event list"
@@ -7146,17 +7148,20 @@ msgstr "Kategorier af åbningstider, f.eks. \"Åbent\" eller \"Telefontid\""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title_2:admin_label"
 msgid "Event Series Title"
-msgstr ""
+msgstr "Titel på arrangementsserie"
 
 msgctxt "views.view.filtered_event_list:label"
 msgid "Filtered events"
-msgstr ""
+msgstr "Filtrerede arrangementer"
 
 msgctxt "views.view.filtered_event_list:description"
 msgid ""
 "This view displays a filtered list of upcoming events sorted by date "
 "ascending. Filters include categories, tags and branches"
 msgstr ""
+"Visningen viser en filtreret liste over kommende arrangementer, "
+"sorteret efter kommende datoer. Kan filtreres på tags, kategori og "
+"filial."
 
 msgctxt "views.view.filtered_event_list:display:default:display_title"
 msgid "Default"
@@ -7176,7 +7181,7 @@ msgstr "Sortér efter"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
@@ -7184,15 +7189,15 @@ msgstr "Faldende"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_categories:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:branch:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.redirect:label"
 msgid "Redirect"
@@ -7372,11 +7377,11 @@ msgstr "Arrangementinstans liste"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:id:label"
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:title:label"
 msgid "Event title"
-msgstr ""
+msgstr "Arrangementets titel"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:label"
 msgid "Event Date"
@@ -7384,11 +7389,11 @@ msgstr "Arrangementsdato"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:alter:text"
 msgid "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br />"
-msgstr ""
+msgstr "<strong>{{ date__value }}</strong> | {{ date__value_1 }}<br /><br />"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:date__value:settings:separator"
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:changed:label"
 msgid "Updated"
@@ -7412,11 +7417,11 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Elementer pr. side"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -7424,7 +7429,7 @@ msgstr ""
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
@@ -7436,7 +7441,7 @@ msgstr "Sortér efter"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
@@ -7444,7 +7449,7 @@ msgstr "Faldende"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:arguments:eventseries_id:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
@@ -7468,11 +7473,11 @@ msgstr "Vis alle arrangementer"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:2:title"
 msgid "Only upcoming events"
-msgstr ""
+msgstr "Kun kommende arrangementer"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:date__value:group_info:group_items:3:title"
 msgid "Only expired events"
-msgstr ""
+msgstr "Kun udløbne arrangementer"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:filters:status:expose:label"
 msgid "Published"
@@ -7492,11 +7497,11 @@ msgstr "Afpubliceret"
 
 msgctxt "views.view.event_instance_list:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.event_instance_list:display:page_1:display_options:menu:title"
 msgid "Edit Instances"
-msgstr ""
+msgstr "Rediger instanser"
 
 msgctxt "views.view.event_series_admin:label"
 msgid "Event series admin"
@@ -7518,7 +7523,7 @@ msgstr "Admin for arrangementserie"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:id:label"
 msgid "ID"
-msgstr ""
+msgstr "IS"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:title:label"
 msgid "Title"
@@ -7530,7 +7535,7 @@ msgstr "Arrangementinstanser"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:eventseries_start_date:label"
 msgid "Series start date"
-msgstr ""
+msgstr "Startdato"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:changed:label"
 msgid "Updated"
@@ -7554,11 +7559,11 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Elementer pr. side"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "- Alle -"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
@@ -7566,7 +7571,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
@@ -7578,7 +7583,7 @@ msgstr "Sortér efter"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
@@ -7606,11 +7611,11 @@ msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:status:group_info:group_items:2:title"
 msgid "Unpublished"
-msgstr ""
+msgstr "Upubliceret"
 
 msgctxt "views.view.event_series_admin:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.event_series_admin:display:page_1:display_options:menu:title"
 msgid "Event series"

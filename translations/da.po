@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-03 09:44+0200\n"
-"PO-Revision-Date: 2024-05-03 09:44+0200\n"
+"POT-Creation-Date: 2024-05-03 10:56+0200\n"
+"PO-Revision-Date: 2024-05-03 10:56+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -11713,7 +11713,7 @@ msgid "Event Creation"
 msgstr "Arrangør"
 
 msgid "Event Series Time Intervals"
-msgstr ""
+msgstr "Tidsinterval for arrangementsserie"
 
 msgid ""
 "Enter the interval, in minutes, to be used to separate event start "
@@ -11725,7 +11725,7 @@ msgstr ""
 "for at tillade brugere at indsætte en hvilken som helst værdi."
 
 msgid "Event Series Minimum Time"
-msgstr ""
+msgstr "Minimumstid"
 
 msgid ""
 "Enter the earliest an event can start, in h:ia format. For example "
@@ -11735,7 +11735,7 @@ msgstr ""
 "08:00am."
 
 msgid "Event Series Maximum Time"
-msgstr ""
+msgstr "Maximumstid"
 
 msgid ""
 "Enter the latest an event can start, in h:ia format. For example "
@@ -11758,7 +11758,7 @@ msgstr ""
 "er F jS, Y h:iA."
 
 msgid "Event Series Time Format"
-msgstr ""
+msgstr "Tidsformat for arrangementsserie"
 
 msgid "Enter the @link used when selecting times. Default is h:i A."
 msgstr "Indtast det @link, der bruges, når tider vælges. Standard er h:i A."
@@ -11793,7 +11793,7 @@ msgstr ""
 "opretter et arrangement."
 
 msgid "Event Specific Excluded Dates"
-msgstr ""
+msgstr "Specifikke undladte datoer for arrangementsserie"
 
 msgid ""
 "Enable event specific excluded dates? To add global excluded dates "
@@ -11806,7 +11806,7 @@ msgid "excluded dates tab"
 msgstr ""
 
 msgid "Event Specific Included Dates"
-msgstr ""
+msgstr "Specifikke inkluderede datoer for arrangementsserie"
 
 msgid ""
 "Enable event specific included dates? To add global included dates "
@@ -11825,7 +11825,7 @@ msgid "Select the recur field types to enable."
 msgstr ""
 
 msgid "Show Event Instance Threshold Warning?"
-msgstr ""
+msgstr "Vis advarsel om grænseværdi for antal arrangementsinstanser?"
 
 msgid "Display a warning when too many event instances may be created?"
 msgstr ""
@@ -11833,10 +11833,12 @@ msgstr ""
 "arrangement-instanser?"
 
 msgid "Event Instance Threshold Count"
-msgstr ""
+msgstr "Grænseværdi for arrangementsinstanser"
 
 msgid "The number of event instances to trigger the warning"
 msgstr ""
+"Antal instanser i en serie der skal udløse advarsel om overskredet "
+"grænseværdi"
 
 msgid "Event Instance Threshold Message"
 msgstr ""
@@ -12022,9 +12024,11 @@ msgstr "@language oversættelse af @type %label er gemt."
 
 msgid "Revision from %revision-date of eventinstance %title has been deleted."
 msgstr ""
+"Revidering af %revision-date af arrangemenstinstansen %title er blevet "
+"slettet."
 
 msgid "Label for the Event series type."
-msgstr ""
+msgstr "Label for typen af arrangementsserie."
 
 msgid "This text will be displayed on the <em>Add event</em> page."
 msgstr "Denne tekst vil blive vist på <em>Add event</em> side."
@@ -12033,7 +12037,7 @@ msgid "Created the %label event series type."
 msgstr "Oprettede %label arrangement serietype."
 
 msgid "Saved the %label event series type."
-msgstr ""
+msgstr "Gemte %label typen af arrangementsserie."
 
 msgid "Are you sure you want to delete event %name and its instances?"
 msgstr ""
@@ -12048,7 +12052,7 @@ msgstr ""
 "på følgende datoer:"
 
 msgid "Event Instances"
-msgstr ""
+msgstr "Arrangementsinstanser"
 
 msgid "Deleting this event series will remove all associated event instances."
 msgstr ""
@@ -12059,25 +12063,25 @@ msgid "<p>This action cannot be undone.</p>"
 msgstr "<p>Denne handling kan ikke fortrydes.</p>"
 
 msgid "The %title event series and all the instances have been deleted."
-msgstr ""
+msgstr "Arrangementsserien %title og alle den instanser er blevet slettet."
 
 msgid "Label for the Event instance type."
-msgstr ""
+msgstr "Label for typen af arrangementsinstans."
 
 msgid "Created the %label event instance type."
 msgstr "Oprettede %label arrangement instanstype."
 
 msgid "Saved the %label event instance type."
-msgstr ""
+msgstr "Gemte arrangementsinstans typen %label."
 
 msgid "The ID of the event entity."
-msgstr ""
+msgstr "ID'et for arrangemenstinstansen."
 
 msgid "The UUID of the event entity."
-msgstr ""
+msgstr "UUID'et for arrangementsinstansen."
 
 msgid "The eventinstance type."
-msgstr ""
+msgstr "Arrangemenstsinstansens type."
 
 msgid "Body"
 msgstr "Brødtekst"
@@ -12089,7 +12093,7 @@ msgid "Event Series ID"
 msgstr "Arrangementseries ID"
 
 msgid "The ID of the event series entity."
-msgstr ""
+msgstr "ID'et for arrangementsserien."
 
 msgid "The language code of event entity."
 msgstr "Sprogkoden for arrangementenhed."
@@ -12117,10 +12121,10 @@ msgstr ""
 "aktuelle version."
 
 msgid "The ID of the eventseries entity."
-msgstr ""
+msgstr "ID'et for arrangementsserien."
 
 msgid "The eventseries type."
-msgstr ""
+msgstr "Typen af arrangementsserie."
 
 msgid "The title of the event entity."
 msgstr "Titlen på arrangementsinstansen."
@@ -12511,7 +12515,7 @@ msgid "Please configure the Weekly Recurring Date settings"
 msgstr "Indstil de ugentlige gentagelsesmønstre."
 
 msgid "Invalid event title"
-msgstr ""
+msgstr "Ugyldig arrangementstitel"
 
 msgid "15 minutes"
 msgstr "15 minutter"
@@ -12676,7 +12680,7 @@ msgid "Excluded dates"
 msgstr ""
 
 msgid "Event series type"
-msgstr ""
+msgstr "Arrangementsserie type."
 
 msgid "User ID"
 msgstr "Bruger ID"
@@ -12714,7 +12718,7 @@ msgid "Updated view @id."
 msgstr "Opdateret visning @id."
 
 msgid "No Recurring events views to update."
-msgstr ""
+msgstr "Ingen gentagne arrangementsvisninger til opdatering."
 
 msgid "Add @type"
 msgstr "Tilføj @type"
@@ -12727,7 +12731,7 @@ msgstr ""
 "funktionalitet, der forventes af det."
 
 msgid "Group event series (@type)"
-msgstr ""
+msgstr "Gruppe arrangementsserie (@type)"
 
 msgid "Adds %type content to groups both publicly and privately."
 msgstr "Tilføjer %type indhold til både offentlige og private grupper."
@@ -12739,7 +12743,7 @@ msgid "Add existing content of type %eventseries_type to the group."
 msgstr "Tilføj eksisterende indhold af typen %eventseries_type til gruppen."
 
 msgid "Events series"
-msgstr ""
+msgstr "Arrangementsserie"
 
 msgid "Default revision"
 msgstr "Standard revidering"
@@ -12800,7 +12804,7 @@ msgid "Event instance page"
 msgstr "Arrangementinstans side"
 
 msgid "Event series page"
-msgstr ""
+msgstr "Arrangementsserie side"
 
 msgid "Custom URL"
 msgstr "Brugerdefineret URL"
@@ -13678,13 +13682,13 @@ msgid "Registration Availability Count"
 msgstr ""
 
 msgid "The number of registration spaces available for an event instance"
-msgstr ""
+msgstr "Antal mulige deltagere i en arrangemenstinstans"
 
 msgid "The number of registrations for an event instance."
-msgstr ""
+msgstr "Antal deltagere i en arrangementsinstans."
 
 msgid "The number of waitlisted registrants for an event instance."
-msgstr ""
+msgstr "Antal deltagere på venteliste til en arrangementsinstans."
 
 msgid "Registrations for %name on %date"
 msgstr "Tilmeldte til %name på %date"
@@ -13702,7 +13706,7 @@ msgid "iCalendar Link Title"
 msgstr ""
 
 msgid "Link text for the Event iCalendar Link field."
-msgstr ""
+msgstr "Linktekst til iCalendar linkfeltet for arrangementet."
 
 msgid "Download as iCal"
 msgstr "Download som iCal"
@@ -13725,12 +13729,12 @@ msgid "Contact"
 msgstr "Kontakt"
 
 msgid "Contact information for the event."
-msgstr ""
+msgstr "Kontaktinformation for arrangementet."
 
 msgid ""
 "A more complete description of the event than that provided by the "
 "summary."
-msgstr ""
+msgstr "En mere fyldig beskrivelse af arrangementet end i manchetten."
 
 msgid "Geographic Position"
 msgstr "Geografisk position"
@@ -13766,22 +13770,22 @@ msgid "%label iCalendar property mapping saved."
 msgstr ""
 
 msgid "Event series instance count"
-msgstr ""
+msgstr "Antal instanser i arrangementsserien"
 
 msgid "The number of event instances in a series."
-msgstr ""
+msgstr "Antallet af instanser i en arrangementsserie."
 
 msgid "Event series start date"
-msgstr ""
+msgstr "Startdato for arrangementsserie"
 
 msgid "The date on which an event first occurs."
 msgstr "Datoen for, hvornår et arrangement sker første gang."
 
 msgid "Display the event instances associated with the series"
-msgstr ""
+msgstr "Vis instanser i serien."
 
 msgid "Event Series Instances"
-msgstr ""
+msgstr "Instanser i arrangementsserie"
 
 msgid ""
 "Display event series if it has the selected taxonomy terms, or "
@@ -13789,15 +13793,17 @@ msgid ""
 msgstr ""
 
 msgid "Event Series has taxonomy term ID (with depth)"
-msgstr ""
+msgstr "Arrangementsserien har kategori ID"
 
 msgid ""
 "Display event instance if it has the selected taxonomy terms, or "
 "children of the selected terms."
 msgstr ""
+"Vis arrangementsinstans, hvis den tilhører en kategori eller "
+"underkategori af de valgte termer."
 
 msgid "Event Instance has taxonomy term ID (with depth)"
-msgstr ""
+msgstr "Arrangementsserien har kategori ID"
 
 msgid "Date in the form of YYYY."
 msgstr "Dato på formen YYYY."
