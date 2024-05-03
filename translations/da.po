@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-03 11:09+0200\n"
-"PO-Revision-Date: 2024-05-03 11:09+0200\n"
+"POT-Creation-Date: 2024-05-03 11:12+0200\n"
+"PO-Revision-Date: 2024-05-03 11:12+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -11270,7 +11270,7 @@ msgid "UserInfo endpoint"
 msgstr "UserInfo slutpunkt"
 
 msgid "Logging in with @provider has been canceled."
-msgstr ""
+msgstr "Kunne ikke logge ind. Kontakt venligst biblioteket."
 
 msgid "Unknown error."
 msgstr "Ukendt fejl."
@@ -11279,7 +11279,7 @@ msgid "Could not authenticate with @provider."
 msgstr ""
 
 msgid "Logging in with @provider could not be completed due to an error."
-msgstr ""
+msgstr "Kunne ikke logge ind. Kontakt venligst biblioteket."
 
 msgid "Account successfully connected with @provider."
 msgstr "Konto succesfuld forbundet med @provider"
