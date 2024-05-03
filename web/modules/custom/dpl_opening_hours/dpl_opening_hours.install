@@ -167,7 +167,7 @@ function dpl_opening_hours_update_10000(array &$sandbox): string {
  * @param mixed[] $sandbox
  *   The update sandbox.
  */
-function dpl_opening_hours_update_10001(array &$sandbox) {
+function dpl_opening_hours_update_10001(array &$sandbox) : void {
   $repetition_table = 'dpl_opening_hours_repetition';
   $type_field = 'type';
   $repetition_schema = dpl_opening_hours_schema()[$repetition_table];
