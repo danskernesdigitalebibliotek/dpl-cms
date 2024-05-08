@@ -1,14 +1,14 @@
-From 5340bcf0086ead8c76c32984831fe995f9966174 Mon Sep 17 00:00:00 2001
+From 4c6b6f6246a17b3d53abc0e764627de7b683cc6e Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Kasper=20Garn=C3=A6s?= <kasperg@users.noreply.github.com>
-Date: Tue, 13 Feb 2024 08:20:53 +0100
+Date: Wed, 8 May 2024 13:40:58 +0200
 Subject: [PATCH] Combat NoCorrespondingEntityClassException
 
 ---
- src/Plugin/Purge/Purger/PurgersService.php | 8 ++++++++
- 1 file changed, 8 insertions(+)
+ src/Plugin/Purge/Purger/PurgersService.php | 38 +++++++++++++++++++---
+ 1 file changed, 33 insertions(+), 5 deletions(-)
 
 diff --git a/src/Plugin/Purge/Purger/PurgersService.php b/src/Plugin/Purge/Purger/PurgersService.php
-index dcaf1d8..32ae910 100644
+index 8b9167e..5b08338 100644
 --- a/src/Plugin/Purge/Purger/PurgersService.php
 +++ b/src/Plugin/Purge/Purger/PurgersService.php
 @@ -4,6 +4,7 @@ namespace Drupal\purge\Plugin\Purge\Purger;
@@ -19,10 +19,54 @@ index dcaf1d8..32ae910 100644
  use Drupal\Core\Lock\LockBackendInterface;
  use Drupal\purge\Logger\LoggerServiceInterface;
  use Drupal\purge\Plugin\Purge\DiagnosticCheck\DiagnosticsServiceInterface;
-@@ -410,6 +411,13 @@ class PurgersService extends ServiceBase implements PurgersServiceInterface {
-         $this->logger->error("Error loading purger @id (@plugin_id): @error",
-           ['@id' => $id, '@plugin_id' => $plugin_id, '@error' => $e]);
+@@ -14,6 +15,7 @@ use Drupal\purge\Plugin\Purge\Purger\Exception\CapacityException;
+ use Drupal\purge\Plugin\Purge\Purger\Exception\DiagnosticsException;
+ use Drupal\purge\Plugin\Purge\Purger\Exception\LockException;
+ use Drupal\purge\ServiceBase;
++use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+ 
+ /**
+  * Provides the service that distributes access to one or more purgers.
+@@ -220,7 +222,17 @@ class PurgersService extends ServiceBase implements PurgersServiceInterface {
+       $this->initializePurgers();
+       $this->labels = [];
+       foreach ($this->getPluginsEnabled() as $id => $plugin_id) {
+-        $this->labels[$id] = $this->purgers[$id]->getLabel();
++        // We have seen problems loading Varnish Purger configuration entities.
++        // If these occur then we do not have an object corresponding to each
++        // id. Then we cannot get a proper label. Use the id as a temporary
++        // measure.
++        // @see \Drupal\purge\Plugin\Purge\Purger\PurgersService::initializePurgers()
++        if ($this->purgers[$id] instanceof PurgerInterface) {
++          $this->labels[$id] = $this->purgers[$id]->getLabel();
++        } else {
++          $this->logger->warning("Unable to determine label for purger @id (@plugin_id)", ['@id' => $id, '@plugin_id' => $plugin_id]);
++          $this->labels[$id] = $plugin_id;
++        }
        }
+     }
+     return $this->labels;
+@@ -396,10 +408,26 @@ class PurgersService extends ServiceBase implements PurgersServiceInterface {
+     // Iterate each purger plugin we should load and instantiate them.
+     $this->purgers = [];
+     foreach ($this->getPluginsEnabled() as $id => $plugin_id) {
+-      $this->purgers[$id] = $this->pluginManager->createInstance($plugin_id, ['id' => $id]);
+-      $this->purgers[$id]->setLogger($this->purgeLogger->get(sprintf(self::LOGGER_PURGERS_FORMAT, $plugin_id, $id)));
+-      $this->logger->debug("loading purger @id (@plugin_id).",
+-        ['@id' => $id, '@plugin_id' => $plugin_id]);
++      try {
++        $this->purgers[$id] = $this->pluginManager->createInstance($plugin_id, ['id' => $id]);
++        $this->purgers[$id]->setLogger($this->purgeLogger->get(sprintf(self::LOGGER_PURGERS_FORMAT, $plugin_id, $id)));
++        $this->logger->debug("loading purger @id (@plugin_id).",
++          ['@id' => $id, '@plugin_id' => $plugin_id]);
++      }
++      // When uninstalling modules providing purger plugins, instantiating
++      // purgers may result in the attempt to instantiate services that are no
++      // longer valid, in which case it is fine to just skip those.
++      catch (ServiceNotFoundException $e) {
++        $this->logger->error("Error loading purger @id (@plugin_id): @error",
++          ['@id' => $id, '@plugin_id' => $plugin_id, '@error' => $e]);
++      }
 +      // We have seen problems loading Varnish Purger configuration entities
 +      // during some site installs on CI. We believe this may be temporary so
 +      // try to combat these by logging the problem and continuing.
@@ -34,5 +78,5 @@ index dcaf1d8..32ae910 100644
  
      // Pass the purger instance onto depending objects.
 -- 
-2.37.5
+2.43.3
 
