@@ -124,17 +124,18 @@ function dpl_opening_hours_update_10000(array &$sandbox): string {
     ->fields($instance_table, ['id'])
     ->execute();
   $ids = ($result) ? $result->fetchCol() : [];
-  $updated_ids = array_filter($ids, function (int $id) use ($repetition_table, $instance_table) {
+  $updated_ids = array_filter($ids, function ($id) use ($repetition_table, $instance_table) {
     $repetition_id = \Drupal::database()->insert($repetition_table)
       ->fields([
         'type' => OpeningHoursRepetitionType::None->value,
         'data' => json_encode([]),
       ])
       ->execute();
-    return \Drupal::database()->update($instance_table)
+    $updated_rows = \Drupal::database()->update($instance_table)
       ->condition('id', $id)
       ->fields(['repetition_id' => $repetition_id])
       ->execute();
+    return $updated_rows > 0;
   });
   $num_updated_repetitions = count($updated_ids);
   $messages[] = "Added default repetition to {$num_updated_repetitions} opening hours instances";
