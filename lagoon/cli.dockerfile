@@ -1,4 +1,4 @@
-FROM uselagoon/php-8.1-cli-drupal:latest
+FROM uselagoon/php-8.2-cli-drupal:latest
 
 # Make sure that every build has unique assets.
 # By setting the build name as an ARG the following layers are not cached.
