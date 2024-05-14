@@ -5,6 +5,7 @@ dependencies:
   config:
     - rest.resource.campaign.match
     - rest.resource.dpl_opening_hours_list
+    - rest.resource.metrics.metrics
     - rest.resource.proxy-url
   module:
     - media
@@ -22,6 +23,7 @@ permissions:
   - 'access content'
   - 'access openapi api docs'
   - 'restful get dpl_opening_hours_list'
+  - 'restful get metrics:metrics'
   - 'restful get proxy-url'
   - 'restful post campaign:match'
   - 'view eventinstance entity'

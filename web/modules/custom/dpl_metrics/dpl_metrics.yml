@@ -1,0 +1,5 @@
+name: "DPL Metrics"
+type: module
+description: "A moduke that collects and exposes information about the running site"
+package: "DPL"
+core_version_requirement: ^9 || ^10

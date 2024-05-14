@@ -933,6 +933,52 @@
         ]
       }
     },
+    "/api/v1/metrics": {
+      "get": {
+        "parameters": [
+          {
+            "name": "_format",
+            "in": "query",
+            "type": "string",
+            "enum": ["json"],
+            "required": true,
+            "description": "Request format",
+            "default": "json"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "description": "Metrics information",
+                  "properties": {
+                    "cms-release-version": {
+                      "type": "string",
+                      "description": "The dpl-cms build version"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "summary": "Get status information about running site",
+        "operationId": "metrics:metrics:GET",
+        "schemes": ["http"],
+        "security": [
+          {
+            "cookie": []
+          }
+        ]
+      }
+    },
     "/dpl-url-proxy": {
       "get": {
         "parameters": [

@@ -1,0 +1,18 @@
+uuid: 42de1706-05a1-4c55-bedf-05addcca17a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - dpl_metrics
+    - serialization
+    - user
+id: metrics.metrics
+plugin_id: 'metrics:metrics'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
