@@ -28,7 +28,7 @@ jobs:
           git config --global user.email mikkel@reload.dk
           git checkout -b ${{ env.PR_BRANCH }}
 
-          composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev","type":"drupal-library","dist":{"url"":"${{ env.BUILD_URL }}"","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
+          composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev","type":"drupal-library","dist":{"url"":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
 
           composer remove danskernesdigitalebibliotek/dpl-react \
           && composer require danskernesdigitalebibliotek/dpl-react
