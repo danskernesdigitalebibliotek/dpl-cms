@@ -11,15 +11,15 @@ jobs:
     steps:
       - name: Verify Event
         env:
-          MESSAGE: ${{ toJson(github.event) }}
+          BUILD_URL: ${{ github.event.client_payload.build_url }}
           PR_BRANCH: ${{ github.event.client_payload.branch }}
-        run: echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
-        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch}}
+        run: echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV; echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url }}
 
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-        if: ${{ env.PR_BRANCH }}
+        if: ${{ env.PR_BRANCH && env.BUILD_URL }}
 
       - name: Create branch and PR
         run: |
@@ -28,10 +28,15 @@ jobs:
           git config --global user.email mikkel@reload.dk
           git checkout -b ${{ env.PR_BRANCH }}
 
+          composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev","type":"drupal-library","dist":{"url":${{ env.BUILD_URL }},"type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
+
+          composer remove danskernesdigitalebibliotek/dpl-react \
+          && composer require danskernesdigitalebibliotek/dpl-react
+
           git push --set-upstream origin ${{ env.PR_BRANCH }}
           git commit --allow-empty -m "What a difference a commit makes..."
           git push
           gh pr create --base main --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
-        if: ${{ env.PR_BRANCH }}
+        if: ${{ env.PR_BRANCH && env.BUILD_URL }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
