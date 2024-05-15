@@ -1,0 +1,37 @@
+name: Create Pr from branch
+
+on:
+  repository_dispatch:
+    types: [create_pr]
+
+jobs:
+  build:
+    name: Create Branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Event
+        env:
+          MESSAGE: ${{ toJson(github.event) }}
+          PR_BRANCH: ${{ github.event.client_payload.branch }}
+        run: echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch}}
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        if: ${{ env.PR_BRANCH }}
+
+      - name: Create branch and PR
+        run: |
+          set -e
+          git config --global user.name mikkel@reload.dk
+          git config --global user.email mikkel@reload.dk
+          git checkout -b ${{ env.PR_BRANCH }}
+
+          git push --set-upstream origin ${{ env.PR_BRANCH }}
+          git commit --allow-empty -m "What a difference a commit makes..."
+          git push
+          gh pr create --base main --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
+        if: ${{ env.PR_BRANCH }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
