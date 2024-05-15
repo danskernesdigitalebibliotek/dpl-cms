@@ -36,7 +36,7 @@ jobs:
           git push --set-upstream origin ${{ env.PR_BRANCH }}
           git commit --allow-empty -m "What a difference a commit makes..."
           git push
-          gh pr create --base main --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
+          gh pr create --base develop --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
         if: ${{ env.PR_BRANCH && env.BUILD_URL }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
