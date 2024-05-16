@@ -21,6 +21,17 @@ jobs:
           fetch-depth: 0
         if: ${{ env.PR_BRANCH && env.BUILD_URL }}
 
+      - uses: Wandalen/wretry.action@master
+        id: manipulate_composer
+        with:
+          command: |
+            composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
+
+            composer remove danskernesdigitalebibliotek/dpl-react \
+            && composer require danskernesdigitalebibliotek/dpl-react
+          attempt_limit: 200
+        if: ${{ env.BUILD_URL}}
+
       - name: Create branch and PR
         run: |
           set -e
@@ -28,16 +39,10 @@ jobs:
           git config --global user.email mikkel@reload.dk
           git checkout -b ${{ env.PR_BRANCH }}
           git push --set-upstream origin ${{ env.PR_BRANCH }}
-
-          composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
-
-          composer remove danskernesdigitalebibliotek/dpl-react \
-          && composer require danskernesdigitalebibliotek/dpl-react
-
           git add composer.json composer.lock
           git commit -m "Use new dependency url on dpl-react: ${{ env.BUILD_URL }}"
           git push
           gh pr create --base develop --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
-        if: ${{ env.PR_BRANCH && env.BUILD_URL }}
+        if: ${{ env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
