@@ -9227,7 +9227,7 @@ msgstr ""
 #: 
 msgctxt "Address label"
 msgid "Parish"
-msgstr ""
+msgstr "Sogn"
 
 #: 
 msgctxt "Address label"
@@ -9262,7 +9262,7 @@ msgstr "Forstad"
 #: 
 msgctxt "Address label"
 msgid "Neighborhood"
-msgstr ""
+msgstr "Nabolag"
 
 #: 
 msgctxt "Address label"
@@ -9335,7 +9335,7 @@ msgstr "Du skal tilføje et filter for landekoden for at bruge dette filter til 
 
 #: 
 msgid "Predefined country for administrative areas"
-msgstr ""
+msgstr "Foruddefineret land for administrative områder"
 
 #: 
 msgid "Label type"
@@ -9555,7 +9555,7 @@ msgstr ""
 
 #: 
 msgid "Please add at least one territory."
-msgstr ""
+msgstr "Tilføj venligst mindst et territorium."
 
 #: 
 msgid "- All -"
@@ -9845,7 +9845,7 @@ msgstr "Du har en organisationshjemmeside med følgende roller:"
 
 #: 
 msgid "Overall Administrator - all permissions"
-msgstr ""
+msgstr "Overordnet Administrator - alle tilladelser"
 
 #: 
 msgid "Content Editors - are not members and are managed by the administrator"
@@ -9857,7 +9857,7 @@ msgstr "Medlemssekretær - skal kunne se og redigere medlemsinformation"
 
 #: 
 msgid "Ordinary Members - have basic authenticated user rights"
-msgstr ""
+msgstr "Almindelige medlemmer - har basale autentificerede brugerrettigheder"
 
 #: 
 msgid "What is wanted is for the membership secretary to be able to view and edit members, but not other roles, therefore the roles are configured as follows:"
@@ -9877,7 +9877,7 @@ msgstr "Medlemssekretær - Tilladt"
 
 #: 
 msgid "Ordinary Members - Allowed"
-msgstr ""
+msgstr "Almindelige medlemmer - Tilladt"
 
 #: 
 msgid "Use this page to classify each role before you <a href=:perms>assign permissions</a>."
@@ -9969,7 +9969,7 @@ msgstr "Input påkrævet"
 
 #: 
 msgid "Only display results after the user has selected a filter option."
-msgstr ""
+msgstr "Vis kun resultater efter brugeren har valgt en filtermulighed."
 
 #: 
 msgid "Enable secondary exposed form options"
@@ -10005,7 +10005,7 @@ msgstr "Denne sektion lader dig vælge yderligere muligheder for udsatte sorteri
 
 #: 
 msgid "No sort elements have been exposed yet."
-msgstr ""
+msgstr "Ingen sorterings elementer er endnu blevet eksponeret."
 
 #: 
 msgid "Display exposed sort options as"
@@ -10025,7 +10025,7 @@ msgstr ""
 
 #: 
 msgid "No pager elements have been exposed yet."
-msgstr ""
+msgstr "Ingen sideelementer er endnu blevet eksponeret."
 
 #: 
 msgid "Display exposed pager options as"
@@ -10105,7 +10105,7 @@ msgstr "Gør sorteringsindstillinger sammenklappelige"
 
 #: 
 msgid "Puts the sort options in a collapsible details element."
-msgstr ""
+msgstr "Placerer sorteringsmulighederne i et sammenklappeligt detaljeelement."
 
 #: 
 msgid "Collapsible details element title"
@@ -10121,7 +10121,7 @@ msgstr "Dette er en sekundær mulighed"
 
 #: 
 msgid "Places this element in the secondary options portion of the exposed form."
-msgstr ""
+msgstr "Placerer dette element i den sekundære indstillingsdel af den eksponerede formular."
 
 #: 
 msgid "Add select all/none links"
@@ -10177,11 +10177,11 @@ msgstr "Gør filterindstillinger sammenklappelige"
 
 #: 
 msgid "Puts the filter options in a collapsible details element."
-msgstr ""
+msgstr "Placerer filtermulighederne i et sammenklappeligt detaljeelement."
 
 #: 
 msgid "Range minimum"
-msgstr ""
+msgstr "Minimal rækkevidde"
 
 #: 
 msgid "The minimum allowed value for the jQuery range slider. It can be positive, negative, or zero and have up to 11 decimal places."
@@ -10189,7 +10189,7 @@ msgstr ""
 
 #: 
 msgid "Range maximum"
-msgstr ""
+msgstr "Maksimal rækkevidde"
 
 #: 
 msgid "The maximum allowed value for the jQuery range slider. It can be positive, negative, or zero and have up to 11 decimal places."
@@ -10345,7 +10345,7 @@ msgstr ""
 
 #: 
 msgid "Provides advanced options (e.g. links, checkboxes, or other widgets) to exposed Views elements."
-msgstr ""
+msgstr "Leverer avancerede muligheder (f.eks. links, afkrydsningsfelter eller andre widgets) til eksponerede Views-elementer."
 
 #: 
 msgid "BEF Test"
@@ -10353,7 +10353,7 @@ msgstr "BEF Test"
 
 #: 
 msgid "Prevents multiple users from trying to edit a single node simultaneously to prevent edit conflicts."
-msgstr ""
+msgstr "Forhindrer flere brugere i at forsøge at redigere en enkelt node samtidigt for at forhindre redigeringskonflikter."
 
 #: 
 msgid "@entity cannot be deleted because it was locked by @user since @time."
@@ -10641,7 +10641,7 @@ msgstr ""
 
 #: 
 msgid "Provides test classes."
-msgstr ""
+msgstr "Leverer testklasser."
 
 #: 
 msgid "Prevents multiple users from trying to edit a content entity simultaneously to prevent edit conflicts."
@@ -10971,7 +10971,7 @@ msgstr "@first, @second og @count flere"
 
 #: 
 msgid "No crop types available. <a href=\"@link\">Add crop type</a>."
-msgstr ""
+msgstr "Ingen beskæringstyper tilgængelige. <a href=\"@link\">Tilføj beskæringstype</a>."
 
 #: 
 msgid "Super fancy provider for media entity!"
@@ -10983,7 +10983,7 @@ msgstr "CropEffect::transformDimensions() transformerer billeddimensioner korrek
 
 #: 
 msgid "Position correctly returned."
-msgstr ""
+msgstr "Position korrekt returneret."
 
 #: 
 msgid "Size correctly returned."
@@ -11015,7 +11015,7 @@ msgstr "Crop::findCrop() håndterede korrekt den ikke-eksisterende beskæring."
 
 #: 
 msgid "No crop types available."
-msgstr ""
+msgstr "Ingen beskæringstyper tilgængelige."
 
 #: 
 msgid "Edit"
@@ -11059,7 +11059,7 @@ msgstr "Fil"
 
 #: 
 msgid "Provides crop integration for core files."
-msgstr ""
+msgstr "Leverer beskæringsintegration for kernefiler."
 
 #: 
 msgid "Media"
@@ -11067,7 +11067,7 @@ msgstr "Media"
 
 #: 
 msgid "Provides crop integration for media."
-msgstr ""
+msgstr "Leverer beskæringsintegration for medier."
 
 #: 
 msgctxt "Validation"
@@ -11105,7 +11105,7 @@ msgstr "Administrer beskæringsformer."
 
 #: 
 msgid "Provides storage and API for image crops."
-msgstr ""
+msgstr "Leverer opbevaring og API for billedbeskæringer."
 
 #: 
 msgid "Date format for single date"
@@ -11225,7 +11225,7 @@ msgstr ""
 
 #: 
 msgid "provides a field type/widget/formatter combination for Drupal 8 that allows an entity-reference field to reference more than one entity type."
-msgstr ""
+msgstr "Leverer en felttype/widget/formatter kombination for Drupal 8, der tillader et enheds-reference felt at referere til mere end en enhedstype."
 
 #: 
 msgid "Features"
@@ -11249,7 +11249,7 @@ msgstr "Kendte problemer"
 
 #: 
 msgid "Please use the"
-msgstr ""
+msgstr "Brug venligst"
 
 #: 
 msgid "issue queue"
@@ -11351,11 +11351,11 @@ msgstr "Den refererede enhedstype (%type) er ikke tilladt i dette felt."
 
 #: 
 msgid "No bundle is allowed for (%type)"
-msgstr ""
+msgstr "Ingen bundt er tilladt for (%type)"
 
 #: 
 msgid "Referenced entity %label does not belong to one of the supported bundles (%bundles)."
-msgstr ""
+msgstr "Refereret enhed %label tilhører ikke en af de understøttede bundter (%bundles)."
 
 #: 
 msgid "Save and continue"
@@ -11431,15 +11431,15 @@ msgstr "@field_name: @target_label"
 
 #: 
 msgid "References to @target_label entities referenced by @field_name @type on @origin_label entities."
-msgstr ""
+msgstr "Referencer til @target_label enheder refereret af @field_name @type på @origin_label enheder."
 
 #: 
 msgid "Reverse reference to @field_name @type on @origin_label"
-msgstr ""
+msgstr "Omvendt reference til @field_name @type på @origin_label"
 
 #: 
 msgid "Reverse reference from @target_label entities referenced by @field_name @type on @origin_label entities."
-msgstr ""
+msgstr "Omvendt reference fra @target_label enheder refereret af @field_name @type på @origin_label enheder."
 
 #: 
 msgid "Dynamic Entity Reference Field Diff"
@@ -11504,7 +11504,7 @@ msgstr ""
 
 #: 
 msgid "Provides base fields for dynamic_entity_reference tests of entity_test entity type."
-msgstr ""
+msgstr "Leverer basisfelter for dynamic_entity_reference tests af entity_test enhedstypen."
 
 #: 
 msgid "Dynamic Entity Reference Entity Provider"
@@ -11516,7 +11516,7 @@ msgstr "En udbyder af en enhedstype."
 
 #: 
 msgid "Provides an entity reference field that can reference multiple entity types."
-msgstr ""
+msgstr "Leverer et enheds reference felt, der kan referere til flere enhedstyper."
 
 #: 
 msgid "Take ownership"
@@ -11890,7 +11890,7 @@ msgstr "Fjerner hjemløse enheder."
 
 #: 
 msgid "Processed @current of @total entity types."
-msgstr ""
+msgstr "Behandlet @current af @total enhedstyper."
 
 #: 
 msgid "This batch encountered an error."
@@ -12138,7 +12138,7 @@ msgstr "Springer @group over, fordi denne type ikke findes i den aktuelle tilsta
 
 #: 
 msgid "No field groups were found in selected view mode."
-msgstr ""
+msgstr "Ingen feltgrupper blev fundet i den valgte visningstilstand."
 
 #: 
 msgid "Fieldgroup @group is not cloned since a group already exists with the same name."
@@ -12494,7 +12494,7 @@ msgstr "Denne feltgruppe renderer undergrupper som en jQuery accordion."
 
 #: 
 msgid "Provides the ability to group your fields on both form and display."
-msgstr ""
+msgstr "Leverer muligheden for at gruppere dine felter både på form og display."
 
 #: 
 msgid "Field Group Migrate"
@@ -12502,7 +12502,7 @@ msgstr ""
 
 #: 
 msgid "Provides the ability to migrate field groups from D6/D7 to D8."
-msgstr ""
+msgstr "Leverer muligheden for at migrere feltgrupper fra D6/D7 til D8."
 
 #: 
 msgid "Field Group Test"
@@ -12662,7 +12662,7 @@ msgstr "Oprettede %label feltarv."
 
 #: 
 msgid "Saved the %label field inheritance."
-msgstr ""
+msgstr "Gemt %label feltarv."
 
 #: 
 msgid "Are you sure you want to delete %name?"
@@ -12783,7 +12783,7 @@ msgstr ""
 
 #: 
 msgid "Provides the ability to inherit data from one entity to another"
-msgstr ""
+msgstr "Leverer muligheden for at arve data fra en enhed til en anden"
 
 #: 
 msgid "Add Field inheritance"
@@ -12811,7 +12811,7 @@ msgstr ""
 
 #: 
 msgid "Preview link: @status"
-msgstr ""
+msgstr "Forhåndsvisningslink: @status"
 
 #: 
 msgid "Default focal point: @offsets"
@@ -12931,7 +12931,7 @@ msgstr ""
 
 #: 
 msgid "Rebuilds scheduled information."
-msgstr ""
+msgstr "Genopbygger planlagt information."
 
 #: 
 msgid "Rebuild"
@@ -12963,7 +12963,7 @@ msgstr ""
 
 #: 
 msgid "Rebuilded successfully."
-msgstr ""
+msgstr "Genopbygget succesfuldt."
 
 #: 
 msgid "The ID of the job schedule."
@@ -13011,7 +13011,7 @@ msgstr "De vilkårlige data for jobbet."
 
 #: 
 msgid "Periodic"
-msgstr ""
+msgstr "Periodisk"
 
 #: 
 msgid "If true job will be automatically rescheduled."
@@ -13027,7 +13027,7 @@ msgstr "Tidsstempel for, hvornår et job sidst blev udført."
 
 #: 
 msgid "Next execution"
-msgstr ""
+msgstr "Næste eksekvering"
 
 #: 
 msgid "Timestamp when a job is to be executed."
@@ -13119,7 +13119,7 @@ msgstr ""
 
 #: 
 msgid "No matchers added."
-msgstr ""
+msgstr "Ingen matchere tilføjet."
 
 #: 
 msgid "Weight for @title"
@@ -13127,11 +13127,11 @@ msgstr "Vægt af @title"
 
 #: 
 msgid "No matchers available."
-msgstr ""
+msgstr "Ingen matchere tilgængelige."
 
 #: 
 msgid "No matcher selected."
-msgstr ""
+msgstr "Ingen matcher valgt."
 
 #: 
 msgid "Added %label matcher."
@@ -13247,7 +13247,7 @@ msgstr ""
 
 #: 
 msgid "Restrict suggestions to the selected bundles"
-msgstr ""
+msgstr "Begræns forslag til de valgte bundter"
 
 #: 
 msgid "If none of the checkboxes is checked, all bundles are allowed."
@@ -13303,7 +13303,7 @@ msgstr "E-mail"
 
 #: 
 msgid "Opens your mail client ready to e-mail @email"
-msgstr ""
+msgstr "Åbner din mail: Gør klar til at sende e-mail @email"
 
 #: 
 msgid "Include unpublished: @include_unpublished"
@@ -13323,7 +13323,7 @@ msgstr ""
 
 #: 
 msgid "Role filter: @role_filter"
-msgstr ""
+msgstr "Rollefilter: @role_filter"
 
 #: 
 msgid "Include blocked users: @include_blocked"
@@ -13375,7 +13375,7 @@ msgstr ""
 
 #: 
 msgid "Please select the Linkit profile you wish to use."
-msgstr ""
+msgstr "Vælg Linkit-profilen, du ønsker at bruge."
 
 #: 
 msgid "- Linkit disabled -"
@@ -13391,7 +13391,7 @@ msgstr "Linkit er deaktiveret; det giver ikke mening at knytte en Linkit-profil.
 
 #: 
 msgid "Must be the same as the profile selected on the form display for this field."
-msgstr ""
+msgstr "Skal være det samme som profilen valgt på visningsformen for dette felt."
 
 #: 
 msgid "Linkit profile: @linkit_profile"
@@ -13427,7 +13427,7 @@ msgstr "Ingen resultater"
 
 #: 
 msgid "No content suggestions found. This URL will be used as is."
-msgstr ""
+msgstr "Ingen indholds-forslag fundet. Denne URL vil blive brugt som den er."
 
 #: 
 msgid "Available tokens"
@@ -13539,7 +13539,7 @@ msgstr ""
 
 #: 
 msgid "Provides an easy interface for internal and external linking with wysiwyg editors."
-msgstr ""
+msgstr "Leverer et let interface for intern og ekstern linking med wysiwyg-redaktører."
 
 #: 
 msgid "Manage Linkit profiles."
@@ -13595,7 +13595,7 @@ msgstr "Tilpas de <a href=\":defaults\">globale standarder</a>, udfyld de specif
 
 #: 
 msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
-msgstr ""
+msgstr "Tilsidesæt hver af de <a href=\":defaults\">andre standarder</a>, udfyld specifikke værdier og tokens som hvert element som standard skal have. Dette tillader f.eks., at alle noder har forskellige værdier end taksonomi betingelser."
 
 #: 
 msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
@@ -13639,11 +13639,11 @@ msgstr ""
 
 #: 
 msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
-msgstr ""
+msgstr "Leverer fyrre yderligere metatags fra <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
 
 #: 
 msgid "Provides support for meta tags used for Google Custom Search Engine."
-msgstr ""
+msgstr "Leverer support for metatags brugt til Google Custom Search Engine."
 
 #: 
 msgid "Select the type of default meta tags you would like to add."
@@ -13671,7 +13671,7 @@ msgstr "Slettede @label standarder."
 
 #: 
 msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
-msgstr ""
+msgstr "Bemærk: Mens websitet er i vedligeholdelsestilstand, vil ingen af de sædvanlige metatags blive bearbejdet."
 
 #: 
 msgid "Separator used with multiple values"
@@ -13763,7 +13763,7 @@ msgstr "Gendan"
 
 #: 
 msgid "Reverted @label defaults."
-msgstr ""
+msgstr "Tilbagestillede @label standarder."
 
 #: 
 msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
@@ -13795,7 +13795,7 @@ msgstr "Konfigurationstype"
 
 #: 
 msgid "Multiple values may be used, separated by `:delimiter`. Note: Tokens that return multiple values will be handled automatically."
-msgstr ""
+msgstr "Flere værdier kan anvendes, adskilt af :delimiter. Bemærk: Tokens, der returnerer flere værdier, vil blive håndteret automatisk."
 
 #: 
 msgid "This will be able to extract the URL from an image field if the field is configured properly."
@@ -13827,11 +13827,11 @@ msgstr ""
 
 #: 
 msgid "Origin"
-msgstr ""
+msgstr "Oprindelse"
 
 #: 
 msgid "Origin When Cross-Origin"
-msgstr ""
+msgstr "Oprindelse ved kryds-oprindelse"
 
 #: 
 msgid "Same Origin"
@@ -13875,7 +13875,7 @@ msgstr "Indstil den maksimale størrelse på en billedforhåndsvisning for denne
 
 #: 
 msgid "None - no image preview is to be shown."
-msgstr ""
+msgstr "None - ingen billedforhåndsvisning skal vises."
 
 #: 
 msgid "Standard - a default image preview may be shown."
@@ -13907,27 +13907,27 @@ msgstr ""
 
 #: 
 msgid "noindex - Prevents search engines from indexing this page."
-msgstr ""
+msgstr "noindex - Forhindrer søgemaskiner i at indeksere denne side."
 
 #: 
 msgid "nofollow - Prevents search engines from following links on this page."
-msgstr ""
+msgstr "nofollow - Forhindrer søgemaskiner i at følge links på siden."
 
 #: 
 msgid "noarchive - Prevents cached copies of this page from appearing in search results."
-msgstr ""
+msgstr "noarchive - Forhindrer gemte kopier af siden i at fremstå i søgeresultater."
 
 #: 
 msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
-msgstr ""
+msgstr "nosnippet - Forhindrer beskrivelser i at fremstå i søgeresultater og forhindrer sidecaching."
 
 #: 
 msgid "noimageindex - Prevent search engines from indexing images on this page."
-msgstr ""
+msgstr "noimageindex - Forhindrer søgemaskiner i at indeksere billeder på siden."
 
 #: 
 msgid "notranslate - Prevent search engines from offering to translate this page in search results."
-msgstr ""
+msgstr "notranslate - Forhindrer søgemaskiner i at tilbyde oversættelse af denne side i søgeresultater."
 
 #: 
 msgid "Tag"
@@ -13939,7 +13939,7 @@ msgstr "Metatag"
 
 #: 
 msgid "Place field in sidebar"
-msgstr ""
+msgstr "Placér felt i sidebar"
 
 #: 
 msgid "If checked, the field will be placed in the sidebar on entity forms."
@@ -14003,7 +14003,7 @@ msgstr ""
 
 #: 
 msgid "Provides support for many different favicons."
-msgstr ""
+msgstr "Leverer support for mange forskellige favicons."
 
 #: 
 msgid "URL for a version of this page in %langcode"
@@ -14011,7 +14011,7 @@ msgstr "URL til en version af denne side i %langcode"
 
 #: 
 msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
-msgstr ""
+msgstr "Leverer support for hreflang metataget med lidt ekstra logik for at forenkle det."
 
 #: 
 msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
@@ -14127,7 +14127,7 @@ msgstr "Tilføj"
 
 #: 
 msgid "Processed @processed of @total overridden Metatag records."
-msgstr ""
+msgstr "Behandlet @processed af @total tilsidesatte metatag-poster."
 
 #: 
 msgid "There were no overridden Metatag records."
@@ -14139,7 +14139,7 @@ msgstr "Der var ingen tilsidesatte Metatag records, der havde behov for at blive
 
 #: 
 msgid "Processed @processed of @total updating Metatag records with the Publisher or Name meta tags."
-msgstr ""
+msgstr "Behandlet @processed af @total opdaterede metatag-poster med forlag- eller navne-metatags."
 
 #: 
 msgid "There were no Metatag records to update."
@@ -14187,7 +14187,7 @@ msgstr "@type type med delta @delta"
 
 #: 
 msgid "Not enabled while in maintenance mode"
-msgstr ""
+msgstr "Ikke aktiveret mens den er i vedligeholdelsestilstand"
 
 #: 
 msgid "Schema.org Metatag is recommended"
@@ -14239,7 +14239,7 @@ msgstr ""
 
 #: 
 msgid "Provides additional Open Graph Protocol meta tags for describing products."
-msgstr ""
+msgstr "Leverer yderligere Open Graph Protocol metatags til beskrivelse af produkter."
 
 #: 
 msgid "Provides support for meta tags used to control the mobile browser experience."
@@ -14247,7 +14247,7 @@ msgstr "Udøver støtte for meta tags, der bruges til at styre den mobile browse
 
 #: 
 msgid "Provides support for applinks.org meta tags."
-msgstr ""
+msgstr "Leverer support for applinks.org metatags."
 
 #: 
 msgid "Access %tag in %group"
@@ -14327,7 +14327,7 @@ msgstr "Et sæt meta-tags der styrer, hvordan sitets indhold bruges på <a href=
 
 #: 
 msgid "No pin"
-msgstr ""
+msgstr "Ingen pin"
 
 #: 
 msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
@@ -14351,7 +14351,7 @@ msgstr "URL'en der skal vise indholdet."
 
 #: 
 msgid "No search"
-msgstr ""
+msgstr "Ingen søgning"
 
 #: 
 msgid "Do not allow Pinterest visual search to happen from this page."
@@ -14531,7 +14531,7 @@ msgstr "En relateret ressource, der refererer, citerer eller på anden vis peger
 
 #: 
 msgid "Rights Holder"
-msgstr ""
+msgstr "Rettighedshaver"
 
 #: 
 msgid "A person or organization owning or managing rights over the resource."
@@ -14743,7 +14743,7 @@ msgstr ""
 
 #: 
 msgid "Provides the fifteen <a href=':docs'>Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=':link'>Dublin Core Metadata Institute</a>"
-msgstr ""
+msgstr "Leverer de femten <a href=':docs'>Dublin Core Metadata Element Set 1.1</a> metatags fra <a href=':link'>Dublin Core Metadata Institute</a>"
 
 #: 
 msgid "Coverage"
@@ -14755,7 +14755,7 @@ msgstr "Det rumlige eller tidsmæssige emne for ressourcen, ressourcens rumlige 
 
 #: 
 msgid "Relation"
-msgstr ""
+msgstr "Relation"
 
 #: 
 msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
@@ -14883,7 +14883,7 @@ msgstr "En kort URL, typisk lavet af en URL forkortelsesservice."
 
 #: 
 msgid "Rating"
-msgstr ""
+msgstr "Bedømmelse"
 
 #: 
 msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
@@ -14931,7 +14931,7 @@ msgstr "Geospatial information i 'breddegrad, længdegrad' format, f.eks. '50.16
 
 #: 
 msgid "Next page URL"
-msgstr ""
+msgstr "Næste sides URL"
 
 #: 
 msgid "Used for paginated content by providing URL with rel='next' link."
@@ -14963,7 +14963,7 @@ msgstr ""
 
 #: 
 msgid "Referrer policy"
-msgstr ""
+msgstr "Henvisningspolitik"
 
 #: 
 msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
@@ -15023,7 +15023,7 @@ msgstr "Et billede forbundet med denne side, til brug som thumbnail på sociale 
 
 #: 
 msgid "Original source"
-msgstr ""
+msgstr "Original kilde"
 
 #: 
 msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
@@ -15055,11 +15055,11 @@ msgstr "Robotter"
 
 #: 
 msgid "Provides search engines with specific directions for what to do when this page is indexed."
-msgstr ""
+msgstr "Leverer søgemaskiner med specifikke instruktioner for hvad der skal gøres, når denne side er indekseret."
 
 #: 
 msgid "Pragma"
-msgstr ""
+msgstr "Pragma"
 
 #: 
 msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
@@ -15499,7 +15499,7 @@ msgstr ""
 
 #: 
 msgid "Open Graph - Products"
-msgstr ""
+msgstr "Open Graph - Produkter"
 
 #: 
 msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
@@ -15507,7 +15507,7 @@ msgstr "Disse <a href='https://ogp.me/'>Open Graph meta tags</a> are for describ
 
 #: 
 msgid "Retailer Item ID"
-msgstr ""
+msgstr "Forhandler vare-ID"
 
 #: 
 msgid "The ID of the product as provided by the retailer."
@@ -15515,7 +15515,7 @@ msgstr ""
 
 #: 
 msgid "Product availability"
-msgstr ""
+msgstr "Produkttilgængelighed"
 
 #: 
 msgid "The availability of the product."
@@ -15523,7 +15523,7 @@ msgstr "Produktets tilgængelighed."
 
 #: 
 msgid "Product price currency"
-msgstr ""
+msgstr "Produkts valutapris"
 
 #: 
 msgid "The price currency of the product."
@@ -15531,7 +15531,7 @@ msgstr ""
 
 #: 
 msgid "Product condition"
-msgstr ""
+msgstr "Produkttilstand"
 
 #: 
 msgid "The condition of the product."
@@ -15539,7 +15539,7 @@ msgstr "Produktets tilstand."
 
 #: 
 msgid "Product price amount"
-msgstr ""
+msgstr "Produkts prisbeløb"
 
 #: 
 msgid "The price amount of the product."
@@ -15583,7 +15583,7 @@ msgstr "En farve i heksadecimalt format, f.eks. '#0000ff' for blå; skal inklude
 
 #: 
 msgid "MSApplication - Allow domain meta tags"
-msgstr ""
+msgstr "MSApplication - Tillad domæne metatags"
 
 #: 
 msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
@@ -15591,7 +15591,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Square logo, 70px x 70px"
-msgstr ""
+msgstr "MSApplication - Kvadratisk logo, 70px x 70px"
 
 #: 
 msgid "The URL to a logo file that is 70px by 70px."
@@ -15599,11 +15599,11 @@ msgstr "URL'en til en logofil, der er 70px af 70px."
 
 #: 
 msgid "MSApplication - Allow domain API calls"
-msgstr ""
+msgstr "MSApplication - Tillad domæne API-opkald"
 
 #: 
 msgid "MSApplication - Badge"
-msgstr ""
+msgstr "MSApplication - Badge"
 
 #: 
 msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
@@ -15611,7 +15611,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Square logo, 310px x 310px"
-msgstr ""
+msgstr "MSApplication - Kvadratisk logo, 310px x 310px"
 
 #: 
 msgid "The URL to a logo file that is 310px by 310px."
@@ -15619,7 +15619,7 @@ msgstr "URL'en til en logofil, der er 310px af 310px."
 
 #: 
 msgid "MSApplication - Wide logo, 310px x 150px"
-msgstr ""
+msgstr "MSApplication - Bredt logo, 310px x 150px"
 
 #: 
 msgid "The URL to a logo file that is 310px by 150px."
@@ -15627,7 +15627,7 @@ msgstr "URL'en til en logofil, der er 310px af 150px."
 
 #: 
 msgid "MSApplication - Tooltip"
-msgstr ""
+msgstr "MSApplication - Værktøjstip"
 
 #: 
 msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
@@ -15635,7 +15635,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Square logo, 150px x 150px"
-msgstr ""
+msgstr "MSApplication - Kvadratisk logo, 150px x 150px"
 
 #: 
 msgid "The URL to a logo file that is 150px by 150px."
@@ -15647,11 +15647,11 @@ msgstr ""
 
 #: 
 msgid "Overrides the long site title when using the Apple Add to Home Screen."
-msgstr ""
+msgstr "Tilsidesætter det lange website-titel, når du bruger Apple-funktionen \"Føj til hjemmeskærm\"."
 
 #: 
 msgid "MSApplication - Notification"
-msgstr ""
+msgstr "MSApplication - Notifikation"
 
 #: 
 msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
@@ -15676,7 +15676,7 @@ msgstr "\n"
 
 #: 
 msgid "MSApplication - Tile image"
-msgstr ""
+msgstr "MSApplication - Flisebillede"
 
 #: 
 msgid "The URL to an image to use as the background for the live tile."
@@ -15688,11 +15688,11 @@ msgstr ""
 
 #: 
 msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
-msgstr ""
+msgstr "Leverer en absolut URL til en specielt formateret version af den nuværende side designet til 'feature phones', mobiltelefoner der ikke understøtter moderne browserstandarder. Se den <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>officielle Google Mobile SEO Guide</a> for detaljer om, hvordan siden bør formateres."
 
 #: 
 msgid "MSApplication - Window"
-msgstr ""
+msgstr "MSApplication - Vindue"
 
 #: 
 msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
@@ -15708,7 +15708,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Tile color"
-msgstr ""
+msgstr "MSApplication - Flisefarve"
 
 #: 
 msgid "The HTML color to use as the background color for the live tile."
@@ -15732,7 +15732,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Nav button color"
-msgstr ""
+msgstr "MSApplication - Farve for navigationsknap"
 
 #: 
 msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
@@ -15740,7 +15740,7 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Start URL"
-msgstr ""
+msgstr "MSApplication - Start URL"
 
 #: 
 msgid "The URL to the root page of the site."
@@ -15788,7 +15788,7 @@ msgstr "Hvis indstillet til 'telephone=no' vil siden ikke blive tjekket for tele
 
 #: 
 msgid "MSApplication - Task"
-msgstr ""
+msgstr "MSApplication - Opgave"
 
 #: 
 msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
@@ -15796,11 +15796,11 @@ msgstr ""
 
 #: 
 msgid "MSApplication - Task separator"
-msgstr ""
+msgstr "MSApplication - Opgaveseparator"
 
 #: 
 msgid "MSApplication - Config"
-msgstr ""
+msgstr "MSApplication - Konfiguration"
 
 #: 
 msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
@@ -15864,7 +15864,7 @@ msgstr ""
 
 #: 
 msgid "Norton Safe Web"
-msgstr ""
+msgstr "Norton Safe Web"
 
 #: 
 msgid "A string provided by <a href=':norton'>Norton Safe Web</a>, full details are available from the <a href=':verify_url'>Norton Safe Web online help</a>."
@@ -16049,7 +16049,7 @@ msgstr "iOS app navn"
 
 #: 
 msgid "Open Graph"
-msgstr ""
+msgstr "Open Graph"
 
 #: 
 msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
@@ -16217,11 +16217,11 @@ msgstr "Linker til Facebook-profiler for instruktør(er), der arbejdede på vide
 
 #: 
 msgid "Page URL"
-msgstr ""
+msgstr "Side URL"
 
 #: 
 msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
-msgstr ""
+msgstr "Foretrukken sideplacering eller URL for at hjælpe med at eliminere duplikeret indhold for søgemaskiner, f.eks. <em>https://www.imdb.com/title/tt0117500/</em>."
 
 #: 
 msgid "Gender"
@@ -16313,7 +16313,7 @@ msgstr "Telefonnummer"
 
 #: 
 msgid "Release date"
-msgstr ""
+msgstr "Udgivelsesdato"
 
 #: 
 msgid "The date the video was released."
@@ -16421,7 +16421,7 @@ msgstr "Alternative lokaler"
 
 #: 
 msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
-msgstr ""
+msgstr "Andre sproglokaliteter dette indhold er tilgængeligt i, skal være i formatet sprog_TERRITORIUM, f.eks. 'fr_FR'."
 
 #: 
 msgid "ISBN"
@@ -16481,7 +16481,7 @@ msgstr ""
 
 #: 
 msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
-msgstr ""
+msgstr "Leverer de femten <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> metatags fra <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
 
 #: 
 msgid "Metatag: Facebook"
@@ -16505,11 +16505,11 @@ msgstr ""
 
 #: 
 msgid "Metatag: Views"
-msgstr ""
+msgstr "Metatag: Visninger"
 
 #: 
 msgid "Provides views integration for metatags."
-msgstr ""
+msgstr "Leverer views-integration for metatags."
 
 #: 
 msgid "Add default meta tags"
@@ -16521,7 +16521,7 @@ msgstr "Slet standard meta tags"
 
 #: 
 msgid "Revert default meta tags"
-msgstr ""
+msgstr "Tilbagestil standard meta tags"
 
 #: 
 msgid "Configure the Metatag module"
@@ -16537,7 +16537,7 @@ msgstr ""
 
 #: 
 msgid "Provides support for Twitter's Card meta tags."
-msgstr ""
+msgstr "Leverer support for Twitters Card metatags."
 
 #: 
 msgid "Metatag: Open Graph Products"
@@ -16553,7 +16553,7 @@ msgstr ""
 
 #: 
 msgid "Overview of plugins used in metatag."
-msgstr ""
+msgstr "Oversigt over plugins brugt i metatag."
 
 #: 
 msgid "Metatag: Verification"
@@ -16591,7 +16591,7 @@ msgstr "Metatag: Open Graph"
 
 #: 
 msgid "Provides support for Open Graph Protocol meta tags."
-msgstr ""
+msgstr "Leverer support for Open Graph Protocol metatags."
 
 #: 
 msgid "Metatag: Test Custom Route"
@@ -16635,7 +16635,7 @@ msgstr ""
 
 #: 
 msgid "Multiple Fields Remove Button"
-msgstr ""
+msgstr "Fjern-knap til flere felter"
 
 #: 
 msgid "Add remove button for multi showing fields."
@@ -16699,7 +16699,7 @@ msgstr "Tekstfelt to"
 
 #: 
 msgid "Partial required"
-msgstr ""
+msgstr "Delvis krævet"
 
 #: 
 msgid "Baz"
@@ -16707,15 +16707,15 @@ msgstr ""
 
 #: 
 msgid "Qux"
-msgstr ""
+msgstr "Qux"
 
 #: 
 msgid "Not required"
-msgstr ""
+msgstr "Ikke nødvendigt"
 
 #: 
 msgid "Multi-value form element"
-msgstr ""
+msgstr "Flerværdi form-element"
 
 #: 
 msgid "Provides a multi-value form element that wraps any number of form elements."
@@ -16723,19 +16723,19 @@ msgstr ""
 
 #: 
 msgid "Multi-value form element AJAX test form"
-msgstr ""
+msgstr "Flerværdi form-element AJAX testformular"
 
 #: 
 msgid "Multi-value form element test form"
-msgstr ""
+msgstr "Flerværdi form-element testformular"
 
 #: 
 msgid "Multi-value form required elements test form"
-msgstr ""
+msgstr "Flerværdi form-element testformular for nødvendige elementer"
 
 #: 
 msgid "Multi-value form element test"
-msgstr ""
+msgstr "Flerværdi form-element test"
 
 #: 
 msgid "Test module for Multi-value form element."
@@ -16755,7 +16755,7 @@ msgstr ""
 
 #: 
 msgid "Override registration settings"
-msgstr ""
+msgstr "Tilsidesæt registreringsindstillinger"
 
 #: 
 msgid "If enabled, a user will be registered even if registration is set to \"Administrators only\"."
@@ -16771,7 +16771,7 @@ msgstr "Hvis deaktiveret, vil brugerkrav kun blive gemt, når kontoen først opr
 
 #: 
 msgid "OpenID buttons display in user login form"
-msgstr ""
+msgstr "OpenID knapper vises i brugers login-formular"
 
 #: 
 msgid "Above"
@@ -16811,7 +16811,7 @@ msgstr "<strong><em>Vær opmærksom på:</em> Denne indstilling har sikkerhedsm�
 
 #: 
 msgid "No external account providers are available."
-msgstr ""
+msgstr "Ingen eksterne konto-udbydere er tilgængelige."
 
 #: 
 msgid "You can connect your account with these external providers."
@@ -16819,11 +16819,11 @@ msgstr "Du kan forbinde din bruger med disse eksterne udbydere."
 
 #: 
 msgid "Provider: @title"
-msgstr ""
+msgstr "Udbyder: @title"
 
 #: 
 msgid "Not connected"
-msgstr ""
+msgstr "Ingen forbindelse"
 
 #: 
 msgid "Connected as %sub"
@@ -16875,7 +16875,7 @@ msgstr ""
 
 #: 
 msgid "Okta domain"
-msgstr ""
+msgstr "Okta domæne"
 
 #: 
 msgid "Set up your app in <a href=\"@url\" target=\"_blank\">Google API Console</a>."
@@ -16939,7 +16939,7 @@ msgstr "Emailadressen benyttes allerede: @email"
 
 #: 
 msgid "Only administrators can register new accounts."
-msgstr ""
+msgstr "Kun administratorer kan registrere nye konti."
 
 #: 
 msgid "Thank you for applying for an account. Your account is currently pending approval by the site administrator."
@@ -16991,7 +16991,7 @@ msgstr "Kaldenavn"
 
 #: 
 msgid "Preferred username"
-msgstr ""
+msgstr "Foretrukket brugernavn"
 
 #: 
 msgid "Shorthand name by which the End-User wishes to be referred to"
@@ -17019,7 +17019,7 @@ msgstr "Web side eller blog URL"
 
 #: 
 msgid "Preferred e-mail address"
-msgstr ""
+msgstr "Foretrukken e-mailadresse"
 
 #: 
 msgid "Email verified"
@@ -17127,7 +17127,7 @@ msgstr ""
 
 #: 
 msgid "Okta"
-msgstr ""
+msgstr "Okta"
 
 #: 
 msgid "GitHub"
@@ -17151,7 +17151,7 @@ msgstr ""
 
 #: 
 msgid "OpenID Connect redirect page"
-msgstr ""
+msgstr "OpenID Connect omdirigeringsside"
 
 #: 
 msgid "Configure OpenID Connect, choose active OpenID Connect clients etc."
@@ -17179,7 +17179,7 @@ msgstr "Slet Paragraphs kategori"
 
 #: 
 msgid "Paragraphs category %label has been deleted."
-msgstr ""
+msgstr "Paragraphs kategori %label er blevet slettet."
 
 #: 
 msgid "Label for the Paragraphs category."
@@ -17191,7 +17191,7 @@ msgstr "Beskrivelse af Paragraphs kategorien."
 
 #: 
 msgid "Saved the %label Paragraphs category."
-msgstr ""
+msgstr "Gemt %label afsnitskategori."
 
 #: 
 msgid "The %label Paragraphs category was not saved."
@@ -17222,7 +17222,7 @@ msgstr ""
 
 #: 
 msgid "Paragraphs categories"
-msgstr ""
+msgstr "Paragraphs kategorier"
 
 #: 
 msgid "Select all categories the paragraph applies to."
@@ -17276,7 +17276,7 @@ msgstr "Vis paragraphs i dialog som: %style"
 #: 
 msgctxt "Paragraphs Editor Enhancements"
 msgid "Number of add in between links: @count"
-msgstr ""
+msgstr "Antal tilføjelser mellem links: @count"
 
 #: 
 msgid "Use arrows for drag & drop"
@@ -17284,7 +17284,7 @@ msgstr "Brug pile til træk & slip"
 
 #: 
 msgid "Paragraphs Editor Enhancements"
-msgstr ""
+msgstr "Paragraphs redaktør forbedringer"
 
 #: 
 msgid "Use off-canvas instead of modal dialog"
@@ -17300,7 +17300,7 @@ msgstr ""
 
 #: 
 msgid "Paragraphs category"
-msgstr ""
+msgstr "Paragraphs kategori"
 
 #: 
 msgid "Add paragraphs category"
@@ -17345,7 +17345,7 @@ msgstr "Aktiver tilføj imellem knapper"
 #: 
 msgctxt "Paragraphs Editor Enhancements"
 msgid "Number of add in between links"
-msgstr ""
+msgstr "Antal tilføjelser mellem links"
 
 #: 
 msgid "Set the number of buttons available to directly add a paragraph."
@@ -17365,7 +17365,7 @@ msgstr "En udvidet eksperimentel paragraphs test widget."
 
 #: 
 msgid "Paragraphs features"
-msgstr ""
+msgstr "Paragraphs funktioner"
 
 #: 
 msgid "Configure settings for paragraphs features module."
@@ -17373,23 +17373,23 @@ msgstr ""
 
 #: 
 msgid "Paragraphs features settings"
-msgstr ""
+msgstr "Paragraphs funktionsindstillinger"
 
 #: 
 msgid "Paragraphs Features"
-msgstr ""
+msgstr "Paragraphs Funktioner"
 
 #: 
 msgid "Provides additional paragraphs widgets."
-msgstr ""
+msgstr "Leverer yderligere afsnits widgets."
 
 #: 
 msgid "Paragraphs Features Test"
-msgstr ""
+msgstr "Paragraphs funktiontests"
 
 #: 
 msgid "Provides Test scaffolds for Paragraphs Features module."
-msgstr ""
+msgstr "Leverer teststel for Paragraphs Features modul."
 
 #: 
 msgid "You have not created any event types yet. Go to the <a href=\"@create_content\">eventseries type creation page</a> to add a new eventseries type."
@@ -17461,7 +17461,7 @@ msgstr "Indtast det seneste tidspunkt, hvor arrangementet starter, i h:ia format
 
 #: 
 msgid "PHP date/time format"
-msgstr ""
+msgstr "PHP dato/tidsformat"
 
 #: 
 msgid "Event Series Date Format"
@@ -17645,7 +17645,7 @@ msgstr "Oprettede %label Udelukkede datoer."
 
 #: 
 msgid "Saved the %label Excluded dates."
-msgstr ""
+msgstr "Gemt de %label ekskluderede datoer."
 
 #: 
 msgid "Are you sure you want to delete the @language translation of the @entity-type %label?"
@@ -17725,7 +17725,7 @@ msgstr "Oprettede %label Inkluderede datoer."
 
 #: 
 msgid "Saved the %label Included dates."
-msgstr ""
+msgstr "Gemt de %label inkluderede datoer."
 
 #: 
 msgid "Confirm Date Changes"
@@ -17733,7 +17733,7 @@ msgstr "Bekræft ændring af dato/tidspunkt"
 
 #: 
 msgid "Recurrence configuration has been changed, as a result all instances will be removed and recreated. This action cannot be undone."
-msgstr ""
+msgstr "Gentagelseskonfigurationen er ændret, som resultat vil alle instanser blive fjernet og genoprettet. Denne handling kan ikke fortrydes."
 
 #: 
 msgid "Stored"
@@ -18221,19 +18221,19 @@ msgstr "Indstil det årlige gentagelsesmønster"
 
 #: 
 msgid "Please enter a start date"
-msgstr ""
+msgstr "Angiv venligst en startdato"
 
 #: 
 msgid "Please enter an end date"
-msgstr ""
+msgstr "Angiv en slutdato"
 
 #: 
 msgid "Please enter a start time"
-msgstr ""
+msgstr "Angiv venligst en starttid"
 
 #: 
 msgid "Please select a duration from the list"
-msgstr ""
+msgstr "Vælg en varighed fra listen"
 
 #: 
 msgid "Please select an event recurrence schedule type from the list"
@@ -18245,11 +18245,11 @@ msgstr "Vælg en gentagelsesdag fra oversigten"
 
 #: 
 msgid "Please select week days from the list"
-msgstr ""
+msgstr "Vælg ugedage fra listen"
 
 #: 
 msgid "Please select days of the month from the list"
-msgstr ""
+msgstr "Vælg dage i måneden fra listen"
 
 #: 
 msgid "Please select the number of years between occurrences"
@@ -18257,7 +18257,7 @@ msgstr "Vælg antal år der skal gå mellem hver instans"
 
 #: 
 msgid "Please select at least one month from the list"
-msgstr ""
+msgstr "Vælg mindst en måned fra listen"
 
 #: 
 msgid "Create Events Between"
@@ -18334,7 +18334,7 @@ msgstr "Dato"
 
 #: 
 msgid "Please configure the Monthly Recurring Date settings"
-msgstr ""
+msgstr "Konfigurer indstillinger for de månedlige tilbagevendende datoer"
 
 #: 
 msgid "First Event Starts At"
@@ -18358,11 +18358,11 @@ msgstr "Venligst indsæt et sluttidspunkt"
 
 #: 
 msgid "Please enter a duration greater than 0"
-msgstr ""
+msgstr "Angiv venligst en varighed større end 0"
 
 #: 
 msgid "Please select a duration units value from the list"
-msgstr ""
+msgstr "Vælg en varighedsenhed fra listen"
 
 #: 
 msgid "Please enter a buffer greater than or equal to 0"
@@ -18706,7 +18706,7 @@ msgstr ""
 
 #: 
 msgid "Registrant ID"
-msgstr ""
+msgstr "Deltager ID"
 
 #: 
 msgid "Instance"
@@ -18762,7 +18762,7 @@ msgstr "Indtast brugerdefineret URL here"
 
 #: 
 msgid "Registrant Display"
-msgstr ""
+msgstr "Deltager visning"
 
 #: 
 msgid "Use the administration theme when managing registrations"
@@ -18931,7 +18931,7 @@ msgstr "Oprettet %label deltagertype."
 
 #: 
 msgid "Saved the %label registrant type."
-msgstr ""
+msgstr "Gemt %label deltagertype."
 
 #: 
 msgid "Resend Registration Email"
@@ -18967,7 +18967,7 @@ msgstr "Gå tilbage til deltagerliste"
 
 #: 
 msgid "Registrant email successfully resent."
-msgstr ""
+msgstr "Deltagerens email er succesfuldt gensendt."
 
 #: 
 msgid "Registration full."
@@ -19067,7 +19067,7 @@ msgstr "Sendte succesfuldt emails til %reg_count registrerede og %wait_count bru
 
 #: 
 msgid "No emails were sent as there were no registrants or waitlist users to contact."
-msgstr ""
+msgstr "Ingen emails blev sendt, da der ikke var nogen deltagere eller ventelistens brugere at kontakte."
 
 #: 
 msgid "Successfully deleted @count registrants(s)."
@@ -19259,7 +19259,7 @@ msgstr "Hvilke roller kan tilmelde sig denne serie?"
 
 #: 
 msgid "Provide a comma-separated list of machine names for the roles that have permission to register for this series.  Leave blank to allow anybody to register."
-msgstr ""
+msgstr "Angiv en komma-separeret liste over navne for de roller, der har tilladelse til at registrere sig til denne serie. Lad være blank for at tillade alle at registrere."
 
 #: 
 msgid "Show"
@@ -19319,11 +19319,11 @@ msgstr "Vælg mellem åben eller planlagt registrering. Åben registrering slutt
 
 #: 
 msgid "Open Registration"
-msgstr ""
+msgstr "Åben registrering"
 
 #: 
 msgid "Scheduled Registration"
-msgstr ""
+msgstr "Planlagt registrering"
 
 #: 
 msgid "Series Registration"
@@ -19423,19 +19423,19 @@ msgstr ""
 
 #: 
 msgid "No key defined for @module notifications."
-msgstr ""
+msgstr "Ingen nøgle defineret for @module notifikationer."
 
 #: 
 msgid "No config name defined for @module notifications."
-msgstr ""
+msgstr "Ingen konfigurationsnavn defineret for @module notifikationer."
 
 #: 
 msgid "No default from address configured. Please check the system.site mail config."
-msgstr ""
+msgstr "Ingen standard afsenderadresse konfigureret. Tjek system.site mail konfig."
 
 #: 
 msgid "No default subject configured for @key emails in @config_name."
-msgstr ""
+msgstr "Ingen standard emne konfigureret for @key emails i @config_name."
 
 #: 
 msgid "No default body configured for @key emails in @config_name."
@@ -19475,7 +19475,7 @@ msgstr "Send en e-mail til tilmeldte for at bekræfte, at de er tilføjet til ve
 
 #: 
 msgid "Promotion Notification"
-msgstr ""
+msgstr "Promoveringsnotifikation"
 
 #: 
 msgid "Send an email to a registrant to confirm they were promoted from the waitlist?"
@@ -19531,7 +19531,7 @@ msgstr "Påmindelse om registrering"
 
 #: 
 msgid "Reminder Date"
-msgstr ""
+msgstr "Påmindelsesdato"
 
 #: 
 msgid "Reminder Sent"
@@ -19547,7 +19547,7 @@ msgstr "Vælg, om du vil aktivere e-mailpåmindelser til tilmeldte."
 
 #: 
 msgid "Reminder Time"
-msgstr ""
+msgstr "Påmindelsestidspunkt"
 
 #: 
 msgid "Select when the reminder should be sent out."
@@ -19555,7 +19555,7 @@ msgstr "Vælg, hvornår påmindelsen skal sendes ud."
 
 #: 
 msgid "Reminder Time Units"
-msgstr ""
+msgstr "Påmindelsestidsenheder"
 
 #: 
 msgid "Select when the reminder should be sent out (units)."
@@ -19575,7 +19575,7 @@ msgstr "Send en påmindelse"
 
 #: 
 msgid "Reminder Message"
-msgstr ""
+msgstr "Påmindelsesbesked"
 
 #: 
 msgid "Registration Reminder"
@@ -19635,7 +19635,7 @@ msgstr ""
 
 #: 
 msgid "Registrant"
-msgstr ""
+msgstr "Deltager"
 
 #: 
 msgid "Registrant tokens from the Recurring Events Registration module."
@@ -19643,7 +19643,7 @@ msgstr ""
 
 #: 
 msgid "Registrant Email"
-msgstr ""
+msgstr "Deltagerens email"
 
 #: 
 msgid "The email of the registrant."
@@ -19883,7 +19883,7 @@ msgstr ""
 
 #: 
 msgid "Recurrence configuration has been changed in this revision, as a result if you choose to publish this revision all instances will be removed and recreated. This action cannot be undone."
-msgstr ""
+msgstr "Gentagelseskonfigurationen er ændret i denne revision, som resultat vil alle instanser blive fjernet og genoprettet, hvis du vælger at udgive denne revision. Denne handling kan ikke fortrydes."
 
 #: 
 msgid "Skipping excluded date: @start_date - @end_date"
@@ -19971,7 +19971,7 @@ msgstr ""
 
 #: 
 msgid "Recreate Event Instances"
-msgstr ""
+msgstr "Genopret arrangementsinstanser"
 
 #: 
 msgid "Recurring event series scheduler plugin"
@@ -19979,7 +19979,7 @@ msgstr ""
 
 #: 
 msgid "Provides support for scheduling Recurring event series entities"
-msgstr ""
+msgstr "Leverer support for planlægning af tilbagevendende arrangementsenheder"
 
 #: 
 msgid "Stores a monthly recurring date configuration"
@@ -20039,7 +20039,7 @@ msgstr ""
 
 #: 
 msgid "Recurring Events Full Calendar View Processor"
-msgstr ""
+msgstr "Processor for fuld kalendervisning af tilbagevendende arrangementer"
 
 #: 
 msgid "Group event series"
@@ -20131,11 +20131,11 @@ msgstr "Tilmelding af tilbagevendende begivenheder"
 
 #: 
 msgid "Provides the ability to register for recurring events"
-msgstr ""
+msgstr "Leverer muligheden for at registrere sig til tilbagevendende arrangementer"
 
 #: 
 msgid "Registrant Settings"
-msgstr ""
+msgstr "Deltagerindstillinger"
 
 #: 
 msgid "Add Registration"
@@ -20207,11 +20207,11 @@ msgstr ""
 
 #: 
 msgid "Recurring Events iCalendar"
-msgstr ""
+msgstr "Tilbagevendende arrangementer iCalendar"
 
 #: 
 msgid "Provides the ability to export recurring events as iCalendar files"
-msgstr ""
+msgstr "Leverer muligheden for at eksportere tilbagevendende begivenheder som iCalendar filer"
 
 #: 
 msgid "Revisions"
@@ -20547,7 +20547,7 @@ msgstr "@entity_type_singular, hvorfra den planlagte dato for afpublicering skal
 
 #: 
 msgid "Publish a @entity_type_singular immediately"
-msgstr ""
+msgstr "Udgiv en @entity_type_singular øjeblikkeligt"
 
 #: 
 msgid "@entity_type_label for publishing"
@@ -20599,7 +20599,7 @@ msgstr "Enhedstyper"
 
 #: 
 msgid "no entity types defined"
-msgstr ""
+msgstr "ingen enhedstyper defineret"
 
 #: 
 msgid "publishing"
@@ -20715,7 +20715,7 @@ msgstr ""
 
 #: 
 msgid "nothing to update"
-msgstr ""
+msgstr "intet at opdatere"
 
 #: 
 msgid "Scheduler entity update - @updated"
@@ -20723,7 +20723,7 @@ msgstr ""
 
 #: 
 msgid "nothing to do"
-msgstr ""
+msgstr "intet at gøre"
 
 #: 
 msgid "Scheduler entity revert - @reverted"
@@ -20863,7 +20863,7 @@ msgstr "Lokal tid: %localtime (%daylight_saving). Du kan ændre dette via din <a
 
 #: 
 msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
-msgstr ""
+msgstr "Bemærk: Brugerens tidszone er ikke gemt, så standardindstillingen er webstedets tidszone."
 
 #: 
 msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
@@ -20895,7 +20895,7 @@ msgstr ""
 
 #: 
 msgid "No database fields had to be added."
-msgstr ""
+msgstr "Ingen databasefelter skulle tilføjes."
 
 #: 
 msgid "Updated views: %updated."
@@ -20903,15 +20903,15 @@ msgstr "Opdaterede visninger: %updated."
 
 #: 
 msgid "No views require updating."
-msgstr ""
+msgstr "Ingen visninger kræver opdatering."
 
 #: 
 msgid "Nothing requires updating for Taxonomy Terms."
-msgstr ""
+msgstr "Der kræves ikke opdatering for taksonomi-betingelser."
 
 #: 
 msgid "No reaction rules required updating with entity context."
-msgstr ""
+msgstr "Ingen reaktionsregler krævede opdatering med enhedskontekst."
 
 #: 
 msgid "1 reaction rule updated with entity context"
@@ -20925,7 +20925,7 @@ msgstr "%updated."
 
 #: 
 msgid "No update required."
-msgstr ""
+msgstr "Det er ikke nødvendig med en opdatering."
 
 #: 
 msgid "Publish on date"
@@ -21033,7 +21033,7 @@ msgstr "Udgiv %type @singular umiddelbart efter at gemme"
 
 #: 
 msgid "Schedule the %type @singular for publication on the next cron run"
-msgstr ""
+msgstr "Planlæg %type @singular til publicering ved næste cron-opdatering"
 
 #: 
 msgid "Change %type creation time to match the published time, for dates before the %type was created"
@@ -21335,7 +21335,7 @@ msgstr ""
 
 #: 
 msgid "Provides support for scheduling Taxonomy Term entities"
-msgstr ""
+msgstr "Leverer support for planlægning af taksonomiudtryk enheder"
 
 #: 
 msgid "Node Scheduler Plugin"
@@ -21343,7 +21343,7 @@ msgstr ""
 
 #: 
 msgid "Provides support for scheduling node entities"
-msgstr ""
+msgstr "Leverer support for planlægning af nodeenheder"
 
 #: 
 msgid "Media Scheduler Plugin"
@@ -21351,7 +21351,7 @@ msgstr "Medieplanlægningsplugin"
 
 #: 
 msgid "Provides support for scheduling media entities"
-msgstr ""
+msgstr "Leverer support for planlægning af medieenheder"
 
 #: 
 msgid "Commerce Product Scheduler Plugin"
@@ -21359,15 +21359,15 @@ msgstr ""
 
 #: 
 msgid "Provides support for scheduling Commerce Product entities"
-msgstr ""
+msgstr "Leverer support for planlægning af Commerce Product enheder"
 
 #: 
 msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
-msgstr ""
+msgstr "Planlagt indholdsadgang. FORÆLDET! BRUG IKKE DETTE."
 
 #: 
 msgid "NOT USED"
-msgstr ""
+msgstr "IKKE BRUGT"
 
 #: 
 msgctxt "Validation"
@@ -21453,7 +21453,7 @@ msgstr ""
 
 #: 
 msgid "Restrict exposed filter values to those presented in the already filtered result set by other applied filters. (Not work when view use ajax form in block)"
-msgstr ""
+msgstr "Begræns eksponerede filterværdier til dem præsenteret i det allerede filtrerede resultatsæt af andre anvendte filtre. (Fungerer ikke når visning bruger ajax form i blok)"
 
 #: 
 msgid "Hide filter, if no options"
@@ -21473,7 +21473,7 @@ msgstr ""
 
 #: 
 msgid "Provide extra option for better exposed filters to show only used terms in filter."
-msgstr ""
+msgstr "Lever ekstra mulighed for bedre eksponerede filtre for at vise kun anvendte betingelser i filter."
 
 #: 
 msgid "Create new menu"
@@ -21565,7 +21565,7 @@ msgstr ""
 
 #: 
 msgid "National"
-msgstr ""
+msgstr "National"
 
 #: 
 msgid "RFC3966"
@@ -22527,7 +22527,7 @@ msgstr ""
 
 #: 
 msgid "Purge focal point entities after they are updated"
-msgstr ""
+msgstr "Slet fokuspunktsenheder efter de er opdateret"
 
 #: 
 msgid "You need to setup Varnish to listen to the request method URIBAN. Example:"
@@ -22539,7 +22539,7 @@ msgstr ""
 
 #: 
 msgid "Purge image styles after entity update"
-msgstr ""
+msgstr "Slet billedstile efter enhedsopdatering"
 
 #: 
 msgid "Adminster"
@@ -22555,7 +22555,7 @@ msgstr "For at specificere hvilke enheder, der skal have slettet billeder ved re
 
 #: 
 msgid "No content entities were found"
-msgstr ""
+msgstr "Ingen indholds-entiteter blev fundet"
 
 #: 
 msgid "Configure bundles of entity types that Varnish image purge should be used for, if none selected, all bundles form all entity types will be used. Just the fields of type image will be purge."
@@ -22607,7 +22607,7 @@ msgstr ""
 
 #: 
 msgid "Purge image styles after a focal point entity needs to be updated"
-msgstr ""
+msgstr "Slet billedstile efter en fokuspunktsenhed skal opdateres"
 
 #: 
 msgid "Varnish Image Purge"
@@ -22685,7 +22685,7 @@ msgstr "Indstillinger for infinite scroll"
 
 #: 
 msgid "Note: The infinite scroll option overrides and requires the <em>Use AJAX</em> setting for this views display."
-msgstr ""
+msgstr "Bemærk: Indstillingen for infinite scroll tilsidesætter og kræver <em>Brug AJAX</em>-indstillingen for denne visning."
 
 #: 
 msgid "Button Text"
@@ -22869,7 +22869,7 @@ msgstr "- Alle -"
 #: 
 msgctxt "facets.facet.event_categories:missing_label"
 msgid "others"
-msgstr ""
+msgstr "andre"
 
 #: 
 msgctxt "facets.facet.event_categories:url_alias"
@@ -23022,7 +23022,7 @@ msgstr "DPL fejlsider"
 
 #: 
 msgid "Provides content for error (404 & 403) pages."
-msgstr ""
+msgstr "Leverer indhold til fejl (404 & 403) sider."
 
 #: 
 msgctxt "Opening Hours"
@@ -23047,7 +23047,7 @@ msgstr ""
 #: 
 msgctxt "DPL admin UX"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "DPL admin UX"
@@ -23312,11 +23312,6 @@ msgid "Update URL alias"
 msgstr "Opdater URL alias"
 
 #: 
-msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
-msgid "Breadcrumb and URL structure"
-msgstr "Brødkrummer og URL struktur"
-
-#: 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
 msgid "All"
 msgstr ""
@@ -23383,7 +23378,7 @@ msgstr "Afdeling"
 #: 
 msgctxt "facets.facet.content_branch:missing_label"
 msgid "others"
-msgstr ""
+msgstr "andre"
 
 #: 
 msgctxt "facets.facet.content_branch:url_alias"
@@ -23403,7 +23398,7 @@ msgstr "Kategori"
 #: 
 msgctxt "facets.facet.content_categories:missing_label"
 msgid "others"
-msgstr ""
+msgstr "andre"
 
 #: 
 msgctxt "facets.facet.content_categories:url_alias"
@@ -23448,12 +23443,12 @@ msgstr ""
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "På"
 
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "image.style.list_teaser_4_3:label"
@@ -23483,7 +23478,7 @@ msgstr "Indhold"
 #: 
 msgctxt "views.view.articles:display:all:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:footer:area_text_custom:content"
@@ -23593,7 +23588,7 @@ msgstr "Webformular"
 #: 
 msgctxt "paragraphs.paragraphs_type.webform:description"
 msgid "Paragraph used for embedding a webform."
-msgstr ""
+msgstr "Paragraph brugt til indlejring af en webform."
 
 #: 
 msgctxt "system.action.webform_archive_action:label"
@@ -23613,7 +23608,7 @@ msgstr "Slet webformular"
 #: 
 msgctxt "system.action.webform_open_action:label"
 msgid "Open webform"
-msgstr ""
+msgstr "Åben formular"
 
 #: 
 msgctxt "system.action.webform_submission_delete_action:label"
@@ -23718,7 +23713,7 @@ msgstr "- Alle -"
 #: 
 msgctxt "views.view.webform_submissions:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: 
 msgctxt "views.view.webform_submissions:display:default:display_options:exposed_form:options:submit_button"
@@ -24033,7 +24028,7 @@ msgstr "< Forrige"
 #: 
 msgctxt "webform.settings:settings:default_wizard_next_button_label"
 msgid "Next >"
-msgstr ""
+msgstr "Næste >"
 
 #: 
 msgctxt "webform.settings:settings:default_wizard_start_label"
@@ -24058,7 +24053,7 @@ msgstr "Skjul alle"
 #: 
 msgctxt "webform.settings:settings:default_preview_next_button_label"
 msgid "Preview"
-msgstr ""
+msgstr "Forhåndsvisning"
 
 #: 
 msgctxt "webform.settings:settings:default_preview_prev_button_label"
@@ -24068,7 +24063,7 @@ msgstr "< Forrige"
 #: 
 msgctxt "webform.settings:settings:default_preview_label"
 msgid "Preview"
-msgstr ""
+msgstr "Forhåndsvisning"
 
 #: 
 msgctxt "webform.settings:settings:default_preview_title"
@@ -24113,7 +24108,7 @@ msgstr "[webform_submission:submitted-to]: Indsendelse #[webform_submission:seri
 #: 
 msgctxt "webform.settings:settings:default_submission_access_denied_message"
 msgid "Please login to access this submission."
-msgstr ""
+msgstr "Log ind for at få adgang til indsendelsen."
 
 #: 
 msgctxt "webform.settings:settings:default_submission_exception_message"
@@ -24143,22 +24138,22 @@ msgstr "Denne indsendelse er autofyldt med dine tidligere indsendelser."
 #: 
 msgctxt "webform.settings:settings:default_limit_total_message"
 msgid "No more submissions are permitted."
-msgstr ""
+msgstr "Der er ikke tilladt flere indsendelser."
 
 #: 
 msgctxt "webform.settings:settings:default_limit_user_message"
 msgid "No more submissions are permitted."
-msgstr ""
+msgstr "Der er ikke tilladt flere indsendelser."
 
 #: 
 msgctxt "webform.settings:settings:dialog_options:narrow:title"
 msgid "Narrow"
-msgstr ""
+msgstr "Smal"
 
 #: 
 msgctxt "webform.settings:settings:dialog_options:normal:title"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: 
 msgctxt "webform.settings:settings:dialog_options:wide:title"
@@ -24899,7 +24894,7 @@ msgstr "Januar: Januar\n"
 #: 
 msgctxt "webform.webform_options.phone_types:label"
 msgid "Phone type"
-msgstr ""
+msgstr "Telefontype"
 
 #: 
 msgctxt "webform.webform_options.phone_types:category"
@@ -24919,7 +24914,7 @@ msgstr "Hjem: Hjem\n"
 #: 
 msgctxt "webform.webform_options.province_codes:label"
 msgid "Province codes"
-msgstr ""
+msgstr "Provinskoder"
 
 #: 
 msgctxt "webform.webform_options.province_codes:category"
@@ -24959,7 +24954,7 @@ msgstr "AB: Alberta\n"
 #: 
 msgctxt "webform.webform_options.province_names:label"
 msgid "Province names"
-msgstr ""
+msgstr "Provinsnavne"
 
 #: 
 msgctxt "webform.webform_options.province_names:category"
@@ -24999,7 +24994,7 @@ msgstr "lberta: Alberta\n"
 #: 
 msgctxt "webform.webform_options.relationship:label"
 msgid "Relationship"
-msgstr ""
+msgstr "Relation"
 
 #: 
 msgctxt "webform.webform_options.relationship:category"
@@ -25014,7 +25009,11 @@ msgid "Parent: Parent\n"
 "Child: Child\n"
 "Friend: Friend\n"
 ""
-msgstr ""
+msgstr "Forælder: Forælder\n"
+"Partner: Partner\n"
+"Søskende: Søskende\n"
+"Barn: Barn\n"
+"Ven: Ven"
 
 #: 
 msgctxt "webform.webform_options.sex:label"
@@ -26058,7 +26057,7 @@ msgstr "Oprettet"
 #: 
 msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:next"
 msgid "next ›"
-msgstr ""
+msgstr "næste ›"
 
 #: 
 msgctxt "views.view.redirect:display:default:display_options:pager:options:tags:previous"
@@ -26088,7 +26087,7 @@ msgstr "- Alle -"
 #: 
 msgctxt "views.view.redirect:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: 
 msgctxt "views.view.redirect:display:default:display_options:exposed_form:options:submit_button"
@@ -26178,7 +26177,7 @@ msgstr "307 Midlertidig omdirigering"
 #: 
 msgctxt "views.view.redirect:display:default:display_options:filters:language:expose:label"
 msgid "Original language"
-msgstr ""
+msgstr "Originalsprog"
 
 #: 
 msgctxt "views.view.redirect:display:default:display_options:header:area:content:value"
@@ -26188,7 +26187,7 @@ msgstr "Brug omdirigering, når du ønsker dynamiske URL'er. F.eks. når du har 
 #: 
 msgctxt "views.view.redirect:display:page_1:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "DPL Opening Hours Editor"
@@ -26366,7 +26365,7 @@ msgstr "- Alle -"
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: 
 msgctxt "views.view.event_instance_list:display:default:display_options:exposed_form:options:submit_button"
@@ -26541,7 +26540,7 @@ msgstr "- Alle -"
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: 
 msgctxt "views.view.event_series_admin:display:default:display_options:exposed_form:options:submit_button"
@@ -26611,7 +26610,7 @@ msgstr "Arrangementserie"
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: 
 msgctxt "Global"
@@ -26782,7 +26781,35 @@ msgid "name:\n"
 "notice:\n"
 "  '#type': webform_markup\n"
 "  '#markup': '<p>BEMÆRK! Indsæt aldrig CPR-nummer eller følsomme oplysninger i formularen.</p><p>Læs mere om <a href=\"/privatlivspolitik\" target=\"_blank\">behandling af persondata i vores privatlivspolitik.</a></p>'"
-msgstr ""
+msgstr "#type': tekstfelt\n"
+"'#title': 'Dit navn'\n"
+"'#required': true\n"
+"email:\n"
+"'#type': email\n"
+"'#title': 'Din e-mailadresse'\n"
+"'#required': true\n"
+"category:\n"
+"'#type': webform_term_select\n"
+"'#title': Kategori\n"
+"'#required': true\n"
+"'#vocabulary': webform_email_categories\n"
+"subject:\n"
+"'#type': tekstfelt\n"
+"'#title': Emne\n"
+"'#required': true\n"
+"'#test': 'Testing contact webform from [site:name]'\n"
+"message:\n"
+"'#type': tekstområde\n"
+"'#title': Besked\n"
+"'#required': true\n"
+"'#test': 'Please ignore this email.'\n"
+"actions:\n"
+"'#type': webform_actions\n"
+"'#title': 'Send knap(er)'\n"
+"'#submit__label': 'Send besked'\n"
+"notice:\n"
+"'#type': webform_markup\n"
+"'#markup': '<p>BEMÆRK! Indsæt aldrig CPR-nummer eller følsomme oplysninger i formularen.</p><p>Læs mere om <a href=\"\"/privatlivspolitik\"\" target=\"\"_blank\"\">behandling af persondata i vores privatlivspolitik.</a></p>"
 
 #: 
 msgctxt "webform.webform.contact:settings:confirmation_message"
@@ -26813,4 +26840,173 @@ msgstr ""
 msgctxt "Create patron"
 msgid "Log in again"
 msgstr "Log ind igen"
+
+#: 
+msgctxt "Global"
+msgid "Do you want to cancel your reservations?"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Age range"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Notes"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Dimensions"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Host Publication"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Source"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Contents"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "Go to the loan list page to see your overdue loans"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "See your overdue loans"
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "You have an overdue loan. You may be charged fees upon handing in or renewing it."
+msgstr ""
+
+#: 
+msgctxt "Fees list"
+msgid "You have overdue loans. You may be charged fees upon handing in or renewing them."
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Choose preferred library for pickup of your future reservations."
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Error occurred"
+msgstr ""
+
+#: 
+msgctxt "Create patron"
+msgid "Loading"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "<p>In previous versions of Drupal, you could clear the cache frequently without major consequences.<br> From Drupal 8 onwards, the caching system has been improved, allowing you to manage the cache more specifically and effectively, which enhances response times on the website.</p>\n"
+"         <p><strong>Be aware that clearing the entire cache can now slow down the website more than before. It's best to clear the cache only when necessary and report any persistent issues, so they can be further investigated.</strong></p>"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Clear caches"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Cache has been cleared manually."
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "All caches cleared."
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "This and feuture instances"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Only this instance"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Edit opening hour"
+msgstr ""
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Remove opening hour"
+msgstr ""
+
+#: 
+msgid "Clear cache"
+msgstr "Ryd cache"
+
+#: 
+msgid "Cache settings"
+msgstr ""
+
+#: 
+msgid "DPL Cache settings"
+msgstr ""
+
+#: 
+msgid "Giving admins a clearer access to cache-clearing, and the consequences."
+msgstr ""
+
+#: 
+msgid "DPL REST base"
+msgstr ""
+
+#: 
+msgid "A base module for providing shared functionality between modules exposing REST services."
+msgstr ""
+
+#: 
+msgid "Go to frontpage"
+msgstr ""
+
+#: 
+msgctxt "paragraphs_ee.paragraphs_category.content_elements:label"
+msgid "Content elements"
+msgstr ""
+
+#: 
+msgctxt "paragraphs_ee.paragraphs_category.forms:label"
+msgid "Forms"
+msgstr ""
+
+#: 
+msgctxt "paragraphs_ee.paragraphs_category.material_dissemination:label"
+msgid "Material Dissemination"
+msgstr ""
+
+#: 
+msgctxt "paragraphs_ee.paragraphs_category.structural_elements:label"
+msgid "Structural elements"
+msgstr ""
+
+#: 
+msgctxt "paragraphs_ee.paragraphs_category.user_creation:label"
+msgid "User creation"
+msgstr ""
+
+#: 
+msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
+msgid "Brødkrummer og URL struktur"
+msgstr "Brødkrummer og URL struktur"
 
