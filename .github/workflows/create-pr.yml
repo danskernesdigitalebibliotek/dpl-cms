@@ -1,4 +1,4 @@
-name: Create Pr from branch
+name: Create PR with external dependency
 
 on:
   repository_dispatch:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Create Branch
+    name: Create PR with external dependency
     runs-on: ubuntu-latest
     steps:
       - name: Verify Event
