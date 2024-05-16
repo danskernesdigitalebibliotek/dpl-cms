@@ -21,7 +21,8 @@ jobs:
           fetch-depth: 0
         if: ${{ env.PR_BRANCH && env.BUILD_URL }}
 
-      - uses: Wandalen/wretry.action@master
+      - name: Insert dependency
+        uses: Wandalen/wretry.action@master
         id: manipulate_composer
         with:
           command: |
