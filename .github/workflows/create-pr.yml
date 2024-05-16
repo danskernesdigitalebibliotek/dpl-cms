@@ -13,11 +13,12 @@ jobs:
         env:
           BUILD_URL: ${{ github.event.client_payload.build_url }}
           PR_BRANCH: ${{ github.event.client_payload.branch }}
+          PACKAGE: ${{ github.event.client_payload.dependency_package }}
         run: |
           echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
           echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
-          echo "PACKAGE" >> $GITHUB_ENV
-        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.package }}
+          echo "PACKAGE=$PACKAGE" >> $GITHUB_ENV
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
       - uses: actions/checkout@v4
         with:
