@@ -35,7 +35,8 @@ jobs:
             composer remove ${{ env.PACKAGE }} \
             && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        if: ${{ env.BUILD_URL && env.PACKAGE }}
+        # TODO: Remember to change hardcoded url check.
+        if: ${{ env.BUILD_URL && env.PACKAGE && startsWith(env.BUILD_URL, 'https://github.com/reload/poc-dpl-react-pr-trigger/releases/download') }}
 
       - name: Create branch and PR
         run: |
