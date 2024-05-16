@@ -13,8 +13,11 @@ jobs:
         env:
           BUILD_URL: ${{ github.event.client_payload.build_url }}
           PR_BRANCH: ${{ github.event.client_payload.branch }}
-        run: echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV; echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
-        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url }}
+        run: |
+          echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
+          echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
+          echo "PACKAGE" >> $GITHUB_ENV
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.package }}
 
       - uses: actions/checkout@v4
         with:
@@ -26,12 +29,12 @@ jobs:
         id: manipulate_composer
         with:
           command: |
-            composer config repositories.danskernesdigitalebibliotek/dpl-react '{"type":"package","package":{"name":"danskernesdigitalebibliotek\/dpl-react","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
+            composer config repositories.${{ env.PACKAGE }} '{"type":"package","package":{"name":"${{ env.PACKAGE }}","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
 
-            composer remove danskernesdigitalebibliotek/dpl-react \
-            && composer require danskernesdigitalebibliotek/dpl-react
+            composer remove ${{ env.PACKAGE }} \
+            && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        if: ${{ env.BUILD_URL}}
+        if: ${{ env.BUILD_URL && env.PACKAGE }}
 
       - name: Create branch and PR
         run: |
