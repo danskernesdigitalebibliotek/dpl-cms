@@ -14,7 +14,8 @@ jobs:
 
       - name: Testing
         run: |
-          echo ${{ toJson(env) }}
-        # if: ${{ env.BUILD_URL_IS_ACCEPTED == 'true' }}
-        env:
-          BUILD_URL_IS_ACCEPTED: $(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
+          BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
+          echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
+      - name: Testing II
+        run: |
+          echo ${{ env.BUILD_URL_IS_ACCEPTED}}
