@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-17 12:30+0200\n"
-"PO-Revision-Date: 2024-05-17 12:30+0200\n"
+"POT-Creation-Date: 2024-05-17 16:29+0200\n"
+"PO-Revision-Date: 2024-05-17 16:29+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr "Skøn-/faglitteratur"
 
 msgctxt "Search Result"
 msgid "Genre and form"
-msgstr "Genre og form"
+msgstr "Genre"
 
 msgctxt "Search Result"
 msgid "Main languages"
@@ -2708,7 +2708,7 @@ msgstr "Materialetype"
 
 msgctxt "Search Result"
 msgid "Material types specific"
-msgstr "Specifik materialetype"
+msgstr "Format"
 
 msgctxt "Search Result"
 msgid "Year"
