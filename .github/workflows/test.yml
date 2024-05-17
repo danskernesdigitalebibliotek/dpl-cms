@@ -13,5 +13,5 @@ jobs:
         run: |
           echo ${{ env.TEST_ONE }}
         env:
-          TEST_ONE: $(echo "${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}" | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
+          TEST_ONE: echo "${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}" | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))'
 
