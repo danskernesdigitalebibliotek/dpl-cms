@@ -1,0 +1,18 @@
+name: Test
+
+on:
+  push
+
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Testing
+        run: |
+            echo ${{ toJson(env.HAS_ACCEPTED_BUILD_URL_PREFIX) }}
+            echo ${{ toJson(env.ACCEPTED_BUILD_URL_PREFIXES) }}
+        env:
+          ACCEPTED_BUILD_URL_PREFIXES: "${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES) }}"
+          HAS_ACCEPTED_BUILD_URL_PREFIX: ${{ (startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[0]) || startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[1])) }}
