@@ -39,12 +39,14 @@ jobs:
             composer remove ${{ env.PACKAGE }} \
             && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        # TODO: Remember to change hardcoded url check.
-        if: ${{ env.BUILD_URL && env.PACKAGE && startsWith(env.BUILD_URL, 'https://github.com/reload/poc-dpl-react-pr-trigger/releases/download') }}
+        if: ${{ env.BUILD_URL && env.PACKAGE && startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIX) }}
+        env:
+          ACCEPTED_BUILD_URL_PREFIX: "${{ vars.ACCEPTED_BUILD_URL_PREFIX }}"
 
       - name: Create branch and PR
         run: |
           set -e
+          echo ${{ toJson(env) }}
           git config --global user.name ${{ env.GIT_USER_NAME }}
           git config --global user.email ${{ env.GIT_USER_MAIL }}
           git checkout -b ${{ env.PR_BRANCH }}
@@ -53,6 +55,6 @@ jobs:
           git commit -m "Insert new reference to dependency ${{ env.PACKAGE }}: ${{ env.BUILD_URL }}"
           git push
           gh pr create --base develop --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
-        if: ${{ env.GIT_USER_NAME && env.GIT_USER_MAIL && env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
+        if: ${{ env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
