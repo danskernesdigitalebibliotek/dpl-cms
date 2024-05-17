@@ -3134,7 +3134,7 @@ msgstr "Emnetal"
 #: 
 msgctxt "Search Result"
 msgid "Material types general"
-msgstr "Generelle materialetyper"
+msgstr "Materialetype"
 
 #: 
 msgctxt "Search Result"
