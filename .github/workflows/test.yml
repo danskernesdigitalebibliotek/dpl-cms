@@ -16,5 +16,5 @@ jobs:
         env:
           # ACCEPTED_BUILD_URL_PREFIXES: ${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES) }}
           # HAS_ACCEPTED_BUILD_URL_PREFIX: ${{ contains(env.BUILD_URL, fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[0]) || contains(env.BUILD_URL, fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[1]) }}
-          TEST_ONE: "test one"
-          TEST_TWO: ${{ env.TEST_ONE }}
+          TEST_ONE: ${{ fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[0] }}
+          TEST_TWO: ${{ fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[1] }}
