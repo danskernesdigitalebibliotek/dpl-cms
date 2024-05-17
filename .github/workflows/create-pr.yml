@@ -39,9 +39,9 @@ jobs:
             composer remove ${{ env.PACKAGE }} \
             && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        if: ${{ env.BUILD_URL && env.PACKAGE && startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIX) }}
+        if: ${{ env.BUILD_URL && env.PACKAGE && (startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[0]) || startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[1])) }}
         env:
-          ACCEPTED_BUILD_URL_PREFIX: "${{ vars.ACCEPTED_BUILD_URL_PREFIX }}"
+          ACCEPTED_BUILD_URL_PREFIXES: "${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES) }}"
 
       - name: Create branch and PR
         id: create_pr
