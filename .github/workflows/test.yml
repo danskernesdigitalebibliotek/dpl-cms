@@ -3,6 +3,9 @@ name: Test
 on:
   push
 
+env:
+  BUILD_URL: 'https://github.com/reload/poc-dpl-react-pr-trigger/releases/download/john'
+
 jobs:
   build:
     name: Test
