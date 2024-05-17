@@ -11,9 +11,7 @@ jobs:
 
       - name: Testing
         run: |
-            echo ${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES)[0] }}
-            # echo ${{ toJson(env.HAS_ACCEPTED_BUILD_URL_PREFIX) }}
-            # echo ${{ toJson(env.ACCEPTED_BUILD_URL_PREFIXES) }}
-        # env:
+            echo ${{ toJson(env.HAS_ACCEPTED_BUILD_URL_PREFIX) }}
+        env:
           # ACCEPTED_BUILD_URL_PREFIXES: ${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES) }}
-          # HAS_ACCEPTED_BUILD_URL_PREFIX: ${{ (startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[0]) || startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[1])) }}
+          HAS_ACCEPTED_BUILD_URL_PREFIX: ${{ (startsWith(env.BUILD_URL, fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[0]) || startsWith(env.BUILD_URL, fromJson(env.ACCEPTED_BUILD_URL_PREFIXES)[1])) }}
