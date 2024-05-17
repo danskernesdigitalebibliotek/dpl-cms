@@ -69,7 +69,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Adding summary
-        # TODO: remove hardcoded org/repo
         run: |
           URL=$(gh pr view --json=url ${{ env.PR_BRANCH }} | jq .url)
           echo "Created automated PR at: ${URL}" >> $GITHUB_STEP_SUMMARY
