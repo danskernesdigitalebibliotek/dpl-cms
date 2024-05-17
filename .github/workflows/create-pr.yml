@@ -44,6 +44,7 @@ jobs:
           ACCEPTED_BUILD_URL_PREFIX: "${{ vars.ACCEPTED_BUILD_URL_PREFIX }}"
 
       - name: Create branch and PR
+        id: create_pr
         run: |
           set -e
           git config --global user.name ${{ env.GIT_USER_NAME }}
@@ -64,3 +65,12 @@ jobs:
         if: ${{ env.GIT_USER_NAME && env.GIT_USER_EMAIL && env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Adding summary
+        # TODO: remove hardcoded org/repo
+        run: |
+          URL=$(gh pr view --json=url ${{ env.PR_BRANCH }} | jq .url)
+          echo "Created automated PR at: ${URL}" >> $GITHUB_STEP_SUMMARY
+        if: ${{ steps.create_pr.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
