@@ -9,7 +9,7 @@ jobs:
     name: Create PR with external dependency
     runs-on: ubuntu-latest
     steps:
-      - name: Verify Event
+      - name: Verify Event and set env
         env:
           BUILD_URL: ${{ github.event.client_payload.build_url }}
           PR_BRANCH: ${{ github.event.client_payload.branch }}
@@ -18,6 +18,10 @@ jobs:
           echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
           echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
           echo "PACKAGE=$PACKAGE" >> $GITHUB_ENV
+
+          PULL_REQUEST_GIT_USER='${{ vars.PULL_REQUEST_GIT_USER }}'
+          echo "GIT_USER_NAME=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .name)" >> $GITHUB_ENV
+          echo "GIT_USER_EMAIL=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .email)" >> $GITHUB_ENV
         if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
       - uses: actions/checkout@v4
@@ -41,14 +45,14 @@ jobs:
       - name: Create branch and PR
         run: |
           set -e
-          git config --global user.name mikkel@reload.dk
-          git config --global user.email mikkel@reload.dk
+          git config --global user.name ${{ env.GIT_USER_NAME }}
+          git config --global user.email ${{ env.GIT_USER_MAIL }}
           git checkout -b ${{ env.PR_BRANCH }}
           git push --set-upstream origin ${{ env.PR_BRANCH }}
           git add composer.json composer.lock
-          git commit -m "Use new dependency url on dpl-react: ${{ env.BUILD_URL }}"
+          git commit -m "Insert new reference to dependency ${{ env.PACKAGE }}: ${{ env.BUILD_URL }}"
           git push
           gh pr create --base develop --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
-        if: ${{ env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
+        if: ${{ env.GIT_USER_NAME && env.GIT_USER_MAIL && env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
