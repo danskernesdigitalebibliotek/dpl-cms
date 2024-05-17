@@ -11,4 +11,4 @@ jobs:
 
       - name: Testing
         run: |
-          echo "${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}" | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))'
+          echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))'
