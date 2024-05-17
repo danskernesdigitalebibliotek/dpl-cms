@@ -22,6 +22,10 @@ jobs:
           PULL_REQUEST_GIT_USER='${{ vars.PULL_REQUEST_GIT_USER }}'
           echo "GIT_USER_NAME=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .name)" >> $GITHUB_ENV
           echo "GIT_USER_EMAIL=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .email)" >> $GITHUB_ENV
+
+          BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
+          echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
+
         if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
       - uses: actions/checkout@v4
@@ -34,17 +38,12 @@ jobs:
         id: manipulate_composer
         with:
           command: |
-            echo ${{ toJson(env.HAS_ACCEPTED_BUILD_URL_PREFIX) }}
-            echo ${{ toJson(env.ACCEPTED_BUILD_URL_PREFIXES) }}
             composer config repositories.${{ env.PACKAGE }} '{"type":"package","package":{"name":"${{ env.PACKAGE }}","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
 
             composer remove ${{ env.PACKAGE }} \
             && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        if: ${{ env.BUILD_URL && env.PACKAGE}}
-        env:
-          ACCEPTED_BUILD_URL_PREFIXES: "${{ fromJson(vars.ACCEPTED_BUILD_URL_PREFIXES) }}"
-          HAS_ACCEPTED_BUILD_URL_PREFIX: ${{ (startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[0]) || startsWith(env.BUILD_URL, env.ACCEPTED_BUILD_URL_PREFIXES[1])) }}
+        if: ${{ env.BUILD_URL && env.PACKAGE && env.BUILD_URL_IS_ACCEPTED == 'true' }}
 
       - name: Create branch and PR
         id: create_pr
