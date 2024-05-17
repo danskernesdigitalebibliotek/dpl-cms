@@ -18,4 +18,5 @@ jobs:
           echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
       - name: Testing II
         run: |
-          echo ${{ env.BUILD_URL_IS_ACCEPTED}}
+          echo "Yay build url is accepted"
+        if: ${{ env.BUILD_URL_IS_ACCEPTED == 'true' }}
