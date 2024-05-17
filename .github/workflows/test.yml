@@ -14,6 +14,7 @@ jobs:
 
       - name: Testing
         run: |
-          echo "${{ env.BUILD_URL_IS_ACCEPTED }}"
+          echo "Yay! Testing!"
+        if: ${{ env.BUILD_URL_IS_ACCEPTED == 'true'}}
         env:
           BUILD_URL_IS_ACCEPTED: $(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
