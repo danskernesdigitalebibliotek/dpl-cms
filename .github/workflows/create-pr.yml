@@ -48,12 +48,19 @@ jobs:
           set -e
           git config --global user.name ${{ env.GIT_USER_NAME }}
           git config --global user.email ${{ env.GIT_USER_EMAIL }}
+
           git checkout -b ${{ env.PR_BRANCH }}
           git push --set-upstream origin ${{ env.PR_BRANCH }}
+
           git add composer.json composer.lock
           git commit -m "Insert new reference to dependency ${{ env.PACKAGE }}: ${{ env.BUILD_URL }}"
           git push
-          gh pr create --base develop --head ${{ env.PR_BRANCH }} --title "PR for ${{ env.PR_BRANCH }}" --body "This is an automated PR for ${{ env.PR_BRANCH }}"
+
+          gh pr create \
+          --base develop \
+          --head ${{ env.PR_BRANCH }} \
+          --title "${{ format('PR for {0}:{1}', env.PACKAGE, env.PR_BRANCH) }}" \
+          --body "${{ format('This is an automated PR for {0}:{1}', env.PACKAGE, env.PR_BRANCH) }}"
         if: ${{ env.GIT_USER_NAME && env.GIT_USER_EMAIL && env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
