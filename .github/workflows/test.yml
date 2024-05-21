@@ -11,12 +11,13 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - id: check-branch-exists
+        uses: GuillaumeFalourd/branch-exists@v1
+        with:
+          branch: humourless-satisfactory-copperbutterfly
 
-      - name: Testing
-        run: |
-          BRANCH_EXISTS=$(git fetch origin develop || echo "John")
-          echo "$BRANCH_EXISTS"
-          # echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
-      - name: Testing II
-        run: |
-          echo "Hello"
+      - if: steps.check-branch-exists.outputs.exists == 'true'
+        run: echo 'humourless-satisfactory-copperbutterfly Branch exists'
+
+      - if: steps.check-branch-exists.outputs.exists == 'false'
+        run: echo 'humourless-satisfactory-copperbutterfly Branch NOT FOUND'
