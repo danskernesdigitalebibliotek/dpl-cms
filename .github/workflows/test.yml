@@ -14,9 +14,9 @@ jobs:
 
       - name: Testing
         run: |
-          BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
-          echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
+          BRANCH_EXISTS=$(git fetch origin develop || echo "John")
+          echo "$BRANCH_EXISTS"
+          # echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
       - name: Testing II
         run: |
-          echo "Yay build url is accepted"
-        if: ${{ env.BUILD_URL_IS_ACCEPTED == 'true' }}
+          echo "Hello"
