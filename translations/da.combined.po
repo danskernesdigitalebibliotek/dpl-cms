@@ -26854,17 +26854,17 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Notes"
-msgstr ""
+msgstr "Noter"
 
 #: 
 msgctxt "Work Page"
 msgid "Dimensions"
-msgstr ""
+msgstr "Omfang"
 
 #: 
 msgctxt "Work Page"
 msgid "Host Publication"
-msgstr ""
+msgstr "Findes i"
 
 #: 
 msgctxt "Work Page"
@@ -26874,7 +26874,7 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Contents"
-msgstr ""
+msgstr "Indhold"
 
 #: 
 msgctxt "Fees list"

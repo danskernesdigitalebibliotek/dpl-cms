@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-23 11:42+0200\n"
-"PO-Revision-Date: 2024-05-23 11:42+0200\n"
+"POT-Creation-Date: 2024-05-24 13:52+0200\n"
+"PO-Revision-Date: 2024-05-24 13:52+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -17190,15 +17190,15 @@ msgstr ""
 
 msgctxt "Work Page"
 msgid "Notes"
-msgstr ""
+msgstr "Noter"
 
 msgctxt "Work Page"
 msgid "Dimensions"
-msgstr ""
+msgstr "Omfang"
 
 msgctxt "Work Page"
 msgid "Host Publication"
-msgstr ""
+msgstr "Findes i"
 
 msgctxt "Work Page"
 msgid "Source"
@@ -17206,7 +17206,7 @@ msgstr ""
 
 msgctxt "Work Page"
 msgid "Contents"
-msgstr ""
+msgstr "Indhold"
 
 msgctxt "Fees list"
 msgid "Go to the loan list page to see your overdue loans"
