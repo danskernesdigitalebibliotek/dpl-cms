@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-24 13:52+0200\n"
-"PO-Revision-Date: 2024-05-24 13:52+0200\n"
+"POT-Creation-Date: 2024-05-27 13:14+0200\n"
+"PO-Revision-Date: 2024-05-27 13:14+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -17308,21 +17308,21 @@ msgstr ""
 
 msgctxt "paragraphs_ee.paragraphs_category.content_elements:label"
 msgid "Content elements"
-msgstr ""
+msgstr "Indholdselementer"
 
 msgctxt "paragraphs_ee.paragraphs_category.forms:label"
 msgid "Forms"
-msgstr ""
+msgstr "Formularer"
 
 msgctxt "paragraphs_ee.paragraphs_category.material_dissemination:label"
 msgid "Material Dissemination"
-msgstr ""
+msgstr "Materialeformidling"
 
 msgctxt "paragraphs_ee.paragraphs_category.structural_elements:label"
 msgid "Structural elements"
-msgstr ""
+msgstr "Strukturerende elementer"
 
 msgctxt "paragraphs_ee.paragraphs_category.user_creation:label"
 msgid "User creation"
-msgstr ""
+msgstr "Brugeroprettelse"
 

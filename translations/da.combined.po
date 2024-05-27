@@ -5610,7 +5610,7 @@ msgstr "Titel"
 #: 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:label"
 msgid "User registration items"
-msgstr "Brugerregistrering elementer"
+msgstr "Brugerregistreringselementer"
 
 #: 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:description"
@@ -26682,7 +26682,7 @@ msgstr ""
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:label"
 msgid "User registration linklist"
-msgstr ""
+msgstr "Brugerregistrerings linkliste"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:description"
@@ -26983,27 +26983,27 @@ msgstr ""
 #: 
 msgctxt "paragraphs_ee.paragraphs_category.content_elements:label"
 msgid "Content elements"
-msgstr ""
+msgstr "Indholdselementer"
 
 #: 
 msgctxt "paragraphs_ee.paragraphs_category.forms:label"
 msgid "Forms"
-msgstr ""
+msgstr "Formularer"
 
 #: 
 msgctxt "paragraphs_ee.paragraphs_category.material_dissemination:label"
 msgid "Material Dissemination"
-msgstr ""
+msgstr "Materialeformidling"
 
 #: 
 msgctxt "paragraphs_ee.paragraphs_category.structural_elements:label"
 msgid "Structural elements"
-msgstr ""
+msgstr "Strukturerende elementer"
 
 #: 
 msgctxt "paragraphs_ee.paragraphs_category.user_creation:label"
 msgid "User creation"
-msgstr ""
+msgstr "Brugeroprettelse"
 
 #: 
 msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-24 13:52+0200\n"
-"PO-Revision-Date: 2024-05-24 13:52+0200\n"
+"POT-Creation-Date: 2024-05-27 13:14+0200\n"
+"PO-Revision-Date: 2024-05-27 13:14+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1167,7 +1167,7 @@ msgstr "Titel"
 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:label"
 msgid "User registration items"
-msgstr "Brugerregistrering elementer"
+msgstr "Brugerregistreringselementer"
 
 msgctxt "field.field.paragraph.user_registration_section.field_user_registration_items:description"
 msgid "Add a new \"User registration item\" to the list."
@@ -7760,7 +7760,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:label"
 msgid "User registration linklist"
-msgstr ""
+msgstr "Brugerregistrerings linkliste"
 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:description"
 msgid ""
