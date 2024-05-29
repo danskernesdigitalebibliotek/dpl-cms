@@ -468,22 +468,22 @@ msgstr "Materialet er udlånt"
 #: 
 msgctxt "Work Page"
 msgid "1 copy has been reserved"
-msgstr "1 eksemplar er reserveret"
+msgstr "1 eksemplar er reserveret."
 
 #: 
 msgctxt "Work Page"
 msgid "@count copies have been reserved"
-msgstr "@count eksemplarer er reserveret"
+msgstr "@count eksemplarer er reserveret."
 
 #: 
 msgctxt "Work Page"
 msgid "We have 1 copy of the material in stock"
-msgstr "Vi har 1 eksemplar af materialet hjemme."
+msgstr "Biblioteket har 1 eksemplar."
 
 #: 
 msgctxt "Work Page"
 msgid "We have @count copies of the material in stock"
-msgstr "Vi har @count eksemplarer af materialet hjemme."
+msgstr "Biblioteket har @count eksemplarer."
 
 #: 
 msgctxt "Work Page"
@@ -658,7 +658,7 @@ msgstr "er reserveret til dig"
 #: 
 msgctxt "Work Page"
 msgid "The material is available and is now reserved for you!"
-msgstr "Materialet er hjemme og er nu reserveret til dig!"
+msgstr "Materialet er nu reserveret til dig!"
 
 #: 
 msgctxt "Work Page"
@@ -1884,16 +1884,6 @@ msgstr "Kan ikke fornyes"
 msgctxt "Renew loan"
 msgid "Processing..."
 msgstr "Indlæser...Fornyelsen af dit lån gik iggen igennem"
-
-#: 
-msgctxt "Create patron"
-msgid "Select pickup location in the select"
-msgstr "Vælg dit standard afhentningssted. Du kan vælge et andet afhentningssted når du foretager en reservering."
-
-#: 
-msgctxt "Create patron"
-msgid "Select pickup location"
-msgstr "Vælg afhentningssted"
 
 #: 
 msgctxt "dpl_login"
@@ -27009,4 +26999,39 @@ msgstr "Brugeroprettelse"
 msgctxt "taxonomy.vocabulary.breadcrumb_structure:name"
 msgid "Brødkrummer og URL struktur"
 msgstr "Brødkrummer og URL struktur"
+
+#: 
+msgctxt "field.field.eventinstance.default.field_external_admin_link:label"
+msgid "External admin link"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_external_admin_link:description"
+msgid "External systems, such as event management systems, are able to set a value that points to where you can edit the content in their system."
+msgstr ""
+
+#: 
+msgctxt "Global"
+msgid "Length of 4 characters"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Available filters"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Selected filters"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "Input field @inputNumber"
+msgstr ""
+
+#: 
+msgctxt "Patron menu (aria)"
+msgid "Open login menu"
+msgstr ""
 
