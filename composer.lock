@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6907cca81acf1641255b6997d8783aba",
+    "content-hash": "293e57bf9e20c2f3a06e6808d25206eb",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1158,10 +1158,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.22.2",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.22.2/dist-2024-22-2-53d999a95d3cd177850e852d5a8f161eb98f93f2.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFFORM-807-optimer-opening-hours-cypress-test/dist-ddfform-807-optimer-opening-hours-cypress-test.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -18482,6 +18482,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
