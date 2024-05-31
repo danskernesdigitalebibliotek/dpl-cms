@@ -2808,7 +2808,7 @@ msgstr "Hent før @date"
 #: 
 msgctxt "Global"
 msgid "Choose pickup branch"
-msgstr "Vælg afhentningssted "
+msgstr "Vælg afhentningssted"
 
 #: 
 msgctxt "Global"
@@ -26889,7 +26889,7 @@ msgstr "Du har lån som skulle have været afleveret. Du kan blive afkrævet et 
 #: 
 msgctxt "Create patron"
 msgid "Choose preferred library for pickup of your future reservations."
-msgstr ""
+msgstr "Vælg hvor du vil hente dine reserveringer."
 
 #: 
 msgctxt "Create patron"
@@ -27013,7 +27013,7 @@ msgstr ""
 #: 
 msgctxt "Global"
 msgid "Length of 4 characters"
-msgstr ""
+msgstr "Pinkode skal være 4 cifre"
 
 #: 
 msgctxt "Search Result"
@@ -27033,5 +27033,15 @@ msgstr ""
 #: 
 msgctxt "Patron menu (aria)"
 msgid "Open login menu"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "All loans"
+msgstr ""
+
+#: 
+msgctxt "Dashboard"
+msgid "All reservations"
 msgstr ""
 

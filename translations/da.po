@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-05-29 15:27+0200\n"
-"PO-Revision-Date: 2024-05-29 15:27+0200\n"
+"POT-Creation-Date: 2024-05-31 14:16+0200\n"
+"PO-Revision-Date: 2024-05-31 14:16+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2437,7 +2437,7 @@ msgstr "Hent før @date"
 
 msgctxt "Global"
 msgid "Choose pickup branch"
-msgstr "Vælg afhentningssted "
+msgstr "Vælg afhentningssted"
 
 msgctxt "Global"
 msgid "Nothing selected"
@@ -17224,7 +17224,7 @@ msgstr ""
 
 msgctxt "Create patron"
 msgid "Choose preferred library for pickup of your future reservations."
-msgstr ""
+msgstr "Vælg hvor du vil hente dine reserveringer."
 
 msgctxt "Create patron"
 msgid "Error occurred"
@@ -17322,7 +17322,7 @@ msgstr "Brugeroprettelse"
 
 msgctxt "Global"
 msgid "Length of 4 characters"
-msgstr ""
+msgstr "Pinkode skal være 4 cifre"
 
 msgctxt "Search Result"
 msgid "Available filters"
@@ -17338,5 +17338,13 @@ msgstr ""
 
 msgctxt "Patron menu (aria)"
 msgid "Open login menu"
+msgstr ""
+
+msgctxt "Dashboard"
+msgid "All loans"
+msgstr ""
+
+msgctxt "Dashboard"
+msgid "All reservations"
 msgstr ""
 
