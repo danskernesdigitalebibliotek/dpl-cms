@@ -60,16 +60,13 @@ jobs:
           exit 1
         if: ${{ steps.check_branch_exists.outputs.exists == 'true' }}
 
-      - name: Insert dependency
-        uses: Wandalen/wretry.action@master
-        id: manipulate_composer
-        with:
-          command: |
-            composer config repositories.${{ env.PACKAGE }} '{"type":"package","package":{"name":"${{ env.PACKAGE }}","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
 
-            composer remove ${{ env.PACKAGE }} \
-            && composer require ${{ env.PACKAGE }}
-          attempt_limit: 200
+      - name: Insert dependency
+        run: |
+          composer config repositories.${{ env.PACKAGE }} '{"type":"package","package":{"name":"${{ env.PACKAGE }}","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
+
+          composer remove ${{ env.PACKAGE }} \
+          && composer require ${{ env.PACKAGE }}
 
       - name: Create branch and PR
         id: create_pr
