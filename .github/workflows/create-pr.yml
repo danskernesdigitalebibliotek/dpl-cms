@@ -17,29 +17,29 @@ jobs:
     steps:
       - name: Verify Event and set env
         env:
-          BUILD_URL: ${{ github.event.client_payload.build_url }}
           PR_BRANCH: ${{ github.event.client_payload.branch }}
           PACKAGE: ${{ github.event.client_payload.dependency_package }}
         run: |
+          PACKAGE_NAME=$(echo "${{ github.event.client_payload.dependency_package }}" | sed 's/[^\/]*\///')
           echo "PR_BRANCH=$PR_BRANCH" >> $GITHUB_ENV
-          echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
           echo "PACKAGE=$PACKAGE" >> $GITHUB_ENV
+          echo "PACKAGE_NAME=$PACKAGE_NAME" >> $GITHUB_ENV
 
-          BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
-          echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
-        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
+          PACKAGE_NAME_IS_VALID=$(echo '${{ vars.ACCEPTED_PACKAGES }}' | jq --arg project "${{ env.PACKAGE }}" 'any(.[]; . as $name | $project | match($name))')
+          echo "PACKAGE_NAME_IS_VALID=$PACKAGE_NAME_IS_VALID" >> $GITHUB_ENV
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.dependency_package }}
 
       - name: Stop workflow if any variables are missing
         run: |
           echo "::error::Some variable is missing. Have to stop..."
           exit 1
-        if: ${{ !env.PR_BRANCH || !env.BUILD_URL && !env.PACKAGE || !vars.ACCEPTED_BUILD_URL_PREFIXES }}
+        if: ${{ !env.PR_BRANCH || !env.PACKAGE || !env.PACKAGE_NAME}}
 
-      - name: Stop workflow if build url is not valid
+      - name: Stop workflow if package name is not valid
         run: |
-          echo "::error::The build URL is not valid. Should match one of the accepted prefixes."
+          echo "::error::The package name is not valid. Should match one of the accepted package names."
           exit 1
-        if: ${{ env.BUILD_URL_IS_ACCEPTED != 'true' }}
+        if: ${{ env.PACKAGE_NAME_IS_VALID != 'true' }}
 
       - uses: actions/checkout@v4
         with:
@@ -56,15 +56,38 @@ jobs:
           exit 1
         if: ${{ steps.check_branch_exists.outputs.exists == 'true' }}
 
-
-      - name: Insert dependency
-        id: manipulate_composer
+      - name: Resolve composer task command
+        id: resolve_composer_task_command
         run: |
           set -e
 
-          composer config repositories.${{ env.PACKAGE }} '{"type":"package","package":{"name":"${{ env.PACKAGE }}","version":"dev-master","type":"drupal-library","dist":{"url":"${{ env.BUILD_URL }}","type":"zip"},"require":{"composer\/installers":"^1.2.0"}}}'
-          composer remove ${{ env.PACKAGE }} \
-          && composer require ${{ env.PACKAGE }}
+          declare -a CMDS=(
+              [poc-dpl-react-pr-trigger]='dev:composer:update-design-system'
+              [poc-dpl-design-system-pr-trigger]='dev:composer:update-react'
+          )
+
+          COMPOSER_TASK_COMMAND=${CMDS[${{ env.PACKAGE_NAME }}]}
+
+          if [[ -n "${COMPOSER_TASK_COMMAND}" ]]; then
+            echo "COMPOSER_TASK_COMMAND=$COMPOSER_TASK_COMMAND" >> $GITHUB_ENV
+          else
+            echo "::error::Could not resolve composer task command."
+            exit 1
+          fi
+
+      - name: Install go-task
+        uses: arduino/setup-task@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ steps.resolve_composer_task_command.outcome == 'success' }}
+
+
+      - name: Insert dependency
+        id: manipulate_composer
+        run: task ${{ env.COMPOSER_TASK_COMMAND }}
+        env:
+          BRANCH: ${{ env.PR_BRANCH }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create branch
         id: create_branch
