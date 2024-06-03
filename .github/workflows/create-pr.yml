@@ -35,7 +35,9 @@ jobs:
         if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
       - name: Stop workflow if build url is not valid
-        run: echo "::error::The build URL is not valid. Should match one of the accepted prefixes."
+        run: |
+          echo "::error::The build URL is not valid. Should match one of the accepted prefixes."
+          exit 1
         if: ${{ env.BUILD_URL_IS_ACCEPTED != 'true' }}
 
       - uses: actions/checkout@v4
@@ -49,7 +51,9 @@ jobs:
         if: ${{ env.PR_BRANCH }}
 
       - name: Stop workflow if branch already exists
-        run: echo "::error::A branch with the same name as the requested branch name already exists."
+        run: |
+          echo "::error::A branch with the same name as the requested branch name already exists."
+          exit 1
         if: ${{ steps.check_branch_exists.outputs.exists == 'true' }}
 
       - name: Insert dependency
