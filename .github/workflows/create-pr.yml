@@ -31,7 +31,7 @@ jobs:
 
           BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
           echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
-        # if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
+        if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
       - name: Stop workflow if build url is not valid
         run: |
