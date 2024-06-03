@@ -33,6 +33,12 @@ jobs:
           echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
         if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
 
+      - name: Stop workflow if any variables are missing
+        run: |
+          echo "::error::Some variable is missing. Have to stop..."
+          exit 1
+        if: ${{ !env.PR_BRANCH || !env.BUILD_URL && !env.PACKAGE || !env.GIT_USER_NAME || !env.GIT_USER_EMAIL || !vars.ACCEPTED_BUILD_URL_PREFIXES }}
+
       - name: Stop workflow if build url is not valid
         run: |
           echo "::error::The build URL is not valid. Should match one of the accepted prefixes."
@@ -47,7 +53,6 @@ jobs:
         uses: GuillaumeFalourd/branch-exists@v1
         with:
           branch: ${{ env.PR_BRANCH }}
-        if: ${{ env.PR_BRANCH }}
 
       - name: Stop workflow if branch already exists
         run: |
@@ -65,7 +70,6 @@ jobs:
             composer remove ${{ env.PACKAGE }} \
             && composer require ${{ env.PACKAGE }}
           attempt_limit: 200
-        if: ${{ env.BUILD_URL && env.PACKAGE}}
 
       - name: Create branch and PR
         id: create_pr
