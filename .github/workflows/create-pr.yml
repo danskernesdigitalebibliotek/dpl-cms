@@ -25,10 +25,6 @@ jobs:
           echo "BUILD_URL=$BUILD_URL" >> $GITHUB_ENV
           echo "PACKAGE=$PACKAGE" >> $GITHUB_ENV
 
-          PULL_REQUEST_GIT_USER='${{ vars.PULL_REQUEST_GIT_USER }}'
-          echo "GIT_USER_NAME=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .name)" >> $GITHUB_ENV
-          echo "GIT_USER_EMAIL=$(echo "$PULL_REQUEST_GIT_USER" | jq -r .email)" >> $GITHUB_ENV
-
           BUILD_URL_IS_ACCEPTED=$(echo '${{ vars.ACCEPTED_BUILD_URL_PREFIXES }}' | jq --arg url "${{ env.BUILD_URL }}" 'any(.[]; . as $prefix | $url | contains($prefix))')
           echo "BUILD_URL_IS_ACCEPTED=$BUILD_URL_IS_ACCEPTED" >> $GITHUB_ENV
         if: ${{ github.event.action == 'create_pr' && github.event.client_payload.branch && github.event.client_payload.build_url && github.event.client_payload.dependency_package }}
@@ -37,7 +33,7 @@ jobs:
         run: |
           echo "::error::Some variable is missing. Have to stop..."
           exit 1
-        if: ${{ !env.PR_BRANCH || !env.BUILD_URL && !env.PACKAGE || !env.GIT_USER_NAME || !env.GIT_USER_EMAIL || !vars.ACCEPTED_BUILD_URL_PREFIXES }}
+        if: ${{ !env.PR_BRANCH || !env.BUILD_URL && !env.PACKAGE || !vars.ACCEPTED_BUILD_URL_PREFIXES }}
 
       - name: Stop workflow if build url is not valid
         run: |
@@ -62,6 +58,7 @@ jobs:
 
 
       - name: Insert dependency
+        id: manipulate_composer
         run: |
           set -e
 
@@ -70,11 +67,13 @@ jobs:
           && composer require ${{ env.PACKAGE }}
 
       - name: Create branch
+        id: create_branch
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: ${{ env.PR_BRANCH }}
           commit_message: "Insert new reference to dependency ${{ env.PACKAGE }}: ${{ env.BUILD_URL }}"
           create_branch: true
+        if: ${{ steps.manipulate_composer.outcome == 'success' }}
 
       - name: Create PR
         id: create_pr
@@ -85,7 +84,7 @@ jobs:
           --head ${{ env.PR_BRANCH }} \
           --title "${{ format('PR for {0}:{1}', env.PACKAGE, env.PR_BRANCH) }}" \
           --body "${{ format('This is an automated PR for {0}:{1}', env.PACKAGE, env.PR_BRANCH) }}"
-        if: ${{ env.GIT_USER_NAME && env.GIT_USER_EMAIL && env.PACKAGE && env.PR_BRANCH && env.BUILD_URL && steps.manipulate_composer.outcome == 'success' }}
+        if: ${{ steps.create_branch.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
