@@ -45,3 +45,16 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 if (file_exists(__DIR__ . '/services.local.yml')) {
   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 }
+$databases['default']['default'] = array (
+  'database' => 'dplcms',
+  'username' => 'dplcms',
+  'password' => '1234',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+$settings['hash_salt'] = 'vm6WAngllmaABOSW_ifA8_tAUZYp1bgISq86c_O8NbKU-bBWEJ4I6kdt0VwQPExL1b3eu7mBqQ';
