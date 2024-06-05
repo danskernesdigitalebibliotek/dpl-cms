@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "185545ed2d5231db476a2ffd52a6771e",
+    "content-hash": "43b0fdb78ec15e02e7a709a9774f8392",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1161,7 +1161,7 @@
             "version": "2024.23.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.23.0/dist-2024-23-0-974c52e17ec7481455230b52a12e2dde0a2ec76e.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix%2Ffocus-order-when-selecting-filters-v2/dist-fix-focus-order-when-selecting-filters-v2.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
