@@ -42,6 +42,9 @@ tasks:
       - composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
       - composer drupal:scaffold
       - $(cd dev-scripts/dpl-react; composer install --no-cache)
+      - ${DRUSH_EXEC} cim -y
+      - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
+      - ${DRUSH_EXEC} updb -y
   drupal:locale:
     desc: Update translation strings
     cmds:
