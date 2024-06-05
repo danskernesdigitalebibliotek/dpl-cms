@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2024.20.1",
+                "version": "2024.23.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.20.1/dist-2024-20-1-4291024f5b2d30ec59a5a51497c5f776dd1fda7e.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.23.0/dist-2024-23-0-974c52e17ec7481455230b52a12e2dde0a2ec76e.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2024.20.1",
+                "version": "2024.23.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.20.1/dist-2024-20-1-dbc6110e263c0be00ca1fc8350a4cf6330ade2e0.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.23.0/dist-2024-23-0-c4d78921d61eb5531308ae778abfd9a521dfb0b4.zip",
                     "type": "zip"
                 }
             }
@@ -88,8 +88,8 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2024.20.1",
-        "danskernesdigitalebibliotek/dpl-react": "2024.20.1",
+        "danskernesdigitalebibliotek/dpl-design-system": "2024.23.0",
+        "danskernesdigitalebibliotek/dpl-react": "2024.23.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
@@ -99,9 +99,12 @@
         "drupal/administerusersbyrole": "^3.4",
         "drupal/azure_mailer": "^1.0",
         "drupal/color_field": "^3.0",
-        "drupal/config_ignore": "^2.4",
+        "drupal/config_filter": "^2.6",
+        "drupal/config_ignore": "^3",
+        "drupal/config_ignore_auto": "^3",
         "drupal/config_translation_po": "^1.0",
         "drupal/content_lock": "^2.3",
+        "drupal/cookieinformation": "^2.1",
         "drupal/core-composer-scaffold": "~10.1.7",
         "drupal/core-project-message": "~10.1.7",
         "drupal/core-recommended": "~10.1.7",
@@ -117,6 +120,7 @@
         "drupal/flat_taxonomy": "^2.0",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
+        "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/handy_cache_tags": "^1.4",
         "drupal/honeypot": "^2.1",
@@ -268,9 +272,6 @@
             }
         },
         "patches": {
-            "drupal/config_ignore": {
-                "3252291: Support force exclude for keys": "https://www.drupal.org/files/issues/2021-12-02/config_ignore-force-exclude-keys-3252291-3.patch"
-            },
             "drupal/multivalue_form_element": {
                 "3199172: multivalue_form_element-3199172": "https://www.drupal.org/files/issues/2023-12-05/nested_elements-3199172-14.patch"
             },

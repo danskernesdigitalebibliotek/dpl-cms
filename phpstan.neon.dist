@@ -23,6 +23,8 @@ parameters:
     - '#Function .*_requirements\(\) return type has no value type specified in iterable type array\.#'
     # Drupal hook_schema() implementation returns array which we cannot provide more detailed typing of.
     - '#Function .*_schema\(\) return type has no value type specified in iterable type array\.#'
+    # Drupal hook_update() sandbox which we cannot provide more detailed typing of.
+    - '#Function .*_update_\d+\(\) has parameter \$sandbox with no value type specified in iterable type array\.#'
     # Ignore Plugin configuration parameter.
     - '#Drupal\\.*\\Plugin\\.*::__construct\(\) .* no value type specified in iterable type array\.#'
     - '#Drupal\\.*\\Plugin\\.*::create\(\) .* no value type specified in iterable type array\.#'
@@ -58,6 +60,9 @@ parameters:
       path: web/modules/custom/dpl_po/src/Services/CtpConfigManager.php
     # Drupal field widget formElement() method has parameters and return type which we cannot provide more detailed typing of.
     - '#Method Drupal\\.*\\Plugin\\Field\\FieldWidget\\.*::formElement\(\) .* no value type specified in iterable type array\.#'
+    -
+      message: "#Variable .* might not be defined#"
+      path: web/modules/custom/dpl_login/src/OpenIdUserInfoService.php
   scanFiles:
     # Needed to make locale_translation_batch_fetch_finished() discoverable.
     - web/core/modules/locale/locale.batch.inc
