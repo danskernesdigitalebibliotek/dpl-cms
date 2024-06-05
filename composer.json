@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2024.23.0",
+                "version": "2024.23.1",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.23.0/dist-2024-23-0-c4d78921d61eb5531308ae778abfd9a521dfb0b4.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature%2FDDFLSBP-631-tilgaengelighed-webform-form-element-til-tekst-input-overholder-ikke-krav-til-kontrast/dist-feature-ddflsbp-631-tilgaengelighed-webform-form-element-til-tekst-input-overholder-ikke-krav-til-kontrast.zip",                    
                     "type": "zip"
                 }
             }
@@ -88,7 +88,7 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2024.23.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "2024.23.1",
         "danskernesdigitalebibliotek/dpl-react": "2024.23.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
