@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-03 12:28+0200\n"
-"PO-Revision-Date: 2024-06-03 12:28+0200\n"
+"POT-Creation-Date: 2024-06-06 14:46+0200\n"
+"PO-Revision-Date: 2024-06-06 14:46+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -596,10 +596,6 @@ msgctxt "field.field.eventinstance.default.field_categories:label"
 msgid "Categories"
 msgstr "Kategorier"
 
-msgctxt "field.field.eventinstance.default.field_description:label"
-msgid "Description"
-msgstr "Manchet"
-
 msgctxt "field.field.eventinstance.default.field_event_address:label"
 msgid "Address"
 msgstr "Adresse"
@@ -663,10 +659,6 @@ msgstr "Bibliotek"
 msgctxt "field.field.eventseries.default.field_categories:label"
 msgid "Categories"
 msgstr "Kategorier"
-
-msgctxt "field.field.eventseries.default.field_description:label"
-msgid "Description"
-msgstr "Manchet"
 
 msgctxt "field.field.eventseries.default.field_event_address:label"
 msgid "Address"
@@ -7968,5 +7960,13 @@ msgctxt "field.field.eventinstance.default.field_external_admin_link:description
 msgid ""
 "External systems, such as event management systems, are able to set a "
 "value that points to where you can edit the content in their system."
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_description:label"
+msgid "Subtitle"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_description:label"
+msgid "Subtitle"
 msgstr ""
 
