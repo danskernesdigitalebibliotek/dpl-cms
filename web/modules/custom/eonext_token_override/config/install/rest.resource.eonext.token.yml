@@ -1,0 +1,10 @@
+id: eonext.token
+plugin_id: 'eonext:token'
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - none
