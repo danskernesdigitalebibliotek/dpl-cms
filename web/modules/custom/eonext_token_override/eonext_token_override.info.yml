@@ -1,0 +1,7 @@
+type: module
+name: EO Next Token Override
+description: Exposes an API resource to update tokens remotely.
+package: EO next
+core_version_requirement: ^10
+dependencies:
+  - drupal:dpl_library_token
