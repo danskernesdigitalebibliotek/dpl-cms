@@ -4,5 +4,5 @@ jobs:
     name: Check branch length
     runs-on: ubuntu-latest
     steps:
-      - name: get the owner of the head repository
-        run: echo ${{ toJson(github.event.pull_request) }}"
+      - name: mik debug
+        run: echo ${{ toJson(github.event.pull_request.owner) }}"
