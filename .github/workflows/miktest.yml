@@ -1,0 +1,8 @@
+on: pull_request
+jobs:
+  miktest:
+    name: Check branch length
+    runs-on: ubuntu-latest
+    steps:
+      - name: get the owner of the head repository
+        run: echo ${{ toJson(github.event.pull_request) }}"
