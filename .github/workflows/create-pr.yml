@@ -15,6 +15,9 @@ jobs:
     name: Create PR with external dependency
     runs-on: ubuntu-latest
     steps:
+      - name: get the owner of the head repository
+        run: echo ${{ toJson(github.event.pull_request) }}"
+
       - name: Verify Event and set env
         env:
           PR_BRANCH: ${{ github.event.client_payload.branch }}
