@@ -17,9 +17,31 @@ env:
   LAGOON_PROJECT: "dpl-cms"
 
 jobs:
+  CheckPrAuthor:
+    name: Check PR author
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR author
+        run: |
+          set -e
+          echo "IGNORED_PR_AUTHORS: ${{ vars.IGNORED_PR_AUTHORS }}"
+          echo "PR author: ${{ github.event.pull_request.user.login }}"
+
+          AUTHOR_IS_IGNORED=$(echo '${{ vars.IGNORED_PR_AUTHORS }}' | jq --arg author "${{ github.event.pull_request.user.login }}" 'any(.[]; . as $ | $author | match($))')
+
+          echo "PR author is ${{ github.event.pull_request.user.login }}"
+          exit 1
+          if [[ "${{ github.event.pull_request.user.login }}" == "dpl-bot" ]]
+          then
+            echo "PR author is dpl-bot. Skipping deployment."
+            exit 1
+          fi
+        if: ${{ vars.IGNORED_PR_AUTHORS }}
+
   BranchNameLength:
     name: Check branch length
     runs-on: ubuntu-latest
+    needs: [CheckPrAuthor]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

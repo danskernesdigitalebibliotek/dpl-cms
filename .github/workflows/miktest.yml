@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: mik debug
-        run: echo ${{ toJson(github.event.pull_request.owner) }}"
+        run: echo ${{ toJson(github.event.pull_request) }}"
