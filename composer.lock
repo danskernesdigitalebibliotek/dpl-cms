@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "185545ed2d5231db476a2ffd52a6771e",
+    "content-hash": "d02246f6737fae845ecbac06afe72160",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1158,10 +1158,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.23.0",
+            "version": "2024.23.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.23.0/dist-2024-23-0-974c52e17ec7481455230b52a12e2dde0a2ec76e.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix%2FDDFLSBP-601-avanceret-sogning-dropdowns-benytter-forkerte-sogekoder/dist-fix-ddflsbp-601-avanceret-sogning-dropdowns-benytter-forkerte-sogekoder.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -18644,6 +18644,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
