@@ -261,12 +261,20 @@ class OpeningHoursRepository {
       throw new \OutOfBoundsException("Unable to retrieve repetition for opening hours instance {$data['id']}");
     }
 
+    $startTime = new DateTimeImmutable($data['date'] . " " . $data['start_time']);
+    $endTime = new DateTimeImmutable($data['date'] . " " . $data['end_time']);
+    // We only store a single start date but represent the opening ours as two
+    // datetimes. If 00:00 is used for the end then shift to the next day.
+    if ($endTime->format("H:i") == "00:00") {
+      $endTime = $endTime->modify('+1 day');
+    }
+
     return new OpeningHoursInstance(
       $data['id'],
       $branch,
       $categoryTerm,
-      new DateTimeImmutable($data['date'] . " " . $data['start_time']),
-      new DateTimeImmutable($data['date'] . " " . $data['end_time']),
+      $startTime,
+      $endTime,
       $repetition
     );
   }

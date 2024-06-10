@@ -119,6 +119,20 @@ class OpeningHoursResourceTest extends KernelTestBase {
   }
 
   /**
+   * Test creation when using 00:00 to indicate midnight.
+   */
+  public function testCreationAtMidnight(): void {
+    $this->createOpeningHours(new DateTime(), startTime: "09:00", endTime: "00:00");
+    $openingHoursList = $this->listOpeningHours();
+
+    $openingHours = reset($openingHoursList);
+    $this->assertNotFalse($openingHours);
+    $this->assertDateEquals(new DateTime(), $openingHours->getDate());
+    $this->assertEquals("09:00", $openingHours->getStartTime());
+    $this->assertEquals("00:00", $openingHours->getEndTime());
+  }
+
+  /**
    * Test that opening hours filters work.
    */
   public function testListFilters(): void {
@@ -238,6 +252,33 @@ class OpeningHoursResourceTest extends KernelTestBase {
     $this->assertEquals("18:00", $firstUpdatedOpeningHours->getEndTime());
     $this->assertEquals(2, $firstUpdatedOpeningHours->getBranchId());
     $this->assertEquals(OpeningHoursRepetitionType::None->value, $firstUpdatedOpeningHours->getRepetition()?->getType());
+  }
+
+  /**
+   * Test that opening hours can be updated with end time set to midnight.
+   */
+  public function testUpdateAtMidnight(): void {
+    $createdData = $this->createOpeningHours();
+    $createdOpeningHours = reset($createdData);
+    $this->assertNotEmpty($createdOpeningHours);
+
+    $id = $createdOpeningHours->getId();
+    $this->assertNotNull($id);
+
+    $this->updateOpeningHours(
+      $createdOpeningHours,
+      date: new DateTime("tomorrow"),
+      startTime: "10:00",
+      endTime: "00:00",
+      branchId: 2,
+    );
+
+    $openingHoursList = $this->listOpeningHours();
+    $openingHours = reset($openingHoursList);
+    $this->assertNotEmpty($openingHours);
+    $this->assertDateEquals(new DateTime("tomorrow"), $openingHours->getDate(), "Opening hour dates should change when updated");
+    $this->assertEquals("10:00", $openingHours->getStartTime());
+    $this->assertEquals("00:00", $openingHours->getEndTime());
   }
 
   /**
