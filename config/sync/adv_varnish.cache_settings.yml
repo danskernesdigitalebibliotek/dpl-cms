@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: GLswejPT_b3G9TtpI4NKwR1mhIB_-FnysNn9QKc-01w
+general:
+  page_cache_maximum_age: '2629746'
+  noise: ''
+  debug: '1'
+  logging: '1'
+  secret: 4e13697e101c22ce444c12913357763042365338d675ae23a2749b790817ade8
+  varnish_server: varnish:8080
+  varnish_purger: true
+  purger_maintenance_mode: false
+  grace: '10'
+available:
+  enable_cache: true
+  authenticated_users: true
+  esi: false
+  esi_purge_user_blocks: false
+  excluded_urls: /dpl-react/user-tokens
+cache_control:
+  anonymous: '/user/logout|must-revalidate, no-cache, private'
+  authenticated: ''

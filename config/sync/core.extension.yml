@@ -5,6 +5,7 @@ module:
   admin_toolbar: 0
   admin_user_language: 0
   administerusersbyrole: 0
+  adv_varnish: 0
   azure_mailer: 0
   basic_auth: 0
   better_exposed_filters: 0
@@ -125,12 +126,6 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
-  purge: 0
-  purge_drush: 0
-  purge_processor_cron: 0
-  purge_processor_lateruntime: 0
-  purge_queuer_coretags: 0
-  purge_tokens: 0
   recurring_events: 0
   redirect: 0
   redis: 0
@@ -155,8 +150,6 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  varnish_purge_tags: 0
-  varnish_purger: 0
   view_unpublished: 0
   views_infinite_scroll: 0
   webform: 0

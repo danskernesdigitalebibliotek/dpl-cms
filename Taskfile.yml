@@ -266,7 +266,7 @@ tasks:
   dev:cache:clear:external:
     summary: Purges the varnish cache
     cmds:
-      - task dev:cli -- drush cache:rebuild-external -y
+      #- task dev:cli -- drush cache:rebuild-external -y
 
   dev:dpl-react:get-asset-url:
     summary: Outputs the url to the build in Github

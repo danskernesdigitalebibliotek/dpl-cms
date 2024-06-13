@@ -22,6 +22,7 @@ dependencies:
     - taxonomy.vocabulary.webform_email_categories
   module:
     - administerusersbyrole
+    - adv_varnish
     - block
     - content_lock
     - cookieinformation
@@ -117,6 +118,7 @@ permissions:
   - 'administer webform element access'
   - 'administer webform submission'
   - 'break content lock'
+  - 'bypass advanced varnish cache'
   - 'bypass node access'
   - 'cancel users by role'
   - 'change own username'

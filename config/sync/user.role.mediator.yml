@@ -13,6 +13,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
+    - adv_varnish
     - content_lock
     - dpl_admin
     - entity_clone
@@ -45,6 +46,7 @@ permissions:
   - 'add eventseries entity'
   - 'administer redirects'
   - 'break content lock'
+  - 'bypass advanced varnish cache'
   - 'change own username'
   - 'clone eventinstance entity'
   - 'clone eventseries entity'

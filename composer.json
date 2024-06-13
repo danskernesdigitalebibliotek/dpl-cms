@@ -97,6 +97,7 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/admin_user_language": "^1.1",
         "drupal/administerusersbyrole": "^3.4",
+        "drupal/adv_varnish": "^4.0",
         "drupal/azure_mailer": "^1.0",
         "drupal/color_field": "^3.0",
         "drupal/config_filter": "^2.6",

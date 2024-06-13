@@ -37,8 +37,9 @@ x-environment:
 
 services:
   varnish: # Caching HTTP reverse proxy that serves (mostly) anonymous requests.
-    # https://docs.lagoon.sh/lagoon/docker-images/varnish
-    image: uselagoon/varnish-6-drupal:latest
+    build:
+      context: .
+      dockerfile: docker/varnish.dockerfile
     depends_on:
       - nginx
     labels:
