@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-13 16:37+0200\n"
-"PO-Revision-Date: 2024-06-13 16:37+0200\n"
+"POT-Creation-Date: 2024-06-13 16:41+0200\n"
+"PO-Revision-Date: 2024-06-13 16:41+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -12192,7 +12192,7 @@ msgid "Event Display"
 msgstr "Arrangementsvisning"
 
 msgid "Event Series Items"
-msgstr "Emner i arrangementserie"
+msgstr "Emner i arrangementsserie"
 
 msgid ""
 "Enter the number of items to show per page in the default event series "
@@ -13957,7 +13957,7 @@ msgid "Tokens for the eventseries entity type."
 msgstr "Tokens for eventseries-enhedstypen."
 
 msgid "Event Series Reminder Message"
-msgstr "Påmindelsesbesked for arrangementserie"
+msgstr "Påmindelsesbesked for arrangementsserie"
 
 msgid "The reminder message to send to registrants."
 msgstr "Påmindelsesbeskeden sendt til registrerede."
@@ -14149,7 +14149,7 @@ msgstr "Instanser i arrangementsserie"
 msgid ""
 "Display event series if it has the selected taxonomy terms, or "
 "children of the selected terms."
-msgstr ""
+msgstr "Vis arrangementsserier, hvis de har den valgte taksonomi. "
 
 msgid "Event Series has taxonomy term ID (with depth)"
 msgstr "Arrangementsserien har kategori ID"
@@ -14253,7 +14253,7 @@ msgid "The URL of the event instance."
 msgstr "URL'en for arrangementsinstansen."
 
 msgid "Event Series Title"
-msgstr "Titel for arrangementserie"
+msgstr "Titel for arrangementsserie"
 
 msgid "The title of the event series."
 msgstr "Titlen på arrangementsserien."
@@ -14467,7 +14467,7 @@ msgid "Revisions"
 msgstr "Versioner"
 
 msgid "Event Series Settings"
-msgstr "Indstillinger for arrangementserie"
+msgstr "Indstillinger for arrangementsserie"
 
 msgid "Event Instance Settings"
 msgstr "Arrangementinstans indstillinger"
@@ -14485,7 +14485,7 @@ msgid "Add a new event."
 msgstr "Tilføj nyt arrangement"
 
 msgid "Event series listing."
-msgstr "Liste over arrangementserier"
+msgstr "Liste over arrangementsserier"
 
 msgid "Event instance listing."
 msgstr "Arrangementinstans liste."
@@ -14497,7 +14497,7 @@ msgid "Configure Event Instance Entity"
 msgstr ""
 
 msgid "Event Series Types"
-msgstr "Typer af arrangementserier"
+msgstr "Typer af arrangementsserier"
 
 msgid "Configure Event Series Types"
 msgstr ""
