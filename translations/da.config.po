@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-06 14:48+0200\n"
-"PO-Revision-Date: 2024-06-06 14:48+0200\n"
+"POT-Creation-Date: 2024-06-13 16:27+0200\n"
+"PO-Revision-Date: 2024-06-13 16:27+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2534,54 +2534,6 @@ msgctxt "views.view.content:display:page_1:display_options:tab_options:descripti
 msgid "Find and manage content"
 msgstr "Find og håndter indhold"
 
-msgctxt "views.view.content_paragraphs:label"
-msgid "Content lists, embedded in Paragraphs"
-msgstr "Indholdslister, indlejret i paragraphs"
-
-msgctxt "views.view.content_paragraphs:description"
-msgid ""
-"Lists for displaying content, through embedded views in paragraphs. "
-"Also allows the editor to set filter options in the paragraphs, that "
-"will be sent along using contextual filters. See "
-"dpl_filter_paragraphs.module"
-msgstr ""
-"Lister til visning af indhold gennem indlejrede visninger i "
-"paragraphs. Giver også redaktøren mulighed for at indstille "
-"filterindstillinger i paragraphs, som vil blive sendt med ved hjælp "
-"af kontekstuelle filtre. Se dpl_filter_paragraphs.module"
-
-msgctxt "views.view.content_paragraphs:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_tags_target_id:exception:title"
-msgid "All"
-msgstr "Alle"
-
-msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
-msgid "Card grid"
-msgstr "Nyhedskomponent"
-
 msgctxt "views.view.entity_clone_template:label"
 msgid "Entity Clone Template"
 msgstr "Gem som skabelon"
@@ -4273,7 +4225,7 @@ msgstr ""
 
 msgctxt "field.field.node.page.field_teaser_image:label"
 msgid "Teaser image"
-msgstr ""
+msgstr "Teaserbillede"
 
 msgctxt "field.field.node.page.field_teaser_image:description"
 msgid ""
@@ -4309,6 +4261,12 @@ msgid ""
 "CQL search string can be generated, by performing a query through the "
 "advanced search, and copying the CQL string from there. "
 msgstr ""
+"Dette felt er til indsættelse af en CQL-streng baseret på en "
+"søgning. <br /><br />Vær opmærksom på, at det er nødvendigt at "
+"kopiere den nøjagtige CQL-streng, inklusive anførselstegnene. dvs: "
+"('harry potter')<br /><br />En gyldig CQL-søgestreng kan genereres "
+"ved at udføre en forespørgsel gennem den avancerede søgning og "
+"kopiere CQL-strengen derfra."
 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_work_ids:description"
 msgid ""
@@ -4317,6 +4275,10 @@ msgid ""
 "need to link to a specific type, select it from the dropdown and the "
 "system will display that, if it is available."
 msgstr ""
+"Gitteret vil kun vise materialer i intervaller af 4. <br /><br "
+"/>Eksempel arbejds ID: work-of:870970-basis:136336282.<br /><br />Hvis "
+"du skal linke til en specifik type, vælg den fra dropdown-menuen og "
+"systemet vil vise den, hvis den er tilgængelig."
 
 msgctxt "field.field.paragraph.recommendation.field_image_position_right:description"
 msgid ""
@@ -4566,14 +4528,6 @@ msgctxt "system.action.pathauto_update_alias_user:label"
 msgid "Update URL alias"
 msgstr "Opdater URL alias"
 
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
-msgid "All"
-msgstr "Alle"
-
 msgctxt "core.entity_form_display.taxonomy_term.breadcrumb_structure.default:third_party_settings:field_group:group_related_children:label"
 msgid "Related children"
 msgstr "Relaterede sider"
@@ -4711,7 +4665,7 @@ msgstr "Vælg navnet på formularen, der skal vises i afsnittet."
 
 msgctxt "filter.format.webform_default:name"
 msgid "Webform (Default) - DO NOT EDIT"
-msgstr ""
+msgstr "Webformular (Standard) - MÅ IKKE REDIGERES"
 
 msgctxt "paragraphs.paragraphs_type.webform:label"
 msgid "Webform"
@@ -4747,7 +4701,7 @@ msgstr "Lås indsendelse"
 
 msgctxt "system.action.webform_submission_make_sticky_action:label"
 msgid "Star/flag submission"
-msgstr ""
+msgstr "Stjerne/flag indsendelse"
 
 msgctxt "system.action.webform_submission_make_unlock_action:label"
 msgid "Unlock submission"
@@ -4875,7 +4829,7 @@ msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:sticky:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:locked:label"
 msgid "Locked"
@@ -4903,7 +4857,7 @@ msgstr "Er kladde"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:sticky:expose:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:locked:expose:label"
 msgid "Locked"
@@ -4943,7 +4897,7 @@ msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:sticky:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:locked:label"
 msgid "Locked"
@@ -4983,7 +4937,7 @@ msgstr "Er kladde"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:sticky:expose:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:filters:locked:expose:label"
 msgid "Locked"
@@ -5007,7 +4961,7 @@ msgstr "Udkast"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sticky:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:locked:label"
 msgid "Locked"
@@ -5039,7 +4993,7 @@ msgstr "Er kladde"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:filters:sticky:expose:label"
 msgid "Sticky"
-msgstr ""
+msgstr "Klæbrig"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:filters:locked:expose:label"
 msgid "Locked"
@@ -6259,7 +6213,7 @@ msgstr ""
 
 msgctxt "webform.webform_options.sex_icao:label"
 msgid "Sex - International Civil Aviation Organization (ICAO)"
-msgstr ""
+msgstr "Køn - International Civil Aviation Organization (ICAO)"
 
 msgctxt "webform.webform_options.sex_icao:category"
 msgid "Demographic"
@@ -7118,17 +7072,6 @@ msgctxt "core.entity_view_mode.eventinstance.list_teaser_stacked_parent:label"
 msgid "List teaser stacked parent"
 msgstr ""
 
-msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:label"
-msgid "Amount of events"
-msgstr "Antal arrangementer"
-
-msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:description"
-msgid ""
-"Select the amount of events you want to display. <br /><br />If the "
-"amount displayed is less than what you put here, it is likely because "
-"there are not enough results based on your selected filters. "
-msgstr ""
-
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:label"
 msgid "Filter by branches"
 msgstr "Filter efter afdelinger"
@@ -7229,10 +7172,6 @@ msgctxt "field.storage.paragraph.field_amount_of_events:settings:allowed_values:
 msgid "16"
 msgstr "16"
 
-msgctxt "paragraphs.paragraphs_type.filtered_event_list:label"
-msgid "Filtered event list"
-msgstr "Arrangementsliste - filtreret"
-
 msgctxt "paragraphs.paragraphs_type.filtered_event_list:description"
 msgid ""
 "This paragraph displays a generated a list of events, based on "
@@ -7240,10 +7179,6 @@ msgid ""
 msgstr ""
 "Denne paragraph viser en liste af arrangementer filtreret på "
 "kategori, tags og filialer."
-
-msgctxt "paragraphs.paragraphs_type.manual_event_list:label"
-msgid "Manual event list"
-msgstr "Arrangementsliste - manuel"
 
 msgctxt "paragraphs.paragraphs_type.manual_event_list:description"
 msgid "This paragraph will show a list of events that are manually selected."
@@ -7266,55 +7201,6 @@ msgstr "Kategorier af åbningstider, f.eks. \"Åbent\" eller \"Telefontid\""
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:title_2:admin_label"
 msgid "Event Series Title"
 msgstr "Titel på arrangementsserie"
-
-msgctxt "views.view.filtered_event_list:label"
-msgid "Filtered events"
-msgstr "Filtrerede arrangementer"
-
-msgctxt "views.view.filtered_event_list:description"
-msgid ""
-"This view displays a filtered list of upcoming events sorted by date "
-"ascending. Filters include categories, tags and branches"
-msgstr ""
-"Visningen viser en filtreret liste over kommende arrangementer, "
-"sorteret efter kommende datoer. Kan filtreres på tags, kategori og "
-"filial."
-
-msgctxt "views.view.filtered_event_list:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sortér efter"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
-msgid "All"
-msgstr "Alle"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_categories:exception:title"
-msgid "All"
-msgstr "Alle"
-
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:branch:exception:title"
-msgid "All"
-msgstr "Alle"
 
 msgctxt "views.view.redirect:label"
 msgid "Redirect"
@@ -7483,6 +7369,9 @@ msgid ""
 "This event instance list is used to display eventinstances under the "
 "\"edit instances\" tab for an event series."
 msgstr ""
+"Denne liste over begivenhedsinstanser bruges til at vise "
+"begivenhedsinstanser under fanen \"rediger instanser\" for en "
+"arrangementserie."
 
 msgctxt "views.view.event_instance_list:display:default:display_title"
 msgid "Default"
@@ -7629,6 +7518,8 @@ msgid ""
 "This is the view for displaying a list of event series. Used on "
 "admin/content/eventseries"
 msgstr ""
+"Dette er listevisning over arrangementserier. Bruges på "
+"admin/indhold/arrangementserier"
 
 msgctxt "views.view.event_series_admin:display:default:display_title"
 msgid "Default"
@@ -7964,9 +7855,184 @@ msgstr ""
 
 msgctxt "field.field.eventinstance.default.field_description:label"
 msgid "Subtitle"
-msgstr ""
+msgstr "Manchet"
 
 msgctxt "field.field.eventseries.default.field_description:label"
 msgid "Subtitle"
+msgstr "Manchet"
+
+msgctxt "field.field.eventinstance.default.field_ticket_capacity:label"
+msgid "Total ticket capacity"
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_ticket_capacity:description"
+msgid ""
+"Used by third party services to detect when an event is sold out.<br "
+"/><br />Is not displayed to the end-user."
+msgstr ""
+"Brugt af tredjepartstjenester til at detektere, når et arrangement er "
+"udsolgt.<br /><br />Vises ikke for slutbrugeren."
+
+msgctxt "field.field.eventseries.default.field_ticket_capacity:label"
+msgid "Total ticket capacity"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_ticket_capacity:description"
+msgid ""
+"Used by third party services to detect when an event is sold out.<br "
+"/><br />Is not displayed to the end-user."
+msgstr ""
+"Brugt af tredjepartstjenester til at detektere, når et arrangement er "
+"udsolgt.<br /><br />Vises ikke for slutbrugeren."
+
+msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:label"
+msgid "Filters"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_content_types:label"
+msgid "Displayed content types"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_content_types:description"
+msgid "If nothing is selected, all will be chosen."
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_branches:label"
+msgid "Filter by branches"
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_categories:label"
+msgid "Filter by categories"
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_content_types:label"
+msgid "Displayed content types"
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_content_types:description"
+msgid "If nothing is selected, all will be chosen."
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_tags:label"
+msgid "Filter by tags"
+msgstr ""
+
+msgctxt "field.field.paragraph.content_slider_automatic.field_title:label"
+msgid "Title"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:label"
+msgid "(DO NOT USE - DEPRECATED) Amount of events"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:description"
+msgid "This field is no longer in use, and will be deleted in the future."
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_max_item_amount:label"
+msgid "Max item amount"
+msgstr ""
+
+msgctxt "field.field.paragraph.filtered_event_list.field_max_item_amount:description"
+msgid ""
+"Select the amount of events you want to display. <br /><br />If the "
+"amount displayed is less than what you put here, it is likely because "
+"there are not enough results based on your selected filters. "
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:0:label"
+msgid "\"OR\" - Must match on any filter"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:1:label"
+msgid "\"AND\" - Must match on ALL filters"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:0:label"
+msgid "1"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:1:label"
+msgid "2"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:2:label"
+msgid "3"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:3:label"
+msgid "4"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:4:label"
+msgid "5"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:5:label"
+msgid "6"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:6:label"
+msgid "7"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:7:label"
+msgid "8"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:8:label"
+msgid "9"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:9:label"
+msgid "10"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:10:label"
+msgid "11"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:11:label"
+msgid "12"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:12:label"
+msgid "13"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:13:label"
+msgid "14"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:14:label"
+msgid "15"
+msgstr ""
+
+msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:15:label"
+msgid "16"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.content_slider_automatic:label"
+msgid "Content slider - automatic"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.filtered_event_list:label"
+msgid "Event list - automatic"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.manual_event_list:label"
+msgid "Event list"
 msgstr ""
 
