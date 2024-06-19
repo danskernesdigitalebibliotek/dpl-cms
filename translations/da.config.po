@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-18 11:52+0200\n"
-"PO-Revision-Date: 2024-06-18 11:52+0200\n"
+"POT-Creation-Date: 2024-06-19 11:14+0200\n"
+"PO-Revision-Date: 2024-06-19 11:14+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4621,11 +4621,11 @@ msgstr ""
 
 msgctxt "pathauto.pattern.breadcrumb_pattern_event_instance:label"
 msgid "Breadcrumb pattern (event instance)"
-msgstr ""
+msgstr "Breadcrumb-mønster (arrangementsinstans)"
 
 msgctxt "pathauto.pattern.breadcrumb_pattern_event_series:label"
 msgid "Breadcrumb pattern (event series)"
-msgstr ""
+msgstr "Breadcrumb-mønster (arrangementserie)"
 
 msgctxt "views.view.articles:display:all:display_title"
 msgid "Page"
@@ -4789,7 +4789,7 @@ msgstr "Faldende"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:empty:area_text_custom:content"
 msgid "No submissions available."
-msgstr ""
+msgstr "Ingen indsendelser tilgængelige."
 
 msgctxt "views.view.webform_submissions:display:default:display_options:arguments:in_draft:exception:title"
 msgid "All"
@@ -5520,7 +5520,7 @@ msgstr "[webform_submission:values:subject:raw]"
 
 msgctxt "webform.webform_options.country_codes:label"
 msgid "Country codes"
-msgstr ""
+msgstr "Landskoder"
 
 msgctxt "webform.webform_options.country_codes:category"
 msgid "Geographic"
@@ -8118,7 +8118,7 @@ msgstr "16"
 
 msgctxt "paragraphs.paragraphs_type.content_slider_automatic:label"
 msgid "Content slider - automatic"
-msgstr ""
+msgstr "Indholdsslider - automatisk"
 
 msgctxt "paragraphs.paragraphs_type.filtered_event_list:label"
 msgid "Event list - automatic"
@@ -8134,7 +8134,7 @@ msgstr "Card - Medium - 551×731"
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_description:label"
 msgid "Material grid description"
-msgstr ""
+msgstr "Materialets gitterbeskrivelse"
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_description:description"
 msgid ""
@@ -8144,7 +8144,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:label"
 msgid "Material grid description"
-msgstr ""
+msgstr "Materialets gitterbeskrivelse"
 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:description"
 msgid ""
@@ -8154,7 +8154,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:label"
 msgid "Condition type (INACTIVE)"
-msgstr ""
+msgstr "Betingelsestype (INAKTIV)"
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:description"
 msgid ""
@@ -8164,7 +8164,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
 msgid "Condition type (INACTIVE)"
-msgstr ""
+msgstr "Betingelsestype (INAKTIV)"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:description"
 msgid ""
@@ -8174,7 +8174,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:label"
 msgid "Condition type (INACTIVE)"
-msgstr ""
+msgstr "Betingelsestype (INAKTIV)"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:description"
 msgid ""
@@ -8193,14 +8193,18 @@ msgid ""
 "will be sent along using contextual filters. See "
 "dpl_filter_paragraphs.module"
 msgstr ""
+"Lister til visning af indhold, gennem indlejrede visninger i afsnit. "
+"Tillader også redaktøren at indstille filtermuligheder i afsnittene, "
+"som vil blive sendt sammen ved hjælp af kontekstuelle filtre. Se "
+"dpl_filter_paragraphs.module"
 
 msgctxt "views.view.content_paragraphs:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
@@ -8212,7 +8216,7 @@ msgstr ""
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Asc"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
@@ -8290,11 +8294,11 @@ msgstr "Alle"
 
 msgctxt "core.entity_form_display.node.article.default:third_party_settings:field_group:group_author:label"
 msgid "Author & Date"
-msgstr ""
+msgstr "Forfatter & dato"
 
 msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_author_date:label"
 msgid "Author & Date"
-msgstr ""
+msgstr "Forfatter & dato"
 
 msgctxt "field.field.node.article.field_publication_date:label"
 msgid "Publication date"
@@ -8306,11 +8310,11 @@ msgstr ""
 
 msgctxt "views.view.content:display:default:display_options:filters:uid:expose:label"
 msgid "Authored by"
-msgstr ""
+msgstr "Skrevet af"
 
 msgctxt "views.view.content:display:default:display_options:filters:field_categories_target_id:expose:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 msgctxt "views.view.content:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags"
@@ -8318,7 +8322,7 @@ msgstr ""
 
 msgctxt "views.view.content:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branch"
-msgstr ""
+msgstr "Afdeling"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:label"
 msgid "Search"
@@ -8326,7 +8330,7 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_categories_target_id_verf:expose:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags "
@@ -8334,5 +8338,5 @@ msgstr ""
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branches"
-msgstr ""
+msgstr "Afdelinger"
 
