@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3697fb79bbc81c37c03c6fd48e5626f",
+    "content-hash": "f3e19ed3f2d92bfd7b52078ab3b86458",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1149,10 +1149,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.24.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.24.0/dist-2024-24-0-a0dc4c3e07c1ed827a21261d75ffebc87f50e8e9.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature%2Ffind-on-shelf-changes/dist-feature-find-on-shelf-changes.zip"
             },
             "type": "drupal-library"
         },
@@ -18660,7 +18660,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
