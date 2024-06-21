@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd62f0679143f742484add6a9ae9011f",
+    "content-hash": "b84778f61d6a2bdbf5f99ee7c262a990",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1158,10 +1158,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.25.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.25.0/dist-2024-25-0-c522214d040e91df6a847e19dfcd77ae3321db93.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix/disappearing-user-data/dist-fix-disappearing-user-data.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -18784,6 +18784,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
