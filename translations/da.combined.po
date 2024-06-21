@@ -26765,12 +26765,12 @@ msgstr "<p>En ny forespørgsel er ankommet med følgende info:</p><p>Navn: [webf
 #: 
 msgctxt "Create patron"
 msgid "You will be sent to the Adgangsplatformen to log in again in @seconds seconds."
-msgstr ""
+msgstr "Du vil blive sendt til adgangsplatformen for at logge ind igen om @seconds sekunder."
 
 #: 
 msgctxt "Create patron"
 msgid "You are now registered as a user and need to log in again to be able to use the application."
-msgstr ""
+msgstr "Du er nu registreret som bruger og skal logge ind igen for at kunne bruge applikationen."
 
 #: 
 msgctxt "Create patron"
