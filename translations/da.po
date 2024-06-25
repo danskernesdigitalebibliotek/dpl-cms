@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-21 14:51+0200\n"
-"PO-Revision-Date: 2024-06-21 14:51+0200\n"
+"POT-Creation-Date: 2024-06-25 11:42+0200\n"
+"PO-Revision-Date: 2024-06-25 11:42+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "+ @count flere materialer"
 
 msgctxt "Loan list"
 msgid "You have no physical loans at the moment"
-msgstr "Du har ingen fysiske lån i øjeblikket"
+msgstr "Du har ingen lån"
 
 msgctxt "Loan list"
 msgid "Physical loans"
@@ -1018,7 +1018,7 @@ msgstr "Du har ingen fysiske lån i øjeblikket"
 
 msgctxt "Dashboard"
 msgid "At the moment, you have 0 reservations"
-msgstr "Du har 0 reserveringer"
+msgstr "Du har ingen reserveringer"
 
 msgctxt "Dashboard"
 msgid "Reservations"
