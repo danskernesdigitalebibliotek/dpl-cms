@@ -216,23 +216,6 @@ class RelatedContent {
         $this->resultBasis = ['tags', 'categories'];
       }
 
-      // If we found less than minimum results, we'll add branches to the mix in
-      // addition to tags and categories.
-      if ((count($event_ids) + count($node_ids) < $this->minItems) && !empty($this->branches)) {
-        $node_ids = $this->getNodeIds($this->tags, $this->categories, $this->branches);
-        $event_ids = $this->getEventInstanceIds($this->tags, $this->categories, $this->branches);
-        $this->resultBasis = ['tags', 'categories', 'branches'];
-      }
-    }
-
-    if ($this->allowDateFallback) {
-      // If the count is still under minimum, we'll find the upcoming events,
-      // and the latest nodes instead.
-      if (count($event_ids) + count($node_ids) < $this->minItems) {
-        $node_ids = $this->getNodeIds();
-        $event_ids = $this->getEventInstanceIds();
-        $this->resultBasis = ['date'];
-      }
     }
 
     // If we still have less than minimum, we just won't display anything.
