@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_branch
     - field.field.node.article.field_canonical_url
     - field.field.node.article.field_categories
+    - field.field.node.article.field_open_graph_image
     - field.field.node.article.field_override_author
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_publication_date
@@ -38,6 +39,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 110
+    region: content
+  field_open_graph_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 115
     region: content
   field_override_author:
     type: string

@@ -1,0 +1,29 @@
+uuid: dfbc4eb5-5bba-4880-ad89-4dd1b2c8791e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_graph_image
+    - media.type.image
+    - node.type.article
+id: node.article.field_open_graph_image
+field_name: field_open_graph_image
+entity_type: node
+bundle: article
+label: 'Open graph image'
+description: 'This is used by Facebook when pages are shared'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,36 @@
+uuid: 74bc5a61-94fd-4de7-9510-a8e839c3c79b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.open_graph
+    - field.field.media.image.field_byline
+    - field.field.media.image.field_media_image
+    - image.style.open_graph
+    - media.type.image
+  module:
+    - image
+id: media.image.open_graph
+targetEntityType: media
+bundle: image
+mode: open_graph
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: open_graph
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_byline: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

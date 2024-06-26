@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_branch
     - field.field.node.article.field_canonical_url
     - field.field.node.article.field_categories
+    - field.field.node.article.field_open_graph_image
     - field.field.node.article.field_override_author
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_publication_date
@@ -58,6 +59,7 @@ content:
 hidden:
   field_branch: true
   field_canonical_url: true
+  field_open_graph_image: true
   field_override_author: true
   field_paragraphs: true
   field_publication_date: true

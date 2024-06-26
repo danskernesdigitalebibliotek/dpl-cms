@@ -1,0 +1,10 @@
+uuid: 11777fb7-570f-45c9-baa4-54cd0809800e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.open_graph
+label: 'Open graph (1200x630)'
+targetEntityType: media
+cache: true

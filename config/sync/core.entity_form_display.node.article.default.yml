@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_branch
     - field.field.node.article.field_canonical_url
     - field.field.node.article.field_categories
+    - field.field.node.article.field_open_graph_image
     - field.field.node.article.field_override_author
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_publication_date
@@ -131,6 +132,15 @@ content:
       match_operator: CONTAINS
       match_limit: 10
     third_party_settings: {  }
+  field_open_graph_image:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_override_author:
     type: string_textfield
     weight: 10
