@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-26 10:57+0200\n"
-"PO-Revision-Date: 2024-06-26 10:57+0200\n"
+"POT-Creation-Date: 2024-06-26 13:49+0200\n"
+"PO-Revision-Date: 2024-06-26 13:49+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -5816,7 +5816,7 @@ msgstr "Card - Medium - 551×731"
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_description:label"
 msgid "Material grid description"
-msgstr "Materialets gitterbeskrivelse"
+msgstr "Beskrivelse af indholdet i grid'et"
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_description:description"
 msgid ""
@@ -5826,7 +5826,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:label"
 msgid "Material grid description"
-msgstr "Materialets gitterbeskrivelse"
+msgstr "Beskrivelse af indholdet i grid'et"
 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:description"
 msgid ""
