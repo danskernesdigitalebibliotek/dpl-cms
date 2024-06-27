@@ -30,7 +30,7 @@ default:
       tag: link
       attributes:
         rel: canonical
-        href: '/user/login'
+        href: 'http://dapple-cms.docker/frontpage'
   path:
     -
       alias: ''
