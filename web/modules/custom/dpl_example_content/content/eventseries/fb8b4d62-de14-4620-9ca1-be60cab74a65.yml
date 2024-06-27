@@ -94,11 +94,6 @@ default:
       attributes:
         name: title
         content: '| DPL CMS'
-    -
-      tag: link
-      attributes:
-        rel: canonical
-        href: 'http://dapple-cms.docker/frontpage'
   path:
     -
       alias: /arrangementer/klima/genbrugsstof-fremfor-plastik-0
