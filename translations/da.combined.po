@@ -25453,7 +25453,7 @@ msgstr "Beskrivelse af indholdet i grid'et"
 #: 
 msgctxt "field.field.paragraph.material_grid_automatic.field_material_grid_description:description"
 msgid "This is the optional description for the material grid. <br />Leave blank if you do not want a description."
-msgstr ""
+msgstr "Dette er en valgfri beskrivelsestekst, der kan ledsage materiale grid'et. Lad feltet være tomt, hvis du ikke ønsker en beskrivelse."
 
 #: 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:label"
@@ -25463,7 +25463,7 @@ msgstr "Beskrivelse af indholdet i grid'et"
 #: 
 msgctxt "field.field.paragraph.material_grid_manual.field_material_grid_description:description"
 msgid "This is the optional description for the material grid. <br />Leave blank if you do not want a description."
-msgstr ""
+msgstr "Dette er en valgfri beskrivelsestekst, der kan ledsage materiale grid'et. Lad feltet være tomt, hvis du ikke ønsker en beskrivelse."
 
 #: 
 msgid "Field work ID"
@@ -25629,7 +25629,7 @@ msgstr ""
 #: 
 msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
 msgid "Card grid"
-msgstr ""
+msgstr "Card grid"
 
 #: 
 msgctxt "views.view.content_paragraphs:display:slider:display_title"
@@ -25758,4 +25758,20 @@ msgstr ""
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branches"
 msgstr "Afdelinger"
+
+#: 
+msgid "DPL Cookies"
+msgstr ""
+
+#: 
+msgid "A module that handles cookie functionality."
+msgstr ""
+
+#: 
+msgid "To view this content, we need your consent to use marketing cookies."
+msgstr ""
+
+#: 
+msgid "Manage consent"
+msgstr ""
 

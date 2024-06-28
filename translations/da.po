@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-26 13:58+0200\n"
-"PO-Revision-Date: 2024-06-26 13:58+0200\n"
+"POT-Creation-Date: 2024-06-28 10:35+0200\n"
+"PO-Revision-Date: 2024-06-28 10:35+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18179,5 +18179,17 @@ msgid "DPL publication"
 msgstr "DPL publikation"
 
 msgid "Sets the publication date field when content is published.&#039;"
+msgstr ""
+
+msgid "DPL Cookies"
+msgstr ""
+
+msgid "A module that handles cookie functionality."
+msgstr ""
+
+msgid "To view this content, we need your consent to use marketing cookies."
+msgstr ""
+
+msgid "Manage consent"
 msgstr ""
 
