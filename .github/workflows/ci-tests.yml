@@ -184,6 +184,9 @@ jobs:
         with:
           name: cypress-screenshots
           path: cypress/screenshots
+      - name: Setup tmate session
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
 
   MarkdownLint:
     name: Lint Markdown
