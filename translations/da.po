@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-28 10:35+0200\n"
-"PO-Revision-Date: 2024-06-28 10:35+0200\n"
+"POT-Creation-Date: 2024-07-02 12:09+0200\n"
+"PO-Revision-Date: 2024-07-02 12:09+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1872,20 +1872,8 @@ msgstr "eReolen startside"
 msgid "List of bookmarks"
 msgstr "Bogmærkeliste"
 
-msgid "Ticket sale not open"
-msgstr "Ikke åbent for billetsalg"
-
 msgid "Active"
 msgstr "Aktiv"
-
-msgid "Sold out"
-msgstr "Udsolgt"
-
-msgid "Canceled"
-msgstr "Aflyst"
-
-msgid "Occurred"
-msgstr "Afholdt"
 
 msgid "Event"
 msgstr "Arrangement"
@@ -18002,7 +17990,7 @@ msgstr "Opdaterede @count enheder, @source_field => @target_field"
 
 msgctxt "DPL related content"
 msgid "Related content"
-msgstr "Inspiration"
+msgstr "Relateret indhold"
 
 msgid "DPL Filtered Paragraphs (Deprecated)"
 msgstr "DPL filtreret Paragraphs (Forældet)"
@@ -18191,5 +18179,25 @@ msgid "To view this content, we need your consent to use marketing cookies."
 msgstr ""
 
 msgid "Manage consent"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Ticket sale not open"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Active"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Sold out"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Canceled"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Occurred"
 msgstr ""
 

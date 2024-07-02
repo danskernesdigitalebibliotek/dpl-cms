@@ -2180,24 +2180,8 @@ msgid "List of bookmarks"
 msgstr "Bogmærkeliste"
 
 #: 
-msgid "Ticket sale not open"
-msgstr "Ikke åbent for billetsalg"
-
-#: 
 msgid "Active"
 msgstr "Aktiv"
-
-#: 
-msgid "Sold out"
-msgstr "Udsolgt"
-
-#: 
-msgid "Canceled"
-msgstr "Aflyst"
-
-#: 
-msgid "Occurred"
-msgstr "Afholdt"
 
 #: 
 msgid "Event"
@@ -7114,11 +7098,6 @@ msgstr "Master"
 msgctxt "views.view.entity_clone_template:display:default:display_options:title"
 msgid "Entity Clone Template"
 msgstr "Gem som skabelon"
-
-#: 
-msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
-msgid "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
-msgstr "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:submit_button"
@@ -25139,7 +25118,7 @@ msgstr "Opdaterede @count enheder, @source_field => @target_field"
 #: 
 msgctxt "DPL related content"
 msgid "Related content"
-msgstr "Inspiration"
+msgstr "Relateret indhold"
 
 #: 
 msgid "DPL Filtered Paragraphs (Deprecated)"
@@ -25773,5 +25752,80 @@ msgstr ""
 
 #: 
 msgid "Manage consent"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:label"
+msgid "More link"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:default_value:0:title"
+msgid "Vis mere"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_manual.field_more_link:label"
+msgid "More link"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_manual.field_more_link:default_value:0:title"
+msgid "Vis mere"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Ticket sale not open"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Active"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Sold out"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Canceled"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Occurred"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
+msgid "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Use template'|trans }}</a>"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing_1:alter:text"
+msgid "<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit template'|trans }}</a>"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_clone_template:display:block:display_options:fields:nothing_1:alter:text"
+msgid "<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit template'|trans }}</a>"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:label"
+msgid "Show subtitles"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:off_label"
+msgid "Off"
 msgstr ""
 

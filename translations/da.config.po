@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-06-28 10:35+0200\n"
-"PO-Revision-Date: 2024-06-28 10:35+0200\n"
+"POT-Creation-Date: 2024-07-02 12:09+0200\n"
+"PO-Revision-Date: 2024-07-02 12:09+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2545,10 +2545,6 @@ msgstr "Master"
 msgctxt "views.view.entity_clone_template:display:default:display_options:title"
 msgid "Entity Clone Template"
 msgstr "Gem som skabelon"
-
-msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
-msgid "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
-msgstr "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">Clone</a>"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
@@ -6025,4 +6021,50 @@ msgstr ""
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branches"
 msgstr "Afdelinger"
+
+msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:label"
+msgid "More link"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:default_value:0:title"
+msgid "Vis mere"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_manual.field_more_link:label"
+msgid "More link"
+msgstr ""
+
+msgctxt "field.field.paragraph.card_grid_manual.field_more_link:default_value:0:title"
+msgid "Vis mere"
+msgstr ""
+
+msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
+msgid ""
+"<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Use "
+"template'|trans }}</a>"
+msgstr ""
+
+msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing_1:alter:text"
+msgid ""
+"<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit "
+"template'|trans }}</a>"
+msgstr ""
+
+msgctxt "views.view.entity_clone_template:display:block:display_options:fields:nothing_1:alter:text"
+msgid ""
+"<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit "
+"template'|trans }}</a>"
+msgstr ""
+
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:label"
+msgid "Show subtitles"
+msgstr ""
+
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:off_label"
+msgid "Off"
+msgstr ""
 
