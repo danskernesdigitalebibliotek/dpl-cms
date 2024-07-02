@@ -165,13 +165,9 @@ jobs:
       - name: Setup site
         run: task ci:reset
       - name: Run Cypress
-        run: task ci:cypress
-      - name: Run Chromatic
-        uses: chromaui/action@v11
-        if: always()
-        with:
-          cypress: true
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: task ci:cypress:chromatic
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
       - name: Archive videoes
         if: always()
         uses: actions/upload-artifact@v4
