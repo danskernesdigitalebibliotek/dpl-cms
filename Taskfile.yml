@@ -431,7 +431,7 @@ tasks:
       - sh: "[ -v CHROMATIC_PROJECT_TOKEN ]"
         msg: Please provide a CHROMATIC_PROJECT_TOKEN environment variable
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CHROMATIC_PROJECT_TOKEN=${CHROMATIC_PROJECT_TOKEN} node-chrome bash -c "rm tsconfig.json || true; sleep 5; npx chromatic --cypress --exit-once-uploaded"
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CHROMATIC_PROJECT_TOKEN=${CHROMATIC_PROJECT_TOKEN} node-chrome bash -c "rm tsconfig.json || true; sleep 5; git config --global --add safe.directory /app; npx chromatic --cypress --exit-once-uploaded"
 
   ci:pa11y:
     desc: Run Pa11y to test accessiblity
