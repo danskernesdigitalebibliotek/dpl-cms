@@ -123,14 +123,6 @@ class RelatedContent {
   public ?string $title = NULL;
 
   /**
-   * The 'more link' that may be shown as part of the list.
-   *
-   * @var array<mixed>
-   *  The render array.
-   */
-  public array $moreLink = [];
-
-  /**
    * View mode to use for displaying individual content item.
    */
   public string $contentViewMode = 'card';
@@ -234,7 +226,6 @@ class RelatedContent {
     return [
       '#theme' => 'dpl_related_content',
       '#title' => $this->title,
-      '#link' => $this->moreLink,
       '#items' => $this->renderMergeResults($event_ids, $node_ids),
       '#list_style' => $this->listStyle,
       '#result_basis' => $this->resultBasis,

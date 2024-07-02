@@ -11,7 +11,9 @@
       <h2 class="card-grid__title">{{ title }}</h2>
     {% endif %}
 
-    {{ link }}
+    {% if link %}
+      <div class="card-grid__link">{{ link }}</div>
+    {% endif %}
   </div>
   <div class="card-grid__items-wrapper">
     <div class="card-grid__items">
