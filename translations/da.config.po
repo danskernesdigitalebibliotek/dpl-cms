@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-07-02 12:09+0200\n"
-"PO-Revision-Date: 2024-07-02 12:09+0200\n"
+"POT-Creation-Date: 2024-07-02 22:01+0200\n"
+"PO-Revision-Date: 2024-07-02 22:01+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4645,11 +4645,11 @@ msgstr ""
 
 msgctxt "field.field.paragraph.webform.field_webform:label"
 msgid "Webform"
-msgstr ""
+msgstr "Webformular"
 
 msgctxt "field.field.paragraph.webform.field_webform:description"
 msgid "Choose the name of the webform that should be shown in the paragraph."
-msgstr ""
+msgstr "Vælg navnet på webformularen, der skal vises i paragrafen."
 
 msgctxt "filter.format.webform_default:name"
 msgid "Webform (Default) - DO NOT EDIT"
@@ -4661,7 +4661,7 @@ msgstr "Webformular"
 
 msgctxt "paragraphs.paragraphs_type.webform:description"
 msgid "Paragraph used for embedding a webform."
-msgstr ""
+msgstr "Paragraph brugt til indlejring af en webformular."
 
 msgctxt "system.action.webform_archive_action:label"
 msgid "Archive webform"
@@ -4737,7 +4737,7 @@ msgstr "IP-adresse"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:fields:view_webform_submission:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 msgctxt "views.view.webform_submissions:display:default:display_options:fields:view_webform_submission:text"
 msgid "view"
@@ -4837,7 +4837,7 @@ msgstr "IP-adresse"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:operations:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:filters:in_draft:expose:label"
 msgid "Is draft"
@@ -4905,7 +4905,7 @@ msgstr "IP-adresse"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:view_webform_submission:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:view_webform_submission:text"
 msgid "view"
@@ -4913,7 +4913,7 @@ msgstr "Vis"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:edit_webform_submission:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:edit_webform_submission:text"
 msgid "edit"
@@ -4937,7 +4937,7 @@ msgstr "Administrer indsendelser."
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_title"
 msgid "Embed: Review"
-msgstr ""
+msgstr "Indlejr: Anmeldelse"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:sid:label"
 msgid "#"
@@ -4969,7 +4969,7 @@ msgstr "IP-adresse"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:view_webform_submission:label"
 msgid "Operations"
-msgstr ""
+msgstr "Funktioner"
 
 msgctxt "views.view.webform_submissions:display:embed_review:display_options:fields:view_webform_submission:text"
 msgid "view"
@@ -5305,7 +5305,7 @@ msgstr "Forfatternavn"
 
 msgctxt "field.field.user.user.field_author_name:description"
 msgid "This will be used as the front-facing name on articles."
-msgstr ""
+msgstr "Dette vil blive brugt som det offentlige navn på artikler."
 
 msgctxt "views.view.administerusersbyrole_people:display:default:display_options:fields:field_author_name:label"
 msgid "Author name"
@@ -5370,7 +5370,7 @@ msgstr "Publiceret"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:fields:operations:label"
 msgid "Operations links"
-msgstr ""
+msgstr "Funktionslinks"
 
 msgctxt "views.view.event_instance_list:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -5514,7 +5514,7 @@ msgstr "Publiceret"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:fields:operations:label"
 msgid "Operations links"
-msgstr ""
+msgstr "Funktionslinks"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -5697,7 +5697,7 @@ msgstr "Filtrer efter tags"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:label"
 msgid "(DO NOT USE - DEPRECATED) Amount of events"
@@ -5843,6 +5843,8 @@ msgid ""
 "This field will be used in relation to the dpl_related_content in the "
 "future, but currently has no effect."
 msgstr ""
+"Dette felt vil i fremtiden blive brugt i relation til "
+"dpl_relateret_indhold, men har i øjeblikket ingen effekt."
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
 msgid "Condition type (INACTIVE)"
@@ -5866,7 +5868,7 @@ msgstr ""
 
 msgctxt "views.view.content_paragraphs:label"
 msgid "Content lists, embedded in Paragraphs"
-msgstr ""
+msgstr "Indholdslister, indlejret i Paragraphs"
 
 msgctxt "views.view.content_paragraphs:description"
 msgid ""
@@ -5890,11 +5892,11 @@ msgstr "Anvend"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
@@ -5902,23 +5904,23 @@ msgstr "Asc"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Beskriv"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_tags_target_id:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alt"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alt"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alt"
 
 msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:type:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alt"
 
 msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
 msgid "Card grid"
@@ -5926,7 +5928,7 @@ msgstr "Card grid"
 
 msgctxt "views.view.content_paragraphs:display:slider:display_title"
 msgid "Slider"
-msgstr ""
+msgstr "Slider"
 
 msgctxt "views.view.filtered_event_list:label"
 msgid "Filtered events"
@@ -5937,6 +5939,9 @@ msgid ""
 "This view displays a filtered list of upcoming events sorted by date "
 "ascending. Filters include categories, tags and branches"
 msgstr ""
+"Denne visning viser en filtreret liste over kommende arrangementer "
+"sorteret efter dato i stigende rækkefølge. Filtre inkluderer "
+"kategorier, tags og afdelinger."
 
 msgctxt "views.view.filtered_event_list:display:default:display_title"
 msgid "Default"
@@ -5984,11 +5989,11 @@ msgstr "Forfatter & dato"
 
 msgctxt "field.field.node.article.field_publication_date:label"
 msgid "Publication date"
-msgstr ""
+msgstr "Udgivelsesdato"
 
 msgctxt "field.field.node.page.field_publication_date:label"
 msgid "Publication date"
-msgstr ""
+msgstr "Udgivelsesdato"
 
 msgctxt "views.view.content:display:default:display_options:filters:uid:expose:label"
 msgid "Authored by"
@@ -6000,7 +6005,7 @@ msgstr "Kategorier"
 
 msgctxt "views.view.content:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "views.view.content:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branch"
@@ -6008,7 +6013,7 @@ msgstr "Afdeling"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:combine_1:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_categories_target_id_verf:expose:label"
 msgid "Categories"
@@ -6016,7 +6021,7 @@ msgstr "Kategorier"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags "
-msgstr ""
+msgstr "Tags"
 
 msgctxt "views.view.event_series_admin:display:default:display_options:filters:field_branch_target_id_verf:expose:label"
 msgid "Branches"
@@ -6028,7 +6033,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:default_value:0:title"
 msgid "Vis mere"
-msgstr ""
+msgstr "Vis flere"
 
 msgctxt "field.field.paragraph.card_grid_manual.field_more_link:label"
 msgid "More link"
@@ -6036,29 +6041,35 @@ msgstr ""
 
 msgctxt "field.field.paragraph.card_grid_manual.field_more_link:default_value:0:title"
 msgid "Vis mere"
-msgstr ""
+msgstr "Vis flere"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
 msgid ""
 "<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Use "
 "template'|trans }}</a>"
 msgstr ""
+"<a class=\"button\" href=\"/entity_clone/node/{{ nid }}\">{{ 'Brug "
+"skabelon'|trans }}</a>"
 
 msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing_1:alter:text"
 msgid ""
 "<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit "
 "template'|trans }}</a>"
 msgstr ""
+"<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Rediger "
+"skabelon'|trans }}</a>"
 
 msgctxt "views.view.entity_clone_template:display:block:display_options:fields:nothing_1:alter:text"
 msgid ""
 "<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Edit "
 "template'|trans }}</a>"
 msgstr ""
+"<a href=\"/node/{{ nid }}/edit\" class=\"button\">{{ 'Rediger "
+"skabelon'|trans }}</a>"
 
 msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:label"
 msgid "Show subtitles"
-msgstr ""
+msgstr "Vis undertekster"
 
 msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:on_label"
 msgid "On"
