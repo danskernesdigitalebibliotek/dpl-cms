@@ -168,6 +168,7 @@ jobs:
         run: task ci:cypress
       - name: Run Chromatic
         uses: chromaui/action@v11
+        if: always()
         with:
           cypress: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
