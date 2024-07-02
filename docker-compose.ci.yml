@@ -26,7 +26,8 @@ services:
       HTTPS_PROXY: https://wiremock
       # Do not proxy traffic to the website nor to Google services serving
       # frontend assets. This pollutes the WireMock log output.
-      NO_PROXY: "varnish,*.gstatic.com,*.googleapis.com"
+      # Do not proxy requests to Chromatic. This leads to certification errors.
+      NO_PROXY: "varnish,*.gstatic.com,*.googleapis.com,*.chromatic.com,chromatic-builds.s3.us-west-2.amazonaws.com"
       CYPRESS_BASE_URL: "http://varnish:8080"
       CYPRESS_WIREMOCK_URL: "http://wiremock"
 

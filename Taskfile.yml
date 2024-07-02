@@ -390,13 +390,17 @@ tasks:
   ci:cypress:
     desc: Run Cypress functional tests
     deps: [ci:wiremock:create-mappings]
+    sources:
+      - cypress/**/*.ts
+    generates:
+      - cypress/downloads/**/*.json
     cmds:
       - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
       - task dev:cli -- drush user:password $CYPRESS_DRUPAL_USERNAME $CYPRESS_DRUPAL_PASSWORD
       # We make sure to run the tests that require mappings first.
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/withMappings/*.ts"
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD -e ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 cypress --spec "cypress/e2e/withMappings/*.ts"
       # All tests that delete mappings and make their own run afterwards.
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/*.ts"
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD -e ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 cypress --spec "cypress/e2e/*.ts"
     env:
       DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_CI }}"
       CYPRESS_DRUPAL_USERNAME: admin
@@ -415,9 +419,19 @@ tasks:
       CYPRESS_WIREMOCK_URL: "{{ .WIREMOCK_HOST_LOCAL }}"
       CYPRESS_DRUPAL_USERNAME: admin
       CYPRESS_DRUPAL_PASSWORD: admin
+      ELECTRON_EXTRA_LAUNCH_ARGS: "--remote-debugging-port=9222"
       # Enable this to help with debugging with network and proxy requests.
       # https://docs.cypress.io/guides/references/troubleshooting#Print-DEBUG-logs
       # DEBUG: cypress:network:*,cypress:server:request,-cypress:network:cors
+
+  ci:cypress:chromatic:
+    desc: Run Cypress functional tests with
+    deps: [ci:cypress]
+    preconditions:
+      - sh: "[ -v CHROMATIC_PROJECT_TOKEN ]"
+        msg: Please provide a CHROMATIC_PROJECT_TOKEN environment variable
+    cmds:
+      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CHROMATIC_PROJECT_TOKEN=${CHROMATIC_PROJECT_TOKEN} node-chrome bash -c "rm tsconfig.json || true; sleep 5; git config --global --add safe.directory /app; npx chromatic --cypress --exit-once-uploaded"
 
   ci:pa11y:
     desc: Run Pa11y to test accessiblity

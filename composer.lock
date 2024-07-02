@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06a1bd6ebff568685da6dc01bf251e96",
+    "content-hash": "f35fb840be6001f6239796f5cda5eddd",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1167,10 +1167,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.25.0",
+            "version": "2024.27.0-rc1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.25.0/dist-2024-25-0-44a88057ebe723f137f5ebe751cf0b6953c029b3.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-encode-inline-svgs/dist-encode-inline-svgs.zip"
             },
             "type": "drupal-library"
         },
