@@ -5,7 +5,10 @@ _meta:
   bundle: default
   default_langcode: en
   depends:
-    056f9f3d-904c-40d6-8681-9679090ecbb7: eventinstance
+    0df8ece6-3062-4f88-bd10-3320670e1a2e: eventinstance
+    5da62d89-5521-4719-97d7-fe32c4f81c5b: eventinstance
+    c9fc3d9d-ae84-4049-984b-6f4966d1e4f5: eventinstance
+    239b6c8f-c515-40ba-a058-d7da45eddd3b: eventinstance
     852d781f-82c9-40ac-bc8d-d0cefe07706d: node
     f457c4c2-dc28-45cd-9b6e-fda4248d9d45: taxonomy_term
     618e176a-a45a-4c36-a197-664230aa0a34: media
@@ -32,7 +35,7 @@ default:
       value: 'Fernisering Moderne Dans'
   recur_type:
     -
-      value: custom
+      value: weekly_recurring_date
   consecutive_recurring_date:
     -
       value: ''
@@ -53,13 +56,13 @@ default:
       duration_or_end_time: duration
   weekly_recurring_date:
     -
-      value: ''
-      end_value: ''
+      value: '2028-10-04T09:29:20'
+      end_value: '2028-10-25T09:29:20'
       time: '08:00 am'
       duration: 900
       end_time: '08:00 am'
       duration_or_end_time: duration
-      days: ''
+      days: wednesday
   monthly_recurring_date:
     -
       value: ''
@@ -102,19 +105,20 @@ default:
       attributes:
         name: title
         content: '| DPL CMS'
-    -
-      tag: link
-      attributes:
-        rel: canonical
-        href: '/user/login'
   path:
     -
-      alias: /bronshoj-bibliotek/arrangementer/design-teknologi/fernisering-moderne-dans-0
+      alias: /bronshoj-bibliotek/arrangementer/design-teknologi/fernisering-moderne-dans
       langcode: und
       pathauto: 1
   event_instances:
     -
-      entity: 056f9f3d-904c-40d6-8681-9679090ecbb7
+      entity: 0df8ece6-3062-4f88-bd10-3320670e1a2e
+    -
+      entity: 5da62d89-5521-4719-97d7-fe32c4f81c5b
+    -
+      entity: c9fc3d9d-ae84-4049-984b-6f4966d1e4f5
+    -
+      entity: 239b6c8f-c515-40ba-a058-d7da45eddd3b
   field_branch:
     -
       entity: 852d781f-82c9-40ac-bc8d-d0cefe07706d

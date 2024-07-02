@@ -1,22 +1,24 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: ff6db3ce-49e0-4107-b283-3403e22c5e6d
+  uuid: 780e5367-e5b7-4dab-a2c3-9b24c7af90f8
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    c3e4fa51-c4f9-4e60-abc6-829826949307: node
 default:
   enabled:
     -
       value: true
   title:
     -
-      value: Arrangementer
+      value: Brødkrumme
   menu_name:
     -
       value: main
   link:
     -
-      uri: 'internal:/events'
+      target_uuid: c3e4fa51-c4f9-4e60-abc6-829826949307
       title: ''
       options: {  }
   external:
@@ -24,10 +26,10 @@ default:
       value: false
   rediscover:
     -
-      value: true
+      value: false
   weight:
     -
-      value: -50
+      value: -45
   expanded:
     -
       value: false

@@ -1,11 +1,11 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 852d781f-82c9-40ac-bc8d-d0cefe07706d
+  uuid: 486b17a2-60e6-426d-a952-793fe24e391d
   bundle: branch
   default_langcode: da
   depends:
-    e00e1460-169e-468d-9835-d664f06d0969: file
+    c57495b6-2b50-4558-b6ad-a50d24c5310c: file
 default:
   revision_uid:
     -
@@ -18,10 +18,10 @@ default:
       target_id: 1
   title:
     -
-      value: 'Brønshøj Bibliotek'
+      value: Læsefilialen
   created:
     -
-      value: 1708941042
+      value: 1712264759
   promote:
     -
       value: false
@@ -33,39 +33,33 @@ default:
       value: true
   entity_clone_template_active:
     -
-      value: false
+      value: true
   entity_clone_template_image:
     -
-      entity: e00e1460-169e-468d-9835-d664f06d0969
+      entity: c57495b6-2b50-4558-b6ad-a50d24c5310c
       alt: ''
       title: ''
-      width: 640
-      height: 443
+      width: 6250
+      height: 2200
   metatag:
     -
       tag: meta
       attributes:
         name: title
-        content: 'Brønshøj Bibliotek | DPL CMS'
+        content: 'Læsefilialen | DPL CMS'
   path:
     -
-      alias: /bronshoj-bibliotek
+      alias: /laesefilialen
       langcode: und
       pathauto: 1
   field_address:
     -
       langcode: da
       country_code: DK
-      locality: Brønshøj-Husum
-      postal_code: '2700'
-      address_line1: 'Krabbesholmvej 3'
+      locality: København
+      postal_code: '1172'
+      address_line1: 'Krystalgade 15'
       address_line2: ''
-  field_email:
-    -
-      value: kontakt@ddf.dk
-  field_phone:
-    -
-      value: '88888888'
   field_promoted_on_lists:
     -
       value: false

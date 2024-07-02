@@ -1,27 +1,28 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 852d781f-82c9-40ac-bc8d-d0cefe07706d
-  bundle: branch
+  uuid: ac8fcbaf-94fc-47de-89a4-13228668031f
+  bundle: page
   default_langcode: da
   depends:
     e00e1460-169e-468d-9835-d664f06d0969: file
+    06ea0cdb-aa83-4bb4-8025-eeae135f2e5d: taxonomy_term
 default:
   revision_uid:
     -
       target_id: 1
   status:
     -
-      value: true
+      value: false
   uid:
     -
       target_id: 1
   title:
     -
-      value: 'Brønshøj Bibliotek'
+      value: 'Afpubliseret side  (skal IKKE vises i brødkrumme kontekst)'
   created:
     -
-      value: 1708941042
+      value: 1719478578
   promote:
     -
       value: false
@@ -46,26 +47,21 @@ default:
       tag: meta
       attributes:
         name: title
-        content: 'Brønshøj Bibliotek | DPL CMS'
+        content: 'Afpubliseret side (skal IKKE vises i brødkrumme kontekst) | DPL CMS'
   path:
     -
-      alias: /bronshoj-bibliotek
+      alias: /praktisk-information/afpubliseret-side-skal-ikke-vises-i-brodkrumme-kontekst
       langcode: und
       pathauto: 1
-  field_address:
+  field_breadcrumb_parent:
     -
-      langcode: da
-      country_code: DK
-      locality: Brønshøj-Husum
-      postal_code: '2700'
-      address_line1: 'Krabbesholmvej 3'
-      address_line2: ''
-  field_email:
+      entity: 06ea0cdb-aa83-4bb4-8025-eeae135f2e5d
+  field_display_titles:
     -
-      value: kontakt@ddf.dk
-  field_phone:
+      value: true
+  field_hero_title:
     -
-      value: '88888888'
-  field_promoted_on_lists:
+      value: 'Afpubliseret side  (skal IKKE vises i brødkrumme kontekst)'
+  field_publication_date:
     -
-      value: false
+      value: '2024-06-27'

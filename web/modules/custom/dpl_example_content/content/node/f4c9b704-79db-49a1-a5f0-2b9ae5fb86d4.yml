@@ -1,11 +1,12 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 852d781f-82c9-40ac-bc8d-d0cefe07706d
-  bundle: branch
+  uuid: f4c9b704-79db-49a1-a5f0-2b9ae5fb86d4
+  bundle: page
   default_langcode: da
   depends:
     e00e1460-169e-468d-9835-d664f06d0969: file
+    480a6997-4ca2-4cc6-a8f2-61254401d044: node
 default:
   revision_uid:
     -
@@ -18,10 +19,10 @@ default:
       target_id: 1
   title:
     -
-      value: 'Brønshøj Bibliotek'
+      value: 'Praktisk information'
   created:
     -
-      value: 1708941042
+      value: 1719478077
   promote:
     -
       value: false
@@ -46,26 +47,18 @@ default:
       tag: meta
       attributes:
         name: title
-        content: 'Brønshøj Bibliotek | DPL CMS'
+        content: 'Praktisk information | DPL CMS'
   path:
     -
-      alias: /bronshoj-bibliotek
+      alias: /det-virtuelle-bibliotek/praktisk-information
       langcode: und
       pathauto: 1
-  field_address:
+  field_branch:
     -
-      langcode: da
-      country_code: DK
-      locality: Brønshøj-Husum
-      postal_code: '2700'
-      address_line1: 'Krabbesholmvej 3'
-      address_line2: ''
-  field_email:
-    -
-      value: kontakt@ddf.dk
-  field_phone:
-    -
-      value: '88888888'
-  field_promoted_on_lists:
+      entity: 480a6997-4ca2-4cc6-a8f2-61254401d044
+  field_display_titles:
     -
       value: false
+  field_publication_date:
+    -
+      value: '2024-06-27'

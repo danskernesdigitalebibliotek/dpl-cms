@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: ff6db3ce-49e0-4107-b283-3403e22c5e6d
+  uuid: 1dfb36e4-8f74-4e93-98a2-d3c6cd5d3412
   bundle: menu_link_content
   default_langcode: en
 default:
@@ -10,13 +10,13 @@ default:
       value: true
   title:
     -
-      value: Arrangementer
+      value: Login
   menu_name:
     -
       value: main
   link:
     -
-      uri: 'internal:/events'
+      uri: 'internal:/user/login'
       title: ''
       options: {  }
   external:
@@ -27,7 +27,7 @@ default:
       value: true
   weight:
     -
-      value: -50
+      value: -44
   expanded:
     -
       value: false

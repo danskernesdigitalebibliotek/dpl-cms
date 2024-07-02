@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: taxonomy_term
-  uuid: ec76c707-898d-4dfd-8cd2-e258aef1d6dd
+  uuid: 73471caa-b735-427f-a4f4-15281e42d5b5
   bundle: tags
   default_langcode: da
 default:
@@ -10,7 +10,7 @@ default:
       value: true
   name:
     -
-      value: digt
+      value: læsesal
   weight:
     -
       value: 0
@@ -25,12 +25,12 @@ default:
       tag: meta
       attributes:
         name: title
-        content: 'digt | DPL CMS'
+        content: 'læsesal | DPL CMS'
     -
       tag: link
       attributes:
         rel: canonical
-        href: 'http://dapple-cms.docker/taxonomy/term/19'
+        href: 'http://dapple-cms.docker/taxonomy/term/29'
   path:
     -
       alias: ''
