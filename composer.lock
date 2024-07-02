@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8548003ab25088b4b57c000cf1865e2a",
+    "content-hash": "b940fd73e1958fa3b66ab72c5977abb7",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1167,10 +1167,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.27.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.27.0/dist-2024-27-0-50a60f2057fffa8dac33aaaa4ceff523369c6b68.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFFORM-399-citat-skal-styles/dist-ddfform-399-citat-skal-styles.zip"
             },
             "type": "drupal-library"
         },
@@ -6582,6 +6582,10 @@
                 {
                     "name": "HalfChem",
                     "homepage": "https://www.drupal.org/user/1608382"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
                     "name": "jhedstrom",
@@ -18918,6 +18922,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
