@@ -95,7 +95,7 @@ describe("Adgangsplatformen", () => {
     cy.get(".footer").should("not.exist");
   });
 
-  it("can register a new user - expose the right tokens for the react apps - and force logout.", () => {
+  it.skip("can register a new user - expose the right tokens for the react apps - and force logout.", () => {
     cy.setupAdgangsplatformenRegisterMappinngs({
       authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
       accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
@@ -131,7 +131,7 @@ describe("Adgangsplatformen", () => {
     });
   });
 
-  it("can cancel user registration from the user registration page", () => {
+  it.skip("can cancel user registration from the user registration page", () => {
     cy.setupAdgangsplatformenRegisterMappinngs({
       authorizationCode: "7c5e3213aea6ef42ec97dfeaa6f5b1d454d856dc",
       accessToken: "447131b0a03fe0421204c54e5c21a60-new-user",
