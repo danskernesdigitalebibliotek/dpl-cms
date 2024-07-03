@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f35fb840be6001f6239796f5cda5eddd",
+    "content-hash": "de2bc7b28832beedf4dc21bf8f9595a1",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1176,10 +1176,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.26.0",
+            "version": "2024.27.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.26.0/dist-2024-26-0-4da2d1c24781dbec59896bd0152c7a7dc238d6ac.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.27.0/dist-2024-27-0-50e06f8c8065bb4cf80407a247f937f11660ff2c.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -6582,6 +6582,10 @@
                 {
                     "name": "HalfChem",
                     "homepage": "https://www.drupal.org/user/1608382"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
                     "name": "jhedstrom",
