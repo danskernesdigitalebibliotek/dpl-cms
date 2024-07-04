@@ -167,6 +167,7 @@ jobs:
       - name: Run Cypress
         run: task ci:cypress
       - name: Prepare Cypress output for Chromatic action
+        if: always()
         run: |
           docker compose -f docker-compose.yml -f docker-compose.ci.yml run node-chrome bash -c "chmod 0777 -R /app/cypress/downloads";
           rm tsconfig.json;
