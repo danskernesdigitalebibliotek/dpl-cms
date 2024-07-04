@@ -66,7 +66,8 @@ tasks:
       - ${DRUSH_EXEC} user-login
   drupal:upgrade:
     - task -t Taskfile.yaml drupal:update
+    - ${DRUSH_EXEC} en varnish_purger -y
+    - ${DRUSH_EXEC} updb -y
     - ${DRUSH_EXEC} cim -y
     - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
-    - ${DRUSH_EXEC} updb -y
     - task -t Taskfile.yaml drupal:locale
