@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-07-02 22:01+0200\n"
-"PO-Revision-Date: 2024-07-02 22:01+0200\n"
+"POT-Creation-Date: 2024-07-05 12:56+0200\n"
+"PO-Revision-Date: 2024-07-05 12:56+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6078,4 +6078,84 @@ msgstr ""
 msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:off_label"
 msgid "Off"
 msgstr ""
+
+msgctxt "image.style.open_graph:label"
+msgid "Open graph (1200x630)"
+msgstr ""
+
+msgctxt "metatag.metatag_defaults.eventinstance__default:label"
+msgid "Event Instance entity: Default"
+msgstr ""
+
+msgctxt "metatag.metatag_defaults.eventinstance__default:tags:og_image"
+msgid "[eventinstance:event_teaser_image:entity:field_media_image:open_graph]"
+msgstr "[eventinstance:event_teaser_image:entity:field_media_image:open_graph]"
+
+msgctxt "metatag.metatag_defaults.eventinstance__default:tags:og_image_height"
+msgid "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:height]"
+msgstr "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:height]"
+
+msgctxt "metatag.metatag_defaults.eventinstance__default:tags:og_image_url"
+msgid "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:url]"
+msgstr "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:url]"
+
+msgctxt "metatag.metatag_defaults.eventinstance__default:tags:og_image_width"
+msgid "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:width]"
+msgstr "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:width]"
+
+msgctxt "metatag.metatag_defaults.eventseries__default:label"
+msgid "Event series entity: Default"
+msgstr ""
+
+msgctxt "metatag.metatag_defaults.eventseries__default:tags:og_image"
+msgid "[eventseries:field_teaser_image:entity:field_media_image:open_graph]"
+msgstr "[eventseries:field_teaser_image:entity:field_media_image:open_graph]"
+
+msgctxt "metatag.metatag_defaults.eventseries__default:tags:og_image_height"
+msgid "[eventseries:field_teaser_image:entity:field_media_image:open_graph:height]"
+msgstr "[eventseries:field_teaser_image:entity:field_media_image:open_graph:height]"
+
+msgctxt "metatag.metatag_defaults.eventseries__default:tags:og_image_url"
+msgid "[eventseries:field_teaser_image:entity:field_media_image:open_graph:url]"
+msgstr "[eventseries:field_teaser_image:entity:field_media_image:open_graph:url]"
+
+msgctxt "metatag.metatag_defaults.eventseries__default:tags:og_image_width"
+msgid "[eventseries:field_teaser_image:entity:field_media_image:open_graph:width]"
+msgstr "[eventseries:field_teaser_image:entity:field_media_image:open_graph:width]"
+
+msgctxt "metatag.metatag_defaults.node:tags:og_image"
+msgid "[node:field_teaser_image:entity:field_media_image:open_graph]"
+msgstr "[node:field_teaser_image:entity:field_media_image:open_graph]"
+
+msgctxt "metatag.metatag_defaults.node:tags:og_image_height"
+msgid "[node:field_teaser_image:entity:field_media_image:open_graph:height]"
+msgstr "[node:field_teaser_image:entity:field_media_image:open_graph:height]"
+
+msgctxt "metatag.metatag_defaults.node:tags:og_image_url"
+msgid "[node:field_teaser_image:entity:field_media_image:open_graph:url]"
+msgstr "[node:field_teaser_image:entity:field_media_image:open_graph:url]"
+
+msgctxt "metatag.metatag_defaults.node:tags:og_image_width"
+msgid "[node:field_teaser_image:entity:field_media_image:open_graph:width]"
+msgstr "[node:field_teaser_image:entity:field_media_image:open_graph:width]"
+
+msgctxt "metatag.metatag_defaults.node__branch:label"
+msgid "Content: Branch"
+msgstr ""
+
+msgctxt "metatag.metatag_defaults.node__branch:tags:og_image"
+msgid "[node:field_main_media:entity:field_media_image:open_graph]"
+msgstr "[node:field_main_media:entity:field_media_image:open_graph]"
+
+msgctxt "metatag.metatag_defaults.node__branch:tags:og_image_height"
+msgid "[node:field_main_media:entity:field_media_image:open_graph:height]"
+msgstr "[node:field_main_media:entity:field_media_image:open_graph:height]"
+
+msgctxt "metatag.metatag_defaults.node__branch:tags:og_image_url"
+msgid "[node:field_main_media:entity:field_media_image:open_graph:url]"
+msgstr "[node:field_main_media:entity:field_media_image:open_graph:url]"
+
+msgctxt "metatag.metatag_defaults.node__branch:tags:og_video_width"
+msgid "[node:field_main_media:entity:field_media_image:open_graph:width]"
+msgstr "[node:field_main_media:entity:field_media_image:open_graph:width]"
 
