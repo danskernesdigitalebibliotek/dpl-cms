@@ -179,3 +179,10 @@ function dpl_update_update_10008(): string {
 function dpl_update_update_10009(): string {
   return _dpl_update_install_modules(['dpl_cookies']);
 }
+
+/**
+ * Installing dpl_cookies.
+ */
+function dpl_update_update_10010(): string {
+  return _dpl_update_install_modules(['editor_advanced_link"']);
+}
