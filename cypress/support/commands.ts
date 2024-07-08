@@ -357,6 +357,8 @@ declare global {
         checkVisible?: boolean,
         ...args: unknown[]
       ): Chainable;
+      // TODO Enable this when we get manual snapshots to work.
+      // takeSnapshot(): Chainable<null>;
     }
   }
 }
