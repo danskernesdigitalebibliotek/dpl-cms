@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03bb63991bed067fbf257065c7e1ab4b",
+    "content-hash": "3bc669431d77e7e2736088298900ec09",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.27.0",
+            "version": "2024.28.0-rc1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.27.0/dist-2024-27-0-50e06f8c8065bb4cf80407a247f937f11660ff2c.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-fix/fake-paralelle-reservations/dist-fix-fake-paralelle-reservations.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
