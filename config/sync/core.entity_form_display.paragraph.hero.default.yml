@@ -13,7 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - datetime
-    - link
+    - linkit_attributes
     - media_library
     - select2
     - text
@@ -34,7 +34,7 @@ content:
     third_party_settings: {  }
   field_hero_content_type:
     type: string_textfield
-    weight: 7
+    weight: 5
     region: content
     settings:
       size: 60
@@ -42,7 +42,7 @@ content:
     third_party_settings: {  }
   field_hero_date:
     type: datetime_default
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -62,12 +62,24 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_hero_link:
-    type: link_default
-    weight: 4
+    type: linkit_attributes
+    weight: 6
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      linkit_profile: default
+      linkit_auto_link_text: false
+      enabled_attributes:
+        target: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        aria-label: false
+        title: false
+      widget_default_open: expandIfValuesSet
     third_party_settings: {  }
   field_hero_title:
     type: string_textfield

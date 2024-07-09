@@ -181,8 +181,15 @@ function dpl_update_update_10009(): string {
 }
 
 /**
- * Installing dpl_cookies.
+ * Installing editor_advanced_link.
  */
 function dpl_update_update_10010(): string {
-  return _dpl_update_install_modules(['editor_advanced_link"']);
+  return _dpl_update_install_modules(['editor_advanced_link']);
+}
+
+/**
+ * Installing link_attributes.
+ */
+function dpl_update_update_10011(): string {
+  return _dpl_update_install_modules(['link_attributes', 'linkit_attributes']);
 }
