@@ -83,6 +83,7 @@
         }
     ],
     "require": {
+        "php": "8.1.*",
         "amazeeio/drupal_integrations": "^0.4",
         "bower-asset/jsnlog": "^2.30",
         "brick/math": "^0.12.1",
@@ -92,7 +93,7 @@
         "danskernesdigitalebibliotek/dpl-design-system": "2024.27.0",
         "danskernesdigitalebibliotek/dpl-react": "2024.27.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
         "drupal/address": "^1.0",
         "drupal/admin_toolbar": "^3.4",
@@ -184,7 +185,7 @@
         "drupal/core-dev": "~10.1.7",
         "jangregor/phpstan-prophecy": "^1",
         "mglaman/phpstan-drupal": "^1.2",
-        "palantirnet/drupal-rector": "^0.18.1",
+        "palantirnet/drupal-rector": "^0.20.3",
         "php-mock/php-mock": "^2.3",
         "phpspec/prophecy-phpunit": "^2",
         "phpstan/extension-installer": "^1.3",
