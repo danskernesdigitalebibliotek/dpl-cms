@@ -402,3 +402,4 @@ requirements:
 third_party_settings:
   honeypot:
     honeypot: true
+    time_restriction: true
