@@ -1,0 +1,83 @@
+name: DB Data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  db-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup site
+        run: task dev:reset
+
+      - name: Create workspace for dump
+        run: mkdir -p ${{ runner.temp }}/db-dump
+
+      - name: Dump database
+        run: task dev:cli -- drush sql-dump | tee ${{ runner.temp }}/db-dump/database.sql
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@master
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+
+      - name: Build db-dump image
+        uses: docker/build-push-action@v6
+        with:
+          file: .config/db-dump.dockerfile
+          builder: ${{ steps.buildx.outputs.name }}
+          platforms: linux/amd64,linux/arm64
+          push: true
+          context: ${{ runner.temp }}/db-dump
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          tags: |
+            ghcr.io/${{ github.repository }}:db-dump
+
+      - name: Create db-datadir
+        run: |
+          set -x
+
+          # Create a temporary directory to store the database datadir.
+          mkdir -p ${{ runner.temp }}/db-datadir
+
+          # Start the database service using the dump from previous
+          # step and wait for it to be healthy.
+          docker compose --file=docker-compose.yml --file=docker-compose.db-dump.yml --project-name=data up db --wait
+
+          # Locate the datadir volume and copy it to the temporary directory.
+          DIR=$(docker volume inspect --format '{{ .Mountpoint }}' data_db-data)
+          sudo cp --recursive "${DIR}" "${{ runner.temp }}/db-datadir"
+          sudo chown -R "$UID" "${{ runner.temp }}/db-datadir"
+
+          # Remove the SQL dump file.
+          rm -f "${{ runner.temp }}/db-datadir/100-database.sql"
+
+      - name: Build db-datadir image
+        uses: docker/build-push-action@v6
+        with:
+          file: .config/db-datadir.dockerfile
+          builder: ${{ steps.buildx.outputs.name }}
+          platforms: linux/amd64,linux/arm64
+          push: true
+          context: ${{ runner.temp }}/db-datadir
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          tags: |
+            ghcr.io/${{ github.repository }}:db-datadir
