@@ -58,35 +58,3 @@ jobs:
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
           tags: |
             ghcr.io/${{ github.repository }}:db-dump
-
-      - name: Create db-datadir
-        run: |
-          set -x
-
-          # Create a temporary directory to store the database datadir.
-          mkdir -p ${{ runner.temp }}/db-datadir
-
-          # Start the database service using the dump from previous
-          # step and wait for it to be healthy.
-          docker compose --file=docker-compose.yml --file=docker-compose.db-dump.yml --project-name=data up db --wait
-
-          # Locate the datadir volume and copy it to the temporary directory.
-          DIR=$(docker volume inspect --format '{{ .Mountpoint }}' data_db-data)
-          sudo cp --recursive "${DIR}" "${{ runner.temp }}/db-datadir"
-          sudo chown -R "$UID" "${{ runner.temp }}/db-datadir"
-
-          # Remove the SQL dump file.
-          rm -f "${{ runner.temp }}/db-datadir/100-database.sql"
-
-      - name: Build db-datadir image
-        uses: docker/build-push-action@v6
-        with:
-          file: .config/db-datadir.dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
-          platforms: linux/amd64,linux/arm64
-          push: true
-          context: ${{ runner.temp }}/db-datadir
-          labels: |
-            org.opencontainers.image.source=https://github.com/${{ github.repository }}
-          tags: |
-            ghcr.io/${{ github.repository }}:db-datadir
