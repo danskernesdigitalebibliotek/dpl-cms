@@ -118,9 +118,7 @@
 }
 
 /* Place checkboxes horizontally when possible, for readabilty. */
-.is-admin-page
-  [data-drupal-selector$="-recurring-date-wrapper"]
-  .form-checkboxes {
+.is-admin-page [data-drupal-selector$="-recurring-date-wrapper"] .form-checkboxes {
   display: flex;
   gap: 15px;
   max-width: 100%;
