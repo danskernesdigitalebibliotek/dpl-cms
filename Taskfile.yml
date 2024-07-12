@@ -400,13 +400,13 @@ tasks:
     summary: Configure the environment for local development
     deps: ["env:init"]
     cmds:
-      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml/' .env
+      - awk -v newVal="docker-compose.yml:docker-compose.dev.yml" 'BEGIN{FS=OFS="="} $1=="COMPOSE_FILE"{$2=newVal}1' .env > temp && mv temp .env
 
   env:ci:
     summary: Configure the environment for CI
     deps: ["env:init"]
     cmds:
-      - sed -i "" "s/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml:docker-compose.ci.yml/" .env
+      - awk -v newVal="docker-compose.yml:docker-compose.dev.yml:docker-compose.ci.yml" 'BEGIN{FS=OFS="="} $1=="COMPOSE_FILE"{$2=newVal}1' .env > temp && mv temp .env
 
   ci:reset:
     desc: Create CI setup in a clean state
