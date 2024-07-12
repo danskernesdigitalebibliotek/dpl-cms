@@ -56,6 +56,7 @@ services:
     environment:
       CI: true
       LAGOON_ENVIRONMENT_TYPE: ci
+      NO_PROXY: "*.drupal.org,*.github.io"
 
   php:
     depends_on:
