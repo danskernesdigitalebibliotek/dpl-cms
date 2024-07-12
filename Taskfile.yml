@@ -30,10 +30,6 @@ vars:
 
   # Where is the docker file(s) we use for our builds residing?
   LAGOON_DIR: "lagoon"
-
-  DOCKER_COMPOSE_FILES_DEFAULT: "-f docker-compose.yml"
-  DOCKER_COMPOSE_FILES: "{{.DOCKER_COMPOSE_FILES | default .DOCKER_COMPOSE_FILES_DEFAULT }}"
-  DOCKER_COMPOSE_FILES_CI: "{{.DOCKER_COMPOSE_FILES}} -f docker-compose.ci.yml"
   # Sql dump files directory
   DIR_RESTORE_DATABASE: "restore/database"
   # Directory with lagoon backup files.
@@ -96,7 +92,7 @@ tasks:
     # This could have a dependency on dev:build but does not to avoid excessive
     # log output. dev:cli gets called a lot.
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} run --rm cli sh -c "{{.CLI_ARGS}}"
+      - docker compose run --rm cli sh -c "{{.CLI_ARGS}}"
 
   dev:install:
     summary: Install a local environment
@@ -158,14 +154,14 @@ tasks:
     cmds:
       # DNS proxies such as Dory may hang on to the network for a bit which
       # causes the process to fail. Wait and retry if that is the case
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} down --volumes --remove-orphans || (sleep 3 && docker-compose down)
+      - docker compose down --volumes --remove-orphans || (sleep 3 && docker-compose down)
 
   dev:pull:
     summary: Pull latest docker images.
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} pull
+      - docker compose pull
 
-  dev:reset:
+  reset:
     desc: Create local development setup in a clean state
     deps:
       # Build new containers if necessary.
@@ -214,6 +210,11 @@ tasks:
       - task dev:create-users
       # Show a one-time login to the local site.
       - task dev:cli -- drush user-login
+
+  dev:reset:
+    deps: ['env:dev']
+    cmds:
+      - task reset
 
   dev:openid:configure:
     desc: Set openid connect settings based on .env variables. And run cron.
@@ -419,26 +420,42 @@ tasks:
     cmds:
       - cmd: task dev:cli -- drush default-content:export-module dpl_example_content
 
+  env:init:
+    summary: Create a .env file with recommended defaults.
+    cmds:
+      - cp -n .env.example .env || true
+
+  env:dev:
+    summary: Configure the environment for local development
+    deps: ["env:init"]
+    cmds:
+      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml/' .env
+
+  env:ci:
+    summary: Configure the environment for CI
+    deps: ["env:init"]
+    cmds:
+      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.ci.yml/' .env
+
   ci:reset:
     desc: Create CI setup in a clean state
+    deps: ["env:ci"]
     cmds:
-      - task dev:reset
+      - task reset
     env:
-      DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_CI }}"
       SKIP_LANGUAGE_IMPORT: "true"
 
   ci:cypress:
     desc: Run Cypress functional tests
     deps: [ci:wiremock:create-mappings]
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose run --rm node-chrome yarn install --frozen-lockfile
       - task dev:cli -- drush user:password $CYPRESS_DRUPAL_USERNAME $CYPRESS_DRUPAL_PASSWORD
       # We make sure to run the tests that require mappings first.
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/withMappings/*.ts"
+      - docker compose run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/withMappings/*.ts"
       # All tests that delete mappings and make their own run afterwards.
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/*.ts"
+      - docker compose run --rm -e CYPRESS_DRUPAL_USERNAME=$CYPRESS_DRUPAL_USERNAME -e CYPRESS_DRUPAL_PASSWORD=$CYPRESS_DRUPAL_PASSWORD cypress --spec "cypress/e2e/*.ts"
     env:
-      DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_CI }}"
       CYPRESS_DRUPAL_USERNAME: admin
       CYPRESS_DRUPAL_PASSWORD: admin
 
@@ -450,7 +467,6 @@ tasks:
       - task dev:cli -- drush user:password $CYPRESS_DRUPAL_USERNAME $CYPRESS_DRUPAL_PASSWORD
       - http_proxy={{ .WIREMOCK_HOST_LOCAL }} https_proxy={{ .WIREMOCK_HOST_LOCAL_HTTPS }} npx cypress open
     env:
-      DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_CI }}"
       CYPRESS_BASE_URL: http://localhost:{{ .CYPRESS_BASE_PORT }}
       CYPRESS_WIREMOCK_URL: "{{ .WIREMOCK_HOST_LOCAL }}"
       CYPRESS_DRUPAL_USERNAME: admin
@@ -463,7 +479,7 @@ tasks:
     desc: Run Pa11y to test accessiblity
     deps: [ci:wiremock:create-mappings]
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn pa11y:ci
+      - docker compose run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn pa11y:ci
 
   ci:wiremock:browser:
     desc: Watch the site with a wiremock http proxy. ⚠️  Depends on Chrome installed on OS ⚠️
@@ -476,26 +492,26 @@ tasks:
 
   ci:wiremock:create-mappings:
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn wiremock:create-mappings
+      - docker compose run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome yarn wiremock:create-mappings
 
   ci:lighthouse:
     desc: Run Lighthouse to test performance
     deps: [ci:wiremock:create-mappings]
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome npx lhci autorun
+      - docker compose run --rm -e HTTP_PROXY={{ .WIREMOCK_HOST_DOCKER }} node-chrome npx lhci autorun
 
   ci:openapi:validate:
     desc: Validate the Drupal OpenAPI specification
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome npx swagger-cli validate http://varnish:8080/openapi/rest?_format=json&language=en
+      - docker compose run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose run --rm node-chrome npx swagger-cli validate http://varnish:8080/openapi/rest?_format=json&language=en
 
   ci:openapi:download:
     desc: Download the Drupal OpenAPI specification from the running local site to the local filesystem
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome yarn install --frozen-lockfile
-      - docker compose {{ .DOCKER_COMPOSE_FILES_CI }} run --rm node-chrome curl "http://varnish:8080/openapi/rest?_format=json&language=en" | npx jsome -r > openapi.json
+      - docker compose run --rm node-chrome yarn install --frozen-lockfile
+      - docker compose run --rm node-chrome curl "http://varnish:8080/openapi/rest?_format=json&language=en" | npx jsome -r > openapi.json
 
   source:build:
     summary: Build core source image.
