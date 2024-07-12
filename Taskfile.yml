@@ -406,7 +406,7 @@ tasks:
     summary: Configure the environment for CI
     deps: ["env:init"]
     cmds:
-      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml:docker-compose.ci.yml/' .env
+      - sed -i "" "s/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml:docker-compose.ci.yml/" .env
 
   ci:reset:
     desc: Create CI setup in a clean state
