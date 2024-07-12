@@ -1,0 +1,15 @@
+services:
+  mariadb:
+    depends_on:
+      db-data:
+        condition: service_completed_successfully
+    volumes_from:
+      - db-data:ro
+
+  db-data:
+    image: ghcr.io/kasperg/dpl-cms:db-dump
+    volumes:
+      - 'db-data:/docker-entrypoint-initdb.d'
+
+volumes:
+  db-data:

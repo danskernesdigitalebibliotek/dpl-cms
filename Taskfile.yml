@@ -164,43 +164,14 @@ tasks:
   reset:
     desc: Create local development setup in a clean state
     deps:
-      # Build new containers if necessary.
-      - dev:build
-      # Stop potential running environment.
       - dev:down
+      - dev:install:dependencies
     cmds:
-      # Create a .env file with recommended defaults.
-      - cp -n .env.example .env || true
-      # Build site.
-      - task dev:cli -- composer install
+      - task dev:start
       # Always reinstall packages tracking develop builds. The content of such
       # packages may change without composer package version changes so ensure
       # we have the latest version.
       - task dev:cli -- composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
-      # (Re)run Drupal scaffolding.
-      - task dev:cli -- composer drupal:scaffold
-      # Build dev scripts
-      - task dev:cli -- $(cd dev-scripts/dpl-react; composer install)
-      # Pull the images (necessary for the first reset)
-      - task dev:pull
-      # Start local environment.
-      - task dev:start
-      # Install site.
-      - task dev:cli -- drush site-install --existing-config -y
-      # Practice shows that the cache needs to be cleared to avoid configuration
-      # errors even after a site install.
-      - task dev:cache:clear:drupal
-      # Import translations.
-      - |
-        if [ -n "${SKIP_LANGUAGE_IMPORT}" ]; then
-          echo "Skipping language import due to SKIP_LANGUAGE_IMPORT environment variable"
-        else
-          task dev:cli -- drush locale-check
-          task dev:cli -- drush locale-update
-          task dev:cli -- drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
-        fi
-      # Clear all caches to ensure we have a pristine setup.
-      - task dev:cache:clear:all
       # Run deploy hooks.
       - task dev:cli -- drush deploy -y
       # Ensure site is reachable and warm any caches
@@ -429,13 +400,13 @@ tasks:
     summary: Configure the environment for local development
     deps: ["env:init"]
     cmds:
-      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml/' .env
+      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml/' .env
 
   env:ci:
     summary: Configure the environment for CI
     deps: ["env:init"]
     cmds:
-      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.ci.yml/' .env
+      - sed -i "" 's/^COMPOSE_FILE=.*$/COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml:docker-compose.ci.yml/' .env
 
   ci:reset:
     desc: Create CI setup in a clean state
