@@ -30,7 +30,9 @@ jobs:
         run: mkdir -p ${{ runner.temp }}/db-dump
 
       - name: Dump database
-        run: task dev:cli -- drush sql-dump | tee ${{ runner.temp }}/db-dump/database.sql
+        run: |
+          task dev:cli -- drush sql-dump --result-file=../database.sql
+          mv database.sql ${{ runner.temp }}/db-dump/database.sql
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
