@@ -98,6 +98,46 @@ tasks:
     cmds:
       - docker compose {{ .DOCKER_COMPOSE_FILES }} run --rm cli sh -c "{{.CLI_ARGS}}"
 
+  dev:install:
+    summary: Install a local environment
+    deps:
+      - dev:install:dependencies
+    cmds:
+      # Start local environment.
+      - task dev:start
+      # Install site.
+      - task dev:cli -- drush site-install --existing-config -y
+      # Practice shows that the cache needs to be cleared to avoid configuration
+      # errors even after a site install.
+      - task dev:cache:clear:drupal
+      # Import translations.
+      - |
+        if [ -n "${SKIP_LANGUAGE_IMPORT}" ]; then
+          echo "Skipping language import due to SKIP_LANGUAGE_IMPORT environment variable"
+        else
+          task dev:cli -- drush locale-check
+          task dev:cli -- drush locale-update
+          task dev:cli -- drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
+        fi
+      # Clear all caches to ensure we have a pristine setup.
+      - task dev:cache:clear:all
+      - # Ensure site is reachable and warm any caches
+      - task dev:cli -- curl --silent --show-error --fail --output /dev/null http://varnish:8080/
+
+  dev:install:dependencies:
+    summary: Install dependencies needed to run an environment.
+    deps:
+      - dev:build
+      - dev:pull
+    sources:
+      - "composer.*"
+      - "assets/*"
+      - "dev-scripts/dpl-react/composer.*"
+    cmds:
+      - task dev:cli -- composer install
+      - task dev:cli -- composer drupal:scaffold
+      - task dev:cli -- $(cd dev-scripts/dpl-react; composer install)
+
   dev:start:
     summary: Run docker compose
     deps:

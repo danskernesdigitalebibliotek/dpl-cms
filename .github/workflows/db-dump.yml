@@ -23,8 +23,8 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup site
-        run: task dev:reset
+      - name: Install site
+        run: task dev:install
 
       - name: Create workspace for dump
         run: mkdir -p ${{ runner.temp }}/db-dump
