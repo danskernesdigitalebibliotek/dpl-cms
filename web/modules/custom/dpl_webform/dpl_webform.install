@@ -63,7 +63,7 @@ function dpl_webform_update_10002(): string {
  * has duplicate keys, which causes major issues on the site when loading
  * the webform settings.
  */
-function dpl_webform_update_10003(): string {
+function dpl_webform_update_10004(): string {
   $config_id = 'webform.settings';
   $language = 'da';
 
