@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-07-10 15:57+0200\n"
-"PO-Revision-Date: 2024-07-10 15:57+0200\n"
+"POT-Creation-Date: 2024-07-16 09:42+0200\n"
+"PO-Revision-Date: 2024-07-16 09:42+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -29,10 +29,6 @@ msgstr "Hent billetter"
 
 msgid "Buy tickets"
 msgstr "Køb billet"
-
-msgctxt "DPL admin UX"
-msgid "Cancel all changes"
-msgstr "Fortryd alle ændringer"
 
 msgid "Updated @count description fields on @entity_type"
 msgstr "Opdaterede @count beskrivelsesfelter på @entity_type"
@@ -190,6 +186,10 @@ msgstr ""
 msgctxt "DPL admin UX"
 msgid "CMS version: @version"
 msgstr "CMS version: @version"
+
+msgctxt "DPL admin UX"
+msgid "Cancel all changes"
+msgstr "Fortryd alle ændringer"
 
 msgctxt "Favorites list material component"
 msgid "Go to My list"
@@ -5279,6 +5279,15 @@ msgstr "Globale erstatningsmønstre (kun for beskrivelsesfeltet)"
 msgid "Test module for Better Exposed Filters"
 msgstr "Testmodul for Better Exposed Filters"
 
+msgid "One"
+msgstr "En"
+
+msgid "Three"
+msgstr "Tre"
+
+msgid "Two"
+msgstr "To"
+
 msgid "Links"
 msgstr "Links"
 
@@ -5465,11 +5474,28 @@ msgstr ""
 "Hvis du bruger hierarkiske taksonomifiltre, skal du ikke inkludere førende "
 "bindestreger i den aktuelle tekst."
 
+msgid "Rewrite the text displayed based on key"
+msgstr ""
+
+msgid ""
+"Change behavior of \"Rewrite the text displayed\" to overwrite labels based "
+"on option key. eg. All|New label"
+msgstr ""
+
 msgid "Make filter options collapsible"
 msgstr "Gør filterindstillinger sammenklappelige"
 
 msgid "Puts the filter options in a collapsible details element."
 msgstr "Placerer filtermulighederne i et sammenklappeligt detaljeelement."
+
+msgid "Disable the automatic opening of collapsed filters with selections"
+msgstr ""
+
+msgid ""
+"When a selection is made, by default the collapsed filter will be set to "
+"open. If you provide an alternative means for the user to see filter "
+"selections, you can the default open behavior by enabling this."
+msgstr ""
 
 msgid "This is a secondary option"
 msgstr "Dette er en sekundær mulighed"
@@ -5480,25 +5506,33 @@ msgstr ""
 "Placerer dette element i den sekundære indstillingsdel af den eksponerede "
 "formular."
 
+msgid "Minimum"
+msgstr "Minimum"
+
+msgid "Adds a min attribute to the input field."
+msgstr ""
+
+msgid "Maximum"
+msgstr "Maksimum"
+
+msgid "Adds a max attribute to the input field."
+msgstr ""
+
 msgid "Range minimum"
 msgstr "Minimal rækkevidde"
 
 msgid ""
-"The minimum allowed value for the jQuery range slider. It can be positive, "
+"The minimum allowed value for the range slider. It can be positive, "
 "negative, or zero and have up to 11 decimal places."
 msgstr ""
-"Den mindst tilladte værdi for jQuery-række slider. Det kan være positivt, "
-"negativt eller nul og have op til 11 decimaler."
 
 msgid "Range maximum"
 msgstr "Maksimal rækkevidde"
 
 msgid ""
-"The maximum allowed value for the jQuery range slider. It can be positive, "
+"The maximum allowed value for the range slider. It can be positive, "
 "negative, or zero and have up to 11 decimal places."
 msgstr ""
-"Den maksimalt tilladte værdi for jQuery rækkevidde slideren. Det kan være "
-"positivt, negativt, eller nul og have op til 11 decimaler."
 
 msgid "Step"
 msgstr "Trin"
@@ -5526,14 +5560,14 @@ msgstr "Animationshastighed"
 msgid "None"
 msgstr "Ingen"
 
-msgid "Slow"
-msgstr "Langsom"
+msgid "Slow (600 ms)"
+msgstr ""
 
-msgid "Normal"
-msgstr "Normal"
+msgid "Normal (400 ms)"
+msgstr ""
 
-msgid "Fast"
-msgstr "Hurtig"
+msgid "Fast (200 ms)"
+msgstr ""
 
 msgid ""
 "Whether to slide handle smoothly when user click outside handle on the bar."
@@ -5554,7 +5588,7 @@ msgstr "Horisontal"
 msgid "Vertical"
 msgstr "Vertikal"
 
-msgid "The orientation of the jQuery range slider."
+msgid "The orientation of the range slider."
 msgstr ""
 
 msgid "The slider max value must be greater than the slider min value."
@@ -5608,17 +5642,12 @@ msgid "Combine sort order with sort by"
 msgstr "Kombiner sorteringsrækkefølge med sortering efter"
 
 msgid ""
-"Combines the sort by options and order (ascending or decending) into a "
+"Combines the sort by options and order (ascending or descending) into a "
 "single list.  Use this to display \"Option1 (ascending)\", \"Option1 "
 "(descending)\", \"Option2 (ascending)\", \"Option2 (descending)\" in a "
 "single form element. Sort order should first be exposed by selecting "
 "<em>Allow people to choose the sort order</em>."
 msgstr ""
-"Kombinerer sorteringsmulighederne og rækkefølgen (stigende eller faldende) i "
-"en enkelt liste. Brug dette til at vise \"Mulighed1 (stigende)\", "
-"\"Mulighed1 (faldende)\", \"Mulighed2 (stigende)\", \"Mulighed2 (faldende)\" "
-"i et enkelt formelement. Sorteringsrækkefølgen skal først være udsat ved at "
-"vælge <em>Lad folk vælge sorteringsrækkefølgen</em>."
 
 msgid ""
 "Use this field to rewrite the text displayed for combined sort options and "
@@ -5678,14 +5707,17 @@ msgstr "Better Exposed Filters"
 msgid "Provides additional options for exposed form elements."
 msgstr ""
 
-msgid "jQuery UI Slider"
-msgstr "jQuery UI Slider"
+msgid "Number"
+msgstr "Antal"
+
+msgid "Sliders"
+msgstr ""
 
 msgid "Checkboxes/Radio Buttons"
 msgstr "Afkrydsningsfelter"
 
-msgid "jQuery UI Date Picker"
-msgstr "jQuery UI datovælger"
+msgid "Date Picker"
+msgstr ""
 
 msgid "Single On/Off Checkbox"
 msgstr "Enkelt Tænd/Sluk afkrydsningsfelt"
@@ -7356,9 +7388,6 @@ msgstr ""
 msgid "This field stores integer values from a backed enum."
 msgstr ""
 
-msgid "Number"
-msgstr "Antal"
-
 msgid "Enum (text)"
 msgstr ""
 
@@ -7507,6 +7536,12 @@ msgstr "Persienne"
 
 msgid "Speed"
 msgstr "Hastighed"
+
+msgid "Slow"
+msgstr "Langsom"
+
+msgid "Fast"
+msgstr "Hurtig"
 
 msgid "Element: @element"
 msgstr "Element: @element"
@@ -19589,6 +19624,10 @@ msgid ""
 "This field will be deleted in the future. Please use another work id field."
 msgstr ""
 
+msgctxt "field.field.paragraph.simple_links.field_link:label"
+msgid "Link"
+msgstr ""
+
 msgctxt "field.field.paragraph.text_body.field_body:label"
 msgid "Body"
 msgstr ""
@@ -20603,6 +20642,14 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.recommendation:description"
 msgid "This paragraph is used to recommend a material. "
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.simple_links:label"
+msgid "Simple links"
+msgstr ""
+
+msgctxt "paragraphs.paragraphs_type.simple_links:description"
+msgid "This is paragraph that will display links without icons. "
 msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.text_body:label"
@@ -21691,83 +21738,6 @@ msgstr ""
 msgctxt ""
 "views.view.content:display:page_1:display_options:tab_options:description"
 msgid "Find and manage content"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:label"
-msgid "Content lists, embedded in Paragraphs"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:description"
-msgid ""
-"Lists for displaying content, through embedded views in paragraphs. Also "
-"allows the editor to set filter options in the paragraphs, that will be sent "
-"along using contextual filters. See dpl_filter_paragraphs.module"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:display:default:display_title"
-msgid "Default"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:exposed_form:"
-"options:submit_button"
-msgid "Apply"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:exposed_form:"
-"options:reset_button_label"
-msgid "Reset"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:exposed_form:"
-"options:exposed_sorts_label"
-msgid "Sort by"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:exposed_form:"
-"options:sort_asc_label"
-msgid "Asc"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:exposed_form:"
-"options:sort_desc_label"
-msgid "Desc"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:arguments:"
-"field_tags_target_id:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:arguments:"
-"field_categories_target_id:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:arguments:"
-"field_branch_target_id:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt ""
-"views.view.content_paragraphs:display:default:display_options:arguments:type:"
-"exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
-msgid "Card grid"
-msgstr ""
-
-msgctxt "views.view.content_paragraphs:display:slider:display_title"
-msgid "Slider"
 msgstr ""
 
 msgctxt "views.view.entity_clone_template:label"
@@ -22890,68 +22860,6 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_2:display_options:arguments:fid:title"
 msgid "File usage information for {{ arguments.fid }}"
-msgstr ""
-
-msgctxt "views.view.filtered_event_list:label"
-msgid "Filtered events"
-msgstr ""
-
-msgctxt "views.view.filtered_event_list:description"
-msgid ""
-"This view displays a filtered list of upcoming events sorted by date "
-"ascending. Filters include categories, tags and branches"
-msgstr ""
-
-msgctxt "views.view.filtered_event_list:display:default:display_title"
-msgid "Default"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:exposed_form:"
-"options:submit_button"
-msgid "Apply"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:exposed_form:"
-"options:reset_button_label"
-msgid "Reset"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:exposed_form:"
-"options:exposed_sorts_label"
-msgid "Sort by"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:exposed_form:"
-"options:sort_asc_label"
-msgid "Asc"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:exposed_form:"
-"options:sort_desc_label"
-msgid "Desc"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:arguments:"
-"event_tags:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:arguments:"
-"event_categories:exception:title"
-msgid "All"
-msgstr ""
-
-msgctxt ""
-"views.view.filtered_event_list:display:default:display_options:arguments:"
-"branch:exception:title"
-msgid "All"
 msgstr ""
 
 msgctxt "views.view.locked_content:label"
