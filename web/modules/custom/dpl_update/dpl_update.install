@@ -111,6 +111,9 @@ function dpl_update_install(): string {
   $messages[] = dpl_update_update_10006();
   $messages[] = dpl_update_update_10008();
   $messages[] = dpl_update_update_10009();
+  $messages[] = dpl_update_update_10010();
+  $messages[] = dpl_update_update_10011();
+  $messages[] = dpl_update_update_10012();
 
   return implode('\r\n', $messages);
 }
