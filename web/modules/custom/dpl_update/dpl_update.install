@@ -111,7 +111,7 @@ function dpl_update_install(): string {
   $messages[] = dpl_update_update_10006();
   $messages[] = dpl_update_update_10008();
   $messages[] = dpl_update_update_10009();
-  $messages[] = dpl_update_update_10011();
+  $messages[] = dpl_update_update_10012();
 
   return implode('\r\n', $messages);
 }
@@ -193,8 +193,15 @@ function dpl_update_update_10010() : string {
 }
 
 /**
- * Installing antibot module.
+ * Install health check module.
  */
 function dpl_update_update_10011(): string {
+  return _dpl_update_install_modules(['health_check']);
+}
+
+/**
+ * Installing antibot module.
+ */
+function dpl_update_update_10012(): string {
   return _dpl_update_install_modules(['antibot']);
 }
