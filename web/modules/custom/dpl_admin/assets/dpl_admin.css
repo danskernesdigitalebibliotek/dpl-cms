@@ -118,7 +118,9 @@
 }
 
 /* Place checkboxes horizontally when possible, for readabilty. */
-.is-admin-page [data-drupal-selector$="-recurring-date-wrapper"] .form-checkboxes {
+.is-admin-page
+  [data-drupal-selector$="-recurring-date-wrapper"]
+  .form-checkboxes {
   display: flex;
   gap: 15px;
   max-width: 100%;
@@ -172,21 +174,6 @@
 .field-group-details-sidebar {
   .form-item {
     max-width: 100%;
-  }
-}
-
-/* Tweak the layout of the linkit attributes. */
-.field--widget-linkit-attributes {
-  border: 1px solid var(--gin-border-color);
-  border-radius: var(--gin-border-m);
-  padding: 1rem;
-  margin-block: var(--space-m);
-}
-
-@media (min-width: 900px) {
-  .field--widget-linkit-attributes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
