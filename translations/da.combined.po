@@ -5309,11 +5309,6 @@ msgid "Contents"
 msgstr "Indhold"
 
 #: 
-msgctxt "field.field.paragraph.content_slider.field_title:label"
-msgid "Title"
-msgstr "Titel"
-
-#: 
 msgctxt "field.field.paragraph.event_ticket_category.field_ticket_category_name:label"
 msgid "Name"
 msgstr "Navn"
@@ -5839,11 +5834,6 @@ msgid "Front page"
 msgstr "Forside"
 
 #: 
-msgctxt "metatag.metatag_defaults.front:tags:canonical_url"
-msgid "[site:url]"
-msgstr "[site:url]"
-
-#: 
 msgctxt "metatag.metatag_defaults.front:tags:shortlink"
 msgid "[site:url]"
 msgstr "[site:url]"
@@ -5852,11 +5842,6 @@ msgstr "[site:url]"
 msgctxt "metatag.metatag_defaults.global:label"
 msgid "Global"
 msgstr "Global"
-
-#: 
-msgctxt "metatag.metatag_defaults.global:tags:canonical_url"
-msgid "[current-page:url]"
-msgstr "[current-page:url]"
 
 #: 
 msgctxt "metatag.metatag_defaults.global:tags:title"
@@ -5887,11 +5872,6 @@ msgstr "[node:title] | [site:name]"
 msgctxt "metatag.metatag_defaults.taxonomy_term:label"
 msgid "Taxonomy term"
 msgstr "Taksonomi term"
-
-#: 
-msgctxt "metatag.metatag_defaults.taxonomy_term:tags:canonical_url"
-msgid "[term:url]"
-msgstr "[term:url]"
 
 #: 
 msgctxt "metatag.metatag_defaults.taxonomy_term:tags:description"
@@ -9777,7 +9757,7 @@ msgstr "Almindelige medlemmer - Tilladt"
 
 #: 
 msgid "Use this page to classify each role before you <a href=:perms>assign permissions</a>."
-msgstr "Brug denne side til at klassificere hver rolle, før du <a href=:perms>assign permissions</a>."
+msgstr "Brug denne side til at klassificere hver rolle, før du <a href=\":perms\">assign permissions</a>."
 
 #: 
 msgid "See the <a href=\":help\">module help</a> for information."
@@ -9964,10 +9944,6 @@ msgid "Combine sort order with sort by"
 msgstr "Kombiner sorteringsrækkefølge med sortering efter"
 
 #: 
-msgid "Combines the sort by options and order (ascending or decending) into a single list.  Use this to display \"Option1 (ascending)\", \"Option1 (descending)\", \"Option2 (ascending)\", \"Option2 (descending)\" in a single form element. Sort order should first be exposed by selecting <em>Allow people to choose the sort order</em>."
-msgstr "Kombinerer sorteringsmulighederne og rækkefølgen (stigende eller faldende) i en enkelt liste. Brug dette til at vise \"Mulighed1 (stigende)\", \"Mulighed1 (faldende)\", \"Mulighed2 (stigende)\", \"Mulighed2 (faldende)\" i et enkelt formelement. Sorteringsrækkefølgen skal først være udsat ved at vælge <em>Lad folk vælge sorteringsrækkefølgen</em>."
-
-#: 
 msgid "Rewrite the text displayed"
 msgstr "Genskriv den viste tekst"
 
@@ -10088,16 +10064,8 @@ msgid "Range minimum"
 msgstr "Minimal rækkevidde"
 
 #: 
-msgid "The minimum allowed value for the jQuery range slider. It can be positive, negative, or zero and have up to 11 decimal places."
-msgstr "Den mindst tilladte værdi for jQuery-række slider. Det kan være positivt, negativt eller nul og have op til 11 decimaler."
-
-#: 
 msgid "Range maximum"
 msgstr "Maksimal rækkevidde"
-
-#: 
-msgid "The maximum allowed value for the jQuery range slider. It can be positive, negative, or zero and have up to 11 decimal places."
-msgstr "Den maksimalt tilladte værdi for jQuery rækkevidde slideren. Det kan være positivt, negativt, eller nul og have op til 11 decimaler."
 
 #: 
 msgid "Step"
@@ -10128,10 +10096,6 @@ msgid "Slow"
 msgstr "Langsom"
 
 #: 
-msgid "Normal"
-msgstr "Normal"
-
-#: 
 msgid "Fast"
 msgstr "Hurtig"
 
@@ -10158,10 +10122,6 @@ msgstr "Horisontal"
 #: 
 msgid "Vertical"
 msgstr "Vertikal"
-
-#: 
-msgid "The orientation of the jQuery range slider."
-msgstr ""
 
 #: 
 msgid "The slider max value must be greater than the slider min value."
@@ -10238,14 +10198,6 @@ msgstr "Afkrydsningsfelter"
 #: 
 msgid "Single On/Off Checkbox"
 msgstr "Enkelt Tænd/Sluk afkrydsningsfelt"
-
-#: 
-msgid "jQuery UI Date Picker"
-msgstr "jQuery UI datovælger"
-
-#: 
-msgid "jQuery UI Slider"
-msgstr "jQuery UI Slider"
 
 #: 
 msgid "Provides advanced options (e.g. links, checkboxes, or other widgets) to exposed Views elements."
@@ -13599,7 +13551,7 @@ msgstr "Metatag trimmeindstillinger"
 
 #: 
 msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
-msgstr "Mange metatags kan trimmes til en bestemt længde for søgemaskineoptimering.<br/>Hvis værdien er sat til '0' eller efterlades tom, vil hele metataget ikke blive trimmet."
+msgstr "Mange metatags kan trimmes til en bestemt længde for søgemaskineoptimering.<br>Hvis værdien er sat til '0' eller efterlades tom, vil hele metataget ikke blive trimmet."
 
 #: 
 msgid "Use Maxlength module to force these limits?"
@@ -23041,10 +22993,6 @@ msgid "Example content for DPL Breadcrumb"
 msgstr "Eksempelindhold for DPL breadcrumb"
 
 #: 
-msgid "This module adds a lot of tightly-knit content, only related to the breadcrumb, and is not part of DPL example content module, for sake of maintainability."
-msgstr "Dette modul tilføjer en masse tæt sammenknyttet indhold, kun relateret til breadcrumb, og er ikke en del af DPL eksempel-indholdsmodulet, af hensyn til vedligeholdelse."
-
-#: 
 msgid "Opening Hours"
 msgstr "Åbningstider"
 
@@ -23075,16 +23023,6 @@ msgstr "Åbningstidskategorier (statisk indhold)"
 #: 
 msgid "Adds default opening hours categories"
 msgstr "Tilføjer standard åbningstidskategorier"
-
-#: 
-msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
-msgid "Filters"
-msgstr "Filtre"
-
-#: 
-msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
-msgid "Choose the filters, that defines what content is shown."
-msgstr "Vælg de filtre, der definerer hvilket indhold der vises."
 
 #: 
 msgctxt "core.entity_view_mode.media.card:label"
@@ -23964,16 +23902,6 @@ msgid "Show less"
 msgstr "Vis mindre"
 
 #: 
-msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:label"
-msgid "Filters"
-msgstr "Filtre"
-
-#: 
-msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:format_settings:description"
-msgid "Add any tag, category or branch that should by included as a filter for the filtered event list. "
-msgstr "Tilføj et tag, kategori eller filial som skal anvendes som filter i den filtrerede arrangementsliste."
-
-#: 
 msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
@@ -24007,11 +23935,6 @@ msgstr ""
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:label"
 msgid "Filter by branches"
 msgstr "Filter efter afdelinger"
-
-#: 
-msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:description"
-msgid "Add any branch you want to include"
-msgstr "Tilføj enhver forgrening, du vil inkludere"
 
 #: 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_categories:label"
@@ -25145,11 +25068,6 @@ msgid "Testing the functionality of DPL Related Content."
 msgstr "Tester funktionaliteten af DPL relateret indhold."
 
 #: 
-msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:label"
-msgid "Filters"
-msgstr "Filtre"
-
-#: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_content_types:label"
 msgid "Displayed content types"
 msgstr "Viste indholdstyper"
@@ -25185,11 +25103,6 @@ msgid "Filter by tags"
 msgstr "Filtrer efter tags"
 
 #: 
-msgctxt "field.field.paragraph.content_slider_automatic.field_title:label"
-msgid "Title"
-msgstr "Titel"
-
-#: 
 msgctxt "field.field.paragraph.filtered_event_list.field_amount_of_events:label"
 msgid "(DO NOT USE - DEPRECATED) Amount of events"
 msgstr "(BRUG IKKE - FORÆLDET) Antal arrangementer"
@@ -25208,16 +25121,6 @@ msgstr "Maksimal antal emner"
 msgctxt "field.field.paragraph.filtered_event_list.field_max_item_amount:description"
 msgid "Select the amount of events you want to display. <br /><br />If the amount displayed is less than what you put here, it is likely because there are not enough results based on your selected filters. "
 msgstr "Vælg antallet af arrangementer, du ønsker at vise. <br /><br />Hvis antallet vist er mindre end det, du har angivet her, skyldes det sandsynligvis, at der ikke er nok resultater baseret på dine valgte filtre."
-
-#: 
-msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:0:label"
-msgid "\"OR\" - Must match on any filter"
-msgstr "\"ELLER\" - Skal passe på ethvert filter"
-
-#: 
-msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:1:label"
-msgid "\"AND\" - Must match on ALL filters"
-msgstr "\"OG\" - Skal passe på ALLE filtre"
 
 #: 
 msgctxt "field.storage.paragraph.field_max_item_amount:settings:allowed_values:0:label"
@@ -25516,161 +25419,6 @@ msgid "Updated @count automatic paragraphs, setting 'article' as CT default."
 msgstr "Opdateret @count automatiske afsnit, indstillet 'artikel' som CT standard."
 
 #: 
-msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:label"
-msgid "Condition type (INACTIVE)"
-msgstr "Betingelsestype (INAKTIV)"
-
-#: 
-msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:description"
-msgid "This field will be used in relation to the dpl_related_content in the future, but currently has no effect."
-msgstr "Dette felt vil i fremtiden blive brugt i relation til dpl_relateret_indhold, men har i øjeblikket ingen effekt."
-
-#: 
-msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
-msgid "Condition type (INACTIVE)"
-msgstr "Betingelsestype (INAKTIV)"
-
-#: 
-msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:description"
-msgid "This field will be used in relation to the dpl_related_content in the future, but currently has no effect."
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:label"
-msgid "Condition type (INACTIVE)"
-msgstr "Betingelsestype (INAKTIV)"
-
-#: 
-msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:description"
-msgid "This field will be used in relation to the dpl_related_content in the future, but currently has no effect."
-msgstr ""
-
-#: 
-msgctxt "views.view.content_paragraphs:label"
-msgid "Content lists, embedded in Paragraphs"
-msgstr "Indholdslister, indlejret i Paragraphs"
-
-#: 
-msgctxt "views.view.content_paragraphs:description"
-msgid "Lists for displaying content, through embedded views in paragraphs. Also allows the editor to set filter options in the paragraphs, that will be sent along using contextual filters. See dpl_filter_paragraphs.module"
-msgstr "Lister til visning af indhold, gennem indlejrede visninger i afsnit. Tillader også redaktøren at indstille filtermuligheder i afsnittene, som vil blive sendt sammen ved hjælp af kontekstuelle filtre. Se dpl_filter_paragraphs.module"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Asc"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Beskriv"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_tags_target_id:exception:title"
-msgid "All"
-msgstr "Alt"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_categories_target_id:exception:title"
-msgid "All"
-msgstr "Alt"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:field_branch_target_id:exception:title"
-msgid "All"
-msgstr "Alt"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:default:display_options:arguments:type:exception:title"
-msgid "All"
-msgstr "Alt"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:card_grid:display_title"
-msgid "Card grid"
-msgstr "Card grid"
-
-#: 
-msgctxt "views.view.content_paragraphs:display:slider:display_title"
-msgid "Slider"
-msgstr "Slider"
-
-#: 
-msgctxt "views.view.filtered_event_list:label"
-msgid "Filtered events"
-msgstr "Filtrerede arrangementer"
-
-#: 
-msgctxt "views.view.filtered_event_list:description"
-msgid "This view displays a filtered list of upcoming events sorted by date ascending. Filters include categories, tags and branches"
-msgstr "Denne visning viser en filtreret liste over kommende arrangementer sorteret efter dato i stigende rækkefølge. Filtre inkluderer kategorier, tags og afdelinger."
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_tags:exception:title"
-msgid "All"
-msgstr "Alle"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:event_categories:exception:title"
-msgid "All"
-msgstr "Alle"
-
-#: 
-msgctxt "views.view.filtered_event_list:display:default:display_options:arguments:branch:exception:title"
-msgid "All"
-msgstr "Alle"
-
-#: 
 msgid "DPL publication"
 msgstr "DPL publikation"
 
@@ -25928,4 +25676,303 @@ msgstr "[node:field_main_media:entity:field_media_image:open_graph:url]"
 msgctxt "metatag.metatag_defaults.node__branch:tags:og_video_width"
 msgid "[node:field_main_media:entity:field_media_image:open_graph:width]"
 msgstr "[node:field_main_media:entity:field_media_image:open_graph:width]"
+
+#: 
+msgctxt "core.entity_view_mode.media.banner:label"
+msgid "Banner"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.banner.field_banner_description:label"
+msgid "Banner description"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.banner.field_banner_image:label"
+msgid "Banner Image"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.banner.field_banner_link:label"
+msgid "Banner Link"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.banner.field_underlined_title:label"
+msgid "Underlined title"
+msgstr ""
+
+#: 
+msgctxt "filter.format.underlined_title:name"
+msgid "Underlined title"
+msgstr ""
+
+#: 
+msgctxt "image.style.banner:label"
+msgid "Banner"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.banner:label"
+msgid "Banner"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.banner:description"
+msgid "Banner's purpose is to link internally or externally and can be used with or without a background image."
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "Warning"
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "Link"
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "This material needs to be updated."
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "The currently selected type of the material is no longer available in the system. <br> As a result of this, the link is likely broken. <br> Use the title or link underneath to find and update the material and its type, or replace / delete it."
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "The material that was previously selected is no longer available in the system. Either delete this entry or search for a new material to replace it."
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "Error retrieving saved data. Inputs not found."
+msgstr ""
+
+#: 
+msgctxt "Material search"
+msgid "Something went wrong when trying to find the previously saved values. Please try again. If the problem persists, something could be wrong with the app."
+msgstr ""
+
+#: 
+msgid "This module was used for breadcrumb content, it is now deprecated."
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "Event"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
+msgid "Grouped filters"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
+msgid "Choose the filters, that defines what content is shown. These filters can have their conditions defined."
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:label"
+msgid "Grouped filters"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
+msgid "Choose the filters, that defines what content is shown. These filters can have their conditions defined."
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:label"
+msgid "Grouped filters"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:format_settings:description"
+msgid "Choose the filters, that defines what content is shown. These filters can have their conditions defined."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_branches:description"
+msgid "If nothing is selected, all will be chosen."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_branches:description"
+msgid "If nothing is selected, all will be chosen."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:description"
+msgid "If nothing is selected, all will be chosen."
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:label"
+msgid "Condition type"
+msgstr ""
+
+#: 
+msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:0:label"
+msgid "Must match on ANY filter - \"OR\""
+msgstr ""
+
+#: 
+msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:1:label"
+msgid "Must match on ALL filters - \"AND\""
+msgstr ""
+
+#: 
+msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:2:label"
+msgid "Must match in each filter-category - \"OUTER-AND\""
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "holding"
+msgstr "På hylden"
+
+#: 
+msgctxt "field.field.paragraph.simple_links.field_link:label"
+msgid "Link"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.simple_links:label"
+msgid "Simple links"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.simple_links:description"
+msgid "This is paragraph that will display links without icons. "
+msgstr ""
+
+#: 
+msgid "One"
+msgstr "En"
+
+#: 
+msgid "Three"
+msgstr "Tre"
+
+#: 
+msgid "Two"
+msgstr "To"
+
+#: 
+msgid "Rewrite the text displayed based on key"
+msgstr ""
+
+#: 
+msgid "Change behavior of \"Rewrite the text displayed\" to overwrite labels based on option key. eg. All|New label"
+msgstr ""
+
+#: 
+msgid "Disable the automatic opening of collapsed filters with selections"
+msgstr ""
+
+#: 
+msgid "When a selection is made, by default the collapsed filter will be set to open. If you provide an alternative means for the user to see filter selections, you can the default open behavior by enabling this."
+msgstr ""
+
+#: 
+msgid "Minimum"
+msgstr "Minimum"
+
+#: 
+msgid "Adds a min attribute to the input field."
+msgstr ""
+
+#: 
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: 
+msgid "Adds a max attribute to the input field."
+msgstr ""
+
+#: 
+msgid "The minimum allowed value for the range slider. It can be positive, negative, or zero and have up to 11 decimal places."
+msgstr ""
+
+#: 
+msgid "The maximum allowed value for the range slider. It can be positive, negative, or zero and have up to 11 decimal places."
+msgstr ""
+
+#: 
+msgid "Slow (600 ms)"
+msgstr ""
+
+#: 
+msgid "Normal (400 ms)"
+msgstr ""
+
+#: 
+msgid "Fast (200 ms)"
+msgstr ""
+
+#: 
+msgid "The orientation of the range slider."
+msgstr ""
+
+#: 
+msgid "Combines the sort by options and order (ascending or descending) into a single list.  Use this to display \"Option1 (ascending)\", \"Option1 (descending)\", \"Option2 (ascending)\", \"Option2 (descending)\" in a single form element. Sort order should first be exposed by selecting <em>Allow people to choose the sort order</em>."
+msgstr ""
+
+#: 
+msgid "Sliders"
+msgstr ""
+
+#: 
+msgid "Date Picker"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.paragraph.title_display:label"
+msgid "Title display"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider.field_title:label"
+msgid "Title (deprecated)"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider.field_title:description"
+msgid "deprecated"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider.field_underlined_title:label"
+msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider_automatic.field_title:label"
+msgid "Title (deprecated)"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider_automatic.field_title:description"
+msgid "deprecated"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.content_slider_automatic.field_underlined_title:label"
+msgid "Title"
+msgstr ""
 
