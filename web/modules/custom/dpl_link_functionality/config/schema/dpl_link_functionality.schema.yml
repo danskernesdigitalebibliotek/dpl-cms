@@ -1,0 +1,33 @@
+field.storage.linkit_target_blank:
+  type: config_entity
+  label: "Linkit Target Blank Field Storage"
+  mapping:
+    value:
+      type: string
+      label: "URL"
+    title:
+      type: string
+      label: "Link title"
+    attributes:
+      type: sequence
+      label: "Link attributes"
+      sequence:
+        type: string
+        label: "Attribute value"
+
+field.field.linkit_target_blank:
+  type: field_item
+  label: "Linkit Target Blank Field"
+  mapping:
+    value:
+      type: string
+      label: "URL"
+    title:
+      type: string
+      label: "Link title"
+    attributes:
+      type: sequence
+      label: "Link attributes"
+      sequence:
+        type: string
+        label: "Attribute value"

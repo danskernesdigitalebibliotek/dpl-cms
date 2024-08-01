@@ -5,20 +5,20 @@ namespace Drupal\dpl_link_functionality\Plugin\Field\FieldWidget;
 use Drupal\Core\Field\Annotation\FieldWidget;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\link\Plugin\Field\FieldWidget\LinkWidget;
+use Drupal\linkit\Plugin\Field\FieldWidget\LinkitWidget;
 
 /**
  * Plugin implementation of the 'link' widget with target blank option.
  *
  * @FieldWidget(
- *   id = "link_target_blank",
- *   label = @Translation("Link with Target Blank"),
+ *   id = "linkit_target_blank",
+ *   label = @Translation("Linkit with Target Blank"),
  *   field_types = {
  *     "link"
  *   }
  * )
  */
-class LinkWithTargetBlankWidget extends LinkWidget {
+class LinkitWithTargetBlankWidget extends LinkitWidget {
 
   /**
    * {@inheritdoc}
@@ -38,7 +38,7 @@ class LinkWithTargetBlankWidget extends LinkWidget {
     $element['target_blank'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Open link in new window/tab'),
-      '#default_value' => isset($items[$delta]->target_blank) ? $items[$delta]->target_blank : 0,
+      '#default_value' => isset($items[$delta]->attributes['target']) && $items[$delta]->attributes['target'] === '_blank',
     ];
 
     return $element;
