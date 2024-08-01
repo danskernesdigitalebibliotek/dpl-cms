@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bbe751629baf2ab9116b36d40415290",
+    "content-hash": "a8becac8fc5bc463825e4ec25d5e0cb4",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.28.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.28.0/dist-2024-28-0-e876a29a31e0a8a225d20b3a91cd432491cf5680.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-637-change-advance-search-dropdown-to-img/dist-ddflsbp-637-change-advance-search-dropdown-to-img.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -18863,7 +18863,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
+        "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
