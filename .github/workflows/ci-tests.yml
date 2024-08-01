@@ -106,6 +106,8 @@ jobs:
     name: Test site performance using Lighthouse
     runs-on: ubuntu-latest
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           # Our Taskfile requires a proper checkout to function because of
@@ -129,6 +131,8 @@ jobs:
     name: Test accessibility using Pa11y
     runs-on: ubuntu-latest
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           # Our Taskfile requires a proper checkout to function because of
@@ -153,6 +157,8 @@ jobs:
     name: Run Cypress functional tests
     runs-on: ubuntu-latest
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           # Our Taskfile requires a proper checkout to function because of
@@ -260,6 +266,8 @@ jobs:
     name: Check OpenAPI specification
     runs-on: ubuntu-latest
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           # Our Taskfile requires a proper checkout to function because of
@@ -286,6 +294,8 @@ jobs:
     name: Check Drupal Config
     runs-on: ubuntu-latest
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           # Our Taskfile requires a proper checkout to function because of

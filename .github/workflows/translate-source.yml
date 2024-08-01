@@ -21,6 +21,8 @@ jobs:
     env:
       LANGUAGE: da
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -67,6 +69,8 @@ jobs:
     env:
       LANGUAGE: da
     steps:
+      - name: Set UID environment variable
+        run: echo "UID=$(id -u)" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0

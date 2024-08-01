@@ -19,8 +19,10 @@ x-volumes:
 
 x-user:
   &default-user
-    # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
-    user: '1000'
+    # The default user under which the containers should run. If you
+    # are on Linux and your UID is something other than 1000, set the
+    # UID environment variable to you UID (`export UID=$(id -u)`).
+    user: '${UID:-1000}'
 
 x-environment:
   &default-environment
@@ -61,8 +63,8 @@ services:
       context: .
       dockerfile: lagoon/cli.dockerfile
     image: &cli-image uselagoon/php-8.1-cli-drupal:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
-    << : *default-volumes # loads the defined volumes from the top
-    user: root
+    # loads the defined volumes and user from the top
+    <<: [*default-volumes, *default-user]
     environment:
       << : *default-environment # loads the defined environment variables from the top
       # Uncomment to enable xdebug for cli tools
