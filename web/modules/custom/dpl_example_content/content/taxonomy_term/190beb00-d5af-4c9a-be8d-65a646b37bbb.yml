@@ -26,12 +26,8 @@ default:
       attributes:
         name: title
         content: 'modern | DPL CMS'
-    -
-      tag: link
-      attributes:
-        rel: canonical
-        href: '/taxonomy/term/7'
   path:
     -
       alias: ''
       langcode: da
+      pathauto: 1

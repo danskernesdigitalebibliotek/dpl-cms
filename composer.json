@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2024.23.0",
+                "version": "2024.28.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.23.0/dist-2024-23-0-c4d78921d61eb5531308ae778abfd9a521dfb0b4.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.28.0/dist-2024-28-0-100e48a2a38f735862212d267438eeb6dc86e31b.zip",
                     "type": "zip"
                 }
             }
@@ -83,15 +83,17 @@
         }
     ],
     "require": {
+        "php": "8.1.*",
         "amazeeio/drupal_integrations": "^0.4",
+        "bower-asset/jsnlog": "^2.30",
         "brick/math": "^0.12.1",
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2024.23.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "2024.28.0",
         "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
         "drupal/address": "^1.0",
         "drupal/admin_toolbar": "^3.4",
@@ -102,12 +104,13 @@
         "drupal/config_filter": "^2.6",
         "drupal/config_ignore": "^3",
         "drupal/config_ignore_auto": "^3",
+        "drupal/config_perms": "^2.1",
         "drupal/config_translation_po": "^1.0",
         "drupal/content_lock": "^2.3",
         "drupal/cookieinformation": "^2.1",
-        "drupal/core-composer-scaffold": "~10.1.7",
-        "drupal/core-project-message": "~10.1.7",
-        "drupal/core-recommended": "~10.1.7",
+        "drupal/core-composer-scaffold": "^10.3",
+        "drupal/core-project-message": "^10.3",
+        "drupal/core-recommended": "^10.3",
         "drupal/date_range_formatter": "^4.0",
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "^5.1",
@@ -120,11 +123,13 @@
         "drupal/flat_taxonomy": "^2.0",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
-        "drupal/gin_login": "^2.0",
+        "drupal/gin_login": "^2.1",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/handy_cache_tags": "^1.4",
+        "drupal/health_check": "^3.1",
         "drupal/honeypot": "^2.1",
         "drupal/job_scheduler": "^4.0",
+        "drupal/jsnlog": "^1.3",
         "drupal/jsonlog": "^4.0",
         "drupal/language_neutral_aliases": "^3.1",
         "drupal/libraries": "^4.0",
@@ -159,6 +164,7 @@
         "drupal/upgrade_status": "^4.0",
         "drupal/uuid_url": "^1.3",
         "drupal/varnish_purge": "^2.2",
+        "drupal/verf": "^2.0",
         "drupal/view_unpublished": "^1.1",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/webform": "^6.2",
@@ -178,7 +184,7 @@
         "drupal/core-dev": "~10.1.7",
         "jangregor/phpstan-prophecy": "^1",
         "mglaman/phpstan-drupal": "^1.2",
-        "palantirnet/drupal-rector": "^0.18.1",
+        "palantirnet/drupal-rector": "^0.20.3",
         "php-mock/php-mock": "^2.3",
         "phpspec/prophecy-phpunit": "^2",
         "phpstan/extension-installer": "^1.3",
@@ -281,20 +287,17 @@
             },
             "drupal/core": {
                 "Configure core to not check permissions before accepting an updated module": "patches/disable-core-upload-permission-check.diff",
-                "3073554: Add a token for publication status": "https://www.drupal.org/files/issues/2019-08-09/3073554_10.patch",
-                "2981047: Allow adding computed bundle fields in Views": "https://git.drupalcode.org/project/drupal/-/merge_requests/4224.patch",
                 "2280639: Add the FieldStorageDefinition class to define field storage definitions in hook_entity_field_storage_info()": "https://www.drupal.org/files/issues/2023-09-05/2280639-d10-reroll-156.patch",
                 "3402656: Toolbar causes a Javascript error if the subtrees content changes between page loads": "https://git.drupalcode.org/issue/drupal-3402656/-/commit/61ac007a84014f54a07825f8f92bb6bc0dfbd170.patch",
-                "2259567: Support SVG files for theme logo setting": "https://www.drupal.org/files/issues/2023-05-08/2259567-168.patch",
-                "296693: Restrict access to empty top level administration pages": "https://www.drupal.org/files/issues/2023-08-31/296693-10.1.x_0.patch",
                 "3035578: Add details for AJAX response errors": "https://www.drupal.org/files/issues/2023-07-24/3035578-26.patch",
-                "Always assume chmod succeeds": "patches/core-304fd8b-chmod-true.patch"
+                "Always assume chmod succeeds": "patches/core-chmod-true.patch",
+                "Debug Form triggering element detection": "patches/form-triggering-element-detection-paragraphs-ee.patch"
             },
             "drupal/date_range_formatter": {
                 "3309324: Fails when start and end date are identical": "https://www.drupal.org/files/issues/2023-12-22/date_range_formatter_3309324_1.patch"
             },
             "drupal/default_content": {
-                "3200212: Overwrite files on import": "https://git.drupalcode.org/project/default_content/-/merge_requests/8.patch"
+                "3200212: Overwrite files on import": "https://www.drupal.org/files/issues/2021-12-08/default_content-3200212.patch"
             },
             "drupal/dynamic_entity_reference": {
                 "3405253: Update the FieldType category for clarity": "https://git.drupalcode.org/project/dynamic_entity_reference/-/commit/3f048d296f671906d15b0cdfbbadbea38f5f3c8b.patch",
@@ -306,12 +309,17 @@
             "drupal/entity_clone_template": {
                 "3424597: Fix error when creating entity of type without templates": "https://git.drupalcode.org/project/entity_clone_template/-/merge_requests/3.patch"
             },
+            "drupal/field_inheritance": {
+                "3454350: Create seperate permission for adding field inheritance": "https://www.drupal.org/files/issues/2024-06-13/field_inheritance_permission.patch"
+            },
             "drupal/focal_point": {
                 "3162210: Preview link accidentally closes the media library": "https://www.drupal.org/files/issues/2020-10-11/preview_link_accidentally_closes_the_media_library-3162210-19.patch"
             },
             "drupal/job_scheduler": {
-                "3426366: Callables as worker callbacks": "https://git.drupalcode.org/project/job_scheduler/-/merge_requests/7.patch",
-                "3426378: Views support": "https://git.drupalcode.org/project/job_scheduler/-/merge_requests/8.patch"
+                "3426366: Callables as worker callbacks": "https://git.drupalcode.org/project/job_scheduler/-/merge_requests/7.patch"
+            },
+            "drupal/jsnlog": {
+                "Disable CSRF token": "patches/jsnlog-disable-csrf_token.patch"
             },
             "drupal/jsonlog": {
                 "3251587: Change logging from stdout to stderr": "https://www.drupal.org/files/issues/2021-11-29/jsonlog-change-stdout-to-stderr-3251587-3.patch"
@@ -322,6 +330,9 @@
             "drupal/openapi_rest": {
                 "3171530 + 3116760: Add support for parameter and response descriptions": "patches/openapi-parameter-response-descriptions-14-3.patch",
                 "3343816: Specification includes disabled resources": "https://git.drupalcode.org/project/openapi_rest/-/merge_requests/4.patch"
+            },
+            "drupal/paragraphs": {
+                "3027525: Show the paragraph and field label of fields that fail validation": "https://www.drupal.org/files/issues/2023-10-03/3027525_22.patch"
             },
             "drupal/paragraphs_ee": {
                 "3106254: Sorting paragraph list alphabetically in modal": "https://www.drupal.org/files/issues/2023-03-30/paragraphs_ee_sort.patch",
@@ -341,10 +352,12 @@
             },
             "drupal/recurring_events": {
                 "3178696: Make compatible with Scheduler": "https://git.drupalcode.org/project/recurring_events/-/merge_requests/86.patch",
-                "3416436: Avoid array conversion warning when daily events are disabled": "https://git.drupalcode.org/project/recurring_events/-/commit/832ae52f135dd3f205eb74acf2d3715fb443e759.patch"
+                "3416436: Avoid array conversion warning when daily events are disabled": "https://git.drupalcode.org/project/recurring_events/-/commit/832ae52f135dd3f205eb74acf2d3715fb443e759.patch",
+                "3451613: Start date of weekly reccurring event jumps incorrectly": "https://git.drupalcode.org/project/recurring_events/-/commit/581c53dd1b0b067a8b6454d76cc0187887f7b187.patch"
             },
             "drupal/theme_permission": {
-                "3105637: Edit, install and uninstall permission": "https://www.drupal.org/files/issues/2024-02-01/theme-permission-edit-install-uninstall-3105637-7.patch"
+                "3105637: Edit, install and uninstall permission": "https://www.drupal.org/files/issues/2024-02-01/theme-permission-edit-install-uninstall-3105637-7.patch",
+                "3458263: WSOD error fails on Drupal 10.3+": "https://www.drupal.org/files/issues/2024-07-01/theme_permssion-d10_3_d11.patch"
             },
             "drupal/twig_tweak": {
                 "3428226: Clear menu cache when adding first item": "https://git.drupalcode.org/project/twig_tweak/-/commit/6fd3997d45fe90fdf6545a3c85ff1c5b68e9bde1.patch"

@@ -675,6 +675,100 @@
         ]
       }
     },
+    "/opening_hours/instances": {
+      "get": {
+        "parameters": [
+          {
+            "name": "_format",
+            "in": "query",
+            "type": "string",
+            "enum": ["json"],
+            "required": true,
+            "description": "Request format",
+            "default": "json"
+          }, 
+          {
+            "name": "from_date",
+            "type": "string",
+            "format": "date",
+            "description": "Retrieve opening hours which occur after and including the provided date. In ISO 8601 format.",
+            "in": "query",
+            "required": true
+          }, 
+          {
+            "name": "to_date",
+            "type": "string",
+            "format": "date",
+            "description": "Retrieve opening hours which occur before and including the provided date. In ISO 8601 format.",
+            "in": "query",
+            "required": true
+          }, 
+          {
+            "name": "nid",
+            "type": "integer",
+            "description": "The (node) id of the node (Branch) that the opening hour applies to.",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "nid": {
+                    "type": "integer",
+                    "description": "The node Id of the branch the opening hours instance belongs to."
+                  },
+                  "category_tid": {
+                    "type": "integer",
+                    "description": "The (t)id of the opening hours category."
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date which the opening hours applies to. In ISO 8601 format."
+                  },
+                  "start_time": {
+                    "type": "string",
+                    "example": "09:00",
+                    "description": "When the opening hours start. In format HH:MM"
+                  },
+                  "end_time": {
+                    "type": "string",
+                    "example": "17:00",
+                    "description": "When the opening hours end. In format HH:MM"
+                  },
+                  "notice": {
+                    "type": "string",
+                    "description": "Additional notice regarding the opening hours.",
+                    "nullable": true
+                  }
+                },
+                "required": ["nid", "category_tid", "date", "start_time", "end_time", "notice"]
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "summary": "List all opening hours for legacy API",
+        "operationId": "dpl_opening_hours_legacy_list:GET",
+        "schemes": ["http"],
+        "security": [
+          {
+            "cookie": []
+          }
+        ]
+      }
+    },
     "/api/v1/events/{uuid}": {
       "patch": {
         "parameters": [
@@ -707,12 +801,12 @@
                     "url": {
                       "type": "string",
                       "format": "uri",
-                      "description": "An absolute url provided by the third party where end users can access the event."
+                      "description": "An absolute URL provided by the third party where end users can access the event."
                     },
                     "admin_url": {
                       "type": "string",
                       "format": "uri",
-                      "description": "An absolute url provided by the third party where editorial users can administer the event. Accessing this url should require authentication."
+                      "description": "An absolute URL provided by the third party where editorial users can administer the event. Accessing this URL should require authentication."
                     }
                   }
                 }
@@ -764,6 +858,14 @@
             "required": true,
             "description": "Request format",
             "default": "json"
+          }, 
+          {
+            "name": "from_date",
+            "type": "string",
+            "format": "date",
+            "description": "Retrieve events which occur after and including the provided date. In ISO 8601 format.",
+            "in": "query",
+            "required": false
           }
         ],
         "responses": {
@@ -777,16 +879,20 @@
                   "uuid": {
                     "type": "string",
                     "format": "uuid",
-                    "description": "A unique identifer for the event."
+                    "description": "A unique identifier for the event."
                   },
                   "title": {
                     "type": "string",
                     "description": "The event title."
                   },
+                  "description": {
+                    "type": "string",
+                    "description": "The short event description."
+                  },
                   "url": {
                     "type": "string",
                     "format": "uri",
-                    "description": "An absolute url end users should use to view the event at the website."
+                    "description": "An absolute URL end users should use to view the event at the website."
                   },
                   "created_at": {
                     "type": "string",
@@ -805,7 +911,7 @@
                       "url": {
                         "type": "string",
                         "format": "uri",
-                        "description": "An absolute url for the image. This is a link to the original, unaltered file, so the size, aspect ratio, and file format will be different from event to event."
+                        "description": "An absolute URL for the image. This is a link to the original, unaltered file, so the size, aspect ratio, and file format will be different from event to event."
                       }
                     },
                     "required": ["url"]
@@ -818,7 +924,6 @@
                   "date_time": {
                     "type": "object",
                     "description": "When the event occurs.",
-                    "required": ["start", "end"],
                     "properties": {
                       "start": {
                         "type": "string",
@@ -830,6 +935,15 @@
                         "format": "date-time",
                         "description": "End time in ISO 8601 format."
                       }
+                    },
+                    "required": ["start", "end"]
+                  },
+                  "branches": {
+                    "type": "array",
+                    "description": "The associated library branches.",
+                    "items": {
+                      "type": "string",
+                      "description": "The name of a branch."
                     }
                   },
                   "address": {
@@ -858,6 +972,14 @@
                       }
                     },
                     "required": ["street", "zip_code", "city", "country"]
+                  },
+                  "tags": {
+                    "type": "array",
+                    "description": "The tags associated with the event.",
+                    "items": {
+                      "type": "string",
+                      "description": "The name of a tag."
+                    }
                   },
                   "ticket_categories": {
                     "type": "array",
@@ -904,9 +1026,9 @@
                     },
                     "required": ["uuid"]
                   },
-                  "description": {
+                  "body": {
                     "type": "string",
-                    "description": "An editorial description of the event."
+                    "description": "An editorial WYSIWYG/HTML description of the event."
                   },
                   "external_data": {
                     "type": "object",
@@ -915,12 +1037,12 @@
                       "url": {
                         "type": "string",
                         "format": "uri",
-                        "description": "An absolute url provided by the third party where end users can access the event."
+                        "description": "An absolute URL provided by the third party where end users can access the event."
                       },
                       "admin_url": {
                         "type": "string",
                         "format": "uri",
-                        "description": "An absolute url provided by the third party where editorial users can administer the event. Accessing this url should require authentication."
+                        "description": "An absolute URL provided by the third party where editorial users can administer the event. Accessing this URL should require authentication."
                       }
                     }
                   }

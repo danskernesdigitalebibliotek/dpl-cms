@@ -19,7 +19,6 @@ use Drupal\media\MediaInterface;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\recurring_events\Entity\EventInstance;
 use Safe\DateTime;
-use function Safe\strtotime;
 
 /**
  * Translator understand the link between EventInstances and resource objects.
@@ -67,9 +66,13 @@ class EventRestMapper {
       'uuid' => $this->event->uuid(),
       'url' => $this->event->toUrl()->setAbsolute(TRUE)->toString(TRUE)->getGeneratedUrl(),
       'description' => $this->getValue('event_description'),
+      'body' => $this->getDescription(),
       'state' => $this->eventWrapper->getState()?->value,
       'image' => $this->getImage(),
+      'branches' => $this->getBranches(),
       'address' => $this->getAddress(),
+      'tags' => $this->getTags(),
+      'ticketCapacity' => $this->getValue('event_ticket_capacity'),
       'ticketCategories' => $this->getTicketCategories(),
       'createdAt' => $this->getDateField('created'),
       'updatedAt' => $this->getDateField('changed'),
@@ -79,6 +82,64 @@ class EventRestMapper {
         'uuid' => $this->event->getEventSeries()->uuid(),
       ]),
     ]);
+  }
+
+  /**
+   * Getting associated branches.
+   *
+   * @return string[]
+   *   The translated branch labels.
+   */
+  private function getBranches(): array {
+    $names = [];
+
+    /** @var \Drupal\node\NodeInterface[] $branches */
+    $branches = $this->event->get('branch')->referencedEntities();
+
+    foreach ($branches as $branch) {
+      $label = $branch->getTitle();
+
+      if (!empty($label)) {
+        $names[] = $label;
+      }
+    }
+
+    return $names;
+  }
+
+  /**
+   * Getting associated tags.
+   *
+   * @return string[]
+   *   The translated tag labels.
+   */
+  private function getTags(): array {
+    $names = [];
+
+    /** @var \Drupal\taxonomy\TermInterface[] $tags */
+    $tags = $this->event->get('event_tags')->referencedEntities();
+
+    foreach ($tags as $tag) {
+      $names[] = $tag->getName();
+    }
+
+    return $names;
+  }
+
+  /**
+   * Getting the description, from the first available text paragraph.
+   */
+  private function getDescription(): ?string {
+    /** @var \Drupal\paragraphs\ParagraphInterface[] $paragraphs */
+    $paragraphs = $this->event->get('event_paragraphs')->referencedEntities();
+
+    foreach ($paragraphs as $paragraph) {
+      if ($paragraph->bundle() === 'text_body') {
+        return $paragraph->get('field_body')->getValue()[0]['value'] ?? NULL;
+      }
+    }
+
+    return NULL;
   }
 
   /**
@@ -110,11 +171,12 @@ class EventRestMapper {
       return NULL;
     }
 
-    $date_start = new DateTime();
-    $date_start->setTimestamp(strtotime($start));
+    $site_timezone = new \DateTimeZone(date_default_timezone_get());
 
-    $date_end = new DateTime();
-    $date_end->setTimestamp(strtotime($end));
+    $date_start = new DateTime($start, new \DateTimeZone('UTC'));
+    $date_start->setTimezone($site_timezone);
+    $date_end = new DateTime($end, new \DateTimeZone('UTC'));
+    $date_end->setTimezone($site_timezone);
 
     return new EventsGET200ResponseInnerDateTime([
       'start' => $date_start,
@@ -185,13 +247,14 @@ class EventRestMapper {
     $address_1 = $value[0]['address_line1'] ?? NULL;
     $address_2 = $value[0]['address_line2'] ?? NULL;
 
-    return new EventsGET200ResponseInnerAddress([
-      'location' => $this->getValue('event_place'),
-      'street' => "$address_1 $address_2",
-      'zip_code' => !empty($zip) ? intval($zip) : NULL,
-      'city' => $value[0]['locality'] ?? NULL,
-      'country' => $value[0]['country_code'] ?? NULL,
-    ]);
+    $address = new EventsGET200ResponseInnerAddress();
+    $address->setLocation($this->getValue('event_place'));
+    $address->setStreet("$address_1 $address_2");
+    $address->setZipCode(!empty($zip) ? intval($zip) : NULL);
+    $address->setCity($value[0]['locality'] ?? NULL);
+    $address->setCountry($value[0]['country_code'] ?? NULL);
+
+    return $address;
   }
 
   /**

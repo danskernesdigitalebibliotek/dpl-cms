@@ -9,7 +9,6 @@
 #
 # Consult https://github.com/danskernesdigitalebibliotek/dpl-platform for
 # further details.
-version: '2.3'
 
 # This block is used for inclusion in the environment section of each container.
 x-volumes:
@@ -129,6 +128,8 @@ services:
       - "3306" # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
     << : *default-user # uses the defined user from top
     environment:
+      MARIADB_CHARSET: 'utf8mb4'
+      MARIADB_COLLATION: 'utf8mb4_danish_ci'
       << : *default-environment
 
   redis: # In-memory key-value database used as the Drupal Core cache backend.

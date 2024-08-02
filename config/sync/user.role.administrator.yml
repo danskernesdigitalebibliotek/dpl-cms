@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic
     - filter.format.limited
+    - filter.format.underlined_title
     - media.type.document
     - media.type.image
     - media.type.video
@@ -23,6 +24,7 @@ dependencies:
   module:
     - administerusersbyrole
     - block
+    - config_perms
     - content_lock
     - cookieinformation
     - dpl_admin
@@ -36,6 +38,7 @@ dependencies:
     - dpl_webform
     - entity_clone
     - entity_reference_revisions
+    - field_inheritance
     - file
     - filter
     - image
@@ -63,6 +66,7 @@ label: Administrator
 weight: 2
 is_admin: null
 permissions:
+  - 'Administer maintenance mode'
   - 'access administration pages'
   - 'access any webform configuration'
   - 'access content overview'
@@ -96,6 +100,7 @@ permissions:
   - 'administer cookie information settings'
   - 'administer dpl_footer settings'
   - 'administer dpl_mapp configuration'
+  - 'administer entity field inheritance'
   - 'administer filters'
   - 'administer image styles'
   - 'administer instant loan configuration'
@@ -237,6 +242,7 @@ permissions:
   - 'update media'
   - 'use text format basic'
   - 'use text format limited'
+  - 'use text format underlined_title'
   - 'view admin menu in menu list'
   - 'view all media revisions'
   - 'view all revisions'
