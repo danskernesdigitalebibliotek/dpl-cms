@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-07-31 13:24+0200\n"
-"PO-Revision-Date: 2024-07-31 13:24+0200\n"
+"POT-Creation-Date: 2024-08-06 09:44+0200\n"
+"PO-Revision-Date: 2024-08-06 09:44+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2589,7 +2589,7 @@ msgstr "Søgeheader input"
 
 msgctxt "Global"
 msgid "Input must contain at least one non-whitespace character."
-msgstr "Input skal indeholde minimum ét tegn"
+msgstr "Input skal indeholde minimum tre tegn"
 
 msgctxt "Global"
 msgid "Shift"
@@ -18318,5 +18318,27 @@ msgid "Sliders"
 msgstr ""
 
 msgid "Date Picker"
+msgstr ""
+
+msgctxt "DPL event"
+msgid "Price Currency"
+msgstr ""
+
+msgctxt "DPL event"
+msgid ""
+"The currency that is used whenever prices are displayed - both on the "
+"website, but also in the event API."
+msgstr ""
+
+msgctxt "DPL event"
+msgid "Danish kroner"
+msgstr ""
+
+msgctxt "DPL event"
+msgid "Euros"
+msgstr ""
+
+msgctxt "DPL event"
+msgid "DKK"
 msgstr ""
 

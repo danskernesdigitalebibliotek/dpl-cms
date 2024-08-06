@@ -2992,7 +2992,7 @@ msgstr "Søgeheader input"
 #: 
 msgctxt "Global"
 msgid "Input must contain at least one non-whitespace character."
-msgstr "Input skal indeholde minimum ét tegn"
+msgstr "Input skal indeholde minimum tre tegn"
 
 #: 
 msgctxt "Global"
@@ -24660,11 +24660,6 @@ msgid "Event series"
 msgstr "Arrangementserie"
 
 #: 
-msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
-msgid "Name"
-msgstr "Navn"
-
-#: 
 msgctxt "Global"
 msgid "Liked"
 msgstr "Husk"
@@ -25974,5 +25969,45 @@ msgstr ""
 #: 
 msgctxt "field.field.paragraph.content_slider_automatic.field_underlined_title:label"
 msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "DPL event"
+msgid "Price Currency"
+msgstr ""
+
+#: 
+msgctxt "DPL event"
+msgid "The currency that is used whenever prices are displayed - both on the website, but also in the event API."
+msgstr ""
+
+#: 
+msgctxt "DPL event"
+msgid "Danish kroner"
+msgstr ""
+
+#: 
+msgctxt "DPL event"
+msgid "Euros"
+msgstr ""
+
+#: 
+msgctxt "DPL event"
+msgid "DKK"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
+msgid "Name & Email"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:alter:text"
+msgid "{{ field_author_name__value }} <br><small>{{ mail }}</small>"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:alter:text"
+msgid "{{ status__value }} "
 msgstr ""
 

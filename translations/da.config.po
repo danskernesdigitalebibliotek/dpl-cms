@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-07-31 13:24+0200\n"
-"PO-Revision-Date: 2024-07-31 13:24+0200\n"
+"POT-Creation-Date: 2024-08-06 09:44+0200\n"
+"PO-Revision-Date: 2024-08-06 09:44+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -5536,10 +5536,6 @@ msgctxt "views.view.event_series_admin:display:page_1:display_options:menu:title
 msgid "Event series"
 msgstr "Arrangementserie"
 
-msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
-msgid "Name"
-msgstr "Navn"
-
 msgctxt "field.field.taxonomy_term.webform_email_categories.field_email:label"
 msgid "Email"
 msgstr "Email"
@@ -6100,5 +6096,17 @@ msgstr ""
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_underlined_title:label"
 msgid "Title"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
+msgid "Name & Email"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:alter:text"
+msgid "{{ field_author_name__value }} <br><small>{{ mail }}</small>"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:alter:text"
+msgid "{{ status__value }} "
 msgstr ""
 
