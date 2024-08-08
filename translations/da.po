@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-08-06 09:44+0200\n"
-"PO-Revision-Date: 2024-08-06 09:44+0200\n"
+"POT-Creation-Date: 2024-08-08 16:51+0200\n"
+"PO-Revision-Date: 2024-08-08 16:51+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2419,7 +2419,7 @@ msgstr "Reserveringer på fysiske materialer"
 
 msgctxt "Global"
 msgid "Pick up before @date"
-msgstr "Hent før @date"
+msgstr "Hent senest @date"
 
 msgctxt "Global"
 msgid "Choose pickup branch"
@@ -18340,5 +18340,13 @@ msgstr ""
 
 msgctxt "DPL event"
 msgid "DKK"
+msgstr ""
+
+msgctxt "password_policy.password_policy.admins:label"
+msgid "Admins"
+msgstr ""
+
+msgctxt "password_policy.password_policy.non_admins:label"
+msgid "Non-admins"
 msgstr ""
 

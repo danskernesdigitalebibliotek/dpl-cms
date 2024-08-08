@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-08-06 09:44+0200\n"
-"PO-Revision-Date: 2024-08-06 09:44+0200\n"
+"POT-Creation-Date: 2024-08-08 16:51+0200\n"
+"PO-Revision-Date: 2024-08-08 16:51+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6108,5 +6108,38 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:alter:text"
 msgid "{{ status__value }} "
+msgstr ""
+
+msgctxt "field.field.user.user.field_last_password_reset:label"
+msgid "Last Password Reset"
+msgstr ""
+
+msgctxt "field.field.user.user.field_password_expiration:label"
+msgid "Password Expiration"
+msgstr ""
+
+msgctxt "field.field.user.user.field_password_expiration:description"
+msgid ""
+"Control whether the user must reset their password. If the password "
+"has expired, this field is automatically checked after the execution "
+"of Cron."
+msgstr ""
+
+msgctxt "field.field.user.user.field_password_expiration:settings:on_label"
+msgid "Expired Password"
+msgstr ""
+
+msgctxt "field.field.user.user.field_password_expiration:settings:off_label"
+msgid "Non-expired Password"
+msgstr ""
+
+msgctxt "field.field.user.user.field_pending_expire_sent:label"
+msgid "Pending Expiration Mail Count"
+msgstr ""
+
+msgctxt "field.field.user.user.field_pending_expire_sent:description"
+msgid ""
+"Whether an email notifying of a pending password expiration has been "
+"sent"
 msgstr ""
 

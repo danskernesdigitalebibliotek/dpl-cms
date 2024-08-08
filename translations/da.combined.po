@@ -2787,7 +2787,7 @@ msgstr "Reserveringer på fysiske materialer"
 #: 
 msgctxt "Global"
 msgid "Pick up before @date"
-msgstr "Hent før @date"
+msgstr "Hent senest @date"
 
 #: 
 msgctxt "Global"
@@ -26009,5 +26009,50 @@ msgstr ""
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:alter:text"
 msgid "{{ status__value }} "
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_last_password_reset:label"
+msgid "Last Password Reset"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_password_expiration:label"
+msgid "Password Expiration"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_password_expiration:description"
+msgid "Control whether the user must reset their password. If the password has expired, this field is automatically checked after the execution of Cron."
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_password_expiration:settings:on_label"
+msgid "Expired Password"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_password_expiration:settings:off_label"
+msgid "Non-expired Password"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_pending_expire_sent:label"
+msgid "Pending Expiration Mail Count"
+msgstr ""
+
+#: 
+msgctxt "field.field.user.user.field_pending_expire_sent:description"
+msgid "Whether an email notifying of a pending password expiration has been sent"
+msgstr ""
+
+#: 
+msgctxt "password_policy.password_policy.admins:label"
+msgid "Admins"
+msgstr ""
+
+#: 
+msgctxt "password_policy.password_policy.non_admins:label"
+msgid "Non-admins"
 msgstr ""
 
