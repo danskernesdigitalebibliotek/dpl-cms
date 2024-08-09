@@ -58,7 +58,7 @@
                 "type": "drupal-library",
                 "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-develop/dist-develop.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFLSBP-637-add-aria-label-to-advanced-search-dropdown/dist-ddflsbp-637-add-aria-label-to-advanced-search-dropdown.zip",
                     "type": "zip"
                 }
             }
