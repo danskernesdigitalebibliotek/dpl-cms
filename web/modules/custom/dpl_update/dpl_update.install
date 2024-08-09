@@ -261,3 +261,10 @@ function dpl_update_update_10014(): string {
     'password_policy_character_types',
   ]);
 }
+
+/**
+ * Link new event_screen_names inheritance on eventinstances.
+ */
+function dpl_update_update_10015(): string {
+  return _dpl_update_update_field_inheritance('event_screen_names');
+}
