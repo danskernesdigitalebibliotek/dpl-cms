@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29c4fbde8e8345ed5b95e991488f9bff",
+    "content-hash": "f0da2c096178a507e5e9a9385a19d135",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-637-change-advance-search-dropdown-to-img/dist-ddflsbp-637-change-advance-search-dropdown-to-img.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -18984,8 +18984,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "danskernesdigitalebibliotek/dpl-design-system": 20,
-        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
