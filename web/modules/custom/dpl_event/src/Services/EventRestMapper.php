@@ -71,6 +71,7 @@ class EventRestMapper {
       'series' => new EventsGET200ResponseInnerSeries([
         'uuid' => $this->event->getEventSeries()->uuid(),
       ]),
+      'screenNames' => $this->getScreenNames(),
     ]);
   }
 
@@ -111,6 +112,25 @@ class EventRestMapper {
 
     foreach ($tags as $tag) {
       $names[] = $tag->getName();
+    }
+
+    return $names;
+  }
+
+  /**
+   * Getting associated screen names.
+   *
+   * @return string[]
+   *   The screen names.
+   */
+  private function getScreenNames(): array {
+    $names = [];
+
+    /** @var \Drupal\taxonomy\TermInterface[] $screens */
+    $screens = $this->event->get('event_screen_names')->referencedEntities();
+
+    foreach ($screens as $screen) {
+      $names[] = $screen->getName();
     }
 
     return $names;

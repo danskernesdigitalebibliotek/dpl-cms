@@ -219,6 +219,18 @@ class EventsGET200ResponseInner
     protected ?EventPATCHRequestExternalData $externalData = null;
 
     /**
+     * The screens this event should be shown on.
+     *
+     * @var string[]|null
+     * @SerializedName("screen_names")
+     * @Assert\All({
+     *   @Assert\Type("string")
+     * })
+     * @Type("array<string>")
+     */
+    protected ?array $screenNames = null;
+
+    /**
      * Constructor
      * @param array|null $data Associated array of property values initializing the model
      */
@@ -242,6 +254,7 @@ class EventsGET200ResponseInner
             $this->series = array_key_exists('series', $data) ? $data['series'] : $this->series;
             $this->body = array_key_exists('body', $data) ? $data['body'] : $this->body;
             $this->externalData = array_key_exists('externalData', $data) ? $data['externalData'] : $this->externalData;
+            $this->screenNames = array_key_exists('screenNames', $data) ? $data['screenNames'] : $this->screenNames;
         }
     }
 
@@ -683,6 +696,32 @@ class EventsGET200ResponseInner
     public function setExternalData(?EventPATCHRequestExternalData $externalData = null): self
     {
         $this->externalData = $externalData;
+
+        return $this;
+    }
+
+    /**
+     * Gets screenNames.
+     *
+     * @return string[]|null
+     */
+    public function getScreenNames(): ?array
+    {
+        return $this->screenNames;
+    }
+
+
+
+    /**
+     * Sets screenNames.
+     *
+     * @param string[]|null $screenNames  The screens this event should be shown on.
+     *
+     * @return $this
+     */
+    public function setScreenNames(?array $screenNames = null): self
+    {
+        $this->screenNames = $screenNames;
 
         return $this;
     }

@@ -19,6 +19,7 @@ dependencies:
     - taxonomy.vocabulary.breadcrumb_structure
     - taxonomy.vocabulary.categories
     - taxonomy.vocabulary.opening_hours_categories
+    - taxonomy.vocabulary.screen_name
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.webform_email_categories
   module:
@@ -113,6 +114,7 @@ permissions:
   - 'create terms in breadcrumb_structure'
   - 'create terms in categories'
   - 'create terms in opening_hours_categories'
+  - 'create terms in screen_name'
   - 'create terms in tags'
   - 'create terms in webform_email_categories'
   - 'create url aliases'
@@ -152,6 +154,7 @@ permissions:
   - 'delete page revisions'
   - 'delete terms in breadcrumb_structure'
   - 'delete terms in categories'
+  - 'delete terms in screen_name'
   - 'delete terms in tags'
   - 'delete terms in webform_email_categories'
   - 'dpl admin access pages'
@@ -182,6 +185,7 @@ permissions:
   - 'edit terms in breadcrumb_structure'
   - 'edit terms in categories'
   - 'edit terms in opening_hours_categories'
+  - 'edit terms in screen_name'
   - 'edit terms in tags'
   - 'edit terms in webform_email_categories'
   - 'edit themes novel'
