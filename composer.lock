@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ecbe8e7bedd0fb10d8837f3ebfedf30",
+    "content-hash": "f3d7a525cc90179e2b4c2af006a4fd7d",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -19048,6 +19048,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
