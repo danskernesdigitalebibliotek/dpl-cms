@@ -277,6 +277,30 @@ menu:
     - dpl_react/base
     - dpl_react/handler
 
+opening-hours-clock:
+  remote: https://github.com/danskernesdigitalebibliotek/dpl-react
+  license:
+    name: GNU AFFERO
+    url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/dpl-react/OpeningHoursClock.js: {}
+  dependencies:
+    - dpl_react/base
+    - dpl_react/handler
+
+opening-hours-clock-icon:
+  remote: https://github.com/danskernesdigitalebibliotek/dpl-react
+  license:
+    name: GNU AFFERO
+    url: https://github.com/danskernesdigitalebibliotek/dpl-react/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/dpl-react/OpeningHoursClockIcon.js: {}
+  dependencies:
+    - dpl_react/base
+    - dpl_react/handler
+
 base:
   remote: https://github.com/danskernesdigitalebibliotek/dpl-react
   license:

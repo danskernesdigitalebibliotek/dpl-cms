@@ -45,3 +45,26 @@ void {
     ];
   }
 }
+
+/**
+ * Implements template_preprocess_page().
+ *
+ * @param mixed[] $variables
+ *   Theme variables.
+ */
+function dpl_opening_hours_preprocess_page(array &$variables): void {
+  $variables['opening_hours_clock'] = [
+    '#theme' => 'dpl_react_app',
+    '#name' => 'opening-hours-clock',
+    '#data' => [
+      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours']),
+      ] + DplReactAppsController::externalApiBaseUrls(),
+  ];
+  $variables['opening_hours_clock_icon'] = [
+    '#theme' => 'dpl_react_app',
+    '#name' => 'opening-hours-clock-icon',
+    '#data' => [
+      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours']),
+      ] + DplReactAppsController::externalApiBaseUrls(),
+  ];
+}
