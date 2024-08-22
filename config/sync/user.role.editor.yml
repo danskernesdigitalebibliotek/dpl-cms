@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic
     - filter.format.limited
+    - filter.format.underlined_title
     - media.type.document
     - media.type.image
     - media.type.video
@@ -21,6 +22,7 @@ dependencies:
     - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.webform_email_categories
   module:
+    - administerusersbyrole
     - content_lock
     - dpl_admin
     - dpl_footer
@@ -56,6 +58,8 @@ permissions:
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'access user profiles'
+  - 'access users overview'
   - 'access webform overview'
   - 'add eventseries entity'
   - 'add new links to main menu'
@@ -164,6 +168,7 @@ permissions:
   - 'update media'
   - 'use text format basic'
   - 'use text format limited'
+  - 'use text format underlined_title'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any unpublished content'
@@ -181,3 +186,4 @@ permissions:
   - 'view unpublished eventinstance entity'
   - 'view unpublished eventseries entity'
   - 'view unpublished paragraphs'
+  - 'view users by role'

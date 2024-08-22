@@ -2,9 +2,11 @@
 
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\dpl_breadcrumb\Services\BreadcrumbHelper;
 use Drupal\drupal_typed\DrupalTyped;
 use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\taxonomy\TermInterface;
 
@@ -131,10 +133,69 @@ function dpl_breadcrumb_preprocess_page(array &$variables): void {
  * the field disabled, with a description is also good AX.
  */
 function dpl_breadcrumb_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
-  if (!str_starts_with($form_id, 'node_') || !str_ends_with($form_id, '_edit_form')) {
+  if (str_starts_with($form_id, 'node_') && str_ends_with($form_id, '_delete_form')) {
+    _dpl_breadcrumb_form_alter_delete_confirm($form, $form_state, $form_id);
+  }
+
+  if (str_starts_with($form_id, 'node_') && str_ends_with($form_id, '_edit_form')) {
+    _dpl_breadcrumb_form_alter_node_form($form, $form_state, $form_id);
+  }
+}
+
+/**
+ * Alter the node-confirmation form, adding warning if relevant.
+ *
+ * @param array<mixed> $form
+ *   See the $form in dpl_breadcrumb_form_alter().
+ */
+function _dpl_breadcrumb_form_alter_delete_confirm(array &$form, FormStateInterface $form_state, string $form_id): void {
+  $service = DrupalTyped::service(BreadcrumbHelper::class, 'dpl_breadcrumb.breadcrumb_helper');
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  if (!($node instanceof NodeInterface)) {
     return;
   }
 
+  $breadcrumb_item = $service->getBreadcrumbItem($node);
+
+  if (!$breadcrumb_item) {
+    return;
+  }
+
+  // Overwrite the existing description.
+  $form['description'] = [
+    '#weight' => -10,
+    '#markup' => t(
+        '<p>You are about to delete <strong>"@title"</strong>. This page is linked to the breadcrumb <strong>"@breadcrumb_title"</strong>.
+        <br>You cannot delete this content until you replace the page in the "Content to link to" field in <strong>"@breadcrumb_title"</strong>.
+        <br><strong><a href="@breadcrumb_edit_url" target="_blank">Edit the breadcrumb "@breadcrumb_title"</a></strong></p>',
+        [
+          '@title' => $node->label(),
+          '@breadcrumb_title' => $breadcrumb_item->getName(),
+          '@breadcrumb_edit_url' => Url::fromRoute('entity.taxonomy_term.edit_form', ['taxonomy_term' => $breadcrumb_item->id()])->toString(),
+        ],
+        ['context' => 'DPL admin UX']
+    ),
+  ];
+
+  // Disable the delete button. Technically, the editor still have access to
+  // delete the content, but if they do find a way around it, then it is their
+  // own 'problem' as this is a helping functionality.
+  $form['actions']['submit']['#disabled'] = TRUE;
+}
+
+/**
+ * Alters node edit form.
+ *
+ * Altering the node edit form, and detect if the current node already exists
+ * in the content structure. If it does, we do not want the editor to be
+ * able to change it, as it will be overwritten in the save() hook - and having
+ * the field disabled, with a description is also good AX.
+ *
+ * @param array<mixed> $form
+ *   See the $form in dpl_breadcrumb_form_alter().
+ */
+function _dpl_breadcrumb_form_alter_node_form(array &$form, FormStateInterface $form_state, string $form_id): void {
   $service = DrupalTyped::service(BreadcrumbHelper::class, 'dpl_breadcrumb.breadcrumb_helper');
   $field_name = $service->getStructureFieldName();
 
@@ -154,7 +215,6 @@ function dpl_breadcrumb_form_alter(array &$form, FormStateInterface $form_state,
     $field['#default_value'] = [$breadcrumb_parent?->id()];
     $field['#description'] = t('TODO - A text that describes that this node already exists in the content structure and cannot be edited.', [], ['context' => 'DPL Breadcrumbs']);
   }
-
 }
 
 /**
@@ -189,7 +249,58 @@ function dpl_breadcrumb_node_presave(Node $node): void {
   $breadcrumb_parent = $service->getStructureParent($breadcrumb_item);
 
   $node->set($field_name, [$breadcrumb_parent?->id()]);
+}
 
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function dpl_breadcrumb_taxonomy_term_insert(TermInterface $term): void {
+  _dpl_breadcrumb_taxonomy_term_post_save($term);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function dpl_breadcrumb_taxonomy_term_update(TermInterface $term): void {
+  _dpl_breadcrumb_taxonomy_term_post_save($term);
+}
+
+/**
+ * Make sure nodes are re-saved when placed in the breadcrumb tree.
+ *
+ * This is a custom helper function, that is called using _update() and
+ * _insert() hooks above.
+ * We cannot use _presave(), as the term needs to be saved before we can
+ * do the node_presave() logic.
+ *
+ * On some node types, we have a structure field, that allows the editor to
+ * place the node as a child of an term.
+ * However, when the actual node is placed in the tree as a parent (as in, a
+ * term has been created, that links to this node), we want to take this
+ * editor control away, and automatically update the field.
+ * This happens in dpl_breadcrumb_node_presave().
+ * However, if you first set up the node with all it's content, and then go
+ * add it to the tree, no save is triggered on the node, and then it ends up
+ * with a "broken" state.
+ * This hook's task, is to run save() on nodes that have been placed in
+ * the tree.
+ */
+function _dpl_breadcrumb_taxonomy_term_post_save(TermInterface $term): void {
+  $service = DrupalTyped::service(BreadcrumbHelper::class, 'dpl_breadcrumb.breadcrumb_helper');
+
+  if ($term->bundle() !== $service->getStructureVid() || !$term->hasField('field_content')) {
+    return;
+  }
+
+  $contents = $term->get('field_content')->referencedEntities();
+
+  foreach ($contents as $content) {
+    if (!($content instanceof FieldableEntityInterface)) {
+      continue;
+    }
+
+    $content->save();
+  }
 }
 
 /**

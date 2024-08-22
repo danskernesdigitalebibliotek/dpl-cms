@@ -49,6 +49,7 @@ content:
     settings:
       timezone_override: ''
       format_type: short
+      from_to: both
       separator: '-'
     third_party_settings: {  }
     weight: 1
@@ -126,6 +127,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 11
+    region: content
+  event_relevant_ticket_manager:
+    type: boolean
+    label: visible
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 60
     region: content
   event_tags:
     type: entity_reference_label
