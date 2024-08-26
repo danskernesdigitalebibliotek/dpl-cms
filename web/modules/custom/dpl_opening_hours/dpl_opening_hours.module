@@ -53,18 +53,20 @@ void {
  *   Theme variables.
  */
 function dpl_opening_hours_preprocess_page(array &$variables): void {
-  $variables['opening_hours_clock'] = [
+  $variables['opening_hours_sidebar_large'] = [
     '#theme' => 'dpl_react_app',
-    '#name' => 'opening-hours-clock',
+    '#name' => 'opening-hours-sidebar',
     '#data' => [
-      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours']),
+      'size' => "large",
+      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours sidebar']),
       ] + DplReactAppsController::externalApiBaseUrls(),
   ];
-  $variables['opening_hours_clock_icon'] = [
+  $variables['opening_hours_sidebar_small'] = [
     '#theme' => 'dpl_react_app',
-    '#name' => 'opening-hours-clock-icon',
+    '#name' => 'opening-hours-sidebar',
     '#data' => [
-      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours']),
+      'size' => "small",
+      'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours sidebar']),
       ] + DplReactAppsController::externalApiBaseUrls(),
   ];
 }
