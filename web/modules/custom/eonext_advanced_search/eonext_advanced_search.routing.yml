@@ -1,0 +1,9 @@
+eonext.advanced_search_settings:
+  path: '/admin/config/eonext/advanced-search'
+  defaults:
+    _title: 'Advanced search settings'
+    _form: '\Drupal\eonext_advanced_search\Form\AdvancedSearchConfigForm'
+  requirements:
+    _permission: 'access eonext advanced search settings'
+  options:
+    _admin_route: TRUE

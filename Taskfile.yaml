@@ -71,3 +71,8 @@ tasks:
     - ${DRUSH_EXEC} cim -y
     - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
     - task -t Taskfile.yaml drupal:locale
+
+  qa:
+    - php vendor/bin/phpcs
+    - php vendor/bin/twig-cs-fixer lint --fix
+    - php vendor/bin/phpstan

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Module to expose advanced search enabled status.
+ */
+
+use Drupal\eonext_advanced_search\Form\AdvancedSearchConfigForm;
+
+/**
+ * Implements hook_preprocess().
+ *
+ * @see dpl_react_preprocess_dpl_react_app()
+ */
+function eonext_advanced_search_preprocess_dpl_react_app(&$variables): void {
+  if ('search-header' === $variables['name']) {
+    $advanced_search_enabled = \Drupal::service('config.factory')
+      ->get(AdvancedSearchConfigForm::CONFIG_ID)
+      ->get('advanced_search_enabled');
+    $variables['attributes']['data-advanced-search-enabled'] = json_encode(
+      (bool) $advanced_search_enabled
+    );
+  }
+}

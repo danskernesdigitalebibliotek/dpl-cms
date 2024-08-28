@@ -1,0 +1,6 @@
+services:
+  eonext_advanced_search.route_subscriber:
+    class: Drupal\eonext_advanced_search\Routing\RouteSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }
