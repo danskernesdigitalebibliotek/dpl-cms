@@ -8,15 +8,19 @@
 use Drupal\eonext_advanced_search\Form\AdvancedSearchConfigForm;
 
 /**
- * Implements hook_preprocess().
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ *   Theme hook variables array.
  *
  * @see dpl_react_preprocess_dpl_react_app()
  */
-function eonext_advanced_search_preprocess_dpl_react_app(&$variables): void {
+function eonext_advanced_search_preprocess_dpl_react_app(array &$variables): void {
   if ('search-header' === $variables['name']) {
     $advanced_search_enabled = \Drupal::service('config.factory')
       ->get(AdvancedSearchConfigForm::CONFIG_ID)
       ->get('advanced_search_enabled');
+    /* @phpstan-ignore-next-line  */
     $variables['attributes']['data-advanced-search-enabled'] = json_encode(
       (bool) $advanced_search_enabled
     );
