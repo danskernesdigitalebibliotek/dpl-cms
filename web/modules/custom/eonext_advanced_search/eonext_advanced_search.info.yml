@@ -1,0 +1,6 @@
+type: module
+name: EO Next Advanced Search
+description: Provides advanced search enable/disable functionality.
+package: EO next
+core_version_requirement: ^10
+configure: eonext.advanced_search_settings
