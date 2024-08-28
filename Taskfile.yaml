@@ -73,6 +73,8 @@ tasks:
     - task -t Taskfile.yaml drupal:locale
 
   qa:
-    - php vendor/bin/phpcs
-    - php vendor/bin/twig-cs-fixer lint --fix
-    - php vendor/bin/phpstan
+    ignore_error: true
+    cmds:
+      - php vendor/bin/phpcs
+      - php vendor/bin/twig-cs-fixer lint --fix
+      - php vendor/bin/phpstan

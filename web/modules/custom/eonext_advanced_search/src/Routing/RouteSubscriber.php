@@ -17,7 +17,7 @@ class RouteSubscriber extends RouteSubscriberBase {
   /**
    * {@inheritdoc}
    */
-  protected function alterRoutes(RouteCollection $collection) {
+  protected function alterRoutes(RouteCollection $collection): void {
     if ($route = $collection->get('dpl_react_apps.advanced_search')) {
       $advanced_search_enabled = $this
         ->configFactory
