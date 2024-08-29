@@ -59,6 +59,7 @@ function dpl_opening_hours_preprocess_page(array &$variables): void {
     '#data' => [
       'size' => "large",
       'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours sidebar']),
+      'opening-hours-sidebar-date-text' => t('Today (@toDayString)', [], ['context' => 'Opening Hours sidebar']),
       ] + DplReactAppsController::externalApiBaseUrls(),
   ];
   $variables['opening_hours_sidebar_small'] = [
@@ -67,6 +68,7 @@ function dpl_opening_hours_preprocess_page(array &$variables): void {
     '#data' => [
       'size' => "small",
       'opening-hours-text' => t('Opening hours', [], ['context' => 'Opening Hours sidebar']),
+      'opening-hours-sidebar-date-text' => t('Today (@toDayString)', [], ['context' => 'Opening Hours sidebar']),
       ] + DplReactAppsController::externalApiBaseUrls(),
   ];
 }
