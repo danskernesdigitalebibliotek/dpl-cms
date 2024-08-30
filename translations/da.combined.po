@@ -12125,10 +12125,6 @@ msgid "Collapsible"
 msgstr "Sammenklappelig"
 
 #: 
-msgid "Blind"
-msgstr "Persienne"
-
-#: 
 msgid "Speed"
 msgstr "Hastighed"
 
@@ -12209,36 +12205,16 @@ msgid "The id must include only letters, numbers, underscores and dashes."
 msgstr "Id'et skal indeholde bogstaver, tal, understregninger og bindestreger."
 
 #: 
-msgid "Fieldgroup will, as the name implies, group fields together. All fieldable entities will have the possibility to add groups to wrap their fields together. Fieldgroup comes with default HTML wrappers like vertical tabs, horizontal tabs, accordions, fieldsets or div wrappers."
-msgstr "Feltgruppe vil, som navnet antyder, gruppere felter sammen. Alle feltbare enheder vil have mulighed for at tilføje grupper for at indpakke deres felter sammen. Feltgruppe leveres med standard HTML-indpakninger som lodrette faner, vandrette faner, accordeoner, fieldsets eller div-indpakninger."
-
-#: 
-msgid "The field group project is a follow-up on the field group module in <a href=\"@linkcck\">CCK</a>. The release will only exist for Drupal 7 release and higher, so since the existence of the Fields API in core.</br>By moving field group to a separate module, this may open some new perspectives."
-msgstr "Feltgruppeprojektet er en opfølgning på feltgruppemodulet i <a href=\"@linkcck\">CCK</a>. Udgivelsen vil kun eksistere for Drupal 7-versioner og nyere, siden det eksisterer i kernen af Fiels API. Ved at flytte feltgruppen til et separat modul, kan det åbne nogle nye perspektiver."
-
-#: 
 msgid "More Information"
 msgstr "Mere Information"
-
-#: 
-msgid "For more information about this module please visit the <a href=\"@link\">module page</a>."
-msgstr "For mere information om dette modul, besøg venligst <a href=\"@link\">modulsiden</a>."
 
 #: 
 msgid "Field Group"
 msgstr "Feltgruppe"
 
 #: 
-msgid "jQuery UI Accordion not enabled"
-msgstr "jQuery UI Accordion ikke aktiveret"
-
-#: 
 msgid "If you want to use the Field Group accordion formatter, you will need to install the <a href=\":link\" target=\"_blank\">jQuery UI Accordion</a> module."
 msgstr "Hvis du ønsker at bruge Field Group accordion-formatteren, skal du installere <a href=\":link\" target=\"_blank\">jQuery UI Accordion</a> modulet."
-
-#: 
-msgid "The jQuery UI Accordion module is installed"
-msgstr "jQuery UI Accordion modulet er installeret"
 
 #: 
 msgid "The \"jquery_ui_accordion\" module has been installed."
@@ -12333,16 +12309,8 @@ msgid "This fieldgroup renders the inner content in a fieldset with the title as
 msgstr ""
 
 #: 
-msgid "Accordion Item"
-msgstr "Accordion element"
-
-#: 
 msgid "This fieldgroup renders the content in a div, part of accordion group."
 msgstr "Denne feltgruppe renderer indholdet i en div som del af en accordion-gruppe."
-
-#: 
-msgid "Accordion"
-msgstr "Accordion"
 
 #: 
 msgid "This fieldgroup renders child groups as jQuery accordion."
@@ -23371,17 +23339,17 @@ msgstr "Borchk-bruger ikke verificeret"
 #: 
 msgctxt "Global"
 msgid "The agency is not subscribed to the service. You can order the digital copy by contacting the agency."
-msgstr "Agenturet er ikke abonneret på tjenesten. Du kan bestille den digitale kopi ved at kontakte agenturet."
+msgstr "Biblioteket abonnerer ikke på tjenesten. Du kan bestille den digitale kopi ved at kontakte biblioteket."
 
 #: 
 msgctxt "Global"
 msgid "The pickup branch is not valid. You can order the digital copy by contacting the agency."
-msgstr "Afhentningsfilialen er ikke gyldig. Du kan bestille den digitale kopi ved at kontakte institutionen."
+msgstr "Afhentningsfilialen er ikke gyldig. Du kan bestille den digitale kopi ved at kontakte biblioteket."
 
 #: 
 msgctxt "Global"
 msgid "The client configuration is missing. You can order the digital copy by contacting the agency."
-msgstr "Klientkonfigurationen mangler. Du kan bestille den digitale kopi ved at kontakte agenturet."
+msgstr "Klientkonfigurationen mangler. Du kan bestille den digitale kopi ved at kontakte biblioteket."
 
 #: 
 msgctxt "Global"
@@ -23396,7 +23364,7 @@ msgstr "Fejl - kommunal agentur-ID blev ikke fundet"
 #: 
 msgctxt "Global"
 msgid "The material is not reservable. You can order the digital copy by contacting the agency."
-msgstr "Materialet kan ikke reserveres. Du kan bestille den digitale kopi ved at kontakte institutionen."
+msgstr "Materialet kan ikke reserveres. Du kan bestille den digitale kopi ved at kontakte biblioteket."
 
 #: 
 msgctxt "Global"
@@ -23406,7 +23374,7 @@ msgstr "Du er ikke logget ind. Du kan bestille en digital kopi ved at kontakte i
 #: 
 msgctxt "Global"
 msgid "The digital copy has been ordered. You will receive an email when the digital copy is ready."
-msgstr "Den digitale kopi er allerede bestilt. Du vil modtage en email, når den digitale kopi er klar."
+msgstr "Den digitale kopi er bestilt. Du vil modtage en email, når den digitale kopi er klar."
 
 #: 
 msgctxt "Global"
@@ -26054,5 +26022,216 @@ msgstr ""
 #: 
 msgctxt "password_policy.password_policy.non_admins:label"
 msgid "Non-admins"
+msgstr ""
+
+#: 
+msgid "Open link in new window/tab"
+msgstr ""
+
+#: 
+msgid "DPL Linkit with options"
+msgstr ""
+
+#: 
+msgid "DPL Link"
+msgstr ""
+
+#: 
+msgid "Add functionality to link field"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
+msgid "Relevant for ticket manager"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:description"
+msgid "If you mark this event as relevant, it means that if you use an external ticket system, some data such as ticket link, status and others may be overridden."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "<p>You are about to delete <strong>\"@title\"</strong>. This page is linked to the breadcrumb <strong>\"@breadcrumb_title\"</strong>.\n"
+"        <br>You cannot delete this content until you replace the page in the \"Content to link to\" field in <strong>\"@breadcrumb_title\"</strong>.\n"
+"        <br><strong><a href=\"@breadcrumb_edit_url\" target=\"_blank\">Edit the breadcrumb \"@breadcrumb_title\"</a></strong></p>"
+msgstr ""
+
+#: 
+msgid "Fieldgroup will, as the name implies, group fields together. All fieldable entities will have the possibility to add groups to wrap their fields together. Fieldgroup comes with default HTML wrappers like vertical tabs, horizontal tabs, fieldsets or div wrappers."
+msgstr ""
+
+#: 
+msgid "The field group project is a follow-up on the field group module in <a href=\"@link-cck\">CCK</a>. The release will only exist for Drupal 7 release and higher, so since the existence of the Fields API in core.</br>By moving field group to a separate module, this may open some new perspectives."
+msgstr ""
+
+#: 
+msgid "For more information about this module feel free to visit the <a href=\"@link\">module page</a>."
+msgstr ""
+
+#: 
+msgid "Allow HTML in label"
+msgstr ""
+
+#: 
+msgid "Allows using (XSS-filtered) HTML in the label (e.g. icons)."
+msgstr ""
+
+#: 
+msgid "Allow HTML in label: @label_as_html"
+msgstr ""
+
+#: 
+msgid "jQuery UI Accordion is deprecated"
+msgstr ""
+
+#: 
+msgid "This module is deprecated, as the Jquery UI library is EOL."
+msgstr ""
+
+#: 
+msgid "Accordion (Deprecated)"
+msgstr ""
+
+#: 
+msgid "Accordion Item (Deprecated)"
+msgstr ""
+
+#: 
+msgid "Field Group: Accordion formatter (Deprecated)"
+msgstr ""
+
+#: 
+msgid "Provides the option to render groups as accordion. This module is deprecated as Jquery UI is EOL."
+msgstr ""
+
+#: 
+msgid "Search content"
+msgstr "Søg indhold"
+
+#: 
+msgid "Search the website"
+msgstr ""
+
+#: 
+msgid "Search button"
+msgstr ""
+
+#: 
+msgctxt "dpl_search"
+msgid "Showing web results for \"@input\" (@total_results)"
+msgstr ""
+
+#: 
+msgctxt "dpl_search"
+msgid "library materials."
+msgstr ""
+
+#: 
+msgctxt "dpl_search"
+msgid "Showing web results (@total_results)"
+msgstr ""
+
+#: 
+msgctxt "Search Result"
+msgid "Switch to the results for the library content."
+msgstr "Vis i stedet resultater fra bibliotekets hjemmeside"
+
+#: 
+msgid "DPL Search"
+msgstr ""
+
+#: 
+msgid "Handling the search pages."
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.eventseries.list_teaser:label"
+msgid "List teaser"
+msgstr ""
+
+#: 
+msgctxt "search_api.index.content_events:name"
+msgid "Content + Events"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:label"
+msgid "Editorial search"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:title"
+msgid "Search"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:views_infinite_scroll:button_text"
+msgid "Showing @current_items out of @total results"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:default:display_options:filters:search_api_fulltext:expose:label"
+msgid "Fulltext search"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:page:display_title"
+msgid "Page"
 msgstr ""
 

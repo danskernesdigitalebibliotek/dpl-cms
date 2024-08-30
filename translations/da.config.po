@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-08-09 12:13+0200\n"
-"PO-Revision-Date: 2024-08-09 12:13+0200\n"
+"POT-Creation-Date: 2024-08-30 16:34+0200\n"
+"PO-Revision-Date: 2024-08-30 16:34+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6141,5 +6141,84 @@ msgctxt "field.field.user.user.field_pending_expire_sent:description"
 msgid ""
 "Whether an email notifying of a pending password expiration has been "
 "sent"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
+msgid "Relevant for ticket manager"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:description"
+msgid ""
+"If you mark this event as relevant, it means that if you use an "
+"external ticket system, some data such as ticket link, status and "
+"others may be overridden."
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:off_label"
+msgid "Off"
+msgstr ""
+
+msgctxt "core.entity_view_mode.eventseries.list_teaser:label"
+msgid "List teaser"
+msgstr ""
+
+msgctxt "views.view.editorial_search:label"
+msgid "Editorial search"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:title"
+msgid "Search"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:pager:options:views_infinite_scroll:button_text"
+msgid "Showing @current_items out of @total results"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:default:display_options:filters:search_api_fulltext:expose:label"
+msgid "Fulltext search"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:page:display_title"
+msgid "Page"
 msgstr ""
 
