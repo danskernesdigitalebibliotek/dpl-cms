@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\dpl_event\Form;
 
@@ -23,9 +23,9 @@ final class SettingsForm extends ConfigFormBase {
    * Constructor for the settings form.
    */
   public function __construct(
-      ConfigFactoryInterface $config_factory,
-      private DateFormatterInterface $dateFormatter,
-      private UnpublishSchedule $unpublishSchedule
+    ConfigFactoryInterface $config_factory,
+    private DateFormatterInterface $dateFormatter,
+    private UnpublishSchedule $unpublishSchedule,
   ) {
     parent::__construct($config_factory);
   }
@@ -60,6 +60,18 @@ final class SettingsForm extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
     $config = $this->config(self::CONFIG_NAME);
+
+    $form['price_currency'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Price Currency', [], ['context' => 'DPL event']),
+      '#description' => $this->t('The currency that is used whenever prices are displayed - both on the website, but also in the event API.', [], ['context' => 'DPL event']),
+      '#required' => TRUE,
+      '#default_value' => $config->get('price_currency') ?? 'DKK',
+      '#options' => [
+        'DKK' => $this->t('Danish kroner', [], ['context' => 'DPL event']),
+        'EUR' => $this->t('Euros', [], ['context' => 'DPL event']),
+      ],
+    ];
 
     $form['unpublish'] = [
       '#type' => 'fieldset',
@@ -105,6 +117,7 @@ final class SettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->config(self::CONFIG_NAME)
+      ->set('price_currency', $form_state->getValue('price_currency'))
       ->set('unpublish_schedule', $form_state->getValue('unpublish_schedule'))
       ->save();
     parent::submitForm($form, $form_state);

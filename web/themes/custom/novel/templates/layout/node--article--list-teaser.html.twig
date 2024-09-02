@@ -1,6 +1,6 @@
 {% set publication_date = node.created.value %}
 
-{% if node.hasField('field_publication_date') %}
+{% if node.field_publication_date.value is not empty %}
   {% set publication_date = node.field_publication_date.value|date('U') %}
 {% endif %}
 
@@ -13,6 +13,6 @@
   image: content.field_teaser_image.0,
   categories: content.field_categories,
   date: publication_date|format_date('date_short_month'),
-  description: content.field_subtitle,
+  description: content.field_teaser_text.0|default(content.field_subtitle),
   bottom: content.field_branch,
 } only %}

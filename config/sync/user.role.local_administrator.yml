@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.basic
     - filter.format.limited
+    - filter.format.underlined_title
     - media.type.document
     - media.type.image
     - media.type.video
@@ -42,6 +43,7 @@ dependencies:
     - openapi
     - openid_connect
     - paragraphs
+    - password_policy
     - path
     - recurring_events
     - redirect
@@ -185,6 +187,7 @@ permissions:
   - 'edit themes novel'
   - 'edit users by role'
   - 'manage opening hours for branches'
+  - 'manage password reset'
   - 'restful delete dpl_opening_hours_delete'
   - 'restful patch dpl_opening_hours_update'
   - 'restful post dpl_opening_hours_create'
@@ -203,6 +206,7 @@ permissions:
   - 'update media'
   - 'use text format basic'
   - 'use text format limited'
+  - 'use text format underlined_title'
   - 'view admin menu in menu list'
   - 'view all media revisions'
   - 'view all revisions'

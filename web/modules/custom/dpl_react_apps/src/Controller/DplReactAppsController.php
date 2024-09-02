@@ -31,7 +31,7 @@ class DplReactAppsController extends ControllerBase {
     protected BranchSettings $branchSettings,
     protected BranchRepositoryInterface $branchRepository,
     protected DplInstantLoanSettings $instantLoanSettings,
-    protected GeneralSettings $generalSettings
+    protected GeneralSettings $generalSettings,
   ) {}
 
   /**
@@ -112,6 +112,10 @@ class DplReactAppsController extends ControllerBase {
       'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
       'blacklisted-search-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedSearchBranches()),
       'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
+      // Dynamic values, set through preprocess.
+      'web-search-config' => json_encode([
+        'hasWebSearchResults' => FALSE,
+      ]),
 
       // Texts.
       'add-more-filters-text' => $this->t('+ more filters', [], ['context' => 'Search Result']),
@@ -142,6 +146,7 @@ class DplReactAppsController extends ControllerBase {
       'show-results-text' => $this->t('Show results', [], ['context' => 'Search Result']),
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
+      'web-search-link-text' => $this->t('Switch to the results for the library content.', [], ['context' => 'Search Result']),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -186,6 +191,7 @@ class DplReactAppsController extends ControllerBase {
       'advanced-search-filter-book-text' => $this->t('book', [], ['context' => 'advanced search']),
       'advanced-search-filter-ebook-text' => $this->t('ebook', [], ['context' => 'advanced search']),
       'advanced-search-filter-fiction-text' => $this->t('fiction', [], ['context' => 'advanced search']),
+      'advanced-search-filter-holding-status-text' => $this->t('holding', [], ['context' => 'advanced search']),
       'advanced-search-filter-literature-form-text' => $this->t('literature form', [], ['context' => 'advanced search']),
       'advanced-search-filter-material-type-text' => $this->t('material type', [], ['context' => 'advanced search']),
       'advanced-search-filter-movie-text' => $this->t('movie', [], ['context' => 'advanced search']),

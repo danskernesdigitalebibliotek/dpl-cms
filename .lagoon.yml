@@ -86,6 +86,12 @@ tasks:
             echo "Test users already exist. Skipping creation..."
           fi
         service: cli
+    - run:
+        name: Enable example content
+        command: |
+          set -e
+          drush en -y dpl_example_content
+        service: cli
 
 environments:
   main:
@@ -107,7 +113,7 @@ environments:
         schedule: "M/30 * * * *"
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
-  pr-581:
+  pr-1219:
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"

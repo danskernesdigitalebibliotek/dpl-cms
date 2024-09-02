@@ -44,7 +44,7 @@ use JMS\Serializer\Annotation\SerializedName;
 class EventsGET200ResponseInner 
 {
         /**
-     * A unique identifer for the event.
+     * A unique identifier for the event.
      *
      * @var string|null
      * @SerializedName("uuid")
@@ -76,7 +76,7 @@ class EventsGET200ResponseInner
     protected ?string $description = null;
 
     /**
-     * An absolute url end users should use to view the event at the website.
+     * An absolute URL end users should use to view the event at the website.
      *
      * @var string|null
      * @SerializedName("url")
@@ -107,6 +107,16 @@ class EventsGET200ResponseInner
      * @Type("DateTime")
      */
     protected ?\DateTime $updatedAt = null;
+
+    /**
+     * Whether the event is marked as relevant for ticket management systems
+     *
+     * @var bool|null
+     * @SerializedName("ticket_manager_relevance")
+     * @Assert\Type("bool")
+     * @Type("bool")
+     */
+    protected ?bool $ticketManagerRelevance = null;
 
     /**
      * @var EventsGET200ResponseInnerImage|null
@@ -231,6 +241,7 @@ class EventsGET200ResponseInner
             $this->url = array_key_exists('url', $data) ? $data['url'] : $this->url;
             $this->createdAt = array_key_exists('createdAt', $data) ? $data['createdAt'] : $this->createdAt;
             $this->updatedAt = array_key_exists('updatedAt', $data) ? $data['updatedAt'] : $this->updatedAt;
+            $this->ticketManagerRelevance = array_key_exists('ticketManagerRelevance', $data) ? $data['ticketManagerRelevance'] : $this->ticketManagerRelevance;
             $this->image = array_key_exists('image', $data) ? $data['image'] : $this->image;
             $this->state = array_key_exists('state', $data) ? $data['state'] : $this->state;
             $this->dateTime = array_key_exists('dateTime', $data) ? $data['dateTime'] : $this->dateTime;
@@ -260,7 +271,7 @@ class EventsGET200ResponseInner
     /**
      * Sets uuid.
      *
-     * @param string|null $uuid  A unique identifer for the event.
+     * @param string|null $uuid  A unique identifier for the event.
      *
      * @return $this
      */
@@ -338,7 +349,7 @@ class EventsGET200ResponseInner
     /**
      * Sets url.
      *
-     * @param string|null $url  An absolute url end users should use to view the event at the website.
+     * @param string|null $url  An absolute URL end users should use to view the event at the website.
      *
      * @return $this
      */
@@ -397,6 +408,32 @@ class EventsGET200ResponseInner
     public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Gets ticketManagerRelevance.
+     *
+     * @return bool|null
+     */
+    public function isTicketManagerRelevance(): ?bool
+    {
+        return $this->ticketManagerRelevance;
+    }
+
+
+
+    /**
+     * Sets ticketManagerRelevance.
+     *
+     * @param bool|null $ticketManagerRelevance  Whether the event is marked as relevant for ticket management systems
+     *
+     * @return $this
+     */
+    public function setTicketManagerRelevance(?bool $ticketManagerRelevance = null): self
+    {
+        $this->ticketManagerRelevance = $ticketManagerRelevance;
 
         return $this;
     }

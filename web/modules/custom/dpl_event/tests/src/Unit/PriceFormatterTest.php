@@ -11,6 +11,17 @@ use Drupal\Tests\UnitTestCase;
 class PriceFormatterTest extends UnitTestCase {
 
   /**
+   * The relevant config, used by the PriceFormatter.
+   *
+   * @var array[]
+   */
+  protected array $mockConfig = [
+    'dpl_event.settings' => [
+      'price_currency' => 'EUR',
+    ],
+  ];
+
+  /**
    * Provides examples of price strings and how they should be formatted.
    *
    * @return array<array{string, string}>
@@ -22,14 +33,14 @@ class PriceFormatterTest extends UnitTestCase {
           ["0", "Free"],
           ["0.0", "Free"],
           ["0.00", "Free"],
-          ["10.0", "10 kr."],
-          ["10.00", "10 kr."],
-          ["10.01", "10,01 kr."],
-          ["10.1", "10,10 kr."],
-          ["10.100", "10,10 kr."],
+          ["10.0", "€ 10"],
+          ["10.00", "€ 10"],
+          ["10.01", "€ 10,01"],
+          ["10.1", "€ 10,10"],
+          ["10.100", "€ 10,10"],
           // We are currently rounding any fractional digits beyond 2.
-          ["10.101", "10,10 kr."],
-          ["10.109", "10,11 kr."],
+          ["10.101", "€ 10,10"],
+          ["10.109", "€ 10,11"],
     ];
   }
 
@@ -39,10 +50,10 @@ class PriceFormatterTest extends UnitTestCase {
    * @dataProvider priceProvider
    */
   public function testPriceFormatting(
-        string $price_string,
-        string $formatted_price
-    ): void {
-    $priceFormatter = new PriceFormatter($this->getStringTranslationStub());
+    string $price_string,
+    string $formatted_price,
+  ): void {
+    $priceFormatter = new PriceFormatter($this->getStringTranslationStub(), $this->getConfigFactoryStub($this->mockConfig));
     $this->assertSame(
           $formatted_price,
           $priceFormatter->formatPrice($price_string)
@@ -78,10 +89,10 @@ class PriceFormatterTest extends UnitTestCase {
    * @dataProvider rawPriceProvider
    */
   public function testRawPriceFormatting(
-        string $raw_price,
-        string $expected
-    ): void {
-    $priceFormatter = new PriceFormatter($this->getStringTranslationStub());
+    string $raw_price,
+    string $expected,
+  ): void {
+    $priceFormatter = new PriceFormatter($this->getStringTranslationStub(), $this->getConfigFactoryStub($this->mockConfig));
     $this->assertSame(
           $expected,
           $priceFormatter->formatRawPrice($raw_price)
@@ -101,18 +112,18 @@ class PriceFormatterTest extends UnitTestCase {
           // Only free prices.
           [[0], "Free"],
           // Free and a single price.
-          [[0, 20], "Free - 20 kr."],
+          [[0, 20], "Free - € 20"],
           // Range of prices.
-          [[20, 30], "20 - 30 kr."],
+          [[20, 30], "€ 20 - 30"],
           // Single price.
-          [[20], "20 kr."],
+          [[20], "€ 20"],
           // Multiple prices.
-          [[10, 20, 30], "10 - 30 kr."],
+          [[10, 20, 30], "€ 10 - 30"],
           // Free with multiple prices.
-          [[0, 10, 20], "Free - 20 kr."],
+          [[0, 10, 20], "Free - € 20"],
           // Larger range of prices.
-          [[50, 100, 150], "50 - 150 kr."],
-          [[0, 1000], "Free - 1000 kr."],
+          [[50, 100, 150], "€ 50 - 150"],
+          [[0, 1000], "Free - € 1000"],
     ];
   }
 
@@ -128,9 +139,9 @@ class PriceFormatterTest extends UnitTestCase {
    */
   public function testPriceRangeFormatting(
     array $prices,
-    string $expected
+    string $expected,
   ): void {
-    $priceFormatter = new PriceFormatter($this->getStringTranslationStub());
+    $priceFormatter = new PriceFormatter($this->getStringTranslationStub(), $this->getConfigFactoryStub($this->mockConfig));
     $this->assertSame(
       $expected,
       $priceFormatter->formatPriceRange($prices)

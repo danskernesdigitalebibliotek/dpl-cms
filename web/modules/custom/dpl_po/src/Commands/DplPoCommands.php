@@ -3,12 +3,14 @@
 namespace Drupal\dpl_po\Commands;
 
 use Drupal\Component\Gettext\PoHeader;
+use Drupal\Component\Gettext\PoItem;
 use Drupal\Component\Gettext\PoStreamReader;
 use Drupal\Component\Gettext\PoStreamWriter;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\File\Exception\FileException;
 use Drupal\Core\File\Exception\InvalidStreamWrapperException;
+use Drupal\Core\File\FileExists;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\dpl_po\Services\CtpConfigManager;
@@ -16,6 +18,7 @@ use Drush\Commands\DrushCommands;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\TransferException;
 use function Safe\preg_match;
+use function Safe\sprintf;
 
 /**
  * A Drush commandfile.
@@ -23,6 +26,9 @@ use function Safe\preg_match;
 class DplPoCommands extends DrushCommands {
   use StringTranslationTrait;
 
+  // This context pattern is used to filter the configuration strings in or out.
+  // Since the contexts are in the form of 'component.key...' we can use this
+  // pattern.
   protected const CONFIG_PO_FILE_CONTEXT_PATTERN = '/^([a-z]+\.)+/';
 
   /**
@@ -69,8 +75,8 @@ class DplPoCommands extends DrushCommands {
     $this->validateDestination($destination);
 
     try {
-      $file = $this->extractTranslationsIntoFile(self::CONFIG_PO_FILE_CONTEXT_PATTERN, $source);
-      $destination = $this->fileSystem->move($file, $destination, FileSystemInterface::EXISTS_REPLACE);
+      $file = $this->extractTranslationsIntoFile(self::CONFIG_PO_FILE_CONTEXT_PATTERN, $source, 'include');
+      $destination = $this->fileSystem->move($file, $destination, FileExists::Replace);
     }
     catch (\Exception $e) {
       $this->io()->error($this->t(
@@ -87,6 +93,25 @@ class DplPoCommands extends DrushCommands {
       [
         'context' => 'translation handling',
       ]));
+  }
+
+  /**
+   * Ignore various contexts.
+   *
+   * @todo This is a quick way ignore some contexts we do not want to end up in the PO file.
+   * It would be better to have a more flexible way to ignore
+   * contexts. For now we know that all webform contexts should be ignored.
+   */
+  protected static function ignoreContexts(PoItem $item): bool {
+    $ignoredContexts = [
+      '^webform\..+',
+    ];
+    foreach ($ignoredContexts as $context) {
+      if (preg_match(sprintf('/%s/', $context), $item->getContext())) {
+        return TRUE;
+      }
+    }
+    return FALSE;
   }
 
   /**
@@ -110,7 +135,7 @@ class DplPoCommands extends DrushCommands {
 
     try {
       $file = $this->extractTranslationsIntoFile(self::CONFIG_PO_FILE_CONTEXT_PATTERN, $source, 'exclude');
-      $destination = $this->fileSystem->move($file, $destination, FileSystemInterface::EXISTS_REPLACE);
+      $destination = $this->fileSystem->move($file, $destination, FileExists::Replace);
     }
     catch (\Exception $e) {
       $this->io()->error($this->t(
@@ -236,7 +261,7 @@ class DplPoCommands extends DrushCommands {
       return;
     }
 
-    if ($destination = $this->fileSystem->move($filepath, $import_po_file, FileSystemInterface::EXISTS_REPLACE)) {
+    if ($destination = $this->fileSystem->move($filepath, $import_po_file, FileExists::Replace)) {
       $this->importConfigPoFileBatch($destination);
       $this->io()->success($this->t(
         'Config translations were imported from: @url',
@@ -265,7 +290,7 @@ class DplPoCommands extends DrushCommands {
 
     try {
       $response = $this->httpClient->request('GET', $source);
-      $result_path = $this->fileSystem->saveData($response->getBody(), $destination, FileSystemInterface::EXISTS_REPLACE);
+      $result_path = $this->fileSystem->saveData($response->getBody(), $destination, FileExists::Replace);
     }
     catch (TransferException $e) {
       $this->io()->error($this->t(
@@ -323,6 +348,11 @@ class DplPoCommands extends DrushCommands {
 
       $writer->open();
       foreach ($items as $item) {
+        if (self::ignoreContexts($item)) {
+          $this->io()->info('Skipping item with context: ' . $item->getContext());
+          continue;
+        }
+
         $writer->writeItem($item);
       }
       $writer->close();
@@ -336,7 +366,7 @@ class DplPoCommands extends DrushCommands {
           ]));
         return;
       }
-      if ($destination = $this->fileSystem->move($tmp_filename, $destination, FileSystemInterface::EXISTS_REPLACE)) {
+      if ($destination = $this->fileSystem->move($tmp_filename, $destination, FileExists::Replace)) {
         $this->io()->success($this->t(
           'File created on: @destination',
           ['@destination' => $destination],
@@ -420,6 +450,11 @@ class DplPoCommands extends DrushCommands {
     $writer->open();
 
     while ($item = $reader->readItem()) {
+      if (self::ignoreContexts($item)) {
+        $this->io()->info('Skipping item with context: ' . $item->getContext());
+        continue;
+      }
+
       if ($mode === 'include' && preg_match($pattern, $item->getContext())) {
         $writer->writeItem($item);
       }
