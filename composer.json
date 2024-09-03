@@ -58,7 +58,7 @@
                 "type": "drupal-library",
                 "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature%2Ffind-on-shelf-changes/dist-feature-find-on-shelf-changes.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature/find-on-shelf-changes/dist-feature-find-on-shelf-changes.zip",
                     "type": "zip"
                 }
             }

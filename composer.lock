@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c16be9ac0f94857478e8e43a5464a4c0",
+    "content-hash": "df0b8917833902fe913d50676859ae9a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1169,7 +1169,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature%2Ffind-on-shelf-changes/dist-feature-find-on-shelf-changes.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-feature/find-on-shelf-changes/dist-feature-find-on-shelf-changes.zip"
             },
             "type": "drupal-library"
         },
