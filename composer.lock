@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "148432ecd280b58c756f149b96f2a7ab",
+    "content-hash": "c0e8c531feb3b9f3142bdbc066d4fdff",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,10 +1166,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.36.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.36.0/dist-2024-36-0-b82b94df2d6d6d798fa5c695a2622133b60cd16d.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFFORM-66-arrangementsliste-fritekst-sogning/dist-ddfform-66-arrangementsliste-fritekst-sogning.zip"
             },
             "type": "drupal-library"
         },
@@ -19070,6 +19070,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
