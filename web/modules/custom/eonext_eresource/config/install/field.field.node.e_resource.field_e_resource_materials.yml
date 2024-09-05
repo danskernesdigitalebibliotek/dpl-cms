@@ -1,0 +1,117 @@
+uuid: 7ef3aa60-eb04-46c7-8979-462375824094
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_resource_materials
+    - node.type.e_resource
+    - paragraphs.paragraphs_type.material_grid_automatic
+    - paragraphs.paragraphs_type.material_grid_manual
+  module:
+    - entity_reference_revisions
+id: node.e_resource.field_e_resource_materials
+field_name: field_e_resource_materials
+entity_type: node
+bundle: e_resource
+label: Materials
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      material_grid_automatic: material_grid_automatic
+      material_grid_manual: material_grid_manual
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: false
+      banner:
+        weight: 31
+        enabled: false
+      breadcrumb_children:
+        weight: 32
+        enabled: false
+      campaign_rule:
+        weight: 33
+        enabled: false
+      card_grid_automatic:
+        weight: 34
+        enabled: false
+      card_grid_manual:
+        weight: 35
+        enabled: false
+      content_slider:
+        weight: 36
+        enabled: false
+      content_slider_automatic:
+        weight: 37
+        enabled: false
+      event_ticket_category:
+        weight: 38
+        enabled: false
+      files:
+        weight: 39
+        enabled: false
+      filtered_event_list:
+        weight: 40
+        enabled: false
+      hero:
+        weight: 41
+        enabled: false
+      language_selector:
+        weight: 42
+        enabled: false
+      links:
+        weight: 43
+        enabled: false
+      manual_event_list:
+        weight: 44
+        enabled: false
+      material_grid_automatic:
+        weight: 45
+        enabled: true
+      material_grid_manual:
+        weight: 46
+        enabled: true
+      medias:
+        weight: 47
+        enabled: false
+      nav_grid_manual:
+        weight: 48
+        enabled: false
+      nav_spots_manual:
+        weight: 49
+        enabled: false
+      opening_hours:
+        weight: 50
+        enabled: false
+      recommendation:
+        weight: 51
+        enabled: false
+      simple_links:
+        weight: 52
+        enabled: false
+      text_body:
+        weight: 53
+        enabled: false
+      user_registration_item:
+        weight: 54
+        enabled: false
+      user_registration_linklist:
+        weight: 55
+        enabled: false
+      user_registration_section:
+        weight: 56
+        enabled: false
+      video:
+        weight: 57
+        enabled: false
+      webform:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions
