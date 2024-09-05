@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "148432ecd280b58c756f149b96f2a7ab",
+    "content-hash": "327aac3b14fb3ce000c403c0b1712773",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.36.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.36.0/dist-2024-36-0-980a9ceb8b46195dfe6633b6e66a1f0c4167f4ec.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-43-analyse-af-hvad-der-gik-galt-i-de-intelligente-facetter-da-dbc-rullede-deres-change-ud/dist-ddfbra-43-analyse-af-hvad-der-gik-galt-i-de-intelligente-facetter-da-dbc-rullede-deres-change-ud.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -19070,6 +19070,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
