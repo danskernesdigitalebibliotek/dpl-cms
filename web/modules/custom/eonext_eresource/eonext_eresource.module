@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ * E-Resource logic.
+ */
+
+/**
+ * Implements hook_views_data_alter().
+ *
+ * @param array<mixed> $data
+ *   Existing implementations.
+ */
+function eonext_eresource_views_data_alter(array &$data): void {
+  $data['node_field_data']['eresource_az_index'] = [
+    'group' => 'EO Next',
+    'title' => t('E-Resource alphabetical index'),
+    'filter' => [
+      'title' => t('Alphabetical index'),
+      'help' => t('Expose alphabetical index to filter E-Resource content by first letter in title.'),
+      'field' => 'title',
+      'id' => 'eresource_az_index',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme().
+ */
+function eonext_eresource_theme(): array {
+  return [
+    'taxonomy_term__e_resource_category' => [
+      'render element' => 'element',
+      'base hook' => 'taxonomy_term',
+    ],
+    'node__e_resource__teaser' => [
+      'render element' => 'element',
+      'base hook' => 'node',
+    ],
+    'node__e_resource__full' => [
+      'render element' => 'element',
+      'base hook' => 'node',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function eonext_eresource_preprocess_taxonomy_term(array &$variables): void {
+  $vid = $variables['term']->get('vid')->entity->id();
+  if ('e_resource_category' !== $vid) {
+    return;
+  }
+
+  $variables['attributes']['class'][] = 'term--type-' . $vid;
+  $variables['attributes']['class'][] = 'term--view-mode-' . $variables['view_mode'];
+
+  $variables['#attached']['library'][] = 'eonext_eresource/core';
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function eonext_eresource_preprocess_node(array &$variables): void {
+  if ('e_resource' !== $variables['node']->bundle()) {
+    return;
+  }
+
+  $variables['attributes']['class'][] = 'node--type-' . $variables['node']->bundle();
+  $variables['attributes']['class'][] = 'node--view-mode-' . $variables['view_mode'];
+
+  $variables['display_submitted'] = FALSE;
+}

@@ -18992,7 +18992,8 @@
         "drupal/openapi_rest": 5,
         "drupal/potion": 20,
         "drupal/recurring_events": 5,
-        "inleadmedia/dpl-design-system": 20
+        "inleadmedia/dpl-design-system": 20,
+        "inleadmedia/dpl-react": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
