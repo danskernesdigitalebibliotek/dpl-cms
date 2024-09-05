@@ -7,12 +7,12 @@ dependencies:
 id: e_resource_terms_path
 label: 'E-resource terms path'
 type: 'canonical_entities:taxonomy_term'
-pattern: 'e-material/category/[term:tid]'
+pattern: 'e-material/category/[term:name]'
 selection_criteria:
-  a834a2e8-6fc9-4cb5-be44-c7a23733d773:
+  c0535ddc-ec51-4a15-b40d-4ca0272f337b:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: a834a2e8-6fc9-4cb5-be44-c7a23733d773
+    uuid: c0535ddc-ec51-4a15-b40d-4ca0272f337b
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
