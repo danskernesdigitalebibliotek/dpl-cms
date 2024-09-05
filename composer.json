@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2024.35.0",
+                "version": "2024.36.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.35.0/dist-2024-35-0-51a788b9ad03847b1f42b0006322e88e24968b90.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.36.0/dist-2024-36-0-b82b94df2d6d6d798fa5c695a2622133b60cd16d.zip",
                     "type": "zip"
                 }
             }
@@ -274,6 +274,9 @@
                 "[web-root]/.eslintrc.json": false,
                 "[project-root]/.gitattributes": {
                     "append": "assets/.gitattributes"
+                },
+                "[web-root]/robots.txt": {
+                    "append": "assets/robots.txt"
                 }
             },
             "gitignore": false,
