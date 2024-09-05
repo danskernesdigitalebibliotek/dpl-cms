@@ -1,0 +1,19 @@
+uuid: 94d50985-e028-4068-b35a-c745bc57e853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_resource_lead
+    - node.type.e_resource
+id: node.e_resource.field_e_resource_lead
+field_name: field_e_resource_lead
+entity_type: node
+bundle: e_resource
+label: Lead
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

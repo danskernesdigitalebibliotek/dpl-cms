@@ -1,0 +1,29 @@
+uuid: 93419858-8bb2-46a0-8f52-0ceec8d42cc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_resource_category
+    - node.type.e_resource
+    - taxonomy.vocabulary.e_resource_category
+id: node.e_resource.field_e_resource_category
+field_name: field_e_resource_category
+entity_type: node
+bundle: e_resource
+label: Category
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      e_resource_category: e_resource_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

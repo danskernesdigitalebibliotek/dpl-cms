@@ -1,0 +1,29 @@
+uuid: 064ffc72-1e96-4343-a391-7917443b3984
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_resource_tags
+    - node.type.e_resource
+    - taxonomy.vocabulary.tags
+id: node.e_resource.field_e_resource_tags
+field_name: field_e_resource_tags
+entity_type: node
+bundle: e_resource
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

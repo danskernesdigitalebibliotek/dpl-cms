@@ -1,0 +1,11 @@
+uuid: eb557dac-647d-45bb-93d7-2d0e0196a1e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.e_resource_category
+id: taxonomy_term.e_resource_category
+target_entity_type_id: taxonomy_term
+target_bundle: e_resource_category
+default_langcode: site_default
+language_alterable: false

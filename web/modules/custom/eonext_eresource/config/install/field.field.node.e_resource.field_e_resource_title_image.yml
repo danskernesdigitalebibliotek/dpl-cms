@@ -1,0 +1,29 @@
+uuid: 326dd695-7283-40df-a1c8-373bc446d6a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_resource_title_image
+    - media.type.image
+    - node.type.e_resource
+id: node.e_resource.field_e_resource_title_image
+field_name: field_e_resource_title_image
+entity_type: node
+bundle: e_resource
+label: 'Title image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
