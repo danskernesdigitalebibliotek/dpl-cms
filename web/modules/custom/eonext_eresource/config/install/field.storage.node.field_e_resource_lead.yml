@@ -1,0 +1,19 @@
+uuid: 80d13062-378c-4ef5-a1dd-63d73a59b9ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_e_resource_lead
+field_name: field_e_resource_lead
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

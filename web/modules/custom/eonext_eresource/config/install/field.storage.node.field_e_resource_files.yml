@@ -1,0 +1,23 @@
+uuid: 2048288f-d2e4-4749-a0d3-616c8af9e6eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_e_resource_files
+field_name: field_e_resource_files
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

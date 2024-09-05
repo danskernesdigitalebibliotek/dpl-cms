@@ -1,0 +1,20 @@
+uuid: 6299810d-ff96-48e8-b5f8-031c47f5ecee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_e_resource_category
+field_name: field_e_resource_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

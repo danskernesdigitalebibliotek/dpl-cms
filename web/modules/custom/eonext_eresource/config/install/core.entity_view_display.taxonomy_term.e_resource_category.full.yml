@@ -1,0 +1,82 @@
+uuid: 45b7282b-a74e-4409-ada9-145f8dd16ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.e_resource_category.layout_builder__layout
+    - taxonomy.vocabulary.e_resource_category
+    - views.view.e_resource_list
+  module:
+    - eonext_eresource
+    - layout_builder
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          328df998-d00f-4819-9201-2a00cccb8f3c:
+            uuid: 328df998-d00f-4819-9201-2a00cccb8f3c
+            region: second
+            configuration:
+              id: 'views_block:e_resource_list-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                field_e_resource_category_target_id: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          f464e14c-cd3c-4804-8af0-35e70dacca63:
+            uuid: f464e14c-cd3c-4804-8af0-35e70dacca63
+            region: first
+            configuration:
+              id: eonext_eresource_category_filter_block
+              label: 'E-resource categories'
+              label_display: '0'
+              provider: eonext_eresource
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          67592ecf-a227-4eb2-8e87-18975f524d78:
+            uuid: 67592ecf-a227-4eb2-8e87-18975f524d78
+            region: second
+            configuration:
+              id: 'views_block:e_resource_list-eresource_category'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping:
+                field_e_resource_category_target_id: layout_builder.entity
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.e_resource_category.full
+targetEntityType: taxonomy_term
+bundle: e_resource_category
+mode: full
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: 05eaf409-4eb8-4a27-a364-8ad86b607f6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: e_resource_terms_path
+label: 'E-resource terms path'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'e-material/category/[term:name]'
+selection_criteria:
+  c0535ddc-ec51-4a15-b40d-4ca0272f337b:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: c0535ddc-ec51-4a15-b40d-4ca0272f337b
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      e_resource_category: e_resource_category
+selection_logic: and
+weight: -5
+relationships: {  }

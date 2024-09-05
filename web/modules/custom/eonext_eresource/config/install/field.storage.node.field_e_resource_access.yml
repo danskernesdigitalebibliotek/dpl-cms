@@ -1,0 +1,20 @@
+uuid: 3fe9eda2-0006-4c68-bd39-930713809a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_e_resource_access
+field_name: field_e_resource_access
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

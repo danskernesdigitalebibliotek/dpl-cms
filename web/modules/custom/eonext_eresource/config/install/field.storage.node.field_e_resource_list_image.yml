@@ -1,0 +1,20 @@
+uuid: 424daf1f-429e-4691-b302-bc44bd9121ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_e_resource_list_image
+field_name: field_e_resource_list_image
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

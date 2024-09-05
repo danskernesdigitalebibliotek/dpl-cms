@@ -1,0 +1,14 @@
+.term--type-e_resource_category {
+  max-width: 1156px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 24px auto;
+}
+
+.view--e-resource .e-resource_index-filter .fieldset-wrapper > div {
+  display: flex;
+}

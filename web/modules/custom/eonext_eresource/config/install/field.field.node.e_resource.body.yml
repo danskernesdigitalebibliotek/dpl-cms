@@ -1,0 +1,26 @@
+uuid: 9932f4c5-8489-491a-a9f8-2326530c06a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.limited
+    - node.type.e_resource
+  module:
+    - text
+id: node.e_resource.body
+field_name: body
+entity_type: node
+bundle: e_resource
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - limited
+field_type: text_with_summary

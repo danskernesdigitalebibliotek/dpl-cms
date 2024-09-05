@@ -1,0 +1,11 @@
+uuid: 639dd78f-1471-4031-afbe-2042de4fe061
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.e_resource
+id: node.e_resource
+target_entity_type_id: node
+target_bundle: e_resource
+default_langcode: site_default
+language_alterable: true

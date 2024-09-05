@@ -1,0 +1,15 @@
+uuid: d7072541-7969-4f65-b2f5-f52b19a6ca5c
+langcode: en
+status: true
+dependencies: {  }
+name: e_resource_list
+label: 'E-resource list'
+effects:
+  6a25fcd7-a1ec-4ad7-9793-72ee1ef55520:
+    uuid: 6a25fcd7-a1ec-4ad7-9793-72ee1ef55520
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 112
+      anchor: center-center

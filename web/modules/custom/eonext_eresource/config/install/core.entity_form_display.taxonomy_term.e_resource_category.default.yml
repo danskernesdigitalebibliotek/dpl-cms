@@ -1,0 +1,55 @@
+uuid: fbc23fe4-0eb9-48ce-ad60-003debefeb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.e_resource_category.layout_builder__layout
+    - taxonomy.vocabulary.e_resource_category
+  module:
+    - path
+    - text
+id: taxonomy_term.e_resource_category.default
+targetEntityType: taxonomy_term
+bundle: e_resource_category
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true
+  publish_on: true
+  unpublish_on: true
