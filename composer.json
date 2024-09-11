@@ -39,11 +39,11 @@
         {
             "type": "package",
             "package": {
-                "name": "inleadmedia/dpl-react",
-                "version": "0.0.0-dev",
+                "name": "danskernesdigitalebibliotek/dpl-react",
+                "version": "2024.36.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/inleadmedia/dpl-react/releases/download/branch-development/dist-development.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.36.0/dist-2024-36-0-980a9ceb8b46195dfe6633b6e66a1f0c4167f4ec.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -54,11 +54,11 @@
         {
             "type": "package",
             "package": {
-                "name": "inleadmedia/dpl-design-system",
+                "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "0.0.0-dev",
+                "version": "2024.36.0",
                 "dist": {
-                    "url": "https://github.com/inleadmedia/dpl-design-system/releases/download/branch-development/dist-development.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.36.0/dist-2024-36-0-b82b94df2d6d6d798fa5c695a2622133b60cd16d.zip",
                     "type": "zip"
                 }
             }
@@ -168,8 +168,8 @@
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/webform": "^6.2",
         "drush/drush": "^12",
-        "inleadmedia/dpl-design-system": "0.0.0-dev",
-        "inleadmedia/dpl-react": "0.0.0-dev",
+        "danskernesdigitalebibliotek/dpl-design-system": "2024.36.0",
+        "danskernesdigitalebibliotek/dpl-react": "2024.36.0",
         "mnsami/composer-custom-directory-installer": "^2.0",
         "myclabs/php-enum": "^1.8",
         "npm-asset/select2": "^4.0",
@@ -228,7 +228,7 @@
         ],
         "installer-paths": {
             "web/themes/custom/novel/assets/{$name}": [
-                "inleadmedia/dpl-design-system"
+                "danskernesdigitalebibliotek/dpl-design-system"
             ],
             "web/core": [
                 "type:drupal-core"

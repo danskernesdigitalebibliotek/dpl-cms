@@ -39,7 +39,7 @@ tasks:
     cmds:
       - cp -n .env.example .env || true
       - composer install --no-cache
-      - composer reinstall inleadmedia/dpl-design-system inleadmedia/dpl-react --no-cache
+      - composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
       - composer drupal:scaffold
       - $(cd dev-scripts/dpl-react; composer install --no-cache)
   drupal:locale:
@@ -69,8 +69,8 @@ tasks:
     - ${DRUSH_EXEC} en varnish_purger -y
     - ${DRUSH_EXEC} updb -y
     - ${DRUSH_EXEC} cim -y
-    - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
     - task -t Taskfile.yaml drupal:locale
+    - ${DRUSH_EXEC} pm-uninstall varnish_purger -y
 
   qa:
     ignore_error: true
