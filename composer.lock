@@ -8744,20 +8744,20 @@
             "time": "2023-03-12T18:39:52+00:00"
         },
         {
-            "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.36.0",
+            "name": "inleadmedia/dpl-design-system",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.36.0/dist-2024-36-0-b82b94df2d6d6d798fa5c695a2622133b60cd16d.zip"
+                "url": "https://github.com/inleadmedia/dpl-design-system/releases/download/branch-develop/dist-develop.zip"
             },
             "type": "drupal-library"
         },
         {
-            "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.36.0",
+            "name": "inleadmedia/dpl-react",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.36.0/dist-2024-36-0-980a9ceb8b46195dfe6633b6e66a1f0c4167f4ec.zip"
+                "url": "https://github.com/inleadmedia/dpl-react/releases/download/branch-develop/dist-develop.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -19007,8 +19007,8 @@
         "drupal/openapi_rest": 5,
         "drupal/potion": 20,
         "drupal/recurring_events": 5,
-        "danskernesdigitalebibliotek/dpl-design-system": 20,
-        "danskernesdigitalebibliotek/dpl-react": 20
+        "inleadmedia/dpl-design-system": 20,
+        "inleadmedia/dpl-react": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
