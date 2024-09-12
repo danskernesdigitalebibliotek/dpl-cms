@@ -7445,11 +7445,6 @@ msgid "Page"
 msgstr "Side"
 
 #: 
-msgctxt "views.view.events:display:related:display_title"
-msgid "Related events"
-msgstr "Relaterede arrangementer"
-
-#: 
 msgctxt "views.view.files:label"
 msgid "Files"
 msgstr "Filer"
@@ -14078,24 +14073,8 @@ msgid "Access %tag in %group"
 msgstr "Adgang %tag i %group"
 
 #: 
-msgid "Hello, world!"
-msgstr "Hej, verden!"
-
-#: 
 msgid "Metatag defaults"
 msgstr "Metatag standardindstillinger"
-
-#: 
-msgid "Save translation"
-msgstr "Gem oversættelse"
-
-#: 
-msgid "Save content type"
-msgstr "Gem indholdstype"
-
-#: 
-msgid "<p>Hello world!</p>"
-msgstr "<p>Hej verden!</p>"
 
 #: 
 msgid "Support module for testing handling of a custom route."
@@ -26043,12 +26022,12 @@ msgstr ""
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
 msgid "Relevant for ticket manager"
-msgstr ""
+msgstr "Relevant for billetsystem"
 
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:description"
 msgid "If you mark this event as relevant, it means that if you use an external ticket system, some data such as ticket link, status and others may be overridden."
-msgstr ""
+msgstr "Hvis du slår denne til som relevant, så kan data som billetlink, status og andet blive overskrevet."
 
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
@@ -26130,22 +26109,22 @@ msgstr ""
 #: 
 msgctxt "dpl_search"
 msgid "Showing web results for \"@input\" (@total_results)"
-msgstr ""
+msgstr "Viser hjemmesidens indhold for \"@input\" (@total_results)"
 
 #: 
 msgctxt "dpl_search"
 msgid "library materials."
-msgstr ""
+msgstr "bibliotekets materialer."
 
 #: 
 msgctxt "dpl_search"
 msgid "Showing web results (@total_results)"
-msgstr ""
+msgstr "Viser hjemmesidens indhold for (@total_results)"
 
 #: 
 msgctxt "Search Result"
 msgid "Switch to the results for the library content."
-msgstr "Vis i stedet resultater fra bibliotekets hjemmeside"
+msgstr "Vis i stedet resultater fra bibliotekets hjemmeside for"
 
 #: 
 msgid "DPL Search"
@@ -26233,5 +26212,20 @@ msgstr ""
 #: 
 msgctxt "views.view.editorial_search:display:page:display_title"
 msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Internal error"
+msgstr ""
+
+#: 
+msgctxt "dpl_search"
+msgid "Switch to results for the"
+msgstr "Vis i stedet resultater fra"
+
+#: 
+msgctxt "advanced search"
+msgid "remove row @inputNumber"
 msgstr ""
 
