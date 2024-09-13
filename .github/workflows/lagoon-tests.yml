@@ -1,0 +1,16 @@
+---
+name: "Tests of deployment"
+
+on:
+  deployment_status
+
+# @todo - this action does nothing useful right now, but it is to show that
+# the site URL is available as part of deployment_status.
+jobs:
+  tests:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$URL"
+        env:
+          URL: ${{ github.event.deployment_status.target_url }}
