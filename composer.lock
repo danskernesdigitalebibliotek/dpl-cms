@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "869386f3928d16c6e62464d75d56b6cc",
+    "content-hash": "562b41fa91a91c61fbe68e9c80ee07ac",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.37.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.37.0/dist-2024-37-0-f2db689d6703c683823d449e282f7f51809702f4.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-48-materialetype-udstiller-vaerdier-fra-work-types-det-skal-vaere-material-types-general/dist-ddfbra-48-materialetype-udstiller-vaerdier-fra-work-types-det-skal-vaere-material-types-general.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -19070,6 +19070,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
