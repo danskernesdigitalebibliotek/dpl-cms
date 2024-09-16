@@ -38,6 +38,7 @@ tasks:
     desc: Install/update composer dependencies
     cmds:
       - cp -n .env.example .env || true
+      - rm web/libraries/dpl-react -rf
       - composer install --no-cache
       - composer reinstall inleadmedia/dpl-design-system inleadmedia/dpl-react --no-cache
       - composer drupal:scaffold

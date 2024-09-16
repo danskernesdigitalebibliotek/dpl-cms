@@ -8748,7 +8748,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/inleadmedia/dpl-design-system/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/inleadmedia/dpl-design-system/releases/download/branch-development/dist-development.zip"
             },
             "type": "drupal-library"
         },
@@ -8757,7 +8757,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/inleadmedia/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/inleadmedia/dpl-react/releases/download/branch-development/dist-development.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
