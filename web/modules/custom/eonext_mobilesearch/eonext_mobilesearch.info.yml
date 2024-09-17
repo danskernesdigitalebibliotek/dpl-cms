@@ -1,0 +1,6 @@
+name: EO Next Mobilesearch
+description: 'Provides options to push content to Mobilesearch service.'
+type: module
+core_version_requirement: ^10
+package: 'EO next'
+configure: eonext_mobilesearch.settings

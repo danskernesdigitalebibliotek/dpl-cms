@@ -1,0 +1,15 @@
+eonext_mobilesearch.settings:
+  path: '/admin/config/eonext/mobilesearch'
+  defaults:
+    _title: 'MobileSearch settings'
+    _form: '\Drupal\eonext_mobilesearch\Form\MobilesearchSettingsForm'
+  requirements:
+    _permission: 'administer mobilesearch integration'
+
+eonext_mobilesearch.settings_nodes:
+  path: '/admin/config/eonext/mobilesearch/nodes'
+  defaults:
+    _title: 'MobileSearch settings [Nodes]'
+    _form: '\Drupal\eonext_mobilesearch\Form\MobilesearchNodesExportForm'
+  requirements:
+    _permission: 'administer mobilesearch integration'
