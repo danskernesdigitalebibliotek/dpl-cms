@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-09-12 09:50+0200\n"
-"PO-Revision-Date: 2024-09-12 09:50+0200\n"
+"POT-Creation-Date: 2024-09-18 13:12+0200\n"
+"PO-Revision-Date: 2024-09-18 13:12+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6218,5 +6218,45 @@ msgstr ""
 
 msgctxt "views.view.editorial_search:display:page:display_title"
 msgid "Page"
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required"
+msgid "Select any filter and click on Apply to see results"
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
+msgid "basic"
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:empty:area:content:value"
+msgid ""
+"Unfortunately, there were no results for your search. Try using a "
+"different search term."
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:label"
+msgid "Search"
+msgstr ""
+
+msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
+msgid "Søg"
+msgstr ""
+
+msgctxt "views.view.events:display:default:display_options:empty:area:content:value"
+msgid ""
+"Unfortunately, there were no results for your search. Try using a "
+"different search term."
+msgstr ""
+
+msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:label"
+msgid "Search"
+msgstr ""
+
+msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
+msgid "Søg"
 msgstr ""
 
