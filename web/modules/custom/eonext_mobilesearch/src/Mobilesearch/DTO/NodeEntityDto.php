@@ -107,6 +107,16 @@ class NodeEntityDto implements MobilesearchEntityInterface {
     return $this;
   }
 
+  public function getTaxonomy(): array {
+    return $this->taxonomy;
+  }
+
+  public function setTaxonomy(array $taxonomy): self {
+    $this->taxonomy = $taxonomy;
+
+    return $this;
+  }
+
   /**
    * {@inheritDoc}
    */

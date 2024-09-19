@@ -3,6 +3,7 @@
 namespace Drupal\eonext_mobilesearch\Mobilesearch;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\Entity\EntityFieldManagerInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -81,6 +82,10 @@ class NodeEntityConverter extends AbstractEntityConverter {
 
         case 'path':
           $this->resolvePathAlias($entity, $fieldName, $fieldDefinition, $fields);
+          break;
+
+        case 'daterange':
+          $this->resolveDates($entity, $fieldName, $fieldDefinition, $fields);
           break;
 
         case 'boolean':
@@ -279,15 +284,36 @@ class NodeEntityConverter extends AbstractEntityConverter {
   protected function resolveReferences(FieldableEntityInterface $node, string $fieldName, FieldDefinitionInterface $fieldDefinition, array &$fields): void {
     $targetType = $fieldDefinition->getFieldStorageDefinition()->getSetting('target_type');
     $mainProperty = $fieldDefinition->getFieldStorageDefinition()->getMainPropertyName();
+    $targetStorage = $this->entityTypeManager->getStorage($targetType);
 
     $references = [];
+    $attr = [];
     foreach ($node->get($fieldName) as $item) {
-      $references[] = $item->{$mainProperty};
+      $targetEntity = $targetStorage->load($item->{$mainProperty});
+      if (!$targetEntity) {
+        continue;
+      }
+
+      $isImage = $targetEntity instanceof ContentEntityBase
+        && $targetEntity->hasField('field_media_image')
+        && $targetEntity->get('field_media_image')->getFieldDefinition()->getTargetBundle() === 'image';
+      if ($isImage) {
+        $prop = $targetEntity->get('field_media_image')->getFieldDefinition()->getFieldStorageDefinition()->getMainPropertyName();
+        $handler = $targetEntity->get('field_media_image')->getFieldDefinition()->getSetting('target_type');
+        $fileStorage = $this->entityTypeManager->getStorage($handler);
+        /** @var \Drupal\file\Entity\File $imageEntity */
+        $imageEntity = $fileStorage->load($targetEntity->get('field_media_image')->{$prop});
+        $references[] = base64_encode(file_get_contents($imageEntity->getFileUri()));
+        $attr[] = $imageEntity->getMimeType();
+      } else {
+        $references[] = $targetEntity->label();
+      }
     }
 
     $fields[$fieldName] = new FieldDto(
       $fieldDefinition->getLabel(),
-      $references
+      $references,
+      $attr
     );
   }
 
@@ -301,6 +327,19 @@ class NodeEntityConverter extends AbstractEntityConverter {
       $fieldDefinition->getLabel(),
       $node->get($fieldName)->{$mainProperty},
       []
+    );
+  }
+
+  protected function resolveDates(FieldableEntityInterface $node, string $fieldName, FieldDefinitionInterface $fieldDefinition, array &$target): void {
+    $target[$fieldName] = new FieldDto(
+      $fieldDefinition->getLabel(),
+      [
+        'from' => $node->get($fieldName)->start_date->format('c'),
+        'to' => $node->get($fieldName)->end_date->format('c'),
+      ],
+      [
+        'all_day' => FALSE,
+      ]
     );
   }
 

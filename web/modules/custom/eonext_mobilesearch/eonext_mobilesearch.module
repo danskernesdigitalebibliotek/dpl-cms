@@ -65,23 +65,38 @@ function eonext_mobilesearch_entity_delete(EntityInterface $entity): void {
  * @param \Drupal\Core\Entity\EntityInterface $entity
  */
 function eonext_mobilesearch_mobilesearch_push_alter(MobilesearchEntityInterface $payload, EntityInterface $entity): void {
-  if ($entity->getEntityTypeId() !== 'eventinstance') {
-    return;
+  if ($entity->getEntityTypeId() === 'eventinstance') {
+    $payload->setNid(20000000 + (int) $payload->getNid());
   }
 
-  $payload->setNid(20000000 + (int) $payload->getNid());
-  $payload->setType('ding_event');
+  $type = $payload->getType();
+  $payload->setType(match($type) {
+    'page' => 'ding_page',
+    'article' => 'ding_news',
+    'default' => 'ding_event', // 'default' is the default bundle for events
+    default => $type
+  });
 
+  // Fields backwards compatibility processing.
   $fields = $payload->getFields();
 
-  $replacement_map = [
-    'event_description' => 'field_ding_event_lead',
+  $fields_replacement_map = [
+    'uid' => 'author',
+    'field_branch' => 'og_group_ref',
+    'branch' => 'og_group_ref',
+    'date' => 'field_ding_event_date',
+    'event_teaser_text' => 'field_ding_event_lead',
+    'event_teaser_image' => 'field_ding_event_list_image',
+    'event_description' => 'field_ding_event_body',
+    'event_image' => 'field_ding_event_title_image',
     'event_link_uri' => 'field_ding_event_ticket_link',
+    'field_subtitle' => 'field_ding_news_lead',
+    'field_teaser_image' => 'field_ding_news_list_image',
   ];
 
-  foreach ($replacement_map as $field => $replacement) {
+  foreach ($fields_replacement_map as $field => $replacement) {
     if (array_key_exists($field, $fields)) {
-      /** @var \Drupal\ddbems_mobilesearch\Mobilesearch\DTO\FieldDto $dto_field */
+      /** @var \Drupal\eonext_mobilesearch\Mobilesearch\DTO\FieldDto $dto_field */
       $dto_field = $fields[$field];
       unset($fields[$field]);
       $fields[$replacement] = $dto_field;
@@ -89,15 +104,45 @@ function eonext_mobilesearch_mobilesearch_push_alter(MobilesearchEntityInterface
   }
 
   $removal_map = [
-    'vid',
+    'vid', 'revision_uid',
     'revision_timestamp', 'revision_log',
     'status', 'promote',
     'sticky', 'default_langcode',
     'revision_default', 'revision_translation_affected',
+    'entity_clone_template_active', 'entity_clone_template_image',
   ];
   foreach ($removal_map as $field) {
     unset($fields[$field]);
   }
 
   $payload->setFields($fields);
+
+  // Taxonomy backwards compatibility processing.
+  $taxonomy = $payload->getTaxonomy();
+
+  $fields_replacement_map = [
+    'event_categories' => 'field_ding_event_category',
+  ];
+
+  foreach ($fields_replacement_map as $field => $replacement) {
+    if (array_key_exists($field, $fields)) {
+      /** @var \Drupal\eonext_mobilesearch\Mobilesearch\DTO\FieldDto $dto_field */
+      $dto_field = $fields[$field];
+      unset($fields[$field]);
+      $fields[$replacement] = $dto_field;
+    }
+  }
+
+//  $removal_map = [
+//    'vid',
+//    'revision_timestamp', 'revision_log',
+//    'status', 'promote',
+//    'sticky', 'default_langcode',
+//    'revision_default', 'revision_translation_affected',
+//  ];
+//  foreach ($removal_map as $field) {
+//    unset($fields[$field]);
+//  }
+
+  $payload->setTaxonomy($taxonomy);
 }
