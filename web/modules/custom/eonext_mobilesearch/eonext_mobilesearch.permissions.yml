@@ -1,0 +1,4 @@
+administer mobilesearch integration:
+  title: 'MobileSearch settings'
+  description: 'Configure MobileSearch integration.'
+  restrict access: true

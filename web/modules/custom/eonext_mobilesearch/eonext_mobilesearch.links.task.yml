@@ -1,0 +1,9 @@
+eonext_mobilesearch.settings:
+  route_name: eonext_mobilesearch.settings
+  title: General
+  base_route: eonext_mobilesearch.settings
+
+eonext_mobilesearch.node_export:
+  route_name: eonext_mobilesearch.settings_nodes
+  title: Nodes
+  base_route: eonext_mobilesearch.settings

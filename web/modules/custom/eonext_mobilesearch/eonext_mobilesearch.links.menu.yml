@@ -1,0 +1,5 @@
+eonext_mobilesearch.settings:
+  title: MobileSearch settings
+  description: Configure service integration.
+  parent: eonext.admin
+  route_name: eonext_mobilesearch.settings

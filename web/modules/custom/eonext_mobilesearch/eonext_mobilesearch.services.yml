@@ -1,0 +1,22 @@
+services:
+  eonext.mobilesearch.entity_action_subscriber:
+    class: Drupal\eonext_mobilesearch\EventSubscriber\EntityActionSubscriber
+    arguments:
+      - '@eonext.mobilesearch'
+      - '@module_handler'
+    tags:
+      - { name: 'event_subscriber'}
+  eonext.mobilesearch.converter_factory:
+    class: Drupal\eonext_mobilesearch\Mobilesearch\EntityConverterFactory
+  eonext.mobilesearch.node_converter:
+    class: Drupal\eonext_mobilesearch\Mobilesearch\NodeEntityConverter
+    arguments:
+      - '@entity_type.manager'
+      - '@entity_field.manager'
+      - '@config.factory'
+  eonext.mobilesearch:
+    class: Drupal\eonext_mobilesearch\Mobilesearch\Mobilesearch
+    arguments:
+      - '@http_client'
+      - '@config.factory'
+      - '@logger.factory'
