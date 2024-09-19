@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "109fdeec79a1b1545f697bda6c8d759d",
+    "content-hash": "f434843377345c3a515aaf4ead0ccd7d",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.38.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.38.0/dist-2024-38-0-65e8999aef4dbfa5d8367576aa634a090b83d10b.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-find-on-self-no-creators/dist-find-on-self-no-creators.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -19074,6 +19074,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
