@@ -26238,7 +26238,7 @@ msgstr ""
 #: 
 msgctxt "views.view.articles:display:default:display_options:empty:area:content:value"
 msgid "Unfortunately, there were no results for your search. Try using a different search term."
-msgstr ""
+msgstr "Din søgning gav desværre ingen resultater."
 
 #: 
 msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:label"
@@ -26253,7 +26253,7 @@ msgstr ""
 #: 
 msgctxt "views.view.events:display:default:display_options:empty:area:content:value"
 msgid "Unfortunately, there were no results for your search. Try using a different search term."
-msgstr ""
+msgstr "Din søgning gav desværre ingen resultater."
 
 #: 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:label"

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-09-18 13:12+0200\n"
-"PO-Revision-Date: 2024-09-18 13:12+0200\n"
+"POT-Creation-Date: 2024-09-19 17:52+0200\n"
+"PO-Revision-Date: 2024-09-19 17:52+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6236,7 +6236,7 @@ msgctxt "views.view.articles:display:default:display_options:empty:area:content:
 msgid ""
 "Unfortunately, there were no results for your search. Try using a "
 "different search term."
-msgstr ""
+msgstr "Din søgning gav desværre ingen resultater."
 
 msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:label"
 msgid "Search"
@@ -6250,7 +6250,7 @@ msgctxt "views.view.events:display:default:display_options:empty:area:content:va
 msgid ""
 "Unfortunately, there were no results for your search. Try using a "
 "different search term."
-msgstr ""
+msgstr "Din søgning gav desværre ingen resultater."
 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:label"
 msgid "Search"
