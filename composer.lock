@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1643f03442e2f646da90965e93bb157c",
+    "content-hash": "fd02622afb675c4512512840f22a6c20",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "2024.39.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.39.0/dist-2024-39-0-67b544aa0a75abf24d4d152fdd5f9c80082eceb0.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFLSBP-790-peg-pa-fb-is-aendrede-api/dist-ddflsbp-790-peg-pa-fb-is-aendrede-api.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
