@@ -17502,10 +17502,6 @@ msgid "Deleting this event series type will also delete the corresponding regist
 msgstr "Sletning af arrangement-serietypen vil også slette den tilsvarende deltagertype."
 
 #: 
-msgid "Succesfully deleted @type: @label."
-msgstr "Succesfuldt slettet @type: @label."
-
-#: 
 msgid "Label for the Included dates."
 msgstr "Mærkat for de inkluderede datoer."
 
@@ -17528,10 +17524,6 @@ msgstr "Gemt de %label inkluderede datoer."
 #: 
 msgid "Confirm Date Changes"
 msgstr "Bekræft ændring af dato/tidspunkt"
-
-#: 
-msgid "Recurrence configuration has been changed, as a result all instances will be removed and recreated. This action cannot be undone."
-msgstr "Gentagelseskonfigurationen er ændret, som resultat vil alle instanser blive fjernet og genoprettet. Denne handling kan ikke fortrydes."
 
 #: 
 msgid "Stored"
@@ -17760,10 +17752,6 @@ msgstr "Om denne begivenhed gentager sig baseret på ugedage eller dage i måned
 #: 
 msgid "Day Occurrence"
 msgstr "Dag i måneden"
-
-#: 
-msgid "Which occurence of the day(s) of the week should event take place"
-msgstr "Hvilken ugedag(e) skal begivenheden finde sted på"
 
 #: 
 msgid "Day of Month"
@@ -19797,14 +19785,6 @@ msgid "Recreate Event Instances"
 msgstr "Genopret arrangementsinstanser"
 
 #: 
-msgid "Recurring event series scheduler plugin"
-msgstr "Planlægger-plugin for tilbagevendende arrangementserie"
-
-#: 
-msgid "Provides support for scheduling Recurring event series entities"
-msgstr "Leverer support for planlægning af tilbagevendende arrangementsenheder"
-
-#: 
 msgid "Stores a monthly recurring date configuration"
 msgstr "Gemmer en månedlig tilbagevendende datokonfiguration"
 
@@ -20035,10 +20015,6 @@ msgstr "Tilbagevendende arrangementer iCalendar"
 #: 
 msgid "Provides the ability to export recurring events as iCalendar files"
 msgstr "Leverer muligheden for at eksportere tilbagevendende begivenheder som iCalendar filer"
-
-#: 
-msgid "Revisions"
-msgstr "Versioner"
 
 #: 
 msgid "Event Series Settings"
@@ -26268,22 +26244,22 @@ msgstr ""
 #: 
 msgctxt "Opening Hours sidebar"
 msgid "Opening hours"
-msgstr ""
+msgstr "Åbningstider"
 
 #: 
 msgctxt "Opening Hours sidebar"
 msgid "Today's opening hours"
-msgstr ""
+msgstr "Dagens åbningstider"
 
 #: 
 msgctxt "Opening Hours sidebar"
 msgid "Go to @branchName"
-msgstr ""
+msgstr "Gå til @branchName"
 
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Opening Hours Link (remove link to enable sidebar)"
-msgstr ""
+msgstr "Åbningstider link (fjern link for at aktivere sidebar)"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -26293,4 +26269,28 @@ msgid "The link with information about opening hours. <br />\n"
 "                                         You can search for an internal url. <br />\n"
 "                                         You can add an external url (starting with \"http://\" or \"https://\")."
 msgstr ""
+
+#: 
+msgid "Which occurence of the day(s) of the week should event take place"
+msgstr "Hvilken ugedag(e) skal begivenheden finde sted på"
+
+#: 
+msgid "Succesfully deleted @type: @label."
+msgstr "Succesfuldt slettet @type: @label."
+
+#: 
+msgid "Recurrence configuration has been changed, as a result all instances will be removed and recreated. This action cannot be undone."
+msgstr "Gentagelseskonfigurationen er ændret, som resultat vil alle instanser blive fjernet og genoprettet. Denne handling kan ikke fortrydes."
+
+#: 
+msgid "Recurring event series scheduler plugin"
+msgstr "Planlægger-plugin for tilbagevendende arrangementserie"
+
+#: 
+msgid "Provides support for scheduling Recurring event series entities"
+msgstr "Leverer support for planlægning af tilbagevendende arrangementsenheder"
+
+#: 
+msgid "Revisions"
+msgstr "Versioner"
 
