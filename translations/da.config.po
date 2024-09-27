@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-09-27 09:51+0200\n"
-"PO-Revision-Date: 2024-09-27 09:51+0200\n"
+"POT-Creation-Date: 2024-09-27 11:01+0200\n"
+"PO-Revision-Date: 2024-09-27 11:01+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6174,7 +6174,7 @@ msgstr ""
 
 msgctxt "views.view.editorial_search:display:default:display_options:title"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
@@ -6240,7 +6240,7 @@ msgstr "Din søgning gav desværre ingen resultater."
 
 msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
 msgid "Søg"
@@ -6254,7 +6254,7 @@ msgstr "Din søgning gav desværre ingen resultater."
 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
 msgid "Søg"
