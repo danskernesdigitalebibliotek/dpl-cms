@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Redia RSS functionality.
+ */
+
+/**
+ * Implements hook_views_rss_namespaces().
+ */
+function eonext_redia_rss_views_rss_namespaces(): array {
+  $namespaces['content-rss'] = array(
+    'prefix' => 'xmlns',
+    'uri' => 'http://xml.redia.dk/rss',
+  );
+
+  return $namespaces;
+}
+
+/**
+ * Implements hook_views_rss_item_elements().
+ */
+function eonext_redia_rss_views_rss_item_elements(): array {
+  return array(
+    'content-rss:subheadline' => array(
+      'title' => t('Subheadline'),
+      'description' => t('The subheadline'),
+    ),
+    'content-rss:arrangement-starttime' => array(
+      'title' => t('Event starttime'),
+      'description' => t('When does the event start (UTC Timestamp)'),
+    ),
+    'content-rss:arrangement-endtime' => array(
+      'title' => t('Event endtime'),
+      'description' => t('When does the event end (UTC Timestamp)'),
+    ),
+    'content-rss:display-starttime' => array(
+      'title' => t('Display starttime'),
+      'description' => t('Start displaying the event at (UTC Timestamp)'),
+    ),
+    'content-rss:display-endtime' => array(
+      'title' => t('Display endtime'),
+      'description' => t('End displaying the event at (UTC Timestamp)'),
+    ),
+    'content-rss:arrangement-location' => array(
+      'title' => t('Event location'),
+      'description' => t('The location of the event'),
+    ),
+    'content-rss:arrangement-price' => array(
+      'title' => t('Event price'),
+      'description' => t('The price of the event.'),
+    ),
+    'content-rss:resources' => array(
+      'title' => t('Redia resources'),
+      'description' => t('The node id of a type which has a relation to ting objects.'),
+      'preprocess functions' => array('ding_app_content_rss_preprocess_item_resources'),
+    ),
+    'content-rss:library-id' => array(
+      'title' => t('Library ID'),
+      'description' => t('Identificator of library to which this node is assigned.'),
+    ),
+    'content-rss:booking-url' => array(
+      'title' => t('Booking URL'),
+      'description' => t('Link to tickets.'),
+    ),
+    'content-rss:promoted' => array(
+      'title' => t('Promoted to front page'),
+      'description' => t('Boolean value for promoted to front page.'),
+    ),
+    'content-rss:sticky' => array(
+      'title' => t('Sticky'),
+      'description' => t('Boolean value for sticky.'),
+    ),
+    'content-rss:place_room' => array(
+      'title' => t('Place/Room'),
+      'description' => t('Use this to direct your guests to the correct place'),
+    ),
+    'content-rss:organizers' => array(
+      'title' => t('Organizers'),
+      'description' => t('One or more organizers of the event.'),
+    ),
+  );
+}
