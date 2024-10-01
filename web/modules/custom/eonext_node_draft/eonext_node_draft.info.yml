@@ -1,0 +1,5 @@
+name: EO Next Draft
+description: 'Show draft status for new nodes.'
+type: module
+core_version_requirement: ^10
+package: 'EO next'
