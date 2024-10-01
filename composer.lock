@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1643f03442e2f646da90965e93bb157c",
+    "content-hash": "7cbe86547af7e4841a62a877266bfa11",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.39.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.39.0/dist-2024-39-0-67b544aa0a75abf24d4d152fdd5f9c80082eceb0.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFHER-90-instant-loan-feature-ser-efter-description-feltet-i-material-group-det-skal-vaere-name-i-stedet/dist-ddfher-90-instant-loan-feature-ser-efter-description-feltet-i-material-group-det-skal-vaere-name-i-stedet.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -19066,6 +19066,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
