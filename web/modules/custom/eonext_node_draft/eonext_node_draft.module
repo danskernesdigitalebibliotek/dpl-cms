@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Draft node status functionality.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_preprocess_views_view_field().
+ *
+ * In views context, replace the status field 'unpublished' value to 'draft'
+ * for nodes that are new.
+ *
+ * New nodes are considered those with same create and update time.
+ */
+function eonext_node_draft_preprocess_views_view_field(array &$variables): void {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = $variables['view'];
+  /** @var \Drupal\views\ResultRow $row */
+  $row = $variables['row'];
+  /** @var \Drupal\node\NodeInterface $entity */
+  $entity = $row->_entity;
+
+  if (!$entity instanceof NodeInterface) {
+    return;
+  }
+
+  /** @var \Drupal\views\Plugin\views\field\EntityField $field */
+  $field = &$variables['field'];
+
+  if ($field->field !== 'status') {
+    return;
+  }
+
+  $is_published = $entity->isPublished();
+
+  // In case when content type setting is to publish new nodes on creation,
+  // check the status and override status only for unpublished ones.
+  if (!$is_published && (int) $entity->getCreatedTime() === (int) $entity->getChangedTime()) {
+    $variables['output'] = \Drupal::translation()->translate('Draft');
+  }
+}
