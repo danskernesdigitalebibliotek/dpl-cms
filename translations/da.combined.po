@@ -6281,7 +6281,7 @@ msgstr "DPL CMS"
 #: 
 msgctxt "taxonomy.vocabulary.categories:name"
 msgid "Categories"
-msgstr "Categories"
+msgstr "Kategorier"
 
 #: 
 msgctxt "taxonomy.vocabulary.tags:name"
@@ -8528,81 +8528,6 @@ msgstr "Indhold"
 msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_options:tab_options:description"
 msgid "Find and manage scheduled content"
 msgstr "Find og håndter planlagt indhold"
-
-#: 
-msgctxt "views.view.taxonomy_term:label"
-msgid "Taxonomy term"
-msgstr "Taksonomi term"
-
-#: 
-msgctxt "views.view.taxonomy_term:description"
-msgid "Content belonging to a certain taxonomy term."
-msgstr "Indhold, der hører til et bestemt taksonomisk begreb."
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_label"
-msgid "Items per page"
-msgstr "Enheder pr. side"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
-msgid "- All -"
-msgstr "- Alle -"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:offset_label"
-msgid "Offset"
-msgstr "Offset"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:exception:title"
-msgid "All"
-msgstr "Alle"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:title"
-msgid "{{ arguments.tid }}"
-msgstr "{{ arguments.tid }}"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:feed_1:display_title"
-msgid "Feed"
-msgstr "Feed"
-
-#: 
-msgctxt "views.view.taxonomy_term:display:page_1:display_title"
-msgid "Page"
-msgstr "Side"
 
 #: 
 msgctxt "views.view.user_admin_people:label"
@@ -24634,7 +24559,7 @@ msgstr "Email"
 #: 
 msgctxt "field.field.taxonomy_term.webform_email_categories.field_email:description"
 msgid "Add which email to send form submissions of this category to."
-msgstr ""
+msgstr "Tilføj den e-mail, som henvendelser i denne kategori skal sendes til."
 
 #: 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:label"
@@ -25610,32 +25535,32 @@ msgstr ""
 #: 
 msgctxt "filter.format.underlined_title:name"
 msgid "Underlined title"
-msgstr ""
+msgstr "Understreget titel"
 
 #: 
 msgctxt "image.style.banner:label"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.banner:label"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.banner:description"
 msgid "Banner's purpose is to link internally or externally and can be used with or without a background image."
-msgstr ""
+msgstr "Bannerets funktion er at linke til internt indhold, og kan bruges med eller uden baggrundsbillede."
 
 #: 
 msgctxt "Material search"
 msgid "Warning"
-msgstr ""
+msgstr "Advarsel"
 
 #: 
 msgctxt "Material search"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: 
 msgctxt "Material search"
@@ -25754,17 +25679,17 @@ msgstr "På hylden"
 #: 
 msgctxt "field.field.paragraph.simple_links.field_link:label"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.simple_links:label"
 msgid "Simple links"
-msgstr ""
+msgstr "Enkel linkliste"
 
 #: 
 msgctxt "paragraphs.paragraphs_type.simple_links:description"
 msgid "This is paragraph that will display links without icons. "
-msgstr ""
+msgstr "Denne paragraph viser links uden ikoner."
 
 #: 
 msgid "One"
@@ -25844,7 +25769,7 @@ msgstr ""
 
 #: 
 msgid "Date Picker"
-msgstr ""
+msgstr "Datovælger"
 
 #: 
 msgctxt "core.entity_view_mode.paragraph.title_display:label"
@@ -25894,22 +25819,22 @@ msgstr ""
 #: 
 msgctxt "DPL event"
 msgid "Danish kroner"
-msgstr ""
+msgstr "Danske kroner"
 
 #: 
 msgctxt "DPL event"
 msgid "Euros"
-msgstr ""
+msgstr "Euro"
 
 #: 
 msgctxt "DPL event"
 msgid "DKK"
-msgstr ""
+msgstr "DKK"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
 msgid "Name & Email"
-msgstr ""
+msgstr "Navn og Email"
 
 #: 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:alter:text"
@@ -26271,18 +26196,6 @@ msgid "The link with information about opening hours. <br />\n"
 msgstr ""
 
 #: 
-msgid "Which occurence of the day(s) of the week should event take place"
-msgstr "Hvilken ugedag(e) skal begivenheden finde sted på"
-
-#: 
-msgid "Succesfully deleted @type: @label."
-msgstr "Succesfuldt slettet @type: @label."
-
-#: 
-msgid "Recurrence configuration has been changed, as a result all instances will be removed and recreated. This action cannot be undone."
-msgstr "Gentagelseskonfigurationen er ændret, som resultat vil alle instanser blive fjernet og genoprettet. Denne handling kan ikke fortrydes."
-
-#: 
 msgid "Recurring event series scheduler plugin"
 msgstr "Planlægger-plugin for tilbagevendende arrangementserie"
 
@@ -26291,6 +26204,123 @@ msgid "Provides support for scheduling Recurring event series entities"
 msgstr "Leverer support for planlægning af tilbagevendende arrangementsenheder"
 
 #: 
-msgid "Revisions"
-msgstr "Versioner"
+msgctxt "advanced search"
+msgid "location"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple locations"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "sublocation"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple sublocations"
+msgstr ""
+
+#: 
+msgctxt "dpl_search"
+msgid "Showing web results related to \"@term\" (@total_results)"
+msgstr ""
+
+#: 
+msgctxt "pathauto.pattern.category_term:label"
+msgid "Category term - embedded search"
+msgstr ""
+
+#: 
+msgctxt "pathauto.pattern.tag_term:label"
+msgid "Tag term - embedded search"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:term_page:display_title"
+msgid "Context by tag"
+msgstr ""
+
+#: 
+msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:categories:exception:title"
+msgid "All"
+msgstr "Alle"
+
+#: 
+msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:tags:exception:title"
+msgid "All"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required"
+msgid "Select any filter and click on Apply to see results"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required_format"
+msgid "basic"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:bef:general:secondary_label"
+msgid "Advanced options"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:expose:label"
+msgid "Has no role"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:label"
+msgid "Has role"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:1:title"
+msgid "Has no role"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:2:title"
+msgid "Has role"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:expose:label"
+msgid "Include patron"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:label"
+msgid "Include patron"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:1:title"
+msgid "Include patrons"
+msgstr ""
+
+#: 
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:2:title"
+msgid "Exclude patrons"
+msgstr ""
+
+#: 
+msgid "Which occurrence of the day(s) of the week should event take place"
+msgstr ""
+
+#: 
+msgid "Successfully deleted @type: @label."
+msgstr ""
+
+#: 
+msgid "Recurrence configuration has been changed. New instances may be created, and now-unrelevant instances will be deleted, along with any custom changes made to these instances. This action cannot be undone."
+msgstr ""
+
+#: 
+msgid "The type of registration allowed for the series."
+msgstr ""
 

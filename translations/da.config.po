@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-09-27 11:01+0200\n"
-"PO-Revision-Date: 2024-09-27 11:01+0200\n"
+"POT-Creation-Date: 2024-10-03 13:22+0200\n"
+"PO-Revision-Date: 2024-10-03 13:22+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1755,7 +1755,7 @@ msgstr "DPL CMS"
 
 msgctxt "taxonomy.vocabulary.categories:name"
 msgid "Categories"
-msgstr "Categories"
+msgstr "Kategorier"
 
 msgctxt "taxonomy.vocabulary.tags:name"
 msgid "Tags"
@@ -3720,66 +3720,6 @@ msgctxt "views.view.scheduler_scheduled_content:display:user_page:display_option
 msgid "Find and manage scheduled content"
 msgstr "Find og håndter planlagt indhold"
 
-msgctxt "views.view.taxonomy_term:label"
-msgid "Taxonomy term"
-msgstr "Taksonomi term"
-
-msgctxt "views.view.taxonomy_term:description"
-msgid "Content belonging to a certain taxonomy term."
-msgstr "Indhold, der hører til et bestemt taksonomisk begreb."
-
-msgctxt "views.view.taxonomy_term:display:default:display_title"
-msgid "Default"
-msgstr "Standard"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_label"
-msgid "Items per page"
-msgstr "Enheder pr. side"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
-msgid "- All -"
-msgstr "- Alle -"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:pager:options:expose:offset_label"
-msgid "Offset"
-msgstr "Offset"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr "Anvend"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr "Nulstil"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sorter efter"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr "Stigende"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr "Faldende"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:exception:title"
-msgid "All"
-msgstr "Alle"
-
-msgctxt "views.view.taxonomy_term:display:default:display_options:arguments:tid:title"
-msgid "{{ arguments.tid }}"
-msgstr "{{ arguments.tid }}"
-
-msgctxt "views.view.taxonomy_term:display:feed_1:display_title"
-msgid "Feed"
-msgstr "Feed"
-
-msgctxt "views.view.taxonomy_term:display:page_1:display_title"
-msgid "Page"
-msgstr "Side"
-
 msgctxt "views.view.user_admin_people:label"
 msgid "People"
 msgstr "Redaktionelle brugere"
@@ -5538,7 +5478,7 @@ msgstr "Email"
 
 msgctxt "field.field.taxonomy_term.webform_email_categories.field_email:description"
 msgid "Add which email to send form submissions of this category to."
-msgstr ""
+msgstr "Tilføj den e-mail, som henvendelser i denne kategori skal sendes til."
 
 msgctxt "paragraphs.paragraphs_type.user_registration_linklist:label"
 msgid "User registration linklist"
@@ -5972,21 +5912,23 @@ msgstr ""
 
 msgctxt "filter.format.underlined_title:name"
 msgid "Underlined title"
-msgstr ""
+msgstr "Understreget titel"
 
 msgctxt "image.style.banner:label"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "paragraphs.paragraphs_type.banner:label"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "paragraphs.paragraphs_type.banner:description"
 msgid ""
 "Banner's purpose is to link internally or externally and can be used "
 "with or without a background image."
 msgstr ""
+"Bannerets funktion er at linke til internt indhold, og kan bruges med "
+"eller uden baggrundsbillede."
 
 msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
 msgid "Grouped filters"
@@ -6056,15 +5998,15 @@ msgstr ""
 
 msgctxt "field.field.paragraph.simple_links.field_link:label"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 msgctxt "paragraphs.paragraphs_type.simple_links:label"
 msgid "Simple links"
-msgstr ""
+msgstr "Enkel linkliste"
 
 msgctxt "paragraphs.paragraphs_type.simple_links:description"
 msgid "This is paragraph that will display links without icons. "
-msgstr ""
+msgstr "Denne paragraph viser links uden ikoner."
 
 msgctxt "core.entity_view_mode.paragraph.title_display:label"
 msgid "Title display"
@@ -6096,7 +6038,7 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
 msgid "Name & Email"
-msgstr ""
+msgstr "Navn og Email"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:alter:text"
 msgid "{{ field_author_name__value }} <br><small>{{ mail }}</small>"
@@ -6258,5 +6200,69 @@ msgstr "Søg"
 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
 msgid "Søg"
+msgstr ""
+
+msgctxt "pathauto.pattern.category_term:label"
+msgid "Category term - embedded search"
+msgstr ""
+
+msgctxt "pathauto.pattern.tag_term:label"
+msgid "Tag term - embedded search"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:term_page:display_title"
+msgid "Context by tag"
+msgstr ""
+
+msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:categories:exception:title"
+msgid "All"
+msgstr "Alle"
+
+msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:tags:exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required"
+msgid "Select any filter and click on Apply to see results"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required_format"
+msgid "basic"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:bef:general:secondary_label"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:expose:label"
+msgid "Has no role"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:label"
+msgid "Has role"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:1:title"
+msgid "Has no role"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:2:title"
+msgid "Has role"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:expose:label"
+msgid "Include patron"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:label"
+msgid "Include patron"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:1:title"
+msgid "Include patrons"
+msgstr ""
+
+msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:2:title"
+msgid "Exclude patrons"
 msgstr ""
 

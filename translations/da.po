@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-09-27 11:01+0200\n"
-"PO-Revision-Date: 2024-09-27 11:01+0200\n"
+"POT-Creation-Date: 2024-10-03 13:22+0200\n"
+"PO-Revision-Date: 2024-10-03 13:22+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18095,11 +18095,11 @@ msgstr ""
 
 msgctxt "Material search"
 msgid "Warning"
-msgstr ""
+msgstr "Advarsel"
 
 msgctxt "Material search"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 msgctxt "Material search"
 msgid "This material needs to be updated."
@@ -18214,7 +18214,7 @@ msgid "Sliders"
 msgstr ""
 
 msgid "Date Picker"
-msgstr ""
+msgstr "Datovælger"
 
 msgctxt "DPL event"
 msgid "Price Currency"
@@ -18228,15 +18228,15 @@ msgstr ""
 
 msgctxt "DPL event"
 msgid "Danish kroner"
-msgstr ""
+msgstr "Danske kroner"
 
 msgctxt "DPL event"
 msgid "Euros"
-msgstr ""
+msgstr "Euro"
 
 msgctxt "DPL event"
 msgid "DKK"
-msgstr ""
+msgstr "DKK"
 
 msgctxt "password_policy.password_policy.admins:label"
 msgid "Admins"
@@ -18401,19 +18401,6 @@ msgid ""
 "url (starting with \"http://\" or \"https://\")."
 msgstr ""
 
-msgid "Which occurence of the day(s) of the week should event take place"
-msgstr "Hvilken ugedag(e) skal begivenheden finde sted på"
-
-msgid "Succesfully deleted @type: @label."
-msgstr "Succesfuldt slettet @type: @label."
-
-msgid ""
-"Recurrence configuration has been changed, as a result all instances "
-"will be removed and recreated. This action cannot be undone."
-msgstr ""
-"Gentagelseskonfigurationen er ændret, som resultat vil alle instanser "
-"blive fjernet og genoprettet. Denne handling kan ikke fortrydes."
-
 msgid "Recurring event series scheduler plugin"
 msgstr "Planlægger-plugin for tilbagevendende arrangementserie"
 
@@ -18422,6 +18409,38 @@ msgstr ""
 "Leverer support for planlægning af tilbagevendende "
 "arrangementsenheder"
 
-msgid "Revisions"
-msgstr "Versioner"
+msgctxt "advanced search"
+msgid "location"
+msgstr ""
+
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple locations"
+msgstr ""
+
+msgctxt "advanced search"
+msgid "sublocation"
+msgstr ""
+
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple sublocations"
+msgstr ""
+
+msgctxt "dpl_search"
+msgid "Showing web results related to \"@term\" (@total_results)"
+msgstr ""
+
+msgid "Which occurrence of the day(s) of the week should event take place"
+msgstr ""
+
+msgid "Successfully deleted @type: @label."
+msgstr ""
+
+msgid ""
+"Recurrence configuration has been changed. New instances may be "
+"created, and now-unrelevant instances will be deleted, along with any "
+"custom changes made to these instances. This action cannot be undone."
+msgstr ""
+
+msgid "The type of registration allowed for the series."
+msgstr ""
 
