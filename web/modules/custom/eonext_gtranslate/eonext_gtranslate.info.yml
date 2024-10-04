@@ -1,0 +1,5 @@
+name: EO Google Site Translate
+description: 'Enables Google site translation capability.'
+type: module
+core_version_requirement: ^10
+package: 'EO next'

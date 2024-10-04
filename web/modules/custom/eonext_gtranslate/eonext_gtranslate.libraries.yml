@@ -1,0 +1,9 @@
+gtranslate:
+  css:
+    theme:
+      css/eonext-gtranslate.css: {}
+  js:
+    js/eonext-gtranslate.js: {}
+    //translate.google.com/translate_a/element.js?cb=Drupal.behaviors.eonext_gtranslate.init: {type: external, minified: true}
+  dependencies:
+    - core/drupal.dialog
