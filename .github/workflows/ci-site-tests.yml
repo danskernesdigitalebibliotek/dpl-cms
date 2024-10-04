@@ -1,0 +1,98 @@
+---
+name: CI site tests
+on: pull_request
+
+jobs:
+  LightHouse:
+    name: Test site performance using Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-setting site
+        uses: ./.github/actions/site-reset
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Lighthouse test
+        run: task ci:lighthouse
+      - name: Archive logs
+        uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: lighthouse-results
+          path: .lighthouseci
+
+  Pa11y:
+    name: Test accessibility using Pa11y
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-setting site
+        uses: ./.github/actions/site-reset
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Pa11y
+        run: task ci:pa11y
+      - name: Archive screenshots
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: pa11y-screenshots
+          path: pa11y/screenshots
+
+  Cypress:
+    name: Run Cypress functional tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-setting site
+        uses: ./.github/actions/site-reset
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Cypress
+        run: task ci:cypress
+      - name: Archive videoes
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-videos
+          path: cypress/videos
+      - name: Archive screenshots
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+  CheckOpenApiSpec:
+    name: Check OpenAPI specification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-setting site
+        uses: ./.github/actions/site-reset
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate specification
+        run: task ci:openapi:validate
+      - name: Download current specification
+        run: task ci:openapi:download
+      - name: Ensure specification has not drifted
+        run: git diff --ignore-space-at-eol --exit-code openapi.json
+      - name: Generate package for CMS API specification
+        run: task dev:codegen:dpl-cms
+      - name: Ensure CMS API package code has not drifted
+        run: git diff --ignore-space-at-eol --exit-code packages/cms-api/*
+
+  CheckDrupalConfig:
+    name: Check Drupal Config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-setting site
+        uses: ./.github/actions/site-reset
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Export configuration
+        run: task dev:cli -- drush config-export -y
+      - name: Check for uncommited configuration after install
+        run: git diff --ignore-space-at-eol --exit-code config/sync/*.yml
