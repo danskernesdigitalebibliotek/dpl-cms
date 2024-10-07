@@ -134,7 +134,7 @@ function dpl_webform_update_10005(): string {
 function dpl_webform_update_10006(): string {
   $config_factory = \Drupal::configFactory();
   $config_ignore_auto_settings = $config_factory->getEditable('config_ignore_auto.settings');
-  $ignored_configs = $config_ignore_auto_settings->get('ignored_config_entities');
+  $ignored_configs = $config_ignore_auto_settings->get('ignored_config_entities') ?? [];
 
   // Remove webform.settings from config ignore list.
   if (($key = array_search('webform.settings', $ignored_configs)) !== FALSE) {
