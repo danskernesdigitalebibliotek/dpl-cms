@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2024.40.0",
+                "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.40.0/dist-2024-40-0-c006877c658f7b12d834a352487fc8ab333f83bc.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFHER-46-problem-med-popups-v2/dist-ddfher-46-problem-med-popups-v2.zip",
                     "type": "zip"
                 }
             }
@@ -90,7 +90,7 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2024.40.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "0.0.0-dev",
         "danskernesdigitalebibliotek/dpl-react": "2024.40.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
