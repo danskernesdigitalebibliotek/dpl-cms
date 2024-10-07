@@ -40,7 +40,7 @@ tasks:
       - cp -n .env.example .env || true
       - rm web/libraries/dpl-react -rf
       - composer install --no-cache
-      - composer reinstall inleadmedia/dpl-design-system inleadmedia/dpl-react --no-cache
+      - composer reinstall danskernesdigitalebibliotek/dpl-design-system danskernesdigitalebibliotek/dpl-react --no-cache
       - composer drupal:scaffold
       - $(cd dev-scripts/dpl-react; composer install --no-cache)
   drupal:locale:

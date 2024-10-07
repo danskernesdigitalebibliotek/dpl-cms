@@ -229,7 +229,7 @@
         ],
         "installer-paths": {
             "web/themes/custom/novel/assets/{$name}": [
-                "inleadmedia/dpl-design-system"
+                "danskernesdigitalebibliotek/dpl-design-system"
             ],
             "web/core": [
                 "type:drupal-core"
