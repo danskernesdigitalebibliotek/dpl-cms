@@ -1,6 +1,6 @@
 name: DPL CMS
 type: profile
-version: 2024.39.0
+version: 2024.40.0
 description: "Web platform for the Danish Public Libraries"
 core_version_requirement: ^9 || ^10
 
