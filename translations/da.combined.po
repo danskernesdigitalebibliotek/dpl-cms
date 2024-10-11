@@ -25910,12 +25910,12 @@ msgstr ""
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
 msgid "Relevant for ticket manager"
-msgstr "Relevant for billetsystem"
+msgstr "Opret billet i billetsystem"
 
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:description"
 msgid "If you mark this event as relevant, it means that if you use an external ticket system, some data such as ticket link, status and others may be overridden."
-msgstr "Hvis du slår denne til som relevant, så kan data som billetlink, status og andet blive overskrevet."
+msgstr "Hvis du slår denne til som relevant, så oprettes en billet i jeres billetsystem og data som billetlink, status og andet blive overskrevet."
 
 #: 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
@@ -26322,5 +26322,37 @@ msgstr ""
 
 #: 
 msgid "The type of registration allowed for the series."
+msgstr ""
+
+#: 
+msgid "Redia APP Event"
+msgstr ""
+
+#: 
+msgid "DPL Redia Legacy feeds"
+msgstr ""
+
+#: 
+msgid "Various legacy integrations, used for the Redia App."
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.media.redia_feed_large:label"
+msgid "Redia feed - large"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_mode.media.redia_feed_small:label"
+msgid "Redia feed - small"
+msgstr ""
+
+#: 
+msgctxt "image.style.redia_feed_large:label"
+msgid "Redia feed large"
+msgstr ""
+
+#: 
+msgctxt "image.style.redia_feed_small:label"
+msgid "Redia feed small"
 msgstr ""
 

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-10-03 13:41+0200\n"
-"PO-Revision-Date: 2024-10-03 13:41+0200\n"
+"POT-Creation-Date: 2024-10-11 09:19+0200\n"
+"PO-Revision-Date: 2024-10-11 09:19+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18442,5 +18442,14 @@ msgid ""
 msgstr ""
 
 msgid "The type of registration allowed for the series."
+msgstr ""
+
+msgid "Redia APP Event"
+msgstr ""
+
+msgid "DPL Redia Legacy feeds"
+msgstr ""
+
+msgid "Various legacy integrations, used for the Redia App."
 msgstr ""
 

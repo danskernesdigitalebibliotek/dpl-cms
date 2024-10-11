@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-10-03 13:41+0200\n"
-"PO-Revision-Date: 2024-10-03 13:41+0200\n"
+"POT-Creation-Date: 2024-10-11 09:19+0200\n"
+"PO-Revision-Date: 2024-10-11 09:19+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6089,7 +6089,7 @@ msgstr ""
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
 msgid "Relevant for ticket manager"
-msgstr "Relevant for billetsystem"
+msgstr "Opret billet i billetsystem"
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:description"
 msgid ""
@@ -6097,8 +6097,9 @@ msgid ""
 "external ticket system, some data such as ticket link, status and "
 "others may be overridden."
 msgstr ""
-"Hvis du slår denne til som relevant, så kan data som billetlink, "
-"status og andet blive overskrevet."
+"Hvis du slår denne til som relevant, så oprettes en billet i jeres "
+"billetsystem og data som billetlink, status og andet blive "
+"overskrevet."
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
 msgid "On"
@@ -6270,5 +6271,21 @@ msgstr ""
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:2:title"
 msgid "Exclude patrons"
+msgstr ""
+
+msgctxt "core.entity_view_mode.media.redia_feed_large:label"
+msgid "Redia feed - large"
+msgstr ""
+
+msgctxt "core.entity_view_mode.media.redia_feed_small:label"
+msgid "Redia feed - small"
+msgstr ""
+
+msgctxt "image.style.redia_feed_large:label"
+msgid "Redia feed large"
+msgstr ""
+
+msgctxt "image.style.redia_feed_small:label"
+msgid "Redia feed small"
 msgstr ""
 
