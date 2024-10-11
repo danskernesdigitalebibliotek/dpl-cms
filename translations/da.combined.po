@@ -26226,7 +26226,7 @@ msgstr ""
 #: 
 msgctxt "dpl_search"
 msgid "Showing web results related to \"@term\" (@total_results)"
-msgstr ""
+msgstr "Viser hjemmesidens indhold for \"@term\" (@total_results)"
 
 #: 
 msgctxt "pathauto.pattern.category_term:label"
