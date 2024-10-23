@@ -125,8 +125,8 @@ tasks:
     cmds:
       - docker compose {{ .DOCKER_COMPOSE_FILES }} pull
 
-  dev:reset:
-    desc: Create local development setup in a clean state
+  dev:reset:common:
+    desc: Preparing the environments for resetting the setup.
     deps:
       # Build new containers if necessary.
       - dev:build
@@ -149,22 +149,16 @@ tasks:
       - task dev:pull
       # Start local environment.
       - task dev:start
+
+  dev:reset:
+    desc: Create local development setup in a clean state
+    cmds:
+      - task dev:reset:before
       # Install site.
       - task dev:cli -- drush site-install --existing-config -y
       # Practice shows that the cache needs to be cleared to avoid configuration
       # errors even after a site install.
       - task dev:cache:clear:drupal
-      # Import translations.
-      - |
-        if [ -n "${SKIP_LANGUAGE_IMPORT}" ]; then
-          echo "Skipping language import due to SKIP_LANGUAGE_IMPORT environment variable"
-        else
-          task dev:cli -- drush locale-check
-          task dev:cli -- drush locale-update
-          task dev:cli -- drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
-        fi
-      # Clear all caches to ensure we have a pristine setup.
-      - task dev:cache:clear:all
       # Run deploy hooks.
       - task dev:cli -- drush deploy -y
       # Ensure site is reachable and warm any caches
@@ -174,6 +168,16 @@ tasks:
       - task dev:create-users
       # Show a one-time login to the local site.
       - task dev:cli -- drush user-login
+      # Import translations.
+      - |
+        if [ -n "${SKIP_LANGUAGE_IMPORT}" ]; then
+          echo "Skipping language import due to SKIP_LANGUAGE_IMPORT environment variable"
+        else
+          task dev:cli -- drush locale-check
+          task dev:cli -- drush locale-update
+          task dev:cli -- drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
+          task dev:import-profile-translations
+        fi
 
   dev:openid:configure:
     desc: Set openid connect settings based on .env variables. And run cron.
@@ -382,7 +386,9 @@ tasks:
   ci:reset:
     desc: Create CI setup in a clean state
     cmds:
-      - task dev:reset
+      - task dev:reset:common
+      - task dev:cli -- drush sqlq --file=../tools/site-reset.sql.gz
+      - task dev:cli -- drush deploy
     env:
       DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_CI }}"
       SKIP_LANGUAGE_IMPORT: "true"
