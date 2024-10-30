@@ -183,4 +183,32 @@ describe("Paragraph module", () => {
     cy.saveContent();
     links.forEach((link, index) => verifySimpleLink({ link, index }));
   });
+
+  it("Can add 'Accordion'", () => {
+    const accordionContent = {
+      title: "Accordion title",
+      content: "Accordion content",
+    };
+    addParagraph("Accordion");
+    cy.findByLabelText("Accordion title").type(accordionContent.title);
+    typeInCkEditor(accordionContent.content);
+    cy.saveContent();
+    cy.get("summary.disclosure__headline").should(
+      "contain",
+      accordionContent.title
+    );
+    cy.get("details.disclosure.disclosure--paragraph-width").should(
+      "not.have.attr",
+      "open"
+    );
+    cy.get("summary.disclosure__headline").click();
+    cy.get("details.disclosure.disclosure--paragraph-width").should(
+      "contain",
+      accordionContent.content
+    );
+    cy.get("details.disclosure.disclosure--paragraph-width").should(
+      "have.attr",
+      "open"
+    );
+  });
 });
