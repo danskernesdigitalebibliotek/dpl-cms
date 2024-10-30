@@ -73,6 +73,29 @@ const checkImageSrc = ({ selector, expectedInSrc }: CheckImageSrcType) => {
   cy.get(selector).should("have.attr", "src").should("include", expectedInSrc);
 };
 
+const addSimpleLink = ({ link, index = 0 }) => {
+  if (index > 0) {
+    cy.get(`input[value="Add another item"]`).click();
+  }
+  cy.findAllByLabelText("URL").eq(index).type(link.url);
+  cy.findAllByLabelText("Link text").eq(index).type(link.text);
+  if (link.targetBlank) {
+    cy.findAllByLabelText("Open link in new window/tab").eq(index).check();
+  }
+};
+
+const verifySimpleLink = ({ link, index = 0 }) => {
+  cy.get(".paragraphs__item--simple_links a")
+    .eq(index)
+    .should("contain", link.text)
+    .and("have.attr", "href", link.url);
+  if (link.targetBlank) {
+    cy.get(".paragraphs__item--simple_links a")
+      .eq(index)
+      .should("have.attr", "target", "_blank");
+  }
+};
+
 describe("Paragraph module", () => {
   beforeEach(() => {
     cy.deleteAllContentIfExists(pageName, "page");
@@ -121,5 +144,43 @@ describe("Paragraph module", () => {
       selector: ".medias__item.medias__item--last img",
       expectedInSrc: "robert-collins-tvc5imO5pXk-unsplash_0.jpg",
     });
+  });
+
+  it("Can add 'Simple link'", () => {
+    const link = {
+      url: "https://www.google.com/",
+      text: "Google",
+      targetBlank: false,
+    };
+
+    addParagraph("Simple links");
+    addSimpleLink({ link });
+    cy.saveContent();
+    verifySimpleLink({ link });
+  });
+
+  it("Can add 'Simple link (Externt)'", () => {
+    const link = {
+      url: "https://www.google.com/",
+      text: "Google",
+      targetBlank: true,
+    };
+
+    addParagraph("Simple links");
+    addSimpleLink({ link });
+    cy.saveContent();
+    verifySimpleLink({ link });
+  });
+
+  it("Can add 'Simple links (2)'", () => {
+    const links = [
+      { url: "https://www.google.com/", text: "Google", targetBlank: false },
+      { url: "https://www.reload.dk/", text: "Reload", targetBlank: true },
+    ];
+
+    addParagraph("Simple links");
+    links.forEach((link, index) => addSimpleLink({ link, index }));
+    cy.saveContent();
+    links.forEach((link, index) => verifySimpleLink({ link, index }));
   });
 });
