@@ -39,11 +39,11 @@ const typeInCkEditor = (content: string) => {
 };
 
 // INSPRIATION: https://github.com/kanopi/shrubs/blob/main/mediaLibrarySelect.js
-const mediaLibrarySelect = (fileName: string, id: number) => {
+const mediaLibrarySelect = (fileName: string, index = 0) => {
   // Create unique intercepts for each media library select
-  const mediaNodeEditAjax = `mediaNodeEditAjax${id}`;
-  const mediaLibraryAjax = `mediaLibraryAjax${id}`;
-  const viewsAjax = `viewsAjax${id}`;
+  const mediaNodeEditAjax = `mediaNodeEditAjax${index}`;
+  const mediaLibraryAjax = `mediaLibraryAjax${index}`;
+  const viewsAjax = `viewsAjax${index}`;
 
   cy.intercept("POST", "/node/*/**").as(mediaNodeEditAjax);
   cy.intercept("POST", "/media-library**").as(mediaLibraryAjax);
@@ -69,6 +69,16 @@ const mediaLibrarySelect = (fileName: string, id: number) => {
   });
 
   cy.wait(`@${mediaNodeEditAjax}`).its("response.statusCode").should("eq", 200);
+
+  // Validate the image appears in the preview to address flakiness in GH actions.
+  cy.get(".media-library-item__preview-wrapper")
+    .eq(index)
+    .within(() => {
+      cy.get(".field--name-field-media-image img")
+        .should("exist")
+        .and("have.attr", "src")
+        .and("include", fileName);
+    });
 };
 
 type CheckImageSrcType = {
@@ -118,24 +128,24 @@ describe("Paragraphs module", () => {
 
   it("Adds 'Media(s)' paragraph with a single image", () => {
     addParagraph("Media(s)");
-    mediaLibrarySelect("Læseklubber", 1);
+    mediaLibrarySelect("paige-cody");
     cy.saveContent();
     checkImageSrc({
       selector: ".medias.medias--single img",
-      expectedInSrc: "laeseklubber.jpg",
+      expectedInSrc: "paige-cody",
     });
   });
 
   it("Adds 'Media(s)' paragraph with 2 images", () => {
     addParagraph("Media(s)");
-    const images = ["Læseklubber", "robert-collins"];
+    const images = ["paige-cody", "robert-collins"];
     images.forEach((img, index) => {
       mediaLibrarySelect(img, index);
     });
     cy.saveContent();
     checkImageSrc({
       selector: ".medias__item.medias__item--first img",
-      expectedInSrc: "laeseklubber.jpg",
+      expectedInSrc: "paige-cody",
     });
     checkImageSrc({
       selector: ".medias__item.medias__item--last img",
@@ -145,14 +155,14 @@ describe("Paragraphs module", () => {
 
   it("Adds multiple paragraphs: 'Media(s)' and 'Text body'", () => {
     addParagraph("Media(s)");
-    mediaLibrarySelect("Læseklubber", 1);
+    mediaLibrarySelect("paige-cody");
     addAnotherParagraph();
     addParagraph("Text body");
     typeInCkEditor("Hello, world!");
     cy.saveContent();
     checkImageSrc({
       selector: ".medias.medias--single img",
-      expectedInSrc: "laeseklubber.jpg",
+      expectedInSrc: "paige-cody",
     });
     cy.get(".rich-text").should("contain", "Hello, world!");
   });
