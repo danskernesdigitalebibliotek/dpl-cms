@@ -40,7 +40,7 @@ const typeInCkEditor = (content: string) => {
 
 // INSPRIATION: https://github.com/kanopi/shrubs/blob/main/mediaLibrarySelect.js
 const mediaLibrarySelect = (fileName: string, id: number) => {
-  // Need to create unique intercepts for each media library select
+  // Create unique intercepts for each media library select
   const mediaNodeEditAjax = `mediaNodeEditAjax${id}`;
   const mediaLibraryAjax = `mediaLibraryAjax${id}`;
   const viewsAjax = `viewsAjax${id}`;
@@ -103,57 +103,47 @@ const verifySimpleLink = ({ link, index = 0 }) => {
   }
 };
 
-describe("Paragraph module", () => {
+describe("Paragraphs module", () => {
   beforeEach(() => {
     cy.deleteAllContentIfExists(pageName, "page");
     createTestPageAndOpenParagraphModal();
   });
 
-  it("Can add 'Text body' (CEK editor)", () => {
+  it("Adds 'Text body' paragraph and verifies CKEditor content", () => {
     addParagraph("Text body");
-
     typeInCkEditor("Hello, world!");
-
     cy.saveContent();
-
     cy.get(".rich-text").should("contain", "Hello, world!");
   });
 
-  it("Can add 'media'", () => {
+  it("Adds 'Media(s)' paragraph with a single image", () => {
     addParagraph("Media(s)");
-
     mediaLibrarySelect("Læseklubber", 1);
-
     cy.saveContent();
-
     checkImageSrc({
       selector: ".medias.medias--single img",
       expectedInSrc: "laeseklubber.jpg",
     });
   });
 
-  it("Can add 'media' (2 images)", () => {
+  it("Adds 'Media(s)' paragraph with 2 images", () => {
     addParagraph("Media(s)");
     const images = ["Læseklubber", "robert-collins"];
-
     images.forEach((img, index) => {
       mediaLibrarySelect(img, index);
     });
-
     cy.saveContent();
-
     checkImageSrc({
       selector: ".medias__item.medias__item--first img",
       expectedInSrc: "laeseklubber.jpg",
     });
-
     checkImageSrc({
       selector: ".medias__item.medias__item--last img",
       expectedInSrc: "robert-collins-tvc5imO5pXk-unsplash_0.jpg",
     });
   });
 
-  it("Can add two paragraphs ('Media(s)' and 'Text body')", () => {
+  it("Adds multiple paragraphs: 'Media(s)' and 'Text body'", () => {
     addParagraph("Media(s)");
     mediaLibrarySelect("Læseklubber", 1);
     addAnotherParagraph();
@@ -167,45 +157,42 @@ describe("Paragraph module", () => {
     cy.get(".rich-text").should("contain", "Hello, world!");
   });
 
-  it("Can add 'Simple link'", () => {
+  it("Adds 'Simple links' paragraph with a single link", () => {
     const link = {
       url: "https://www.google.com/",
       text: "Google",
       targetBlank: false,
     };
-
     addParagraph("Simple links");
     addSimpleLink({ link });
     cy.saveContent();
     verifySimpleLink({ link });
   });
 
-  it("Can add 'Simple link (Externt)'", () => {
+  it("Adds 'Simple links' paragraph with an external link", () => {
     const link = {
       url: "https://www.google.com/",
       text: "Google",
       targetBlank: true,
     };
-
     addParagraph("Simple links");
     addSimpleLink({ link });
     cy.saveContent();
     verifySimpleLink({ link });
   });
 
-  it("Can add 'Simple links (2)'", () => {
+  it("Adds 'Simple links' paragraph with multiple links", () => {
     const links = [
       { url: "https://www.google.com/", text: "Google", targetBlank: false },
       { url: "https://www.reload.dk/", text: "Reload", targetBlank: true },
     ];
-
     addParagraph("Simple links");
     links.forEach((link, index) => addSimpleLink({ link, index }));
     cy.saveContent();
     links.forEach((link, index) => verifySimpleLink({ link, index }));
   });
 
-  it("Can add 'Accordion'", () => {
+  it("Adds 'Accordion' paragraph and verifies content toggle", () => {
     const accordionContent = {
       title: "Accordion title",
       content: "Accordion content",
