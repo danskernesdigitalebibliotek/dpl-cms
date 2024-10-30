@@ -13,6 +13,13 @@ const addParagraph = (paragraphType: string) => {
   });
 };
 
+const addAnotherParagraph = () => {
+  cy.get("button[title='Show all Paragraphs']")
+    .should("be.visible")
+    .eq(1)
+    .click();
+};
+
 // INSPRIATION: https://drupal.stackexchange.com/questions/315635/how-to-write-in-a-ckdeditor-textarea-with-cypress
 const typeInCkEditor = (content: string) => {
   // Ensure the CKEditor is visible
@@ -144,6 +151,20 @@ describe("Paragraph module", () => {
       selector: ".medias__item.medias__item--last img",
       expectedInSrc: "robert-collins-tvc5imO5pXk-unsplash_0.jpg",
     });
+  });
+
+  it("Can add two paragraphs ('Media(s)' and 'Text body')", () => {
+    addParagraph("Media(s)");
+    mediaLibrarySelect("Læseklubber", 1);
+    addAnotherParagraph();
+    addParagraph("Text body");
+    typeInCkEditor("Hello, world!");
+    cy.saveContent();
+    checkImageSrc({
+      selector: ".medias.medias--single img",
+      expectedInSrc: "laeseklubber.jpg",
+    });
+    cy.get(".rich-text").should("contain", "Hello, world!");
   });
 
   it("Can add 'Simple link'", () => {
