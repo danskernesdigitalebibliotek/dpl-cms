@@ -1,4 +1,4 @@
 core:
   css:
     theme:
-      css/core.css: {}
+      css/style.css: {}

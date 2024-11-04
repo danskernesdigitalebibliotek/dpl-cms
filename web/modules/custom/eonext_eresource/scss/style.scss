@@ -1,0 +1,273 @@
+/* Makes all text use the correct font */
+.term--type-e_resource_category {
+  max-width: 1156px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 24px auto; }
+
+.view--e-resource .e-resource_index-filter .fieldset-wrapper > div {
+  display: flex;
+}
+
+#main-content article.node--type-e_resource {
+
+  .layout--twocol-section{
+   max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    margin: 5px;
+  }
+}
+
+#main-content article.node--view-mode-full {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  >  div:nth-child(2)::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .left {
+    display: block;
+    width: 30%;
+    float: left;
+
+    .image-credited__image {
+      display: block;
+
+      img {
+        min-width: 150px;
+        min-height: 150px;
+        margin: 0;
+      }
+    }
+  }
+
+  h2 a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: 35px;
+    left: 385px;
+    margin-left: 15px;
+  }
+
+  //center
+  .field.field--label-above.field--name-field-e-resource-access.field--type-entity-reference > .field__label {
+    display: block;
+  }
+
+  .field--name-field-e-resource-access {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.160);
+    margin-bottom: 30px;
+  }
+  
+  .field--name-field-e-resource-access .od a {
+    text-decoration: none;  
+  }
+
+  .field.field--label-above.field--name-field-e-resource-lead.field--type-string-long {
+    margin-bottom: 30px;
+  }
+  .field.field--label-above.field--name-field-e-resource-tags.field--type-entity-reference{
+    padding: 15px 0;
+  }
+
+  .field.field--label-above.field--name-field-e-resource-category.field--type-entity-reference > .field__item.od {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.160);
+  
+    > a {
+      text-decoration: none;
+    }
+  }
+
+  .field__label {
+    display: none;
+  }
+
+  .center {
+    display: block;
+    float: left;
+    width: calc(100% - 30% - 150px);
+    padding: 0 25px;
+    position: relative;
+    top: 25px;
+    text-align: justify;
+  }
+
+  .right {
+    max-width: 150px;
+    float: right;
+
+    a{
+      margin-bottom: 40px;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+#main-content {
+  font-family: 'Noto Sans';
+
+
+  div:nth-of-type(2) > .node--type-e_resource.node--view-mode-teaser > div::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .node--view-mode-teaser {
+
+    .left {
+      float: left;
+      width: 25%;
+    }
+
+    .center {
+      display: block;
+      position: relative;
+      width: calc(100% - 25% - 150px);
+      padding-top: 20px;
+    }
+
+    .right {
+      float: right;
+    }
+  }
+
+  div:nth-of-type(2) > .node--type-e_resource.node--view-mode-teaser .inline.links > li{
+    height: 0;
+  }
+  /* Better spacing between e-ressource elements */
+  .view--e-resource .views-row {
+    padding: 10px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  /* Makes button links fit design of the theme */
+  .links.inline > li > a,
+  .node--view-mode-teaser h3,
+  a h3  {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .node--type-e_resource.node--view-mode-teaser > a[rel='bookmark'] {
+    position: relative;
+    top: 7px;
+    left: 188px;
+    margin-left: 15px;
+    z-index: 1;
+  }
+
+  .node--type-e_resource.node--view-mode-teaser > div {
+    top: -15px;
+    position: relative;
+  }
+
+  div:nth-of-type(2) > .node--type-e_resource.node--view-mode-teaser .layout__region.layout__region--content > div:nth-of-type(1),
+  div:nth-of-type(2) > .node--type-e_resource.node--view-mode-teaser .layout__region.layout__region--content > div:nth-of-type(2) {
+    display: inline-block;
+  }
+
+  .field--name-field-e-resource-list-image,
+  .field--name-field-e-resource-lead  {
+    display: inline-block;
+  
+  }
+  .field--name-field-e-resource-list-image {
+    float: left;
+    padding-left: 15px;
+  }
+
+  .node--view-mode-teaser div .field--name-field-e-resource-lead {
+    max-width: 55%;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  .custom-link.er.field.field--label-hidden.field--name-field-e-resource-link.field--type-link.field__items > div:nth-of-type(1) > a {
+    display: none;
+  }
+
+  .layout__region.layout__region--third > div {
+    border: 1px solid black;
+    margin: 0px 0 10px 0;
+    height: 48px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  .layout__region.layout__region--third > div > a {
+    text-decoration: none;
+  }
+  .links.inline a { 
+    top: -77px;
+  }
+
+  .links.inline a,
+  .custom-link a {
+    background: black;
+    color: white;
+    position: relative;
+    padding: 10px 30px;
+    text-decoration: none;
+    min-width: 140px;
+  }
+
+  /* Better spacing and uppercase headline for side menu */
+  .e-resource-category-filter > h3 {
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+
+  .e-resource-category-filter > ul > li {
+    margin: 0 0 10px 0;
+  }
+
+  .e-resource_index-filter.fieldgroup {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .form-type-radio {
+    display: inline-block;
+    padding: 5px;
+  }
+  .fieldset-wrapper {
+    width: 100%;
+    display: block;
+  }
+
+  .form-type-select {
+    padding: 10px;
+  }
+
+  .search-full-text {
+    width: 50%;
+    display: block;
+    border: none;
+    padding: .5em 1em 0 0;
+  }
+
+  .content-list-page__filter--right {
+    list-style: none;
+  }
+
+}

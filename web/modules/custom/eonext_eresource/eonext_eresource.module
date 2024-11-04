@@ -41,7 +41,24 @@ function eonext_eresource_theme(): array {
       'render element' => 'element',
       'base hook' => 'node',
     ],
+    'field__node__title__e_resource' => [
+      'render element' => 'item',
+      'base hook' => 'field',
+    ],
+
+    'field__node__e_resource' => [
+      'render element' => 'item',
+      'base hook' => 'field',
+    ]
   ];
+}
+
+
+function eonext_eresource_preprocess_field__node__e_resource(array &$variables):void {
+  if($variables['field_name']!== 'field_e_resource_link') {
+    return;
+  }
+  $variables['attributes']['class'][] = 'custom-link';
 }
 
 /**
@@ -71,4 +88,6 @@ function eonext_eresource_preprocess_node(array &$variables): void {
   $variables['attributes']['class'][] = 'node--view-mode-' . $variables['view_mode'];
 
   $variables['display_submitted'] = FALSE;
+  
+  $variables['#attached']['library'][] = 'eonext_eresource/core';
 }
