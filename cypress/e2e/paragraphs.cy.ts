@@ -39,7 +39,7 @@ const typeInCkEditor = (content: string) => {
 };
 
 // INSPRIATION: https://github.com/kanopi/shrubs/blob/main/mediaLibrarySelect.js
-const mediaLibrarySelect = (fileName: string, index = 0) => {
+const mediaLibrarySelect = (selector: string, fileName: string, index = 0) => {
   // Create unique intercepts for each media library select
   const mediaNodeEditAjax = `mediaNodeEditAjax${index}`;
   const mediaLibraryAjax = `mediaLibraryAjax${index}`;
@@ -49,9 +49,7 @@ const mediaLibrarySelect = (fileName: string, index = 0) => {
   cy.intercept("POST", "/media-library**").as(mediaLibraryAjax);
   cy.intercept("GET", "/views/ajax?**").as(viewsAjax);
 
-  cy.get(
-    "#field_medias-media-library-wrapper-field_paragraphs-0-subform"
-  ).within(() => {
+  cy.get(selector).within(() => {
     cy.get('input[value="Add media"]').click();
   });
 
@@ -113,6 +111,67 @@ const verifySimpleLink = ({ link, index = 0 }) => {
   }
 };
 
+type AddBannerOptionsType = {
+  bannerContent: {
+    title: string;
+    description: string;
+    link: string;
+  };
+  openInNewTab?: boolean;
+};
+
+const addAndSaveBannerParagraph = ({
+  bannerContent,
+  openInNewTab = false,
+}: AddBannerOptionsType) => {
+  addParagraph("Banner");
+  cy.findByLabelText("Banner Link").type(bannerContent.link);
+  if (openInNewTab) {
+    cy.findByLabelText("Open link in new window/tab").check();
+  }
+  typeInCkEditor(bannerContent.title);
+  cy.findByLabelText("Banner description").type(bannerContent.description);
+  mediaLibrarySelect(
+    "#field_banner_image-media-library-wrapper-field_paragraphs-0-subform",
+    "paige-cody"
+  );
+  cy.saveContent();
+};
+
+type BannerVerificationOptions = {
+  link: string;
+  title: string;
+  description: string;
+  underlineText?: string;
+  openInNewTab?: boolean;
+};
+
+const verifyBannerParagraph = ({
+  link,
+  title,
+  description,
+  underlineText,
+  openInNewTab = false,
+}: BannerVerificationOptions) => {
+  cy.get(".banner")
+    .should("have.attr", "style")
+    .and("match", /background-image: url\(.+paige-cody.+\)/);
+
+  cy.get(".banner").should("have.attr", "href", link);
+  if (openInNewTab) {
+    cy.get(".banner").should("have.attr", "target", "_blank");
+  }
+
+  cy.get(".banner__title").should("contain", title);
+  if (underlineText) {
+    cy.get(".banner__title").within(() => {
+      cy.get("u").should("contain.text", underlineText);
+    });
+  }
+
+  cy.get(".banner__content").should("contain", description);
+};
+
 describe("Paragraphs module", () => {
   beforeEach(() => {
     cy.deleteAllContentIfExists(pageName, "page");
@@ -128,7 +187,10 @@ describe("Paragraphs module", () => {
 
   it("Adds 'Media(s)' paragraph with a single image", () => {
     addParagraph("Media(s)");
-    mediaLibrarySelect("paige-cody");
+    mediaLibrarySelect(
+      "#field_medias-media-library-wrapper-field_paragraphs-0-subform",
+      "paige-cody"
+    );
     cy.saveContent();
     checkImageSrc({
       selector: ".medias.medias--single img",
@@ -140,7 +202,11 @@ describe("Paragraphs module", () => {
     addParagraph("Media(s)");
     const images = ["paige-cody", "robert-collins"];
     images.forEach((img, index) => {
-      mediaLibrarySelect(img, index);
+      mediaLibrarySelect(
+        "#field_medias-media-library-wrapper-field_paragraphs-0-subform",
+        img,
+        index
+      );
     });
     cy.saveContent();
     checkImageSrc({
@@ -155,7 +221,10 @@ describe("Paragraphs module", () => {
 
   it("Adds multiple paragraphs: 'Media(s)' and 'Text body'", () => {
     addParagraph("Media(s)");
-    mediaLibrarySelect("paige-cody");
+    mediaLibrarySelect(
+      "#field_medias-media-library-wrapper-field_paragraphs-0-subform",
+      "paige-cody"
+    );
     addAnotherParagraph();
     addParagraph("Text body");
     typeInCkEditor("Hello, world!");
@@ -228,5 +297,39 @@ describe("Paragraphs module", () => {
       "have.attr",
       "open"
     );
+  });
+
+  it("Adds 'Banner' paragraph and verifies underlined title", () => {
+    const bannerContent = {
+      title: "Banner with <u>underlined title</u>",
+      description: "Banner description",
+      link: "https://www.google.com/",
+    };
+
+    addAndSaveBannerParagraph({ bannerContent });
+
+    verifyBannerParagraph({
+      link: bannerContent.link,
+      title: "Banner with underlined title",
+      description: bannerContent.description,
+      underlineText: "underlined title",
+    });
+  });
+
+  it("Adds 'Banner' paragraph with an external link", () => {
+    const bannerContent = {
+      title: "Banner title",
+      description: "Banner description",
+      link: "https://www.google.com/",
+    };
+
+    addAndSaveBannerParagraph({ bannerContent, openInNewTab: true });
+
+    verifyBannerParagraph({
+      link: bannerContent.link,
+      title: bannerContent.title,
+      description: bannerContent.description,
+      openInNewTab: true,
+    });
   });
 });
