@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-10-11 14:55+0200\n"
-"PO-Revision-Date: 2024-10-11 14:55+0200\n"
+"POT-Creation-Date: 2024-11-05 10:23+0100\n"
+"PO-Revision-Date: 2024-11-05 10:23+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3028,7 +3028,7 @@ msgstr "Låst indhold"
 
 msgctxt "views.view.locked_content:display:default:display_options:fields:node_bulk_form:label"
 msgid "Node operations bulk form"
-msgstr ""
+msgstr "Node operations bulk form"
 
 msgctxt "views.view.locked_content:display:default:display_options:fields:node_bulk_form:action_title"
 msgid "Action"
@@ -6287,5 +6287,17 @@ msgstr ""
 
 msgctxt "image.style.redia_feed_small:label"
 msgid "Redia feed small"
+msgstr ""
+
+msgctxt "system.action.user_add_role_action.graphql_consumer:label"
+msgid "Add the GraphQl consumer role to the selected user(s)"
+msgstr ""
+
+msgctxt "system.action.user_remove_role_action.graphql_consumer:label"
+msgid "Remove the GraphQl consumer role from the selected user(s)"
+msgstr ""
+
+msgctxt "user.role.graphql_consumer:label"
+msgid "GraphQl consumer"
 msgstr ""
 

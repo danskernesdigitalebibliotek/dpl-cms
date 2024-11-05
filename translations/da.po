@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-10-11 14:55+0200\n"
-"PO-Revision-Date: 2024-10-11 14:55+0200\n"
+"POT-Creation-Date: 2024-11-05 10:23+0100\n"
+"PO-Revision-Date: 2024-11-05 10:23+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2111,7 +2111,7 @@ msgid ""
 "possibility to delete a selected reservation, or multiple selected "
 "reservations"
 msgstr ""
-"Denne knap åbner en pop-up som gær det muligt at slette en eller "
+"Denne knap åbner en pop-up som gør det muligt at slette en eller "
 "flere reserveringer"
 
 msgctxt "Global"
@@ -3623,9 +3623,6 @@ msgstr "Lav en profil for"
 msgid "Error warning icon"
 msgstr "Fejl advarsel ikon"
 
-msgid "Updated the names and subdivisions of each address."
-msgstr "Opdaterede navnene og underafdelingerne på hver adresse."
-
 msgctxt "Address label"
 msgid "First name"
 msgstr "Fornavn"
@@ -3637,10 +3634,6 @@ msgstr "Mellemnavn"
 msgctxt "Address label"
 msgid "Last name"
 msgstr "Efternavn"
-
-msgctxt "Address label"
-msgid "Company"
-msgstr "Firma"
 
 msgctxt "Address label"
 msgid "Address line 1"
@@ -3660,7 +3653,7 @@ msgstr "Postnummer"
 
 msgctxt "Address label"
 msgid "Dependent locality (e.g. Neighbourhood)"
-msgstr ""
+msgstr "Dependent locality (e.g. Neighbourhood)"
 
 msgctxt "Address label"
 msgid "Locality (e.g. City)"
@@ -3688,7 +3681,7 @@ msgstr "Område"
 
 msgctxt "Address label"
 msgid "Canton"
-msgstr ""
+msgstr "Canton"
 
 msgctxt "Address label"
 msgid "County"
@@ -3703,20 +3696,12 @@ msgid "District"
 msgstr "Kommune"
 
 msgctxt "Address label"
-msgid "Do si"
-msgstr ""
-
-msgctxt "Address label"
 msgid "Emirate"
 msgstr ""
 
 msgctxt "Address label"
 msgid "Island"
 msgstr "Ø"
-
-msgctxt "Address label"
-msgid "Oblast"
-msgstr ""
 
 msgctxt "Address label"
 msgid "Parish"
@@ -3749,10 +3734,6 @@ msgstr "Forstad"
 msgctxt "Address label"
 msgid "Neighborhood"
 msgstr "Nabolag"
-
-msgctxt "Address label"
-msgid "Village township"
-msgstr "Bydel"
 
 msgctxt "Address label"
 msgid "Townland"
@@ -4031,9 +4012,6 @@ msgstr "Gem indstillinger"
 
 msgid "Save"
 msgstr "Gem"
-
-msgid "County"
-msgstr "Land"
 
 msgid ""
 "Submitted: @country_code / @administrative_area / "
@@ -7780,9 +7758,6 @@ msgstr ""
 
 msgid "Start typing to find content."
 msgstr "Begynd at skrive for at finde indhold."
-
-msgid "Confirm"
-msgstr "Bekræft"
 
 msgid "Dummy setting"
 msgstr "Dummy indstilling"
@@ -12253,22 +12228,8 @@ msgstr ""
 msgid "Event Series Minimum Time"
 msgstr "Minimumstid"
 
-msgid ""
-"Enter the earliest an event can start, in h:ia format. For example "
-"08:00am."
-msgstr ""
-"Indtast arrangementets starttidspunkt, i h:ia format. For eksempel kl. "
-"08:00am."
-
 msgid "Event Series Maximum Time"
 msgstr "Maximumstid"
-
-msgid ""
-"Enter the latest an event can start, in h:ia format. For example "
-"11:45pm."
-msgstr ""
-"Indtast det seneste tidspunkt, hvor arrangementet starter, i h:ia "
-"format. For eksempel kl. 11:45pm."
 
 msgid "PHP date/time format"
 msgstr "PHP dato/tidsformat"
@@ -18451,5 +18412,185 @@ msgid "DPL Redia Legacy feeds"
 msgstr ""
 
 msgid "Various legacy integrations, used for the Redia App."
+msgstr ""
+
+msgctxt "Opening Hours"
+msgid "Are you sure you want to delete all \"@term_label\" opening hours?"
+msgstr ""
+
+msgctxt "Opening Hours"
+msgid ""
+"@term_label is associated with @count opening hours. Deleting "
+"@term_label will also delete these opening hours. Are you sure you "
+"want to continue?"
+msgstr ""
+
+msgid "Enter the earliest an event can start."
+msgstr ""
+
+msgid "Enter the latest an event can start."
+msgstr ""
+
+msgctxt "Address label"
+msgid "Organization"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Address line 3"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Street address line 3"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Do/Si"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Region"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Town/City"
+msgstr ""
+
+msgctxt "Address label"
+msgid "Village/Township"
+msgstr ""
+
+msgid "The third line of the address block"
+msgstr ""
+
+msgid "Wrapper type"
+msgstr ""
+
+msgid "Wrapper type: @wrapper_type"
+msgstr ""
+
+msgid "Container (invisible)"
+msgstr ""
+
+msgid "Details (collapsible)"
+msgstr ""
+
+msgid "Fieldset (non-collapsible)"
+msgstr ""
+
+msgid "Langcode"
+msgstr "Langcode"
+
+msgid "Administrative area"
+msgstr ""
+
+msgid "Dependent locality"
+msgstr ""
+
+msgid "Postal code"
+msgstr "Postnummer"
+
+msgid "Sorting code"
+msgstr ""
+
+msgid "Address line 1"
+msgstr ""
+
+msgid "Address line 2"
+msgstr ""
+
+msgid "Address line 3"
+msgstr ""
+
+msgid "Organization"
+msgstr "Organisation"
+
+msgid "Additional name"
+msgstr ""
+
+msgid "External URL @url"
+msgstr ""
+
+msgid "External URL"
+msgstr ""
+
+msgid "Adds https:// to URL."
+msgstr ""
+
+msgid "External"
+msgstr "Eksterne"
+
+msgctxt "Unilogin configuration"
+msgid "Unilogin configuration"
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "UniLogin API endpoint URL."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "The UniLogin API endpoint url."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "UniLogin API wellknown endpoint URL"
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "The UniLogin API wellknown endpoint url."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "UniLogin API client ID."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "The UniLogin API client ID."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "UniLogin API client secret."
+msgstr ""
+
+msgctxt "Unilogin configuration"
+msgid "The UniLogin API client secret."
+msgstr ""
+
+msgid "List of DPL-Go Unilogin configuration."
+msgstr ""
+
+msgid "DPL Configuration."
+msgstr ""
+
+msgid "DPL Configuration"
+msgstr ""
+
+msgid "DPL configuration schema extensions for GraphQL Compose."
+msgstr ""
+
+msgid "DPL UniLogin"
+msgstr ""
+
+msgid "Module containing unilogin configuration"
+msgstr ""
+
+msgid "UniLogin configuration"
+msgstr ""
+
+msgid "Change UniLogin configuration"
+msgstr ""
+
+msgid "Unilogin configuration"
+msgstr ""
+
+msgid "DPL GraphQL"
+msgstr ""
+
+msgid "Module used for handling graphql functionality."
+msgstr ""
+
+msgid "DPL Consumers"
+msgstr ""
+
+msgid "Module for adding consumers to DPL CMS"
 msgstr ""
 
