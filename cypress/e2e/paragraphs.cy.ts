@@ -332,4 +332,49 @@ describe("Paragraphs module", () => {
       openInNewTab: true,
     });
   });
+
+  it("Adds 'Card grid - Manual' paragraph and verifies 'dynamic_entity_reference'", () => {
+    const paragraphTitle = "Card grid title";
+    const links = [
+      {
+        text: "Jesper Stein vinder Læsernes Bogpris for Rampen",
+        url: "/articles/netmedier/jesper-stein-vinder-laesernes-bogpris-rampen",
+      },
+      {
+        text: "Bibliotekarerne anbefaler læsning til den mørke tid",
+        url: "/articles/bibliotekarerne-anbefaler-laesning-til-den-morke-tid",
+      },
+      { text: "Frontpage", url: "/frontpage" },
+      {
+        text: "Litterær skovbadning",
+        url: "/hovedbiblioteket/articles/klima/litteraer-skovbadning",
+      },
+      {
+        text: "3 gode til godnat 3-6 år",
+        url: "/articles/3-gode-til-godnat-3-6-ar",
+      },
+      {
+        text: "Ny læsesal på Hovedbiblioteket",
+        url: "/hovedbiblioteket/articles/litteratur/ny-laesesal-pa-hovedbiblioteket",
+      },
+    ];
+
+    addParagraph("Card grid - Manual");
+
+    cy.get('[data-drupal-selector="edit-field-paragraphs-0-subform"]')
+      .findByLabelText("Title")
+      .type(paragraphTitle);
+
+    links.forEach((link, index) => {
+      cy.get('input[data-drupal-selector$="-target-id"]')
+        .eq(index)
+        .type(link.text);
+    });
+
+    cy.saveContent();
+
+    cy.get(".card-grid__items a").each(($link, index) => {
+      expect($link.attr("href")).to.equal(links[index].url);
+    });
+  });
 });
