@@ -8989,7 +8989,7 @@ msgstr "Kommune"
 #: 
 msgctxt "Address label"
 msgid "Emirate"
-msgstr ""
+msgstr "Emirate"
 
 #: 
 msgctxt "Address label"
@@ -9004,7 +9004,7 @@ msgstr "Sogn"
 #: 
 msgctxt "Address label"
 msgid "Prefecture"
-msgstr ""
+msgstr "Prefecture"
 
 #: 
 msgctxt "Address label"
@@ -9044,7 +9044,7 @@ msgstr "Byområde"
 #: 
 msgctxt "Address label"
 msgid "Eircode"
-msgstr ""
+msgstr "Eircode"
 
 #: 
 msgctxt "Address label"
@@ -9154,11 +9154,12 @@ msgstr "Udsat: land indstillet via udsat filter"
 
 #: 
 msgid "exposed: fixed country: @country"
-msgstr ""
+msgstr "exposed: fixed country: @country"
 
 #: 
 msgid "fixed country: @country"
-msgstr ""
+msgstr "\n"
+"fixed country: @country"
 
 #: 
 msgid "broken configuration"
@@ -9190,7 +9191,8 @@ msgstr "Lokalitet (by)"
 
 #: 
 msgid "The dependent locality (i.e. neighbourhood)"
-msgstr ""
+msgstr "\n"
+"The dependent locality (i.e. neighbourhood)"
 
 #: 
 msgid "The postal code"
@@ -9218,7 +9220,7 @@ msgstr "Det givne navn"
 
 #: 
 msgid "The additional name"
-msgstr ""
+msgstr "The additional name"
 
 #: 
 msgid "The family name"
@@ -9238,7 +9240,7 @@ msgstr "- Ingen tilsidesættelse -"
 
 #: 
 msgid "Field overrides"
-msgstr ""
+msgstr "Field overrides"
 
 #: 
 msgid "Use field overrides to override the country-specific address format, forcing specific properties to always be hidden, optional, or required."
@@ -9664,7 +9666,7 @@ msgstr "Muliggør mere selektiv adgang bestemt af ekstra tilladelser for den rol
 
 #: 
 msgid "The sub‐admin can access a target user provided they have access to all of that user's roles."
-msgstr ""
+msgstr "The sub‐admin can access a target user provided they have access to all of that user's roles."
 
 #: 
 msgid "Administer Users by Role"
@@ -9736,7 +9738,7 @@ msgstr "Vis kun resultater efter brugeren har valgt en filtermulighed."
 
 #: 
 msgid "Enable secondary exposed form options"
-msgstr ""
+msgstr "Enable secondary exposed form options"
 
 #: 
 msgid "Allows you to specify some exposed form elements as being secondary options and places those elements in a collapsible \"details\" element. Use this option to place some exposed filters in an \"Advanced Search\" area of the form, for example."
@@ -9780,7 +9782,7 @@ msgstr "Vælg et format for de eksponerede sorteringsmuligheder."
 
 #: 
 msgid "Exposed Pager Settings"
-msgstr ""
+msgstr "Exposed Pager Settings"
 
 #: 
 msgid "This section lets you select additional options for exposed pagers. Some options are only available in certain situations. If you do not see the options you expect, please see the <a href=\":link\">BEF settings documentation page</a> for more details."
@@ -9988,7 +9990,7 @@ msgstr "Hurtig"
 
 #: 
 msgid "Whether to slide handle smoothly when user click outside handle on the bar."
-msgstr ""
+msgstr "Whether to slide handle smoothly when user click outside handle on the bar."
 
 #: 
 msgid "Animation speed in milliseconds"
@@ -10020,7 +10022,7 @@ msgstr "Trinindstillingen for %name må ikke have mere end 5 decimaler."
 
 #: 
 msgid "The slider range must be evenly divisible by the step option."
-msgstr ""
+msgstr "The slider range must be evenly divisible by the step option."
 
 #: 
 msgid "Better Exposed Filters (BEF) modifies the use of Views by replacing the 'single'  or 'multi' <em>select boxes</em> with <em>radio buttons or checkboxes</em>. Views offers the ability to expose filters to the end user. When you expose a filter, you allow the user to interact with the view making it easy to build an advanced search.  Better Exposed Filters gives you greater control over the rendering of exposed filters. For more information, see the <a href=\":online\">online documentation for the Better Exposed Filters module</a>."
@@ -10052,7 +10054,7 @@ msgstr "Aktiver Token-modulet for at tillade token-erstatning i dette felt."
 
 #: 
 msgid "Tokens are allowed in this field. Replacement options can be found in the \"Global replacement patterns\" section, below."
-msgstr ""
+msgstr "Tokens are allowed in this field. Replacement options can be found in the \"Global replacement patterns\" section, below."
 
 #: 
 msgid "Global replacement patterns (for description field only)"
@@ -10072,7 +10074,8 @@ msgstr "Better Exposed Filters"
 
 #: 
 msgid "Provides additional options for exposed form elements."
-msgstr ""
+msgstr "\n"
+"Provides additional options for exposed form elements."
 
 #: 
 msgid "Radio Buttons"
@@ -10120,7 +10123,7 @@ msgstr "Låsens ejer"
 
 #: 
 msgid "The user locking the node."
-msgstr ""
+msgstr "The user locking the node."
 
 #: 
 msgid "Lock Date/Time"
@@ -10144,7 +10147,7 @@ msgstr "Lås formularoperation"
 
 #: 
 msgid "Form operation of the lock"
-msgstr ""
+msgstr "Form operation of the lock"
 
 #: 
 msgid "Is Locked"
@@ -10200,7 +10203,7 @@ msgstr "Brugere, der forsøger at redigere et låst indhold, ser stadig meddelel
 
 #: 
 msgid "Entity type protected"
-msgstr ""
+msgstr "Entity type protected"
 
 #: 
 msgid "All"
@@ -10400,7 +10403,7 @@ msgstr "Indstillinger for indholdslås"
 
 #: 
 msgid "Prefetch cache test"
-msgstr ""
+msgstr "Prefetch cache test"
 
 #: 
 msgid "Settings"
@@ -10670,7 +10673,7 @@ msgstr "Tidspunktet hvor den aktuelle version blev opdateret."
 
 #: 
 msgid "Revision author ID"
-msgstr ""
+msgstr "Revision author ID"
 
 #: 
 msgid "The user ID of the author of the current revision."
@@ -10896,7 +10899,7 @@ msgstr "Datointerval"
 
 #: 
 msgid "Date range formatter"
-msgstr ""
+msgstr "Date range formatter"
 
 #: 
 msgid "Formats date ranges."
@@ -10924,7 +10927,7 @@ msgstr "Eksporterer en enhed og alle dens refererede enheder."
 
 #: 
 msgid "Folder to export to, entities are grouped by entity type into directories."
-msgstr ""
+msgstr "Folder to export to, entities are grouped by entity type into directories."
 
 #: 
 msgid "Exports all the content defined in a module info file."
@@ -11186,12 +11189,12 @@ msgstr "Omvendt reference fra @target_label enheder refereret af @field_name @ty
 
 #: 
 msgid "Dynamic Entity Reference Field Diff"
-msgstr ""
+msgstr "Dynamic Entity Reference Field Diff"
 
 #: 
 msgctxt "Validation"
 msgid "Dynamic Entity Reference valid reference"
-msgstr ""
+msgstr "Dynamic Entity Reference valid reference"
 
 #: 
 msgid "An entity field containing a dynamic entity reference."
@@ -11231,7 +11234,7 @@ msgstr "Valgliste"
 
 #: 
 msgid "Entity Test Provider"
-msgstr ""
+msgstr "Entity Test Provider"
 
 #: 
 msgid "Dynamic entity reference test views"
@@ -11243,7 +11246,7 @@ msgstr "Leverer standardvisninger for dynamisk enhedsreference af testvisninger.
 
 #: 
 msgid "Dynamic Entity Reference Entity Test"
-msgstr ""
+msgstr "Dynamic Entity Reference Entity Test"
 
 #: 
 msgid "Provides base fields for dynamic_entity_reference tests of entity_test entity type."
@@ -15377,11 +15380,11 @@ msgstr "MSApplication - Flisebillede"
 
 #: 
 msgid "The URL to an image to use as the background for the live tile."
-msgstr ""
+msgstr "URL'en til et billede, der skal bruges som baggrund."
 
 #: 
 msgid "Handheld URL"
-msgstr ""
+msgstr "Manuel vedligeholdt URL"
 
 #: 
 msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
@@ -15401,7 +15404,7 @@ msgstr "X-UA-Compatible"
 
 #: 
 msgid "Indicates to IE which rendering engine should be used for the current page."
-msgstr ""
+msgstr "Indicates to IE which rendering engine should be used for the current page."
 
 #: 
 msgid "MSApplication - Tile color"
@@ -15409,7 +15412,7 @@ msgstr "MSApplication - Flisefarve"
 
 #: 
 msgid "The HTML color to use as the background color for the live tile."
-msgstr ""
+msgstr "Angiver hvilken HTML farve, der skal bruges som baggrund."
 
 #: 
 msgid "Status bar color"
@@ -15465,7 +15468,7 @@ msgstr "Applikationsnavn"
 
 #: 
 msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
-msgstr ""
+msgstr "Standardnavnet vises ved feltet eller ikonet. Indstil indholdsattributten til det ønskede navn."
 
 #: 
 msgid "Cleartype"
@@ -15521,7 +15524,7 @@ msgstr "En tilpasset streng for deeplinking til en iOS mobilapp. Skal være i fo
 
 #: 
 msgid "Handheld-Friendly"
-msgstr ""
+msgstr "Handheld-Friendly"
 
 #: 
 msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
@@ -15537,7 +15540,7 @@ msgstr "Disse metatags bliver brugt til at bekræfte hjemmesideejerskab for søg
 
 #: 
 msgid "Pocket"
-msgstr ""
+msgstr "Pocket"
 
 #: 
 msgid "A string provided by <a href=':pocket'>Pocket</a>, full details are available from the <a href=':verify_url'>Pocket online help</a>."
@@ -15758,7 +15761,7 @@ msgstr "Video bredde"
 
 #: 
 msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
-msgstr ""
+msgstr "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
 
 #: 
 msgid "First name"
@@ -15974,7 +15977,7 @@ msgstr "Aktørens rolle"
 
 #: 
 msgid "The roles of the actor(s)."
-msgstr ""
+msgstr "The roles of the actor(s)."
 
 #: 
 msgid "Series"
@@ -16348,7 +16351,7 @@ msgstr "Vægt af række @number"
 
 #: 
 msgid "Foo"
-msgstr ""
+msgstr "Foo – metasyntaktisk variabel"
 
 #: 
 msgid "Bar"
@@ -16364,7 +16367,7 @@ msgstr "Tilføj mere kompleksitet"
 
 #: 
 msgid "Inner foo"
-msgstr ""
+msgstr "Inner foo"
 
 #: 
 msgid "Values"
@@ -16380,7 +16383,7 @@ msgstr "Værdi B"
 
 #: 
 msgid "Multiple one"
-msgstr ""
+msgstr "Multiple one"
 
 #: 
 msgid "Textfield one"
@@ -16388,7 +16391,7 @@ msgstr "Tekstfelt et"
 
 #: 
 msgid "Multiple two"
-msgstr ""
+msgstr "Multiple two"
 
 #: 
 msgid "Texfield two"
@@ -16416,7 +16419,7 @@ msgstr "Flerværdi form-element"
 
 #: 
 msgid "Provides a multi-value form element that wraps any number of form elements."
-msgstr ""
+msgstr "Provides a multi-value form element that wraps any number of form elements."
 
 #: 
 msgid "Multi-value form element AJAX test form"
@@ -16592,7 +16595,7 @@ msgstr "Autorisationsendpoint"
 
 #: 
 msgid "Token endpoint"
-msgstr ""
+msgstr "Token endpoint"
 
 #: 
 msgid "UserInfo endpoint"
@@ -16792,7 +16795,7 @@ msgstr "Brugerdefinerede OpenID Connect/OAuth2 udbydere"
 
 #: 
 msgid "Easily add an own provider by using the provided Generic client, or use a custom provider client plugin."
-msgstr ""
+msgstr "Easily add an own provider by using the provided Generic client, or use a custom provider client plugin."
 
 #: 
 msgid "Synchronize user properties/fields with OpenID Connect claims"
@@ -16868,7 +16871,7 @@ msgstr "Vis Paragraphs som liste"
 
 #: 
 msgid "Display Paragraphs as tiles"
-msgstr ""
+msgstr "Display Paragraphs as tiles"
 
 #: 
 msgid "Delete Paragraphs category"
@@ -23087,12 +23090,12 @@ msgstr "Titlen, der vises over listen af refereret indhold. Vil ikke blive vist,
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:label"
 msgid "Show children subtitles"
-msgstr ""
+msgstr "Vis undertitel for børnebrødkrumme"
 
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:description"
 msgid "If this is checked, the children teasers will be expanded with possible subtitle descriptions."
-msgstr ""
+msgstr "Sæt hak her, hvis børnebrødkrummen skal udfoldes med eventuelle undertitel"
 
 #: 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_show_children_subtitles:settings:on_label"
@@ -25043,7 +25046,7 @@ msgstr "Nuværende kollation"
 
 #: 
 msgid "Expected charset"
-msgstr ""
+msgstr "Expected charset"
 
 #: 
 msgid "Expected collation"
@@ -25199,7 +25202,7 @@ msgstr "Indlæser ..."
 #: 
 msgctxt "Material search"
 msgid "Total amount of results"
-msgstr ""
+msgstr "Søgeresultat"
 
 #: 
 msgctxt "Material search"
@@ -25301,7 +25304,7 @@ msgstr "Administrer samtykke"
 #: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:label"
 msgid "More link"
-msgstr ""
+msgstr "Flere links"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_automatic.field_more_link:default_value:0:title"
@@ -25311,7 +25314,7 @@ msgstr "Vis flere"
 #: 
 msgctxt "field.field.paragraph.card_grid_manual.field_more_link:label"
 msgid "More link"
-msgstr ""
+msgstr "Flere links"
 
 #: 
 msgctxt "field.field.paragraph.card_grid_manual.field_more_link:default_value:0:title"
@@ -25341,7 +25344,7 @@ msgstr "Annulleret"
 #: 
 msgctxt "dpl_event"
 msgid "Occurred"
-msgstr ""
+msgstr "Er afholdt"
 
 #: 
 msgctxt "views.view.entity_clone_template:display:default:display_options:fields:nothing:alter:text"
@@ -25366,17 +25369,17 @@ msgstr "Vis undertekster"
 #: 
 msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Vis"
 
 #: 
 msgctxt "field.field.paragraph.breadcrumb_children.field_show_subtitles:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Skjul"
 
 #: 
 msgctxt "image.style.open_graph:label"
 msgid "Open graph (1200x630)"
-msgstr ""
+msgstr "Open graph (1200x630)"
 
 #: 
 msgctxt "metatag.metatag_defaults.eventinstance__default:label"
@@ -25531,17 +25534,18 @@ msgstr "Link"
 #: 
 msgctxt "Material search"
 msgid "This material needs to be updated."
-msgstr ""
+msgstr "Dette materiale skal opdateres"
 
 #: 
 msgctxt "Material search"
 msgid "The currently selected type of the material is no longer available in the system. <br> As a result of this, the link is likely broken. <br> Use the title or link underneath to find and update the material and its type, or replace / delete it."
-msgstr ""
+msgstr "Den valgte materialetype er ikke længere tilgængelig. <br> Derfor virker linket ikke <br> Brug titlen eller linket nedenfor for at finde og opdatere materialet og materialetypen ELLER udskifte / slette det. "
 
 #: 
 msgctxt "Material search"
 msgid "The material that was previously selected is no longer available in the system. Either delete this entry or search for a new material to replace it."
-msgstr ""
+msgstr "Det materiale, der tidligere er forsøgt fremfundet er ikke længere tilgængeligt. Enten skal man slette denne indførsel eller søge et nyt materiale, som kan erstatte det oprindelige.\n"
+""
 
 #: 
 msgctxt "Material search"
@@ -26172,7 +26176,7 @@ msgstr "Leverer support for planlægning af tilbagevendende arrangementsenheder"
 #: 
 msgctxt "advanced search"
 msgid "location"
-msgstr ""
+msgstr "Opstilling"
 
 #: 
 msgctxt "advanced search"
@@ -26182,7 +26186,7 @@ msgstr ""
 #: 
 msgctxt "advanced search"
 msgid "sublocation"
-msgstr ""
+msgstr "Delopstilling"
 
 #: 
 msgctxt "advanced search"
@@ -26566,4 +26570,12 @@ msgstr ""
 #: 
 msgid "Module for adding consumers to DPL CMS"
 msgstr ""
+
+#: 
+msgid "Continue"
+msgstr "Fortsæt"
+
+#: 
+msgid "Update settings"
+msgstr "Opdatér indstillinger"
 
