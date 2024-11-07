@@ -80,6 +80,7 @@ Cypress.Commands.add("logRequests", () => {
 Cypress.Commands.add("drupalLogin", (url?: string) => {
   const username = Cypress.env("DRUPAL_USERNAME");
   const password = Cypress.env("DRUPAL_PASSWORD");
+
   cy.session({ username, password }, () => {
     cy.visit("/user/login");
     cy.get('[name="name"]')
@@ -87,7 +88,7 @@ Cypress.Commands.add("drupalLogin", (url?: string) => {
       .parent()
       .get('[name="pass"]')
       .type(password);
-    cy.get('[value="Log in"]').click();
+    cy.get('.button-login').click();
   });
 
   if (url) {
