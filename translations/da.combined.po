@@ -26181,7 +26181,7 @@ msgstr "Opstilling"
 #: 
 msgctxt "advanced search"
 msgid "Add a comma separated list for multiple locations"
-msgstr ""
+msgstr "Sæt komma mellem opstillinger for at filtrere på flere"
 
 #: 
 msgctxt "advanced search"
@@ -26191,7 +26191,7 @@ msgstr "Delopstilling"
 #: 
 msgctxt "advanced search"
 msgid "Add a comma separated list for multiple sublocations"
-msgstr ""
+msgstr "Sæt komma mellem delopstillinger for at filtrere på flere"
 
 #: 
 msgctxt "dpl_search"
@@ -26578,4 +26578,32 @@ msgstr "Fortsæt"
 #: 
 msgid "Update settings"
 msgstr "Opdatér indstillinger"
+
+#: 
+msgid "Show collapse all button"
+msgstr ""
+
+#: 
+msgid "Disable the collapse all button when using inline entity forms in your paragraph types."
+msgstr ""
+
+#: 
+msgid "Source image with fid=%fid not confirmed as valid."
+msgstr ""
+
+#: 
+msgid "Source image with fid=%fid not confirmed as valid while checking access."
+msgstr ""
+
+#: 
+msgid "File not found."
+msgstr ""
+
+#: 
+msgid "Focal Point Crop by Width"
+msgstr ""
+
+#: 
+msgid "Crops image while keeping its focal point and the original height."
+msgstr ""
 
