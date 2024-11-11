@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "627c63bdd7a454207ac36595a2adf4ca",
+    "content-hash": "a4c30a48cbdd65dd676b3941064a6530",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-181-upgrade-typescript/dist-ddfbra-181-upgrade-typescript.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
