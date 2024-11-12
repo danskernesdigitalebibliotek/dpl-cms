@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "627c63bdd7a454207ac36595a2adf4ca",
+    "content-hash": "d58afe24484e0b1153a58b73b07f072a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFNEXT-205-upgrade-orval/dist-ddfnext-205-upgrade-orval.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
