@@ -142,10 +142,13 @@ services:
       << : *default-environment
 
   node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.9.16
+    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.9.17
     labels:
       lagoon.type: node
       provenance: false
+    volumes:
+      - 'nextjs:/app/.next'
+
 
 volumes:
   projectroot:
@@ -154,3 +157,6 @@ volumes:
       type: none
       device: ${PWD}
       o: bind
+  nextjs:
+    labels:
+      lagoon.type: persistent
