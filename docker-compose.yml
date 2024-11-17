@@ -146,9 +146,6 @@ services:
     labels:
       lagoon.type: node
       provenance: false
-    volumes:
-      - 'nextjs:/app/.next'
-
 
 volumes:
   projectroot:
@@ -157,6 +154,3 @@ volumes:
       type: none
       device: ${PWD}
       o: bind
-  nextjs:
-    labels:
-      lagoon.type: persistent
