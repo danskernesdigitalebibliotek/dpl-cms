@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f22ab27f889ae1b41d8d1fdf12fa7bc",
+    "content-hash": "d724ad8ed963a8a2de7093b14a0a9cae",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,10 +1166,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2024.46.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2024.46.0/dist-2024-46-0-26b569fe9286c99caa7d35dfffb9e4d176826c7a.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-storybook-dependabot/dist-storybook-dependabot.zip"
             },
             "type": "drupal-library"
         },
@@ -19436,6 +19436,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
