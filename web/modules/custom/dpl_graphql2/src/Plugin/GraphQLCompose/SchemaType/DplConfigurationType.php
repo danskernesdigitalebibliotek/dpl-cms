@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\dpl_graphql\Plugin\GraphQLCompose\SchemaType;
+namespace Drupal\dpl_graphql2\Plugin\GraphQLCompose\SchemaType;
 
 use Drupal\graphql_compose\Plugin\GraphQLCompose\GraphQLComposeSchemaTypeBase;
 use GraphQL\Type\Definition\ObjectType;

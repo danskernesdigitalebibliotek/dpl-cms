@@ -1,11 +1,7 @@
-name: 'DPL GraphQL'
+name: 'DPL GraphQL (UNUSED)'
 type: module
-description: 'Module used for handling graphql functionality.'
+description: |
+  This is an empty module, necessary to get around a temporary issue
+  in release 2024.48.0. See dpl_update.install for more info.'
 package: DPL
 core_version_requirement: ^10 || ^11
-dependencies:
-  - graphql:graphql
-  - graphql_compose:graphql_compose
-  - dpl_unilogin:dpl_unilogin
-  - simple_oauth:simple_oauth
-  - dpl_consumers:dpl_consumers

@@ -1,0 +1,4 @@
+services:
+  dpl_graphql2.page_cache_request_policy.disallow_oauth2_token_requests:
+    class: Drupal\dpl_graphql2\PageCache\DplDisallowSimpleOauthRequests
+    decorates: simple_oauth.page_cache_request_policy.disallow_oauth2_token_requests

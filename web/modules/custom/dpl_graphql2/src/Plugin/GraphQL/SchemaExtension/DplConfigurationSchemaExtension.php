@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\dpl_graphql\Plugin\GraphQL\SchemaExtension;
+namespace Drupal\dpl_graphql2\Plugin\GraphQL\SchemaExtension;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityFieldManagerInterface;

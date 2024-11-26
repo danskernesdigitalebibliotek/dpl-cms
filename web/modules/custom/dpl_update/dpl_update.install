@@ -289,7 +289,7 @@ function dpl_update_update_10022(): string {
  * Install dpl_graphql module.
  */
 function dpl_update_update_10023(): string {
-  return _dpl_update_install_modules(['dpl_graphql']);
+  return _dpl_update_install_modules(['dpl_graphql2']);
 }
 
 /**
@@ -325,4 +325,22 @@ function dpl_update_update_10027(): string {
  */
 function dpl_update_update_10028(): string {
   return _dpl_update_uninstall_modules(['config_filter']);
+}
+
+/**
+ * Quickfix: Replace dpl_graphql module with graphql2.
+ *
+ * This is necessary, as the original graphql module includes code that does
+ * not work without simple_oauth, which cannot be installed,
+ * due to the Drush command not being able to run.
+ * We get around this, by moving the code into a new module (graphql2),
+ * leaving the old module as an empty boilerplate.
+ * This gives drush a chance to actually enable the dependencies.
+ * In a future release, we should rename the module again.
+ */
+function dpl_update_update_10029(): string {
+  $return = _dpl_update_uninstall_modules(['dpl_graphql']);
+  $return .= _dpl_update_install_modules(['dpl_graphql2']);
+
+  return $return;
 }

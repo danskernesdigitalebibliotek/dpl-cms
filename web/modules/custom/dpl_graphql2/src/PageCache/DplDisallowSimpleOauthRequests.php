@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\dpl_graphql\PageCache;
+namespace Drupal\dpl_graphql2\PageCache;
 
 use Drupal\simple_oauth\PageCache\SimpleOauthRequestPolicyInterface;
 use Symfony\Component\HttpFoundation\Request;
