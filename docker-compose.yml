@@ -142,7 +142,7 @@ services:
       << : *default-environment
 
   node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.10.10
+    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.10.11
     labels:
       lagoon.type: node
       provenance: false
