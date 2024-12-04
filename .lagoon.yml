@@ -133,6 +133,9 @@ tasks:
 
 environments:
   main:
+    node:
+      annotations:
+        nginx.ingress.kubernetes.io/client-header-buffer-size: "8k"
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"
