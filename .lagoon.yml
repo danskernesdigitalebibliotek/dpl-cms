@@ -151,7 +151,7 @@ environments:
         schedule: "M/30 * * * *"
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
-  pr-1501:
+  pr-1707:
     node:
       annotations:
         nginx.ingress.kubernetes.io/client-header-buffer-size: "8k"
