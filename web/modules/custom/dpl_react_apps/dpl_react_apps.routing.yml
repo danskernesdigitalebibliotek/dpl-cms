@@ -25,5 +25,3 @@ dpl_react_apps.reader:
     _controller: '\Drupal\dpl_react_apps\Controller\DplReactAppsController::reader'
   requirements:
     _permission: 'access content'
-  options:
-    no_cache: true
