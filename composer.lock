@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d89be314a09f03f216ca135be18c887d",
+    "content-hash": "b9ac8030a9b129e4759705e925bb5d83",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.49.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.49.0/dist-2024-49-0-ccdcf6397ae7b1acd328c0cdd5688c2d7bbf1bd4.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-43-analyse-af-fejl-pa-intelligente-facetter/dist-ddfbra-43-analyse-af-fejl-pa-intelligente-facetter.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20111,6 +20111,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
