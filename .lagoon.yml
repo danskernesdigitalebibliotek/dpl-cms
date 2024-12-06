@@ -139,16 +139,13 @@ environments:
         command: drush cron
         service: cli
       - name: import translations
-        # TODO Consider if translation checking frequency should be reduced.
-        # A high frequency is used to ensure quick turnaround time during
-        # development. Updating (or checking) translations could have side effects on
-        # caching etc. and once things have settled down a lower frequency may be
-        # more appropriate.
-        schedule: "M/30 * * * *"
+        # Every 12 hours.
+        schedule: "0 */12 * * *"
         command: drush locale-check && drush locale-update
         service: cli
       - name: import danish config translations
-        schedule: "M/30 * * * *"
+        # Every 12 hours.
+        schedule: "0 */12 * * *"
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
   pr-1501:
