@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-11-15 09:41+0100\n"
-"PO-Revision-Date: 2024-11-15 09:41+0100\n"
+"POT-Creation-Date: 2024-12-06 14:18+0100\n"
+"PO-Revision-Date: 2024-12-06 14:18+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -486,7 +486,7 @@ msgstr "Navigationsteaser"
 
 msgctxt "core.entity_view_mode.file.token:label"
 msgid "Token"
-msgstr "Tokel"
+msgstr "Token"
 
 msgctxt "core.entity_view_mode.media.full:label"
 msgid "Full content"
@@ -4482,7 +4482,7 @@ msgstr "search_api:views_page__articles__all"
 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:label"
 msgid "Children title"
-msgstr ""
+msgstr "Børnetitel"
 
 msgctxt "field.field.taxonomy_term.breadcrumb_structure.field_children_title:description"
 msgid ""
@@ -4715,7 +4715,7 @@ msgstr "Integrer: Administrer"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:webform_submission_bulk_form:label"
 msgid "Webform submission operations bulk form"
-msgstr ""
+msgstr "Indsendelse af webformularer en masse"
 
 msgctxt "views.view.webform_submissions:display:embed_administer:display_options:fields:webform_submission_bulk_form:action_title"
 msgid "Action"
@@ -4783,7 +4783,7 @@ msgstr "Integrer: Administrer"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:webform_submission_bulk_form:label"
 msgid "Webform submission operations bulk form"
-msgstr ""
+msgstr "Indsendelse af webformularer en masse"
 
 msgctxt "views.view.webform_submissions:display:embed_manage:display_options:fields:webform_submission_bulk_form:action_title"
 msgid "Action"
@@ -4927,7 +4927,7 @@ msgstr "d F Y - {d} {F} {Y}"
 
 msgctxt "core.entity_view_mode.eventinstance.list_teaser_stacked_parent:label"
 msgid "List teaser stacked parent"
-msgstr ""
+msgstr "Samlet liste over forældre "
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:label"
 msgid "Filter by branches"
@@ -5818,7 +5818,7 @@ msgstr "Open graph (1200x630)"
 
 msgctxt "metatag.metatag_defaults.eventinstance__default:label"
 msgid "Event Instance entity: Default"
-msgstr ""
+msgstr "Arrangement instans enhed: Default"
 
 msgctxt "metatag.metatag_defaults.eventinstance__default:tags:og_image"
 msgid "[eventinstance:event_teaser_image:entity:field_media_image:open_graph]"
@@ -5838,7 +5838,7 @@ msgstr "[eventinstance:event_teaser_image:entity:field_media_image:open_graph:wi
 
 msgctxt "metatag.metatag_defaults.eventseries__default:label"
 msgid "Event series entity: Default"
-msgstr ""
+msgstr "Arrangement serie enhed: Default"
 
 msgctxt "metatag.metatag_defaults.eventseries__default:tags:og_image"
 msgid "[eventseries:field_teaser_image:entity:field_media_image:open_graph]"
@@ -5874,7 +5874,7 @@ msgstr "[node:field_teaser_image:entity:field_media_image:open_graph:width]"
 
 msgctxt "metatag.metatag_defaults.node__branch:label"
 msgid "Content: Branch"
-msgstr ""
+msgstr "Indhold: Afdeling"
 
 msgctxt "metatag.metatag_defaults.node__branch:tags:og_image"
 msgid "[node:field_main_media:entity:field_media_image:open_graph]"
@@ -5894,23 +5894,23 @@ msgstr "[node:field_main_media:entity:field_media_image:open_graph:width]"
 
 msgctxt "core.entity_view_mode.media.banner:label"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "field.field.paragraph.banner.field_banner_description:label"
 msgid "Banner description"
-msgstr ""
+msgstr "Bannerbeskrivelse"
 
 msgctxt "field.field.paragraph.banner.field_banner_image:label"
 msgid "Banner Image"
-msgstr ""
+msgstr "Bannerbillede"
 
 msgctxt "field.field.paragraph.banner.field_banner_link:label"
 msgid "Banner Link"
-msgstr ""
+msgstr "Bannerlink"
 
 msgctxt "field.field.paragraph.banner.field_underlined_title:label"
 msgid "Underlined title"
-msgstr ""
+msgstr "Understreget titel"
 
 msgctxt "filter.format.underlined_title:name"
 msgid "Underlined title"
@@ -5934,7 +5934,7 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:label"
 msgid "Grouped filters"
-msgstr ""
+msgstr "Grupperede filtre"
 
 msgctxt "core.entity_form_display.paragraph.card_grid_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
 msgid ""
@@ -5946,7 +5946,7 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:label"
 msgid "Grouped filters"
-msgstr ""
+msgstr "Grupperede filtre"
 
 msgctxt "core.entity_form_display.paragraph.content_slider_automatic.default:third_party_settings:field_group:group_filters:format_settings:description"
 msgid ""
@@ -5958,7 +5958,7 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:label"
 msgid "Grouped filters"
-msgstr ""
+msgstr "Grupperede filtre"
 
 msgctxt "core.entity_form_display.paragraph.filtered_event_list.default:third_party_settings:field_group:group_filters:format_settings:description"
 msgid ""
@@ -5970,27 +5970,27 @@ msgstr ""
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_branches:description"
 msgid "If nothing is selected, all will be chosen."
-msgstr ""
+msgstr "Hvis der ikke vælges noget, vil ALT automatisk blive valgt."
 
 msgctxt "field.field.paragraph.card_grid_automatic.field_filter_cond_type:label"
 msgid "Condition type"
-msgstr ""
+msgstr "Tilstandstype"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_filter_branches:description"
 msgid "If nothing is selected, all will be chosen."
-msgstr ""
+msgstr "Hvis der ikke vælges noget, vil ALT automatisk blive valgt."
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_filter_cond_type:label"
 msgid "Condition type"
-msgstr ""
+msgstr "Tilstandstype"
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_branches:description"
 msgid "If nothing is selected, all will be chosen."
-msgstr ""
+msgstr "Hvis der ikke vælges noget, vil ALT automatisk blive valgt."
 
 msgctxt "field.field.paragraph.filtered_event_list.field_filter_cond_type:label"
 msgid "Condition type"
-msgstr ""
+msgstr "Tilstandstype"
 
 msgctxt "field.storage.paragraph.field_filter_cond_type:settings:allowed_values:0:label"
 msgid "Must match on ANY filter - \"OR\""
@@ -6018,31 +6018,31 @@ msgstr "Denne paragraph viser links uden ikoner."
 
 msgctxt "core.entity_view_mode.paragraph.title_display:label"
 msgid "Title display"
-msgstr ""
+msgstr "Titelvisning"
 
 msgctxt "field.field.paragraph.content_slider.field_title:label"
 msgid "Title (deprecated)"
-msgstr ""
+msgstr "Titel (forældet)"
 
 msgctxt "field.field.paragraph.content_slider.field_title:description"
 msgid "deprecated"
-msgstr ""
+msgstr "forældet"
 
 msgctxt "field.field.paragraph.content_slider.field_underlined_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_title:label"
 msgid "Title (deprecated)"
-msgstr ""
+msgstr "Titel (forældet)"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_title:description"
 msgid "deprecated"
-msgstr ""
+msgstr "Titel (forældet)"
 
 msgctxt "field.field.paragraph.content_slider_automatic.field_underlined_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:label"
 msgid "Name & Email"
@@ -6050,19 +6050,21 @@ msgstr "Navn og Email"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:field_author_name:alter:text"
 msgid "{{ field_author_name__value }} <br><small>{{ mail }}</small>"
-msgstr ""
+msgstr "{{ field_author_name__value }} <br><small>{{ mail }}</small>"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:status:alter:text"
 msgid "{{ status__value }} "
 msgstr ""
+"\n"
+"{{ status__value }}"
 
 msgctxt "field.field.user.user.field_last_password_reset:label"
 msgid "Last Password Reset"
-msgstr ""
+msgstr "Sidste mulighed for at ændre adgangskoden"
 
 msgctxt "field.field.user.user.field_password_expiration:label"
 msgid "Password Expiration"
-msgstr ""
+msgstr "Adgangskodeudløb"
 
 msgctxt "field.field.user.user.field_password_expiration:description"
 msgid ""
@@ -6070,24 +6072,27 @@ msgid ""
 "has expired, this field is automatically checked after the execution "
 "of Cron."
 msgstr ""
+"Kontrollerer om brugeren skal nulstille sin adgangskode. Hvis "
+"adgangskoden er udløbet, tjekkes dette felt automatisk efter "
+"udførelse af Cron."
 
 msgctxt "field.field.user.user.field_password_expiration:settings:on_label"
 msgid "Expired Password"
-msgstr ""
+msgstr "Udløbet adgangskode"
 
 msgctxt "field.field.user.user.field_password_expiration:settings:off_label"
 msgid "Non-expired Password"
-msgstr ""
+msgstr "Gældende adgangskode"
 
 msgctxt "field.field.user.user.field_pending_expire_sent:label"
 msgid "Pending Expiration Mail Count"
-msgstr ""
+msgstr "Afventer udløb af mail"
 
 msgctxt "field.field.user.user.field_pending_expire_sent:description"
 msgid ""
 "Whether an email notifying of a pending password expiration has been "
 "sent"
-msgstr ""
+msgstr "Om der er sendt en e-mail med besked om at et kodeord snart udløber"
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:label"
 msgid "Relevant for ticket manager"
@@ -6105,23 +6110,23 @@ msgstr ""
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Aktiv"
 
 msgctxt "field.field.eventseries.default.field_relevant_ticket_manager:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Ikke-aktiv"
 
 msgctxt "core.entity_view_mode.eventseries.list_teaser:label"
 msgid "List teaser"
-msgstr ""
+msgstr "Listeteaser"
 
 msgctxt "views.view.editorial_search:label"
 msgid "Editorial search"
-msgstr ""
+msgstr "Søgning"
 
 msgctxt "views.view.editorial_search:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Automatisk"
 
 msgctxt "views.view.editorial_search:display:default:display_options:title"
 msgid "Search"
@@ -6129,59 +6134,59 @@ msgstr "Søg"
 
 msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Antal materialer pr. side"
 
 msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.editorial_search:display:default:display_options:pager:options:expose:offset_label"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgctxt "views.view.editorial_search:display:default:display_options:pager:options:views_infinite_scroll:button_text"
 msgid "Showing @current_items out of @total results"
-msgstr ""
+msgstr "Viser @current_items af of @total hits"
 
 msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.editorial_search:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 msgctxt "views.view.editorial_search:display:default:display_options:filters:search_api_fulltext:expose:label"
 msgid "Fulltext search"
-msgstr ""
+msgstr "Fuldtekstsøgning"
 
 msgctxt "views.view.editorial_search:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filter og klik på Vælg for at se resultatet"
 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
-msgstr ""
+msgstr "Basic"
 
 msgctxt "views.view.articles:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Advanced options"
 
 msgctxt "views.view.articles:display:default:display_options:empty:area:content:value"
 msgid ""
@@ -6195,7 +6200,7 @@ msgstr "Søg"
 
 msgctxt "views.view.articles:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
 msgid "Søg"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.events:display:default:display_options:empty:area:content:value"
 msgid ""
@@ -6209,19 +6214,19 @@ msgstr "Søg"
 
 msgctxt "views.view.events:display:default:display_options:filters:search_api_fulltext:expose:placeholder"
 msgid "Søg"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "pathauto.pattern.category_term:label"
 msgid "Category term - embedded search"
-msgstr ""
+msgstr "Kategori - indlejret søgning"
 
 msgctxt "pathauto.pattern.tag_term:label"
 msgid "Tag term - embedded search"
-msgstr ""
+msgstr "Tag - indlejret søgning"
 
 msgctxt "views.view.editorial_search:display:term_page:display_title"
 msgid "Context by tag"
-msgstr ""
+msgstr "Tag"
 
 msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:categories:exception:title"
 msgid "All"
@@ -6229,77 +6234,81 @@ msgstr "Alle"
 
 msgctxt "views.view.editorial_search:display:term_page:display_options:arguments:tags:exception:title"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filte, og klik på Anvend for at se resultater"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Avancerede muligheder"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:expose:label"
 msgid "Has no role"
-msgstr ""
+msgstr "Der findes ingen rolle"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:label"
 msgid "Has role"
-msgstr ""
+msgstr "Der findes en rolle"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:1:title"
 msgid "Has no role"
-msgstr ""
+msgstr "Der findes ingen rolle"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_1:group_info:group_items:2:title"
 msgid "Has role"
-msgstr ""
+msgstr "Der findes en rolle"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:expose:label"
 msgid "Include patron"
-msgstr ""
+msgstr "Omfatter også bruger"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:label"
 msgid "Include patron"
-msgstr ""
+msgstr "Omfatter også bruger"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:1:title"
 msgid "Include patrons"
-msgstr ""
+msgstr "Omfatter også brugere"
 
 msgctxt "views.view.user_admin_people:display:default:display_options:filters:roles_target_id_2:group_info:group_items:2:title"
 msgid "Exclude patrons"
-msgstr ""
+msgstr "Udelukker brugere"
 
 msgctxt "core.entity_view_mode.media.redia_feed_large:label"
 msgid "Redia feed - large"
-msgstr ""
+msgstr "Redia feed - large"
 
 msgctxt "core.entity_view_mode.media.redia_feed_small:label"
 msgid "Redia feed - small"
-msgstr ""
+msgstr "Redia feed - small"
 
 msgctxt "image.style.redia_feed_large:label"
 msgid "Redia feed large"
 msgstr ""
+"\n"
+"Redia feed large"
 
 msgctxt "image.style.redia_feed_small:label"
 msgid "Redia feed small"
 msgstr ""
+"\n"
+"Redia feed small"
 
 msgctxt "system.action.user_add_role_action.graphql_consumer:label"
 msgid "Add the GraphQl consumer role to the selected user(s)"
-msgstr ""
+msgstr "Tilføj GraphQl-brugerens rolle til den/de valgt(e) bruger(e)"
 
 msgctxt "system.action.user_remove_role_action.graphql_consumer:label"
 msgid "Remove the GraphQl consumer role from the selected user(s)"
-msgstr ""
+msgstr "Fjern GraphQl-brugerens rolle fra den/de valgt(e) bruger(e)"
 
 msgctxt "user.role.graphql_consumer:label"
 msgid "GraphQl consumer"
-msgstr ""
+msgstr "GraphQl bruger"
 
