@@ -1,0 +1,61 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bnf_client_form_node_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void
+{
+  $current_user = \Drupal::currentUser();
+
+  if (!$current_user->hasPermission('bnf client export nodes')) {
+    return;
+  }
+
+  $form['bnf'] = [
+    '#type' => 'details',
+    '#title' => t('BNF Client'),
+    '#open' => TRUE,
+    'bnf_confirm' => [
+      '#type' => 'checkbox',
+      '#title' => t('Assets are cleared to share'),
+      '#description' => t('All content and media as part of this article is cleared to be shared among other libraries'),
+      '#default_value' => FALSE,
+    ],
+    'bnf_submit' => [
+      '#type' => 'submit',
+      '#value' => 'Save, publish and send to BNF',
+      '#submit' => [
+        'bnf_client_form_node_form_submit'
+      ],
+      '#states' => [
+        'disabled' => [':input[name="bnf_confirm"]' => ['checked' => FALSE]],
+      ]
+    ]
+  ];
+}
+
+function bnf_client_form_node_form_submit(array $form, FormStateInterface $form_state): void {
+  // Publishing the node. It needs to be done as a userinput, because it
+  // is the only way you can alter data in a form submit.
+  $user_inputs = $form_state->getUserInput();
+  $user_inputs['status']['value'] = NodeInterface::PUBLISHED;
+  $form_state->setUserInput($user_inputs);
+
+
+  if (true) {}
+  /** @var NodeInterface $node */
+  $node = $form_state->getformObject()->getEntity();
+
+  // After the form has been submitted, redirect to the BNF pinger, that will
+  // tell BNF that this node should be imported.
+  $url = Url::fromRoute('bnf_client.export', ['uuid' => $node->uuid()]);
+  $form_state->setRedirectUrl($url);
+
+  //$form_state->setRebuild();
+
+  \Drupal::service('messenger')->addMessage("Hello :)");
+}

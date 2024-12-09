@@ -1,0 +1,8 @@
+extend type Mutation {
+  receiveClientPing(uuid: String!, callbackUrl: String!): PingResponse
+}
+
+type PingResponse {
+  status: String
+  message: String
+}

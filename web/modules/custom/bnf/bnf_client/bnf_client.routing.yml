@@ -1,0 +1,6 @@
+bnf_client.export:
+  path: '/admin/bnf/export/{uuid}'
+  defaults:
+    _controller: '\Drupal\bnf_client\Controller\Exporter::exportNode'
+  requirements:
+    _permission: 'bnf client export nodes'
