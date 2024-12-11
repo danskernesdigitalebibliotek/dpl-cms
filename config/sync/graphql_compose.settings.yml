@@ -12,6 +12,7 @@ entity_config:
     article:
       enabled: true
       query_load_enabled: true
+      routes_enabled: true
     branch:
       enabled: false
     campaign:
@@ -38,7 +39,7 @@ entity_config:
     event_ticket_category:
       enabled: false
     files:
-      enabled: false
+      enabled: true
     filtered_event_list:
       enabled: true
     hero:
@@ -46,7 +47,7 @@ entity_config:
     language_selector:
       enabled: false
     links:
-      enabled: false
+      enabled: true
     manual_event_list:
       enabled: true
     material_grid_automatic:
@@ -54,7 +55,7 @@ entity_config:
     material_grid_manual:
       enabled: false
     medias:
-      enabled: false
+      enabled: true
     nav_grid_manual:
       enabled: false
     nav_spots_manual:
@@ -74,7 +75,7 @@ entity_config:
     user_registration_section:
       enabled: false
     video:
-      enabled: false
+      enabled: true
     webform:
       enabled: false
   taxonomy_term:
@@ -84,6 +85,8 @@ entity_config:
       enabled: true
     opening_hours_categories:
       enabled: true
+    screen_name:
+      enabled: false
     tags:
       enabled: true
     webform_email_categories:
@@ -184,6 +187,9 @@ field_config:
         enabled: true
       field_underlined_title:
         enabled: true
+    files:
+      field_files:
+        enabled: true
     filtered_event_list:
       field_filter_branches:
         enabled: true
@@ -197,6 +203,9 @@ field_config:
         enabled: true
       field_title:
         enabled: true
+    links:
+      field_link:
+        enabled: true
     manual_event_list:
       field_events:
         enabled: true
@@ -204,6 +213,9 @@ field_config:
         enabled: true
     text_body:
       field_body:
+        enabled: true
+    video:
+      field_embed_video:
         enabled: true
   taxonomy_term:
     breadcrumb_structure:

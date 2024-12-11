@@ -1,0 +1,11 @@
+uuid: 33a83ec5-ebf6-4bf4-b6c1-8d9d7fe15a13
+langcode: en
+status: true
+dependencies: {  }
+id: go
+label: Go
+base_url: 'http://host.docker.internal:3000'
+preview_url: 'https://example.com/api/draft'
+preview_secret: ''
+revalidate_url: 'http://host.docker.internal:3000/cache/revalidate'
+revalidate_secret: dGVzdDp0ZXN0

@@ -1,0 +1,7 @@
+name: 'DPL GO'
+type: module
+description: 'Module used for handling Go integrationsy.'
+package: DPL
+core_version_requirement: ^10 || ^11
+dependencies:
+  - next:next
