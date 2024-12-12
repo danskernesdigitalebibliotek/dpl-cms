@@ -43,6 +43,11 @@ tasks:
               drush si --existing-config -y
             fi
 
+            # Enable the server module on environments in the BNF project.
+            if [[ "$LAGOON_PROJECT" == "dpl-bnf" ]]; then
+              drush pm:enable -y bnf_server
+            fi
+
             # Practice shows that the cache needs to be cleared to avoid
             # configuration errors even after a site install.
             drush cr
