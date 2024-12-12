@@ -145,9 +145,9 @@ services:
     image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.11.4
     labels:
       lagoon.type: node
+      lagoon.probe.liveness: 30
+      lagoon.probe.readiness: 30
       provenance: false
-      lagoon.probe.liveness: 120
-      lagoon.probe.readiness: 120
 
 volumes:
   projectroot:
