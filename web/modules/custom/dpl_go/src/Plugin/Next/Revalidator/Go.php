@@ -78,10 +78,10 @@ class Go extends ConfigurableRevalidatorBase implements RevalidatorInterface {
     if (!empty($this->configuration['additional_paths'])) {
       $paths = array_merge($paths, array_map('trim', explode("\n", $this->configuration['additional_paths'])));
     }
+    $paths = array_filter($paths);
 
-    if (!count($paths)) {
-      return FALSE;
-    }
+    $entity = $event->getEntity();
+    $contentType = $entity->getEntityTypeId() === 'node' ? $entity->bundle() : $entity->getEntityTypeId();
 
     foreach ($paths as $path) {
       foreach ($sites as $site) {
@@ -100,7 +100,8 @@ class Go extends ConfigurableRevalidatorBase implements RevalidatorInterface {
               '%url' => $revalidate_url,
             ]);
           }
-          $entity = $event->getEntity();
+
+          // @todo Refine this. Get token from somewhere etc.
           $response = $this->httpClient->request('POST', $revalidate_url, [
             'headers' => [
               'Authorization' => 'Bearer dGVzdDp0ZXN0',
@@ -110,7 +111,7 @@ class Go extends ConfigurableRevalidatorBase implements RevalidatorInterface {
             'json' => [
               'type' => 'path',
               'paths' => [$path],
-              'contentType' => $entity->getEntityTypeId() === 'node' ? $entity->bundle() : $entity->getEntityTypeId(),
+              'contentType' => $contentType,
             ],
           ]);
           if ($response && $response->getStatusCode() === Response::HTTP_OK) {
@@ -133,7 +134,56 @@ class Go extends ConfigurableRevalidatorBase implements RevalidatorInterface {
       }
     }
 
+    $cache_tags = $entity->getCacheTags();
+
+    foreach ($cache_tags as $cache_tag) {
+      foreach ($sites as $site) {
+        try {
+          $revalidate_url = $site->getRevalidateUrl();
+
+          if ($this->nextSettingsManager->isDebug()) {
+            $this->logger->notice('(@action): Revalidating cache tag %tag for the site %site (%contentType).', [
+              '@action' => $event->getAction(),
+              '%tag' => $cache_tag,
+              '%site' => $site->label(),
+              '%contentType' => $contentType,
+            ]);
+          }
+
+          // @todo Refine this. Get token from somewhere etc.
+          $response = $this->httpClient->request('POST', $revalidate_url, [
+            'headers' => [
+              'Authorization' => 'Bearer dGVzdDp0ZXN0',
+              'Content-Type' => 'application/json',
+              'User-Agent' => 'insomnia/10.1.1',
+            ],
+            'json' => [
+              'type' => 'tag',
+              'tags' => [$cache_tag],
+            ],
+          ]);
+          if ($response && $response->getStatusCode() === Response::HTTP_OK) {
+            if ($this->nextSettingsManager->isDebug()) {
+              $this->logger->notice('(@action): Successfully revalidated tag %tag for the site %site (%contentType).', [
+                '@action' => $event->getAction(),
+                '%tag' => $cache_tag,
+                '%site' => $site->label(),
+                '%contentType' => $contentType,
+              ]);
+            }
+
+            $revalidated = TRUE;
+          }
+        }
+        catch (\Exception $exception) {
+          $this->logger->error($exception->getMessage());
+          $revalidated = FALSE;
+        }
+      }
+    }
+
     return $revalidated;
+
   }
 
 }

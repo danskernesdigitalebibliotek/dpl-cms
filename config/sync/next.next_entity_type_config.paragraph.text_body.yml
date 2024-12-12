@@ -1,0 +1,15 @@
+uuid: e04eb9e0-da35-4609-a33a-0fb1c0fadb08
+langcode: en
+status: true
+dependencies:
+  module:
+    - dpl_go
+id: paragraph.text_body
+site_resolver: site_selector
+configuration:
+  sites:
+    go: go
+revalidator: go
+revalidator_configuration:
+  revalidate_page: 1
+  additional_paths: ''
