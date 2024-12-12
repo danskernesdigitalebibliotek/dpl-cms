@@ -438,7 +438,9 @@ class DplReactAppsController extends ControllerBase {
       'we-have-shopped-text' => $this->t('In stock:', [], ['context' => 'Work Page']),
       'you-have-borrowed-text' => $this->t('You have borrowed', [], ['context' => 'Work Page']),
       'share-on-facebook-text' => $this->t('Share on Facebook', [], ['context' => 'Work Page']),
+      'share-on-facebook-aria-label-text' => $this->t('Share this page on Facebook', [], ['context' => 'Work Page']),
       'copy-link-text' => $this->t('Copy link', [], ['context' => 'Work Page']),
+      'copy-link-aria-label-text' => $this->t('Copy this page to clipboard', [], ['context' => 'Work Page']),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
