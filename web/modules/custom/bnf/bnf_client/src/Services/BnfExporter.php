@@ -8,6 +8,7 @@ use Drupal\node\NodeInterface;
 use GuzzleHttp\Client;
 use Psr\Log\LoggerInterface;
 use function Safe\json_decode;
+use function Safe\parse_url;
 
 /**
  * Service, related to exporting our content to BNF.
@@ -51,18 +52,25 @@ class BnfExporter {
     }
     GRAPHQL;
 
-    // @todo This needs to be the server URL instead. What do we do about local
-    // development?
-    $bnf_server = $callback_url;
-
     try {
+      $bnf_server = (string) getenv('BNF_SERVER_GRAPHQL_ENDPOINT');
+
+      if (!filter_var($bnf_server, FILTER_VALIDATE_URL)) {
+        throw new \InvalidArgumentException('The provided BNF server URL is not valid.');
+      }
+
+      $parsed_url = parse_url($bnf_server);
+      $scheme = $parsed_url['scheme'] ?? NULL;
+
+      if ($scheme !== 'https') {
+        throw new \InvalidArgumentException('The BNF server URL must use HTTPS.');
+      }
+
       $response = $this->httpClient->post($bnf_server, [
         'headers' => [
           'Content-Type' => 'application/json',
         ],
-        // @todo Implement actual authentication. Is it OK to use
-        // username/password, or do we need to do oAuth as they do in React?
-        'auth' => ['graphql_consumer', 'test'],
+        'auth' => [getenv('GRAPHQL_USER_NAME'), getenv('GRAPHQL_USER_PASSWORD')],
         'json' => [
           'query' => $mutation,
         ],
