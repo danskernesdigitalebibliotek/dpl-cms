@@ -146,6 +146,8 @@ services:
     labels:
       lagoon.type: node
       provenance: false
+      lagoon.probe.liveness: 120
+      lagoon.probe.readiness: 120
 
 volumes:
   projectroot:
