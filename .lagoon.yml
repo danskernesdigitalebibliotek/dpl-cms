@@ -154,7 +154,7 @@ environments:
   pr-1707:
     routes:
       - node:
-        - "https://node.pr-1707.dpl-cms.dplplat01.dpl.reload.dk":
+        - "node.pr-1707.dpl-cms.dplplat01.dpl.reload.dk":
           annotations:
             nginx.ingress.kubernetes.io/proxy-buffer-size: 8k
     cronjobs:
