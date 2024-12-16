@@ -1,0 +1,26 @@
+<?php
+
+use Drupal\bnf\Services\BnfImporter;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Implements hook_entity_base_field_info().
+ *
+ * @return \Drupal\Core\Field\FieldDefinitionInterface[]
+ *   The field definitions.
+ */
+function bnf_entity_base_field_info(EntityTypeInterface $entity_type): array {
+  $fields = [];
+
+  // Create new fields for node bundle.
+  if ($entity_type->id() === 'node') {
+    $fields[BnfImporter::UUID_FIELD] = BaseFieldDefinition::create('uuid')
+      ->setLabel(t('BNF UUID'))
+      ->setName(BnfImporter::UUID_FIELD)
+      ->setDescription(t('The unique BNF UUID, used upstream and downstream.'))
+      ->setDefaultValue(TRUE);
+  }
+
+  return $fields;
+}

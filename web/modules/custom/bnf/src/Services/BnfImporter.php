@@ -19,7 +19,7 @@ use function Safe\parse_url;
  */
 class BnfImporter {
 
-  const UUID_FIELD = 'field_bnf_uuid';
+  const UUID_FIELD = 'bnf_uuid';
 
   /**
    * Constructor.
