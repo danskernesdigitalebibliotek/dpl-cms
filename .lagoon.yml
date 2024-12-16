@@ -153,7 +153,7 @@ environments:
         service: cli
   pr-1707:
     routes:
-      - node:
+      node:
         - "node.pr-1707.dpl-cms.dplplat01.dpl.reload.dk":
           annotations:
             nginx.ingress.kubernetes.io/proxy-buffer-size: 8k
