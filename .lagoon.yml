@@ -151,7 +151,7 @@ environments:
         schedule: "M/30 * * * *"
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
-  pr-1757:
+  pr-1707:
     routes:
       - node:
         - annotations:
