@@ -56,7 +56,6 @@ class BnfExporter {
 
     try {
       $bnfServer = (string) getenv('BNF_SERVER_GRAPHQL_ENDPOINT');
-      $bnfServer = 'https://dapple-cms.local/graphql';
 
       if (!filter_var($bnfServer, FILTER_VALIDATE_URL)) {
         throw new \InvalidArgumentException('The provided BNF server URL is not valid.');
