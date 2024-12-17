@@ -6,6 +6,7 @@ use Drupal\bnf\BnfStateEnum;
 use Drupal\bnf\Exception\AlreadyExistsException;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\StringTranslation\TranslationInterface;
+use Drupal\node\NodeInterface;
 use Drupal\paragraphs\ParagraphInterface;
 use GuzzleHttp\ClientInterface;
 use Psr\Log\LoggerInterface;
@@ -27,11 +28,6 @@ class BnfImporter {
   ];
 
   /**
-   * The BNF UUID of the content that we import.
-   */
-  protected string $uuid;
-
-  /**
    * Constructor.
    */
   public function __construct(
@@ -44,11 +40,11 @@ class BnfImporter {
   /**
    * Building the query we use to get data from source.
    */
-  protected function getQuery(string $queryName): string {
+  protected function getQuery(string $queryName, string $uuid): string {
     // Example of GraphQL query: "nodeArticle".
     return <<<GRAPHQL
     query {
-      $queryName(id: "$this->uuid") {
+      $queryName(id: "$uuid") {
         title
         paragraphs {
           ... on ParagraphTextBody {
@@ -157,10 +153,12 @@ class BnfImporter {
   }
 
   /**
-   * Importing a node from a GraphQL source endpoint.
+   * Loading the node data from a GraphQL endpoint.
+   *
+   * @return mixed[]
+   *   Array of node values, that we can use to create node entities.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): void {
-    $this->uuid = $uuid;
+  public function loadNodeData(string $uuid, string $endpointUrl, string $nodeType = 'article'): array {
     $queryName = 'node' . ucfirst($nodeType);
 
     $nodeStorage = $this->entityTypeManager->getStorage('node');
@@ -188,7 +186,7 @@ class BnfImporter {
       throw new \InvalidArgumentException('The provided callback URL must use HTTPS.');
     }
 
-    $query = $this->getQuery($queryName);
+    $query = $this->getQuery($queryName, $uuid);
 
     $response = $this->httpClient->request('post', $endpointUrl, [
       'headers' => [
@@ -211,11 +209,25 @@ class BnfImporter {
       throw new \Exception('Could not retrieve content values.');
     }
 
+    return $nodeData;
+
+  }
+
+  /**
+   * Importing a node from a GraphQL source endpoint.
+   */
+  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
+    $nodeStorage = $this->entityTypeManager->getStorage('node');
+
     try {
+      $nodeData = $this->loadNodeData($uuid, $endpointUrl, $nodeType);
+
       $nodeData['type'] = $nodeType;
       $nodeData['uuid'] = $uuid;
+      $nodeData['status'] = NodeInterface::NOT_PUBLISHED;
       $nodeData['field_paragraphs'] = $this->getParagraphs($nodeData);
 
+      /** @var \Drupal\node\NodeInterface $node */
       $node = $nodeStorage->create($nodeData);
       $node->save();
 
@@ -235,6 +247,8 @@ class BnfImporter {
       '@uuid' => $uuid,
       '@type' => $nodeType,
     ]);
+
+    return $node;
 
   }
 
