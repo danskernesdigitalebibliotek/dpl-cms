@@ -155,8 +155,9 @@ environments:
   pr-1707:
     routes:
       - node:
-        - annotations:
-            nginx.ingress.kubernetes.io/proxy-buffer-size: 8k
+        - node.pr-1707.dpl-cms.dplplat01.dpl.reload.dk:
+            - annotations:
+                nginx.ingress.kubernetes.io/proxy-buffer-size: 8k
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"
