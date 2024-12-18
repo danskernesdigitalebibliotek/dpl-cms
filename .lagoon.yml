@@ -154,7 +154,7 @@ environments:
   pr-1757:
     routes:
       - node:
-        - bibliotest.deranged.dk:
+        - /:
            annotations:
              nginx.ingress.kubernetes.io/proxy-buffer-size: 16k
     cronjobs:
