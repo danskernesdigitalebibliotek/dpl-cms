@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-12-06 14:18+0100\n"
-"PO-Revision-Date: 2024-12-06 14:18+0100\n"
+"POT-Creation-Date: 2024-12-18 11:38+0100\n"
+"PO-Revision-Date: 2024-12-18 11:38+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6311,4 +6311,36 @@ msgstr "Fjern GraphQl-brugerens rolle fra den/de valgt(e) bruger(e)"
 msgctxt "user.role.graphql_consumer:label"
 msgid "GraphQl consumer"
 msgstr "GraphQl bruger"
+
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_infoscreen:label"
+msgid "Infoscreen"
+msgstr "Infoskærm"
+
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_infoscreen:label"
+msgid "Infoscreen"
+msgstr "Infoskærm"
+
+msgctxt "field.field.eventinstance.default.field_screen_names:label"
+msgid "Screen names"
+msgstr "Skærmnavne"
+
+msgctxt "field.field.eventinstance.default.field_screen_names:description"
+msgid "Select which screens to display this event on. "
+msgstr "Vælg hvilke skærme dette arrangement skal vises på."
+
+msgctxt "field.field.eventseries.default.field_screen_names:label"
+msgid "Screen names"
+msgstr "Skærmnavne"
+
+msgctxt "field.field.eventseries.default.field_screen_names:description"
+msgid "Select which screens to display this event on."
+msgstr "Vælg hvilke skærme dette arrangement skal vises på."
+
+msgctxt "taxonomy.vocabulary.screen_name:name"
+msgid "Screen name"
+msgstr "Screen name"
+
+msgctxt "taxonomy.vocabulary.screen_name:description"
+msgid "Screens to display content on"
+msgstr "Screens to display content on"
 

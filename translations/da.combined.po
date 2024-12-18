@@ -1883,7 +1883,7 @@ msgstr "Kan ikke fornyes"
 #: 
 msgctxt "Renew loan"
 msgid "Processing..."
-msgstr "Indlæser...Fornyelsen af dit lån gik iggen igennem"
+msgstr "Indlæser..."
 
 #: 
 msgctxt "dpl_login"
@@ -4065,21 +4065,6 @@ msgstr "Sørger for faste sider på nye bibliotekshjemmesider."
 msgctxt "DPL event"
 msgid "Automatic unpublication"
 msgstr "Automatisk afpublicering"
-
-#: 
-msgctxt "DPL event"
-msgid "Schedule"
-msgstr "Planlæg"
-
-#: 
-msgctxt "DPL event"
-msgid "Automatic unpublication disabled"
-msgstr "Automatisk afpublicering slået fra"
-
-#: 
-msgctxt "DPL event"
-msgid "How much time should pass after an event has occurred before it should be unpublished automatically."
-msgstr "Hvor længe skal der gå fra et arrangement er afholdt, til det skal afpubliceres automatisk?"
 
 #: 
 msgid "Get tickets"
@@ -26784,4 +26769,82 @@ msgstr "DPL logging"
 #: 
 msgid "Logging custom DDF events, such as updates to users."
 msgstr "Logging custom DDF events, such as updates to users."
+
+#: 
+msgid "Enable screen names"
+msgstr "Enable screen names"
+
+#: 
+msgid "Enable screen names on events. Requires an external system to actually fetch and display the events on real physical screens."
+msgstr "Enable screen names on events. Requires an external system to actually fetch and display the events on real physical screens."
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_infoscreen:label"
+msgid "Infoscreen"
+msgstr "Infoskærm"
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_infoscreen:label"
+msgid "Infoscreen"
+msgstr "Infoskærm"
+
+#: 
+msgctxt "field.field.eventinstance.default.field_screen_names:label"
+msgid "Screen names"
+msgstr "Skærmnavne"
+
+#: 
+msgctxt "field.field.eventinstance.default.field_screen_names:description"
+msgid "Select which screens to display this event on. "
+msgstr "Vælg hvilke skærme dette arrangement skal vises på."
+
+#: 
+msgctxt "field.field.eventseries.default.field_screen_names:label"
+msgid "Screen names"
+msgstr "Skærmnavne"
+
+#: 
+msgctxt "field.field.eventseries.default.field_screen_names:description"
+msgid "Select which screens to display this event on."
+msgstr "Vælg hvilke skærme dette arrangement skal vises på."
+
+#: 
+msgctxt "taxonomy.vocabulary.screen_name:name"
+msgid "Screen name"
+msgstr "Screen name"
+
+#: 
+msgctxt "taxonomy.vocabulary.screen_name:description"
+msgid "Screens to display content on"
+msgstr "Screens to display content on"
+
+#: 
+msgctxt "DPL admin"
+msgid "Reset password"
+msgstr "Gendan adgangskode"
+
+#: 
+msgctxt "DPL event"
+msgid "Unpublish eventinstances when they have occured (recommended)"
+msgstr "Afpubliser arrangemenstinstancer når de har været afholdt (anbefalet)"
+
+#: 
+msgctxt "DPL event"
+msgid "Notice - if you do not choose that eventinstances get unpublished, they may show up in automatic and manual lists, across the site."
+msgstr "Vær opmærksom på, at hvis du vælger IKKE at afpublisere arrangementsinstancer, er det muligt, at de vises i automatiske og manuelle lister rundt om på siden."
+
+#: 
+msgctxt "DPL event"
+msgid "How much time should pass after an eventinstance has occurred before it should be unpublished?"
+msgstr "Hvor lang tid skal der gå efter at en arrangementsinstance har været afholdt til det skal afpubliseres?"
+
+#: 
+msgctxt "DPL event"
+msgid "Unpublish the series when all instances have occurred (not recommended)"
+msgstr "Afpubliser serien, når alle instancer har været afholdt (anbefales IKKE)"
+
+#: 
+msgctxt "DPL event"
+msgid "Notice - if series get unpublished, old instance links will no longer work. If you however keep the series published, expired instances will redirect to the associated series."
+msgstr "Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instance-links ikke virke længere. Hvis du alligevel vælger at bevare publiseringen, vil udløbne instances blive henvist til de relaterede serier."
 
