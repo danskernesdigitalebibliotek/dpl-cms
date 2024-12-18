@@ -141,13 +141,13 @@ services:
     environment:
       << : *default-environment
 
-  node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.11.4
-    labels:
-      provenance: false
-      lagoon.type: node-persistent
-      lagoon.persistent: /app/.next
-      lagoon.persistent.size: 500Mi
+  # node:
+  #   image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.11.4
+  #   labels:
+  #     provenance: false
+  #     lagoon.type: node-persistent
+  #     lagoon.persistent: /app/.next
+  #     lagoon.persistent.size: 500Mi
 
 volumes:
   projectroot:
