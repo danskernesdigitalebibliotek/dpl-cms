@@ -5,3 +5,5 @@ cloneable_entities:
   - paragraph
   - custom_perms_entity
   - password_policy
+  - next_entity_type_config
+  - next_site

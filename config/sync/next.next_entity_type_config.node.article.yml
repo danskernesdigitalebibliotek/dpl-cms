@@ -1,0 +1,16 @@
+uuid: ac70814c-7ee5-4039-ae89-c74f5edfd67d
+langcode: en
+status: true
+dependencies:
+  module:
+    - dpl_go
+id: node.article
+site_resolver: site_selector
+configuration:
+  sites:
+    go: go
+  field_name: {  }
+revalidator: go
+revalidator_configuration:
+  revalidate_page: 1
+  additional_paths: ''
