@@ -74,7 +74,7 @@ final class OpeningHoursCreateResource extends OpeningHoursResourceBase {
       return new Response($this->serializer->serialize($responseData, $this->serializerFormat($request)));
     }
     catch (\InvalidArgumentException $e) {
-      throw new BadRequestHttpException("Invalid input: {$e->getMessage()}");
+      throw new BadRequestHttpException("Invalid input: {$e->getMessage()}", $e);
     }
   }
 
