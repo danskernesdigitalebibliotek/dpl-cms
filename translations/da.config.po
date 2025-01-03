@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2024-12-18 11:38+0100\n"
-"PO-Revision-Date: 2024-12-18 11:38+0100\n"
+"POT-Creation-Date: 2025-01-03 11:19+0100\n"
+"PO-Revision-Date: 2025-01-03 11:19+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6343,4 +6343,66 @@ msgstr "Screen name"
 msgctxt "taxonomy.vocabulary.screen_name:description"
 msgid "Screens to display content on"
 msgstr "Screens to display content on"
+
+msgctxt "core.base_field_override.node.go_page.promote:label"
+msgid "Promoted to front page"
+msgstr "Placer på forsiden"
+
+msgctxt "core.base_field_override.node.go_page.promote:settings:on_label"
+msgid "On"
+msgstr "Aktiv"
+
+msgctxt "core.base_field_override.node.go_page.promote:settings:off_label"
+msgid "Off"
+msgstr "Slukket"
+
+msgctxt "core.entity_form_display.node.go_page.default:third_party_settings:field_group:group_author_date:label"
+msgid "Author & Date"
+msgstr "Forfatter og dato"
+
+msgctxt "core.entity_form_display.node.go_page.default:content:field_paragraphs:settings:title"
+msgid "Paragraph"
+msgstr "Paragraf"
+
+msgctxt "core.entity_form_display.node.go_page.default:content:field_paragraphs:settings:title_plural"
+msgid "Paragraphs"
+msgstr "Paragraffer"
+
+msgctxt "field.field.node.go_page.field_paragraphs:label"
+msgid "Paragraphs"
+msgstr "Paragraffer"
+
+msgctxt "field.field.node.go_page.field_publication_date:label"
+msgid "Publication date"
+msgstr "Publikationsdato"
+
+msgctxt "field.field.paragraph.go_video.field_embed_video:label"
+msgid "Embed video"
+msgstr "Indlagt video"
+
+msgctxt "field.field.paragraph.go_video.field_go_video_title:label"
+msgid "Title"
+msgstr "Titl"
+
+msgctxt "node.type.go_page:name"
+msgid "GO page"
+msgstr "GO-side"
+
+msgctxt "node.type.go_page:description"
+msgid ""
+"GO pages will be used for various types of content, which does not "
+"belong to either an article page or an category page. Some examples "
+"could be the frontpage, info pages, etc."
+msgstr ""
+"GO-sider bliver brugt til forskellige typer for indhold, som ikke "
+"tilhører hverken en artikel-side eller en kategori-side. Fx forsiden, "
+"informationssider etc."
+
+msgctxt "paragraphs.paragraphs_type.go_video:label"
+msgid "Go video"
+msgstr "GO-video"
+
+msgctxt "paragraphs.paragraphs_type.go_video:description"
+msgid "Enter the URL for the video you want to include."
+msgstr "Angiv URL-en for den video, der skal vises"
 
