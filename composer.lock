@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e35d3d09d72b791eabc2a326db33816",
+    "content-hash": "226c8d2ce6cd73e1aa7c1301e6a94407",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2024.50.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2024.50.0/dist-2024-50-0-971e7c3cbc30ed2ea65d95655b798d67a6aa9d75.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-307-opgrader-eslint-plugin-cypress-react-komponenter/dist-ddfbra-307-opgrader-eslint-plugin-cypress-react-komponenter.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20253,6 +20253,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
