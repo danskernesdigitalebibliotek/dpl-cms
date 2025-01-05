@@ -177,7 +177,7 @@ tasks:
       - task dev:enable-dev-tools
       - task dev:create-users
       # Show a one-time login to the local site.
-      - task dev:cli -- drush user-login
+      - LOGIN_URL=$(task dev:cli -- drush user-login); echo ${LOGIN_URL/http:\/\//https:\/\/}
     env:
       DOCKER_COMPOSE_FILES: "{{ .DOCKER_COMPOSE_FILES_DEV }}"
 
