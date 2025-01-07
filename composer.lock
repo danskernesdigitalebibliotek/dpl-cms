@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0bdc90b08d1a49530e0b5f783b2e267",
+    "content-hash": "aa17a8df8e6cc63f68491002ed7bd3ce",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.2.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.2.0/dist-2025-2-0-295f0444c88bec796630c4c0f17e6b986aac32a8.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-322-opgrader-glob-react-komponenter/dist-ddfbra-322-opgrader-glob-react-komponenter.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20211,6 +20211,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
