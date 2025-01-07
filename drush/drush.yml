@@ -1,0 +1,8 @@
+---
+command:
+  sql:
+    options:
+      extra: "--skip_ssl"
+    dump:
+      options:
+        extra-dump: "--skip_ssl"
