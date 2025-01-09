@@ -27,6 +27,10 @@ use function Safe\preg_replace;
  */
 class BnfImporter {
 
+  const ALLOWED_CONTENT_TYPES = [
+    'article',
+  ];
+
   const ALLOWED_PARAGRAPHS = [
     'ParagraphTextBody' => 'text_body',
     'ParagraphAccordion' => 'accordion',
@@ -248,6 +252,10 @@ class BnfImporter {
    *   Array of node values, that we can use to create node entities.
    */
   public function loadData(string $uuid, string $endpointUrl, string $nodeType = 'article'): array {
+    if (!in_array($nodeType, self::ALLOWED_CONTENT_TYPES)) {
+      throw new \InvalidArgumentException('The requested content type is not allowed.');
+    }
+
     $queryName = 'node' . ucfirst($nodeType);
 
     $nodeStorage = $this->entityTypeManager->getStorage('node');
