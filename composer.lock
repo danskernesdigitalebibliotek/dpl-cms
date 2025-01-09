@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "269af6794ea38ceed3eb2b4ced4857ed",
+    "content-hash": "9d769b3214b23d9b4d28dbb8b419571b",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.2.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.2.0/dist-2025-2-0-295f0444c88bec796630c4c0f17e6b986aac32a8.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-211-update-graphql-schema/dist-ddfbra-211-update-graphql-schema.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20207,6 +20207,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
