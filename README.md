@@ -3,7 +3,7 @@
 This is the main repository used for building the core Drupal CMS which is used
 by the danish public libraries.
 
-This repo uses styling from the
+This repo uses styling from
 [dpl-design-system repo](https://github.com/danskernesdigitalebibliotek/dpl-design-system/).
 
 You can find the full documentation, along with setup instructions in either the
