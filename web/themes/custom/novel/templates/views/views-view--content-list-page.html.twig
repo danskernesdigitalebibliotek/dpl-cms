@@ -5,15 +5,18 @@
 ]
 %}
 <div{{ attributes.addClass(classes) }}>
+    test
   {% if view.getTitle() %}
     {{ title_prefix }}
     <h1 class="content-list-page__heading">{{ view.getTitle() }}</h1>
+
     {{ title_suffix }}
   {% endif %}
 
   {{ header }}
 
   <ul class="content-list-page__filters">
+  {# Skal måske slettes #}
     {% block facets %}
     {% endblock %}
 
