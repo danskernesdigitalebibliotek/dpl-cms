@@ -7,7 +7,7 @@ use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
-use Drupal\recurring_events\Entity\EventInstance;
+use Drupal\dpl_event\Entity\EventInstance;
 use Drupal\recurring_events\Entity\EventSeries;
 
 /**
@@ -112,6 +112,22 @@ class ReoccurringDateFormatter {
       ->execute();
 
     return $upcoming_ids;
+  }
+
+  /**
+   * GetUpcomingEvents.
+   *
+   * @return array<EventInstance>
+   *   An array of matching eventinstances.
+   */
+  public function getUpcomingEvents(EventSeries $event_series): array {
+    $ids = $this->getUpcomingEventIds($event_series);
+    $storage = $this->entityTypeManager->getStorage('eventinstance');
+
+    /** @var \Drupal\dpl_event\Entity\EventInstance[] $instances */
+    $instances = $storage->loadMultiple($ids);
+
+    return $instances;
   }
 
   /**
