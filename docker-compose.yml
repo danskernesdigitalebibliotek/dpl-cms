@@ -165,11 +165,12 @@ services:
       << : *default-environment
 
   node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.0.12
+    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.13.3
     labels:
-      lagoon.type: node
       provenance: false
-
+      lagoon.type: node-persistent
+      lagoon.persistent: /app/.next
+      lagoon.persistent.size: 500Mi
 volumes:
   projectroot:
     driver: local
