@@ -12,27 +12,24 @@
 
 # This block is used for inclusion in the environment section of each container.
 x-volumes:
-  &default-volumes
-    # Define all volumes you would like to have real-time mounted into the docker containers
-    volumes:
-      - 'projectroot:/app'
+  &default-volumes # Define all volumes you would like to have real-time mounted into the docker containers
+  volumes:
+    - 'projectroot:/app'
 
 x-user:
-  &default-user
-    # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
-    user: '1000'
+  &default-user # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
+  user: '1000'
 
 x-environment:
-  &default-environment
-    # Lagoon ensures that Drush knows the local site URI using this variable.
-    LAGOON_ROUTE: &default-url https://${COMPOSE_PROJECT_NAME}.${DEV_TLD:-docker}
-    # Environment variables which mimic what will be set in a Lagoon cluster locally
-    LAGOON_PROJECT: 'dplcms'
-    LAGOON_ENVIRONMENT: 'local'
-    LAGOON_ENVIRONMENT_TYPE: ${LAGOON_ENVIRONMENT_TYPE:-local}
-    WEBROOT: web
-    # Uncomment if you like to have the system behave like in production
-    #LAGOON_ENVIRONMENT_TYPE: production
+  &default-environment # Lagoon ensures that Drush knows the local site URI using this variable.
+  LAGOON_ROUTE: &default-url https://${COMPOSE_PROJECT_NAME}.${DEV_TLD:-docker}
+  # Environment variables which mimic what will be set in a Lagoon cluster locally
+  LAGOON_PROJECT: 'dplcms'
+  LAGOON_ENVIRONMENT: 'local'
+  LAGOON_ENVIRONMENT_TYPE: ${LAGOON_ENVIRONMENT_TYPE:-local}
+  WEBROOT: web
+  # Uncomment if you like to have the system behave like in production
+  #LAGOON_ENVIRONMENT_TYPE: production
 
 services:
   https:
@@ -66,12 +63,12 @@ services:
       dev.orbstack.domains: ${COMPOSE_PROJECT_NAME}.local
     links:
       - nginx # links varnish to the nginx in this docker-compose project, or it would try to connect to any nginx running in docker
-    << : *default-user # uses the defined user from top
+    <<: *default-user # uses the defined user from top
     ports:
       # Exposing the port to make it accessible locally without proxies.
-      - "8080"
+      - '8080'
     environment:
-      << : *default-environment
+      <<: *default-environment
       # VARNISH_BYPASS: "true" # Add this to disable caching in varnish.
       # Is used by [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) or [dory](https://github.com/FreedomBen/dory)
       VIRTUAL_HOST: ${COMPOSE_PROJECT_NAME}-varnish.${DEV_TLD:-docker}
@@ -83,10 +80,10 @@ services:
       context: .
       dockerfile: lagoon/cli.dockerfile
     image: &cli-image uselagoon/php-8.1-cli-drupal:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
-    << : *default-volumes # loads the defined volumes from the top
+    <<: *default-volumes # loads the defined volumes from the top
     user: root
     environment:
-      << : *default-environment # loads the defined environment variables from the top
+      <<: *default-environment # loads the defined environment variables from the top
       # Uncomment to enable xdebug for cli tools
       #XDEBUG_ENABLE: "true"
     labels:
@@ -107,7 +104,7 @@ services:
     # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
-      << : *default-environment # loads the defined environment variables from the top
+      <<: *default-environment # loads the defined environment variables from the top
       # Route that should be used locally.
       VIRTUAL_HOST: nginx.${COMPOSE_PROJECT_NAME}.${DEV_TLD:-docker}
     labels:
@@ -130,7 +127,7 @@ services:
       # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
-      << : *default-environment # loads the defined environment variables from the top
+      <<: *default-environment # loads the defined environment variables from the top
       XDEBUG_ENABLE: ${XDEBUG_ENABLE:-false}
     labels:
       lagoon.type: nginx-php-persistent
@@ -145,24 +142,24 @@ services:
     # Do a periodic healthcheck. This is mainly used to block the php service
     # from starting up before we have a healthy database.
     healthcheck:
-      test: "/usr/share/container-scripts/mysql/readiness-probe.sh"
+      test: '/usr/share/container-scripts/mysql/readiness-probe.sh'
       interval: 10s
     ports:
-      - "3306" # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
-    << : *default-user # uses the defined user from top
+      - '3306' # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
+    <<: *default-user # uses the defined user from top
     environment:
       MARIADB_CHARSET: 'utf8mb4'
       MARIADB_COLLATION: 'utf8mb4_danish_ci'
-      << : *default-environment
+      <<: *default-environment
 
   redis: # In-memory key-value database used as the Drupal Core cache backend.
     # https://docs.lagoon.sh/lagoon/docker-images/redis
     image: uselagoon/redis-6:latest
     labels:
       lagoon.type: redis
-    << : *default-user # uses the defined user from top
+    <<: *default-user # uses the defined user from top
     environment:
-      << : *default-environment
+      <<: *default-environment
 
   node:
     image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.13.3
@@ -170,8 +167,11 @@ services:
       provenance: false
       lagoon.type: node-persistent
       lagoon.persistent: /app/.next
+      # The size of the persistent storage for this service
+      # is based on some documentation in Lagoon about hosting a node service:
+      # https://docs.lagoon.sh/docker-images/nodejs/#docker-composeyml-snippet
+      # We could revise in the future if we need more space.
       lagoon.persistent.size: 500Mi
-
 volumes:
   projectroot:
     driver: local
