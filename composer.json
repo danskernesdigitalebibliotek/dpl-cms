@@ -202,7 +202,7 @@
         "phpunit/phpunit": "9.5.10",
         "thecodingmachine/phpstan-safe-rule": "^1.0",
         "timeweb/phpstan-enum": "^3.1",
-        "vincentlanglet/twig-cs-fixer": "^2.0"
+        "vincentlanglet/twig-cs-fixer": "^3.5"
     },
     "conflict": {
         "drupal/drupal": "*"
