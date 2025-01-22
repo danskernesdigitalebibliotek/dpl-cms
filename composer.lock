@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a68f8d65a724a298c899ed2cbc399a84",
+    "content-hash": "24cd627e7031e5b1833a397b3515d022",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-reader-player-feature-v2/dist-reader-player-feature-v2.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
