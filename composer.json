@@ -43,7 +43,7 @@
                 "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2/dist-ddfbra-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2.zip",
                     "type": "zip"
                 },
                 "require": {

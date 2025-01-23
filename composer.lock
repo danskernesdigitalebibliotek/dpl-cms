@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a68f8d65a724a298c899ed2cbc399a84",
+    "content-hash": "5e2f69f5cfe02c0e2310d22ead292661",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2/dist-ddfbra-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
