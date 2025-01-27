@@ -20,7 +20,7 @@ x-volumes:
 x-user:
   &default-user
     # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
-    user: '1000'
+    user: ${UID:-1000}
 
 x-environment:
   &default-environment
@@ -31,9 +31,6 @@ x-environment:
     LAGOON_ENVIRONMENT: 'local'
     LAGOON_ENVIRONMENT_TYPE: ${LAGOON_ENVIRONMENT_TYPE:-local}
     WEBROOT: web
-    GRAPHQL_USER_NAME: graphql_consumer
-    GRAPHQL_USER_PASSWORD: test
-    BNF_SERVER_BASE_ENDPOINT: "https://dpl-cms.local"
     # Uncomment if you like to have the system behave like in production
     #LAGOON_ENVIRONMENT_TYPE: production
 
@@ -173,8 +170,11 @@ services:
       provenance: false
       lagoon.type: node-persistent
       lagoon.persistent: /app/.next
+      # The size of the persistent storage for this service
+      # is based on some documentation in Lagoon about hosting a node service:
+      # https://docs.lagoon.sh/docker-images/nodejs/#docker-composeyml-snippet
+      # We could revise in the future if we need more space.
       lagoon.persistent.size: 500Mi
-
 volumes:
   projectroot:
     driver: local
