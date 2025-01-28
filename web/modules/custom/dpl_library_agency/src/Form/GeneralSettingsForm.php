@@ -155,6 +155,7 @@ class GeneralSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('reservation_detail_allow_remove_ready_reservations') ?? GeneralSettings::RESERVATION_DETAIL_ALLOW_REMOVE_READY_RESERVATIONS,
     ];
 
+    // Should be deleted.
     $form['reservations']['ereolen_my_page_url'] = [
       '#type' => 'url',
       '#title' => $this->t('Ereolen my page link', [], ['context' => 'Library Agency Configuration']),
@@ -162,6 +163,7 @@ class GeneralSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('ereolen_my_page_url') ?? GeneralSettings::EREOLEN_MY_PAGE_URL,
     ];
 
+    // Should be deleted.
     $form['reservations']['ereolen_homepage_url'] = [
       '#type' => 'url',
       '#title' => $this->t('Ereolen home link', [], ['context' => 'Library Agency Configuration']),
