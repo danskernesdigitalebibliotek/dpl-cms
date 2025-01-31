@@ -1166,16 +1166,16 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "0.0.0-dev",
+            "version": "2025.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.5.1/dist-2025-5-1-7f96af5c1f15eec0a3d060fd8c20d369d34ec298.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.0.0-dev",
+            "version": "2025.5.1",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2/dist-ddfbra-331-log-ud-giver-meddelelse-beklager-du-har-ikke-adgang-til-denne-side-v2.zip"
@@ -7707,6 +7707,52 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
                 "issues": "https://drupal.org/project/issues/simple_sitemap"
+            }
+        },
+        {
+            "name": "drupal/state_log",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/state_log.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/state_log-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "23a3f60d4b571d5db76e39052014aefef7354c52"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1688162796",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "George Anderson (geoanders)",
+                    "homepage": "https://www.drupal.org/u/geoanders",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Module that logs changes to state.",
+            "homepage": "https://drupal.org/project/state_log",
+            "support": {
+                "source": "https://git.drupalcode.org/project/state_log",
+                "issues": "https://drupal.org/project/issues/state_log"
             }
         },
         {
@@ -20253,8 +20299,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "danskernesdigitalebibliotek/dpl-design-system": 20,
-        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
