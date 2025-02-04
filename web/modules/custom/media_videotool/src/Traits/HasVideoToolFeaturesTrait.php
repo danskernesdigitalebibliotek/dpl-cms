@@ -14,7 +14,7 @@ use function Safe\preg_match;
 trait HasVideoToolFeaturesTrait {
 
   /**
-   * Function for checking if a URL match the VideoTool URL format.
+   * Function for checking if a URL match the VideoTool URL format test.
    */
   protected static function isValidVideoToolUrl(string $url): bool {
     return (bool) preg_match('/^https:\/\/media\.videotool\.dk\/\?vn=\d+_\d+$/', $url);
