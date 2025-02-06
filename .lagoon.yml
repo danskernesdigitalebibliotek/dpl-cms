@@ -164,6 +164,11 @@ environments:
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
   pr-1757:
+    routes:
+      - node:
+        - "node.pr-1707.dplplat01.dpl.reload.dk":
+            annotations:
+              nginx.ingress.kubernetes.io/proxy-buffer-size: 8k
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"
