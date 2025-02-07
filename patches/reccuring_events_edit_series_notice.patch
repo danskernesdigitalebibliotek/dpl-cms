@@ -1,0 +1,23 @@
+diff --git a/src/Form/EventSeriesForm.php b/src/Form/EventSeriesForm.php
+index 0e5ec13..e843c04 100644
+--- a/src/Form/EventSeriesForm.php
++++ b/src/Form/EventSeriesForm.php
+@@ -269,6 +269,18 @@ class EventSeriesForm extends ContentEntityForm {
+             '#suffix' => '</p>',
+           ];
+ 
++          $url = Drupal\Core\Url::fromRoute('view.event_instance_list.page_1', [
++            'eventseries' => $entity->id(),
++          ]);
++
++          if ($url) {
++            $form['diff']['diff_edit_instance_link'] = [
++              '#prefix' => "<p><a href=\"{$url->toString()}\" target=\"_blank\">",
++              '#suffix' => '</a></p>',
++              '#markup' => $this->t('Click here to edit the date on the individual instance instead.'),
++            ];
++          }
++
+           $form['diff']['table'] = [
+             '#type' => 'table',
+             '#header' => [
