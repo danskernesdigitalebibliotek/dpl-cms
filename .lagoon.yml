@@ -166,11 +166,6 @@ environments:
         service: cli
   pr-1757:
     routes:
-      - node:
-        - go-playground.dpl-cms.dplplat01.dpl.reload.dk:
-            annotations:
-              nginx.ingress.kubernetes.io/client_header_buffer_size: 100k;
-              nginx.ingress.kubernetes.io/large_client_header_buffers: 4 100k;
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"
