@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-01-03 11:19+0100\n"
-"PO-Revision-Date: 2025-01-03 11:19+0100\n"
+"POT-Creation-Date: 2025-02-07 09:54+0100\n"
+"PO-Revision-Date: 2025-02-07 09:54+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3209,7 +3209,7 @@ msgstr "Bruger ikke fundet"
 
 msgctxt "Work Page"
 msgid "Ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Bestilles fra et andet bibliotek"
 
 msgctxt "DPL admin UX"
 msgid "<a href=\"@url\">Edit the series here</a>"
@@ -8089,9 +8089,6 @@ msgstr "Meta Tags:"
 msgid "length"
 msgstr "Længde"
 
-msgid "Meta Tags: Trimming Options"
-msgstr "Metatags: Trimmeindstillinger"
-
 msgid "Trim the Meta Tag after the word on the given value"
 msgstr "Trim metatagget efter ordet på den givne værdi"
 
@@ -8695,13 +8692,6 @@ msgstr "Stien skal begynde med /"
 
 msgid "The admin routes should not have metatags."
 msgstr "Administratorruterne bør ikke have metatags."
-
-msgid ""
-"The entities routes metatags must be added by fields. @entity_type - "
-"@id"
-msgstr ""
-"Meta tags for enhedsruterne skal tilføjes af felter. @entity_type - "
-"@id"
 
 msgid "There are already metatags created for this route."
 msgstr "Der er allerede skabt metatags for denne rute."
@@ -18961,17 +18951,17 @@ msgstr ""
 "relaterede serier."
 
 msgid "BNF State"
-msgstr "BNF status"
+msgstr "Delingstjenesten status"
 
 msgid ""
 "The BNF state of the entity, defining if it was imported, exported, or "
 "neither."
 msgstr ""
-"BNF status definerer om enheden blev importeret, eksporteret eller "
-"hverken eller. "
+"Delingstjenestens status definerer om enheden blev importeret, "
+"eksporteret eller hverken eller. "
 
 msgid "Publish and submit to BNF"
-msgstr "Publicer og send til BNF"
+msgstr "Publicer og send til Delingstjenesten"
 
 msgid ""
 "Please make sure that all content and media as part of this article is "
@@ -18984,45 +18974,45 @@ msgctxt "BNF"
 msgid "Could not publish node - will not send to BNF."
 msgstr ""
 "Det er ikke muligt at publicere noden og den vil ikke blive sendt til "
-"BNF."
+"Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Content has been published and sent to BNF."
-msgstr "Indholdet er blevet publiseret og sendt til BNF"
+msgstr "Indholdet er blevet publiceret og sendt til Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Could not export node to BNF."
-msgstr "Det er ikke muligt at ekspotere noden til BNF.,"
+msgstr "Det er ikke muligt at eksportere noden til Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Node already has been exported to BNF."
-msgstr "Node er allerede eksporteret til BNF."
+msgstr "Node er allerede eksporteret til Delingstjenesten."
 
 msgid "BNF Common"
-msgstr "BNF fælles"
+msgstr "Delingstjenesten - fælles"
 
 msgid ""
 "Common code between BNF (Bibliotekernes Nationale Formidling) client "
 "and server modules"
 msgstr ""
-"Fælles kode mellem BNF-klienten (Bibliotekernes Nationale Formidling) "
-"og servermoduler"
+"Fælles kode mellem Delingstjenestens klient (Bibliotekernes Nationale "
+"Formidling) og servermoduler"
 
 msgid "BNF Server"
-msgstr "BNF Server"
+msgstr "Delingstjenesten Server"
 
 msgid "BNF (Bibliotekernes Nationale Formidling) server"
-msgstr "BNF (Bibliotekernes Nationale Formidling) server"
+msgstr "Delingstjenesten (Bibliotekernes Nationale Formidling) server"
 
 msgid "BNF Client"
-msgstr "BNF klient"
+msgstr "Delingstjenesten klient"
 
 msgid ""
 "BNF (Bibliotekernes Nationale Formidling) client, for sharing content "
 "with BNF"
 msgstr ""
-"BNF (Bibliotekernes Nationale Formidling) klient, hvor indhold kan "
-"deles"
+"Delingstjenesten (Bibliotekernes Nationale Formidling) klient, hvor "
+"indhold kan deles"
 
 msgctxt "paragraphs_ee.paragraphs_category.go_paragraphs:label"
 msgid "GO paragraphs"
@@ -19087,30 +19077,30 @@ msgstr ""
 
 msgctxt "BNF"
 msgid "Confirm import of BNF content"
-msgstr "Bekræft import af BNF indhold"
+msgstr "Bekræft import af  indhold fra Delingstjenesten"
 
 msgctxt "BNF"
 msgid "Cannot import this node from BNF."
-msgstr "Det er ikke muligt at importere denne node fra BNF"
+msgstr "Det er ikke muligt at importere denne node fra Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Node has previously been imported from BNF."
-msgstr "Denne node er tidligere blevet importeret fra BNF"
+msgstr "Denne node er tidligere blevet importeret fra Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Content label"
-msgstr "Indholdlabel"
+msgstr "Indholdslabel"
 
 msgid "Import content"
 msgstr "Importindhold"
 
 msgctxt "BNF"
 msgid "Could not import node from BNF."
-msgstr "Det er ikke muligt at importere denne node fra BNF"
+msgstr "Det er ikke muligt at importere denne node fra Delingstjenesten."
 
 msgctxt "BNF"
 msgid "Import nodes from BNF"
-msgstr "Importnoder fra BNF"
+msgstr "Importnoder fra Delingstjenesten"
 
 msgid "URL or UUID of content"
 msgstr "URL eller UUID"
@@ -19129,5 +19119,268 @@ msgid "Confirm import"
 msgstr "Bekræft import"
 
 msgid "Import BNF content"
-msgstr "Importer BNF-indhold"
+msgstr "Importer indhold fra Delingstjenesten"
+
+msgid "Login to BNF"
+msgstr "Login i Delingstjenesten"
+
+msgid "The entities routes metatags must be added by fields."
+msgstr ""
+
+msgid "Trimming options"
+msgstr ""
+
+msgid "Characters to trim"
+msgstr ""
+
+msgid ""
+"A list of characters to trim at the end of all metatags. Provide a "
+"single string without any separators, e.g. \"|,.\" (instead of \"| , "
+".\"). Note that spaces, tabs, new lines, carriage returns and vertical "
+"tabs (\" \\n"
+"\\r\\t\\v\") will be trimmed automatically and do not "
+"need to be listed in this field. The trimming is applied at the very "
+"end after the tag is trimmed for length, and after the trimming option "
+"was executed."
+msgstr ""
+
+msgid "Configuration instance"
+msgstr ""
+
+msgid ""
+"Meta tag configuration, stored as either a serialized array or a "
+"JSON-encoded string."
+msgstr ""
+
+msgid "This module provides support to define and manage custom meta tags."
+msgstr ""
+
+msgid ""
+"The module provides the option to create different <a "
+"href=\":metatag_custom_tag\">\"Custom Tags\"</a> to use for different "
+"purposes."
+msgstr ""
+
+msgid "The best way of using Metatag: Custom Tags is as follows:"
+msgstr ""
+
+msgid ""
+"Create the <a href=\":metatag_custom_tag_create\">\"Custom Tag\"</a>, "
+"fill in the specific values that every page should have."
+msgstr ""
+
+msgid "Configure Custom tags below."
+msgstr ""
+
+msgid "Specify the name of the custom tag."
+msgstr ""
+
+msgid "Specify the description of the Custom tag."
+msgstr ""
+
+msgid "Meta"
+msgstr ""
+
+msgid "Select the HTML element of the Custom tag."
+msgstr ""
+
+msgid "Name attribute"
+msgstr ""
+
+msgid "Http Equiv"
+msgstr ""
+
+msgid "Item Prop"
+msgstr ""
+
+msgid "Rel"
+msgstr ""
+
+msgid "Select the Name attribute of the Custom tag."
+msgstr ""
+
+msgid "Value attribute"
+msgstr ""
+
+msgid "Href"
+msgstr ""
+
+msgid "Select the Value attribute of the Custom tag."
+msgstr ""
+
+msgid "Created %label Custom tag."
+msgstr ""
+
+msgid "Updated %label Custom tag."
+msgstr ""
+
+msgid "Edit Custom tag @label"
+msgstr ""
+
+msgid "Custom tag"
+msgstr ""
+
+msgid "Custom tags"
+msgstr ""
+
+msgid "@count Custom tag"
+msgid_plural "@count Custom tags"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Custom Tag"
+msgstr ""
+
+msgid "This plugin will be cloned from these settings for each custom tag."
+msgstr ""
+
+msgid ""
+"These custom tags are designed to use the custom purpose on the "
+"website."
+msgstr ""
+
+msgid "Metatag: Custom Tags"
+msgstr ""
+
+msgid "Provides support to define and manage custom meta tags."
+msgstr ""
+
+msgid "Add Custom tag"
+msgstr ""
+
+msgid "Configure Custom tags."
+msgstr ""
+
+msgid "Delete Custom tag"
+msgstr ""
+
+msgid "Import \"@label\" to @name"
+msgstr ""
+
+msgctxt "BNF"
+msgid "my site"
+msgstr "Min side"
+
+msgid "BNF configuration"
+msgstr "Konfiguration Delingstjenesten"
+
+msgid "BNF server URL"
+msgstr "URL til Delingstjenestens server"
+
+msgid "For example <em>https://bibliotekernesnationaleformidling.dk/</em>."
+msgstr ""
+
+msgid "Configure BNF client."
+msgstr "Konfigurer Delingstjenesteklienten"
+
+msgid "A color field."
+msgstr ""
+
+msgid "The color value in #HEX format."
+msgstr ""
+
+msgid "The opacity value."
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Audiobook"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Ebook"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Listen to @materialType"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Read @materialType"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Try @materialType"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Modal for player"
+msgstr ""
+
+msgctxt "Global"
+msgid "Go to material"
+msgstr ""
+
+msgid "A CQL search string."
+msgstr ""
+
+msgid "The CQL search string."
+msgstr ""
+
+msgid "A WorkID field."
+msgstr ""
+
+msgid "The WorkID value"
+msgstr ""
+
+msgid "The material type (e.g., bog, e-bog)."
+msgstr ""
+
+msgid "DPL Lagoon related functionality"
+msgstr ""
+
+msgid "Handles Lagoon related functionality, eg. resolving host names"
+msgstr ""
+
+msgid "Post Go Adgangsplatformen Login Route"
+msgstr ""
+
+msgid "DPL Go"
+msgstr ""
+
+msgid "Module used for handling go specific functionality."
+msgstr ""
+
+msgid "Add @type video via URL"
+msgstr ""
+
+msgid ""
+"VideoTool URL example: "
+"https://media.videotool.dk/?vn=557_2023103014511477700668916683"
+msgstr ""
+
+msgid "The given URL does not match the VideoTool URL pattern."
+msgstr ""
+
+msgid "VideoTool URL"
+msgstr ""
+
+msgid "VideoTool embed"
+msgstr ""
+
+msgid "Url"
+msgstr "URL"
+
+msgid "Media type"
+msgstr "Media type"
+
+msgid "Generate thumbnails"
+msgstr ""
+
+msgid ""
+"If checked, Drupal will automatically generate thumbnails from "
+"VideoTool provided images."
+msgstr ""
+
+msgid "VideoTool"
+msgstr ""
+
+msgid "Embed VideoTool content."
+msgstr ""
+
+msgid "Integrate the VideoTool video platform into the Media module"
+msgstr ""
+
+msgctxt "Validation"
+msgid "IsHttps"
+msgstr ""
 
