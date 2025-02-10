@@ -2,11 +2,15 @@ _core:
   default_config_hash: Sd_9jXBxw3mGn9d_y94jvlitI0wpvj6x2dQ0p6aGhJo
 entity_config:
   media:
+    audio:
+      enabled: true
     document:
       enabled: true
     image:
       enabled: true
     video:
+      enabled: true
+    videotool:
       enabled: true
   node:
     article:
@@ -16,9 +20,18 @@ entity_config:
       enabled: false
     campaign:
       enabled: false
+    go_article:
+      enabled: true
+      query_load_enabled: true
+      routes_enabled: true
+    go_category:
+      enabled: true
+      query_load_enabled: true
+      routes_enabled: true
     go_page:
       enabled: true
       query_load_enabled: true
+      routes_enabled: true
     page:
       enabled: false
   paragraph:
@@ -29,7 +42,7 @@ entity_config:
     breadcrumb_children:
       enabled: true
     campaign_rule:
-      enabled: false
+      enabled: true
     card_grid_automatic:
       enabled: true
     card_grid_manual:
@@ -39,19 +52,31 @@ entity_config:
     content_slider_automatic:
       enabled: true
     event_ticket_category:
-      enabled: false
+      enabled: true
     files:
-      enabled: false
+      enabled: true
     filtered_event_list:
+      enabled: true
+    go_link:
+      enabled: true
+    go_linkbox:
+      enabled: true
+    go_material_slider_automatic:
+      enabled: true
+    go_material_slider_manual:
       enabled: true
     go_video:
       enabled: true
+    go_video_bundle_automatic:
+      enabled: true
+    go_video_bundle_manual:
+      enabled: true
     hero:
-      enabled: false
+      enabled: true
     language_selector:
-      enabled: false
+      enabled: true
     links:
-      enabled: false
+      enabled: true
     manual_event_list:
       enabled: true
     material_grid_automatic:
@@ -59,29 +84,29 @@ entity_config:
     material_grid_manual:
       enabled: true
     medias:
-      enabled: false
+      enabled: true
     nav_grid_manual:
-      enabled: false
+      enabled: true
     nav_spots_manual:
-      enabled: false
+      enabled: true
     opening_hours:
-      enabled: false
+      enabled: true
     recommendation:
-      enabled: false
+      enabled: true
     simple_links:
-      enabled: false
+      enabled: true
     text_body:
       enabled: true
     user_registration_item:
-      enabled: false
+      enabled: true
     user_registration_linklist:
-      enabled: false
+      enabled: true
     user_registration_section:
-      enabled: false
+      enabled: true
     video:
       enabled: true
     webform:
-      enabled: false
+      enabled: true
   taxonomy_term:
     breadcrumb_structure:
       enabled: true
@@ -97,6 +122,9 @@ entity_config:
       enabled: true
 field_config:
   media:
+    audio:
+      field_media_audio_file:
+        enabled: true
     document:
       field_media_file:
         enabled: true
@@ -107,6 +135,9 @@ field_config:
         enabled: true
     video:
       field_media_oembed_video:
+        enabled: true
+    videotool:
+      field_media_videotool:
         enabled: true
   node:
     article:
@@ -131,6 +162,36 @@ field_config:
       field_teaser_image:
         enabled: true
       field_teaser_text:
+        enabled: true
+    go_article:
+      field_go_article_image:
+        enabled: true
+      field_override_author:
+        enabled: true
+      field_paragraphs:
+        enabled: true
+      field_publication_date:
+        enabled: true
+      field_show_override_author:
+        enabled: true
+      field_subtitle:
+        enabled: true
+      field_teaser_image:
+        enabled: true
+      field_teaser_text:
+        enabled: true
+    go_category:
+      field_category_menu_image:
+        enabled: true
+      field_category_menu_sound:
+        enabled: true
+      field_category_menu_title:
+        enabled: true
+      field_go_color:
+        enabled: true
+      field_paragraphs:
+        enabled: true
+      field_publication_date:
         enabled: true
     go_page:
       field_paragraphs:
@@ -209,10 +270,63 @@ field_config:
         enabled: true
       field_title:
         enabled: true
+    go_link:
+      field_aria_label:
+        enabled: true
+      field_go_link:
+        enabled: true
+      field_target_blank:
+        enabled: true
+    go_linkbox:
+      field_go_color:
+        enabled: true
+      field_go_description:
+        enabled: true
+      field_go_image:
+        enabled: true
+      field_go_link_paragraph:
+        enabled: true
+      field_title:
+        enabled: true
+    go_material_slider_automatic:
+      field_cql_search:
+        enabled: true
+      field_slider_amount_of_materials:
+        enabled: true
+      field_title:
+        enabled: true
+    go_material_slider_manual:
+      field_material_slider_work_ids:
+        enabled: true
+      field_title:
+        enabled: true
     go_video:
       field_embed_video:
         enabled: true
       field_go_video_title:
+        enabled: true
+        name_sdl: title
+      field_url:
+        enabled: true
+    go_video_bundle_automatic:
+      field_cql_search:
+        enabled: true
+      field_embed_video:
+        enabled: true
+      field_go_video_title:
+        enabled: true
+      field_url:
+        enabled: true
+      field_video_amount_of_materials:
+        enabled: true
+    go_video_bundle_manual:
+      field_embed_video:
+        enabled: true
+      field_go_video_title:
+        enabled: true
+      field_url:
+        enabled: true
+      field_video_bundle_work_ids:
         enabled: true
     manual_event_list:
       field_events:
@@ -256,7 +370,7 @@ settings:
   field_required_override: false
   schema_description: 'GraphQL Compose'
   schema_version: '1'
-  simple_queries: false
+  simple_queries: true
   simple_unions: true
   site_name: true
   site_slogan: false
