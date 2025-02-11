@@ -140,7 +140,7 @@
         "drupal/jsonlog": "^4.0",
         "drupal/language_neutral_aliases": "^3.1",
         "drupal/libraries": "^4.0",
-        "drupal/linkit": "^6.1.2",
+        "drupal/linkit": "^7.0.3",
         "drupal/media_library_edit": "^3.0",
         "drupal/metatag": "^2.1",
         "drupal/multiple_fields_remove_button": "^2.2",
