@@ -273,7 +273,7 @@ field_config:
     go_link:
       field_aria_label:
         enabled: true
-      field_link:
+      field_go_link_info:
         enabled: true
       field_target_blank:
         enabled: true
