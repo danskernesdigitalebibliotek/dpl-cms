@@ -1,13 +1,55 @@
-diff --git a/core/lib/Drupal/Core/Database/Connection.php b/core/lib/Drupal/Core/Database/Connection.php
-index da910131e..f05bb1fd8 100644
---- a/core/lib/Drupal/Core/Database/Connection.php
-+++ b/core/lib/Drupal/Core/Database/Connection.php
-@@ -1532,7 +1532,7 @@ public function escapeLike($string) {
-    *   TRUE if we're currently in a transaction, FALSE otherwise.
-    */
-   public function inTransaction() {
--    return ($this->transactionDepth() > 0);
-+    return $this->connection->inTransaction();
+From 1e6aeea0a76b872823fe2fae92f90d86a4074bd7 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Kasper=20Garn=C3=A6s?= <kasperg@users.noreply.github.com>
+Date: Mon, 17 Feb 2025 16:22:54 +0100
+Subject: [PATCH] Use PDO to determine transaction status for MySQL
+
+With our local Galera cluster we are seeing attempts to start a
+transaction even though one already exists. It seems as if Drupal
+and the database driver disagrees regarding what state we are in when
+using the stack depth.
+
+To avoid this we:
+
+- Update the MySQL driver to use the PDO connection to determine
+whether we are in a transaction or not instead of falling back on the
+base implementation with stack depth.
+- Update the transaction manager to use whether we are in a
+transaction when deciding whether to create a new one or a savepoint
+instead of the stack depth.
+---
+ .../Core/Database/Transaction/TransactionManagerBase.php   | 2 +-
+ .../mysql/src/Driver/Database/mysql/TransactionManager.php | 7 +++++++
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+
+diff --git a/lib/Drupal/Core/Database/Transaction/TransactionManagerBase.php b/lib/Drupal/Core/Database/Transaction/TransactionManagerBase.php
+index 5e75159e1a..bc25724daa 100644
+--- a/lib/Drupal/Core/Database/Transaction/TransactionManagerBase.php
++++ b/lib/Drupal/Core/Database/Transaction/TransactionManagerBase.php
+@@ -258,7 +258,7 @@ abstract class TransactionManagerBase implements TransactionManagerInterface {
+     $id = uniqid('', TRUE);
+ 
+     // Do the client-level processing.
+-    if ($this->stackDepth() === 0) {
++    if (!$this->inTransaction()) {
+       $this->beginClientTransaction();
+       $type = StackItemType::Root;
+       $this->setConnectionTransactionState(ClientConnectionTransactionState::Active);
+diff --git a/modules/mysql/src/Driver/Database/mysql/TransactionManager.php b/modules/mysql/src/Driver/Database/mysql/TransactionManager.php
+index a79749ff4b..ac3594f158 100644
+--- a/modules/mysql/src/Driver/Database/mysql/TransactionManager.php
++++ b/modules/mysql/src/Driver/Database/mysql/TransactionManager.php
+@@ -85,4 +85,11 @@ class TransactionManager extends TransactionManagerBase {
+     return $clientRollback;
    }
  
-   /**
++  /**
++   * {@inheritDoc}
++   */
++  public function inTransaction(): bool {
++    return $this->connection->getClientConnection()->inTransaction();
++  }
++
+ }
+-- 
+2.45.2
+
