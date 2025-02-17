@@ -302,13 +302,11 @@
       "drupal/multivalue_form_element": {
         "3199172: multivalue_form_element-3199172": "https://www.drupal.org/files/issues/2023-12-05/nested_elements-3199172-14.patch"
       },
-      "drupal/transaction": {
-        "Add patch to fix activeTransaction issue": "patches/in-transaction.patch"
-      },
       "drupal/views_infinite_scroll": {
         "Add item count and url page parameter": "patches/add-item-count-views_infinite_scroll.patch"
       },
       "drupal/core": {
+        "Add patch to fix activeTransaction issue": "patches/in-transaction.patch",
         "2280639: Add the FieldStorageDefinition class to define field storage definitions in hook_entity_field_storage_info()": "https://www.drupal.org/files/issues/2023-09-05/2280639-d10-reroll-156.patch",
         "3402656: Toolbar causes a Javascript error if the subtrees content changes between page loads": "https://git.drupalcode.org/issue/drupal-3402656/-/commit/61ac007a84014f54a07825f8f92bb6bc0dfbd170.patch",
         "3035578: Add details for AJAX response errors": "https://www.drupal.org/files/issues/2023-07-24/3035578-26.patch",
