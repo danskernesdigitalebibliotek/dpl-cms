@@ -4,9 +4,11 @@ namespace Drupal\dpl_library_token;
 
 use Drupal\Core\KeyValueStore\KeyValueExpirableFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+use Drupal\dpl_library_token\Exception\MissingConfigurationException;
 use Drupal\dpl_login\Adgangsplatformen\Config;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
+use PHPUnit\Exception;
 use Psr\Log\LogLevel;
 
 /**
@@ -78,13 +80,25 @@ class LibraryTokenHandler {
       return NULL;
     }
 
+    try {
+      $agencyId = $this->adgangsplatformenConfig->getAgencyId();
+      $clientId = $this->adgangsplatformenConfig->getClientId();
+      $clientSecret = $this->adgangsplatformenConfig->getClientSecret();
+      $tokenEndpoint = $this->adgangsplatformenConfig->getTokenEndpoint();
+    }
+    catch (MissingConfigurationException $e) {
+
+      $variables = [
+        '@message' => 'Could not retrieve library token',
+        '@error_message' => $e->getMessage(),
+      ];
+
+      $this->logger->log(LogLevel::ERROR, '@message. Details: @error_message', $variables);
+      return FALSE;
+    }
+
     // Try to fetch token, if not possible return false.
-    if (!$token = $this->fetchToken(
-      $this->adgangsplatformenConfig->getAgencyId(),
-      $this->adgangsplatformenConfig->getClientId(),
-      $this->adgangsplatformenConfig->getClientSecret(),
-      $this->adgangsplatformenConfig->getTokenEndpoint(),
-    )) {
+    if (!$token = $this->fetchToken($agencyId, $clientId, $clientSecret, $tokenEndpoint)) {
       return FALSE;
     }
 
