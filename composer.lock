@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "246dbb2d2ed59d032b39489257172854",
+    "content-hash": "5e5bdd62518feb7cb74ffd3d10d7325d",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -3506,16 +3506,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.3.10",
+            "version": "10.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "f58ab5c0d02d275c5aa226c4505b457e41b161cc"
+                "reference": "db17b59620ce1c142a34dc017d9e696ce4771e55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/f58ab5c0d02d275c5aa226c4505b457e41b161cc",
-                "reference": "f58ab5c0d02d275c5aa226c4505b457e41b161cc",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/db17b59620ce1c142a34dc017d9e696ce4771e55",
+                "reference": "db17b59620ce1c142a34dc017d9e696ce4771e55",
                 "shasum": ""
             },
             "require": {
@@ -3550,9 +3550,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.10"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.4.2"
             },
-            "time": "2024-08-22T14:31:34+00:00"
+            "time": "2024-08-22T14:31:30+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -20668,6 +20668,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
