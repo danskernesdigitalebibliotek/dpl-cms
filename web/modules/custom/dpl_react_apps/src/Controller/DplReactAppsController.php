@@ -394,7 +394,6 @@ class DplReactAppsController extends ControllerBase {
       'online-internal-success-reserved-text' => $this->t('You will receive a message when reservation is met and the material is lent to you.', [], ['context' => 'Work Page']),
       'online-limit-month-audiobook-info-text' => $this->t('You have borrowed @count out of @limit possible audio-books this month', [], ['context' => 'Work Page']),
       'online-limit-month-ebook-info-text' => $this->t('You have borrowed @count out of @limit possible e-books this month', [], ['context' => 'Work Page']),
-      'online-material-already-reserved-text' => $this->t('E-material is already reserved', [], ['context' => 'Work Page']),
       'online-material-player-text' => $this->t('Listen to @materialType', [], ['context' => 'Work Page']),
       'online-material-reader-text' => $this->t('Read @materialType', [], ['context' => 'Work Page']),
       'online-limit-month-info-text' => $this->t('You have borrowed @count out of @limit possible e-books this month', [], ['context' => 'Work Page']),
