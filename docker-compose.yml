@@ -141,7 +141,7 @@ services:
     # https://docs.lagoon.sh/lagoon/docker-images/mariadb/mariadb-drupal
     image: uselagoon/mariadb-10.6-drupal:latest
     labels:
-      lagoon.type: mariadb
+      lagoon.type: mariadb-single
     # Do a periodic healthcheck. This is mainly used to block the php service
     # from starting up before we have a healthy database.
     healthcheck:
