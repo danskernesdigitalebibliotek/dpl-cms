@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-02-07 09:55+0100\n"
-"PO-Revision-Date: 2025-02-07 09:55+0100\n"
+"POT-Creation-Date: 2025-02-20 13:34+0100\n"
+"PO-Revision-Date: 2025-02-20 13:34+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6854,22 +6854,6 @@ msgid ""
 "fields could not be exported in GraphQL when using a Linkit widget."
 msgstr ""
 
-msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title"
-msgid "Paragraph"
-msgstr ""
-
-msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title_plural"
-msgid "Paragraphs"
-msgstr ""
-
-msgctxt "field.field.paragraph.go_link.field_go_link:label"
-msgid "Link"
-msgstr ""
-
-msgctxt "field.field.paragraph.go_linkbox.field_go_link_paragraph:label"
-msgid "Link"
-msgstr ""
-
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:label"
 msgid "Amount of materials"
 msgstr ""
@@ -6936,5 +6920,21 @@ msgctxt "paragraphs.paragraphs_type.material_grid_link_automatic:description"
 msgid ""
 "A grid representation of recommended materials, based on a link search "
 "string. "
+msgstr ""
+
+msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title"
+msgid "Paragraph"
+msgstr ""
+
+msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title_plural"
+msgid "Paragraphs"
+msgstr ""
+
+msgctxt "field.field.paragraph.go_link.field_go_link:label"
+msgid "Link"
+msgstr ""
+
+msgctxt "field.field.paragraph.go_linkbox.field_go_link_paragraph:label"
+msgid "Link"
 msgstr ""
 

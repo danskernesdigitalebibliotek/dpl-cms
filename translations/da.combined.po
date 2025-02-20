@@ -2757,7 +2757,7 @@ msgstr "Du kan sætte dine reserveringer på pause mens du f.eks. er på ferie."
 #: 
 msgctxt "Global"
 msgid "Pause your reservations early, since reservations that are already being processed, will not be paused."
-msgstr "Sæt dine reserveringer på pause i god tid, da reserveringer som allerede er i proces ikke kan sættes på hold "
+msgstr "Sæt dine reserveringer på fysiske materialer på pause i god tid, da reserveringer som allerede er i proces ikke kan sættes på hold."
 
 #: 
 msgctxt "Global"
@@ -2882,7 +2882,7 @@ msgstr "{\"type\":\"plural\",\"text\":[\"1 lån blev fornyet.\",\"@count lån bl
 #: 
 msgctxt "Global"
 msgid "You have renewed your loans"
-msgstr "Du har fornyet dine lån"
+msgstr "Du har fornyet de lån, der kunne fornys"
 
 #: 
 msgctxt "Global"
@@ -3922,11 +3922,6 @@ msgstr "Link til blokeret bruger som vises i modal"
 msgctxt "Loan list"
 msgid "No materials can be renewed"
 msgstr "Ingen materialer kan fornys"
-
-#: 
-msgctxt "OpenId Connect Settings"
-msgid "Unable to retrieve token from Adgangsplatformen. Please check if the provided Agency ID is correct."
-msgstr "Kan ikke hente token fra Adgangsplatformen. Tjek venligst, om det angivne Agency ID er korrekt."
 
 #: 
 msgctxt "Global"
@@ -16386,20 +16381,8 @@ msgid "Log in with @client_title"
 msgstr "Log ind med @client_title"
 
 #: 
-msgid "Enabled OpenID Connect clients"
-msgstr "Aktiverede OpenID Connect klienter"
-
-#: 
-msgid "Choose enabled OpenID Connect clients."
-msgstr "Vælg aktiverede OpenID Connect-klienter."
-
-#: 
 msgid "Override registration settings"
 msgstr "Tilsidesæt registreringsindstillinger"
-
-#: 
-msgid "If enabled, a user will be registered even if registration is set to \"Administrators only\"."
-msgstr "Hvis aktiveret, vil en bruger blive registreret, selv hvis registrering er sat til \"Kun administratorer\"."
 
 #: 
 msgid "Save user claims on every login"
@@ -16498,14 +16481,6 @@ msgid "Client secret"
 msgstr "Klienthemmelighed"
 
 #: 
-msgid "The client ID is missing for @provider."
-msgstr "ClientID'et mangler for @provider."
-
-#: 
-msgid "The client secret is missing for @provider."
-msgstr "Client Secret mangler for @provider."
-
-#: 
 msgid "API Version"
 msgstr "API-version"
 
@@ -16568,14 +16543,6 @@ msgstr "Forbindelse med @provider kunne ikke fuldføres på grund af en fejl."
 #: 
 msgid "Failed to get authentication tokens for @provider. Check logs for further details."
 msgstr "Mislykkedes med at få autentificeringstokens for @provider. Tjek logs for yderligere detaljer."
-
-#: 
-msgid "The e-mail address is not valid: @email"
-msgstr "Emailadressen er ikke gyldig: @email"
-
-#: 
-msgid "The e-mail address is already taken: @email"
-msgstr "Emailadressen benyttes allerede: @email"
 
 #: 
 msgid "Only administrators can register new accounts."
@@ -16658,16 +16625,8 @@ msgid "Web page or blog URL"
 msgstr "Web side eller blog URL"
 
 #: 
-msgid "Preferred e-mail address"
-msgstr "Foretrukken e-mailadresse"
-
-#: 
 msgid "Email verified"
 msgstr "Email verificeret"
-
-#: 
-msgid "True if the e-mail address has been verified; otherwise false"
-msgstr "Sandt, hvis e-mailadressen er blevet verificeret; ellers falsk"
 
 #: 
 msgid "Birthdate"
@@ -16778,10 +16737,6 @@ msgid "LinkedIn"
 msgstr "LinkedIn"
 
 #: 
-msgid "Generic"
-msgstr "Generisk"
-
-#: 
 msgid "OpenID Connect login"
 msgstr "Login til Adgangsplatformen"
 
@@ -16792,10 +16747,6 @@ msgstr "Forbundne konti"
 #: 
 msgid "OpenID Connect redirect page"
 msgstr "OpenID Connect omdirigeringsside"
-
-#: 
-msgid "Configure OpenID Connect, choose active OpenID Connect clients etc."
-msgstr "Indstil credentials til adgangsplatformen, ID og secret."
 
 #: 
 msgid "A pluggable client implementation for the OpenID Connect protocol."
@@ -27862,26 +27813,6 @@ msgid "IsHttps"
 msgstr ""
 
 #: 
-msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title"
-msgid "Paragraph"
-msgstr ""
-
-#: 
-msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title_plural"
-msgid "Paragraphs"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.go_link.field_go_link:label"
-msgid "Link"
-msgstr ""
-
-#: 
-msgctxt "field.field.paragraph.go_linkbox.field_go_link_paragraph:label"
-msgid "Link"
-msgstr ""
-
-#: 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:label"
 msgid "Amount of materials"
 msgstr ""
@@ -27940,5 +27871,222 @@ msgstr ""
 #: 
 msgctxt "paragraphs.paragraphs_type.material_grid_link_automatic:description"
 msgid "A grid representation of recommended materials, based on a link search string. "
+msgstr ""
+
+#: 
+msgid "Automatically delete orphaned eventinstances."
+msgstr ""
+
+#: 
+msgid "DPL event: Instance Creating logic."
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title"
+msgid "Paragraph"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title_plural"
+msgid "Paragraphs"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.go_link.field_go_link:label"
+msgid "Link"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.go_linkbox.field_go_link_paragraph:label"
+msgid "Link"
+msgstr ""
+
+#: 
+msgctxt "Dpl Login"
+msgid "Unable to retrieve token from Adgangsplatformen. Please check if the provided Client ID, Client Secret and Agency ID is correct."
+msgstr ""
+
+#: 
+msgid "OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "The email address is not valid: @email"
+msgstr ""
+
+#: 
+msgid "The email address is already taken: @email"
+msgstr ""
+
+#: 
+msgid "Create OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "Logout from identity provider"
+msgstr ""
+
+#: 
+msgid "If enabled and supported by the identity provider, logging out from Drupal will also logout the user from the identity provider."
+msgstr ""
+
+#: 
+msgid "Login"
+msgstr "Login"
+
+#: 
+msgid "Path to redirect to on client login"
+msgstr ""
+
+#: 
+msgid "Path to redirect to on client logout"
+msgstr ""
+
+#: 
+msgid "User role mapping"
+msgstr ""
+
+#: 
+msgid "For each Drupal role, provide the sets of equivalent external groups, separated by spaces. A user belonging to one of the provided groups will be assigned the configured Drupal role."
+msgstr ""
+
+#: 
+msgid "<br/><strong>Note:</strong> The module will not update user roles with no mapped external groups. If all mappings to one of the roles are removed, users will keep that role until it is removed in the Drupal user administration."
+msgstr ""
+
+#: 
+msgid "Are you sure you want to delete OpenID Connect client %label?"
+msgstr ""
+
+#: 
+msgid "OpenID Connect client %label was deleted."
+msgstr ""
+
+#: 
+msgid "Error when trying to delete OpenID Connect client %label."
+msgstr ""
+
+#: 
+msgid "OpenID Connect client %label has been updated."
+msgstr ""
+
+#: 
+msgid "OpenID Connect client %label has been added."
+msgstr ""
+
+#: 
+msgid "Pending name input"
+msgstr ""
+
+#: 
+msgid "OpenID Connect Client"
+msgstr ""
+
+#: 
+msgid "@provider does not support log out. You are logged out of this site but not out of the OpenID Connect provider."
+msgstr ""
+
+#: 
+msgid "The %label client has been enabled."
+msgstr ""
+
+#: 
+msgid "The %label client has been disabled."
+msgstr ""
+
+#: 
+msgid "Allowed domains"
+msgstr ""
+
+#: 
+msgid "Enter one domain per line that are allowed to initiate SSO using ISS."
+msgstr ""
+
+#: 
+msgid "Scopes"
+msgstr ""
+
+#: 
+msgid "Custom scopes, separated by spaces, for example: openid email"
+msgstr ""
+
+#: 
+msgid "Auto discover endpoints"
+msgstr ""
+
+#: 
+msgid "Requires IDP support for \"<a href=\"@url\" target=\"_blank\">OpenID Connect Discovery</a>\"."
+msgstr ""
+
+#: 
+msgid "Issuer URL"
+msgstr ""
+
+#: 
+msgid "End Session endpoint"
+msgstr ""
+
+#: 
+msgid "The issuer URL @url appears to be invalid."
+msgstr ""
+
+#: 
+msgid "Preferred email address"
+msgstr ""
+
+#: 
+msgid "True if the email address has been verified; otherwise false"
+msgstr ""
+
+#: 
+msgid "Generic OAuth 2.0"
+msgstr ""
+
+#: 
+msgid "Configure OpenID Connect clients."
+msgstr ""
+
+#: 
+msgid "Clients"
+msgstr "Klienter"
+
+#: 
+msgid "OpenID Connect clients"
+msgstr ""
+
+#: 
+msgid "Add OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "Edit OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "Delete OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "Enable an OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "Disable an OpenID Connect client"
+msgstr ""
+
+#: 
+msgid "OpenID Connect Settings"
+msgstr ""
+
+#: 
+msgid "End session"
+msgstr ""
+
+#: 
+msgid "Log in via OpenID Connect"
+msgstr ""
+
+#: 
+msgid "OpenID Connect initiate redirect page"
 msgstr ""
 
