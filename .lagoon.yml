@@ -167,9 +167,9 @@ environments:
   pr-1757:
     routes:
       - varnish:
-        - "go-playground.dpl-cms.dplplat01.dpl.reload.dk"
+        - "cms.pr-1707.dpl-cms.dplplat01.dpl.reload.dk"
       - node:
-        - go.go-playground.dpl-cms.dplplat01.dpl.reload.dk:
+        - go.pr-1707.dpl-cms.dplplat01.dpl.reload.dk:
             annotations:
               nginx.ingress.kubernetes.io/proxy-buffer-size: 32k
 
