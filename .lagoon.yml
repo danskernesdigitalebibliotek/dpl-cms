@@ -167,9 +167,10 @@ environments:
   pr-1757:
     routes:
       - varnish:
-        - go-playground.dpl-cms.dplplat01.dpl.reload.dk:
+        - "go-playground.dpl-cms.dplplat01.dpl.reload.dk"
+        - "varnish.pr-1757.dpl-cms.dplplat01.dpl.reload.dk":
             annotations:
-              nginx.ingress.kubernetes.io/permanent-redirect: https://go-playground.dpl-cms.dplplat01.dpl.reload.dk$request_uri
+              nginx.ingress.kubernetes.io/permanent-redirect: https://go-playground.dpl-cms.dplplat01.dpl.reload.d$request_uri
       - node:
         - go.go-playground.dpl-cms.dplplat01.dpl.reload.dk:
             annotations:
