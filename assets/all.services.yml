@@ -13,6 +13,3 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header.
     supportsCredentials: false
-
-  session.storage.options:
-    cookie_domain: ${COOKIE_DOMAIN}
