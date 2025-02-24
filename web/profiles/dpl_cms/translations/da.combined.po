@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-02-18 20:11+0100\n"
-"PO-Revision-Date: 2025-02-18 20:11+0100\n"
+"POT-Creation-Date: 2025-02-24 19:12+0100\n"
+"PO-Revision-Date: 2025-02-24 19:12+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1672,8 +1672,8 @@ msgid ""
 "Pause your reservations early, since reservations that are already being "
 "processed, will not be paused."
 msgstr ""
-"Sæt dine reserveringer på pause i god tid, da reserveringer som allerede er "
-"i proces ikke kan sættes på hold "
+"Sæt dine reserveringer på fysiske materialer på pause i god tid, da "
+"reserveringer som allerede er i proces ikke kan sættes på hold."
 
 msgctxt "Global"
 msgid "Cancel pause"
@@ -1807,7 +1807,7 @@ msgstr ""
 
 msgctxt "Global"
 msgid "You have renewed your loans"
-msgstr "Du har fornyet dine lån"
+msgstr "Du har fornyet de lån, der kunne fornys"
 
 msgctxt "Global"
 msgid "Something went wrong renewing your loan. Please try again."
@@ -4435,6 +4435,12 @@ msgstr "List alle åbningstider for ældre API"
 msgid "Get campaign matching search result facets"
 msgstr "Hent kampagne som matcher facetter fra søgeresultatet"
 
+msgid "Subscription"
+msgstr ""
+
+msgid "Subscriptions"
+msgstr ""
+
 msgid "Update single events"
 msgstr "Opdater enkeltstående arrangementer"
 
@@ -4484,6 +4490,9 @@ msgid "Handle the favorites list material component pages"
 msgstr "Håndter indstillinger for huskeliste komponent"
 
 msgid "Post Go Adgangsplatformen Login Route"
+msgstr ""
+
+msgid "Post Go Adgangsplatformen Logout Route"
 msgstr ""
 
 msgid "DPL Go"
