@@ -27840,7 +27840,7 @@ msgstr ""
 #: 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_link:description"
 msgid "This field is for inserting a link string based on a search, e.g.: https://dapple-cms.docker/advanced-search?sublocation=fantasy&advancedSearchCql=%27harry%27&linked=true<br /><br />Please be aware that it is necessary to copy the exact link string.<br /><br />A valid link search string can be generated, by performing a query through the advanced search and copying the link string from there."
-msgstr ""
+msgstr "Tilføj et link her, som er genereret ved hjælp af avanceret søgning -> CQL søgning, fx https://dapple-cms.docker/advanced-search?sublocation=fantasy&advancedSearchCql=%27harry%27&linked=true<br /><br />Bemærk at en søgning, der er foretaget vha feltsøgning under avanceret søgning, ikke virker. Der SKAL benyttes CQL."
 
 #: 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_title:label"
@@ -28088,5 +28088,9 @@ msgstr ""
 
 #: 
 msgid "OpenID Connect initiate redirect page"
+msgstr ""
+
+#: 
+msgid "Post Go Adgangsplatformen Logout Route"
 msgstr ""
 

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-02-20 13:34+0100\n"
-"PO-Revision-Date: 2025-02-20 13:34+0100\n"
+"POT-Creation-Date: 2025-02-24 15:16+0100\n"
+"PO-Revision-Date: 2025-02-24 15:16+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19500,5 +19500,8 @@ msgid "Log in via OpenID Connect"
 msgstr ""
 
 msgid "OpenID Connect initiate redirect page"
+msgstr ""
+
+msgid "Post Go Adgangsplatformen Logout Route"
 msgstr ""
 
