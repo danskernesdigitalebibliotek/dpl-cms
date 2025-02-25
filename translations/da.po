@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-02-25 09:52+0100\n"
-"PO-Revision-Date: 2025-02-25 09:52+0100\n"
+"POT-Creation-Date: 2025-02-25 11:15+0100\n"
+"PO-Revision-Date: 2025-02-25 11:15+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19235,11 +19235,11 @@ msgstr ""
 
 msgctxt "Work Page"
 msgid "Listen to @materialType"
-msgstr ""
+msgstr "Lyt til @materialType"
 
 msgctxt "Work Page"
 msgid "Read @materialType"
-msgstr ""
+msgstr "Læs @materialType"
 
 msgctxt "Work Page"
 msgid "Try @materialType"
@@ -19346,7 +19346,7 @@ msgid "The email address is not valid: @email"
 msgstr ""
 
 msgid "The email address is already taken: @email"
-msgstr ""
+msgstr "Denne email adresse er allerede i brug: @email"
 
 msgid "Create OpenID Connect client"
 msgstr ""
