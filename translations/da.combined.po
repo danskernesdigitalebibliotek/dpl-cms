@@ -22137,10 +22137,6 @@ msgid "Purge image styles after entity update"
 msgstr "Slet billedstile efter enhedsopdatering"
 
 #: 
-msgid "Adminster"
-msgstr "Administrer"
-
-#: 
 msgid "By default every image belonging to any entity is purged."
 msgstr "Som standard renses alle billeder, der tilhører enhver enhed."
 
@@ -22151,10 +22147,6 @@ msgstr "For at specificere hvilke enheder, der skal have slettet billeder ved re
 #: 
 msgid "No content entities were found"
 msgstr "Ingen indholds-entiteter blev fundet"
-
-#: 
-msgid "Configure bundles of entity types that Varnish image purge should be used for, if none selected, all bundles form all entity types will be used. Just the fields of type image will be purge."
-msgstr "Konfigurer bundter af enhedstyper, som Varnish-billedrensning skal bruges til; hvis ingen er valgt, vil alle bundter fra alle enhedstyper blive brugt. Kun felter af typen billede vil blive renset."
 
 #: 
 msgid "Varnish purger settings"
@@ -27467,7 +27459,7 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Try @materialType"
-msgstr ""
+msgstr "Prøv @materialType"
 
 #: 
 msgctxt "Work Page"
@@ -28092,5 +28084,17 @@ msgstr ""
 
 #: 
 msgid "Post Go Adgangsplatformen Logout Route"
+msgstr ""
+
+#: 
+msgid "Subscription"
+msgstr ""
+
+#: 
+msgid "Subscriptions"
+msgstr ""
+
+#: 
+msgid "Configure bundles of entity types that Varnish image purge should be used for, if none selected, all bundles from all entity types will be used. Just the fields of type image will be purged."
 msgstr ""
 
