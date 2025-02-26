@@ -15,7 +15,7 @@ type Address {
   administrativeArea: String
 }
 
-"""Address country."""
+"""Kommune."""
 type AddressCountry {
   """The name of the country."""
   name: String
@@ -24,9 +24,18 @@ type AddressCountry {
   code: String
 }
 
+type AdgangsplatformenLibraryToken {
+  token: String
+}
+
 type AdgangsplatformenTokens {
-  user: String
-  library: String
+  user: AdgangsplatformenUserToken
+  library: AdgangsplatformenLibraryToken
+}
+
+type AdgangsplatformenUserToken {
+  token: String
+  expire: Int
 }
 
 """A CQL search string."""
@@ -82,9 +91,13 @@ type DplTokens {
 """An email address."""
 scalar Email
 
+type Error {
+  message: String!
+}
+
 """A file object to represent an managed file."""
 type File {
-  """The name of the file."""
+  """Filens navn."""
   name: String
 
   """The URL of the file."""
@@ -93,7 +106,7 @@ type File {
   """Filens størrelse i bytes."""
   size: Int!
 
-  """The mime type of the file."""
+  """Filens mime-type."""
   mime: String
 
   """The description of the file."""
@@ -103,9 +116,14 @@ type File {
 type GoConfiguration {
   unilogin: UniloginConfiguration
   loginUrls: GoLoginUrls
+  logoutUrls: GoLogoutUrls
 }
 
 type GoLoginUrls {
+  adgangsplatformen: String
+}
+
+type GoLogoutUrls {
   adgangsplatformen: String
 }
 
@@ -173,10 +191,10 @@ type Language {
 
 """A link."""
 type Link {
-  """The title of the link."""
+  """Linkets titel"""
   title: String
 
-  """The URL of the link."""
+  """Linkets URL"""
   url: String
 
   """Whether the link is internal to this website."""
@@ -204,7 +222,7 @@ type MediaAudio implements MediaInterface {
   name: String!
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -231,7 +249,7 @@ type MediaDocument implements MediaInterface {
   name: String!
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -268,7 +286,7 @@ type MediaImage implements MediaInterface {
   name: String!
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -292,14 +310,14 @@ interface MediaInterface {
   name: String!
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
 }
 
 """Entity type media."""
-union MediaUnion = MediaAudio | MediaDocument | MediaImage | MediaVideo
+union MediaUnion = MediaAudio | MediaDocument | MediaImage | MediaVideo | MediaVideotool
 
 """Entity type media."""
 type MediaVideo implements MediaInterface {
@@ -322,7 +340,34 @@ type MediaVideo implements MediaInterface {
   name: String!
 
   """Alternativ URL"""
-  path: String!
+  path: String
+
+  """Published"""
+  status: Boolean!
+}
+
+"""Entity type media."""
+type MediaVideotool implements MediaInterface {
+  """The Universally Unique IDentifier (UUID)."""
+  id: ID!
+
+  """The time the media item was last edited."""
+  changed: DateTime!
+
+  """The time the media item was created."""
+  created: DateTime!
+
+  """Language"""
+  langcode: Language!
+
+  """VideoTool URL"""
+  mediaVideotool: String!
+
+  """Name"""
+  name: String!
+
+  """Alternativ URL"""
+  path: String
 
   """Published"""
   status: Boolean!
@@ -333,6 +378,12 @@ type Mutation {
   """Placeholder for mutation extension."""
   _: Boolean!
   import(uuid: String!, callbackUrl: String!): ImportResponse!
+}
+
+type NewContentResponse {
+  uuids: [String!]!
+  youngest: Time!
+  errors: [Error!]!
 }
 
 """
@@ -372,7 +423,7 @@ type NodeArticle implements NodeInterface {
   paragraphs: [ParagraphUnion!]
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Forfremmet til forside"""
   promote: Boolean!
@@ -438,7 +489,7 @@ type NodeGoArticle implements NodeInterface {
   paragraphs: [ParagraphUnion!]
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Forfremmet til forside"""
   promote: Boolean!
@@ -476,15 +527,12 @@ type NodeGoArticle implements NodeInterface {
 }
 
 """
-GO category pages will be used for creating a "landingpage" for specific categories.
+GO category pages will be used for creating a "landingpage" for specific categories. 
 When creating and publishing a new category page, the category will automatically be added to the category menu.
 """
 type NodeGoCategory implements NodeInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
-
-  """Category menu color"""
-  categoryMenuColor: Color!
 
   """
   The category image will be shown in the category menu as part of this category's menu element.
@@ -507,6 +555,9 @@ type NodeGoCategory implements NodeInterface {
   """The date and time that the content was created."""
   created: DateTime!
 
+  """Category menu color"""
+  goColor: String
+
   """Language"""
   langcode: Language!
 
@@ -514,7 +565,7 @@ type NodeGoCategory implements NodeInterface {
   paragraphs: [ParagraphUnion!]
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Forfremmet til forside"""
   promote: Boolean!
@@ -554,7 +605,7 @@ type NodeGoPage implements NodeInterface {
   paragraphs: [ParagraphUnion!]
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Forfremmet til forside"""
   promote: Boolean!
@@ -587,7 +638,7 @@ interface NodeInterface {
   langcode: Language!
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Forfremmet til forside"""
   promote: Boolean!
@@ -846,7 +897,7 @@ type ParagraphFiles implements ParagraphInterface {
 }
 
 """
-This paragraph displays a generated a list of events, based on specified filters for tags, categories and branches.
+This paragraph displays a generated a list of events, based on specified filters for tags, categories and branches. 
 """
 type ParagraphFilteredEventList implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -884,6 +935,34 @@ type ParagraphFilteredEventList implements ParagraphInterface {
   title: String
 }
 
+"""
+This link paragraph is used for links in GO, as it requires additional fields
+such as aria-label and ‘Open link in new window.’ These fields could not be
+exported in GraphQL when using a Linkit widget.
+"""
+type ParagraphGoLink implements ParagraphInterface {
+  """The Universally Unique IDentifier (UUID)."""
+  id: ID!
+
+  """Aria Label"""
+  ariaLabel: String
+
+  """The time that the Paragraph was created."""
+  created: DateTime!
+
+  """The paragraphs entity language code."""
+  langcode: Language!
+
+  """Link"""
+  link: Link!
+
+  """Published"""
+  status: Boolean!
+
+  """Open link in a new window"""
+  targetBlank: Boolean
+}
+
 """Entity type paragraph."""
 type ParagraphGoLinkbox implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -893,7 +972,7 @@ type ParagraphGoLinkbox implements ParagraphInterface {
   created: DateTime!
 
   """Color"""
-  goColor: Color
+  goColor: String
 
   """Description"""
   goDescription: String!
@@ -901,8 +980,8 @@ type ParagraphGoLinkbox implements ParagraphInterface {
   """Image"""
   goImage: MediaUnion
 
-  """LInk"""
-  goLink: Link!
+  """Link"""
+  goLinkParagraph: ParagraphUnion!
 
   """The paragraphs entity language code."""
   langcode: Language!
@@ -915,7 +994,7 @@ type ParagraphGoLinkbox implements ParagraphInterface {
 }
 
 """
-This paragraph is used for displaying a range of materials based on a CQL search string.
+This paragraph is used for displaying a range of materials based on a CQL search string. 
 """
 type ParagraphGoMaterialSliderAutomatic implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -943,7 +1022,7 @@ type ParagraphGoMaterialSliderAutomatic implements ParagraphInterface {
   status: Boolean!
 
   """Title"""
-  title: String
+  title: String!
 }
 
 """
@@ -971,7 +1050,7 @@ type ParagraphGoMaterialSliderManual implements ParagraphInterface {
   status: Boolean!
 
   """Title"""
-  title: String
+  title: String!
 }
 
 """Enter the URL for the video you want to include."""
@@ -982,6 +1061,9 @@ type ParagraphGoVideo implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
+  """Embed video"""
+  embedVideo: MediaUnion!
+
   """The paragraphs entity language code."""
   langcode: Language!
 
@@ -989,12 +1071,12 @@ type ParagraphGoVideo implements ParagraphInterface {
   status: Boolean!
 
   """Title"""
-  title: String
+  title: String!
 
   """
   VideoTool URL. Example: https://media.videotool.dk?vn=557_2023103014511477700668916683
   """
-  url: String!
+  url: String
 }
 
 """
@@ -1017,6 +1099,9 @@ type ParagraphGoVideoBundleAutomatic implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
+  """Embed video"""
+  embedVideo: MediaUnion!
+
   """Title"""
   goVideoTitle: String!
 
@@ -1029,7 +1114,7 @@ type ParagraphGoVideoBundleAutomatic implements ParagraphInterface {
   """
   VideoTool URL. Example: https://media.videotool.dk?vn=557_2023103014511477700668916683
   """
-  url: String!
+  url: String
 
   """The amount of related materials that should be shown."""
   videoAmountOfMaterials: Int!
@@ -1046,6 +1131,9 @@ type ParagraphGoVideoBundleManual implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
+  """Embed video"""
+  embedVideo: MediaUnion!
+
   """Title"""
   goVideoTitle: String!
 
@@ -1058,7 +1146,7 @@ type ParagraphGoVideoBundleManual implements ParagraphInterface {
   """
   VideoTool URL. Example: https://media.videotool.dk?vn=557_2023103014511477700668916683
   """
-  url: String!
+  url: String
 
   """
   Here you can choose which materials to display. If you need to link to a
@@ -1116,7 +1204,7 @@ type ParagraphLanguageSelector implements ParagraphInterface {
 }
 
 """
-Links with icons. Designed for internal/external links and links to search results.
+Links with icons. Designed for internal/external links and links to search results. 
 """
 type ParagraphLinks implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1154,7 +1242,8 @@ type ParagraphManualEventList implements ParagraphInterface {
 }
 
 """
-A grid representation of recommended materials, based on a CQL search string.
+Please use the "Material grid link automatically" instead! This paragraph will be deprecated in the future.
+A grid representation of recommended materials, based on a CQL search string. 
 """
 type ParagraphMaterialGridAutomatic implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1180,7 +1269,7 @@ type ParagraphMaterialGridAutomatic implements ParagraphInterface {
   materialGridDescription: String
 
   """
-  The title for the material grid. Leave this blank if you do not want a title.
+  The title for the material grid. Leave this blank if you do not want a title. 
   """
   materialGridTitle: String
 
@@ -1205,7 +1294,7 @@ type ParagraphMaterialGridManual implements ParagraphInterface {
   materialGridDescription: String
 
   """
-  The title for the material grid. Leave this blank if you do not want a title.
+  The title for the material grid. Leave this blank if you do not want a title. 
   """
   materialGridTitle: String
 
@@ -1259,9 +1348,9 @@ type ParagraphNavSpotsManual implements ParagraphInterface {
 }
 
 """
-This is a paragraph for displaying the opening hours for the branch it is applied to.
+This is a paragraph for displaying the opening hours for the branch it is applied to. 
 
-Opening hours are created under the settings of a branch.
+Opening hours are created under the settings of a branch. 
 """
 type ParagraphOpeningHours implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1326,7 +1415,7 @@ type ParagraphTextBody implements ParagraphInterface {
 }
 
 """Entity type paragraph."""
-union ParagraphUnion = ParagraphAccordion | ParagraphBanner | ParagraphBreadcrumbChildren | ParagraphCampaignRule | ParagraphCardGridAutomatic | ParagraphCardGridManual | ParagraphContentSlider | ParagraphContentSliderAutomatic | ParagraphEventTicketCategory | ParagraphFiles | ParagraphFilteredEventList | ParagraphGoLinkbox | ParagraphGoMaterialSliderAutomatic | ParagraphGoMaterialSliderManual | ParagraphGoVideo | ParagraphGoVideoBundleAutomatic | ParagraphGoVideoBundleManual | ParagraphHero | ParagraphLanguageSelector | ParagraphLinks | ParagraphManualEventList | ParagraphMaterialGridAutomatic | ParagraphMaterialGridManual | ParagraphMedias | ParagraphNavGridManual | ParagraphNavSpotsManual | ParagraphOpeningHours | ParagraphRecommendation | ParagraphSimpleLinks | ParagraphTextBody | ParagraphUserRegistrationItem | ParagraphUserRegistrationLinklist | ParagraphUserRegistrationSection | ParagraphVideo | ParagraphWebform
+union ParagraphUnion = ParagraphAccordion | ParagraphBanner | ParagraphBreadcrumbChildren | ParagraphCampaignRule | ParagraphCardGridAutomatic | ParagraphCardGridManual | ParagraphContentSlider | ParagraphContentSliderAutomatic | ParagraphEventTicketCategory | ParagraphFiles | ParagraphFilteredEventList | ParagraphGoLink | ParagraphGoLinkbox | ParagraphGoMaterialSliderAutomatic | ParagraphGoMaterialSliderManual | ParagraphGoVideo | ParagraphGoVideoBundleAutomatic | ParagraphGoVideoBundleManual | ParagraphHero | ParagraphLanguageSelector | ParagraphLinks | ParagraphManualEventList | ParagraphMaterialGridAutomatic | ParagraphMaterialGridManual | ParagraphMedias | ParagraphNavGridManual | ParagraphNavSpotsManual | ParagraphOpeningHours | ParagraphRecommendation | ParagraphSimpleLinks | ParagraphTextBody | ParagraphUserRegistrationItem | ParagraphUserRegistrationLinklist | ParagraphUserRegistrationSection | ParagraphVideo | ParagraphWebform
 
 """
 The "User registration item" paragraph type is used to display relevant information about the user registration process.
@@ -1419,6 +1508,7 @@ scalar PhoneNumber
 
 """The schema's entry-point for queries."""
 type Query {
+  newContent(uuid: String!, since: Time!): NewContentResponse!
   goConfiguration: GoConfiguration
   dplTokens: DplTokens
 
@@ -1446,6 +1536,11 @@ type Query {
   route(
     """Internal path to load. Eg /about"""
     path: String!
+
+    """
+    Optionally set the revision of the entity. Eg current, latest, or an ID.
+    """
+    revision: ID
 
     """
     Optionally set the response language. Eg en, ja, fr. Setting this langcode
@@ -1572,7 +1667,7 @@ type TermBreadcrumbStructure implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """
   Should a list of contents that reference this breadcrumb, be shown automatically on this page?
@@ -1612,7 +1707,7 @@ type TermCategories implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -1642,7 +1737,7 @@ interface TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -1674,7 +1769,7 @@ type TermOpeningHoursCategories implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -1704,7 +1799,7 @@ type TermScreenName implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -1734,7 +1829,7 @@ type TermTags implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
@@ -1772,7 +1867,7 @@ type TermWebformEmailCategories implements TermInterface {
   parent: TermUnion
 
   """Alternativ URL"""
-  path: String!
+  path: String
 
   """Published"""
   status: Boolean!
