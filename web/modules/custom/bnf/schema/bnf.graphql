@@ -208,19 +208,19 @@ type MediaAudio implements MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """Audio file"""
   mediaAudioFile: File!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -235,19 +235,19 @@ type MediaDocument implements MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
-  """Fil"""
+  """File"""
   mediaFile: File!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -257,7 +257,7 @@ type MediaImage implements MediaInterface {
   id: ID!
 
   """
-  Bruges til fotokreditering og info om copyright. Vises som regel ved siden af billedet.
+  Used for public credit and copyright information. Will usually be displayed along with the media.
   """
   byline: String
 
@@ -267,25 +267,24 @@ type MediaImage implements MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """
-  Du kan indstille et fokuspunkt ved at klikke på forhåndsvisningen af
-  billedet og flytte det hvide mål.<br /><br />Ved at indstille et fokuspunkt
-  fortæller du systemet, hvilken del af billedet der skal være i fokus, når
-  det beskæres.<br /><br />Brug funktionen "forhåndsvisning" til at se,
-  hvordan dit billede vil blive beskåret på tværs af billedstil.
+  You can set a focal point, by clicking on the preview on the image, moving the
+  white target.<br /><br />By setting a focal point, you tell the system which
+  part of the image to keep in focus when it gets cropped.<br /><br />Use the
+  "preview" function, to see how your image will be cropped across image styles.
   """
   mediaImage: Image!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -300,16 +299,16 @@ interface MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -327,19 +326,19 @@ type MediaVideo implements MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
-  """URL til video"""
+  """Remote video URL"""
   mediaOembedVideo: String!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -354,19 +353,19 @@ type MediaVideotool implements MediaInterface {
   """The time the media item was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """VideoTool URL"""
   mediaVideotool: String!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -379,26 +378,29 @@ type Mutation {
 
 type NewContentResponse {
   uuids: [String!]!
+  youngest: Time!
   errors: [Violation]
 }
 
-"""Brug artikler til nyhedspræget indhold med en begrænset levetid."""
+"""
+Use articles for news-worthy content, that does not get updated regularly.
+"""
 type NodeArticle implements NodeInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
-  """Bibliotek"""
+  """Branch"""
   branch: NodeUnion
 
   """
-  Oplys en canonical URL hvis indholdet i artiklen er kopieret fra en anden
-  hjemmeside (fx kopieret fra et andet biblioteks hjemmeside). Dette hjælper
-  med at signalere til søgemaskiner at kilden til indholdet er den
-  specificerede side, og sikrer at den originale kilde krediteres.
+  Please provide a canonical URL if this content has been duplicated from other
+  websites. This helps signal to search engines that the preferred source of
+  this content is the specified canonical URL, preventing potential duplicate
+  content issues and ensuring proper attribution to the original source.
   """
   canonicalUrl: Link
 
-  """Kategorier"""
+  """Categories"""
   categories: TermUnion
 
   """Tidspunktet hvor indholdselementet sidst blev redigeret."""
@@ -407,72 +409,7 @@ type NodeArticle implements NodeInterface {
   """The date and time that the content was created."""
   created: DateTime!
 
-  """Sprog"""
-  langcode: Language!
-
-  """Overskriv forfatter"""
-  overrideAuthor: String
-
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
-
-  """Alternativ URL"""
-  path: String
-
-  """Forfremmet til forside"""
-  promote: Boolean!
-
-  """Udgivelsesdato"""
-  publicationDate: DateTime!
-
-  """
-  Som standard er forfatteren sat til den Drupal-bruger, der ejer indholdet.<br
-  /><br />Hvis du ønsker at tilsidesætte dette med din egen tekst, kan du
-  """
-  showOverrideAuthor: Boolean
-
-  """Publiceret"""
-  status: Boolean!
-
-  """Klæbrig"""
-  sticky: Boolean!
-
-  """Manchet"""
-  subtitle: String
-
-  """Tags"""
-  tags: [TermUnion!]
-
-  """
-  Teaserfelterne bruges til cards som blikfang for indholdet. Hvis der ikke er
-  valgt et teaserbillede, vil teksten vises i stedet.
-  """
-  teaserImage: MediaUnion
-
-  """Teasertekst"""
-  teaserText: String
-
-  """Titel"""
-  title: String!
-}
-
-"""
-Use Go articles for news-worthy content, that does not get updated regularly.
-"""
-type NodeGoArticle implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
-
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
-
-  """The date and time that the content was created."""
-  created: DateTime!
-
-  """Image"""
-  goArticleImage: MediaUnion
-
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """Override author"""
@@ -496,7 +433,73 @@ type NodeGoArticle implements NodeInterface {
   """
   showOverrideAuthor: Boolean
 
-  """Publiceret"""
+  """Published"""
+  status: Boolean!
+
+  """Klæbrig"""
+  sticky: Boolean!
+
+  """Subtitle"""
+  subtitle: String
+
+  """Tags"""
+  tags: [TermUnion!]
+
+  """
+  The teaser fields are used for the card of display.<br />If no image has been
+  selected, the text will be shown instead:<br /><br /><img
+  src="/themes/custom/novel/images/teaser-text-image.jpg" /><br /><br /><hr/>
+  """
+  teaserImage: MediaUnion
+
+  """Teaser text"""
+  teaserText: String
+
+  """Title"""
+  title: String!
+}
+
+"""
+Use Go articles for news-worthy content, that does not get updated regularly.
+"""
+type NodeGoArticle implements NodeInterface {
+  """The Universally Unique IDentifier (UUID)."""
+  id: ID!
+
+  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
+  changed: DateTime!
+
+  """The date and time that the content was created."""
+  created: DateTime!
+
+  """Image"""
+  goArticleImage: MediaUnion
+
+  """Language"""
+  langcode: Language!
+
+  """Override author"""
+  overrideAuthor: String
+
+  """Paragraphs"""
+  paragraphs: [ParagraphUnion!]
+
+  """Alternativ URL"""
+  path: String
+
+  """Forfremmet til forside"""
+  promote: Boolean!
+
+  """Publication date"""
+  publicationDate: DateTime!
+
+  """
+  By default, the author is set to the Drupal user that owns the content.<br
+  /><br />If you want to override this, with a manual text, you can check this.
+  """
+  showOverrideAuthor: Boolean
+
+  """Published"""
   status: Boolean!
 
   """Klæbrig"""
@@ -515,7 +518,7 @@ type NodeGoArticle implements NodeInterface {
   """Teaser text"""
   teaserText: String
 
-  """Titel"""
+  """Title"""
   title: String!
 }
 
@@ -551,7 +554,7 @@ type NodeGoCategory implements NodeInterface {
   """Category menu color"""
   goColor: String
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """Paragraphs"""
@@ -566,19 +569,20 @@ type NodeGoCategory implements NodeInterface {
   """Publication date"""
   publicationDate: DateTime!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Klæbrig"""
   sticky: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String!
 }
 
 """
-GO-sider bliver brugt til forskellige typer for indhold, som ikke tilhører
-hverken en artikel-side eller en kategori-side. Fx forsiden, informationssider
+GO pages will be used for various types of content, which does not belong to
+either an article page or an category page. Some examples could be the
+frontpage, info pages, etc.
 """
 type NodeGoPage implements NodeInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -590,10 +594,10 @@ type NodeGoPage implements NodeInterface {
   """The date and time that the content was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
-  """Paragraffer"""
+  """Paragraphs"""
   paragraphs: [ParagraphUnion!]
 
   """Alternativ URL"""
@@ -602,16 +606,16 @@ type NodeGoPage implements NodeInterface {
   """Forfremmet til forside"""
   promote: Boolean!
 
-  """Publikationsdato"""
+  """Publication date"""
   publicationDate: DateTime!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Klæbrig"""
   sticky: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String!
 }
 
@@ -626,7 +630,7 @@ interface NodeInterface {
   """The date and time that the content was created."""
   created: DateTime!
 
-  """Sprog"""
+  """Language"""
   langcode: Language!
 
   """Alternativ URL"""
@@ -635,13 +639,13 @@ interface NodeInterface {
   """Forfremmet til forside"""
   promote: Boolean!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Klæbrig"""
   sticky: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String!
 }
 
@@ -653,10 +657,10 @@ type ParagraphAccordion implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
-  """Accordion beskrivelse"""
+  """Accordion description"""
   accordionDescription: Text
 
-  """Accordion titel"""
+  """Accordion title"""
   accordionTitle: Text!
 
   """The time that the Paragraph was created."""
@@ -665,24 +669,24 @@ type ParagraphAccordion implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-Bannerets funktion er at linke til internt indhold, og kan bruges med eller uden baggrundsbillede.
+Banner's purpose is to link internally or externally and can be used with or without a background image.
 """
 type ParagraphBanner implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
-  """Bannerbeskrivelse"""
+  """Banner description"""
   bannerDescription: String
 
-  """Bannerbillede"""
+  """Banner Image"""
   bannerImage: MediaUnion
 
-  """Bannerlink"""
+  """Banner Link"""
   bannerLink: Link!
 
   """The time that the Paragraph was created."""
@@ -691,15 +695,15 @@ type ParagraphBanner implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Understreget titel"""
+  """Underlined title"""
   underlinedTitle: Text
 }
 
 """
-Vis automatisk alt indhold, som refererer til dit valgte brødkrumme element.
+Automatically display all content that is referencing your chosen breadcrumb item.
 """
 type ParagraphBreadcrumbChildren implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -711,11 +715,11 @@ type ParagraphBreadcrumbChildren implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""En regel til at vælge en matchende kampagne"""
+"""A rule for selecting a matching campaign"""
 type ParagraphCampaignRule implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -726,7 +730,7 @@ type ParagraphCampaignRule implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -738,31 +742,31 @@ type ParagraphCardGridAutomatic implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Hvis der ikke vælges noget, vil ALT automatisk blive valgt."""
+  """If nothing is selected, all will be chosen."""
   filterBranches: [NodeUnion!]
 
-  """Filter efter kategorier"""
+  """Filter by categories"""
   filterCategories: [TermUnion!]
 
-  """Tilstandstype"""
+  """Condition type"""
   filterCondType: String!
 
-  """Hvis intet er valgt, vil alt blive valgt."""
+  """If nothing is selected, all will be chosen."""
   filterContentTypes: [String!]
 
-  """Filter efter tags"""
+  """Filter by tags"""
   filterTags: [TermUnion!]
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Flere links"""
+  """More link"""
   moreLink: Link
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String
 }
 
@@ -774,23 +778,23 @@ type ParagraphCardGridManual implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Indhold"""
+  """Content"""
   gridContent: [ParagraphCardGridManualGridContentUnion!]
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Flere links"""
+  """More link"""
   moreLink: Link
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Overskrift"""
+  """Title"""
   title: String
 }
 
-"""Indhold"""
+"""Content"""
 union ParagraphCardGridManualGridContentUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage
 
 """Entity type paragraph."""
@@ -798,7 +802,7 @@ type ParagraphContentSlider implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
-  """Indhold"""
+  """Contents"""
   contentReferences: [ParagraphContentSliderContentReferencesUnion!]
 
   """The time that the Paragraph was created."""
@@ -807,13 +811,13 @@ type ParagraphContentSlider implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """forældet"""
+  """deprecated"""
   title: String
 
-  """Titel"""
+  """Title"""
   underlinedTitle: Text
 }
 
@@ -825,38 +829,38 @@ type ParagraphContentSliderAutomatic implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Hvis der ikke vælges noget, vil ALT automatisk blive valgt."""
+  """If nothing is selected, all will be chosen."""
   filterBranches: [NodeUnion!]
 
-  """Filtrer efter kategori"""
+  """Filter by categories"""
   filterCategories: [TermUnion!]
 
-  """Tilstandstype"""
+  """Condition type"""
   filterCondType: String!
 
-  """Hvis intet er valgt, vil alt blive valgt."""
+  """If nothing is selected, all will be chosen."""
   filterContentTypes: [String!]
 
-  """Filtrer efter tags"""
+  """Filter by tags"""
   filterTags: [TermUnion!]
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Titel (forældet)"""
+  """deprecated"""
   title: String
 
-  """Titel"""
+  """Title"""
   underlinedTitle: Text
 }
 
-"""Indhold"""
+"""Contents"""
 union ParagraphContentSliderContentReferencesUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage
 
-"""En kombination af navn på billetkategori og pris på et arrangement. """
+"""A combination of ticket category name and price for an event. """
 type ParagraphEventTicketCategory implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -867,12 +871,12 @@ type ParagraphEventTicketCategory implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-Link med ikoner. Designet til jpg, jpeg, png, pdf, mp3, mov, mp4, og mpeg filer
+Links with icons. Designed for jpg, jpeg, png, pdf, mp3, mov, mp4, mpeg files
 """
 type ParagraphFiles implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -884,12 +888,12 @@ type ParagraphFiles implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-Denne paragraph viser en liste af arrangementer filtreret på kategori, tags og filialer.
+This paragraph displays a generated a list of events, based on specified filters for tags, categories and branches. 
 """
 type ParagraphFilteredEventList implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -898,32 +902,32 @@ type ParagraphFilteredEventList implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Hvis der ikke vælges noget, vil ALT automatisk blive valgt."""
+  """If nothing is selected, all will be chosen."""
   filterBranches: [NodeUnion!]
 
-  """Tilføj en kategori, du vil inkludere"""
+  """Add a category you want to include"""
   filterCategories: [TermUnion!]
 
-  """Tilstandstype"""
+  """Condition type"""
   filterCondType: String!
 
-  """Tilføj et tag, du vil inkludere"""
+  """Add a tag you want to include"""
   filterTags: [TermUnion!]
 
   """The paragraphs entity language code."""
   langcode: Language!
 
   """
-  Vælg antallet af arrangementer, du ønsker at vise. <br /><br />Hvis antallet
-  vist er mindre end det, du har angivet her, skyldes det sandsynligvis, at der
-  ikke er nok resultater baseret på dine valgte filtre.
+  Select the amount of events you want to display. <br /><br />If the amount
+  displayed is less than what you put here, it is likely because there are not
+  enough results based on your selected filters.
   """
   maxItemAmount: String!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String
 }
 
@@ -943,7 +947,7 @@ type ParagraphGoImages implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -968,7 +972,7 @@ type ParagraphGoLink implements ParagraphInterface {
   """Link"""
   link: Link!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Open link in a new window"""
@@ -998,7 +1002,7 @@ type ParagraphGoLinkbox implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Title"""
@@ -1030,7 +1034,7 @@ type ParagraphGoMaterialSliderAutomatic implements ParagraphInterface {
   """Amount of materials"""
   sliderAmountOfMaterials: Int!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Title"""
@@ -1058,7 +1062,7 @@ type ParagraphGoMaterialSliderManual implements ParagraphInterface {
   """
   materialSliderWorkIds: [WorkId!]!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Title"""
@@ -1083,11 +1087,11 @@ type ParagraphGoTextBody implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Angiv URL-en for den video, der skal vises"""
+"""Enter the URL for the video you want to include."""
 type ParagraphGoVideo implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1095,16 +1099,16 @@ type ParagraphGoVideo implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Indlagt video"""
+  """Embed video"""
   embedVideo: MediaUnion!
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Titl"""
+  """Title"""
   title: String!
 }
 
@@ -1137,7 +1141,7 @@ type ParagraphGoVideoBundleAutomatic implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """The amount of related materials that should be shown."""
@@ -1164,7 +1168,7 @@ type ParagraphGoVideoBundleManual implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """
@@ -1176,7 +1180,7 @@ type ParagraphGoVideoBundleManual implements ParagraphInterface {
 }
 
 """
-En Hero til placering øverst på forsiden med et billede, informativ tekst, kategori og et link til fremhævet indhold.
+A hero section with an image, informative text, category, and a "call to action" link.
 """
 type ParagraphHero implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1188,7 +1192,7 @@ type ParagraphHero implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1203,11 +1207,11 @@ interface ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Giver besøgende på sitet mulighed for at vælge foretrukket sprog"""
+"""Enables website visitors to choose their preferred language."""
 type ParagraphLanguageSelector implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1218,12 +1222,12 @@ type ParagraphLanguageSelector implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-Links med ikoner. Designet til interne/eksterne links og links til søgeresultater ␣.
+Links with icons. Designed for internal/external links and links to search results. 
 """
 type ParagraphLinks implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1235,13 +1239,11 @@ type ParagraphLinks implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""
-Dette afsnit vil vise en liste over arrangementer, der er manuelt valgt.
-"""
+"""This paragraph will show a list of events that are manually selected."""
 type ParagraphManualEventList implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1249,29 +1251,32 @@ type ParagraphManualEventList implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Arrangementer"""
+  """Events"""
   events: [UnsupportedType!]
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
-  """Titel"""
+  """Title"""
   title: String
 }
 
-"""En visning af fremhævede værker, baseret på en CQL søgestreng."""
+"""
+Please use the "Material grid link automatically" instead! This paragraph will be deprecated in the future.
+A grid representation of recommended materials, based on a CQL search string. 
+"""
 type ParagraphMaterialGridAutomatic implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
   """
-  Bestemmer mængden af materialer, der vil blive vist, baseret på
-  CQL-strengen. <br /><br />Obs: Hvis for eksempel en CQL-streng har 11
-  resultater, og en redaktør vælger 12. Listen vil vise 8 i stedet for 11, da
-  gitteret skal kunne øges med 4.
+  Determines the amount of materials that will be shown, based on the CQL
+  string. <br /><br />Obs: If for example a CQL string has 11 results, and an
+  editor chooses 12. The list will display 8 instead of 11, since the grid
+  should be able to increment by 4.
   """
   amountOfMaterials: Int!
 
@@ -1282,17 +1287,16 @@ type ParagraphMaterialGridAutomatic implements ParagraphInterface {
   langcode: Language!
 
   """
-  Dette er en valgfri beskrivelsestekst, der kan ledsage materiale grid'et. Lad
-  feltet være tomt, hvis du ikke ønsker en beskrivelse.
+  This is the optional description for the material grid. <br />Leave blank if you do not want a description.
   """
   materialGridDescription: String
 
   """
-  Titel på materialekomponenten. Efterlad dette felt blankt, hvis du ikke vil give den en overskrift.
+  The title for the material grid. Leave this blank if you do not want a title. 
   """
   materialGridTitle: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1335,11 +1339,11 @@ type ParagraphMaterialGridLinkAutomatic implements ParagraphInterface {
   """
   materialGridTitle: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""En komponent som viser en liste af manuelt udvalgte værker."""
+"""A grid displaying a list of recommended materials selected manually."""
 type ParagraphMaterialGridManual implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1351,17 +1355,16 @@ type ParagraphMaterialGridManual implements ParagraphInterface {
   langcode: Language!
 
   """
-  Dette er en valgfri beskrivelsestekst, der kan ledsage materiale grid'et. Lad
-  feltet være tomt, hvis du ikke ønsker en beskrivelse.
+  This is the optional description for the material grid. <br />Leave blank if you do not want a description.
   """
   materialGridDescription: String
 
   """
-  Titel på materialekomponenten. Efterlad dette felt blankt, hvis du ikke vil give den en overskrift.
+  The title for the material grid. Leave this blank if you do not want a title. 
   """
   materialGridTitle: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1376,7 +1379,7 @@ type ParagraphMedias implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1391,7 +1394,7 @@ type ParagraphNavGridManual implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1406,7 +1409,7 @@ type ParagraphNavSpotsManual implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1425,11 +1428,11 @@ type ParagraphOpeningHours implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Denne paragraph bruges til at anbefale et enkelt materiale."""
+"""This paragraph is used to recommend a material. """
 type ParagraphRecommendation implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1440,11 +1443,11 @@ type ParagraphRecommendation implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Denne paragraph viser links uden ikoner."""
+"""This is paragraph that will display links without icons. """
 type ParagraphSimpleLinks implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1455,16 +1458,16 @@ type ParagraphSimpleLinks implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""En basal, formateret brødtekst"""
+"""A basic, formatted body of text."""
 type ParagraphTextBody implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
 
-  """Brødtekst"""
+  """Body"""
   body: Text
 
   """The time that the Paragraph was created."""
@@ -1473,7 +1476,7 @@ type ParagraphTextBody implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1481,7 +1484,7 @@ type ParagraphTextBody implements ParagraphInterface {
 union ParagraphUnion = ParagraphAccordion | ParagraphBanner | ParagraphBreadcrumbChildren | ParagraphCampaignRule | ParagraphCardGridAutomatic | ParagraphCardGridManual | ParagraphContentSlider | ParagraphContentSliderAutomatic | ParagraphEventTicketCategory | ParagraphFiles | ParagraphFilteredEventList | ParagraphGoImages | ParagraphGoLink | ParagraphGoLinkbox | ParagraphGoMaterialSliderAutomatic | ParagraphGoMaterialSliderManual | ParagraphGoTextBody | ParagraphGoVideo | ParagraphGoVideoBundleAutomatic | ParagraphGoVideoBundleManual | ParagraphHero | ParagraphLanguageSelector | ParagraphLinks | ParagraphManualEventList | ParagraphMaterialGridAutomatic | ParagraphMaterialGridLinkAutomatic | ParagraphMaterialGridManual | ParagraphMedias | ParagraphNavGridManual | ParagraphNavSpotsManual | ParagraphOpeningHours | ParagraphRecommendation | ParagraphSimpleLinks | ParagraphTextBody | ParagraphUserRegistrationItem | ParagraphUserRegistrationLinklist | ParagraphUserRegistrationSection | ParagraphVideo | ParagraphWebform
 
 """
-"Brugerregistreringselement" anvendes til at vise relevant information om brugerregistreringsprocessen.
+The "User registration item" paragraph type is used to display relevant information about the user registration process.
 """
 type ParagraphUserRegistrationItem implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1493,14 +1496,14 @@ type ParagraphUserRegistrationItem implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-Denne paragraph bestemmer placeringen af genveje til
-"Brugeregistreingsparagraphs". Paragraphen tillader redaktører at specificere,
-om disse genveje skal vises.
+This paragraph determines the placement of shortcuts to individual User
+Registration Section paragraphs. It allows administrators to specify where these
+shortcuts should appear.
 """
 type ParagraphUserRegistrationLinklist implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1512,12 +1515,12 @@ type ParagraphUserRegistrationLinklist implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
 """
-"Brugerregistreringsparagraph" bruges til at vise "Brugerregistreringselementer".
+The "User registration section" paragraph type is used to display "User registration item" paragraphs.
 """
 type ParagraphUserRegistrationSection implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
@@ -1529,11 +1532,11 @@ type ParagraphUserRegistrationSection implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Indtast URL'en til den video, du vil indlejre."""
+"""Enter the URL for the video you want to include."""
 type ParagraphVideo implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1541,17 +1544,17 @@ type ParagraphVideo implements ParagraphInterface {
   """The time that the Paragraph was created."""
   created: DateTime!
 
-  """Indlejr video"""
+  """Embed video"""
   embedVideo: MediaUnion
 
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
-"""Paragraph brugt til indlejring af en webformular."""
+"""Paragraph used for embedding a webform."""
 type ParagraphWebform implements ParagraphInterface {
   """The Universally Unique IDentifier (UUID)."""
   id: ID!
@@ -1562,7 +1565,7 @@ type ParagraphWebform implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 }
 
@@ -1710,11 +1713,11 @@ type TermBreadcrumbStructure implements TermInterface {
   changed: DateTime!
 
   """
-  Titlen, der vises over listen af refereret indhold. Vil ikke blive vist, hvis der ikke vises nogen børn.
+  The title that is shown above the list of referenced content. Will not be shown, if there are no children displayed.
   """
   childrenTitle: String
 
-  """Indhold der linkes til"""
+  """Content"""
   content: NodeUnion!
 
   """Beskrivelse"""
@@ -1723,7 +1726,7 @@ type TermBreadcrumbStructure implements TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1733,16 +1736,16 @@ type TermBreadcrumbStructure implements TermInterface {
   path: String
 
   """
-  Vis en automatisk liste med indhold, som refererer til dette brødkrumme element, på denne side.
+  Should a list of contents that reference this breadcrumb, be shown automatically on this page?
   """
   showChildren: Boolean
 
   """
-  Sæt hak her, hvis børnebrødkrummen skal udfoldes med eventuelle undertitel
+  If this is checked, the children teasers will be expanded with possible subtitle descriptions.
   """
   showChildrenSubtitles: Boolean
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1763,7 +1766,7 @@ type TermCategories implements TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1772,7 +1775,7 @@ type TermCategories implements TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1793,7 +1796,7 @@ interface TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1802,7 +1805,7 @@ interface TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1825,7 +1828,7 @@ type TermOpeningHoursCategories implements TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1834,7 +1837,7 @@ type TermOpeningHoursCategories implements TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1855,7 +1858,7 @@ type TermScreenName implements TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1864,7 +1867,7 @@ type TermScreenName implements TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1885,7 +1888,7 @@ type TermTags implements TermInterface {
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1894,7 +1897,7 @@ type TermTags implements TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
@@ -1917,13 +1920,13 @@ type TermWebformEmailCategories implements TermInterface {
   """Beskrivelse"""
   description: Text!
 
-  """Tilføj den e-mail, som henvendelser i denne kategori skal sendes til."""
+  """Add which email to send form submissions of this category to."""
   email: Email!
 
   """Term sprogkode."""
   langcode: Language!
 
-  """Navn"""
+  """Name"""
   name: String!
 
   """Denne terms overordnede termer."""
@@ -1932,7 +1935,7 @@ type TermWebformEmailCategories implements TermInterface {
   """Alternativ URL"""
   path: String
 
-  """Publiceret"""
+  """Published"""
   status: Boolean!
 
   """Vægten af denne term i forhold til andre termer."""
