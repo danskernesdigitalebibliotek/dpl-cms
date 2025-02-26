@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-02-25 11:15+0100\n"
-"PO-Revision-Date: 2025-02-25 11:15+0100\n"
+"POT-Creation-Date: 2025-02-26 10:36+0100\n"
+"PO-Revision-Date: 2025-02-26 10:36+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19068,13 +19068,13 @@ msgid "Login to BNF"
 msgstr "Login i Delingstjenesten"
 
 msgid "The entities routes metatags must be added by fields."
-msgstr ""
+msgstr "The entities routes metatags must be added by fields."
 
 msgid "Trimming options"
-msgstr ""
+msgstr "Trimming options"
 
 msgid "Characters to trim"
-msgstr ""
+msgstr "Characters to trim"
 
 msgid ""
 "A list of characters to trim at the end of all metatags. Provide a "
@@ -19086,119 +19086,140 @@ msgid ""
 "end after the tag is trimmed for length, and after the trimming option "
 "was executed."
 msgstr ""
+"A list of characters to trim at the end of all metatags. Provide a "
+"single string without any separators, e.g. \"|,.\" (instead of \"| , "
+".\"). Note that spaces, tabs, new lines, carriage returns and vertical "
+"tabs (\" \\n"
+"\\r\\t\\v\") will be trimmed automatically and do not "
+"need to be listed in this field. The trimming is applied at the very "
+"end after the tag is trimmed for length, and after the trimming option "
+"was executed."
 
 msgid "Configuration instance"
-msgstr ""
+msgstr "Configuration instance"
 
 msgid ""
 "Meta tag configuration, stored as either a serialized array or a "
 "JSON-encoded string."
 msgstr ""
+"Meta tag configuration, stored as either a serialized array or a "
+"JSON-encoded string."
 
 msgid "This module provides support to define and manage custom meta tags."
-msgstr ""
+msgstr "This module provides support to define and manage custom meta tags."
 
 msgid ""
 "The module provides the option to create different <a "
 "href=\":metatag_custom_tag\">\"Custom Tags\"</a> to use for different "
 "purposes."
 msgstr ""
+"The module provides the option to create different <a "
+"href=\":metatag_custom_tag\">\"Custom Tags\"</a> to use for different "
+"purposes."
 
 msgid "The best way of using Metatag: Custom Tags is as follows:"
-msgstr ""
+msgstr "The best way of using Metatag: Custom Tags is as follows:"
 
 msgid ""
 "Create the <a href=\":metatag_custom_tag_create\">\"Custom Tag\"</a>, "
 "fill in the specific values that every page should have."
 msgstr ""
+"Create the <a href=\":metatag_custom_tag_create\">\"Custom Tag\"</a>, "
+"fill in the specific values that every page should have."
 
 msgid "Configure Custom tags below."
-msgstr ""
+msgstr "Configure Custom tags below."
 
 msgid "Specify the name of the custom tag."
-msgstr ""
+msgstr "Specify the name of the custom tag."
 
 msgid "Specify the description of the Custom tag."
-msgstr ""
+msgstr "Specify the description of the Custom tag."
 
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 msgid "Select the HTML element of the Custom tag."
-msgstr ""
+msgstr "Select the HTML element of the Custom tag."
 
 msgid "Name attribute"
-msgstr ""
+msgstr "Name attribute"
 
 msgid "Http Equiv"
-msgstr ""
+msgstr "Http Equiv"
 
 msgid "Item Prop"
-msgstr ""
+msgstr "Item Prop"
 
 msgid "Rel"
-msgstr ""
+msgstr "Rel"
 
 msgid "Select the Name attribute of the Custom tag."
-msgstr ""
+msgstr "Select the Name attribute of the Custom tag."
 
 msgid "Value attribute"
-msgstr ""
+msgstr "Værdi attribut"
 
 msgid "Href"
-msgstr ""
+msgstr "Href"
 
 msgid "Select the Value attribute of the Custom tag."
-msgstr ""
+msgstr "Vælg værdiattributten for det brugerdefinerede tag."
 
 msgid "Created %label Custom tag."
-msgstr ""
+msgstr "Oprettet %label brugerdefineret tag."
 
 msgid "Updated %label Custom tag."
-msgstr ""
+msgstr "Updateret %label brugerdefineret tag."
 
 msgid "Edit Custom tag @label"
-msgstr ""
+msgstr "Rediger brugerdefineret tag @label"
 
 msgid "Custom tag"
-msgstr ""
+msgstr "Brugerdefineret tag"
 
 msgid "Custom tags"
-msgstr ""
+msgstr "Brugerdefineret tag"
 
 msgid "@count Custom tag"
 msgid_plural "@count Custom tags"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "@count brugerdefineret tag"
+msgstr[1] "@count brugerdefineret tags"
 
 msgid "Custom Tag"
-msgstr ""
+msgstr "Brugerdefineret tag"
 
 msgid "This plugin will be cloned from these settings for each custom tag."
 msgstr ""
+"Dette plugin vil blive klonet fra disse indstillinger for hvert "
+"brugerdefineret tag."
 
 msgid ""
 "These custom tags are designed to use the custom purpose on the "
 "website."
 msgstr ""
+"Disse brugerdefinerede tags er designet til at bruge det "
+"brugerdefinerede formål på hjemmesiden."
 
 msgid "Metatag: Custom Tags"
-msgstr ""
+msgstr "Metatag: Brugerdefineret tag"
 
 msgid "Provides support to define and manage custom meta tags."
 msgstr ""
+"Giver mulighed for at definere og administrere brugerdefinerede "
+"metatags."
 
 msgid "Add Custom tag"
-msgstr ""
+msgstr "Tilføj brugerdefineret tag"
 
 msgid "Configure Custom tags."
-msgstr ""
+msgstr "Konfigurer brugerdefinerede tags."
 
 msgid "Delete Custom tag"
-msgstr ""
+msgstr "Slet brugerdefineret tag"
 
 msgid "Import \"@label\" to @name"
-msgstr ""
+msgstr "Importer \"@label\" til @name"
 
 msgctxt "BNF"
 msgid "my site"
@@ -19211,27 +19232,27 @@ msgid "BNF server URL"
 msgstr "URL til Delingstjenestens server"
 
 msgid "For example <em>https://bibliotekernesnationaleformidling.dk/</em>."
-msgstr ""
+msgstr "For eksempel <em>https://bibliotekernesnationaleformidling.dk/</em>."
 
 msgid "Configure BNF client."
 msgstr "Konfigurer Delingstjenesteklienten"
 
 msgid "A color field."
-msgstr ""
+msgstr "A color field."
 
 msgid "The color value in #HEX format."
-msgstr ""
+msgstr "The color value in #HEX format."
 
 msgid "The opacity value."
-msgstr ""
+msgstr "The opacity value."
 
 msgctxt "Work Page"
 msgid "Audiobook"
-msgstr ""
+msgstr "Lydbog"
 
 msgctxt "Work Page"
 msgid "Ebook"
-msgstr ""
+msgstr "E-bog"
 
 msgctxt "Work Page"
 msgid "Listen to @materialType"
@@ -19247,20 +19268,20 @@ msgstr "Prøv @materialType"
 
 msgctxt "Work Page"
 msgid "Modal for player"
-msgstr ""
+msgstr "Modal til afspiller"
 
 msgctxt "Global"
 msgid "Go to material"
-msgstr ""
+msgstr "Gå til materiale"
 
 msgid "A CQL search string."
-msgstr ""
+msgstr "En CQL søgestreng."
 
 msgid "The CQL search string."
-msgstr ""
+msgstr "CQL søgestrengen."
 
 msgid "A WorkID field."
-msgstr ""
+msgstr "Et WorkID-felt."
 
 msgid "The WorkID value"
 msgstr ""
@@ -19313,15 +19334,17 @@ msgid ""
 "If checked, Drupal will automatically generate thumbnails from "
 "VideoTool provided images."
 msgstr ""
+"Hvis markeret, vil Drupal automatisk generere miniaturebilleder fra "
+"VideoTool-leverede billeder."
 
 msgid "VideoTool"
-msgstr ""
+msgstr "VideoTool"
 
 msgid "Embed VideoTool content."
-msgstr ""
+msgstr "Embed VideoTool indhold."
 
 msgid "Integrate the VideoTool video platform into the Media module"
-msgstr ""
+msgstr "Integrer VideoTool-videoplatformen i mediemodulet"
 
 msgctxt "Validation"
 msgid "IsHttps"
@@ -19338,44 +19361,51 @@ msgid ""
 "Unable to retrieve token from Adgangsplatformen. Please check if the "
 "provided Client ID, Client Secret and Agency ID is correct."
 msgstr ""
+"Kan ikke hente token fra Adgangsplatformen. Tjek venligst, om det "
+"angivne Client ID, Client Secret and Agency ID er korrekt."
 
 msgid "OpenID Connect client"
-msgstr ""
+msgstr "OpenID Connect client"
 
 msgid "The email address is not valid: @email"
-msgstr ""
+msgstr "E-mailadressen er ikke gyldig: @email"
 
 msgid "The email address is already taken: @email"
 msgstr "Denne email adresse er allerede i brug: @email"
 
 msgid "Create OpenID Connect client"
-msgstr ""
+msgstr "Create OpenID Connect client"
 
 msgid "Logout from identity provider"
-msgstr ""
+msgstr "Log ud fra identity provider"
 
 msgid ""
 "If enabled and supported by the identity provider, logging out from "
 "Drupal will also logout the user from the identity provider."
 msgstr ""
+"If enabled and supported by the identity provider, logging out from "
+"Drupal will also logout the user from the identity provider."
 
 msgid "Login"
 msgstr "Login"
 
 msgid "Path to redirect to on client login"
-msgstr ""
+msgstr "Path to redirect to on client login"
 
 msgid "Path to redirect to on client logout"
-msgstr ""
+msgstr "Path to redirect to on client logout"
 
 msgid "User role mapping"
-msgstr ""
+msgstr "User role mapping"
 
 msgid ""
 "For each Drupal role, provide the sets of equivalent external groups, "
 "separated by spaces. A user belonging to one of the provided groups "
 "will be assigned the configured Drupal role."
 msgstr ""
+"For hver Drupal-rolle skal du angive sæt af tilsvarende eksterne "
+"grupper, adskilt af mellemrum. En bruger, der tilhører en af ​​de "
+"angivne grupper, vil blive tildelt den konfigurerede Drupal-rolle."
 
 msgid ""
 "<br/><strong>Note:</strong> The module will not update user roles with "
@@ -19383,32 +19413,38 @@ msgid ""
 "removed, users will keep that role until it is removed in the Drupal "
 "user administration."
 msgstr ""
+"<br/><strong>Bemærk:</strong> Modulet opdaterer ikke brugerroller "
+"uden tilknyttede eksterne grupper. Hvis alle tilknytninger til en af "
+"​​rollerne fjernes, beholder brugerne denne rolle, indtil den "
+"fjernes i Drupal-brugeradministrationen."
 
 msgid "Are you sure you want to delete OpenID Connect client %label?"
-msgstr ""
+msgstr "Er du sikker på at du vil slette OpenID Connect client %label?"
 
 msgid "OpenID Connect client %label was deleted."
-msgstr ""
+msgstr "OpenID Connect client %label er slettet."
 
 msgid "Error when trying to delete OpenID Connect client %label."
-msgstr ""
+msgstr "Fejl under forsøg på at slette OpenID Connect client %label."
 
 msgid "OpenID Connect client %label has been updated."
-msgstr ""
+msgstr "OpenID Connect client %label er opdateret."
 
 msgid "OpenID Connect client %label has been added."
-msgstr ""
+msgstr "OpenID Connect client %label er tilføjet."
 
 msgid "Pending name input"
-msgstr ""
+msgstr "Pending name input"
 
 msgid "OpenID Connect Client"
-msgstr ""
+msgstr "OpenID Connect Client"
 
 msgid ""
 "@provider does not support log out. You are logged out of this site "
 "but not out of the OpenID Connect provider."
 msgstr ""
+"@provider does not support log out. You are logged out of this site "
+"but not out of the OpenID Connect provider."
 
 msgid "The %label client has been enabled."
 msgstr ""
@@ -19476,32 +19512,35 @@ msgid "Enable an OpenID Connect client"
 msgstr ""
 
 msgid "Disable an OpenID Connect client"
-msgstr ""
+msgstr "Deaktiver en OpenID Connect client"
 
 msgid "OpenID Connect Settings"
-msgstr ""
+msgstr "OpenID Connect opsætning"
 
 msgid "End session"
-msgstr ""
+msgstr "Afslut session"
 
 msgid "Log in via OpenID Connect"
-msgstr ""
+msgstr "Log in via OpenID Connect"
 
 msgid "OpenID Connect initiate redirect page"
-msgstr ""
+msgstr "OpenID Connect initiate redirect page"
 
 msgid "Post Go Adgangsplatformen Logout Route"
-msgstr ""
+msgstr "Post Go Adgangsplatformen Logout Route"
 
 msgid "Subscription"
-msgstr ""
+msgstr "Abonnement"
 
 msgid "Subscriptions"
-msgstr ""
+msgstr "Abonnement"
 
 msgid ""
 "Configure bundles of entity types that Varnish image purge should be "
 "used for, if none selected, all bundles from all entity types will be "
 "used. Just the fields of type image will be purged."
 msgstr ""
+"Configure bundles of entity types that Varnish image purge should be "
+"used for, if none selected, all bundles from all entity types will be "
+"used. Just the fields of type image will be purged."
 
