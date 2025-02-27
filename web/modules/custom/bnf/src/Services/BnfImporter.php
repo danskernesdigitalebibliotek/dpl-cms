@@ -42,8 +42,8 @@ class BnfImporter {
    * Get node title from BNF.
    */
   public function getNodeTitle(string $uuid, string $endpointUrl): string {
-    $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
-    Configuration::setEndpointFor(GetNodeTitle::class, $endpointConfig);
+    $this->setEndpoint($endpointUrl);
+
     $response = GetNodeTitle::execute($uuid);
 
     $nodeData = $response->data?->node;
@@ -59,9 +59,7 @@ class BnfImporter {
    * Importing a node from a GraphQL source endpoint.
    */
   public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
-    if (!in_array($nodeType, self::ALLOWED_CONTENT_TYPES)) {
-      throw new \InvalidArgumentException('The requested content type is not allowed.');
-    }
+    $this->setEndpoint($endpointUrl);
 
     $nodeStorage = $this->entityTypeManager->getStorage('node');
 
@@ -78,8 +76,6 @@ class BnfImporter {
     }
 
     try {
-      $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
-      Configuration::setEndpointFor(GetNode::class, $endpointConfig);
       $response = GetNode::execute($uuid);
 
       $nodeData = $response->data?->node;
@@ -123,9 +119,7 @@ class BnfImporter {
    *   Updated content data.
    */
   public function newContent(string $uuid, int $since, string $endpointUrl): array {
-    // @todo $this->setEndpoint() which does this.
-    $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
-    Configuration::setEndpointFor(NewContent::class, $endpointConfig);
+    $this->setEndpoint($endpointUrl);
 
     try {
       $response = NewContent::execute($uuid, (new DateTimeImmutable('@' . $since))->format(\DateTimeInterface::RFC3339));
@@ -153,6 +147,21 @@ class BnfImporter {
       'uuids' => [],
       'youngest' => $since,
     ];
+  }
+
+  /**
+   * Set endpoint configuration for GraphQL client.
+   */
+  protected function setEndpoint(string $endpointUrl): void {
+    $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
+
+    // Each Sailor generated operation class points to which config file and
+    // which endpoint in that file it uses. So in theory we should configure
+    // each class. However, the Configuration class is a singleton, and we know
+    // that all our operations are generated with the same config file and
+    // endpoint, so we can just set it for one class, and it'll work for them
+    // all.
+    Configuration::setEndpointFor(GetNodeTitle::class, $endpointConfig);
   }
 
 }
