@@ -134,7 +134,8 @@ class BnfImporter {
       if ($newContent->uuids) {
         return [
           'uuids' => $newContent->uuids,
-          'youngest' => $newContent->youngest,
+          'youngest' => DateTimeImmutable::createFromFormat(\DateTimeInterface::RFC3339, $newContent->youngest)
+            ->getTimestamp(),
         ];
       }
     }
