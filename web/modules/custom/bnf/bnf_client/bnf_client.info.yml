@@ -6,3 +6,4 @@ core_version_requirement: ^10
 dependencies:
   - bnf:bnf
   - autowire_plugin_trait:autowire_plugin_trait
+  - job_scheduler:job_scheduler
