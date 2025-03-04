@@ -54,14 +54,14 @@ class ParagraphHeroMapper extends BnfMapperPluginParagraphBase {
       // We are specifically ignoring the categories, as we do not wish
       // to support foreign terms. The categories field is NOT required.
       // 'field_hero_categories' => '',.
-      'field_hero_content_type' => $object->heroContentType,
+      'field_hero_content_type' => $object->heroContentType ?? NULL,
       'field_hero_description' => [
-        'value' => $object->heroDescription?->value,
-        'format' => $object->heroDescription?->format,
+        'value' => $object->heroDescription?->value ?? '',
+        'format' => $object->heroDescription?->format ?? '',
       ],
       'field_hero_image' => $this->getImageValue($object->heroImage),
       'field_hero_link' => $this->getLinkValue($object->heroLink),
-      'field_hero_title' => $object->heroTitle,
+      'field_hero_title' => $object->heroTitle ?? '',
       'field_hero_date' => $this->getDateTimeValue($object->heroDate, FALSE),
     ]);
 
