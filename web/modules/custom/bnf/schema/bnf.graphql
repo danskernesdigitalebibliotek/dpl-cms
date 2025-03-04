@@ -38,9 +38,9 @@ type AdgangsplatformenUserToken {
   expire: Int
 }
 
-"""A CQL search string."""
+"""En CQL søgestreng."""
 type CQLSearch {
-  """The CQL search string."""
+  """CQL søgestrengen."""
   value: String
 }
 
@@ -112,9 +112,14 @@ type File {
 type GoConfiguration {
   unilogin: UniloginConfiguration
   loginUrls: GoLoginUrls
+  logoutUrls: GoLogoutUrls
 }
 
 type GoLoginUrls {
+  adgangsplatformen: String
+}
+
+type GoLogoutUrls {
   adgangsplatformen: String
 }
 
@@ -370,6 +375,11 @@ type Mutation {
   """Placeholder for mutation extension."""
   _: Boolean!
   import(uuid: String!, callbackUrl: String!): ImportResponse!
+}
+
+type NewContentResponse {
+  uuids: [String!]!
+  errors: [Violation]
 }
 
 """Brug artikler til nyhedspræget indhold med en begrænset levetid."""
@@ -1612,6 +1622,7 @@ scalar PhoneNumber
 
 """The schema's entry-point for queries."""
 type Query {
+  newContent(uuid: String!, since: Time!): NewContentResponse!
   goConfiguration: GoConfiguration
   dplTokens: DplTokens
 
@@ -2054,7 +2065,9 @@ scalar UntypedStructuredData
 """A string that will have a value of format ±hh:mm"""
 scalar UtcOffset
 
-"""A WorkID field."""
+scalar Violation
+
+"""Et WorkID-felt."""
 type WorkId {
   """The WorkID value"""
   work_id: String
