@@ -23,7 +23,7 @@ trait DateTimeTrait {
     }
 
     /** @var \Drupal\bnf\GraphQL\Operations\GetNode\Node\Paragraphs\HeroDate\DateTime $dateTime */
-    $date = DrupalDateTime::createFromTimestamp($dateTime->timestamp);
+    $date = \DateTime::createFromFormat('U', $dateTime->timestamp);
     $date->setTimezone(new \DateTimeZone($dateTime->timezone));
 
     return [
