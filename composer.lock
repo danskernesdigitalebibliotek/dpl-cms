@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d415fba42fa409e859e323832d7f569",
+    "content-hash": "8ef1c797de87bef118bfe0c3c5c3f277",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.10.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.10.0/dist-2025-10-0-d5fce5f008e94780078ea16087d22c15ddae8495.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-475-show-correct-loan-expiry-date-for-digital-materials/dist-ddfbra-475-show-correct-loan-expiry-date-for-digital-materials.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20708,6 +20708,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
