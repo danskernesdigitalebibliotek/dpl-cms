@@ -27617,10 +27617,6 @@ msgid "Add @type video via URL"
 msgstr ""
 
 #: 
-msgid "VideoTool URL example: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-msgstr ""
-
-#: 
 msgid "The given URL does not match the VideoTool URL pattern."
 msgstr ""
 
@@ -28067,7 +28063,7 @@ msgstr "Lån @materialType"
 #: 
 msgctxt "Work Page"
 msgid "Close reader/player modal"
-msgstr "Luk"
+msgstr "Luk afspilleren"
 
 #: 
 msgctxt "Work Page"
@@ -28077,7 +28073,7 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "If you wish to receive notifications when the material is ready for loan, you need to add your email address or phone number."
-msgstr "Ønsker du at modtage notifikationer, når materialet er klar til udlån, skal du angive din e-mailadresse eller dit telefonnummer. "
+msgstr "Ønsker du at modtage notifikationer, når materialet er klar til udlån, skal du angive din e-mailadresse eller dit telefonnummer."
 
 #: 
 msgctxt "Work Page"
@@ -28132,102 +28128,102 @@ msgstr "Bemærk venligst, materialet bliver ikke automatisk udlånt til dig. Du 
 #: 
 msgctxt "Work Page"
 msgid "An unexpected error occurred"
-msgstr "Der er sket en uventet fejl (#118)."
+msgstr "Der er sket en uventet fejl"
 
 #: 
 msgctxt "Work Page"
 msgid "The book can be borrowed again 90 days after the last loan expires"
-msgstr "Bogen kan først lånes igen 90 dage efter sidste låns udløb (#130)."
+msgstr "Bogen kan først lånes igen 90 dage efter sidste låns udløb"
 
 #: 
 msgctxt "Work Page"
 msgid "The book can only be renewed once"
-msgstr "Bogen kan højst genlånes én gang (#129)."
+msgstr "Bogen kan højst genlånes én gang"
 
 #: 
 msgctxt "Work Page"
 msgid "The book cannot be borrowed"
-msgstr "Bogen kan ikke lånes (#131)"
+msgstr "Bogen kan ikke lånes"
 
 #: 
 msgctxt "Work Page"
 msgid "The book is not available for loan"
-msgstr "Bogen er ikke tilgængelig for udlån (#128)"
+msgstr "Bogen er ikke tilgængelig for udlån"
 
 #: 
 msgctxt "Work Page"
 msgid "The book is unfortunately not available for loan"
-msgstr "Bogen er desværre ikke tilgængelig for udlån (#105)."
+msgstr "Bogen er desværre ikke tilgængelig for udlån"
 
 #: 
 msgctxt "Work Page"
 msgid "The card is temporarily blocked due to too many failed login attempts. Try again in 2 hours."
-msgstr "Kortet er midlertidigt blokeret pga. for mange fejlede loginforsøg. Prøv igen om 2 timer. (#134)"
+msgstr "Kortet er midlertidigt blokeret pga. for mange fejlede loginforsøg. Prøv igen om 2 timer"
 
 #: 
 msgctxt "Work Page"
 msgid "Invalid card number and/or PIN code."
-msgstr "Ugyldigt kortnummer og/eller pinkode (#114)."
+msgstr "Ugyldigt kortnummer og/eller pinkode"
 
 #: 
 msgctxt "Work Page"
 msgid "Invalid email address"
-msgstr "Ugyldig e-mail adresse (#141)."
+msgstr "Ugyldig e-mail adresse"
 
 #: 
 msgctxt "Work Page"
 msgid "Invalid phone number"
-msgstr "Ugyldig telefonnummer (#142)."
+msgstr "Ugyldig telefonnummer"
 
 #: 
 msgctxt "Work Page"
 msgid "The library's server is not responding – try logging in again later."
-msgstr "Bibliotekets server svarer ikke – prøv at logge ind igen senere (#145)."
+msgstr "Bibliotekets server svarer ikke – prøv at logge ind igen senere"
 
 #: 
 msgctxt "Work Page"
 msgid "Your library has reached the limit for the number of loans this month"
-msgstr "Dit bibliotek har nået grænsen for antal udlån i denne måned (#125)."
+msgstr "Dit bibliotek har nået grænsen for antal udlån i denne måned"
 
 #: 
 msgctxt "Work Page"
 msgid "You do not have access to eReolen from this library as you are not registered as a resident in the municipality. Contact the library."
-msgstr "Du har ikke adgang til eReolen fra dette bibliotek, da du ikke er registreret som bosiddende i Kommunen. Kontakt biblioteket (#146)."
+msgstr "Du har ikke adgang til eReolen fra dette bibliotek, da du ikke er registreret som bosiddende i Kommunen. Kontakt biblioteket"
 
 #: 
 msgctxt "Work Page"
 msgid "No country could be found with the given country code"
-msgstr "Der kunne ikke findes et land med den givne landekode (#147)."
+msgstr "Der kunne ikke findes et land med den givne landekode"
 
 #: 
 msgctxt "Work Page"
 msgid "The number of simultaneous loans of blue titles has been exceeded"
-msgstr "Antallet af samtidige lån af blå titler er overskredet (#143)."
+msgstr "Antallet af samtidige lån af blå titler er overskredet"
 
 #: 
 msgctxt "Work Page"
 msgid "The number of simultaneous loans has been exceeded"
-msgstr "Antallet af samtidige lån er overskredet (#120)."
+msgstr "Antallet af samtidige lån er overskredet"
 
 #: 
 msgctxt "Work Page"
 msgid "The book is already reserved"
-msgstr "Bogen er allerede reserveret (#140)."
+msgstr "Bogen er allerede reserveret"
 
 #: 
 msgctxt "Work Page"
 msgid "Unknown error at the library – try logging in again later."
-msgstr "Ukendt fejl hos biblioteket – prøv at logge ind igen senere. (#144)"
+msgstr "Ukendt fejl hos biblioteket – prøv at logge ind igen senere"
 
 #: 
 msgctxt "Work Page"
 msgid "Unknown error."
-msgstr "Der er sket en uventet fejl (#148)."
+msgstr "Der er sket en uventet fejl"
 
 #: 
 msgctxt "Work Page"
 msgid "You can reserve up to 3 titles"
-msgstr "Du kan højest reservere 3 titler (#137)."
+msgstr "Du kan højest reservere 3 titler"
 
 #: 
 msgctxt "Global"
@@ -28252,5 +28248,24 @@ msgstr ""
 #: 
 msgctxt "paragraphs.paragraphs_type.go_text_body:description"
 msgid "This GO-specific text field uses CKEditor 5 with the GO Text Body format, supporting structured content with headings (H2, H3), bold, italic, underline, lists, and advanced link features like target attributes and Linkit integration."
+msgstr ""
+
+#: 
+msgid "VideoTool URL example: https://media.videotool.dk?vn=557_2023103014511477700668916683"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.go_images.field_go_images:label"
+msgid "Images"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.go_images:label"
+msgid "GO Images"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.go_images:description"
+msgid "This paragraph is used for displaying 1-2 images on GO content types such as GO Article, GO Page and GO Category."
 msgstr ""
 
