@@ -27169,16 +27169,6 @@ msgid "Configure BNF client."
 msgstr "Konfigurer Delingstjenesteklienten"
 
 #: 
-msgctxt "field.field.paragraph.go_video.field_url:label"
-msgid "URL"
-msgstr "URL"
-
-#: 
-msgctxt "field.field.paragraph.go_video.field_url:description"
-msgid "VideoTool URL. Example: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-msgstr "VideoTool URL. Example: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-
-#: 
 msgid "A color field."
 msgstr "A color field."
 
@@ -27439,16 +27429,6 @@ msgstr "GO Linkbox"
 
 #: 
 msgctxt "Work Page"
-msgid "Audiobook"
-msgstr "Lydbog"
-
-#: 
-msgctxt "Work Page"
-msgid "Ebook"
-msgstr "E-bog"
-
-#: 
-msgctxt "Work Page"
 msgid "Listen to @materialType"
 msgstr "Lyt til @materialType"
 
@@ -27466,11 +27446,6 @@ msgstr "Prøv @materialType"
 msgctxt "Work Page"
 msgid "Modal for player"
 msgstr "Modal til afspiller"
-
-#: 
-msgctxt "Global"
-msgid "Go to material"
-msgstr "Gå til materiale"
 
 #: 
 msgid "A CQL search string."
@@ -27513,16 +27488,6 @@ msgid "Title"
 msgstr "Titel"
 
 #: 
-msgctxt "field.field.paragraph.go_video_bundle_automatic.field_url:label"
-msgid "URL"
-msgstr "URL"
-
-#: 
-msgctxt "field.field.paragraph.go_video_bundle_automatic.field_url:description"
-msgid "VideoTool URL. Example: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-msgstr "VideoTool URL. Eksempel: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-
-#: 
 msgctxt "field.field.paragraph.go_video_bundle_automatic.field_video_amount_of_materials:label"
 msgid "Amount of materials"
 msgstr "Antal materialer"
@@ -27536,16 +27501,6 @@ msgstr "Antal af ​​relaterede materialer, der skal vises."
 msgctxt "field.field.paragraph.go_video_bundle_manual.field_go_video_title:label"
 msgid "Title"
 msgstr "Titel"
-
-#: 
-msgctxt "field.field.paragraph.go_video_bundle_manual.field_url:label"
-msgid "URL"
-msgstr "URL"
-
-#: 
-msgctxt "field.field.paragraph.go_video_bundle_manual.field_url:description"
-msgid "VideoTool URL. Example: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
-msgstr "VideoTool URL. Eksempel: https://media.videotool.dk/?vn=557_2023103014511477700668916683"
 
 #: 
 msgctxt "field.field.paragraph.go_video_bundle_manual.field_video_bundle_work_ids:label"
@@ -28098,4 +28053,204 @@ msgstr "Abonnement"
 #: 
 msgid "Configure bundles of entity types that Varnish image purge should be used for, if none selected, all bundles from all entity types will be used. Just the fields of type image will be purged."
 msgstr "Configure bundles of entity types that Varnish image purge should be used for, if none selected, all bundles from all entity types will be used. Just the fields of type image will be purged."
+
+#: 
+msgctxt "Work Page"
+msgid "Approve loan"
+msgstr "Godkend lån"
+
+#: 
+msgctxt "Work Page"
+msgid "Loan @materialType"
+msgstr "Lån @materialType"
+
+#: 
+msgctxt "Work Page"
+msgid "Close reader/player modal"
+msgstr "Luk"
+
+#: 
+msgctxt "Work Page"
+msgid "Modal for reader/player material"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "If you wish to receive notifications when the material is ready for loan, you need to add your email address or phone number."
+msgstr "Ønsker du at modtage notifikationer, når materialet er klar til udlån, skal du angive din e-mailadresse eller dit telefonnummer. "
+
+#: 
+msgctxt "Work Page"
+msgid "@title could not be borrowed or reserved"
+msgstr "@title kan ikke udlånes eller reserveres."
+
+#: 
+msgctxt "Work Page"
+msgid "Something went wrong."
+msgstr "Noget gik galt."
+
+#: 
+msgctxt "Work Page"
+msgid "@title is borrowed to you"
+msgstr "@title er udlånt til dig. "
+
+#: 
+msgctxt "Work Page"
+msgid "You have now borrowed the material!"
+msgstr "Du har nu lånt materialet! "
+
+#: 
+msgctxt "Work Page"
+msgid "@title is reserved for you"
+msgstr "@title er reserveret til dig,"
+
+#: 
+msgctxt "Work Page"
+msgid "The material is now reserved for you!"
+msgstr "Materialet er nu reserveret til dig!"
+
+#: 
+msgctxt "Work Page"
+msgid "Something went wrong"
+msgstr "Noget gik galt."
+
+#: 
+msgctxt "Work Page"
+msgid "You can read/listen to the material until @expirationDate"
+msgstr "Du kan læse/lytte til materialet indtil @expirationDate"
+
+#: 
+msgctxt "Work Page"
+msgid "You have reserved the material. If you have provided an phonenumber or email during the reservation, you will receive a notification when the material is ready. Please note that the loan does not happen automatically."
+msgstr "Du har reserveret materialet. Har du angivet et telefonnummer eller e-mailadresse da du reserverede materialet, vil du modtage en notifikation, når materialet er klar. "
+
+#: 
+msgctxt "Work Page"
+msgid "Please note that the loan does not happen automatically. You must manually borrow the digital material yourself within 48 hours"
+msgstr "Bemærk venligst, materialet bliver ikke automatisk udlånt til dig. Du skal selv udføre lånet af dit digitale materiale indenfor 48 timer, når det meldes klar for udlån."
+
+#: 
+msgctxt "Work Page"
+msgid "An unexpected error occurred"
+msgstr "Der er sket en uventet fejl (#118)."
+
+#: 
+msgctxt "Work Page"
+msgid "The book can be borrowed again 90 days after the last loan expires"
+msgstr "Bogen kan først lånes igen 90 dage efter sidste låns udløb (#130)."
+
+#: 
+msgctxt "Work Page"
+msgid "The book can only be renewed once"
+msgstr "Bogen kan højst genlånes én gang (#129)."
+
+#: 
+msgctxt "Work Page"
+msgid "The book cannot be borrowed"
+msgstr "Bogen kan ikke lånes (#131)"
+
+#: 
+msgctxt "Work Page"
+msgid "The book is not available for loan"
+msgstr "Bogen er ikke tilgængelig for udlån (#128)"
+
+#: 
+msgctxt "Work Page"
+msgid "The book is unfortunately not available for loan"
+msgstr "Bogen er desværre ikke tilgængelig for udlån (#105)."
+
+#: 
+msgctxt "Work Page"
+msgid "The card is temporarily blocked due to too many failed login attempts. Try again in 2 hours."
+msgstr "Kortet er midlertidigt blokeret pga. for mange fejlede loginforsøg. Prøv igen om 2 timer. (#134)"
+
+#: 
+msgctxt "Work Page"
+msgid "Invalid card number and/or PIN code."
+msgstr "Ugyldigt kortnummer og/eller pinkode (#114)."
+
+#: 
+msgctxt "Work Page"
+msgid "Invalid email address"
+msgstr "Ugyldig e-mail adresse (#141)."
+
+#: 
+msgctxt "Work Page"
+msgid "Invalid phone number"
+msgstr "Ugyldig telefonnummer (#142)."
+
+#: 
+msgctxt "Work Page"
+msgid "The library's server is not responding – try logging in again later."
+msgstr "Bibliotekets server svarer ikke – prøv at logge ind igen senere (#145)."
+
+#: 
+msgctxt "Work Page"
+msgid "Your library has reached the limit for the number of loans this month"
+msgstr "Dit bibliotek har nået grænsen for antal udlån i denne måned (#125)."
+
+#: 
+msgctxt "Work Page"
+msgid "You do not have access to eReolen from this library as you are not registered as a resident in the municipality. Contact the library."
+msgstr "Du har ikke adgang til eReolen fra dette bibliotek, da du ikke er registreret som bosiddende i Kommunen. Kontakt biblioteket (#146)."
+
+#: 
+msgctxt "Work Page"
+msgid "No country could be found with the given country code"
+msgstr "Der kunne ikke findes et land med den givne landekode (#147)."
+
+#: 
+msgctxt "Work Page"
+msgid "The number of simultaneous loans of blue titles has been exceeded"
+msgstr "Antallet af samtidige lån af blå titler er overskredet (#143)."
+
+#: 
+msgctxt "Work Page"
+msgid "The number of simultaneous loans has been exceeded"
+msgstr "Antallet af samtidige lån er overskredet (#120)."
+
+#: 
+msgctxt "Work Page"
+msgid "The book is already reserved"
+msgstr "Bogen er allerede reserveret (#140)."
+
+#: 
+msgctxt "Work Page"
+msgid "Unknown error at the library – try logging in again later."
+msgstr "Ukendt fejl hos biblioteket – prøv at logge ind igen senere. (#144)"
+
+#: 
+msgctxt "Work Page"
+msgid "Unknown error."
+msgstr "Der er sket en uventet fejl (#148)."
+
+#: 
+msgctxt "Work Page"
+msgid "You can reserve up to 3 titles"
+msgstr "Du kan højest reservere 3 titler (#137)."
+
+#: 
+msgctxt "Global"
+msgid "View material"
+msgstr ""
+
+#: 
+msgctxt "field.field.paragraph.go_text_body.field_body:label"
+msgid "Body"
+msgstr ""
+
+#: 
+msgctxt "filter.format.go_text_body:name"
+msgid "GO Text body"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.go_text_body:label"
+msgid "GO Text Body"
+msgstr ""
+
+#: 
+msgctxt "paragraphs.paragraphs_type.go_text_body:description"
+msgid "This GO-specific text field uses CKEditor 5 with the GO Text Body format, supporting structured content with headings (H2, H3), bold, italic, underline, lists, and advanced link features like target attributes and Linkit integration."
+msgstr ""
 
