@@ -51,7 +51,7 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
+  public function importNode(string $uuid, string $endpointUrl): NodeInterface {
     $this->setEndpoint($endpointUrl);
 
     try {
