@@ -4,14 +4,14 @@ namespace Drupal\bnf\Services;
 
 use Drupal\bnf\BnfMapperManager;
 use Drupal\bnf\BnfStateEnum;
-use Drupal\bnf\Exception\AlreadyExistsException;
 use Drupal\bnf\GraphQL\Operations\GetNode;
 use Drupal\bnf\GraphQL\Operations\GetNodeTitle;
+use Drupal\bnf\GraphQL\Operations\NewContent;
 use Drupal\bnf\MangleUrl;
 use Drupal\bnf\SailorEndpointConfig;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\node\NodeInterface;
 use Psr\Log\LoggerInterface;
+use Safe\DateTimeImmutable;
 use Spawnia\Sailor\Configuration;
 
 /**
@@ -27,7 +27,6 @@ class BnfImporter {
    * Constructor.
    */
   public function __construct(
-    protected EntityTypeManagerInterface $entityTypeManager,
     protected LoggerInterface $logger,
     protected BnfMapperManager $mapperManager,
   ) {}
@@ -36,8 +35,8 @@ class BnfImporter {
    * Get node title from BNF.
    */
   public function getNodeTitle(string $uuid, string $endpointUrl): string {
-    $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
-    Configuration::setEndpointFor(GetNodeTitle::class, $endpointConfig);
+    $this->setEndpoint($endpointUrl);
+
     $response = GetNodeTitle::execute($uuid);
 
     $nodeData = $response->data?->node;
@@ -52,24 +51,10 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
-    $nodeStorage = $this->entityTypeManager->getStorage('node');
-
-    $existingNodes =
-      $nodeStorage->loadByProperties(['uuid' => $uuid]);
-
-    if (!empty($existingNodes)) {
-      $this->logger->error(
-        'Cannot import @type @uuid from @url - Node already exists.',
-        ['@type' => $nodeType, '@uuid' => $uuid, '@url' => $endpointUrl]
-      );
-
-      throw new AlreadyExistsException('Cannot import node - already exists.');
-    }
+  public function importNode(string $uuid, string $endpointUrl): NodeInterface {
+    $this->setEndpoint($endpointUrl);
 
     try {
-      $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
-      Configuration::setEndpointFor(GetNode::class, $endpointConfig);
       $response = GetNode::execute($uuid);
 
       $nodeData = $response->data?->node;
@@ -101,6 +86,62 @@ class BnfImporter {
     ]);
 
     return $node;
+  }
+
+  /**
+   * Get new content on subscription.
+   *
+   * Returns UUIDs of new/updated content, and the timestamp of the last change
+   * (suitable for passing to this function as `since` the next time round).
+   *
+   * @return array{'uuids': string[], 'youngest': int}
+   *   Updated content data.
+   */
+  public function newContent(string $uuid, int $since, string $endpointUrl): array {
+    $this->setEndpoint($endpointUrl);
+
+    try {
+      $response = NewContent::execute($uuid, (new DateTimeImmutable('@' . $since))->format(\DateTimeInterface::RFC3339));
+      $newContent = $response->errorFree()->data->newContent;
+
+      if ($newContent->errors) {
+        foreach ($newContent->errors as $error) {
+          $this->logger->error('GraphQL error querying new content: @message', ['@message' => $error->message]);
+        }
+      }
+
+      if ($newContent->uuids) {
+        return [
+          'uuids' => $newContent->uuids,
+          'youngest' => DateTimeImmutable::createFromFormat(\DateTimeInterface::RFC3339, $newContent->youngest)
+            ->getTimestamp(),
+        ];
+      }
+    }
+    catch (\Throwable $e) {
+      $this->logger->error('Error querying new content: @message', ['@message' => $e->getMessage()]);
+    }
+
+    // "nothing new" repsponse both when there aren't, and in case of error.
+    return [
+      'uuids' => [],
+      'youngest' => $since,
+    ];
+  }
+
+  /**
+   * Set endpoint configuration for GraphQL client.
+   */
+  protected function setEndpoint(string $endpointUrl): void {
+    $endpointConfig = new SailorEndpointConfig(MangleUrl::server($endpointUrl));
+
+    // Each Sailor generated operation class points to which config file and
+    // which endpoint in that file it uses. So in theory we should configure
+    // each class. However, the Configuration class is a singleton, and we know
+    // that all our operations are generated with the same config file and
+    // endpoint, so we can just set it for one class, and it'll work for them
+    // all.
+    Configuration::setEndpointFor(GetNodeTitle::class, $endpointConfig);
   }
 
 }
