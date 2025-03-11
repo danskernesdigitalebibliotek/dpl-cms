@@ -6,15 +6,20 @@ namespace Drupal\bnf\GraphQL\Operations\GetNode\Node;
  * @property string $id
  * @property string $title
  * @property string $__typename
+ * @property string|null $path
  */
 class NodeGoCategory extends \Spawnia\Sailor\ObjectLike
 {
     /**
      * @param string $id
      * @param string $title
+     * @param string|null $path
      */
-    public static function make($id, $title): self
-    {
+    public static function make(
+        $id,
+        $title,
+        $path = 'Special default value that allows Sailor to differentiate between explicitly passing null and not passing a value at all.',
+    ): self {
         $instance = new self;
 
         if ($id !== self::UNDEFINED) {
@@ -24,6 +29,9 @@ class NodeGoCategory extends \Spawnia\Sailor\ObjectLike
             $instance->title = $title;
         }
         $instance->__typename = 'NodeGoCategory';
+        if ($path !== self::UNDEFINED) {
+            $instance->path = $path;
+        }
 
         return $instance;
     }
@@ -36,6 +44,7 @@ class NodeGoCategory extends \Spawnia\Sailor\ObjectLike
             'id' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\IDConverter),
             'title' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
             '__typename' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
+            'path' => new \Spawnia\Sailor\Convert\NullConverter(new \Spawnia\Sailor\Convert\StringConverter),
         ];
     }
 

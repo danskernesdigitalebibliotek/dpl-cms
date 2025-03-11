@@ -87,6 +87,22 @@ class BnfImporter {
       }
 
       $node = $this->mapperManager->map($nodeData);
+      $info = $response->data?->info;
+
+      // If no canonical URL is set explicitally, we'll set the path of
+      // the original library.
+      if ($node->get('field_canonical_url')->isEmpty() && $info) {
+        $nodePath = (string) $nodeData->path;
+        $sitePath = $info->url;
+        $siteName = $info->name;
+        $canonicalUrl = "{$sitePath}{$nodePath}";
+
+        $node->set('field_canonical_url', [
+          'title' => $siteName,
+          'uri' => $canonicalUrl,
+        ]);
+
+      }
 
       $node->set(BnfStateEnum::FIELD_NAME, BnfStateEnum::Imported);
 
