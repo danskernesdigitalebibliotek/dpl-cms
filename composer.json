@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2025.8.0",
+                "version": "2025.11.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.8.0/dist-2025-8-0-7957f1b1ca10b4f5844bc77fe64cc46517bc1de7.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.11.0/dist-2025-11-0-c49f08e6bbbebeab426669b6dfd6d858605bd7f4.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2025.8.0",
+                "version": "2025.11.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.8.0/dist-2025-8-0-4c90885f3e99874a9d067ed83ae96c3b329a09b4.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.11.0/dist-2025-11-0-bc79d7d37e6fd9a33a25e77520c5ef1bef02418b.zip",
                     "type": "zip"
                 }
             }
@@ -87,12 +87,12 @@
         "ext-dom": "*",
         "amazeeio/drupal_integrations": "^0.5",
         "bower-asset/jsnlog": "^2.30",
-        "brick/math": "^0.12.1",
+        "brick/math": "^0.13.0",
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "^2025.8",
-        "danskernesdigitalebibliotek/dpl-react": "^2025.8",
+        "danskernesdigitalebibliotek/dpl-design-system": "2025.11.0",
+        "danskernesdigitalebibliotek/dpl-react": "2025.11.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
@@ -136,6 +136,7 @@
         "drupal/handy_cache_tags": "^1.4",
         "drupal/health_check": "^3.1",
         "drupal/honeypot": "^2.2",
+        "drupal/http_cache_control": "^2.5",
         "drupal/job_scheduler": "^4.0",
         "drupal/jsnlog": "^1.3",
         "drupal/jsonlog": "^4.0",
