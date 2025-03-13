@@ -40,7 +40,7 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "0.0.0-dev",
+                "version": "2025.11.0",
                 "type": "drupal-library",
                 "dist": {
                     "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-502-show-active-manifestation-access-url/dist-ddfbra-502-show-active-manifestation-access-url.zip",
@@ -92,7 +92,7 @@
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
         "danskernesdigitalebibliotek/dpl-design-system": "2025.11.0",
-        "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
+        "danskernesdigitalebibliotek/dpl-react": "2025.11.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
