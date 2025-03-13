@@ -56,7 +56,7 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
+  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article', bool $setCanonicalSource = FALSE): NodeInterface {
     if (!in_array($nodeType, self::ALLOWED_CONTENT_TYPES)) {
       throw new \InvalidArgumentException('The requested content type is not allowed.');
     }
@@ -91,7 +91,7 @@ class BnfImporter {
 
       // If no canonical URL is set explicitally, we'll set the path of
       // the original library.
-      if ($node->get('field_canonical_url')->isEmpty() && $info) {
+      if ($setCanonicalSource && $node->get('field_canonical_url')->isEmpty() && $info) {
         $nodePath = (string) $nodeData->path;
         $sitePath = $info->url;
         $siteName = $info->name;
