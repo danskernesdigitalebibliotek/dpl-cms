@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-03-06 12:47+0100\n"
-"PO-Revision-Date: 2025-03-06 12:47+0100\n"
+"POT-Creation-Date: 2025-03-14 10:51+0100\n"
+"PO-Revision-Date: 2025-03-14 10:51+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6483,7 +6483,7 @@ msgstr "Paragraphs"
 
 msgctxt "field.field.node.go_category.field_publication_date:label"
 msgid "Publication date"
-msgstr ""
+msgstr "Publiceringsdato"
 
 msgctxt "media.type.audio:label"
 msgid "Audio"
@@ -6515,7 +6515,7 @@ msgstr ""
 
 msgctxt "core.base_field_override.node.go_article.promote:label"
 msgid "Promoted to front page"
-msgstr ""
+msgstr "Fremhæv til forsiden"
 
 msgctxt "core.base_field_override.node.go_article.promote:settings:on_label"
 msgid "On"
@@ -6527,7 +6527,7 @@ msgstr "Stop"
 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_author_date:label"
 msgid "Author & Date"
-msgstr ""
+msgstr "Forfatter og Dato"
 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
@@ -6535,31 +6535,31 @@ msgstr ""
 
 msgctxt "core.entity_form_display.node.go_article.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraph"
 
 msgctxt "core.entity_form_display.node.go_article.default:content:field_paragraphs:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraphs"
 
 msgctxt "field.field.node.go_article.field_go_article_image:label"
 msgid "Image"
-msgstr ""
+msgstr "Billede"
 
 msgctxt "field.field.node.go_article.field_override_author:label"
 msgid "Override author"
-msgstr ""
+msgstr "Overskriv forfatter"
 
 msgctxt "field.field.node.go_article.field_paragraphs:label"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraphs"
 
 msgctxt "field.field.node.go_article.field_publication_date:label"
 msgid "Publication date"
-msgstr ""
+msgstr "Publiceringsdato"
 
 msgctxt "field.field.node.go_article.field_show_override_author:label"
 msgid "Override the author\t"
-msgstr ""
+msgstr "Overskriv forfatter"
 
 msgctxt "field.field.node.go_article.field_show_override_author:description"
 msgid ""
@@ -6740,15 +6740,15 @@ msgstr ""
 
 msgctxt "field.field.paragraph.go_material_slider_automatic.field_slider_amount_of_materials:label"
 msgid "Amount of materials"
-msgstr ""
+msgstr "Antal materialer"
 
 msgctxt "field.field.paragraph.go_material_slider_automatic.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "field.field.paragraph.go_material_slider_manual.field_material_slider_work_ids:label"
 msgid "Work IDs"
-msgstr ""
+msgstr "Værk ID"
 
 msgctxt "field.field.paragraph.go_material_slider_manual.field_material_slider_work_ids:description"
 msgid ""
@@ -6760,11 +6760,11 @@ msgstr ""
 
 msgctxt "field.field.paragraph.go_material_slider_manual.field_title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "paragraphs.paragraphs_type.go_material_slider_automatic:label"
 msgid "GO Material Slider - Automatic"
-msgstr ""
+msgstr "GO Material Slider - Automatic"
 
 msgctxt "paragraphs.paragraphs_type.go_material_slider_automatic:description"
 msgid ""
@@ -6774,7 +6774,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.go_material_slider_manual:label"
 msgid "GO Material Slider - Manual"
-msgstr ""
+msgstr "GO Material Slider - Manual"
 
 msgctxt "paragraphs.paragraphs_type.go_material_slider_manual:description"
 msgid ""
@@ -6852,7 +6852,7 @@ msgstr ""
 
 msgctxt "paragraphs.paragraphs_type.go_link:label"
 msgid "GO Link"
-msgstr ""
+msgstr "GO Link"
 
 msgctxt "paragraphs.paragraphs_type.go_link:description"
 msgid ""
@@ -6863,7 +6863,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:label"
 msgid "Amount of materials"
-msgstr ""
+msgstr "Antal materialer"
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:description"
 msgid ""
@@ -6875,7 +6875,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_description:label"
 msgid "Material grid description"
-msgstr ""
+msgstr "Material grid beskrivelse"
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_description:description"
 msgid ""
@@ -6885,7 +6885,7 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_link:label"
 msgid "Material grid link"
-msgstr ""
+msgstr "Material grid link"
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_link:description"
 msgid ""
@@ -6904,17 +6904,17 @@ msgstr ""
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_title:label"
 msgid "Title of the material grid"
-msgstr ""
+msgstr "Titel på materialekomponenten"
 
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_grid_title:description"
 msgid ""
 "The title for the material grid. Leave this blank if you do not want a "
 "title. "
-msgstr ""
+msgstr "Der vises ikke en titel, hvis denne er tom."
 
 msgctxt "paragraphs.paragraphs_type.material_grid_automatic:label"
 msgid "Material grid automatic (deprecated)"
-msgstr ""
+msgstr "Material grid automatic (forældet)"
 
 msgctxt "paragraphs.paragraphs_type.material_grid_automatic:description"
 msgid ""
@@ -6923,10 +6923,12 @@ msgid ""
 "A grid representation of "
 "recommended materials, based on a CQL search string. "
 msgstr ""
+"Brug venligst \"Material grid link automatically\" i stedet! Denne "
+"paragraf bliver fjernet i fremtiden."
 
 msgctxt "paragraphs.paragraphs_type.material_grid_link_automatic:label"
 msgid "Material grid link automatic"
-msgstr ""
+msgstr "Material grid link automatic"
 
 msgctxt "paragraphs.paragraphs_type.material_grid_link_automatic:description"
 msgid ""
@@ -6936,15 +6938,15 @@ msgstr ""
 
 msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title"
 msgid "Paragraph"
-msgstr ""
+msgstr "Paragraph"
 
 msgctxt "core.entity_form_display.paragraph.go_linkbox.default:content:field_go_link_paragraph:settings:title_plural"
 msgid "Paragraphs"
-msgstr ""
+msgstr "Paragraphs"
 
 msgctxt "field.field.paragraph.go_link.field_go_link:label"
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 msgctxt "field.field.paragraph.go_linkbox.field_go_link_paragraph:label"
 msgid "Link"
@@ -6952,15 +6954,15 @@ msgstr "Link"
 
 msgctxt "field.field.paragraph.go_text_body.field_body:label"
 msgid "Body"
-msgstr ""
+msgstr "Body"
 
 msgctxt "filter.format.go_text_body:name"
 msgid "GO Text body"
-msgstr ""
+msgstr "GO Text body"
 
 msgctxt "paragraphs.paragraphs_type.go_text_body:label"
 msgid "GO Text Body"
-msgstr ""
+msgstr "GO Text Body"
 
 msgctxt "paragraphs.paragraphs_type.go_text_body:description"
 msgid ""
@@ -6972,15 +6974,192 @@ msgstr ""
 
 msgctxt "field.field.paragraph.go_images.field_go_images:label"
 msgid "Images"
-msgstr ""
+msgstr "Billeder"
 
 msgctxt "paragraphs.paragraphs_type.go_images:label"
 msgid "GO Images"
-msgstr ""
+msgstr "GO Billeder"
 
 msgctxt "paragraphs.paragraphs_type.go_images:description"
 msgid ""
 "This paragraph is used for displaying 1-2 images on GO content types "
 "such as GO Article, GO Page and GO Category."
+msgstr ""
+
+msgctxt "core.entity_view_mode.media.nav_spot:label"
+msgid "Nav spot"
+msgstr "Nav spot"
+
+msgctxt "image.style.nav_spot:label"
+msgid "Nav spot"
+msgstr "Nav spot"
+
+msgctxt "views.view.importable_content:label"
+msgid "Importable content"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:title"
+msgid "Importable content"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:field_subtitle:alter:text"
+msgid "{{ field_subtitle__value }}"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:title:label"
+msgid "Title"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:title:alter:text"
+msgid ""
+"<strong>{{ title }}</strong><br>\n"
+"<small>{{ field_subtitle }}</small>"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:field_canonical_url:label"
+msgid "Source"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:type:label"
+msgid "Content type"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:label"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:alter:text"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:label"
+msgid "Updated"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:alter:text"
+msgid ""
+"{{ changed_1 }}<br>\n"
+"<small>({{ changed }})</small>"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:uuid:alter:text"
+msgid "{{ uuid__value }}"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:label"
+msgid "Import"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:alter:text"
+msgid ""
+"<a href=\"{{ url('bnf_server.import_redirect', {'uuid': uuid}) }}\" "
+"class=\"button\">\n"
+"{{ 'Import to my site'|trans({}, {\"context\": "
+"\"BNF\"})}}\n"
+"</a>"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:first"
+msgid "« First"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:last"
+msgid "Last »"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required"
+msgid "Select any filter and click on Apply to see results"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required_format"
+msgid "basic"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:bef:general:secondary_label"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:arguments:type:exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:combine:expose:label"
+msgid "Search"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:type_1:expose:label"
+msgid "Content type"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id:expose:label"
+msgid "Categories"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:admin_label"
+msgid "Approved by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:label"
+msgid "Approved by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:description"
+msgid "Shows content that has been tagged with a category, by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:label"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:1:title"
+msgid "Categorized"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:2:title"
+msgid "Uncategorized"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:filters:field_tags_target_id:expose:label"
+msgid "Tags"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:page:display_title"
+msgid "Page"
 msgstr ""
 

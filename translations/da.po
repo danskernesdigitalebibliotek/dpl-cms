@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-03-06 12:47+0100\n"
-"PO-Revision-Date: 2025-03-06 12:47+0100\n"
+"POT-Creation-Date: 2025-03-14 10:51+0100\n"
+"PO-Revision-Date: 2025-03-14 10:51+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1570,7 +1570,7 @@ msgstr "Reserveringer klar til lån"
 
 msgctxt "Loan list"
 msgid "Due date digital @date"
-msgstr "Udløbsdato @date"
+msgstr "Udløber automatisk @date"
 
 msgctxt "Loan list"
 msgid "Due date physical @date"
@@ -2268,7 +2268,7 @@ msgstr "Luk pop-up med detaljevisning af materiale"
 
 msgctxt "Global"
 msgid "Expires"
-msgstr "Udløber"
+msgstr "Udløber automatisk"
 
 msgctxt "Global"
 msgid "Go to eReolen"
@@ -11545,9 +11545,6 @@ msgstr "Tekstfelt et"
 msgid "Multiple two"
 msgstr "Multiple two"
 
-msgid "Texfield two"
-msgstr "Tekstfelt to"
-
 msgid "Partial required"
 msgstr "Delvis krævet"
 
@@ -19275,7 +19272,7 @@ msgid "The WorkID value"
 msgstr ""
 
 msgid "The material type (e.g., bog, e-bog)."
-msgstr ""
+msgstr "Materialetype (fx bog, film, lydbog)"
 
 msgid "DPL Lagoon related functionality"
 msgstr ""
@@ -19287,22 +19284,22 @@ msgid "Post Go Adgangsplatformen Login Route"
 msgstr ""
 
 msgid "DPL Go"
-msgstr ""
+msgstr "DPL GO"
 
 msgid "Module used for handling go specific functionality."
 msgstr ""
 
 msgid "Add @type video via URL"
-msgstr ""
+msgstr "Tilføj @type video via URL"
 
 msgid "The given URL does not match the VideoTool URL pattern."
-msgstr ""
+msgstr "URL'en matcher ikke VideoTool URL mønsteret."
 
 msgid "VideoTool URL"
-msgstr ""
+msgstr "VideoTool URL"
 
 msgid "VideoTool embed"
-msgstr ""
+msgstr "VideoTool indlejring"
 
 msgid "Url"
 msgstr "URL"
@@ -19331,10 +19328,10 @@ msgstr "Integrer VideoTool-videoplatformen i mediemodulet"
 
 msgctxt "Validation"
 msgid "IsHttps"
-msgstr ""
+msgstr "IsHttps"
 
 msgid "Automatically delete orphaned eventinstances."
-msgstr ""
+msgstr "Automatisk slet forældreløse event instanser."
 
 msgid "DPL event: Instance Creating logic."
 msgstr ""
@@ -19382,15 +19379,6 @@ msgid "User role mapping"
 msgstr "User role mapping"
 
 msgid ""
-"For each Drupal role, provide the sets of equivalent external groups, "
-"separated by spaces. A user belonging to one of the provided groups "
-"will be assigned the configured Drupal role."
-msgstr ""
-"For hver Drupal-rolle skal du angive sæt af tilsvarende eksterne "
-"grupper, adskilt af mellemrum. En bruger, der tilhører en af ​​de "
-"angivne grupper, vil blive tildelt den konfigurerede Drupal-rolle."
-
-msgid ""
 "<br/><strong>Note:</strong> The module will not update user roles with "
 "no mapped external groups. If all mappings to one of the roles are "
 "removed, users will keep that role until it is removed in the Drupal "
@@ -19436,7 +19424,7 @@ msgid "The %label client has been disabled."
 msgstr ""
 
 msgid "Allowed domains"
-msgstr ""
+msgstr "Tilladte domæner"
 
 msgid "Enter one domain per line that are allowed to initiate SSO using ISS."
 msgstr ""
@@ -19465,13 +19453,13 @@ msgid "The issuer URL @url appears to be invalid."
 msgstr ""
 
 msgid "Preferred email address"
-msgstr ""
+msgstr "Foretrukket e-mailadresse"
 
 msgid "True if the email address has been verified; otherwise false"
 msgstr ""
 
 msgid "Generic OAuth 2.0"
-msgstr ""
+msgstr "Generic OAuth 2.0"
 
 msgid "Configure OpenID Connect clients."
 msgstr ""
@@ -19698,5 +19686,46 @@ msgstr "Se materiale"
 msgid ""
 "VideoTool URL example: "
 "https://media.videotool.dk?vn=557_2023103014511477700668916683"
+msgstr ""
+"VideoTool URL eksempel: "
+"https://media.videotool.dk?vn=557_2023103014511477700668916683"
+
+msgid ""
+"For each Drupal role, provide the sets of equivalent external groups, "
+"separated by spaces. If the external group includes spaces, be sure to "
+"wrap the group name in double quotes (e.g. \"content editor\"). A user "
+"belonging to one of the provided groups will be assigned the "
+"configured Drupal role."
+msgstr ""
+
+msgid "Textfield two"
+msgstr ""
+
+msgid "Find content for @name"
+msgstr ""
+
+msgid "BNF cannot send you to your library"
+msgstr ""
+
+msgid ""
+"It would appear that you have not logged in to BNF through your origin "
+"library."
+msgstr ""
+
+msgid "To import this content, you can either:"
+msgstr ""
+
+msgid ""
+"Go back to your library site, and choose \"log in to BNF\", and try "
+"again"
+msgstr ""
+
+msgid "Or:"
+msgstr ""
+
+msgid "Go back to your library site, and press import at:"
+msgstr ""
+
+msgid "Allowed if bnf_server is enabled."
 msgstr ""
 
