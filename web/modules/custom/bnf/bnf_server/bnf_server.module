@@ -26,14 +26,20 @@ function bnf_server_views_pre_build(ViewExecutable $view): void {
  * has logged in and has the callback cookie context.
  */
 function bnf_server_preprocess_page(array &$variables): void {
+  $route_name = \Drupal::routeMatch()->getRouteName();
   $node = $variables['node'] ?? NULL;
+
+  if ($route_name !== 'entity.node.canonical' || !($node instanceof Node)) {
+    return;
+  }
+
   $session = \Drupal::request()->getSession();
 
   $url = $session->get(LoginController::CALLBACK_URL_KEY);
   $name = $session->get(LoginController::SITE_NAME_KEY);
   $allowed_cts = BnfImporter::ALLOWED_CONTENT_TYPES;
 
-  if (!$url || !($node instanceof Node)) {
+  if (!$url) {
     return;
   }
 
