@@ -7,6 +7,7 @@ use Drupal\bnf\Services\BnfImporter;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\DependencyInjection\AutowireTrait;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+use Drupal\Core\Entity\EntityFieldManagerInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormInterface;
@@ -44,6 +45,7 @@ class BnfImportConfirmForm implements FormInterface, ContainerInjectionInterface
     protected BnfImporter $bnfImporter,
     #[Autowire(service: 'logger.channel.bnf')]
     protected LoggerInterface $logger,
+    protected EntityFieldManagerInterface $entityFieldManager,
     ConfigFactoryInterface $configFactory,
     EntityTypeManagerInterface $entityTypeManager,
   ) {
@@ -105,6 +107,13 @@ class BnfImportConfirmForm implements FormInterface, ContainerInjectionInterface
       '#disabled' => TRUE,
     ];
 
+    $form['bnf_keep_updated'] = [
+      '#title' => $this->t('Keep updated with Delingstjenesten', [], ['context' => 'BNF']),
+      '#type' => 'checkbox',
+      '#description' => $this->t('Keep this content, which originates from Delingstjenesten, up to date when a new version is available. This will overwrite any custom changes you may have made. <strong>You can always change your mind directly on the content.</strong>', [], ['context' => 'BNF']),
+      '#default_value' => TRUE,
+    ];
+
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Import content'),
@@ -126,10 +135,11 @@ class BnfImportConfirmForm implements FormInterface, ContainerInjectionInterface
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $uuid = $form_state->get('uuid');
+    $keepUpdated = !empty($form_state->getValue('bnf_keep_updated'));
     $bnfServer = $form_state->get('bnfServer');
 
     try {
-      $node = $this->bnfImporter->importNode($uuid, $bnfServer);
+      $node = $this->bnfImporter->importNode($uuid, $bnfServer, 'article', $keepUpdated);
       $form_state->setRedirect('entity.node.edit_form', ['node' => $node->id()]);
     }
     catch (\Exception $e) {
