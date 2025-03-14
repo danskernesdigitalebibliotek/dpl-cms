@@ -1,8 +1,11 @@
 <?php
 
+use Drupal\bnf\BnfStateEnum;
 use Drupal\bnf\Exception\AlreadyExistsException;
 use Drupal\bnf\Services\BnfImporter;
 use Drupal\bnf_client\Services\BnfExporter;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\drupal_typed\DrupalTyped;
 use Drupal\node\NodeForm;
@@ -50,11 +53,28 @@ function bnf_client_form_alter(array &$form, FormStateInterface $form_state, str
   $form['status']['#states']['invisible'] =
     [':input[name="bnf"]' => ['checked' => TRUE]];
 
+  $state = BnfStateEnum::None;
+  if ($node->hasField(BnfStateEnum::FIELD_NAME) && !$node->get(BnfStateEnum::FIELD_NAME)->isEmpty()) {
+    /** @var \Drupal\enum_field\Plugin\Field\FieldType\EnumItemList $state_field */
+    $state_field = $node->get(BnfStateEnum::FIELD_NAME);
+    $states = $state_field->enums();
+    $state = reset($states);
+  }
+
+  $exportable = ($state == BnfStateEnum::None);
+
+  if ($state !== BnfStateEnum::Imported) {
+    unset($form['bnf_keep_updated']);
+  }
+
   $form['bnf'] = [
     '#type' => 'checkbox',
     '#title' => t('Publish and submit to BNF'),
-    '#description' => t('Please make sure that all content and media as part of this article is OK to be used by other libraries.'),
     '#default_value' => FALSE,
+    '#disabled' => !$exportable,
+    '#description' => $exportable ?
+    t('Please make sure that all content and media as part of this article is OK to be used by other libraries.', [], ['context' => 'BNF']) :
+    t('This content cannot be sent to BNF, as it has either been exported or imported already.', [], ['context' => 'BNF']),
   ];
 }
 
@@ -103,4 +123,37 @@ function bnf_client_form_node_form_submit(array $form, FormStateInterface $form_
     }
 
   }
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ *
+ * Creating our custom programmatic "keep updated with BNF?" field.
+ *
+ * @return \Drupal\Core\Field\FieldDefinitionInterface[]
+ *   The field definitions.
+ */
+function bnf_client_entity_base_field_info(EntityTypeInterface $entity_type): array {
+  $fields = [];
+
+  $field_name = 'bnf_keep_updated';
+
+  // Create new fields for node bundle.
+  if ($entity_type->id() === 'node') {
+    $fields[$field_name] = BaseFieldDefinition::create('boolean')
+      ->setName($field_name)
+      ->setLabel(t('Keep updated with Delingstjenesten', [], ['context' => 'BNF']))
+      ->setDescription(t('Keep this content, which originates from Delingstjenesten, up to date when a new version is available. This will overwrite any custom changes you may have made.', [], ['context' => 'BNF']))
+      ->setDefaultValue(FALSE)
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayOptions('form', [
+        'type' => 'boolean_checkbox',
+        'weight' => 0,
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+      ]);
+  }
+
+  return $fields;
 }
