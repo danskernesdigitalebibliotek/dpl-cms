@@ -3936,7 +3936,7 @@ msgstr "Dine reserveringer er slettet"
 #: 
 msgctxt "Global"
 msgid "Expires @date"
-msgstr "Udløber @date"
+msgstr "Udløber automatisk @date"
 
 #: 
 msgctxt "Global"
@@ -9317,10 +9317,6 @@ msgid "Address requires the commerceguys/addressing library."
 msgstr "Adresser kræver commerceguys/adressering biblioteket."
 
 #: 
-msgid "Save settings"
-msgstr "Gem indstillinger"
-
-#: 
 msgid "Save"
 msgstr "Gem"
 
@@ -11046,32 +11042,8 @@ msgid "Save and continue"
 msgstr "Gem og fortsæt"
 
 #: 
-msgid "Save field settings"
-msgstr "Gem feltindstillinger"
-
-#: 
-msgid "Saved %name configuration"
-msgstr "Gemt %name konfiguration"
-
-#: 
-msgid "Multiple test entity entities match this reference;"
-msgstr "Flere testenhedsenheder matcher denne reference;"
-
-#: 
-msgid "Many test entity entities are called %value. Specify the one you want by appending the id in parentheses"
-msgstr "Mange testenheder kaldes %value. Specificer den, du ønsker, ved at tilføje id'et i parentes"
-
-#: 
-msgid "There are no test entity entities matching \"%value\"."
-msgstr "Der er ingen testenheder, der matcher \"%value\"."
-
-#: 
 msgid "Preview"
 msgstr "Gennemse"
-
-#: 
-msgid "@type %title has been created."
-msgstr "@type %title oprettet."
 
 #: 
 msgid "References"
@@ -26467,10 +26439,6 @@ msgstr "Module for adding consumers to DPL CMS"
 #: 
 msgid "Continue"
 msgstr "Fortsæt"
-
-#: 
-msgid "Update settings"
-msgstr "Opdatér indstillinger"
 
 #: 
 msgid "Show collapse all button"
