@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-03-10 12:21+0100\n"
-"PO-Revision-Date: 2025-03-10 12:21+0100\n"
+"POT-Creation-Date: 2025-03-24 09:52+0100\n"
+"PO-Revision-Date: 2025-03-24 09:52+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -25,8 +25,32 @@ msgstr "Search the website"
 msgid "Search"
 msgstr "Søg"
 
+msgid "Find content for @name"
+msgstr ""
+
 msgid "Import \"@label\" to @name"
 msgstr "Importer \"@label\" til @name"
+
+msgid "BNF cannot send you to your library"
+msgstr ""
+
+msgid ""
+"It would appear that you have not logged in to BNF through your origin "
+"library."
+msgstr ""
+
+msgid "To import this content, you can either:"
+msgstr ""
+
+msgid ""
+"Go back to your library site, and choose \"log in to BNF\", and try again"
+msgstr ""
+
+msgid "Or:"
+msgstr ""
+
+msgid "Go back to your library site, and press import at:"
+msgstr ""
 
 msgctxt "dpl_search"
 msgid "Showing web results for \"@input\" (@total_results)"
@@ -715,7 +739,7 @@ msgstr "For eksempel <em>https://bibliotekernesnationaleformidling.dk/</em>."
 
 msgctxt "Validation"
 msgid "IsHttps"
-msgstr ""
+msgstr "IsHttps"
 
 msgctxt "BNF"
 msgid "my site"
@@ -1343,7 +1367,7 @@ msgstr "Lån"
 
 msgctxt "Loan list"
 msgid "Due date digital @date"
-msgstr "Udløbsdato @date"
+msgstr "Udløber automatisk @date"
 
 msgctxt "Loan list"
 msgid "Due date physical @date"
@@ -1745,7 +1769,7 @@ msgid "The WorkID value"
 msgstr ""
 
 msgid "The material type (e.g., bog, e-bog)."
-msgstr ""
+msgstr "Materialetype (fx bog, film, lydbog)"
 
 msgid "List of DPL-Go Unilogin configuration."
 msgstr ""
@@ -2007,24 +2031,26 @@ msgid "Add @type"
 msgstr "Tilføj @type"
 
 msgid "Add @type video via URL"
-msgstr ""
+msgstr "Tilføj @type video via URL"
 
 msgid ""
 "VideoTool URL example: https://media.videotool.dk?"
 "vn=557_2023103014511477700668916683"
 msgstr ""
+"VideoTool URL eksempel: https://media.videotool.dk?"
+"vn=557_2023103014511477700668916683"
 
 msgid "Add"
 msgstr "Tilføj"
 
 msgid "The given URL does not match the VideoTool URL pattern."
-msgstr ""
+msgstr "URL'en matcher ikke VideoTool URL mønsteret."
 
 msgid "VideoTool URL"
-msgstr ""
+msgstr "VideoTool URL"
 
 msgid "VideoTool embed"
-msgstr ""
+msgstr "VideoTool indlejring"
 
 msgid "Name"
 msgstr "Name"
@@ -3754,7 +3780,7 @@ msgstr "Se vores takster"
 
 msgctxt "Global"
 msgid "Expires @date"
-msgstr "Udløber @date"
+msgstr "Udløber automatisk @date"
 
 msgctxt "Global"
 msgid "Close renew loans modal"
@@ -3866,7 +3892,7 @@ msgstr "Luk pop-up med detaljevisning af materiale"
 
 msgctxt "Global"
 msgid "Expires"
-msgstr "Udløber"
+msgstr "Udløber automatisk"
 
 msgctxt "Global"
 msgid "View material"
@@ -4573,6 +4599,9 @@ msgstr "Slet enkelte åbningstider"
 msgid "Update individual opening hours"
 msgstr "Opdater enkelte åbningstider"
 
+msgid "Allowed if bnf_server is enabled."
+msgstr ""
+
 msgid "DPL configuration schema extensions for GraphQL Compose."
 msgstr "DPL configuration schema extensions for GraphQL Compose."
 
@@ -4627,7 +4656,7 @@ msgid "Handling the search pages."
 msgstr "Handling the search pages."
 
 msgid "DPL Go"
-msgstr ""
+msgstr "DPL GO"
 
 msgid "Module used for handling go specific functionality."
 msgstr ""
@@ -7442,43 +7471,9 @@ msgstr "Issue-kø"
 msgid "to report problems."
 msgstr "til at reportere problemer."
 
-msgid "Save settings"
-msgstr "Gem indstillinger"
-
 msgctxt "Entity type group"
 msgid "Content"
 msgstr "Indhold"
-
-msgid "Save and continue"
-msgstr "Gem og fortsæt"
-
-msgid "Save field settings"
-msgstr "Gem feltindstillinger"
-
-msgid "Update settings"
-msgstr "Opdatér indstillinger"
-
-msgid "Saved %name configuration"
-msgstr "Gemt %name konfiguration"
-
-msgid "Multiple test entity entities match this reference;"
-msgstr "Flere testenhedsenheder matcher denne reference;"
-
-msgid ""
-"Many test entity entities are called %value. Specify the one you want by "
-"appending the id in parentheses"
-msgstr ""
-"Mange testenheder kaldes %value. Specificer den, du ønsker, ved at tilføje "
-"id'et i parentes"
-
-msgid "There are no test entity entities matching \"%value\"."
-msgstr "Der er ingen testenheder, der matcher \"%value\"."
-
-msgid "Preview"
-msgstr "Preview"
-
-msgid "@type %title has been created."
-msgstr "@type %title oprettet."
 
 msgid "The referenced entity (%type: %id) does not exist."
 msgstr "Den refererede entity (%type: %id) eksisterer ikke."
@@ -8456,6 +8451,9 @@ msgid ""
 "A unique machine-readable name containing letters, numbers, and underscores."
 msgstr "Et unikt systemnavn som indeholder bogstaver, tal og understregninger."
 
+msgid "Save and continue"
+msgstr "Gem og fortsæt"
+
 msgid "Create group"
 msgstr "Opret gruppe"
 
@@ -9038,6 +9036,9 @@ msgid ""
 msgstr ""
 "Angiv fokus for dette billede i formen \"leftoffset,topoffset\" hvor "
 "forskydningerne er i procent. Eksempel: 25,75"
+
+msgid "Preview"
+msgstr "Preview"
 
 msgid ""
 "Focal Point allows you to specify the portion of an image that is most "
@@ -13387,8 +13388,8 @@ msgstr "Tekstfelt et"
 msgid "Multiple two"
 msgstr "Multiple two"
 
-msgid "Texfield two"
-msgstr "Tekstfelt to"
+msgid "Textfield two"
+msgstr ""
 
 msgid "Add another item"
 msgstr "Tilføj endnu et element"
@@ -13721,7 +13722,7 @@ msgid "Web page or blog URL"
 msgstr "Web side eller blog URL"
 
 msgid "Preferred email address"
-msgstr ""
+msgstr "Foretrukket e-mailadresse"
 
 msgid "Email verified"
 msgstr "Email verificeret"
@@ -13763,7 +13764,7 @@ msgid "Client secret"
 msgstr "Klienthemmelighed"
 
 msgid "Allowed domains"
-msgstr ""
+msgstr "Tilladte domæner"
 
 msgid "Enter one domain per line that are allowed to initiate SSO using ISS."
 msgstr ""
@@ -13885,7 +13886,7 @@ msgid "LinkedIn"
 msgstr "LinkedIn"
 
 msgid "Generic OAuth 2.0"
-msgstr ""
+msgstr "Generic OAuth 2.0"
 
 msgid "OpenID Connect clients"
 msgstr ""
@@ -14347,7 +14348,7 @@ msgstr ""
 "for arrangementinstanser."
 
 msgid "Automatically delete orphaned eventinstances."
-msgstr ""
+msgstr "Automatisk slet forældreløse event instanser."
 
 msgid "Event Creation"
 msgstr "Arrangør"
@@ -19887,6 +19888,10 @@ msgctxt "core.entity_view_mode.media.media_library:label"
 msgid "Media library"
 msgstr ""
 
+msgctxt "core.entity_view_mode.media.nav_spot:label"
+msgid "Nav spot"
+msgstr ""
+
 msgctxt "core.entity_view_mode.media.paragraph_squared:label"
 msgid "Paragraph, squared"
 msgstr ""
@@ -22085,6 +22090,10 @@ msgstr ""
 
 msgctxt "image.style.media_library:label"
 msgid "Media Library thumbnail (220 x 220px)"
+msgstr ""
+
+msgctxt "image.style.nav_spot:label"
+msgid "Nav spot"
 msgstr ""
 
 msgctxt "image.style.open_graph:label"
@@ -25159,6 +25168,246 @@ msgstr ""
 
 msgctxt "views.view.files:display:page_2:display_options:arguments:fid:title"
 msgid "File usage information for {{ arguments.fid }}"
+msgstr ""
+
+msgctxt "views.view.importable_content:label"
+msgid "Importable content"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:title"
+msgid "Importable content"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"field_subtitle:alter:text"
+msgid "{{ field_subtitle__value }}"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:title:"
+"label"
+msgid "Title"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:title:"
+"alter:text"
+msgid ""
+"<strong>{{ title }}</strong><br>\r\n"
+"<small>{{ field_subtitle }}</small>"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"field_canonical_url:label"
+msgid "Source"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:type:"
+"label"
+msgid "Content type"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"field_categories:label"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"field_categories:alter:text"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"changed_1:label"
+msgid "Updated"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:"
+"changed_1:alter:text"
+msgid ""
+"{{ changed_1 }}<br>\r\n"
+"<small>({{ changed }})</small>"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:uuid:"
+"alter:text"
+msgid "{{ uuid__value }}"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:nothing:"
+"label"
+msgid "Import"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:fields:nothing:"
+"alter:text"
+msgid ""
+"<a href=\"{{ url('bnf_server.import_redirect', {'uuid': uuid}) }}\" "
+"class=\"button\">\r\n"
+"{{ 'Import to my site'|trans({}, {\"context\": \"BNF\"})}}\r\n"
+"</a>"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:pager:options:"
+"tags:first"
+msgid "« First"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:pager:options:"
+"tags:last"
+msgid "Last »"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:pager:options:"
+"expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:pager:options:"
+"expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:pager:options:"
+"expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:submit_button"
+msgid "Apply"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:text_input_required"
+msgid "Select any filter and click on Apply to see results"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:text_input_required_format"
+msgid "basic"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:exposed_form:"
+"options:bef:general:secondary_label"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:arguments:type:"
+"exception:title"
+msgid "All"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"combine:expose:label"
+msgid "Search"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:type_1:"
+"expose:label"
+msgid "Content type"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id:expose:label"
+msgid "Categories"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:admin_label"
+msgid "Approved by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:expose:label"
+msgid "Approved by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:expose:description"
+msgid "Shows content that has been tagged with a category, by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:group_info:label"
+msgid "Edited by BNR"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:group_info:group_items:1:title"
+msgid "Categorized"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_categories_target_id_1:group_info:group_items:2:title"
+msgid "Uncategorized"
+msgstr ""
+
+msgctxt ""
+"views.view.importable_content:display:default:display_options:filters:"
+"field_tags_target_id:expose:label"
+msgid "Tags"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:page:display_title"
+msgid "Page"
 msgstr ""
 
 msgctxt "views.view.locked_content:label"
