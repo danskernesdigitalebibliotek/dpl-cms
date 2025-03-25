@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfcfd00e9b6ec07a6c967bc2f991a11e",
+    "content-hash": "09094c43ecc69a12c437da7ff61952cc",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.11.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.11.0/dist-2025-11-0-c49f08e6bbbebeab426669b6dfd6d858605bd7f4.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-36-webstatistik-vaerkvisningssiden-klik-pa-udgavespecifik-reservering/dist-ddfsal-36-webstatistik-vaerkvisningssiden-klik-pa-udgavespecifik-reservering.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -20786,6 +20786,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5,
@@ -20800,6 +20801,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
