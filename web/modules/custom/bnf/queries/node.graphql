@@ -1,10 +1,17 @@
 query GetNode($id: ID!) {
+  info {
+    name
+  }
   node(id: $id) {
     ... on NodeInterface {
       id,
-      title
+      title,
+      url
     }
     ... on NodeArticle {
+      canonicalUrl {
+        url
+      }
       paragraphs {
         ... on ParagraphTextBody {
           body {

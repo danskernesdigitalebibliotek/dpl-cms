@@ -30,13 +30,22 @@ class GetNode extends \Spawnia\Sailor\Operation
     {
         return /* @lang GraphQL */ 'query GetNode($id: ID!) {
           __typename
+          info {
+            __typename
+            name
+          }
           node(id: $id) {
             __typename
             ... on NodeInterface {
               id
               title
+              url
             }
             ... on NodeArticle {
+              canonicalUrl {
+                __typename
+                url
+              }
               paragraphs {
                 __typename
                 ... on ParagraphTextBody {
