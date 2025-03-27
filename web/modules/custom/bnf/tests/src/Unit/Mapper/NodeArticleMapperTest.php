@@ -46,7 +46,7 @@ class NodeArticleMapperTest extends EntityMapperTestBase {
       $this->entityManagerProphecy->reveal(),
     );
 
-    $graphqlArticle = NodeArticle::make('123', 'this is the title');
+    $graphqlArticle = NodeArticle::make('123', 'this is the title', 'https://example.com');
 
     $node = $mapper->map($graphqlArticle);
 

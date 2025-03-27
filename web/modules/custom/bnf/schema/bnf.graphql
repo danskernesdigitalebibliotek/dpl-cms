@@ -454,6 +454,7 @@ type NodeArticle implements NodeInterface {
 
   """Titel"""
   title: String!
+  url: String!
 }
 
 """
@@ -517,6 +518,7 @@ type NodeGoArticle implements NodeInterface {
 
   """Titel"""
   title: String!
+  url: String!
 }
 
 """
@@ -574,6 +576,7 @@ type NodeGoCategory implements NodeInterface {
 
   """Titel"""
   title: String!
+  url: String!
 }
 
 """
@@ -613,6 +616,7 @@ type NodeGoPage implements NodeInterface {
 
   """Titel"""
   title: String!
+  url: String!
 }
 
 """Entity type node."""
@@ -643,6 +647,7 @@ interface NodeInterface {
 
   """Titel"""
   title: String!
+  url: String!
 }
 
 """Entity type node."""
@@ -2021,6 +2026,6 @@ type WorkId {
   """The WorkID value"""
   work_id: String
 
-  """The material type (e.g., bog, e-bog)."""
+  """Materialetype (fx bog, film, lydbog)"""
   material_type: String
 }
