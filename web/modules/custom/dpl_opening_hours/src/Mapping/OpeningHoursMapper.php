@@ -51,27 +51,37 @@ class OpeningHoursMapper {
       throw new \InvalidArgumentException("Invalid category title '{$categoryTitle}'");
     }
 
+    $date = $request->getDate();
+    if (!$date) {
+      throw new \InvalidArgumentException('No date provided');
+    }
+
     $repetitionData = $request->getRepetition();
     if (!$repetitionData) {
       throw new \InvalidArgumentException("Missing repetition data");
     }
     $repetition = $this->repetitionMapper->fromRequest($repetitionData);
-    if ($repetition::class == WeeklyRepetition::class && $request->getDate() > $repetition->endDate) {
-      throw new \InvalidArgumentException("Weekly repetition end date '{$repetition->endDate->format('Y-m-d')}' must not be before instance date '{$request->getDate()?->format('Y-m-d')}'");
+    if ($repetition::class == WeeklyRepetition::class && $date > $repetition->endDate) {
+      throw new \InvalidArgumentException("Weekly repetition end date '{$repetition->endDate->format('Y-m-d')}' must not be before instance date '{$date->format('Y-m-d')}'");
     }
+
+    $startDate = \DateTimeImmutable::createFromMutable($date);
+    // Support using 00:00 to mark the end of a day even though it technically
+    // occurs on the next day.
+    $endDate = ($request->getEndTime() == "00:00") ? $startDate->modify('+1 day') : $startDate;
 
     try {
       return new OpeningHoursInstance(
         $request->getId(),
         $branch,
         $categoryTerm,
-        new DateTimeImmutable($request->getDate()?->format('Y-m-d') . " " . $request->getStartTime()),
-        new DateTimeImmutable($request->getDate()?->format('Y-m-d') . " " . $request->getEndTime()),
+        new DateTimeImmutable($startDate->format('Y-m-d') . " " . $request->getStartTime()),
+        new DateTimeImmutable($endDate->format('Y-m-d') . " " . $request->getEndTime()),
         $repetition
       );
     }
     catch (\Exception $e) {
-      throw new \InvalidArgumentException("Unable handle date: {$e->getMessage()}");
+      throw new \InvalidArgumentException("Unable to handle data: {$e->getMessage()}");
     }
   }
 
