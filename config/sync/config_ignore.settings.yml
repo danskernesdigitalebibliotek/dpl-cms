@@ -2,6 +2,7 @@ _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 mode: simple
 ignored_config_entities:
+  - core.extension
   - dpl_dashboard.settings
   - dpl_event.settings
   - dpl_favorites_list.settings
