@@ -542,3 +542,10 @@ function dpl_update_update_10044(): string {
 function dpl_update_update_10045(): string {
   return _dpl_update_install_modules(['bnf']);
 }
+
+/**
+ * Un-auto-ignore core.extension.
+ */
+function dpl_update_update_10046(): string {
+  return _dpl_update_config_auto_unignore_entites(['core.extension']);
+}
