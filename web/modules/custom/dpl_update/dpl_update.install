@@ -24,9 +24,14 @@ use Drupal\locale\StringDatabaseStorage;
  *   The feedback message.
  */
 function _dpl_update_install_modules(array $modules): string {
-  DrupalTyped::service(ModuleInstallerInterface::class, 'module_installer')->install($modules);
+  $success = DrupalTyped::service(ModuleInstallerInterface::class, 'module_installer')->install($modules);
   $modules_string = implode(', ', $modules);
-  return "Enabled modules: {$modules_string}.";
+  if ($success) {
+    return "Enabled modules: {$modules_string}.";
+  }
+  else {
+    return "Failed to enable modules: {$modules_string}.";
+  }
 }
 
 /**
