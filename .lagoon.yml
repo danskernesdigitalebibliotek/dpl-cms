@@ -66,6 +66,8 @@ tasks:
               drush config:set --yes bnf_client.settings base_url https://varnish.$LAGOON_ENVIRONMENT.dpl-bnf.dplplat01.dpl.reload.dk/
             fi
           fi
+
+          drush pm:list
         service: cli
         shell: bash
     - run:
