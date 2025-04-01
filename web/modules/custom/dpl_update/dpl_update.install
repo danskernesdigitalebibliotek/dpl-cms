@@ -148,6 +148,7 @@ function dpl_update_install(): string {
   $messages[] = dpl_update_update_10040();
   $messages[] = dpl_update_update_10042();
   $messages[] = dpl_update_update_10043();
+  $messages[] = dpl_update_update_10047();
 
   return implode('\r\n', $messages);
 }
@@ -554,4 +555,28 @@ function dpl_update_update_10046(): string {
   $config->save();
 
   return _dpl_update_config_auto_unignore_entites(['core.extension']);
+}
+
+/**
+ * Enable bnf_client or bnf_server.
+ */
+function dpl_update_update_10047(): string {
+  // We determine whether we should set up the client or server depending on the
+  // Lagoon environment. The variable is also configured in the docker compose
+  // setup.
+  $project = getenv('LAGOON_PROJECT');
+
+  if (in_array($project, ['bnf', 'bnf-dpl'])) {
+    return _dpl_update_install_modules(['bnf_server']);
+  }
+
+  $result = _dpl_update_install_modules(['bnf_client']);
+
+  // Set default server.
+  \Drupal::configFactory()
+    ->getEditable('bnf_client.settings')
+    ->set('base_url', 'https://delingstjenesten.dk/')
+    ->save();
+
+  return $result;
 }
