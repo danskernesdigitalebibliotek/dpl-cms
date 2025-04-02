@@ -179,7 +179,6 @@ tasks:
       - task dev:cli -- ./dev-scripts/install-site.sh {{ if .SKIP_LANGUAGE_IMPORT }}--skip-language-import{{ end }}
       # Possibly install the BNF site.
       - task dev:bnfcli -- ./dev-scripts/install-site.sh --no-content {{ if .SKIP_LANGUAGE_IMPORT }}--skip-language-import{{ end }}
-      - task dev:bnfcli -- drush --yes pm:enable bnf_server
       - task dev:bnfcli -- drush --yes config:set system.site name BNF
       - task: dev:bnf:set-client
       # Show a one-time login to the local site(s).
@@ -208,7 +207,6 @@ tasks:
         # inside the https container.
         sh: docker compose {{ .DOCKER_COMPOSE_FILES }} exec bnfhttps sh -c 'echo $VIRTUAL_HOST'
     cmds:
-      - task dev:cli -- drush --yes pm:enable bnf_client
       # This should match the hostname matched in web/modules/custom/bnf/src/MangleUrl.php.
       - task dev:cli -- drush config:set --yes bnf_client.settings base_url https://{{ .BNF_HOSTNAME }}/
 
