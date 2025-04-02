@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2025.14.0",
+                "version": "2025.14.1",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.14.0/dist-2025-14-0-5019d001870a0a0fbe84fe5dbec467023621059c.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFSAL-73-tags-on-pages/dist-ddfsal-73-tags-on-pages.zip",
                     "type": "zip"
                 }
             }
@@ -91,7 +91,7 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2025.14.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "2025.14.1",
         "danskernesdigitalebibliotek/dpl-react": "2025.14.0",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
