@@ -56,7 +56,7 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
+  public function importNode(string $uuid, string $endpointUrl, bool $keepUpdated = TRUE, string $nodeType = 'article'): NodeInterface {
     if (!in_array($nodeType, self::ALLOWED_CONTENT_TYPES)) {
       throw new \InvalidArgumentException('The requested content type is not allowed.');
     }
@@ -88,7 +88,11 @@ class BnfImporter {
 
       $node = $this->mapperManager->map($nodeData);
 
-      $node->set(BnfStateEnum::FIELD_NAME, BnfStateEnum::Imported);
+      // Setting the correct state, depending on whether the editor has chosen
+      // to "claim" this content or not. If it is claimed, we do not want it
+      // to be automatically updated in the future.
+      $state = ($keepUpdated) ? BnfStateEnum::Imported : BnfStateEnum::LocallyClaimed;
+      $node->set(BnfStateEnum::FIELD_NAME, $state);
 
       $node->set('status', NodeInterface::NOT_PUBLISHED);
 
