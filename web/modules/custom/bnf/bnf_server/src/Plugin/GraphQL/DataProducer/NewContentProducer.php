@@ -10,7 +10,6 @@ use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\graphql\Plugin\GraphQL\DataProducer\DataProducerPluginBase;
-use Drupal\node\Entity\Node;
 use Safe\DateTime;
 
 /**
@@ -72,8 +71,7 @@ class NewContentProducer extends DataProducerPluginBase implements ContainerFact
     }
 
     $query = $this->nodeStorage->getQuery();
-    $query->condition('created', $since->getTimestamp(), '>')
-      ->condition('status', Node::PUBLISHED);
+    $query->condition('changed', $since->getTimestamp(), '>');
 
     $query->condition(
       $query->orConditionGroup()
@@ -81,7 +79,10 @@ class NewContentProducer extends DataProducerPluginBase implements ContainerFact
         ->condition('field_tags.entity:taxonomy_term.uuid', $termUuid)
     );
 
-    $nids = $query->accessCheck(TRUE)->execute();
+    // We avoid the access check, as we want to also be able to find unpublished
+    // NIDs. This also means it's important that we only expose UUIDs here,
+    // and no actual content.
+    $nids = $query->accessCheck(FALSE)->execute();
 
     /** @var \Drupal\node\Entity\Node[] $nodes */
     $nodes = $this->nodeStorage->loadMultiple(array_keys($nids));
@@ -90,7 +91,7 @@ class NewContentProducer extends DataProducerPluginBase implements ContainerFact
       $result->uuids = array_map(fn ($node) => (string) $node->uuid(), $nodes);
 
       $youngest = array_reduce($nodes, fn ($youngest, $node) => max($youngest, $node->changed->value), 0);
-      $youngest = new DateTime('@' . $youngest);
+      $youngest = new DateTime("@$youngest");
       $result->youngest = $youngest->format(\DateTimeInterface::RFC3339);
     }
     else {
