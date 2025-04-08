@@ -1298,11 +1298,6 @@ msgstr "Adresse"
 
 #: 
 msgctxt "Patron page"
-msgid "DIGITAL LOANS (EREOLEN)"
-msgstr "DIGITALE LÅN (eREOLEN)"
-
-#: 
-msgctxt "Patron page"
 msgid "There is a number of materials without limitation to amounts of loans per month."
 msgstr "Der findes titler uden begrænsning på antal lån pr. måned."
 
@@ -1796,11 +1791,6 @@ msgid "Pick"
 msgstr "Vælg"
 
 #: 
-msgctxt "Library Agency Configuration"
-msgid "My page in ereolen"
-msgstr "Min side på eReolen"
-
-#: 
 msgctxt "Dashboard"
 msgid "Digital"
 msgstr "Digitale"
@@ -2164,16 +2154,6 @@ msgstr "Indstil advarsel vedr. udløbsdato"
 msgctxt "Library Agency Configuration"
 msgid "Insert the number of days before the expiration of the material, when the reminder \"Expires soon\" should appear."
 msgstr "Indsæt antal dage før udløbsdatoen for et lån, hvor label med teksten \"Udløber snart\" skal vises på lånet."
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Ereolen home link"
-msgstr "Link til eReolen"
-
-#: 
-msgctxt "Library Agency Configuration"
-msgid "Home page in ereolen"
-msgstr "eReolen startside"
 
 #: 
 msgid "List of bookmarks"
@@ -2617,11 +2597,6 @@ msgstr "Luk pop-up med detaljevisning af materiale"
 msgctxt "Global"
 msgid "Expires"
 msgstr "Udløber automatisk"
-
-#: 
-msgctxt "Global"
-msgid "Go to eReolen"
-msgstr "Gå til eReolen"
 
 #: 
 msgctxt "Global"
@@ -3113,7 +3088,7 @@ msgstr "Materialetype"
 #: 
 msgctxt "Search Result"
 msgid "Material types specific"
-msgstr "Format"
+msgstr "Materialetype"
 
 #: 
 msgctxt "Search Result"
@@ -3484,11 +3459,6 @@ msgstr "Indstillinger for brugeroprettelse"
 
 #: 
 msgctxt "Library Agency Configuration"
-msgid "Ereolen my page link"
-msgstr "Link til Min side på eReolen"
-
-#: 
-msgctxt "Library Agency Configuration"
 msgid "FBI profiles"
 msgstr "VIP profiler"
 
@@ -3681,11 +3651,6 @@ msgstr "Grundlæggende indstillinger"
 msgctxt "Patron page settings form"
 msgid "Delete patron link"
 msgstr "Url til side om hvordan man bliver slettet som bruger af biblioteket."
-
-#: 
-msgctxt "Patron page settings form"
-msgid "Ereolen always available"
-msgstr "eReolens titler som altid er tilgængelige"
 
 #: 
 msgctxt "Patron page settings form"
@@ -26691,14 +26656,6 @@ msgid "Notice - if series get unpublished, old instance links will no longer wor
 msgstr "Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instance-links ikke virke længere. Hvis du alligevel vælger at bevare publiseringen, vil udløbne instances blive henvist til de relaterede serier."
 
 #: 
-msgid "BNF State"
-msgstr "Delingstjenesten status"
-
-#: 
-msgid "The BNF state of the entity, defining if it was imported, exported, or neither."
-msgstr "Delingstjenestens status definerer om enheden blev importeret, eksporteret eller hverken eller. "
-
-#: 
 msgid "Publish and submit to BNF"
 msgstr "Publicer og send til Delingstjenesten"
 
@@ -28147,11 +28104,6 @@ msgstr "Dit bibliotek har nået grænsen for antal udlån i denne måned"
 
 #: 
 msgctxt "Work Page"
-msgid "You do not have access to eReolen from this library as you are not registered as a resident in the municipality. Contact the library."
-msgstr "Du har ikke adgang til eReolen fra dette bibliotek, da du ikke er registreret som bosiddende i Kommunen. Kontakt biblioteket"
-
-#: 
-msgctxt "Work Page"
 msgid "No country could be found with the given country code"
 msgstr "Der kunne ikke findes et land med den givne landekode"
 
@@ -28481,5 +28433,55 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:page:display_title"
 msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "Patron page"
+msgid "DIGITAL LOANS"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "You do not have access to digital materials from this library as you are not registered as a resident in the municipality. Contact the library."
+msgstr ""
+
+#: 
+msgctxt "system.action.user_add_role_action.bnf_pilot:label"
+msgid "Add the BNF Pilot role to the selected user(s)"
+msgstr ""
+
+#: 
+msgctxt "system.action.user_remove_role_action.bnf_pilot:label"
+msgid "Remove the BNF Pilot role from the selected user(s)"
+msgstr ""
+
+#: 
+msgctxt "user.role.bnf_pilot:label"
+msgid "BNF Pilot"
+msgstr ""
+
+#: 
+msgctxt "BNF"
+msgid "BNF State"
+msgstr ""
+
+#: 
+msgctxt "BNF"
+msgid "The BNF state of the entity, defining if it was imported, exported, or neither."
+msgstr ""
+
+#: 
+msgctxt "BNF"
+msgid "BNF Source"
+msgstr ""
+
+#: 
+msgctxt "BNF"
+msgid "The site name of the source of this content"
+msgstr ""
+
+#: 
+msgctxt "views.view.importable_content:display:default:display_options:fields:bnf_source_name:label"
+msgid "Source"
 msgstr ""
 

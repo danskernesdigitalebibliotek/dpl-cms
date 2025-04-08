@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-03-17 10:30+0100\n"
-"PO-Revision-Date: 2025-03-17 10:30+0100\n"
+"POT-Creation-Date: 2025-04-08 12:00+0200\n"
+"PO-Revision-Date: 2025-04-08 12:00+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7161,5 +7161,21 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:page:display_title"
 msgid "Page"
+msgstr ""
+
+msgctxt "system.action.user_add_role_action.bnf_pilot:label"
+msgid "Add the BNF Pilot role to the selected user(s)"
+msgstr ""
+
+msgctxt "system.action.user_remove_role_action.bnf_pilot:label"
+msgid "Remove the BNF Pilot role from the selected user(s)"
+msgstr ""
+
+msgctxt "user.role.bnf_pilot:label"
+msgid "BNF Pilot"
+msgstr ""
+
+msgctxt "views.view.importable_content:display:default:display_options:fields:bnf_source_name:label"
+msgid "Source"
 msgstr ""
 
