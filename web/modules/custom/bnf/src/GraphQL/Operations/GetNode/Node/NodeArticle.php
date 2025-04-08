@@ -5,6 +5,7 @@ namespace Drupal\bnf\GraphQL\Operations\GetNode\Node;
 /**
  * @property string $id
  * @property string $title
+ * @property bool $status
  * @property \Drupal\bnf\GraphQL\Operations\GetNode\Node\PublicationDate\DateTime $publicationDate
  * @property string $__typename
  * @property string|null $subtitle
@@ -19,6 +20,7 @@ class NodeArticle extends \Spawnia\Sailor\ObjectLike
     /**
      * @param string $id
      * @param string $title
+     * @param bool $status
      * @param \Drupal\bnf\GraphQL\Operations\GetNode\Node\PublicationDate\DateTime $publicationDate
      * @param string|null $subtitle
      * @param bool|null $showOverrideAuthor
@@ -30,6 +32,7 @@ class NodeArticle extends \Spawnia\Sailor\ObjectLike
     public static function make(
         $id,
         $title,
+        $status,
         $publicationDate,
         $subtitle = 'Special default value that allows Sailor to differentiate between explicitly passing null and not passing a value at all.',
         $showOverrideAuthor = 'Special default value that allows Sailor to differentiate between explicitly passing null and not passing a value at all.',
@@ -45,6 +48,9 @@ class NodeArticle extends \Spawnia\Sailor\ObjectLike
         }
         if ($title !== self::UNDEFINED) {
             $instance->title = $title;
+        }
+        if ($status !== self::UNDEFINED) {
+            $instance->status = $status;
         }
         if ($publicationDate !== self::UNDEFINED) {
             $instance->publicationDate = $publicationDate;
@@ -79,6 +85,7 @@ class NodeArticle extends \Spawnia\Sailor\ObjectLike
         return $converters ??= [
             'id' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\IDConverter),
             'title' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
+            'status' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\BooleanConverter),
             'publicationDate' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Drupal\bnf\GraphQL\Operations\GetNode\Node\PublicationDate\DateTime),
             '__typename' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
             'subtitle' => new \Spawnia\Sailor\Convert\NullConverter(new \Spawnia\Sailor\Convert\StringConverter),

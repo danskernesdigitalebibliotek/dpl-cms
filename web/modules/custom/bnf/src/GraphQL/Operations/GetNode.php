@@ -35,6 +35,7 @@ class GetNode extends \Spawnia\Sailor\Operation
             ... on NodeInterface {
               id
               title
+              status
             }
             ... on NodeArticle {
               subtitle

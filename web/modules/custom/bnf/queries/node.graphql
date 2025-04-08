@@ -1,8 +1,9 @@
 query GetNode($id: ID!) {
   node(id: $id) {
     ... on NodeInterface {
-      id,
+      id
       title
+      status
     }
     ... on NodeArticle {
       subtitle

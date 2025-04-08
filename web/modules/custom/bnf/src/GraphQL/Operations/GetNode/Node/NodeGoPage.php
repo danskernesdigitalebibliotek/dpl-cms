@@ -5,6 +5,7 @@ namespace Drupal\bnf\GraphQL\Operations\GetNode\Node;
 /**
  * @property string $id
  * @property string $title
+ * @property bool $status
  * @property string $__typename
  */
 class NodeGoPage extends \Spawnia\Sailor\ObjectLike
@@ -12,8 +13,9 @@ class NodeGoPage extends \Spawnia\Sailor\ObjectLike
     /**
      * @param string $id
      * @param string $title
+     * @param bool $status
      */
-    public static function make($id, $title): self
+    public static function make($id, $title, $status): self
     {
         $instance = new self;
 
@@ -22,6 +24,9 @@ class NodeGoPage extends \Spawnia\Sailor\ObjectLike
         }
         if ($title !== self::UNDEFINED) {
             $instance->title = $title;
+        }
+        if ($status !== self::UNDEFINED) {
+            $instance->status = $status;
         }
         $instance->__typename = 'NodeGoPage';
 
@@ -35,6 +40,7 @@ class NodeGoPage extends \Spawnia\Sailor\ObjectLike
         return $converters ??= [
             'id' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\IDConverter),
             'title' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
+            'status' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\BooleanConverter),
             '__typename' => new \Spawnia\Sailor\Convert\NonNullConverter(new \Spawnia\Sailor\Convert\StringConverter),
         ];
     }
