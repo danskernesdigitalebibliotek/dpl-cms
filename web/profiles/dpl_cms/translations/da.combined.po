@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-04-08 09:22+0200\n"
-"PO-Revision-Date: 2025-04-08 09:22+0200\n"
+"POT-Creation-Date: 2025-04-08 12:21+0200\n"
+"PO-Revision-Date: 2025-04-08 12:21+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2437,7 +2437,7 @@ msgstr "Materialetype"
 
 msgctxt "Search Result"
 msgid "Material types specific"
-msgstr "Format"
+msgstr "Materialetype"
 
 msgctxt "Search Result"
 msgid "Subjects"
@@ -19504,6 +19504,12 @@ msgid "Author & Date"
 msgstr ""
 
 msgctxt ""
+"core.entity_form_display.node.page.default:third_party_settings:field_group:"
+"group_tagging:label"
+msgid "Tagging"
+msgstr ""
+
+msgctxt ""
 "core.entity_form_display.node.page.default:content:field_hero_title:settings:"
 "placeholder"
 msgid "If empty, the regular page title will be shown."
@@ -20623,6 +20629,10 @@ msgstr ""
 
 msgctxt "field.field.node.page.field_subtitle:label"
 msgid "Subtitle"
+msgstr ""
+
+msgctxt "field.field.node.page.field_tags:label"
+msgid "Tags"
 msgstr ""
 
 msgctxt "field.field.node.page.field_teaser_image:label"
