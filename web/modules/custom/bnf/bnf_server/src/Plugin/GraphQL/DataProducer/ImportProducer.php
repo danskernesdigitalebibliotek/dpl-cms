@@ -81,6 +81,7 @@ class ImportProducer extends DataProducerPluginBase implements ContainerFactoryP
    */
   public function resolve(string $uuid, string $callbackUrl): ImportResponse {
     $result = new ImportResponse();
+
     $this->logger->info('Received request to import content with UUID @uuid from @url', [
       '@uuid' => $uuid,
       '@url' => $callbackUrl,

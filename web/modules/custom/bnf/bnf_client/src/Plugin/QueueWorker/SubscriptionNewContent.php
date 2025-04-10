@@ -103,6 +103,7 @@ class SubscriptionNewContent extends QueueWorkerBase implements ContainerFactory
         'categories' => $subscription->getCategories(),
         'tags' => $subscription->getTags(),
       ]);
+      $this->nodeQueue->createItem(['uuid' => $uuid]);
     }
 
     if ($subscription->getLast() !== $newContent['youngest']) {

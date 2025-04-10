@@ -26,15 +26,19 @@ class BnfImporter {
 
   const ALLOWED_CONTENT_TYPES = [
     'article',
+    'page',
+    'go_article',
+    'go_category',
+    'go_page',
   ];
 
   /**
    * Constructor.
    */
   public function __construct(
+    protected EntityTypeManagerInterface $entityTypeManager,
     protected LoggerInterface $logger,
     protected BnfMapperManager $mapperManager,
-    protected EntityTypeManagerInterface $entityTypeManager,
   ) {}
 
   /**
@@ -70,6 +74,19 @@ class BnfImporter {
       }
 
       $node = $this->mapperManager->map($nodeData);
+      $info = $response->data?->info;
+
+      if ($info?->name) {
+        $node->set('bnf_source_name', $info->name);
+      }
+
+      // If no canonical URL is set explicitly, we'll set the path of
+      // the original library.
+      if ($node->hasField('field_canonical_url') && $node->get('field_canonical_url')->isEmpty()) {
+        $node->set('field_canonical_url', [
+          'uri' => $nodeData->url,
+        ]);
+      }
 
       $node->set(BnfStateEnum::FIELD_NAME, BnfStateEnum::Imported);
       $node->set('status', $nodeData->status);

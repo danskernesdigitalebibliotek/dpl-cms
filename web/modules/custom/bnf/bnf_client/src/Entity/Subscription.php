@@ -135,7 +135,7 @@ class Subscription extends ContentEntityBase implements ContentEntityInterface {
   }
 
   /**
-   * Helper function for getting terms.
+   * Getting terms.
    *
    * @return \Drupal\taxonomy\Entity\Term[]
    *   An array of taxonomy term entities.

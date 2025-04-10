@@ -7,8 +7,12 @@ namespace Drupal\bnf\Plugin\bnf_mapper;
 use Drupal\bnf\Attribute\BnfMapper;
 use Drupal\bnf\BnfMapperManager;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\NodeGoArticle;
+use Drupal\bnf\Plugin\Traits\DateTimeTrait;
+use Drupal\bnf\Plugin\Traits\ImageTrait;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\File\FileSystemInterface;
+use Drupal\file\FileRepositoryInterface;
 use Spawnia\Sailor\ObjectLike;
 
 /**
@@ -18,6 +22,8 @@ use Spawnia\Sailor\ObjectLike;
   id: NodeGoArticle::class,
 )]
 class NodeGoArticleMapper extends BnfMapperPluginBase {
+  use ImageTrait;
+  use DateTimeTrait;
 
   /**
    * Entity storage to create node in.
@@ -32,7 +38,9 @@ class NodeGoArticleMapper extends BnfMapperPluginBase {
     string $pluginId,
     array $pluginDefinition,
     protected BnfMapperManager $manager,
-    EntityTypeManagerInterface $entityTypeManager,
+    protected EntityTypeManagerInterface $entityTypeManager,
+    protected FileSystemInterface $fileSystem,
+    protected FileRepositoryInterface $fileRepository,
   ) {
     parent::__construct($configuration, $pluginId, $pluginDefinition);
 
@@ -47,13 +55,35 @@ class NodeGoArticleMapper extends BnfMapperPluginBase {
       throw new \RuntimeException('Wrong class handed to mapper');
     }
 
-    /** @var \Drupal\node\Entity\Node $node */
-    $node = $this->nodeStorage->create([
-      'type' => 'go_article',
-      'uuid' => $object->id,
-    ]);
+    /** @var \Drupal\node\Entity\Node[] $existing */
+    $existing = $this->nodeStorage->loadByProperties(['uuid' => $object->id]);
+
+    if ($existing) {
+      $node = reset($existing);
+    }
+    else {
+      /** @var \Drupal\node\Entity\Node $node */
+      $node = $this->nodeStorage->create([
+        'type' => 'go_article',
+        'uuid' => $object->id,
+      ]);
+    }
 
     $node->set('title', $object->title);
+    $node->set('field_go_article_image', $this->getImageValue($object->goArticleImage));
+    $node->set('field_subtitle', $object->subtitle);
+    $node->set('field_override_author', $object->overrideAuthor);
+    $node->set('field_show_override_author', $object->showOverrideAuthor);
+    $node->set('field_teaser_text', $object->teaserText);
+    $node->set('field_teaser_image', $this->getImageValue($object->teaserImageRequired));
+    $node->set('field_publication_date', $this->getDateTimeValue($object->publicationDate, FALSE));
+
+    // The canonical URL field does not exist yet, but will eventually.
+    if (isset($object->canonicalUrl) && $node->hasField('field_canonical_url')) {
+      $node->set('field_canonical_url', [
+        'uri' => $object->canonicalUrl->url,
+      ]);
+    }
 
     if ($object->paragraphs) {
       $paragraphs = [];

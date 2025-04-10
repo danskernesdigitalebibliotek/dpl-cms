@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Drupal\Tests\bnf\Kernel;
 
+use Drupal\bnf\GraphQL\Operations\GetNode\Node\CanonicalUrl\Link as CanonicalLink;
+use Drupal\bnf\GraphQL\Operations\GetNode\Node\Changed\DateTime as ChangedDateTime;
+use Drupal\bnf\GraphQL\Operations\GetNode\Node\Created\DateTime as CreatedDateTime;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\NodeArticle;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\Paragraphs\Body\Text;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\Paragraphs\ParagraphTextBody;
-use Drupal\bnf\GraphQL\Operations\GetNode\Node\PublicationDate\DateTime;
+use Drupal\bnf\GraphQL\Operations\GetNode\Node\PublicationDate\DateTime as PublicationDateDateTime;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\KernelTests\KernelTestBase;
@@ -59,18 +62,26 @@ class BnfMapperManagerTest extends KernelTestBase {
     $this->container->set('entity_type.manager', $entityManagerProphecy->reveal());
 
     $graphqlNode = NodeArticle::make(
-      '982e0d87-f6b8-4b84-8de8-c8c8bcfef557',
-      'Bibliotekarerne anbefaler læsning til den mørke tid',
-      DateTime::make(1735689661, 'UTC'),
-      'this is the subtitle',
-      TRUE,
-      'this is an author',
-      'this is a teaser text',
-      NULL,
-      [
+      id: '982e0d87-f6b8-4b84-8de8-c8c8bcfef557',
+      title: 'Bibliotekarerne anbefaler læsning til den mørke tid',
+      url: '/anbefalinger-til-mork-tid',
+      status: TRUE,
+      changed: ChangedDateTime::make(timestamp: 1735689661, timezone: 'UTC'),
+      created: CreatedDateTime::make(timestamp: 1735689661, timezone: 'UTC'),
+      publicationDate: PublicationDateDateTime::make(timestamp: 1735689661, timezone: 'UTC'),
+      canonicalUrl: CanonicalLink::make(
+        url: 'https://example.dk'
+      ),
+      overrideAuthor: 'this is an author',
+      showOverrideAuthor: TRUE,
+      subtitle: 'this is the subtitle',
+      teaserImage: NULL,
+      teaserText: 'this is a teaser text',
+      paragraphs: [
         ParagraphTextBody::make(
-          '982e0d87-f6b8-4b84-8de8-c8c8bcfef999',
-          Text::make('This is the text', 'with_format')
+          id: '982e0d87-f6b8-4b84-8de8-c8c8bcfef999',
+          body: Text::make(
+            format: 'with_format', value: 'This is the text')
         ),
       ]
     );
@@ -80,6 +91,9 @@ class BnfMapperManagerTest extends KernelTestBase {
 
     $this->assertSame($node, $nodeProphecy->reveal());
     $nodeProphecy->set('title', 'Bibliotekarerne anbefaler læsning til den mørke tid')->shouldHaveBeenCalled();
+    $nodeProphecy->set('field_canonical_url', [
+      'uri' => 'https://example.dk',
+    ])->shouldHaveBeenCalled();
     $nodeProphecy->set('field_paragraphs', [$paragraphProphecy->reveal()])->shouldHaveBeenCalled();
 
     $paragraphProphecy->set('field_body', [

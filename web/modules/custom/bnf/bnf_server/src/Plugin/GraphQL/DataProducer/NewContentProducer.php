@@ -89,6 +89,7 @@ class NewContentProducer extends DataProducerPluginBase implements ContainerFact
 
       $youngest = array_reduce($nodes, fn ($youngest, $node) => max($youngest, $node->changed->value), 0);
       $youngest = new DateTime("@$youngest");
+
       $result->youngest = $youngest->format(\DateTimeInterface::RFC3339);
     }
     else {
