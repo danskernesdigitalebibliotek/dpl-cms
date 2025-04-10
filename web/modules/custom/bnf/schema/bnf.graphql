@@ -92,6 +92,10 @@ type DplTokens {
 """An email address."""
 scalar Email
 
+type Error {
+  message: String!
+}
+
 """A file object to represent an managed file."""
 type File {
   """Filens navn."""
@@ -165,7 +169,6 @@ type ImportResponse {
 enum ImportStatus {
   success
   failure
-  duplicate
 }
 
 """Generic input for key-value pairs."""
@@ -380,7 +383,8 @@ type Mutation {
 
 type NewContentResponse {
   uuids: [String!]!
-  errors: [Violation]
+  youngest: Time!
+  errors: [Error!]!
 }
 
 """Brug artikler til nyhedspræget indhold med en begrænset levetid."""
@@ -2254,8 +2258,6 @@ scalar UntypedStructuredData
 
 """A string that will have a value of format ±hh:mm"""
 scalar UtcOffset
-
-scalar Violation
 
 """Et WorkID-felt."""
 type WorkId {
