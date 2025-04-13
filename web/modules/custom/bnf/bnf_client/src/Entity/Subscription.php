@@ -50,10 +50,14 @@ class Subscription extends ContentEntityBase implements ContentEntityInterface {
   }
 
   /**
-   * {@inheritDoc}
+   * Static function for getting BaseFieldDefinitions. Used in update hooks.
+   *
+   * See bnf_client_update_10103() as an example.
+   *
+   * @return \Drupal\Core\Field\BaseFieldDefinition[]
+   *   Named array of BaseFieldDefinitions.
    */
-  #[\Override]
-  public static function baseFieldDefinitions(EntityTypeInterface $entity_type): array {
+  public static function getBaseFields(): array {
     $fields = [];
 
     $fields['uuid'] = BaseFieldDefinition::create('uuid')
@@ -132,6 +136,14 @@ class Subscription extends ContentEntityBase implements ContentEntityInterface {
       ->setDescription('The timestamp of the last synced content.');
 
     return $fields;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  #[\Override]
+  public static function baseFieldDefinitions(EntityTypeInterface $entity_type): array {
+    return self::getBaseFields();
   }
 
   /**
