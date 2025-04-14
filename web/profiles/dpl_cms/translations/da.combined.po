@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-04-11 13:22+0200\n"
-"PO-Revision-Date: 2025-04-11 13:22+0200\n"
+"POT-Creation-Date: 2025-04-14 19:37+0200\n"
+"PO-Revision-Date: 2025-04-14 19:37+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -748,6 +748,9 @@ msgstr "For eksempel <em>https://bibliotekernesnationaleformidling.dk/</em>."
 msgctxt "Validation"
 msgid "IsHttps"
 msgstr "IsHttps"
+
+msgid "BNF client library"
+msgstr ""
 
 msgctxt "BNF"
 msgid "my site"
@@ -4785,6 +4788,12 @@ msgstr "Delingstjenesten Server"
 
 msgid "BNF (Bibliotekernes Nationale Formidling) server"
 msgstr "Delingstjenesten (Bibliotekernes Nationale Formidling) server"
+
+msgid "Example content for BNF"
+msgstr ""
+
+msgid "Provides example content for Delingstjenesten"
+msgstr ""
 
 msgid "DPL Lagoon related functionality"
 msgstr ""
