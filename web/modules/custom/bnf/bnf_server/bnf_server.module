@@ -37,12 +37,13 @@ function bnf_server_preprocess_page(array &$variables): void {
     return;
   }
 
-  if ($site_name) {
+  $variables['#cache']['contexts'][] = 'bnf_library_session';
+
+  if ($site_name && !\Drupal::service('router.admin_context')->isAdminRoute()) {
     $variables['page']['content']['logged_notifier'] = [
       '#theme' => 'bnf_server_logged_notifier',
       '#name' => $site_name,
       '#url' => Url::fromRoute('view.importable_content.page'),
-      '#cache' => ['max-age' => 0],
     ];
   }
 

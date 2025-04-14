@@ -38,7 +38,6 @@ class NodeArticleMapperTest extends EntityMapperTestBase {
    * Test article node mapping.
    */
   public function testNodeArticleMapping(): void {
-    $this->storageProphecy->loadByProperties(['uuid' => '123'])->willReturn([]);
     $this->storageProphecy->create([
       'type' => 'article',
       'uuid' => '123',
@@ -54,6 +53,7 @@ class NodeArticleMapperTest extends EntityMapperTestBase {
       $this->entityManagerProphecy->reveal(),
       $this->fileSystemProphecy->reveal(),
       $this->fileRepositoryProphecy->reveal(),
+      $this->loggerProphecy->reveal(),
     );
 
     $graphqlArticle = NodeArticle::make(
