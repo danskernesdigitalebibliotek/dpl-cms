@@ -9,6 +9,7 @@ use Drupal\bnf\GraphQL\Operations\GetNodeTitle;
 use Drupal\bnf\GraphQL\Operations\NewContent;
 use Drupal\bnf\MangleUrl;
 use Drupal\bnf\SailorEndpointConfig;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\node\NodeInterface;
 use Psr\Log\LoggerInterface;
 use Safe\DateTimeImmutable;
@@ -35,6 +36,7 @@ class BnfImporter {
    * Constructor.
    */
   public function __construct(
+    protected EntityTypeManagerInterface $entityTypeManager,
     protected LoggerInterface $logger,
     protected BnfMapperManager $mapperManager,
   ) {}
@@ -59,7 +61,7 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl): NodeInterface {
+  public function importNode(string $uuid, string $endpointUrl): ?NodeInterface {
     $this->setEndpoint($endpointUrl);
 
     try {
@@ -69,6 +71,16 @@ class BnfImporter {
 
       if (!$nodeData) {
         throw new \RuntimeException('Could not fetch content.');
+      }
+
+      // If the node we're looking to import is unpublished, we want to see
+      // if it already exists. If not, we want to ignore it.
+      if (!$nodeData->status) {
+        $nodes = $this->entityTypeManager->getStorage('node')->loadByProperties(['uuid' => $nodeData->id]);
+        if (empty($nodes)) {
+          $this->logger->info('Skipped BNF import of unpublished, unknown node.');
+          return NULL;
+        }
       }
 
       $node = $this->mapperManager->map($nodeData);
@@ -87,8 +99,6 @@ class BnfImporter {
       }
 
       $node->set(BnfStateEnum::FIELD_NAME, BnfStateEnum::Imported);
-
-      $node->set('status', NodeInterface::NOT_PUBLISHED);
 
       $node->save();
     }
@@ -122,7 +132,7 @@ class BnfImporter {
     $this->setEndpoint($endpointUrl);
 
     try {
-      $response = NewContent::execute($uuid, (new DateTimeImmutable('@' . $since))->format(\DateTimeInterface::RFC3339));
+      $response = NewContent::execute($uuid, (new DateTimeImmutable("@$since"))->format(\DateTimeInterface::RFC3339));
       $newContent = $response->errorFree()->data->newContent;
 
       if ($newContent->errors) {
