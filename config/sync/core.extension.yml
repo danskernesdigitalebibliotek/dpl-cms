@@ -6,10 +6,12 @@ module:
   admin_user_language: 0
   administerusersbyrole: 0
   antibot: 0
+  autowire_plugin_trait: 0
   azure_mailer: 0
   basic_auth: 0
   better_exposed_filters: 0
   block: 0
+  bnf: 0
   breakpoint: 0
   ckeditor5: 0
   collation_fixer: 0
@@ -107,16 +109,17 @@ module:
   graphql: 0
   graphql_compose: 0
   graphql_compose_routes: 0
+  graphql_compose_views: 0
   handy_cache_tags: 0
   health_check: 0
   honeypot: 0
+  http_cache_control: 0
   image: 0
   job_scheduler: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
-  jsnlog: 0
   jsonlog: 0
   language: 0
   language_neutral_aliases: 0

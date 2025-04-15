@@ -4,7 +4,6 @@ namespace Drupal\dpl_library_token;
 
 use Drupal\Core\KeyValueStore\KeyValueExpirableFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
-use Drupal\dpl_login\Adgangsplatformen\Config;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Log\LogLevel;
@@ -18,12 +17,6 @@ class LibraryTokenHandler {
   const TOKEN_COLLECTION_KEY = 'dpl_library_token';
   const LOGGER_KEY = 'dpl_library_tokens';
 
-  /**
-   * Configuration for Adgangsplatformen.
-   *
-   * @var \Drupal\dpl_login\Adgangsplatformen\Config
-   */
-  protected $adgangsplatformenConfig;
   /**
    * Key value store.
    *
@@ -46,8 +39,6 @@ class LibraryTokenHandler {
   /**
    * Constructs the LibraryTokenHandler service.
    *
-   * @param \Drupal\dpl_login\Adgangsplatformen\Config $config
-   *   Configuration.
    * @param \Drupal\Core\KeyValueStore\KeyValueExpirableFactoryInterface $keyValueFactory
    *   The key value expire keyValueFactory.
    * @param \GuzzleHttp\ClientInterface $http_client
@@ -56,35 +47,31 @@ class LibraryTokenHandler {
    *   The library token logger channel.
    */
   public function __construct(
-    Config $config,
     KeyValueExpirableFactoryInterface $keyValueFactory,
     ClientInterface $http_client,
     LoggerChannelFactoryInterface $logger,
   ) {
-    $this->adgangsplatformenConfig = $config;
     $this->tokenCollection = $keyValueFactory->get(self::TOKEN_COLLECTION_KEY);
     $this->httpClient = $http_client;
     $this->logger = $logger->get(self::LOGGER_KEY);
   }
 
   /**
-   * Retrieve token from external service and save it.
-   *
-   * @throws \Drupal\dpl_login\Exception\MissingConfigurationException
+   * Retrieve token from external service and save it if necessary.
    */
-  public function retrieveAndStoreToken(bool $force = FALSE): null|bool {
-    // If force is FALSE and if token is already stored.
-    if (!$force && $this->getToken()) {
+  public function retrieveAndStoreToken(
+    string $agencyId,
+    string $clientId,
+    string $clientSecret,
+    string $tokenEndpoint,
+  ): null|bool {
+    // If we already have a valid token then do nothing.
+    if ($this->getToken()) {
       return NULL;
     }
 
     // Try to fetch token, if not possible return false.
-    if (!$token = $this->fetchToken(
-      $this->adgangsplatformenConfig->getAgencyId(),
-      $this->adgangsplatformenConfig->getClientId(),
-      $this->adgangsplatformenConfig->getClientSecret(),
-      $this->adgangsplatformenConfig->getTokenEndpoint(),
-    )) {
+    if (!$token = $this->fetchToken($agencyId, $clientId, $clientSecret, $tokenEndpoint)) {
       return FALSE;
     }
 
@@ -105,15 +92,18 @@ class LibraryTokenHandler {
     $this->tokenCollection
       ->setWithExpire(
         self::LIBRARY_TOKEN_KEY,
-        $token->token,
+        (object) ['token' => $token->token, 'expire' => $token->expire],
         (int) round($token->expire / 2)
       );
   }
 
   /**
    * Get stored library token.
+   *
+   * @return object{'token': string, "expire": int}|null
+   *   The stored token or NULL if no token is stored.
    */
-  public function getToken(): ?string {
+  public function getToken(): ?object {
     return $this->tokenCollection->get(self::LIBRARY_TOKEN_KEY);
   }
 
@@ -151,7 +141,7 @@ class LibraryTokenHandler {
 
       $this->logger->log(LogLevel::INFO, 'New token was fetched.');
     }
-    catch (\Exception $e) {
+    catch (\Throwable $e) {
       $variables = [
         '@message' => 'Could not retrieve library token',
         '@error_message' => $e->getMessage(),

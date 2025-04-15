@@ -23,6 +23,14 @@ use Spawnia\Sailor\Configuration;
  */
 class BnfImporter {
 
+  const ALLOWED_CONTENT_TYPES = [
+    'article',
+    'page',
+    'go_article',
+    'go_category',
+    'go_page',
+  ];
+
   /**
    * Constructor.
    */
@@ -52,7 +60,7 @@ class BnfImporter {
   /**
    * Importing a node from a GraphQL source endpoint.
    */
-  public function importNode(string $uuid, string $endpointUrl, string $nodeType = 'article'): NodeInterface {
+  public function importNode(string $uuid, string $endpointUrl): NodeInterface {
     $nodeStorage = $this->entityTypeManager->getStorage('node');
 
     $existingNodes =
@@ -60,8 +68,8 @@ class BnfImporter {
 
     if (!empty($existingNodes)) {
       $this->logger->error(
-        'Cannot import @type @uuid from @url - Node already exists.',
-        ['@type' => $nodeType, '@uuid' => $uuid, '@url' => $endpointUrl]
+        'Cannot import @uuid from @url - Node already exists.',
+        ['@uuid' => $uuid, '@url' => $endpointUrl]
       );
 
       throw new AlreadyExistsException('Cannot import node - already exists.');
@@ -79,10 +87,21 @@ class BnfImporter {
       }
 
       $node = $this->mapperManager->map($nodeData);
+      $info = $response->data?->info;
+
+      if ($info?->name) {
+        $node->set('bnf_source_name', $info->name);
+      }
+
+      // If no canonical URL is set explicitly, we'll set the path of
+      // the original library.
+      if ($node->hasField('field_canonical_url') && $node->get('field_canonical_url')->isEmpty()) {
+        $node->set('field_canonical_url', [
+          'uri' => $nodeData->url,
+        ]);
+      }
 
       $node->set(BnfStateEnum::FIELD_NAME, BnfStateEnum::Imported);
-
-      $node->set('status', NodeInterface::NOT_PUBLISHED);
 
       $node->save();
     }
