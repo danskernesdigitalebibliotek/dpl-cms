@@ -2,7 +2,6 @@
 
 namespace Drupal\bnf_client\Form;
 
-use Drupal\bnf\Exception\AlreadyExistsException;
 use Drupal\bnf\Services\BnfImporter;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\DependencyInjection\AutowireTrait;
@@ -14,6 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\node\NodeInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 
@@ -130,6 +130,11 @@ class BnfImportConfirmForm implements FormInterface, ContainerInjectionInterface
 
     try {
       $node = $this->bnfImporter->importNode($uuid, $bnfServer);
+
+      if (!($node instanceof NodeInterface)) {
+        throw new \Exception('Importer did not return a node instance.');
+      }
+
       $node->setUnpublished();
       $node->save();
       $form_state->setRedirect('entity.node.edit_form', ['node' => $node->id()]);
@@ -137,12 +142,7 @@ class BnfImportConfirmForm implements FormInterface, ContainerInjectionInterface
     catch (\Exception $e) {
       $this->messenger->addError($this->t('Could not import node from BNF.', [], ['context' => 'BNF']));
 
-      if ($e instanceof AlreadyExistsException) {
-        $this->messenger->addError($this->t('Node has previously been imported from BNF.', [], ['context' => 'BNF']));
-      }
-      else {
-        $this->logger->error('Could not import node from BNF. @message', ['@message' => $e->getMessage()]);
-      }
+      $this->logger->error('Could not import node from BNF. @message', ['@message' => $e->getMessage()]);
     }
 
   }

@@ -74,6 +74,7 @@ abstract class BnfMapperNodePluginBase extends BnfMapperPluginBase {
 
     $node->set('title', $object->title);
     $node->set('status', $object->status ? NodeInterface::PUBLISHED : NodeInterface::NOT_PUBLISHED);
+
     $node->set('field_paragraphs', $this->getParagraphs($object));
     $node->set('field_publication_date', $this->getDateTimeValue($object->publicationDate, FALSE));
 
