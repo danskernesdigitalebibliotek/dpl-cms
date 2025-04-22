@@ -29,6 +29,15 @@ field_settings:
       fields:
         - 'entity:eventseries/field_categories'
         - 'entity:node/field_categories'
+  changed:
+    label: 'Changed (Aggregrated)'
+    property_path: aggregated_field
+    type: date
+    configuration:
+      type: union
+      fields:
+        - 'entity:eventseries/changed'
+        - 'entity:node/changed'
   field_branch:
     label: Branch
     datasource_id: 'entity:node'

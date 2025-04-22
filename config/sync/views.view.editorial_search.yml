@@ -304,6 +304,20 @@ display:
     display_plugin: block
     position: 2
     display_options:
+      sorts:
+        changed:
+          id: changed
+          table: search_api_index_content_events
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments:
         categories:
           id: categories
@@ -409,6 +423,7 @@ display:
         groups:
           1: AND
       defaults:
+        sorts: false
         arguments: false
         filters: false
         filter_groups: false
