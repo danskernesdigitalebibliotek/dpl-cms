@@ -195,6 +195,7 @@ const adgangsplatformenLoginOauthMappings = ({
       ? {
           // This is not a complete patron object but with regards to login/register we only need to ensure an empty blocked
           // status so we leave out all other information.
+          patronId: '123456789',
           blockStatus: [],
         }
       : {};
