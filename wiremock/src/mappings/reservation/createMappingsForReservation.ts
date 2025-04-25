@@ -7,7 +7,7 @@ export default (baseUri?: string, options?: Options) => {
   import("./data/fbi/patron.json").then((json) => {
     wiremock(baseUri, options).mappings.createMapping({
       request: {
-        urlPattern: "/external/agencyid/patrons/patronid/v2",
+        urlPattern: '/external/agencyid/patrons/person/patronid/v2',
       },
       response: {
         jsonBody: json,
