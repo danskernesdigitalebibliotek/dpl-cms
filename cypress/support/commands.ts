@@ -191,20 +191,19 @@ const adgangsplatformenLoginOauthMappings = ({
   });
 
   const patronBody = (userIsAlreadyRegistered: boolean) => {
-    return {
-      authenticateStatus: userIsAlreadyRegistered ? 'VALID' : 'INVALID',
-      patron: {
-        // This is not a complete patron object but with regards to login/register we only need to ensure an empty blocked
-        // status so we leave out all other information.
-        blockStatus: [],
-      },
-    };
+    return userIsAlreadyRegistered
+      ? {
+          // This is not a complete patron object but with regards to login/register we only need to ensure an empty blocked
+          // status so we leave out all other information.
+          blockStatus: [],
+        }
+      : {};
   };
 
   cy.createMapping({
     request: {
       method: 'GET',
-      urlPath: '/external/agencyid/patrons/patronid/v2',
+      urlPath: '/external/agencyid/patrons/person/patronid/v2',
       headers: {
         Authorization: {
           equalTo: `Bearer ${accessToken}`,
