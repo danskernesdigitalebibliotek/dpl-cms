@@ -12,7 +12,7 @@ lib/Model/*.*
 !lib/Model/AddressV2.php
 !lib/Model/AgencyBranch.php
 !lib/Model/BlockStatus.php
-!lib/Model/AuthenticatedPatronV6.php
+!lib/Model/PersonPatronV2.php
 !lib/Model/ModelInterface.php
 !lib/Model/PatronV5.php
 !lib/Model/Period.php
