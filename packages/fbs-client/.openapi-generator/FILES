@@ -6,11 +6,13 @@ lib/Api/ExternalV1AgencyidApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
-lib/Model/AddressV2.php
+lib/Model/AddressV3.php
 lib/Model/AgencyBranch.php
 lib/Model/BlockStatus.php
+lib/Model/EmailAddressV1.php
 lib/Model/ModelInterface.php
 lib/Model/PatronV5.php
 lib/Model/Period.php
 lib/Model/PersonPatronV2.php
+lib/Model/PhoneNumberV1.php
 lib/ObjectSerializer.php
