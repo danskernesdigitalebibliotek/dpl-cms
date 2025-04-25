@@ -205,7 +205,7 @@ function _dpl_login_is_user_associated_with_agency(array $context) : bool {
  */
 function _dpl_login_user_is_registered(AccessToken $token): bool {
   try {
-    _dpl_login_get_patron($token);
+    $patron = _dpl_login_get_patron($token);
   }
   // @todo We expect that an API Exception means that the user is not registered.
   // However this is not a safe assumption, so we have flagged this as TODO for
@@ -218,7 +218,7 @@ function _dpl_login_user_is_registered(AccessToken $token): bool {
     return FALSE;
   }
 
-  return TRUE;
+  return $patron->valid();
 }
 
 /**
