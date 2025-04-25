@@ -8,8 +8,8 @@
  */
 
 use DanskernesDigitaleBibliotek\FBS\ApiException;
-use DanskernesDigitaleBibliotek\FBS\Model\AuthenticatedPatronV6;
 use DanskernesDigitaleBibliotek\FBS\Model\BlockStatus;
+use DanskernesDigitaleBibliotek\FBS\Model\PersonPatronV2;
 use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\dpl_fbs\Patron\BlockedReason;
@@ -80,7 +80,7 @@ function dpl_login_openid_connect_pre_authorize(AccountInterface|FALSE $account,
 
   try {
     $patron = _dpl_login_get_patron($token);
-    $patron_block_status = $patron->getPatron()?->getBlockStatus() ?? [];
+    $patron_block_status = $patron->getBlockStatus() ?? [];
     $patron_blocked_reasons = array_map(function (BlockStatus $block_status) use ($logger) {
       try {
         return BlockedReason::from($block_status->getBlockedReason());
@@ -118,11 +118,11 @@ function dpl_login_openid_connect_pre_authorize(AccountInterface|FALSE $account,
 /**
  * Get patron information from FBS.
  */
-function _dpl_login_get_patron(AccessToken $token): AuthenticatedPatronV6 {
+function _dpl_login_get_patron(AccessToken $token): PersonPatronV2 {
   /** @var \Drupal\dpl_fbs\FbsApiFactory $api_factory */
   $api_factory = \Drupal::service('dpl_fbs.api_factory');
   $api = $api_factory->getPatronApi($token->token);
-  return $api->getPatronInformationByPatronIdV2();
+  return $api->getPersonTypePatronInformationV2();
 }
 
 /**
@@ -205,20 +205,20 @@ function _dpl_login_is_user_associated_with_agency(array $context) : bool {
  */
 function _dpl_login_user_is_registered(AccessToken $token): bool {
   try {
-    $patron = _dpl_login_get_patron($token);
+    _dpl_login_get_patron($token);
   }
   // @todo We expect that an API Exception means that the user is not registered.
   // However this is not a safe assumption, so we have flagged this as TODO for
   // later inspection.
   catch (ApiException $e) {
     $logger = \Drupal::logger('dpl_login');
-    $logger->error('Authorization blocked. Unable to create access token: @message', [
+    $logger->error('Assuming user is not a registered patron: @message', [
       '@message' => $e->getMessage(),
     ]);
     return FALSE;
   }
 
-  return $patron->getAuthenticateStatus() === 'VALID';
+  return TRUE;
 }
 
 /**
