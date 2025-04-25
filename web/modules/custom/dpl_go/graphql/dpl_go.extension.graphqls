@@ -2,3 +2,7 @@
 extend type Query {
   goConfiguration: GoConfiguration
 }
+
+extend type RouteInternal {
+  isGoContent: Boolean
+}
