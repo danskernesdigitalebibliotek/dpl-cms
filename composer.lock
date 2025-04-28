@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc754af4a540975fbe39c841be045edc",
+    "content-hash": "bf36e6b251cab8c96aa514fdd07960f5",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "0.0.0-dev",
+            "version": "2025.17.1-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-2025.17.x/dist-2025-17-x.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-update-fbi-api-2025-17-1/dist-update-fbi-api-2025-17-1.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
