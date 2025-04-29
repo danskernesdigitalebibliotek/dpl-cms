@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2025.15.1-dev",
+                "version": "2025.15.1",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-update-fbi-api-2025-15-1/dist-update-fbi-api-2025-15-1.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.15.1/dist-2025-15-1-b3de5a17dcf350efd205914b52783d71fd03305b.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -92,7 +92,7 @@
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
         "danskernesdigitalebibliotek/dpl-design-system": "2025.15.0",
-        "danskernesdigitalebibliotek/dpl-react": "2025.15.1-dev",
+        "danskernesdigitalebibliotek/dpl-react": "2025.15.1",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
