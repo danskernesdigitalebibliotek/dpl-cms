@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86ae3628f43f29311247fc4a165b609f",
+    "content-hash": "dde634a5d77fe92f42ba5ccc3347e3d6",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,19 +1166,19 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2025.18.0",
+            "version": "2025.18.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.18.0/dist-2025-18-0-dfd3d9f70d849c24d25a713b3b1369331019ad75.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFSAL-1-DDFSAL-4/dist-ddfsal-1-ddfsal-4.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.18.0",
+            "version": "2025.18.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.18.0/dist-2025-18-0-4245be666dcc0486df3ede1db1e0b107e7b6a410.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-1-DDFSAL-4/dist-ddfsal-1-ddfsal-4.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
