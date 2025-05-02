@@ -33,7 +33,6 @@ class DplReactAppsController extends ControllerBase {
     protected BranchRepositoryInterface $branchRepository,
     protected DplInstantLoanSettings $instantLoanSettings,
     protected GeneralSettings $generalSettings,
-    protected $configFactory,
   ) {}
 
   /**
@@ -52,7 +51,6 @@ class DplReactAppsController extends ControllerBase {
       $container->get('dpl_library_agency.branch.repository'),
       $container->get('dpl_instant_loan.settings'),
       $container->get('dpl_library_agency.general_settings'),
-      $container->get('config.factory'),
     );
   }
 
@@ -151,8 +149,8 @@ class DplReactAppsController extends ControllerBase {
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
       'web-search-link-text' => $this->t('Switch to the results for the library content.', [], ['context' => 'Search Result']),
-      'mapp-domain-config' => $this->configFactory->get('dpl_mapp.settings')->get('domain'),
-      'mapp-id-config' => $this->configFactory->get('dpl_mapp.settings')->get('id'),
+      'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -275,8 +273,8 @@ class DplReactAppsController extends ControllerBase {
       'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
       'instant-loan-config' => $this->instantLoanSettings->getConfig(),
       'interest-periods-config' => json_encode($this->generalSettings->getInterestPeriodsConfig()),
-      'mapp-domain-config' => $this->configFactory->get('dpl_mapp.settings')->get('domain'),
-      'mapp-id-config' => $this->configFactory->get('dpl_mapp.settings')->get('id'),
+      'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
 
       // Texts.
       'already-reserved-text' => $this->t('Already reserved', [], ['context' => 'Work Page']),
