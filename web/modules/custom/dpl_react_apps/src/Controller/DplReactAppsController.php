@@ -151,6 +151,8 @@ class DplReactAppsController extends ControllerBase {
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
       'web-search-link-text' => $this->t('Switch to the results for the library content.', [], ['context' => 'Search Result']),
+      'mapp-domain-config' => $this->configFactory->get('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->configFactory->get('dpl_mapp.settings')->get('id'),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
