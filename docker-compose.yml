@@ -164,7 +164,7 @@ services:
       <<: *default-environment
 
   node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.23.4
+    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.23.5
     labels:
       provenance: false
       lagoon.type: node-persistent
