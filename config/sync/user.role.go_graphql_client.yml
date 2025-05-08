@@ -3,6 +3,7 @@ langcode: da
 status: true
 dependencies:
   module:
+    - dpl_go
     - graphql
     - paragraphs
     - view_unpublished
@@ -12,5 +13,6 @@ weight: 10
 is_admin: null
 permissions:
   - 'execute graphql_compose_server arbitrary graphql requests'
+  - 'rewrite go urls'
   - 'view any unpublished content'
   - 'view unpublished paragraphs'
