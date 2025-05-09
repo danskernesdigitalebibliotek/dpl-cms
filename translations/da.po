@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-04-08 12:00+0200\n"
-"PO-Revision-Date: 2025-04-08 12:00+0200\n"
+"POT-Creation-Date: 2025-05-09 10:59+0200\n"
+"PO-Revision-Date: 2025-05-09 10:59+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18249,9 +18249,6 @@ msgstr ""
 msgid "Allow HTML in label"
 msgstr "Allow HTML in label"
 
-msgid "Allows using (XSS-filtered) HTML in the label (e.g. icons)."
-msgstr "Allows using (XSS-filtered) HTML in the label (e.g. icons)."
-
 msgid "Allow HTML in label: @label_as_html"
 msgstr "Allow HTML in label: @label_as_html"
 
@@ -18584,17 +18581,6 @@ msgstr ""
 "\n"
 "List of DPL-Go Unilogin configuration."
 
-msgid "DPL Configuration."
-msgstr "DPL Configuration."
-
-msgid "DPL Configuration"
-msgstr ""
-"\n"
-"DPL Configuration"
-
-msgid "DPL configuration schema extensions for GraphQL Compose."
-msgstr "DPL configuration schema extensions for GraphQL Compose."
-
 msgid "DPL UniLogin"
 msgstr ""
 "\n"
@@ -18834,16 +18820,6 @@ msgstr ""
 "bevare publiseringen, vil udløbne instances blive henvist til de "
 "relaterede serier."
 
-msgid "Publish and submit to BNF"
-msgstr "Publicer og send til Delingstjenesten"
-
-msgid ""
-"Please make sure that all content and media as part of this article is "
-"OK to be used by other libraries."
-msgstr ""
-"Husk at det skal være tilladt, alt indhold i denne artikel må bruges "
-"af andre bibliotker"
-
 msgctxt "BNF"
 msgid "Could not publish node - will not send to BNF."
 msgstr ""
@@ -18857,10 +18833,6 @@ msgstr "Indholdet er blevet publiceret og sendt til Delingstjenesten."
 msgctxt "BNF"
 msgid "Could not export node to BNF."
 msgstr "Det er ikke muligt at eksportere noden til Delingstjenesten."
-
-msgctxt "BNF"
-msgid "Node already has been exported to BNF."
-msgstr "Node er allerede eksporteret til Delingstjenesten."
 
 msgid "BNF Common"
 msgstr "Delingstjenesten - fælles"
@@ -19148,9 +19120,6 @@ msgstr "Konfigurer brugerdefinerede tags."
 
 msgid "Delete Custom tag"
 msgstr "Slet brugerdefineret tag"
-
-msgid "Import \"@label\" to @name"
-msgstr "Importer \"@label\" til @name"
 
 msgctxt "BNF"
 msgid "my site"
@@ -19610,13 +19579,6 @@ msgid "View material"
 msgstr "Se materiale"
 
 msgid ""
-"VideoTool URL example: "
-"https://media.videotool.dk?vn=557_2023103014511477700668916683"
-msgstr ""
-"VideoTool URL eksempel: "
-"https://media.videotool.dk?vn=557_2023103014511477700668916683"
-
-msgid ""
 "For each Drupal role, provide the sets of equivalent external groups, "
 "separated by spaces. If the external group includes spaces, be sure to "
 "wrap the group name in double quotes (e.g. \"content editor\"). A user "
@@ -19682,5 +19644,147 @@ msgstr ""
 
 msgctxt "BNF"
 msgid "The site name of the source of this content"
+msgstr ""
+
+msgid "BNF client library"
+msgstr ""
+
+msgid "Example content for BNF"
+msgstr ""
+
+msgid "Provides example content for Delingstjenesten"
+msgstr ""
+
+msgid ""
+"VideoTool URL examples: "
+"https://media.videotool.dk?vn=557_2023103014511477700668916683 or "
+"https://media.videotool.dk/?vn=557_2023103014511477700668916683"
+msgstr ""
+
+msgid ""
+"Allows using (XSS-filtered) HTML in the label (e.g. icons). Note, that "
+"some elements might not have labels by default, but that can differ "
+"per theme."
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Other materials"
+msgstr "Andre materialer"
+
+msgid "Old token that was not deleted: Token: @token, properties: @props"
+msgstr ""
+
+msgid "New token: Token: @token, properties: @props"
+msgstr ""
+
+msgctxt "BNF"
+msgid "The library"
+msgstr ""
+
+msgid "Is Go site"
+msgstr ""
+
+msgid ""
+"Please return to your library site, and choose \"log in to BNF\", and "
+"try again"
+msgstr ""
+
+msgctxt "BNF"
+msgid "BNF source subscriptions"
+msgstr ""
+
+msgctxt "BNF"
+msgid "The subscriptions that this content originates from."
+msgstr ""
+
+msgctxt "BNF"
+msgid "Keep updated with Delingstjenesten"
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"Keep this content, which originates from Delingstjenesten, up to date "
+"when a new version is available. This will overwrite any custom "
+"changes you may have made."
+msgstr ""
+
+msgctxt "BNF"
+msgid "Publish and submit to BNF"
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"Please make sure that all content and media as part of this article is "
+"OK to be used by other libraries."
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"This content cannot be sent to BNF, as it has either been exported or "
+"imported already."
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"This subscription already exists. <a href=\"@url\">Do you want to "
+"edit/delete it?</a>"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Only import new content"
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"If checked, only upcoming content related to this subscription will be "
+"imported.<br> \"New content\" is defined by content that has been "
+"saved, regardless of publishing date."
+msgstr ""
+
+msgctxt "BNF"
+msgid "Could not create subscription."
+msgstr ""
+
+msgctxt "BNF"
+msgid "Created subscription"
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"Keep this content, which originates from Delingstjenesten, up to date "
+"when a new version is available. This will overwrite any custom "
+"changes you may have made. <strong>You can always change your mind "
+"directly on the content.</strong>"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Label"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Categories"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Tags"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Created"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Last updated content"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Import \"@content_title\" to @site_name"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Toggle subscription of \"@content_title\" on @site_name"
+msgstr ""
+
+msgid "Manage BNF subscriptions"
 msgstr ""
 

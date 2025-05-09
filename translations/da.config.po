@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-04-08 12:00+0200\n"
-"PO-Revision-Date: 2025-04-08 12:00+0200\n"
+"POT-Creation-Date: 2025-05-09 10:59+0200\n"
+"PO-Revision-Date: 2025-05-09 10:59+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7177,5 +7177,138 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:bnf_source_name:label"
 msgid "Source"
+msgstr ""
+
+msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_tagging:label"
+msgid "Tagging"
+msgstr ""
+
+msgctxt "field.field.node.page.field_tags:label"
+msgid "Tags"
+msgstr ""
+
+msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_metatags:label"
+msgid "Meta tags"
+msgstr ""
+
+msgctxt "field.field.node.page.field_canonical_url:label"
+msgid "Canonical url"
+msgstr ""
+
+msgctxt "field.field.node.page.field_canonical_url:description"
+msgid ""
+"Please provide a canonical URL if this content has been duplicated "
+"from other websites. This helps signal to search engines that the "
+"preferred source of this content is the specified canonical URL, "
+"preventing potential duplicate content issues and ensuring proper "
+"attribution to the original source."
+msgstr ""
+
+msgctxt "pathauto.pattern.go_articles:label"
+msgid "GO Articles"
+msgstr ""
+
+msgctxt "pathauto.pattern.go_categories:label"
+msgid "GO Categories"
+msgstr ""
+
+msgctxt "pathauto.pattern.go_pages:label"
+msgid "GO Pages"
+msgstr ""
+
+msgctxt "views.view.go_categories:label"
+msgid "GO Categories"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_title"
+msgid "GraphQL"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:next"
+msgid "Next ›"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:previous"
+msgid "‹ Previous"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:first"
+msgid "« First"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:last"
+msgid "Last »"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_tagging:label"
+msgid "Tagging"
+msgstr ""
+
+msgctxt "core.entity_form_display.node.go_category.default:third_party_settings:field_group:group_tagging:label"
+msgid "Tagging"
+msgstr ""
+
+msgctxt "core.entity_form_display.node.go_page.default:third_party_settings:field_group:group_tagging:label"
+msgid "Tagging"
+msgstr ""
+
+msgctxt "field.field.node.go_article.field_tags:label"
+msgid "Tags"
+msgstr ""
+
+msgctxt "field.field.node.go_category.field_tags:label"
+msgid "Tags"
+msgstr ""
+
+msgctxt "field.field.node.go_page.field_tags:label"
+msgid "Tags"
 msgstr ""
 
