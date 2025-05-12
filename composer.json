@@ -43,7 +43,7 @@
                 "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-77-fix-page-parameters/dist-ddfsal-77-fix-page-parameters.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-41-DDFSAL-42-DDFSAL-43-DDFSAL-44/dist-ddfsal-41-ddfsal-42-ddfsal-43-ddfsal-44.zip",
                     "type": "zip"
                 },
                 "require": {
