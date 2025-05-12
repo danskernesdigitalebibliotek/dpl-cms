@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c924b4a4acbce39c1fbc6658cda2e88f",
+    "content-hash": "bd87d62fbe91944e4329dff3a893ec6a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-77-fix-page-parameters/dist-ddfsal-77-fix-page-parameters.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-45-klik-pa-recommender/dist-ddfsal-45-klik-pa-recommender.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
