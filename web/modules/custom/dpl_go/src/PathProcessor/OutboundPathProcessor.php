@@ -62,11 +62,11 @@ class OutboundPathProcessor implements OutboundPathProcessorInterface {
     if (
       count($pathParts) == 3 &&
       $pathParts[1] == 'node' &&
-      // is_numeric would seem an more obvious choice, but we're really not
+      // is_numeric would seem a more obvious choice, but we're really not
       // interested in supporting "1337e0" or " 24  ".
       preg_match('/^\d+$/', $pathParts[2])
     ) {
-      // Tell caching that this link depends on wether we're on the go site or
+      // Tell caching that this link depends on whether we're on the go site or
       // not.
       if ($bubbleableMetadata) {
         $bubbleableMetadata->addCacheContexts(['dpl_is_go']);

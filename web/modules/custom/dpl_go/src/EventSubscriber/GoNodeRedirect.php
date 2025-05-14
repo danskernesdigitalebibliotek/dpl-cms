@@ -25,6 +25,7 @@ class GoNodeRedirect implements EventSubscriberInterface {
     return [
       'kernel.request' => [
         ['redirectGoContent'],
+        ['redirectGoPreview'],
       ],
     ];
   }
@@ -48,6 +49,39 @@ class GoNodeRedirect implements EventSubscriberInterface {
       $url = Url::fromRoute('entity.node.canonical', ['node' => $node->id()])->toString();
 
       $response = new RedirectResponse($this->goSite->getGoBaseUrl() . $url);
+      $event->setResponse($response);
+    }
+  }
+
+  /**
+   * Redirect GO Preview to the external Go app.
+   *
+   * Look up the content and redirect the preview to the external Go app if it
+   * is a GO node. We also make sure to remove the destination query parameter
+   * to avoid being redirected back to /admin/content.
+   *
+   * @param \Symfony\Component\HttpKernel\Event\RequestEvent $event
+   *   The response event.
+   */
+  public function redirectGoPreview(RequestEvent $event): void {
+    $request = $event->getRequest();
+
+    if ($request->attributes->get('_route') !== 'entity.node.preview') {
+      return;
+    }
+
+    $node = $request->attributes->get('node_preview');
+
+    if ($node instanceof NodeInterface && $this->goSite->isGoNode($node)) {
+      $url = $this->goSite->getGoBaseUrl() . $request->getPathInfo();
+
+      // Unset the destination query parameter to avoid being redirected
+      // back to /admin/content.
+      $queryParams = $request->query->all();
+      unset($queryParams['destination']);
+      $request->query->replace($queryParams);
+
+      $response = new RedirectResponse($url);
       $event->setResponse($response);
     }
   }
