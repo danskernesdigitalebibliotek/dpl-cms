@@ -13,6 +13,7 @@ dependencies:
     - node.type.go_category
   module:
     - datetime
+    - graphql_compose_preview
     - user
 id: node.go_category.default
 targetEntityType: node
@@ -26,7 +27,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_category_menu_title:
     type: string
@@ -34,7 +35,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_publication_date:
     type: datetime_default
@@ -43,10 +44,23 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   links:
     settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  preview_token:
+    type: preview_token_iframe
+    label: above
+    settings:
+      iframe_url: 'GRAPHQL_COMPOSE_PREVIEW_URL/preview/[node:preview:uuid]/[node:preview:token]'
+      class: 'button button--small'
+      width: 100%
+      height: '500'
+      allow: 'fullscreen autoplay'
+      transparency: '1'
     third_party_settings: {  }
     weight: 0
     region: content
