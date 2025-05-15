@@ -81,7 +81,6 @@ class GoNodeRedirect implements EventSubscriberInterface {
       unset($query_params['destination']);
       $request->query->replace($query_params);
 
-
       $preview_token = $node->get('preview_token')->value;
 
       $response = new RedirectResponse($url . '?token=' . $preview_token);
