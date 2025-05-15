@@ -77,11 +77,14 @@ class GoNodeRedirect implements EventSubscriberInterface {
 
       // Unset the destination query parameter to avoid being redirected
       // back to /admin/content.
-      $queryParams = $request->query->all();
-      unset($queryParams['destination']);
-      $request->query->replace($queryParams);
+      $query_params = $request->query->all();
+      unset($query_params['destination']);
+      $request->query->replace($query_params);
 
-      $response = new RedirectResponse($url);
+
+      $preview_token = $node->get('preview_token')->value;
+
+      $response = new RedirectResponse($url . '?token=' . $preview_token);
       $event->setResponse($response);
     }
   }

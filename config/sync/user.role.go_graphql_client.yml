@@ -5,6 +5,7 @@ dependencies:
   module:
     - dpl_go
     - graphql
+    - graphql_compose_preview
     - paragraphs
     - view_unpublished
 id: go_graphql_client
@@ -15,4 +16,5 @@ permissions:
   - 'execute graphql_compose_server arbitrary graphql requests'
   - 'rewrite go urls'
   - 'view any unpublished content'
+  - 'view graphql_compose_preview entity'
   - 'view unpublished paragraphs'
