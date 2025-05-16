@@ -13,7 +13,7 @@ tasks:
         name: Wipe cache before build
         command: |
           if [[ -d ".next/cache" ]]; then
-            rm -rf .next/cache
+            rm -rfd .next/cache
           fi
         service: node
   post-rollout:
