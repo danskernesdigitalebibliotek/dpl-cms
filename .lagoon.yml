@@ -8,6 +8,14 @@ environment_variables:
   git_sha: 'true'
 
 tasks:
+  pre-rollout:
+    - run:
+        name: Wipe cache before build
+        command: |
+          if [[ -d ".next/cache" ]]; then
+            rm -rf .next/cache
+          fi
+        service: node
   post-rollout:
     - run:
         name: Create new GH deployment
