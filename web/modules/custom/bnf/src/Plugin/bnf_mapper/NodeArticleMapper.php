@@ -6,6 +6,7 @@ namespace Drupal\bnf\Plugin\bnf_mapper;
 
 use Drupal\bnf\Attribute\BnfMapper;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\NodeArticle;
+use Drupal\node\NodeInterface;
 use Spawnia\Sailor\ObjectLike;
 
 /**
@@ -19,7 +20,7 @@ class NodeArticleMapper extends BnfMapperNodePluginBase {
   /**
    * {@inheritdoc}
    */
-  public function map(ObjectLike $object): mixed {
+  public function map(ObjectLike $object): NodeInterface {
     if (!$object instanceof NodeArticle) {
       throw new \RuntimeException('Wrong class handed to mapper');
     }
@@ -27,8 +28,7 @@ class NodeArticleMapper extends BnfMapperNodePluginBase {
     $node = $this->getNode($object, 'article');
 
     $node->set('field_subtitle', $object->subtitle);
-    $node->set('field_override_author', $object->overrideAuthor);
-    $node->set('field_show_override_author', $object->showOverrideAuthor);
+
     $node->set('field_teaser_text', $object->teaserText);
     $node->set('field_teaser_image', $this->getImageValue($object->teaserImage));
 
