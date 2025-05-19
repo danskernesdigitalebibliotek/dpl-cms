@@ -296,14 +296,7 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@*":
-  version "18.18.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.18.9.tgz#5527ea1832db3bba8eb8023ce8497b7d3f299592"
-  integrity sha512-0f5klcuImLnG4Qreu9hPj/rEfFq6YRc5n2mAjSsH+ec/mJL+3voBH0+8T7o8RpFjH7ovc+TRsL/c7OYIQsPTfQ==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^20":
+"@types/node@*", "@types/node@^20":
   version "20.17.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.12.tgz#ee3b7d25a522fd95608c1b3f02921c97b93fcbd6"
   integrity sha512-vo/wmBgMIiEA23A/knMfn/cf37VnuF52nZh5ZoW0GWt4e4sxNquibrMRJ7UQsA06+MBx9r/H1jsI9grYjQCQlw==
@@ -1149,15 +1142,15 @@ chrome-launcher@^0.14.0:
     is-wsl "^2.2.0"
     lighthouse-logger "^1.0.0"
 
-chrome-launcher@^0.15.1:
-  version "0.15.1"
-  resolved "https://registry.yarnpkg.com/chrome-launcher/-/chrome-launcher-0.15.1.tgz#0a0208037063641e2b3613b7e42b0fcb3fa2d399"
-  integrity sha512-UugC8u59/w2AyX5sHLZUHoxBAiSiunUhZa3zZwMH6zPVis0C3dDKiRWyUGIo14tTbZHGVviWxv3PQWZ7taZ4fg==
+chrome-launcher@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/chrome-launcher/-/chrome-launcher-1.2.0.tgz#bba61f558f450aef70bbda1f011c83c31c129302"
+  integrity sha512-JbuGuBNss258bvGil7FT4HKdC3SC2K7UAEUqiPy3ACS3Yxo3hAW6bvFpCu2HsIJLgTqxgEX6BkujvzZfLpUD0Q==
   dependencies:
     "@types/node" "*"
     escape-string-regexp "^4.0.0"
     is-wsl "^2.2.0"
-    lighthouse-logger "^1.0.0"
+    lighthouse-logger "^2.0.1"
 
 ci-info@^2.0.0:
   version "2.0.0"
@@ -3677,6 +3670,14 @@ lighthouse-logger@^1.0.0, lighthouse-logger@^1.2.0:
     debug "^2.6.9"
     marky "^1.2.2"
 
+lighthouse-logger@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/lighthouse-logger/-/lighthouse-logger-2.0.1.tgz#48895f639b61cca89346bb6f47f7403a3895fa02"
+  integrity sha512-ioBrW3s2i97noEmnXxmUq7cjIcVRjT5HBpAYy8zE11CxU9HqlWHHeRxfeN1tn8F7OEMVPIC9x1f8t3Z7US9ehQ==
+  dependencies:
+    debug "^2.6.9"
+    marky "^1.2.2"
+
 lighthouse-stack-packs@^1.5.0:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.12.1.tgz#1dbebf795d50e6a96454ece7754bd4aa5be546ae"
@@ -5762,11 +5763,6 @@ unbzip2-stream@^1.3.3:
   dependencies:
     buffer "^5.2.1"
     through "^2.3.8"
-
-undici-types@~5.26.4:
-  version "5.26.5"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
-  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 undici-types@~6.19.2:
   version "6.19.8"
