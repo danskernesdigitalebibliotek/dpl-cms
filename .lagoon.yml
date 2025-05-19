@@ -174,7 +174,7 @@ environments:
         schedule: "M * * * *"
         command: drush err:purge paragraph
         service: cli
-  pr-1757:
+  pr-2418:
     routes:
       - varnish:
           - "cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
