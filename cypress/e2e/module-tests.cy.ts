@@ -30,6 +30,7 @@ describe('Testing contrib modules', () => {
       .first()
       .click({ force: true });
     cy.get('@firstContent').contains('Break lock').click({ force: true });
+
     cy.contains('Confirm break lock').click();
     cy.visit('/admin/content');
 
