@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f175feef7d1fe669bd7cb7785b95a4d7",
+    "content-hash": "efd34d84dd849721025e9f01d9bc5771",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -7926,26 +7926,26 @@
         },
         {
             "name": "drupal/simple_menu_permissions",
-            "version": "2.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_menu_permissions.git",
-                "reference": "2.0.0"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_menu_permissions-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "75796f4cd15a4661c146904796c738de8b4c5918"
+                "url": "https://ftp.drupal.org/files/projects/simple_menu_permissions-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "82d588cfd86a42e45159ac16069a403bc7a76e88"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1675522195",
+                    "version": "3.0.1",
+                    "datestamp": "1747203891",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7958,7 +7958,7 @@
             ],
             "authors": [
                 {
-                    "name": "Ewout Goosmann",
+                    "name": "ewout goosmann",
                     "homepage": "https://www.drupal.org/user/3138239"
                 }
             ],
@@ -21192,6 +21192,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
