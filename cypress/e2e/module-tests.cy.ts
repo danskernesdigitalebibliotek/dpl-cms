@@ -1,4 +1,22 @@
 describe('Testing contrib modules', () => {
+  it('facets', () => {
+    cy.drupalLogin('/articles');
+
+    // Get initial count of items
+    cy.get('.content-list__item').then(($items) => {
+      const originalCount = $items.length;
+
+      // Select second option in the dropdown (index 1)
+      cy.get('.facets-dropdown').first().select(1);
+
+      // Wait for page to update, then compare item count
+      cy.get('.content-list__item').should(
+        'have.length.lessThan',
+        originalCount,
+      );
+    });
+  });
+
   it('content_lock', () => {
     cy.drupalLogin('/admin/content');
 
