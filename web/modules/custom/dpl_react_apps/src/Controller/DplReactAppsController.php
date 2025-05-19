@@ -149,6 +149,8 @@ class DplReactAppsController extends ControllerBase {
       'showing-results-for-text' => $this->t('Showing results for "@query"', [], ['context' => 'Search Result']),
       'showing-text' => $this->t('Showing', [], ['context' => 'Search Result']),
       'web-search-link-text' => $this->t('Switch to the results for the library content.', [], ['context' => 'Search Result']),
+      'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -232,6 +234,8 @@ class DplReactAppsController extends ControllerBase {
       'advanced-search-filter-location-description-text' => $this->t('Add a comma separated list for multiple locations', [], ['context' => 'advanced search']),
       'advanced-search-filter-sublocation-text' => $this->t('sublocation', [], ['context' => 'advanced search']),
       'advanced-search-filter-sublocation-description-text' => $this->t('Add a comma separated list for multiple sublocations', [], ['context' => 'advanced search']),
+      'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -271,6 +275,8 @@ class DplReactAppsController extends ControllerBase {
       'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
       'instant-loan-config' => $this->instantLoanSettings->getConfig(),
       'interest-periods-config' => json_encode($this->generalSettings->getInterestPeriodsConfig()),
+      'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
+      'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
 
       // Texts.
       'already-reserved-text' => $this->t('Already reserved', [], ['context' => 'Work Page']),
@@ -369,6 +375,12 @@ class DplReactAppsController extends ControllerBase {
           $this->t('We have @count copies of the material in stock', [], ['context' => 'Work Page']),
         ],
       ],
+      'material-grid-related-title-text' => $this->t('Other materials', [], ['context' => 'Work Page']),
+      'material-grid-related-recommendations-data-label-text' => $this->t('Recommendations', [], ['context' => 'Work Page']),
+      'material-grid-related-series-data-label-text' => $this->t('In same series', [], ['context' => 'Work Page']),
+      'material-grid-related-author-data-label-text' => $this->t('By same author', [], ['context' => 'Work Page']),
+      'material-grid-related-inline-filters-aria-label-text' => $this->t('Filter displayed materials', [], ['context' => 'Work Page']),
+      'material-grid-related-select-aria-label-text' => $this->t('Select material filter', [], ['context' => 'Work Page']),
       'missing-data-text' => $this->t('Missing data', [], ['context' => 'Work Page']),
       'modal-reservation-form-email-header-description-text' => $this->t('If you want to receive notifications by e-mail, you can enter or change the desired e-mail here.', [], ['context' => 'Work Page']),
       'modal-reservation-form-email-header-title-text' => $this->t('Change email', [], ['context' => 'Work Page']),

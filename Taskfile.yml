@@ -5,6 +5,8 @@ version: "3"
 
 dotenv: [".task.env"]
 
+interval: 500ms
+
 includes:
   translations: ./task/Taskfile.translations.yml
   lagoon: ./task/Taskfile.lagoon.yml
@@ -71,6 +73,25 @@ tasks:
     preconditions:
       - sh: "[ ! -z {{.CR_PAT}} ]"
         msg: "Env variable CR_PAT is not set or empty."
+
+  dev:watch:
+    summary: Watch source for changes and clear cache.
+    watch: true
+    sources:
+      - 'web/modules/**/*'
+      - 'web/themes/**/*'
+    cmds:
+      - task dev:cli -- drush cache-rebuild
+
+  dev:watch:bnf:
+    summary: Watch source for changes and clear cache, including BNF.
+    watch: true
+    sources:
+      - 'web/modules/**/*'
+      - 'web/themes/**/*'
+    cmds:
+      - task dev:cli -- drush cache-rebuild
+      - task dev:bnfcli -- drush cache-rebuild
 
   dev:bnf:enable:
     summary: Set env up for BNF development.
@@ -318,9 +339,10 @@ tasks:
           docker run --rm \
           -v ${PWD}:/local \
           openapitools/openapi-generator-cli:v7.1.0 generate \
-          -i https://raw.githubusercontent.com/danskernesdigitalebibliotek/dpl-react/main/src/core/fbs/fbs-adapter.yaml \
+          -i https://raw.githubusercontent.com/danskernesdigitalebibliotek/dpl-react/refs/heads/main/src/core/fbs/fbs-adapter.yaml \
           -g php -o /local/packages/fbs-client \
-          -c /local/.openapi-generator/fbs.config.yaml
+          -c /local/.openapi-generator/fbs.config.yaml \
+          --skip-validate-spec
 
   dev:codegen:dpl-cms:
     desc: Generate CMS API package from OpenAPI specification

@@ -40,14 +40,20 @@ trait ImageTrait {
 
     $properties = [
       'bundle' => 'image',
-      'name' => $file->getFilename(),
+      'name' => $image->name ?? $file->getFilename(),
       'status' => TRUE,
-      'field_byline' => $image->byline ?? '',
       'field_media_image' => [
         'target_id' => $file->id(),
-        'alt' => $alt ?? '',
       ],
     ];
+
+    if (!empty($image->byline)) {
+      $properties['field_byline'] = $image->byline;
+    }
+
+    if (!empty($alt)) {
+      $properties['field_media_image']['alt'] = $alt;
+    }
 
     // Look up existing media - if it exists, referer to that, otherwise create.
     $medias = $mediaStorage->loadByProperties($properties);
