@@ -4632,26 +4632,26 @@
         },
         {
             "name": "drupal/flat_taxonomy",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/flat_taxonomy.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flat_taxonomy-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "b85d1bde4d8de589cd0dfc77b846e66f0906a0ce"
+                "url": "https://ftp.drupal.org/files/projects/flat_taxonomy-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "4ad5df623060318735ff5b4a375aa89e967d31d8"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1688494925",
+                    "version": "2.0.1",
+                    "datestamp": "1747295470",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -21192,6 +21192,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
