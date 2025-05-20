@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-05-09 10:59+0200\n"
-"PO-Revision-Date: 2025-05-09 10:59+0200\n"
+"POT-Creation-Date: 2025-05-20 14:04+0200\n"
+"PO-Revision-Date: 2025-05-20 14:04+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19593,12 +19593,14 @@ msgid "Find content for @name"
 msgstr ""
 
 msgid "BNF cannot send you to your library"
-msgstr ""
+msgstr "Delingstjenesten kan ikke sende dig til dit bibliotek"
 
 msgid ""
 "It would appear that you have not logged in to BNF through your origin "
 "library."
 msgstr ""
+"Det ser ud til, at du ikke er logget ind på Delingstjenesten via dit "
+"bibliotek"
 
 msgid "To import this content, you can either:"
 msgstr ""
@@ -19647,10 +19649,10 @@ msgid "The site name of the source of this content"
 msgstr ""
 
 msgid "BNF client library"
-msgstr ""
+msgstr "Delingstjenesten klient bibliotek"
 
 msgid "Example content for BNF"
-msgstr ""
+msgstr "Eksempel på indhold fra Delingstjenesten"
 
 msgid "Provides example content for Delingstjenesten"
 msgstr ""
@@ -19679,7 +19681,7 @@ msgstr ""
 
 msgctxt "BNF"
 msgid "The library"
-msgstr ""
+msgstr "biblioteket"
 
 msgid "Is Go site"
 msgstr ""
@@ -19688,10 +19690,12 @@ msgid ""
 "Please return to your library site, and choose \"log in to BNF\", and "
 "try again"
 msgstr ""
+"Gå tilbage til dit bibliotekssite og vælg \"Login i "
+"Delingstjenesten\" i dropdown-menuen \"Indhold\", og prøv igen"
 
 msgctxt "BNF"
 msgid "BNF source subscriptions"
-msgstr ""
+msgstr "Delingstjenesten kilde abonnement"
 
 msgctxt "BNF"
 msgid "The subscriptions that this content originates from."
@@ -19699,7 +19703,7 @@ msgstr ""
 
 msgctxt "BNF"
 msgid "Keep updated with Delingstjenesten"
-msgstr ""
+msgstr "Hold opdateret fra Delingstjenesten"
 
 msgctxt "BNF"
 msgid ""
@@ -19725,12 +19729,6 @@ msgid ""
 msgstr ""
 
 msgctxt "BNF"
-msgid ""
-"This subscription already exists. <a href=\"@url\">Do you want to "
-"edit/delete it?</a>"
-msgstr ""
-
-msgctxt "BNF"
 msgid "Only import new content"
 msgstr ""
 
@@ -19739,14 +19737,6 @@ msgid ""
 "If checked, only upcoming content related to this subscription will be "
 "imported.<br> \"New content\" is defined by content that has been "
 "saved, regardless of publishing date."
-msgstr ""
-
-msgctxt "BNF"
-msgid "Could not create subscription."
-msgstr ""
-
-msgctxt "BNF"
-msgid "Created subscription"
 msgstr ""
 
 msgctxt "BNF"
@@ -19786,5 +19776,58 @@ msgid "Toggle subscription of \"@content_title\" on @site_name"
 msgstr ""
 
 msgid "Manage BNF subscriptions"
+msgstr ""
+
+msgctxt "BNF"
+msgid "Refresh all subscriptions?"
+msgstr ""
+
+msgctxt "BNF"
+msgid ""
+"This will check for new updates on subscriptions and content, and "
+"update if necessary."
+msgstr ""
+
+msgid "Refresh subscriptions"
+msgstr ""
+
+msgid "Sync content from Delingstjenesten"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Recommendations"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "In same series"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "By same author"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Filter displayed materials"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Select material filter"
+msgstr ""
+
+msgid "New subscription"
+msgstr ""
+
+msgctxt "BNF"
+msgid "BNF source updated"
+msgstr ""
+
+msgctxt "BNF"
+msgid "The datetime of when this content was last updated at the source."
+msgstr ""
+
+msgid "GO token preview iframe"
+msgstr ""
+
+msgid "Submitted by %author on %date"
 msgstr ""
 
