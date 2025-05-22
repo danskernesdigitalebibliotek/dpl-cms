@@ -26295,58 +26295,6 @@ msgid "External"
 msgstr "Eksterne"
 
 #: 
-msgctxt "Unilogin configuration"
-msgid "Unilogin configuration"
-msgstr "Unilogin configuration"
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "UniLogin API endpoint URL."
-msgstr "UniLogin API endpoint URL."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "The UniLogin API endpoint url."
-msgstr "The UniLogin API endpoint url."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "UniLogin API wellknown endpoint URL"
-msgstr "Kendt Unilogin API slutpunkturl"
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "The UniLogin API wellknown endpoint url."
-msgstr "The UniLogin API wellknown endpoint url."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "UniLogin API client ID."
-msgstr "UniLogin API client ID."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "The UniLogin API client ID."
-msgstr "\n"
-"The UniLogin API client ID."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "UniLogin API client secret."
-msgstr "UniLogin API client secret."
-
-#: 
-msgctxt "Unilogin configuration"
-msgid "The UniLogin API client secret."
-msgstr "\n"
-"The UniLogin API client secret."
-
-#: 
-msgid "List of DPL-Go Unilogin configuration."
-msgstr "\n"
-"List of DPL-Go Unilogin configuration."
-
-#: 
 msgid "DPL UniLogin"
 msgstr "\n"
 "DPL UniLogin"
@@ -27207,7 +27155,7 @@ msgstr "Forfatter og Dato"
 #: 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
-msgstr ""
+msgstr "Teaserbillede"
 
 #: 
 msgctxt "core.entity_form_display.node.go_article.default:content:field_paragraphs:settings:title"
@@ -28163,7 +28111,7 @@ msgstr "Nav spot"
 
 #: 
 msgid "Find content for @name"
-msgstr ""
+msgstr "Find indhold til @name"
 
 #: 
 msgid "BNF cannot send you to your library"
@@ -28175,19 +28123,19 @@ msgstr "Det ser ud til, at du ikke er logget ind på Delingstjenesten via dit bi
 
 #: 
 msgid "To import this content, you can either:"
-msgstr ""
+msgstr "For at hente dette indhold kan du enten:"
 
 #: 
 msgid "Go back to your library site, and choose \"log in to BNF\", and try again"
-msgstr ""
+msgstr "Prøv igen: Gå tilbage til dit site og vælg \"Login i Delingstjenesten\" i dropdown-menu \"Indhold\"."
 
 #: 
 msgid "Or:"
-msgstr ""
+msgstr "Eller: "
 
 #: 
 msgid "Go back to your library site, and press import at:"
-msgstr ""
+msgstr "Gå tilbage til dit site og tryk på hent:"
 
 #: 
 msgid "Allowed if bnf_server is enabled."
@@ -28196,17 +28144,17 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:label"
 msgid "Importable content"
-msgstr ""
+msgstr "Indhold der kan hentes til dit site"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:title"
 msgid "Importable content"
-msgstr ""
+msgstr "Indhold der kan hentes"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_subtitle:alter:text"
@@ -28216,7 +28164,7 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:title:alter:text"
@@ -28232,22 +28180,22 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:type:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:label"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:alter:text"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:alter:text"
@@ -28263,7 +28211,7 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:label"
 msgid "Import"
-msgstr ""
+msgstr "Hent"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:alter:text"
@@ -28275,17 +28223,17 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Først"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
@@ -28300,32 +28248,32 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filter og klik på \"Anvend\" for at se resultater"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required_format"
@@ -28335,7 +28283,7 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Avancerede indstillinger"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:arguments:type:exception:title"
@@ -28345,57 +28293,57 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:type_1:expose:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id:expose:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:admin_label"
 msgid "Approved by BNR"
-msgstr ""
+msgstr "Godkendt af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:label"
 msgid "Approved by BNR"
-msgstr ""
+msgstr "Godkendt af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:description"
 msgid "Shows content that has been tagged with a category, by BNR"
-msgstr ""
+msgstr "Viser indhold, der er blevet tildelt en kategori af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:label"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:1:title"
 msgid "Categorized"
-msgstr ""
+msgstr "Kategoriseret"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:2:title"
 msgid "Uncategorized"
-msgstr ""
+msgstr "Ikke kategoriseret"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "views.view.importable_content:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: 
 msgctxt "Patron page"
@@ -28430,17 +28378,17 @@ msgstr ""
 #: 
 msgctxt "BNF"
 msgid "The BNF state of the entity, defining if it was imported, exported, or neither."
-msgstr ""
+msgstr "Delingstjeneste-status der angiver om enheden er blevet importeret, eksporteret eller ingen af delene."
 
 #: 
 msgctxt "BNF"
 msgid "BNF Source"
-msgstr ""
+msgstr "Delingstjeneste kilde"
 
 #: 
 msgctxt "BNF"
 msgid "The site name of the source of this content"
-msgstr ""
+msgstr "Navnet på sitet, som dette indhold stammer fra"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:bnf_source_name:label"
@@ -28450,22 +28398,22 @@ msgstr "Kilde"
 #: 
 msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "field.field.node.page.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_metatags:label"
 msgid "Meta tags"
-msgstr ""
+msgstr "Meta tags"
 
 #: 
 msgctxt "field.field.node.page.field_canonical_url:label"
 msgid "Canonical url"
-msgstr ""
+msgstr "Canonical URL"
 
 #: 
 msgctxt "field.field.node.page.field_canonical_url:description"
@@ -28495,12 +28443,12 @@ msgstr ""
 #: 
 msgctxt "views.view.go_categories:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
@@ -28515,57 +28463,57 @@ msgstr ""
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_title"
 msgid "GraphQL"
-msgstr ""
+msgstr "GraphQL"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 #: 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_options_all_label"
@@ -28587,7 +28535,7 @@ msgstr "Eksempel på indhold fra Delingstjenesten"
 
 #: 
 msgid "Provides example content for Delingstjenesten"
-msgstr ""
+msgstr "Eksempel på indhold fra Delingstjenesten"
 
 #: 
 msgid "VideoTool URL examples: https://media.videotool.dk?vn=557_2023103014511477700668916683 or https://media.videotool.dk/?vn=557_2023103014511477700668916683"
@@ -28631,47 +28579,49 @@ msgstr "Delingstjenesten kilde abonnement"
 #: 
 msgctxt "BNF"
 msgid "The subscriptions that this content originates from."
-msgstr ""
+msgstr "Abonnementer, som dette indhold stammer fra."
 
 #: 
 msgctxt "BNF"
 msgid "Keep updated with Delingstjenesten"
-msgstr "Hold opdateret fra Delingstjenesten"
+msgstr "Hold indholdet opdateret fra Delingstjenesten"
 
 #: 
 msgctxt "BNF"
 msgid "Keep this content, which originates from Delingstjenesten, up to date when a new version is available. This will overwrite any custom changes you may have made."
-msgstr ""
+msgstr "Få automatiske opdateringer på indholdet, når der bliver tilføjet eller rettet fra Delingstjenesten. Du kan altid ændre dit valg direkte på indholdet bagefter."
 
 #: 
 msgctxt "BNF"
 msgid "Publish and submit to BNF"
-msgstr ""
+msgstr "Publicer og send til Delingstjenesten"
 
 #: 
 msgctxt "BNF"
 msgid "Please make sure that all content and media as part of this article is OK to be used by other libraries."
-msgstr ""
+msgstr "Bekræft venligst, at alt indhold og alle medier i artiklen må anvendes af andre biblioteker."
 
 #: 
 msgctxt "BNF"
 msgid "This content cannot be sent to BNF, as it has either been exported or imported already."
-msgstr ""
+msgstr "Dette indhold kan ikke sendes til Delingstjenesten, da det enten allerede er blevet eksporteret eller importeret."
 
 #: 
 msgctxt "BNF"
 msgid "Only import new content"
-msgstr ""
+msgstr "Importer kun kommende nyt indhold"
 
 #: 
 msgctxt "BNF"
 msgid "If checked, only upcoming content related to this subscription will be imported.<br> \"New content\" is defined by content that has been saved, regardless of publishing date."
-msgstr ""
+msgstr "Hvis markeret, importeres kun kommende nyt indhold i abonnementet. Dermed modtager du ikke det eksisterende indhold fra abonnementet, kun det kommende. "
 
 #: 
 msgctxt "BNF"
 msgid "Keep this content, which originates from Delingstjenesten, up to date when a new version is available. This will overwrite any custom changes you may have made. <strong>You can always change your mind directly on the content.</strong>"
-msgstr ""
+msgstr "Få automatiske opdateringer på indholdet, når der bliver tilføjet eller rettet til fra Delingstjenesten. Du kan altid ændre dit valg direkte på indholdet bagefter.\n"
+"\n"
+"Hvis du ønsker at lave lokale tilpasninger, kan du slå opdateringen fra. Så bevares dine rettelser, og indholdet bliver ikke længere automatisk opdateret."
 
 #: 
 msgctxt "BNF"
@@ -28681,7 +28631,7 @@ msgstr ""
 #: 
 msgctxt "BNF"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: 
 msgctxt "BNF"
@@ -28710,75 +28660,75 @@ msgstr "Abonner på \"@content_title\" på @site_name"
 
 #: 
 msgid "Manage BNF subscriptions"
-msgstr ""
+msgstr "Administrér abonnementer"
 
 #: 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "core.entity_form_display.node.go_category.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "core.entity_form_display.node.go_page.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 #: 
 msgctxt "field.field.node.go_article.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "field.field.node.go_category.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "field.field.node.go_page.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: 
 msgctxt "BNF"
 msgid "Refresh all subscriptions?"
-msgstr ""
+msgstr "Opdatér alle abonnementer?"
 
 #: 
 msgctxt "BNF"
 msgid "This will check for new updates on subscriptions and content, and update if necessary."
-msgstr ""
+msgstr "Dette vil tjekke for nye opdateringer af abonnementer og indhold."
 
 #: 
 msgid "Refresh subscriptions"
-msgstr ""
+msgstr "Opdatér abonnementer"
 
 #: 
 msgid "Sync content from Delingstjenesten"
-msgstr ""
+msgstr "Synkronisér indhold fra Delingstjenesten"
 
 #: 
 msgctxt "next.next_site.go:label"
 msgid "Go"
-msgstr ""
+msgstr "GO"
 
 #: 
 msgctxt "Work Page"
 msgid "Recommendations"
-msgstr ""
+msgstr "Anbefalinger"
 
 #: 
 msgctxt "Work Page"
 msgid "In same series"
-msgstr ""
+msgstr "I samme serie"
 
 #: 
 msgctxt "Work Page"
 msgid "By same author"
-msgstr ""
+msgstr "Af samme forfatter"
 
 #: 
 msgctxt "Work Page"
@@ -28792,17 +28742,17 @@ msgstr ""
 
 #: 
 msgid "New subscription"
-msgstr ""
+msgstr "Nyt abonnement"
 
 #: 
 msgctxt "BNF"
 msgid "BNF source updated"
-msgstr ""
+msgstr "Delingstjeneste-kilde opdateret"
 
 #: 
 msgctxt "BNF"
 msgid "The datetime of when this content was last updated at the source."
-msgstr ""
+msgstr "Dato og tidspunkt for, hvornår dette indhold sidst blev opdateret af afsenderen."
 
 #: 
 msgid "GO token preview iframe"
@@ -28810,5 +28760,75 @@ msgstr ""
 
 #: 
 msgid "Submitted by %author on %date"
+msgstr "Indsendt af %author den %date"
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Unilogin API configuration"
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "API credentials"
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Unilogin API client secret."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "The Unilogin API client secret."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Webservice configuration"
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Unilogin webservice username."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "The Unilogin webservice username."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Unilogin webservice password."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "The Unilogin webservice password."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "PubHub configuration"
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Retailer key code."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "The PubHub retailer key code."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "Unilogin municipality ID."
+msgstr ""
+
+#: 
+msgctxt "Unilogin configuration"
+msgid "The Unilogin municipality ID."
 msgstr ""
 

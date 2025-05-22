@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-05-20 16:21+0200\n"
-"PO-Revision-Date: 2025-05-20 16:21+0200\n"
+"POT-Creation-Date: 2025-05-23 00:59+0200\n"
+"PO-Revision-Date: 2025-05-23 00:59+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6531,7 +6531,7 @@ msgstr "Forfatter og Dato"
 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_teaser_card:label"
 msgid "Teaser card"
-msgstr ""
+msgstr "Teaserbillede"
 
 msgctxt "core.entity_form_display.node.go_article.default:content:field_paragraphs:settings:title"
 msgid "Paragraph"
@@ -6997,15 +6997,15 @@ msgstr "Nav spot"
 
 msgctxt "views.view.importable_content:label"
 msgid "Importable content"
-msgstr ""
+msgstr "Indhold der kan hentes til dit site"
 
 msgctxt "views.view.importable_content:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.importable_content:display:default:display_options:title"
 msgid "Importable content"
-msgstr ""
+msgstr "Indhold der kan hentes"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_subtitle:alter:text"
 msgid "{{ field_subtitle__value }}"
@@ -7013,7 +7013,7 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:title:alter:text"
 msgid ""
@@ -7027,19 +7027,19 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:type:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:label"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_categories:alter:text"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:label"
 msgid "Updated"
-msgstr ""
+msgstr "Opdateret"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:changed_1:alter:text"
 msgid ""
@@ -7053,7 +7053,7 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:label"
 msgid "Import"
-msgstr ""
+msgstr "Hent"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:nothing:alter:text"
 msgid ""
@@ -7066,15 +7066,15 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Først"
 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 msgctxt "views.view.importable_content:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -7086,27 +7086,27 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required"
 msgid "Select any filter and click on Apply to see results"
-msgstr ""
+msgstr "Vælg et filter og klik på \"Anvend\" for at se resultater"
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:text_input_required_format"
 msgid "basic"
@@ -7114,7 +7114,7 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:exposed_form:options:bef:general:secondary_label"
 msgid "Advanced options"
-msgstr ""
+msgstr "Avancerede indstillinger"
 
 msgctxt "views.view.importable_content:display:default:display_options:arguments:type:exception:title"
 msgid "All"
@@ -7122,47 +7122,47 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:combine:expose:label"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:type_1:expose:label"
 msgid "Content type"
-msgstr ""
+msgstr "Indholdstype"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id:expose:label"
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:admin_label"
 msgid "Approved by BNR"
-msgstr ""
+msgstr "Godkendt af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:label"
 msgid "Approved by BNR"
-msgstr ""
+msgstr "Godkendt af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:expose:description"
 msgid "Shows content that has been tagged with a category, by BNR"
-msgstr ""
+msgstr "Viser indhold, der er blevet tildelt en kategori af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:label"
 msgid "Edited by BNR"
-msgstr ""
+msgstr "Redigeret af BNR"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:1:title"
 msgid "Categorized"
-msgstr ""
+msgstr "Kategoriseret"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_categories_target_id_1:group_info:group_items:2:title"
 msgid "Uncategorized"
-msgstr ""
+msgstr "Ikke kategoriseret"
 
 msgctxt "views.view.importable_content:display:default:display_options:filters:field_tags_target_id:expose:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "views.view.importable_content:display:page:display_title"
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 msgctxt "system.action.user_add_role_action.bnf_pilot:label"
 msgid "Add the BNF Pilot role to the selected user(s)"
@@ -7182,19 +7182,19 @@ msgstr "Kilde"
 
 msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "field.field.node.page.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "core.entity_form_display.node.page.default:third_party_settings:field_group:group_metatags:label"
 msgid "Meta tags"
-msgstr ""
+msgstr "Meta tags"
 
 msgctxt "field.field.node.page.field_canonical_url:label"
 msgid "Canonical url"
-msgstr ""
+msgstr "Canonical URL"
 
 msgctxt "field.field.node.page.field_canonical_url:description"
 msgid ""
@@ -7228,11 +7228,11 @@ msgstr ""
 
 msgctxt "views.view.go_categories:display:default:display_title"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 msgctxt "views.view.go_categories:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -7244,47 +7244,47 @@ msgstr ""
 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:submit_button"
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:reset_button_label"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortér efter"
 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.go_categories:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 msgctxt "views.view.go_categories:display:go_categories:display_title"
 msgid "GraphQL"
-msgstr ""
+msgstr "GraphQL"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:next"
 msgid "Next ›"
-msgstr ""
+msgstr "Næste ›"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:previous"
 msgid "‹ Previous"
-msgstr ""
+msgstr "‹ Forrige"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:first"
 msgid "« First"
-msgstr ""
+msgstr "« Første"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:tags:last"
 msgid "Last »"
-msgstr ""
+msgstr "Sidste »"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_label"
 msgid "Items per page"
-msgstr ""
+msgstr "Indhold pr. side"
 
 msgctxt "views.view.go_categories:display:go_categories:display_options:pager:options:expose:items_per_page_options_all_label"
 msgid "- All -"
@@ -7296,29 +7296,29 @@ msgstr ""
 
 msgctxt "core.entity_form_display.node.go_article.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "core.entity_form_display.node.go_category.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "core.entity_form_display.node.go_page.default:third_party_settings:field_group:group_tagging:label"
 msgid "Tagging"
-msgstr ""
+msgstr "Tagging"
 
 msgctxt "field.field.node.go_article.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "field.field.node.go_category.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "field.field.node.go_page.field_tags:label"
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 msgctxt "next.next_site.go:label"
 msgid "Go"
-msgstr ""
+msgstr "GO"
 
