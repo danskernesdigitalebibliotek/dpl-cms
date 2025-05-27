@@ -26569,7 +26569,7 @@ msgstr "Afpubliser arrangemenstinstancer når de har været afholdt (anbefalet)"
 #: 
 msgctxt "DPL event"
 msgid "Notice - if you do not choose that eventinstances get unpublished, they may show up in automatic and manual lists, across the site."
-msgstr "Vær opmærksom på, at hvis du vælger IKKE at afpublisere arrangementsinstancer, er det muligt, at de vises i automatiske og manuelle lister rundt om på siden."
+msgstr "Vær opmærksom på, at hvis du vælger IKKE at afpublisere udløbede arrangementsinstanser, er det muligt, at de vises i automatiske og manuelle lister rundt om på siden."
 
 #: 
 msgctxt "DPL event"
@@ -26584,7 +26584,7 @@ msgstr "Afpubliser serien, når alle instancer har været afholdt (anbefales IKK
 #: 
 msgctxt "DPL event"
 msgid "Notice - if series get unpublished, old instance links will no longer work. If you however keep the series published, expired instances will redirect to the associated series."
-msgstr "Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instance-links ikke virke længere. Hvis du alligevel vælger at bevare publiseringen, vil udløbne instances blive henvist til de relaterede serier."
+msgstr "Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instans-links ikke virke længere. Kan være et problem ift. links I har udsendt på fx sociale medier. Hvis du vælger at bevare publiseringen, vil udløbne instanser blive henvist til de relaterede serier."
 
 #: 
 msgctxt "BNF"
@@ -28348,7 +28348,7 @@ msgstr "Side"
 #: 
 msgctxt "Patron page"
 msgid "DIGITAL LOANS"
-msgstr ""
+msgstr "Digitale lån"
 
 #: 
 msgctxt "Work Page"
@@ -28830,5 +28830,15 @@ msgstr ""
 #: 
 msgctxt "Unilogin configuration"
 msgid "The Unilogin municipality ID."
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "You need to add an email address to reserve from another library."
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "NOTE! This material is ordered from another library. Therefore, it may take a few days before it appears on your list of reservations."
 msgstr ""
 
