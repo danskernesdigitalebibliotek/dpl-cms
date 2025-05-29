@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7a455f9ace68e5cf2ddffbcf522e0e1",
+    "content-hash": "97f3ab006969eed0ec82d0213797afbd",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,10 +1166,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2025.21.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.21.0/dist-2025-21-0-4f288ca26177c07e427cb648b8dea2353dc733cc.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip"
             },
             "type": "drupal-library"
         },
@@ -21281,6 +21281,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,

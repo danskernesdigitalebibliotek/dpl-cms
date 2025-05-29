@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2025.21.0",
+                "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.21.0/dist-2025-21-0-4f288ca26177c07e427cb648b8dea2353dc733cc.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip",
                     "type": "zip"
                 }
             }
@@ -91,7 +91,7 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2025.21.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "0.0.0-dev",
         "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
