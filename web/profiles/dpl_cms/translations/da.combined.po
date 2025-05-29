@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-05-27 10:16+0200\n"
-"PO-Revision-Date: 2025-05-27 10:16+0200\n"
+"POT-Creation-Date: 2025-05-27 16:06+0200\n"
+"PO-Revision-Date: 2025-05-27 16:06+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1800,6 +1800,16 @@ msgid "Receive SMS when the material is ready"
 msgstr "Modtag sms når materialet er klar til dig"
 
 msgctxt "Work Page"
+msgid "You need to add an email address to reserve from another library."
+msgstr ""
+
+msgctxt "Work Page"
+msgid ""
+"NOTE! This material is ordered from another library. Therefore, it may take "
+"a few days before it appears on your list of reservations."
+msgstr ""
+
+msgctxt "Work Page"
 msgid "Ordered from another library"
 msgstr "Bestilles fra et andet bibliotek"
 
@@ -3135,7 +3145,7 @@ msgstr "Der findes titler uden begrænsning på antal lån pr. måned."
 
 msgctxt "Patron page"
 msgid "DIGITAL LOANS"
-msgstr ""
+msgstr "Digitale lån"
 
 msgctxt "Patron page"
 msgid "Click here, to see titles always eligible to be loaned"
@@ -4006,8 +4016,8 @@ msgid ""
 "Notice - if you do not choose that eventinstances get unpublished, they may "
 "show up in automatic and manual lists, across the site."
 msgstr ""
-"Vær opmærksom på, at hvis du vælger IKKE at afpublisere "
-"arrangementsinstancer, er det muligt, at de vises i automatiske og manuelle "
+"Vær opmærksom på, at hvis du vælger IKKE at afpublisere udløbede "
+"arrangementsinstanser, er det muligt, at de vises i automatiske og manuelle "
 "lister rundt om på siden."
 
 msgctxt "DPL event"
@@ -4029,9 +4039,11 @@ msgid ""
 "If you however keep the series published, expired instances will redirect to "
 "the associated series."
 msgstr ""
-"Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instance-"
-"links ikke virke længere. Hvis du alligevel vælger at bevare publiseringen, "
-"vil udløbne instances blive henvist til de relaterede serier."
+"Vær opmærksom på, at hvis serier bliver afpubliseret, så vil gamle instans-"
+"links ikke virke længere. Borgerne kan møde døde links, som I har udsendt på "
+"fx sociale medier eller hvis hvis I har indsat instansen i en manuel "
+"paragraf. Hvis du vælger at bevare publiseringen, vil udløbne instanser "
+"blive henvist til de relaterede serier."
 
 msgctxt "DPL event"
 msgid "DKK"
@@ -6811,49 +6823,6 @@ msgstr ""
 msgid "BEF Test"
 msgstr "BEF Test"
 
-msgid "This content is now locked against simultaneous editing."
-msgstr "Dette indhold er nu låst for samtidig redigering. "
-
-msgid ""
-"This content is being edited by the user @name and is therefore locked to "
-"prevent other users changes."
-msgstr ""
-"Dette indhold bliver redigeret af @name og er derfor låst for at forhindre "
-"andre brugere i samtidig redigering."
-
-msgid "Break lock"
-msgstr "Bryd lås"
-
-msgid "This content is now locked by you against simultaneous editing."
-msgstr "Dette indhold er nu låst af dig mod medredigering."
-
-msgid "Save"
-msgstr "Gem"
-
-msgid "updated."
-msgstr "opdateret"
-
-msgid "Save configuration"
-msgstr "Gem indstillinger"
-
-msgid "has been updated."
-msgstr "er blevet opdateret"
-
-msgid ""
-"This content translation is now locked against simultaneous editing. This "
-"content translation will remain locked if you navigate away from this page "
-"without saving or unlocking it."
-msgstr ""
-"Denne indholdsoversættelse er nu låst mod samtidig redigering. Denne "
-"indholdsoversættelse forbliver låst, hvis du navigerer væk fra denne side "
-"uden at gemme eller låse den op."
-
-msgid "This content translation is being edited by the user"
-msgstr "Denne indholdsoversættelse bliver redigeret af brugeren"
-
-msgid "against simultaneous editing."
-msgstr "mod samtidig redigering"
-
 msgid ""
 "Prevents multiple users from trying to edit a single node simultaneously to "
 "prevent edit conflicts."
@@ -6909,8 +6878,17 @@ msgstr "Bryd link"
 msgid "Link to break the content lock."
 msgstr "Link til at bryde indholdslåsen."
 
+msgid "Break lock"
+msgstr "Bryd lås"
+
 msgid "Uses \"all\" settings"
 msgstr "Bruger \"alle\" indstillinger"
+
+msgid ""
+"The selected caching mechanism does not work with views including content "
+"lock information. The selected caching mechanism was changed to none "
+"accordingly for the view %view."
+msgstr ""
 
 msgid ""
 "Breaking existing lock by @name so that you may edit this node. (This lock "
@@ -7028,11 +7006,11 @@ msgstr ""
 msgid "Form operations"
 msgstr "Formularoperationer"
 
-msgid "Lock broken. Anyone can now edit this content translation."
-msgstr "Låsen er brudt. Alle kan nu redigere denne indholdsoversættelse."
+msgid "Unlocked. Anyone can now edit this content translation."
+msgstr ""
 
-msgid "Lock broken. Anyone can now edit this content."
-msgstr "Låsen er brudt. Alle kan nu redigere dette indhold."
+msgid "Unlocked. Anyone can now edit this content."
+msgstr ""
 
 msgid "Break Lock for content @label"
 msgstr "Bryd lås for @label"
@@ -7054,6 +7032,15 @@ msgid ""
 msgstr ""
 "Dette indhold bliver redigeret af @name og er derfor låst. Denne lås er "
 "aktiveret @date."
+
+msgid ""
+"This content translation is now locked against simultaneous editing. This "
+"content translation will remain locked if you navigate away from this page "
+"without saving or unlocking it."
+msgstr ""
+"Denne indholdsoversættelse er nu låst mod samtidig redigering. Denne "
+"indholdsoversættelse forbliver låst, hvis du navigerer væk fra denne side "
+"uden at gemme eller låse den op."
 
 msgid ""
 "This content is now locked against simultaneous editing. This content will "
@@ -7086,6 +7073,14 @@ msgstr ""
 msgid "Unlock"
 msgstr "Lås op"
 
+msgid "Content Lock access check"
+msgstr ""
+
+msgid ""
+"Checks if user has access to a specified permission and if the view's entity "
+"type is lockable."
+msgstr ""
+
 msgid "Content Lock"
 msgstr "Indholdslås"
 
@@ -7101,6 +7096,12 @@ msgstr "Administrer indstillinger for låsning af indhold."
 
 msgid "Content lock settings"
 msgstr "Indstillinger for indholdslås"
+
+msgid "Content lock hooks tests"
+msgstr ""
+
+msgid "Provides test support for content_lock hooks."
+msgstr ""
 
 msgid "Prefetch cache test"
 msgstr "Prefetch cache test"
@@ -7822,6 +7823,12 @@ msgstr ""
 msgid "Clone"
 msgstr "Klon"
 
+msgid "Save"
+msgstr "Gem"
+
+msgid "Save configuration"
+msgstr "Gem indstillinger"
+
 msgid "Create new style"
 msgstr "Opret nyt format"
 
@@ -8413,6 +8420,9 @@ msgstr ""
 "Slet revisioner af enheder, der ikke længere anvendes i Entity Reference "
 "Revisions felter."
 
+msgid "Text"
+msgstr "Tekst"
+
 msgid "Enum class"
 msgstr "Enum class"
 
@@ -8428,17 +8438,17 @@ msgstr "An instance of the enum or enum-like class."
 msgid "Enum (integer)"
 msgstr "Enum (integer)"
 
-msgid "This field stores integer values from a backed enum."
-msgstr "This field stores integer values from a backed enum."
+msgid "Values stored are numbers without decimals"
+msgstr ""
+
+msgid "Keys and values are defined by the chosen enum."
+msgstr ""
 
 msgid "Enum (text)"
 msgstr "Enum (text)"
 
-msgid "This field stores text values from a backed enum."
-msgstr "This field stores text values from a backed enum."
-
-msgid "Text"
-msgstr "Tekst"
+msgid "Values stored are text values"
+msgstr ""
 
 msgid "Enum Field"
 msgstr "Enum Field"
@@ -9533,15 +9543,6 @@ msgstr "Linkit-profil"
 msgid "- Linkit disabled -"
 msgstr "- Linkit deaktiveret -"
 
-msgid "Linkit is enabled, please select the Linkit profile you wish to use."
-msgstr ""
-"Linkit er aktiveret, vælg venligst den Linkit-profil, du ønsker at bruge."
-
-msgid ""
-"Linkit is disabled; it does not make sense to associate a Linkit profile."
-msgstr ""
-"Linkit er deaktiveret; det giver ikke mening at knytte en Linkit-profil."
-
 msgid "Automatically populate link text from entity label"
 msgstr "Automatisk udfyld linktekst fra enhedsetiketten"
 
@@ -9737,18 +9738,6 @@ msgid ""
 "In order to see unpublished nodes, users must also have permissions to do so."
 msgstr ""
 "For at se upublicerede noder, skal brugerne også have tilladelser til dette."
-
-msgid "Linkit enabled"
-msgstr "Linkit aktiveret"
-
-msgid "Enable Linkit for this text format."
-msgstr "Aktiver Linkit for dette tekstformat."
-
-msgid "Select the Linkit profile you wish to use with this text format."
-msgstr "Vælg Linkit-profilen, du ønsker at bruge med dette tekstformat."
-
-msgid "Please select the Linkit profile you wish to use."
-msgstr "Vælg Linkit-profilen, du ønsker at bruge."
 
 msgid "Dummy Matcher"
 msgstr "Dummy Matcher"
@@ -17342,6 +17331,9 @@ msgstr "%updated."
 msgid "No update required."
 msgstr "Det er ikke nødvendig med en opdatering."
 
+msgid "Cron access key now stored in state."
+msgstr ""
+
 msgid "Publish on date"
 msgstr "Udgivelsesdato"
 
@@ -17407,12 +17399,9 @@ msgstr "Adgangsnøgle for letvægtscron"
 
 msgid ""
 "Similar to Drupal's cron key this acts as a security token to prevent "
-"unauthorised calls to scheduler/cron. The key should be passed as scheduler/"
+"unauthorized calls to scheduler/cron. The key should be passed as scheduler/"
 "cron/{access key}"
 msgstr ""
-"Ligesom Drupals cron-nøgle fungerer dette som en sikkerhedstoken for at "
-"forhindre uautoriserede kald til scheduler/cron. Nøglen skal videregives som "
-"scheduler/cron/{access key}"
 
 msgid "Generate new random key"
 msgstr "Generer ny tilfældig nøgle"
@@ -17611,8 +17600,8 @@ msgstr "Vis planlagt %label"
 msgid "Allows users to see a list of all %plural_label that are scheduled."
 msgstr "Tillad brugere at se en liste med alle %plural_label, der er planlagt."
 
-msgid "Send e-mail when content is published by Scheduler"
-msgstr "Send e-mail, når indhold er udgivet af Scheduler"
+msgid "Send email when content is published by Scheduler"
+msgstr ""
 
 msgid "'[node:title]' has been published on [site:name]"
 msgstr "'[node:title]' er blevet publiceret på [site:name]"
@@ -17623,8 +17612,8 @@ msgid ""
 "The link is [node:url]"
 msgstr ""
 
-msgid "Send e-mail when content is unpublished by Scheduler"
-msgstr "Send e-mail, når indhold er afpubliseret af Scheduler"
+msgid "Send email when content is unpublished by Scheduler"
+msgstr ""
 
 msgid "'[node:title]' has been unpublished on [site:name]"
 msgstr "'[node:title]' er blevet afpubliceret på [site:name]"
@@ -17920,8 +17909,9 @@ msgstr "Supportmodul for Scheduler API-relateret testning."
 msgid "Scheduler API Legacy Test"
 msgstr "Scheduler API Legacy Test"
 
-msgid "Sub-module containing the legacy hook implementations."
-msgstr "Undermodul indeholdende de gamle hook-implementeringer."
+msgid ""
+"Sub-module containing the legacy hook implementations and event namespaces."
+msgstr ""
 
 msgid "Scheduler Entity Access Test"
 msgstr "Enhed adgangstest for Scheduler"
