@@ -19,6 +19,7 @@ use Drupal\dpl_event\Workflows\OccurredSchedule;
 use Drupal\dpl_event\Workflows\UnpublishSchedule;
 use Drupal\drupal_typed\DrupalTyped;
 use Drupal\recurring_events\Entity\EventSeries;
+use function Safe\json_encode;
 
 /**
  * Implements hook_entity_bundle_info_alter().
@@ -350,4 +351,65 @@ function dpl_event_form_alter(array &$form, FormStateInterface $form_state, stri
   }
 
   $form['field_screen_names']['#access'] = FALSE;
+}
+
+/**
+ * Implements theme_preprocess_html().
+ *
+ * Display metadata on eventseries, about related eventinstances.
+ * We use LD json to display related eventinstances in a format that Cludo
+ * (and others) can use to index correctly.
+ */
+function dpl_event_preprocess_html(array &$variables): void {
+  $route = \Drupal::routeMatch();
+  $series = $route->getParameter('eventseries');
+
+  if ($route->getRouteName() !== 'entity.eventseries.canonical' || !($series instanceof EventSeries)) {
+    return;
+  }
+
+  $service = DrupalTyped::service(ReoccurringDateFormatter::class, 'dpl_event.reoccurring_date_formatter');
+
+  $instances = $service->getUpcomingEvents($series);
+  $url = $series->toUrl();
+
+  $info = [
+    "@context" => "https://schema.org",
+    "@type" => "EventSeries",
+    "name" => $series->label(),
+    'uri' => $url->toString(),
+    'url' => $url->setAbsolute()->toString(),
+    "events" => [],
+  ];
+
+  $instance_first = reset($instances);
+  $instance_last = end($instances);
+
+  if ($instance_first && $instance_last) {
+    $info['startDate'] = $instance_first->getStartDate()->format('c');
+    $info['endDate'] = $instance_last->getEndDate()->format('c');
+  }
+
+  foreach ($instances as $instance) {
+    $url = $instance->toUrl();
+
+    $info['events'][] = [
+      '@type' => 'EventInstance',
+      'name' => $instance->label(),
+      'uri' => $url->toString(),
+      'url' => $url->setAbsolute()->toString(),
+      'startDate' => $instance->getStartDate()->format('c'),
+      'endDate' => $instance->getEndDate()->format('c'),
+    ];
+  }
+
+  $script = [
+    '#tag' => 'script',
+    '#value' => json_encode($info),
+    '#attributes' => [
+      'type' => 'application/ld+json',
+    ],
+  ];
+
+  $variables['page']['#attached']['html_head'][] = [$script, 'event-series-json-ld'];
 }
