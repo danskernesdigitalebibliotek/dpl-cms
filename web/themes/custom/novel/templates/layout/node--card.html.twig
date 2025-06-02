@@ -12,8 +12,8 @@
   {% set category_tag = content.field_categories.0 %}
 {% endif %}
 
-{% include '@novel/components/card.html.twig'
-  with {
+{{ include('@novel/components/card.html.twig'
+  , {
   attributes: attributes,
   media: content.field_teaser_image,
   variant: 'x-large',
@@ -23,4 +23,4 @@
   date_tag: date_tag,
   title: label,
   url: url
-} only %}
+}, false) }}

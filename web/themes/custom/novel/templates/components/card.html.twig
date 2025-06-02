@@ -9,13 +9,13 @@
 <article {{ attributes.addClass(classes) }}>
   <a href="{{ url }}">
     <figure class="card__media">
-      {% include '@novel/components/media-container.html.twig'
-        with {
+      {{ include('@novel/components/media-container.html.twig'
+        , {
         attributes: create_attribute(),
         media: media,
         has_media: has_media,
         placeholder_text: teaser_text,
-      } only %}
+      }, false) }}
     </figure>
     <div class="card__tags">
       {% if type_tag %}
