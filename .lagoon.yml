@@ -178,10 +178,10 @@ environments:
     routes:
       - varnish:
           - "cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
-      - node:
-          - "go.cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
-              annotations:
-                nginx.ingress.kubernetes.io/proxy-buffer-size: 32k
+      # - node:
+      #     - "go.cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
+      #         annotations:
+      #           nginx.ingress.kubernetes.io/proxy-buffer-size: 32k
     cronjobs:
       - name: drush cron
         schedule: "M/15 * * * *"

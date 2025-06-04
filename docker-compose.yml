@@ -163,11 +163,11 @@ services:
     environment:
       <<: *default-environment
 
-  node:
-    image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.17
-    labels:
-      provenance: false
-      lagoon.type: node
+  # node:
+  #   image: ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.17
+  #   labels:
+  #     provenance: false
+  #     lagoon.type: node
 volumes:
   projectroot:
     driver: local
