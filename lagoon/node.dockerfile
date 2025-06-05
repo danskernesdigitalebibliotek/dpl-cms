@@ -1,7 +1,7 @@
 FROM ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.18 as builder
 
-# Lagoon environment variables
-ARG GO_CMS_DOMAIN
+ARG GO_CMS_DOMAIN=cms-playground.dpl-cms.dplplat01.dpl.reload.dk
+
 
 # Used for image placeholder functionality
 ARG NEXT_PUBLIC_DPL_CMS_HOSTNAME
@@ -47,7 +47,7 @@ ARG UNILOGIN_MUNICIPALITY_ID
 # Cache revalidation
 ARG DRUPAL_REVALIDATE_SECRET
 
-RUN echo "Building DPL Go Node image with the following environment variables (22:50)"
+RUN echo "Building DPL Go Node image with the following environment variables (22:53)"
 
 RUN printenv
 
