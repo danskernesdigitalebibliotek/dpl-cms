@@ -167,8 +167,6 @@ services:
     build:
       context: .
       dockerfile: lagoon/node.dockerfile
-      args:
-        - LAGOON_DOMAIN=cms-playground.dpl-cms.dplplat01.dpl.reload.dk
     labels:
       provenance: false
       lagoon.type: node
