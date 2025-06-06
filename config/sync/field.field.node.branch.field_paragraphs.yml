@@ -19,6 +19,7 @@ dependencies:
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.manual_event_list
     - paragraphs.paragraphs_type.material_grid_automatic
+    - paragraphs.paragraphs_type.material_grid_automatic_v3
     - paragraphs.paragraphs_type.material_grid_link_automatic
     - paragraphs.paragraphs_type.material_grid_manual
     - paragraphs.paragraphs_type.medias
@@ -63,6 +64,7 @@ settings:
       recommendation: recommendation
       video: video
       banner: banner
+      material_grid_automatic_v3: material_grid_automatic_v3
       breadcrumb_children: breadcrumb_children
       content_slider_automatic: content_slider_automatic
       filtered_event_list: filtered_event_list
@@ -153,6 +155,9 @@ settings:
         enabled: true
       material_grid_automatic:
         weight: 62
+        enabled: true
+      material_grid_automatic_v3:
+        weight: 41
         enabled: true
       material_grid_link_automatic:
         weight: 63

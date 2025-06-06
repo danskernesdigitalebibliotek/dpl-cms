@@ -1,0 +1,21 @@
+uuid: 9fd74c80-a091-4a08-9eb2-a3e2e6a2f9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_material_search
+    - paragraphs.paragraphs_type.material_grid_automatic_v3
+  module:
+    - dpl_paragraphs
+id: paragraph.material_grid_automatic_v3.field_material_search
+field_name: field_material_search
+entity_type: paragraph
+bundle: material_grid_automatic_v3
+label: 'Material search'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: dpl_paragraphs_material_search
