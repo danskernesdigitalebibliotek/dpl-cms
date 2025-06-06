@@ -19,6 +19,7 @@ dependencies:
     - paragraphs.paragraphs_type.links
     - paragraphs.paragraphs_type.manual_event_list
     - paragraphs.paragraphs_type.material_grid_automatic
+    - paragraphs.paragraphs_type.material_grid_automatic_v3
     - paragraphs.paragraphs_type.material_grid_link_automatic
     - paragraphs.paragraphs_type.material_grid_manual
     - paragraphs.paragraphs_type.medias
@@ -66,6 +67,7 @@ settings:
       nav_spots_manual: nav_spots_manual
       recommendation: recommendation
       user_registration_item: user_registration_item
+      material_grid_automatic_v3: material_grid_automatic_v3
       content_slider_automatic: content_slider_automatic
       user_registration_section: user_registration_section
       video: video
@@ -151,6 +153,9 @@ settings:
         enabled: true
       material_grid_automatic:
         weight: 32
+        enabled: true
+      material_grid_automatic_v3:
+        weight: 41
         enabled: true
       material_grid_link_automatic:
         weight: 63

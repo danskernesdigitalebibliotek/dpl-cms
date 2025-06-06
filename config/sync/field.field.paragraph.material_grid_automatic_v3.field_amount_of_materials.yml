@@ -1,0 +1,23 @@
+uuid: d4ebb8eb-d9fe-4478-92c9-d16706ebf301
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_amount_of_materials
+    - paragraphs.paragraphs_type.material_grid_automatic_v3
+  module:
+    - options
+id: paragraph.material_grid_automatic_v3.field_amount_of_materials
+field_name: field_amount_of_materials
+entity_type: paragraph
+bundle: material_grid_automatic_v3
+label: 'Amount of materials'
+description: 'Determines the amount of materials that will be shown, based on the CQL string. <br /><br />Obs: If for example a CQL string has 11 results, and an editor chooses 12. The list will display 8 instead of 11, since the grid should be able to increment by 4. '
+required: true
+translatable: false
+default_value:
+  -
+    value: 8
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

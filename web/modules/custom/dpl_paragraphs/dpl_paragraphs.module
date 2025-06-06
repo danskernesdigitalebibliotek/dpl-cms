@@ -213,6 +213,7 @@ function dpl_paragraphs_preprocess_paragraph__recommendation(array &$variables):
  * @see dpl_paragraphs_preprocess_paragraph__material_grid_automatic()
  * @see dpl_paragraphs_preprocess_paragraph__material_grid_link_automatic()
  * @see dpl_paragraphs_preprocess_paragraph__material_grid_manual()
+ * @see dpl_paragraphs_preprocess_paragraph__material_grid_automatic_v3()
  * @see \Drupal\paragraphs\Entity\Paragraph
  * @see dpl_react_apps/src/Controller/DplReactAppsController.php
  *
@@ -252,6 +253,32 @@ function _dpl_paragraphs_prepare_material_grid(ParagraphInterface $paragraph): a
       'blacklisted-search-branches-config' => $blacklisted_search_branches_config,
       'branches-config' => $branches_config,
     ] + DplReactAppsController::externalApiBaseUrls(),
+  ];
+}
+
+/**
+ * Prepares the React app data for the new Material Grid (Automatic) paragraph.
+ *
+ * @param array &$variables
+ *   Variables for the paragraph template, including the 'paragraph' entity.
+ *
+ * @see _dpl_paragraphs_prepare_material_grid()
+ */
+function dpl_paragraphs_preprocess_paragraph__material_grid_automatic_v3(array &$variables): void {
+  $view_mode = $variables['view_mode'] ?? 'default';
+  $paragraph = $variables['paragraph'] ?? NULL;
+
+  if ($view_mode === 'preview' || !($paragraph instanceof ParagraphInterface)) {
+    return;
+  }
+
+  // Get the common render array, used by all material grid paragraphs.
+  $render = _dpl_paragraphs_prepare_material_grid($paragraph);
+
+  $render['#name'] = 'material-grid-automatic';
+
+  $variables['content'] = [
+    'material_grid' => $render,
   ];
 }
 
