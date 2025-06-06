@@ -215,4 +215,82 @@ describe('Paragraphs module', () => {
       expect($link.attr('href')).to.equal(links[index].url);
     });
   });
+
+  it("Adds 'Material Grid Automatic' paragraph and verifies AJAX logic", () => {
+    const paragraphTitle = 'Material grid automatic';
+
+    addParagraph(paragraphTitle);
+
+    cy.get('[data-drupal-selector="edit-field-paragraphs-0-subform"]').as(
+      'subform',
+    );
+
+    cy.get('@subform').findByLabelText('Link to search').as('linkField');
+    cy.get('@subform').findByLabelText('Sorting').as('sortField');
+    cy.get('@subform').findByLabelText('CQL query').as('cqlField');
+    cy.get('@subform').findByLabelText('Location').as('locationField');
+    cy.get('@subform').findByLabelText('Sub-location').as('sublocationField');
+    cy.get('@subform').findByLabelText('On-shelf').as('onshelfField');
+
+    cy.get('@sortField').should('have.value', 'relevance');
+    cy.get('@cqlField').should('be.empty');
+    cy.get('@locationField').should('be.empty');
+    cy.get('@sublocationField').should('be.empty');
+    cy.get('@onshelfField').should('not.be.checked');
+
+    // Testing that link input updates the filters, and that a relative link
+    // also works.
+    // As we use AJAX auto-submit, we cannot use just .type(), as the field
+    // becomes unavailable each time a character is typed.
+    // The field is made for having data pasted into it, which we will mimic.
+    cy.get('@linkField').invoke(
+      'val',
+      "/advanced-search?sort=sort.latestpublicationdate.asc&onshelf=true&location=børn&sublocation=fantasy&advancedSearchCql=+term.title%3D'Harry+Potter'+AND+term.creator%3D+'J.K.+Rowling'+AND+(+term.generalmaterialtype%3D'bøger'+OR+term.generalmaterialtype%3D'e-bøger')+AND+term.fictionnonfiction%3D'fiction'",
+    );
+    cy.get('@linkField').type(' ');
+
+    cy.get('@sortField').should('have.value', 'sort.latestpublicationdate.asc');
+    cy.get('@cqlField').should(
+      'have.value',
+      "term.title='Harry Potter' AND term.creator= 'J.K. Rowling' AND ( term.generalmaterialtype='bøger' OR term.generalmaterialtype='e-bøger') AND term.fictionnonfiction='fiction'",
+    );
+    cy.get('@locationField').should('have.value', 'børn');
+    cy.get('@sublocationField').should('have.value', 'fantasy');
+    cy.get('@onshelfField').should('be.checked');
+
+    // Testing that new input takes precedence, that an absolute link
+    // also works, and that an accidental extra space doesn't break the CQL.
+    cy.get('@linkField').invoke(
+      'val',
+      "www.google.com/?advancedSearchCql='Harry+Potter'\r\n",
+    );
+    cy.get('@linkField').type(' ');
+
+    cy.get('@sortField').should('have.value', 'relevance');
+    cy.get('@cqlField').should('have.value', "'Harry Potter'");
+    cy.get('@locationField').should('be.empty');
+    cy.get('@sublocationField').should('be.empty');
+    cy.get('@onshelfField').should('not.be.checked');
+
+    // Re-sets all the values.
+    cy.get('@linkField').invoke(
+      'val',
+      "/advanced-search?sort=sort.creator.desc&onshelf=true&location=børn&sublocation=fantasy&advancedSearchCql='Harry%20Potter'",
+    );
+    cy.get('@linkField').type(' ');
+
+    cy.clickSaveButton();
+
+    // Checking that the react app has been created as expected.
+    // We won't check if the values are actually respected, because that is
+    // something that should be tested as part of dpl-react.
+    cy.get(
+      '[data-dpl-app=material-grid-automatic]' +
+        '[data-cql="\'Harry Potter\'"]' +
+        '[data-location="børn"]' +
+        '[data-sublocation="fantasy"]' +
+        '[data-onshelf="true"]' +
+        '[data-sort="sort.creator.desc"]',
+    ).should('exist');
+  });
 });
