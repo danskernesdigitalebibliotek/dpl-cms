@@ -6,10 +6,46 @@ dependencies:
     - field.field.paragraph.material_grid_automatic_v3.field_amount_of_materials
     - field.field.paragraph.material_grid_automatic_v3.field_material_grid_description
     - field.field.paragraph.material_grid_automatic_v3.field_material_grid_title
+    - field.field.paragraph.material_grid_automatic_v3.field_material_search
     - paragraphs.paragraphs_type.material_grid_automatic_v3
   module:
     - dpl_paragraphs
     - field_group
+third_party_settings:
+  field_group:
+    group_make_grid_with_search:
+      children:
+        - field_cql_search
+        - field_material_location
+        - field_material_sub_location
+        - field_material_on_shelf
+      label: 'Make grid with search'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_make_grid_with_search_link:
+      children:
+        - field_material_grid_link
+      label: 'Make grid with search link'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        label_as_html: false
+        description: 'Fill out fields below automatically, by pasting in a link to a search.'
+        required_fields: true
 id: paragraph.material_grid_automatic_v3.default
 targetEntityType: paragraph
 bundle: material_grid_automatic_v3
@@ -36,6 +72,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_material_search:
+    type: dpl_paragraphs_material_search
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

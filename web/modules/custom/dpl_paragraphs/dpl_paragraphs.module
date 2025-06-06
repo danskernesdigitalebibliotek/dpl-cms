@@ -272,8 +272,27 @@ function dpl_paragraphs_preprocess_paragraph__material_grid_automatic_v3(array &
     return;
   }
 
+  if (!$paragraph->hasField('field_material_search')) {
+    return;
+  }
+
   // Get the common render array, used by all material grid paragraphs.
   $render = _dpl_paragraphs_prepare_material_grid($paragraph);
+
+  $material_search = $paragraph->get('field_material_search')->getValue();
+
+  $onshelf = !empty($material_search[0]['onshelf']);
+  $render['#data']['onshelf'] = $onshelf ? 'true' : 'false';
+
+  $filters = ['cql', 'location', 'sublocation', 'sort'];
+
+  foreach ($filters as $filter) {
+    if (empty($material_search[0][$filter])) {
+      continue;
+    }
+
+    $render['#data'][$filter] = $material_search[0][$filter];
+  }
 
   $render['#name'] = 'material-grid-automatic';
 

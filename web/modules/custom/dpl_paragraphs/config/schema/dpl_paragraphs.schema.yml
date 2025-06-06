@@ -1,0 +1,19 @@
+field.field_type.dpl_material_search_item:
+  type: mapping
+  label: 'DPL Material Search field item'
+  mapping:
+    link:
+      type: string
+      label: 'Link to search'
+    cql:
+      type: string
+      label: 'CQL query'
+    location:
+      type: string
+      label: 'Location filter'
+    sublocation:
+      type: string
+      label: 'Sub-location filter'
+    onshelf:
+      type: boolean
+      label: 'On-shelf filter'
