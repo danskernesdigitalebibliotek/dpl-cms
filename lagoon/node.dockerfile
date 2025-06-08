@@ -1,4 +1,4 @@
-FROM ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.24 as builder
+FROM ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.25 as builder
 
 # This is an important variable.
 # It is used both to resolve the url for the DPL CMS, the DPL CMS Graphql endpoint, and the Next.js app URL.
