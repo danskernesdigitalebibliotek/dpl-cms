@@ -10105,14 +10105,6 @@ msgid "Uses \"all\" settings"
 msgstr "Bruger \"alle\" indstillinger"
 
 #: 
-msgid "Lock broken. Anyone can now edit this content translation."
-msgstr "Låsen er brudt. Alle kan nu redigere denne indholdsoversættelse."
-
-#: 
-msgid "Lock broken. Anyone can now edit this content."
-msgstr "Låsen er brudt. Alle kan nu redigere dette indhold."
-
-#: 
 msgid "Break Lock for content @label"
 msgstr "Bryd lås for @label"
 
@@ -10255,34 +10247,6 @@ msgstr "Som standard vil forældede låse blive brudt, når cron køres. Denne m
 #: 
 msgid "Save configuration"
 msgstr "Gem indstillinger"
-
-#: 
-msgid "This content is being edited by the user @name and is therefore locked to prevent other users changes."
-msgstr "Dette indhold bliver redigeret af @name og er derfor låst for at forhindre andre brugere i samtidig redigering."
-
-#: 
-msgid "This content is now locked against simultaneous editing."
-msgstr "Dette indhold er nu låst for samtidig redigering. "
-
-#: 
-msgid "This content is now locked by you against simultaneous editing."
-msgstr "Dette indhold er nu låst af dig mod medredigering."
-
-#: 
-msgid "has been updated."
-msgstr "er blevet opdateret"
-
-#: 
-msgid "This content translation is being edited by the user"
-msgstr "Denne indholdsoversættelse bliver redigeret af brugeren"
-
-#: 
-msgid "against simultaneous editing."
-msgstr "mod samtidig redigering"
-
-#: 
-msgid "updated."
-msgstr "opdateret"
 
 #: 
 msgid "General"
@@ -11706,20 +11670,12 @@ msgid "Enum (integer)"
 msgstr "Enum (integer)"
 
 #: 
-msgid "This field stores integer values from a backed enum."
-msgstr "This field stores integer values from a backed enum."
-
-#: 
 msgid "Number"
 msgstr "Antal"
 
 #: 
 msgid "Enum (text)"
 msgstr "Enum (text)"
-
-#: 
-msgid "This field stores text values from a backed enum."
-msgstr "This field stores text values from a backed enum."
 
 #: 
 msgid "Text"
@@ -12958,36 +12914,12 @@ msgid "Automatically set the <code>title</code> attribute to that of the (transl
 msgstr "Automatisk sæt <code>title</code>-attributten til det af (oversat) refereret indhold"
 
 #: 
-msgid "Linkit enabled"
-msgstr "Linkit aktiveret"
-
-#: 
-msgid "Enable Linkit for this text format."
-msgstr "Aktiver Linkit for dette tekstformat."
-
-#: 
 msgid "Linkit profile"
 msgstr "Linkit-profil"
 
 #: 
-msgid "Select the Linkit profile you wish to use with this text format."
-msgstr "Vælg Linkit-profilen, du ønsker at bruge med dette tekstformat."
-
-#: 
-msgid "Please select the Linkit profile you wish to use."
-msgstr "Vælg Linkit-profilen, du ønsker at bruge."
-
-#: 
 msgid "- Linkit disabled -"
 msgstr "- Linkit deaktiveret -"
-
-#: 
-msgid "Linkit is enabled, please select the Linkit profile you wish to use."
-msgstr "Linkit er aktiveret, vælg venligst den Linkit-profil, du ønsker at bruge."
-
-#: 
-msgid "Linkit is disabled; it does not make sense to associate a Linkit profile."
-msgstr "Linkit er deaktiveret; det giver ikke mening at knytte en Linkit-profil."
 
 #: 
 msgid "Must be the same as the profile selected on the form display for this field."
@@ -19862,10 +19794,6 @@ msgid "Add Included dates"
 msgstr "Tilføj inkluderede datoer"
 
 #: 
-msgid "Send e-mail when content is published by Scheduler"
-msgstr "Send e-mail, når indhold er udgivet af Scheduler"
-
-#: 
 msgid "'[node:title]' has been published on [site:name]"
 msgstr "'[node:title]' er blevet publiceret på [site:name]"
 
@@ -19876,10 +19804,6 @@ msgid "Dear [node:author:name],\n"
 msgstr "\"Kære [node:author:name],\n"
 "Din [node:type] '[node:title]' er blevet publiceret på [site:name].\n"
 "Linket er [node:url]\""
-
-#: 
-msgid "Send e-mail when content is unpublished by Scheduler"
-msgstr "Send e-mail, når indhold er afpubliseret af Scheduler"
 
 #: 
 msgid "'[node:title]' has been unpublished on [site:name]"
@@ -20188,10 +20112,6 @@ msgstr "When this option is checked, Scheduler will write an entry to the log ev
 #: 
 msgid "Lightweight cron access key"
 msgstr "Adgangsnøgle for letvægtscron"
-
-#: 
-msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
-msgstr "Ligesom Drupals cron-nøgle fungerer dette som en sikkerhedstoken for at forhindre uautoriserede kald til scheduler/cron. Nøglen skal videregives som scheduler/cron/{access key}"
 
 #: 
 msgid "Generate new random key"
@@ -20933,10 +20853,6 @@ msgstr "Konfigurer indstillinger for planlagt offentliggørelse og afpublicering
 #: 
 msgid "Scheduler API Legacy Test"
 msgstr "Scheduler API Legacy Test"
-
-#: 
-msgid "Sub-module containing the legacy hook implementations."
-msgstr "Undermodul indeholdende de gamle hook-implementeringer."
 
 #: 
 msgid "Scheduler API Test"
@@ -26564,7 +26480,7 @@ msgstr "Gendan adgangskode"
 #: 
 msgctxt "DPL event"
 msgid "Unpublish eventinstances when they have occured (recommended)"
-msgstr "Afpubliser arrangemenstinstancer når de har været afholdt (anbefalet)"
+msgstr "Afpubliser arrangemenstinstancer når de har været afholdt"
 
 #: 
 msgctxt "DPL event"
@@ -26579,7 +26495,7 @@ msgstr "Hvor lang tid skal der gå efter at en arrangementsinstance har været a
 #: 
 msgctxt "DPL event"
 msgid "Unpublish the series when all instances have occurred (not recommended)"
-msgstr "Afpubliser serien, når alle instancer har været afholdt (anbefales IKKE)"
+msgstr "Afpubliser serien, når alle instancer har været afholdt"
 
 #: 
 msgctxt "DPL event"
@@ -27115,21 +27031,6 @@ msgstr "GO kategori"
 msgctxt "node.type.go_category:description"
 msgid "GO category pages will be used for creating a \"landingpage\" for specific categories. \n"
 "When creating and publishing a new category page, the category will automatically be added to the category menu."
-msgstr ""
-
-#: 
-msgctxt "system.action.user_add_role_action.go_editor:label"
-msgid "Add the GO Editor role to the selected user(s)"
-msgstr ""
-
-#: 
-msgctxt "system.action.user_remove_role_action.go_editor:label"
-msgid "Remove the GO Editor role from the selected user(s)"
-msgstr ""
-
-#: 
-msgctxt "user.role.go_editor:label"
-msgid "GO Editor"
 msgstr ""
 
 #: 
@@ -28840,5 +28741,69 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "NOTE! This material is ordered from another library. Therefore, it may take a few days before it appears on your list of reservations."
+msgstr ""
+
+#: 
+msgid "The selected caching mechanism does not work with views including content lock information. The selected caching mechanism was changed to none accordingly for the view %view."
+msgstr ""
+
+#: 
+msgid "Unlocked. Anyone can now edit this content translation."
+msgstr ""
+
+#: 
+msgid "Unlocked. Anyone can now edit this content."
+msgstr ""
+
+#: 
+msgid "Content Lock access check"
+msgstr ""
+
+#: 
+msgid "Checks if user has access to a specified permission and if the view's entity type is lockable."
+msgstr ""
+
+#: 
+msgid "Content lock hooks tests"
+msgstr ""
+
+#: 
+msgid "Provides test support for content_lock hooks."
+msgstr ""
+
+#: 
+msgid "Values stored are numbers without decimals"
+msgstr ""
+
+#: 
+msgid "Keys and values are defined by the chosen enum."
+msgstr ""
+
+#: 
+msgid "Values stored are text values"
+msgstr ""
+
+#: 
+msgid "Cron access key now stored in state."
+msgstr ""
+
+#: 
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorized calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr ""
+
+#: 
+msgid "Send email when content is published by Scheduler"
+msgstr ""
+
+#: 
+msgid "Send email when content is unpublished by Scheduler"
+msgstr ""
+
+#: 
+msgid "Sub-module containing the legacy hook implementations and event namespaces."
+msgstr ""
+
+#: 
+msgid "You do not have the correct permissions to change the menu items in the selected menu."
 msgstr ""
 
