@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8e9db27ce3a57512901bd0cfabc2c0b",
+    "content-hash": "d9a5307e68a845ac11527143d8c981c8",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,19 +1166,19 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2025.24.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.24.0/dist-2025-24-0-b921d635177fa546ec1b6a11d08befe2b8313865.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.24.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.24.0/dist-2025-24-0-5aaf477810352423c850c13f74dbda574a108b7a.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21284,6 +21284,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
