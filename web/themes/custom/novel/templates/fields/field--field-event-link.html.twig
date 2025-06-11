@@ -16,8 +16,8 @@
      {% set event_data = {
         linkId: 'Klik på Køb billet',
         customClickParameter: {
-          24: node_title
-        }
+          24: node_title,
+        },
       }|json_encode %}
 
       {% if event_is_active %}

@@ -2,15 +2,15 @@
   {% set description_items = [
     {
       label: 'Address'|trans,
-      value: content.field_address.0 ? content.field_address : null
+      value: content.field_address.0 ? content.field_address : null,
     },
     {
       label: 'Email'|trans,
-      value: content.field_email.0 ? content.field_email : null
+      value: content.field_email.0 ? content.field_email : null,
     },
     {
       label: 'Phone'|trans,
-      value: content.field_phone.0 ? content.field_phone : null
+      value: content.field_phone.0 ? content.field_phone : null,
     },
 
   ] %}
@@ -22,7 +22,7 @@
     teaser_text: content.field_teaser_text.0,
     media: content.field_main_media.0,
     description_items: description_items,
-    baseIconPath: baseIconPath
+    baseIconPath: baseIconPath,
   }, false) }}
 
     {{ content.field_paragraphs }}
