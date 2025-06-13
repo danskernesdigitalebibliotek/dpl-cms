@@ -166,7 +166,7 @@ environments:
         command: drush dpl_po:import-remote-config-po da https://danskernesdigitalebibliotek.github.io/dpl-cms/translations/da.config.po
         service: cli
 
-  pr-1707:
+  pr-2513:
     routes:
       - varnish:
         - "cms-demo.dpl-cms.dplplat01.dpl.reload.dk":
