@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0911820e58b7ee911051e08485adb3ac",
+    "content-hash": "801f95c578edeb6e2e0e2c2aa4e2f72a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.24.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.24.0/dist-2025-24-0-5aaf477810352423c850c13f74dbda574a108b7a.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-713-sogning-pa-en-og-to-karakterer-skal-vaere-mulig/dist-ddfbra-713-sogning-pa-en-og-to-karakterer-skal-vaere-mulig.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21224,6 +21224,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
