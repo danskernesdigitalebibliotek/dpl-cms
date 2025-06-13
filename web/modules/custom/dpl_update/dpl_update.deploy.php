@@ -2,10 +2,12 @@
 
 use Drupal\collation_fixer\CollationFixer;
 use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Database\StatementInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\drupal_typed\DrupalTyped;
+use Drupal\media\Entity\Media;
 use Drupal\node\NodeInterface;
 use Drupal\recurring_events\Entity\EventInstance;
 use Drupal\recurring_events\Entity\EventSeries;
@@ -306,4 +308,171 @@ function dpl_update_deploy_fix_content_view(): string {
   $config->save(TRUE);
 
   return 'views.view.contentdisplay.default.display_options.cache.type => tag';
+}
+
+/**
+ * Find duplicate medias, and hide them in the media library.
+ *
+ * As part of a bug, all medias pulled from Delingstjenesten/BNF were duplicated
+ * resulting in a bloated media library.
+ *
+ * @param array<mixed> $sandbox
+ *   The sandbox, used for batch processing.
+ */
+function dpl_update_deploy_duplicate_media_cleanup(array &$sandbox): ?string {
+  // Amount of medias we want to handle per sandbox batch.
+  $batch_size = 50;
+
+  // First run: prepare everything, finding the initial IDs of duplicate medias.
+  if (!isset($sandbox['ids'])) {
+    $connection = \Drupal::database();
+
+    // Find all file IDs, that are referenced in more than one media.
+    $duplicate_fids = $connection->select('media__field_media_image', 'mfi')
+      ->fields('mfi', ['field_media_image_target_id'])
+      ->groupBy('field_media_image_target_id')
+      ->having('COUNT(entity_id) > 1')
+      ->execute();
+
+    if (!($duplicate_fids instanceof StatementInterface)) {
+      $message = 'dpl_update_deploy_duplicate_media_cleanup: Could not retrieve media image file ids for duplicate media cleanup.';
+
+      \Drupal::logger('dpl_update')->error($message);
+
+      return $message;
+    }
+
+    $duplicate_fids = $duplicate_fids->fetchCol();
+
+    if (empty($duplicate_fids)) {
+      return 'No duplicate media files found.';
+    }
+
+    // Find all medias that actually reference the duplicated file IDs.
+    $media_ids = $connection->select('media__field_media_image', 'mfi')
+      ->fields('mfi', ['entity_id'])
+      ->condition('mfi.field_media_image_target_id', $duplicate_fids, 'IN')
+      ->execute();
+
+    if (!($media_ids instanceof StatementInterface)) {
+      $message = 'dpl_update_deploy_duplicate_media_cleanup: Could not retrieve media image ids for duplicate media cleanup.';
+
+      \Drupal::logger('dpl_update')->error($message);
+
+      return $message;
+    }
+
+    $media_ids = $media_ids->fetchCol();
+
+    if (empty($media_ids)) {
+      return 'No duplicate medias found.';
+    }
+
+    // Looking up any entities that may reference the duplicated medias.
+    $referenced_media_ids = [];
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $field_manager = \Drupal::service('entity_field.manager');
+    $bundle_info = \Drupal::service('entity_type.bundle.info');
+
+    // Go through all the different entity types (paragraphs, nodes, etc.)
+    foreach ($entity_type_manager->getDefinitions() as $entity_type_id => $definition) {
+      $entity_class = $definition->getClass();
+
+      // Skip entities that cannot reference the medias.
+      if (!is_subclass_of($entity_class, FieldableEntityInterface::class)) {
+        continue;
+      }
+
+      // Looping through each bundle of the entity types (articles, pages, etc.)
+      foreach (array_keys($bundle_info->getBundleInfo($entity_type_id)) as $bundle) {
+        $fields = $field_manager->getFieldDefinitions($entity_type_id, $bundle);
+
+        // Going through all fields that exists on this bundle, and see if it is
+        // a media-reference.
+        foreach ($fields as $field) {
+          if ($field->getType() !== 'entity_reference' || $field->getSetting('target_type') !== 'media') {
+            continue;
+          }
+
+          $field_name = $field->getName();
+          $table = "{$entity_type_id}__{$field_name}";
+
+          if (!$connection->schema()->tableExists($table)) {
+            continue;
+          }
+
+          // Looking up if there are any entities that reference the duplicate
+          // media IDs.
+          $batch_media_ids = $connection->select($table, 't')
+            ->fields('t', ["{$field_name}_target_id"])
+            ->condition("{$field_name}_target_id", $media_ids, 'IN')
+            ->execute();
+
+          if (!($batch_media_ids instanceof StatementInterface)) {
+            $message = 'dpl_update_deploy_duplicate_media_cleanup: Could not retrieve referenced medias for duplicate media cleanup.';
+
+            \Drupal::logger('dpl_update')->error($message);
+
+            return $message;
+          }
+
+          $batch_media_ids = $batch_media_ids->fetchCol();
+
+          $referenced_media_ids = array_merge($referenced_media_ids, $batch_media_ids);
+        }
+      }
+    }
+
+    // Finding any medias that have duplicates, but also aren't referenced
+    // in any entities AKA orphaned.
+    $referenced_media_ids = array_unique($referenced_media_ids);
+    $orphaned_media_ids = array_values(array_diff($media_ids, $referenced_media_ids));
+
+    // Initialize sandbox values, that we will use as part of batch.
+    $sandbox['ids'] = $orphaned_media_ids;
+    $sandbox['total'] = count($orphaned_media_ids);
+    $sandbox['current'] = 0;
+
+    if (empty($sandbox['total'])) {
+      $sandbox['#finished'] = 1;
+      return 'No orphaned media duplicates found.';
+    }
+  }
+
+  // Slice the current batch from stored IDs, breaking it into batches.
+  $batch_ids = array_slice($sandbox['ids'], $sandbox['current'], $batch_size);
+  $medias = Media::loadMultiple($batch_ids);
+
+  \Drupal::logger('dpl_update')->notice('dpl_update_deploy_duplicate_media_cleanup: Batch progress: @current / @total.', [
+    '@current' => $sandbox['current'],
+    '@total' => $sandbox['total'],
+  ]);
+
+  // Looping through the medias, and hiding it from medialibrary by
+  // unpublishing, and setting a revision message.
+  // In a future deploy, we may choose to delete these medias, and then they
+  // can be looked up via the revision message.
+  foreach ($medias as $media) {
+    $media->setUnpublished();
+    $media->setOwnerId(1);
+    $media->setNewRevision();
+    $media->setRevisionLogMessage('Unpublished for duplicate cleanup (dpl_update_deploy_duplicate_media_cleanup)');
+    $media->save();
+    $sandbox['current']++;
+  }
+
+  // Progress feedback, used for looping through batches.
+  $sandbox['#finished'] = $sandbox['current'] >= $sandbox['total']
+    ? 1
+    : ($sandbox['current'] / $sandbox['total']);
+
+  if ($sandbox['#finished'] === 1) {
+    \Drupal::logger('dpl_update')->notice(
+      'dpl_update_deploy_duplicate_media_cleanup: Finished cleaning up duplicated medias.'
+    );
+
+    return "Unpublished and hid {$sandbox['total']} duplicate medias.";
+  }
+
+  return NULL;
 }
