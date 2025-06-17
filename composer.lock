@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b656d525d2d1d4640c01fea1c38035f",
+    "content-hash": "d7c2bed4cbe7716568eceda6be94f79b",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1175,10 +1175,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.25.0",
+            "version": "2025.25.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.25.0/dist-2025-25-0-570d39009a0fa04c8d764e70d8f745e9e99ad36d.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-80-use-covers-from-fbi/dist-ddfsal-80-use-covers-from-fbi.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
