@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-06-17 14:12+0200\n"
-"PO-Revision-Date: 2025-06-17 14:12+0200\n"
+"POT-Creation-Date: 2025-06-17 16:49+0200\n"
+"PO-Revision-Date: 2025-06-17 16:49+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19852,45 +19852,45 @@ msgstr ""
 
 msgctxt "advanced search"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "advanced search"
 msgid "Relevance"
-msgstr ""
+msgstr "Bedste match"
 
 msgctxt "advanced search"
 msgid "Latest publication date"
-msgstr ""
+msgstr "Udgivelsesdato"
 
 msgctxt "advanced search"
 msgid "Latest publication date (descending)"
-msgstr ""
+msgstr "Nyeste først"
 
 msgctxt "advanced search"
 msgid "Latest publication date (ascending)"
-msgstr ""
+msgstr "Ældste først"
 
 msgctxt "advanced search"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter / ophav"
 
 msgctxt "advanced search"
 msgid "Author (ascending)"
-msgstr ""
+msgstr "A - Å"
 
 msgctxt "advanced search"
 msgid "Author (descending)"
-msgstr ""
+msgstr "Å - A"
 
 msgctxt "advanced search"
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgctxt "advanced search"
 msgid "Title (ascending)"
-msgstr ""
+msgstr "A - Å"
 
 msgctxt "advanced search"
 msgid "Title (descending)"
-msgstr ""
+msgstr "Å - A"
 
