@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2025.25.0",
+                "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.25.0/dist-2025-25-0-570d39009a0fa04c8d764e70d8f745e9e99ad36d.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -56,9 +56,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2025.25.0",
+                "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.25.0/dist-2025-25-0-4053109fbd84136c1896f0968d664f56fbcfa97d.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip",
                     "type": "zip"
                 }
             }
@@ -91,8 +91,8 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2025.25.0",
-        "danskernesdigitalebibliotek/dpl-react": "2025.25.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "0.0.0-dev",
+        "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
