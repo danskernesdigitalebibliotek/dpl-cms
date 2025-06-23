@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2025.25.1",
+                "version": "2025.25.2",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/untagged-145004f3b641914be475/dist-ddfsal-80-use-covers-from-fbi.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-80-use-covers-from-fbi/dist-ddfsal-80-use-covers-from-fbi.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -92,7 +92,7 @@
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
         "danskernesdigitalebibliotek/dpl-design-system": "2025.25.0",
-        "danskernesdigitalebibliotek/dpl-react": "2025.25.1",
+        "danskernesdigitalebibliotek/dpl-react": "2025.25.2",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
