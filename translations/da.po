@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-06-17 17:08+0200\n"
-"PO-Revision-Date: 2025-06-17 17:08+0200\n"
+"POT-Creation-Date: 2025-06-24 14:50+0200\n"
+"PO-Revision-Date: 2025-06-24 14:50+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -17800,19 +17800,6 @@ msgctxt "config_perms.custom_perms_entity.administer_maintenance_mode:label"
 msgid "Administer maintenance mode"
 msgstr "Administrer vedligeholdelsestilstand"
 
-msgid "CQL Search String"
-msgstr "CQL søgestreng"
-
-msgid "Enter CQL search string"
-msgstr "Indtast CQL søgestreng"
-
-msgid ""
-"CQL search string field. Perform an advanced search and copy/paste the "
-"string to this field."
-msgstr ""
-"CQL søgestrengsfelt. Udfør en avanceret søgning og kopier/indsæt "
-"strengen til dette felt."
-
 msgid "List all opening hours for legacy API"
 msgstr "List alle åbningstider for ældre API"
 
@@ -19876,11 +19863,11 @@ msgstr "Forfatter / ophav"
 
 msgctxt "advanced search"
 msgid "Author (ascending)"
-msgstr "A - Å"
+msgstr "Forfatter / ophav (A - Å)"
 
 msgctxt "advanced search"
 msgid "Author (descending)"
-msgstr "Å - A"
+msgstr "Forfatter / ophav (Å - A)"
 
 msgctxt "advanced search"
 msgid "Title"
@@ -19888,9 +19875,102 @@ msgstr "Titel"
 
 msgctxt "advanced search"
 msgid "Title (ascending)"
-msgstr "A - Å"
+msgstr "Titel (A - Å)"
 
 msgctxt "advanced search"
 msgid "Title (descending)"
-msgstr "Å - A"
+msgstr "Titel (Å - A)"
+
+msgid ""
+"Paragraph migration of @old_type to @new_type completed. @count / "
+"@total migrated."
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Location"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Sub-location"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "On-shelf"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Sorting"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Enabled advanced fields"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Allow editor to fill data into advanced fields (@fields)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Advanced fields enabled"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Advanced fields NOT enabled"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Fill out fields using link (optional)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Link to search"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid ""
+"E.g. "
+"https://mitbibliotek.dk/advanced-search?advancedSearchCql=%27Harry+Potter%27"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Load filters from URL"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Search filters"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By publication date (descending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By publication date (ascending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By title (descending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By title (ascending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By creator (descending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By creator (ascending)"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "By relevance"
+msgstr ""
+
+msgctxt "dpl_fbi"
+msgid ""
+"The link you pasted is not valid.<br> See the guide, for how to find a "
+"correct link."
+msgstr ""
 
