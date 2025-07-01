@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "277092b302277b77995c0efc65ccf50c",
+    "content-hash": "3ef41f88fb0885aad51ccef427864021",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1178,7 +1178,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-revert-1875-DDFBRA-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown/dist-revert-1875-ddfbra-646-der-onskes-tydeligere-markering-af-at-autosuggesten-er-en-dropdown.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21255,6 +21255,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
