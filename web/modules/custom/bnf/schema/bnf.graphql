@@ -160,17 +160,20 @@ type GoConfiguration {
 }
 
 type GoConfigurationPrivate {
-  unilogin: UniloginConfiguration
+  unilogin: UniloginConfigurationPrivate
 }
 
 type GoConfigurationPublic {
   libraryInfo: GoLibraryInfo
   loginUrls: GoLoginUrls
   logoutUrls: GoLogoutUrls
+  searchProfiles: SearchProfiles
+  unilogin: UniloginConfigurationPublic
 }
 
 type GoLibraryInfo {
   name: String
+  cmsUrl: String!
 }
 
 type GoLoginUrls {
@@ -398,6 +401,7 @@ type MediaVideo implements MediaInterface {
 
   """Published"""
   status: Boolean!
+  thumbnail: String!
 }
 
 """Entity type media."""
@@ -425,6 +429,7 @@ type MediaVideotool implements MediaInterface {
 
   """Published"""
   status: Boolean!
+  thumbnail: String!
 }
 
 """The schema's entry-point for mutations."""
@@ -956,6 +961,7 @@ type ParagraphCardGridManual implements ParagraphInterface {
 
   """Title"""
   title: String
+  gridContentUuids: [String]
 }
 
 """Content"""
@@ -1196,7 +1202,7 @@ type ParagraphGoMaterialSliderAutomatic implements ParagraphInterface {
   generated, by performing a query through the advanced search, and copying the
   CQL string from there.
   """
-  cqlSearch: CQLSearch!
+  cqlSearch: CQLSearch
 
   """The time that the Paragraph was created."""
   created: DateTime!
@@ -1300,7 +1306,7 @@ type ParagraphGoVideoBundleAutomatic implements ParagraphInterface {
   generated, by performing a query through the advanced search, and copying the
   CQL string from there.
   """
-  cqlSearch: CQLSearch!
+  cqlSearch: CQLSearch
 
   """The time that the Paragraph was created."""
   created: DateTime!
@@ -1487,7 +1493,7 @@ type ParagraphMaterialGridAutomatic implements ParagraphInterface {
   generated, by performing a query through the advanced search, and copying the
   CQL string from there.
   """
-  cqlSearch: CQLSearch!
+  cqlSearch: CQLSearch
 
   """The time that the Paragraph was created."""
   created: DateTime!
@@ -1627,6 +1633,11 @@ type ParagraphNavGridManual implements ParagraphInterface {
 
   """Published"""
   status: Boolean!
+
+  """Title"""
+  title: String
+
+  contentReferenceUuids: [String]
 }
 
 """Contents"""
@@ -1643,9 +1654,16 @@ type ParagraphNavSpotsManual implements ParagraphInterface {
   """The paragraphs entity language code."""
   langcode: Language!
 
+  """Indhold"""
+  navSpotsContent: [ParagraphNavSpotsManualNavSpotsContentUnion!]
+
   """Published"""
   status: Boolean!
+  navSpotsContentUuids: [String]
 }
+
+"""Content"""
+union ParagraphNavSpotsManualNavSpotsContentUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
 """
 This is a paragraph for displaying the opening hours for the branch it is applied to. 
@@ -2010,6 +2028,23 @@ type SchemaInformation {
   languages: [Language!]!
 }
 
+"""Various FBI profiles configured by the local library."""
+type SearchProfiles {
+  """
+  This is meant to be a fallback profile if no other profile is specified.
+  But is not being used in the current implementation.
+  """
+  default: String
+
+  """
+  This is the profile used for searching works in the library's catalog.
+  """
+  local: String
+
+  """This is the profile is using materials from other libraries as well."""
+  global: String
+}
+
 """Sort direction."""
 enum SortDirection {
   """Stigende"""
@@ -2313,12 +2348,15 @@ type Translation {
   path: String
 }
 
-"""List of DPL-Go Unilogin configuration."""
-type UniloginConfiguration {
-  unilogin_api_url: String
-  unilogin_api_wellknown_url: String
-  unilogin_api_client_id: String
-  unilogin_api_client_secret: String
+type UniloginConfigurationPrivate {
+  clientSecret: String
+  webServiceUsername: String
+  webServicePassword: String
+  pubHubRetailerKeyCode: String
+}
+
+type UniloginConfigurationPublic {
+  municipalityId: String
 }
 
 """
