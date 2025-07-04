@@ -23,7 +23,11 @@ jobs:
         run: |
           git fetch origin ${{ github.base_ref }}
           CHANGES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
-          echo "changes=$CHANGES" >> "$GITHUB_OUTPUT"
+          {
+            echo 'changes<<EOF'
+            echo "$CHANGES"
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
 
   checkRoles:
     name: Check roles has been updated correctly
