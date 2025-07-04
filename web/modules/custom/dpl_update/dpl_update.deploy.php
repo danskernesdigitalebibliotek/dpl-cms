@@ -363,10 +363,3 @@ function dpl_update_deploy_clean_medias(array &$sandbox): string {
 
   return "Archived {$sandbox['current']}/{$sandbox['total']} duplicate medias.";
 }
-
-function dpl_update_deploy_testing()
-{
-  // _dpl_update_alter_permissions
-  _dpl_update_install_modules(['bnf']);
-
-}
