@@ -1,4 +1,3 @@
-"""Complex address data."""
 type Address {
   langcode: String
   country: AddressCountry
@@ -15,13 +14,10 @@ type Address {
   administrativeArea: String
 }
 
-"""Kommune."""
 type AddressCountry {
-  """The name of the country."""
-  name: String
+    name: String
 
-  """The code of the country."""
-  code: String
+    code: String
 }
 
 type AdgangsplatformenLibraryToken {
@@ -39,119 +35,82 @@ type AdgangsplatformenUserToken {
   expire: DateTime
 }
 
-"""Input for filter exposed with operator "between"."""
 input BetweenFloatInput {
-  """The minimum value of the range."""
-  min: Float
+    min: Float
 
-  """The maximum value of the range."""
-  max: Float
+    max: Float
 }
 
-"""Input for filter exposed with operator "between"."""
 input BetweenStringInput {
-  """The minimum value of the range."""
-  min: String
+    min: String
 
-  """The maximum value of the range."""
-  max: String
+    max: String
 }
 
-"""En CQL søgestreng."""
 type CQLSearch {
-  """CQL søgestrengen."""
-  value: String
+    value: String
 }
 
-"""A color field."""
 type Color {
-  """The color value in #HEX format."""
-  color: String
+    color: String
 
-  """The opacity value."""
-  opacity: Float
+    opacity: Float
 }
 
-"""A Date range has a start and an end."""
 type DateRange {
-  """The start of the date range."""
-  start: DateTime
+    start: DateTime
 
-  """The end of the date range."""
-  end: DateTime
+    end: DateTime
 }
 
-"""A DateTime object."""
 type DateTime {
-  """
-  Type represents date and time as number of milliseconds from start of the UNIX epoch.
-  """
-  timestamp: Timestamp!
+    timestamp: Timestamp!
 
-  """A field whose value exists in the standard IANA Time Zone Database."""
-  timezone: TimeZone!
+    timezone: TimeZone!
 
-  """A string that will have a value of format ±hh:mm"""
-  offset: UtcOffset!
+    offset: UtcOffset!
 
-  """RFC 3339 compliant time string."""
-  time: Time!
+    time: Time!
 }
 
 type DplTokens {
   adgangsplatformen: AdgangsplatformenTokens
 }
 
-"""An email address."""
 scalar Email
 
 type Error {
   message: String!
 }
 
-"""A file object to represent an managed file."""
 type File {
-  """Filens navn."""
-  name: String
+    name: String
 
-  """The URL of the file."""
-  url: String!
+    url: String!
 
-  """Filens størrelse i bytes."""
-  size: Int!
+    size: Int!
 
-  """Filens mime-type."""
-  mime: String
+    mime: String
 
-  """The description of the file."""
-  description: String
+    description: String
 }
 
-"""Result for view go_categories display go_categories."""
 type GoCategoriesResult implements View {
-  """The ID of the view."""
-  id: ID!
+    id: ID!
 
-  """The machine name of the view."""
-  view: String!
+    view: String!
 
-  """The machine name of the display."""
-  display: String!
+    display: String!
 
-  """The language code of the view."""
-  langcode: String
+    langcode: String
 
-  """The human friendly label of the view."""
-  label: String
+    label: String
 
-  """Viewets beskrivelse."""
-  description: String
+    description: String
 
-  """Information about the page in the view."""
-  pageInfo: ViewPageInfo!
+    pageInfo: ViewPageInfo!
 
-  """The results of the view."""
-  results: [NodeUnion!]!
+    results: [NodeUnion!]!
 }
 
 type GoConfiguration {
@@ -160,17 +119,20 @@ type GoConfiguration {
 }
 
 type GoConfigurationPrivate {
-  unilogin: UniloginConfiguration
+  unilogin: UniloginConfigurationPrivate
 }
 
 type GoConfigurationPublic {
   libraryInfo: GoLibraryInfo
   loginUrls: GoLoginUrls
   logoutUrls: GoLogoutUrls
+  searchProfiles: SearchProfiles
+  unilogin: UniloginConfigurationPublic
 }
 
 type GoLibraryInfo {
   name: String
+  cmsUrl: String!
 }
 
 type GoLoginUrls {
@@ -181,37 +143,22 @@ type GoLogoutUrls {
   adgangsplatformen: String
 }
 
-"""
-An HTML string
-
-Content of this type is deemed safe by the server for raw output given the
-origin and the context of its usage. The HTML can still contain scripts or style
-tags where the creating user had permission to input these.
-"""
 scalar Html
 
-"""A image object to represent an managed file."""
 type Image {
-  """The URL of the image."""
-  url: String!
+    url: String!
 
-  """The width of the image."""
-  width: Int!
+    width: Int!
 
-  """The height of the image."""
-  height: Int!
+    height: Int!
 
-  """The alt text of the image."""
-  alt: String
+    alt: String
 
-  """The title text of the image."""
-  title: String
+    title: String
 
-  """The size of the image in bytes."""
-  size: Int!
+    size: Int!
 
-  """The mime type of the image."""
-  mime: String
+    mime: String
 }
 
 type ImportResponse {
@@ -224,213 +171,142 @@ enum ImportStatus {
   failure
 }
 
-"""Generic input for key-value pairs."""
 input KeyValueInput {
   key: String!
   value: String
 }
 
-"""A language definition provided by the CMS."""
 type Language {
-  """Sprogkoden."""
-  id: ID
+    id: ID
 
-  """Sprogets navn."""
-  name: String
+    name: String
 
-  """The language direction."""
-  direction: String
+    direction: String
 }
 
-"""A link."""
 type Link {
-  """Linkets titel"""
-  title: String
+    title: String
 
-  """Linkets URL"""
-  url: String
+    url: String
 
-  """Whether the link is internal to this website."""
-  internal: Boolean!
+    internal: Boolean!
   id: String
 }
 
-"""Entity type media."""
 type MediaAudio implements MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Audio file"""
-  mediaAudioFile: File!
+    mediaAudioFile: File!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type media."""
 type MediaDocument implements MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """File"""
-  mediaFile: File!
+    mediaFile: File!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type media."""
 type MediaImage implements MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  Used for public credit and copyright information. Will usually be displayed along with the media.
-  """
-  byline: String
+    byline: String
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  You can set a focal point, by clicking on the preview on the image, moving the
-  white target.<br /><br />By setting a focal point, you tell the system which
-  part of the image to keep in focus when it gets cropped.<br /><br />Use the
-  "preview" function, to see how your image will be cropped across image styles.
-  """
-  mediaImage: Image!
+    mediaImage: Image!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type media."""
 interface MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type media."""
 union MediaUnion = MediaAudio | MediaDocument | MediaImage | MediaVideo | MediaVideotool
 
-"""Entity type media."""
 type MediaVideo implements MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Remote video URL"""
-  mediaOembedVideo: String!
+    mediaOembedVideo: String!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
+  thumbnail: String!
 }
 
-"""Entity type media."""
 type MediaVideotool implements MediaInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time the media item was last edited."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The time the media item was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """VideoTool URL"""
-  mediaVideotool: String!
+    mediaVideotool: String!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
+  thumbnail: String!
 }
 
-"""The schema's entry-point for mutations."""
 type Mutation {
-  """Placeholder for mutation extension."""
-  _: Boolean!
+    _: Boolean!
   import(uuid: String!, callbackUrl: String!): ImportResponse!
 }
 
@@ -440,2007 +316,1211 @@ type NewContentResponse {
   errors: [Error!]!
 }
 
-"""
-Use articles for news-worthy content, that does not get updated regularly.
-"""
 type NodeArticle implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Branch"""
-  branch: NodeUnion
+    branch: NodeUnion
 
-  """
-  Please provide a canonical URL if this content has been duplicated from other
-  websites. This helps signal to search engines that the preferred source of
-  this content is the specified canonical URL, preventing potential duplicate
-  content issues and ensuring proper attribution to the original source.
-  """
-  canonicalUrl: Link
+    canonicalUrl: Link
 
-  """Categories"""
-  categories: TermUnion
+    categories: TermUnion
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Override author"""
-  overrideAuthor: String
+    overrideAuthor: String
 
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
+    paragraphs: [ParagraphUnion!]
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Publication date"""
-  publicationDate: DateTime!
+    publicationDate: DateTime!
 
-  """
-  By default, the author is set to the Drupal user that owns the content.<br
-  /><br />If you want to override this, with a manual text, you can check this.
-  """
-  showOverrideAuthor: Boolean
+    showOverrideAuthor: Boolean
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Subtitle"""
-  subtitle: String
+    subtitle: String
 
-  """Tags"""
-  tags: [TermUnion!]
+    tags: [TermUnion!]
 
-  """
-  The teaser fields are used for the card of display.<br />If no image has been
-  selected, the text will be shown instead:<br /><br /><img
-  src="/themes/custom/novel/images/teaser-text-image.jpg" /><br /><br /><hr/>
-  """
-  teaserImage: MediaUnion
+    teaserImage: MediaUnion
 
-  """Teaser text"""
-  teaserText: String
+    teaserText: String
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""
-Use Go articles for news-worthy content, that does not get updated regularly.
-"""
 type NodeGoArticle implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Image"""
-  goArticleImage: MediaUnion
+    goArticleImage: MediaUnion
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Override author"""
-  overrideAuthor: String
+    overrideAuthor: String
 
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
+    paragraphs: [ParagraphUnion!]
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Publication date"""
-  publicationDate: DateTime!
+    publicationDate: DateTime!
 
-  """
-  By default, the author is set to the Drupal user that owns the content.<br
-  /><br />If you want to override this, with a manual text, you can check this.
-  """
-  showOverrideAuthor: Boolean
+    showOverrideAuthor: Boolean
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Subtitle"""
-  subtitle: String
+    subtitle: String
 
-  """
-  The teaser fields are used for the card of display.<br />If no image has been
-  selected, the text will be shown instead:<br /><br /><img
-  src="/themes/custom/novel/images/teaser-text-image.jpg" /><br /><br /><hr/>
-  """
-  teaserImage: MediaUnion!
+    teaserImage: MediaUnion!
 
-  """Teaser text"""
-  teaserText: String
+    teaserText: String
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""
-GO category pages will be used for creating a "landingpage" for specific categories. 
-When creating and publishing a new category page, the category will automatically be added to the category menu.
-"""
 type NodeGoCategory implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  The category image will be shown in the category menu as part of this category's menu element.
-  """
-  categoryMenuImage: MediaUnion!
+    categoryMenuImage: MediaUnion!
 
-  """
-  The category sound will be able to be played in the category menu as part of this category's menu element.
-  """
-  categoryMenuSound: MediaUnion
+    categoryMenuSound: MediaUnion
 
-  """
-  The category title will be shown in the category menu as part of this category's menu element.
-  """
-  categoryMenuTitle: String!
+    categoryMenuTitle: String!
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Category menu color"""
-  goColor: String
+    goColor: String
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
+    paragraphs: [ParagraphUnion!]
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Publication date"""
-  publicationDate: DateTime!
+    publicationDate: DateTime!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""
-GO pages will be used for various types of content, which does not belong to
-either an article page or an category page. Some examples could be the
-frontpage, info pages, etc.
-"""
 type NodeGoPage implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
+    paragraphs: [ParagraphUnion!]
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Publication date"""
-  publicationDate: DateTime!
+    publicationDate: DateTime!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""Entity type node."""
 interface NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""
-Pages can be used for various types of content, either temporary or permanent. A
-page can be simple, containing text about, for example, loan rules, or it can
-serve as a structural unit designed to display other pages in a section for
-communication or navigation.
-"""
 type NodePage implements NodeInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Branch"""
-  branch: NodeUnion
+    branch: NodeUnion
 
-  """
-  TODO: A text about how the structure tree works.<br><br />"If you want to make
-  this page central, you need to save it first, and then <a
-  href="/admin/structure/taxonomy/manage/breadcrumb_structure/add"
-  target="_blank">add it as a reference in the content structure tree</a>
-  """
-  breadcrumbParent: TermUnion
+    breadcrumbParent: TermUnion
 
-  """
-  Please provide a canonical URL if this content has been duplicated from other
-  websites. This helps signal to search engines that the preferred source of
-  this content is the specified canonical URL, preventing potential duplicate
-  content issues and ensuring proper attribution to the original source.
-  """
-  canonicalUrl: Link
+    canonicalUrl: Link
 
-  """Tidspunktet hvor indholdselementet sidst blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """The date and time that the content was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """
-  By default, titles and subtitles are not displayed on pages. If you wish to
-  have it displayed, you can enable this setting.
-  """
-  displayTitles: Boolean
+    displayTitles: Boolean
 
-  """
-  The title that is shown at the top of the page.<br /><br /><strong>If this is
-  empty, the standard page title will be used instead.</strong>
-  """
-  heroTitle: String
+    heroTitle: String
 
-  """Language"""
-  langcode: Language!
+    langcode: Language!
 
-  """Paragraphs"""
-  paragraphs: [ParagraphUnion!]
+    paragraphs: [ParagraphUnion!]
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Forfremmet til forside"""
-  promote: Boolean!
+    promote: Boolean!
 
-  """Publication date"""
-  publicationDate: DateTime!
+    publicationDate: DateTime!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Klæbrig"""
-  sticky: Boolean!
+    sticky: Boolean!
 
-  """Subtitle"""
-  subtitle: String
+    subtitle: String
 
-  """
-  The teaser fields are used for the card of display.<br />If no image has been
-  selected, the text will be shown instead:<br /><br /><img
-  src="/themes/custom/novel/images/teaser-text-image.jpg" /><br /><br /><hr/>
-  """
-  teaserImage: MediaUnion
+    teaserImage: MediaUnion
 
-  """Teaser text"""
-  teaserText: String
+    teaserText: String
 
-  """Title"""
-  title: String!
+    title: String!
   url: String!
 }
 
-"""Entity type node."""
 union NodeUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-"""Entity type paragraph."""
 type ParagraphAccordion implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Accordion description"""
-  accordionDescription: Text
+    accordionDescription: Text
 
-  """Accordion title"""
-  accordionTitle: Text!
+    accordionTitle: Text!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-Banner's purpose is to link internally or externally and can be used with or without a background image.
-"""
 type ParagraphBanner implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Banner description"""
-  bannerDescription: String
+    bannerDescription: String
 
-  """Banner Image"""
-  bannerImage: MediaUnion
+    bannerImage: MediaUnion
 
-  """Banner Link"""
-  bannerLink: Link!
+    bannerLink: Link!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Underlined title"""
-  underlinedTitle: Text
+    underlinedTitle: Text
 }
 
-"""
-Automatically display all content that is referencing your chosen breadcrumb item.
-"""
 type ParagraphBreadcrumbChildren implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  Choose a parent in the breadcrumb structure, from which the children will be
-  displayed. <br><br />Only one level of children will be shown.
-  """
-  breadcrumbTarget: TermUnion
+    breadcrumbTarget: TermUnion
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Show subtitles"""
-  showSubtitles: Boolean
+    showSubtitles: Boolean
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""A rule for selecting a matching campaign"""
 type ParagraphCampaignRule implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Facet"""
-  campaignRuleFacet: String!
+    campaignRuleFacet: String!
 
-  """Term"""
-  campaignRuleTerm: String!
+    campaignRuleTerm: String!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type paragraph."""
 type ParagraphCardGridAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """If nothing is selected, all will be chosen."""
-  filterBranches: [NodeUnion!]
+    filterBranches: [NodeUnion!]
 
-  """Filter by categories"""
-  filterCategories: [TermUnion!]
+    filterCategories: [TermUnion!]
 
-  """Condition type"""
-  filterCondType: String!
+    filterCondType: String!
 
-  """If nothing is selected, all will be chosen."""
-  filterContentTypes: [String!]
+    filterContentTypes: [String!]
 
-  """Filter by tags"""
-  filterTags: [TermUnion!]
+    filterTags: [TermUnion!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """More link"""
-  moreLink: Link
+    moreLink: Link
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String
+    title: String
 }
 
-"""Entity type paragraph."""
 type ParagraphCardGridManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Content"""
-  gridContent: [ParagraphCardGridManualGridContentUnion!]
+    gridContent: [ParagraphCardGridManualGridContentUnion!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """More link"""
-  moreLink: Link
+    moreLink: Link
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String
+    title: String
+  gridContentUuids: [String]
 }
 
-"""Content"""
 union ParagraphCardGridManualGridContentUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-"""Entity type paragraph."""
 type ParagraphContentSlider implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Contents"""
-  contentReferences: [ParagraphContentSliderContentReferencesUnion!]
+    contentReferences: [ParagraphContentSliderContentReferencesUnion!]
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """deprecated"""
-  title: String
+    title: String
 
-  """Title"""
-  underlinedTitle: Text
+    underlinedTitle: Text
 }
 
-"""Entity type paragraph."""
 type ParagraphContentSliderAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """If nothing is selected, all will be chosen."""
-  filterBranches: [NodeUnion!]
+    filterBranches: [NodeUnion!]
 
-  """Filter by categories"""
-  filterCategories: [TermUnion!]
+    filterCategories: [TermUnion!]
 
-  """Condition type"""
-  filterCondType: String!
+    filterCondType: String!
 
-  """If nothing is selected, all will be chosen."""
-  filterContentTypes: [String!]
+    filterContentTypes: [String!]
 
-  """Filter by tags"""
-  filterTags: [TermUnion!]
+    filterTags: [TermUnion!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """deprecated"""
-  title: String
+    title: String
 
-  """Title"""
-  underlinedTitle: Text
+    underlinedTitle: Text
 }
 
-"""Contents"""
 union ParagraphContentSliderContentReferencesUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-"""A combination of ticket category name and price for an event. """
 type ParagraphEventTicketCategory implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Name"""
-  ticketCategoryName: String!
+    ticketCategoryName: String!
 }
 
-"""
-Links with icons. Designed for jpg, jpeg, png, pdf, mp3, mov, mp4, mpeg files
-"""
 type ParagraphFiles implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Files"""
-  files: [MediaUnion!]
+    files: [MediaUnion!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-This paragraph displays a generated a list of events, based on specified filters for tags, categories and branches. 
-"""
 type ParagraphFilteredEventList implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """This field is no longer in use, and will be deleted in the future."""
-  amountOfEvents: Int
+    amountOfEvents: Int
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """If nothing is selected, all will be chosen."""
-  filterBranches: [NodeUnion!]
+    filterBranches: [NodeUnion!]
 
-  """Add a category you want to include"""
-  filterCategories: [TermUnion!]
+    filterCategories: [TermUnion!]
 
-  """Condition type"""
-  filterCondType: String!
+    filterCondType: String!
 
-  """Add a tag you want to include"""
-  filterTags: [TermUnion!]
+    filterTags: [TermUnion!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  Select the amount of events you want to display. <br /><br />If the amount
-  displayed is less than what you put here, it is likely because there are not
-  enough results based on your selected filters.
-  """
-  maxItemAmount: String!
+    maxItemAmount: String!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String
+    title: String
 }
 
-"""
-This paragraph is used for displaying 1-2 images on GO content types such as GO Article, GO Page and GO Category.
-"""
 type ParagraphGoImages implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Images"""
-  goImages: [MediaUnion!]!
+    goImages: [MediaUnion!]!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-This link paragraph is used for links in GO, as it requires additional fields
-such as aria-label and ‘Open link in new window.’ These fields could not be
-exported in GraphQL when using a Linkit widget.
-"""
 type ParagraphGoLink implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Aria Label"""
-  ariaLabel: String
+    ariaLabel: String
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Link"""
-  link: Link!
+    link: Link!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Open link in a new window"""
-  targetBlank: Boolean
+    targetBlank: Boolean
 }
 
-"""Entity type paragraph."""
 type ParagraphGoLinkbox implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Color"""
-  goColor: String
+    goColor: String
 
-  """Description"""
-  goDescription: String!
+    goDescription: String!
 
-  """Image"""
-  goImage: MediaUnion
+    goImage: MediaUnion
 
-  """Link"""
-  goLinkParagraph: ParagraphUnion!
+    goLinkParagraph: ParagraphUnion!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
 }
 
-"""
-This paragraph is used for displaying a range of materials based on a CQL search string. 
-"""
 type ParagraphGoMaterialSliderAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  This field is for inserting a CQL string based on a search. <br /><br />Please
-  be aware, that it is necessary to copy the exact CQL string, including the
-  quotations. i.e: ( 'harry potter')<br /><br />A valid CQL search string can be
-  generated, by performing a query through the advanced search, and copying the
-  CQL string from there.
-  """
-  cqlSearch: CQLSearch!
+    cqlSearch: CQLSearch
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Amount of materials"""
-  sliderAmountOfMaterials: Int!
+    sliderAmountOfMaterials: Int!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
 }
 
-"""
-This paragraph is used for displaying a range of materials. The materials can be
-chosen by manually searching for available materials.
-"""
 type ParagraphGoMaterialSliderManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  Here you can choose which materials to display. If you need to link to a
-  specific type, select it from the dropdown and the system will display that,
-  if it is available.<br />Example work ID: work-of:870970-basis:136336282
-  """
-  materialSliderWorkIds: [WorkId!]!
+    materialSliderWorkIds: [WorkId!]!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
 }
 
-"""
-This GO-specific text field uses CKEditor 5 with the GO Text Body format,
-supporting structured content with headings (H2, H3), bold, italic, underline,
-lists, and advanced link features like target attributes and Linkit integration.
-"""
 type ParagraphGoTextBody implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Body"""
-  body: Text!
+    body: Text!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Enter the URL for the video you want to include."""
 type ParagraphGoVideo implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Embed video"""
-  embedVideo: MediaUnion!
+    embedVideo: MediaUnion!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String!
+    title: String!
 }
 
-"""
-This paragraph is used for displaying a VideoTool video and display a set of
-related books. The related books is automatically chosen based on a CQL search
-"""
 type ParagraphGoVideoBundleAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  This field is for inserting a CQL string based on a search. <br /><br />Please
-  be aware, that it is necessary to copy the exact CQL string, including the
-  quotations. i.e: ( 'harry potter')<br /><br />A valid CQL search string can be
-  generated, by performing a query through the advanced search, and copying the
-  CQL string from there.
-  """
-  cqlSearch: CQLSearch!
+    cqlSearch: CQLSearch
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Embed video"""
-  embedVideo: MediaUnion!
+    embedVideo: MediaUnion!
 
-  """Title"""
-  goVideoTitle: String!
+    goVideoTitle: String!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """The amount of related materials that should be shown."""
-  videoAmountOfMaterials: Int!
+    videoAmountOfMaterials: Int!
 }
 
-"""
-This paragraph is used for displaying a VideoTool video and display a set of
-related or recommended materials. The materials can be selected manually.
-"""
 type ParagraphGoVideoBundleManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Embed video"""
-  embedVideo: MediaUnion!
+    embedVideo: MediaUnion!
 
-  """Title"""
-  goVideoTitle: String!
+    goVideoTitle: String!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """
-  Here you can choose which materials to display. If you need to link to a
-  specific type, select it from the dropdown and the system will display that,
-  if it is available.<br />Example work ID: work-of:870970-basis:136336282
-  """
-  videoBundleWorkIds: [WorkId!]
+    videoBundleWorkIds: [WorkId!]
 }
 
-"""
-A hero section with an image, informative text, category, and a "call to action" link.
-"""
 type ParagraphHero implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Hero categories"""
-  heroCategories: TermUnion
+    heroCategories: TermUnion
 
-  """Hero content type"""
-  heroContentType: String
+    heroContentType: String
 
-  """Hero date"""
-  heroDate: DateTime
+    heroDate: DateTime
 
-  """Hero description"""
-  heroDescription: Text
+    heroDescription: Text
 
-  """Hero image"""
-  heroImage: MediaUnion
+    heroImage: MediaUnion
 
-  """Hero link"""
-  heroLink: Link
+    heroLink: Link
 
-  """Hero title"""
-  heroTitle: String!
+    heroTitle: String!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type paragraph."""
 interface ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Enables website visitors to choose their preferred language."""
 type ParagraphLanguageSelector implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Language icon"""
-  languageIcon: Image!
+    languageIcon: Image!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-Links with icons. Designed for internal/external links and links to search results. 
-"""
 type ParagraphLinks implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Link"""
-  link: [Link!]!
+    link: [Link!]!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""This paragraph will show a list of events that are manually selected."""
 type ParagraphManualEventList implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Events"""
-  events: [UnsupportedType!]
+    events: [UnsupportedType!]
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Title"""
-  title: String
+    title: String
 }
 
-"""
-Please use the "Material grid link automatically" instead! This paragraph will be deprecated in the future.
-A grid representation of recommended materials, based on a CQL search string. 
-"""
 type ParagraphMaterialGridAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  Determines the amount of materials that will be shown, based on the CQL
-  string. <br /><br />Obs: If for example a CQL string has 11 results, and an
-  editor chooses 12. The list will display 8 instead of 11, since the grid
-  should be able to increment by 4.
-  """
-  amountOfMaterials: Int!
+    amountOfMaterials: Int!
 
-  """
-  This field is for inserting a CQL string based on a search. <br /><br />Please
-  be aware, that it is necessary to copy the exact CQL string, including the
-  quotations. i.e: ( 'harry potter')<br /><br />A valid CQL search string can be
-  generated, by performing a query through the advanced search, and copying the
-  CQL string from there.
-  """
-  cqlSearch: CQLSearch!
+    cqlSearch: CQLSearch
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  This is the optional description for the material grid. <br />Leave blank if you do not want a description.
-  """
-  materialGridDescription: String
+    materialGridDescription: String
 
-  """
-  The title for the material grid. Leave this blank if you do not want a title. 
-  """
-  materialGridTitle: String
+    materialGridTitle: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-A grid representation of recommended materials, based on a link search string. 
-"""
 type ParagraphMaterialGridLinkAutomatic implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """
-  Determines the amount of materials that will be shown, based on the CQL
-  string. <br /><br />Obs: If for example a CQL string has 11 results, and an
-  editor chooses 12. The list will display 8 instead of 11, since the grid
-  should be able to increment by 4.
-  """
-  amountOfMaterials: Int!
+    amountOfMaterials: Int!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  This is the optional description for the material grid. <br />Leave blank if you do not want a description.
-  """
-  materialGridDescription: String
+    materialGridDescription: String
 
-  """
-  This field is for inserting a link string based on a search, e.g.:
-  /><br />Please be aware that it is necessary to copy the exact link string.<br
-  /><br />A valid link search string can be generated, by performing a query
-  through the advanced search and copying the link string from there.
-  """
-  materialGridLink: String!
+    materialGridLink: String!
 
-  """
-  The title for the material grid. Leave this blank if you do not want a title. 
-  """
-  materialGridTitle: String
+    materialGridTitle: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""A grid displaying a list of recommended materials selected manually."""
 type ParagraphMaterialGridManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  This is the optional description for the material grid. <br />Leave blank if you do not want a description.
-  """
-  materialGridDescription: String
+    materialGridDescription: String
 
-  """
-  The title for the material grid. Leave this blank if you do not want a title. 
-  """
-  materialGridTitle: String
+    materialGridTitle: String
 
-  """
-  The grid will only display materials in internvals of 4. <br /><br />Example
-  work ID: work-of:870970-basis:136336282.<br /><br />If you need to link to a
-  specific type, select it from the dropdown and the system will display that,
-  if it is available.
-  """
-  materialGridWorkIds: [WorkId!]
+    materialGridWorkIds: [WorkId!]
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """
-  This field will be deleted in the future. Please use another work id field.
-  """
-  workId: [WorkId!]
+    workId: [WorkId!]
 }
 
-"""Entity type paragraph."""
 type ParagraphMedias implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Medias"""
-  medias: [MediaUnion!]!
+    medias: [MediaUnion!]!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type paragraph."""
 type ParagraphNavGridManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Contents"""
-  contentReferences: [ParagraphNavGridManualContentReferencesUnion!]
+    contentReferences: [ParagraphNavGridManualContentReferencesUnion!]
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Show subtitles"""
-  showSubtitles: Boolean
+    showSubtitles: Boolean
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
+
+    title: String
+  contentReferenceUuids: [String]
 }
 
-"""Contents"""
 union ParagraphNavGridManualContentReferencesUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-"""Entity type paragraph."""
 type ParagraphNavSpotsManual implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    navSpotsContent: [ParagraphNavSpotsManualNavSpotsContentUnion!]
+
+    status: Boolean!
+  navSpotsContentUuids: [String]
 }
 
-"""
-This is a paragraph for displaying the opening hours for the branch it is applied to. 
+union ParagraphNavSpotsManualNavSpotsContentUnion = NodeArticle | NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-Opening hours are created under the settings of a branch. 
-"""
 type ParagraphOpeningHours implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""This paragraph is used to recommend a material. """
 type ParagraphRecommendation implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """
-  This determines whether the image should be positioned to the left or right.
-  <br />If left untoggled (default behaviour) the image is positioned to the
-  left, if toggled on, the image will be positioned to the right.
-  """
-  imagePositionRight: Boolean
+    imagePositionRight: Boolean
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  This is the description for a recommendation. <br /><br />If you add a
-  description, the title of the the material will not be automatically
-  """
-  recommendationDescription: String
+    recommendationDescription: String
 
-  """
-  The title of the recommended material.<br /><br />If you add a title, the
-  description for the material will not be automatically generated.
-  """
-  recommendationTitle: Text
+    recommendationTitle: Text
 
-  """
-  This is the work ID used to retrieve the material information. Example:
-  work-of:870970-basis:136336282.<br />Currently this is retrieved by performing
-  a search for a material manually, and copying this value from the URL.<br />If
-  you need to link to a specific type, select it from the dropdown and the
-  system will display that, if it is available.
-  """
-  recommendationWorkId: WorkId
+    recommendationWorkId: WorkId
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""This is paragraph that will display links without icons. """
 type ParagraphSimpleLinks implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Link"""
-  link: [Link!]!
+    link: [Link!]!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""A basic, formatted body of text."""
 type ParagraphTextBody implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Body"""
-  body: Text!
+    body: Text!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Entity type paragraph."""
 union ParagraphUnion = ParagraphAccordion | ParagraphBanner | ParagraphBreadcrumbChildren | ParagraphCampaignRule | ParagraphCardGridAutomatic | ParagraphCardGridManual | ParagraphContentSlider | ParagraphContentSliderAutomatic | ParagraphEventTicketCategory | ParagraphFiles | ParagraphFilteredEventList | ParagraphGoImages | ParagraphGoLink | ParagraphGoLinkbox | ParagraphGoMaterialSliderAutomatic | ParagraphGoMaterialSliderManual | ParagraphGoTextBody | ParagraphGoVideo | ParagraphGoVideoBundleAutomatic | ParagraphGoVideoBundleManual | ParagraphHero | ParagraphLanguageSelector | ParagraphLinks | ParagraphManualEventList | ParagraphMaterialGridAutomatic | ParagraphMaterialGridLinkAutomatic | ParagraphMaterialGridManual | ParagraphMedias | ParagraphNavGridManual | ParagraphNavSpotsManual | ParagraphOpeningHours | ParagraphRecommendation | ParagraphSimpleLinks | ParagraphTextBody | ParagraphUserRegistrationItem | ParagraphUserRegistrationLinklist | ParagraphUserRegistrationSection | ParagraphVideo | ParagraphWebform
 
-"""
-The "User registration item" paragraph type is used to display relevant information about the user registration process.
-"""
 type ParagraphUserRegistrationItem implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Anchor"""
-  anchor: String
+    anchor: String
 
-  """Body"""
-  body: Text!
+    body: Text!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """
-  Enable this option to display a button at the top of the page for easier navigation.
-  """
-  displayInNavigation: Boolean
+    displayInNavigation: Boolean
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """
-  Specify how a linked document should be opened when clicked by a user.
-  """
-  linkTarget: String!
+    linkTarget: String!
 
-  """
-  If the navigation button title is left blank, it will automatically default to the paragraph title.
-  """
-  navigationTitle: String
+    navigationTitle: String
 
-  """Registration Link"""
-  registrationLink: Link
+    registrationLink: Link
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-This paragraph determines the placement of shortcuts to individual User
-Registration Section paragraphs. It allows administrators to specify where these
-shortcuts should appear.
-"""
 type ParagraphUserRegistrationLinklist implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""
-The "User registration section" paragraph type is used to display "User registration item" paragraphs.
-"""
 type ParagraphUserRegistrationSection implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Enter the URL for the video you want to include."""
 type ParagraphVideo implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """Embed video"""
-  embedVideo: MediaUnion!
+    embedVideo: MediaUnion!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""Paragraph used for embedding a webform."""
 type ParagraphWebform implements ParagraphInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """The time that the Paragraph was created."""
-  created: DateTime!
+    created: DateTime!
 
-  """The paragraphs entity language code."""
-  langcode: Language!
+    langcode: Language!
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 }
 
-"""A field whose value conforms to the standard E.164"""
 scalar PhoneNumber
 
-"""The schema's entry-point for queries."""
 type Query {
   newContent(uuid: String!, since: Time!): NewContentResponse!
   goConfiguration: GoConfiguration
   dplTokens: DplTokens
 
-  """Load a Node entity by id."""
-  node(
-    """The id of the Node to load."""
-    id: ID!
+    paragraph(
+        id: ID!
 
-    """Optionally set the response language. Eg en, ja, fr."""
-    langcode: String
+        langcode: String
 
-    """
-    Optionally set the revision of the entity. Eg current, latest, or an ID.
-    """
-    revision: ID
-  ): NodeUnion
-
-  """Load a Paragraph entity by id."""
-  paragraph(
-    """The id of the Paragraph to load."""
-    id: ID!
-
-    """Optionally set the response language. Eg en, ja, fr."""
-    langcode: String
-
-    """
-    Optionally set the revision of the entity. Eg current, latest, or an ID.
-    """
-    revision: ID
+        revision: ID
   ): ParagraphUnion
 
-  """Schema information."""
-  info: SchemaInformation!
+    node(
+        id: ID!
 
-  """Load a content preview."""
-  preview(
-    """The content UUID."""
-    id: ID!
+        langcode: String
 
-    """A preview access token."""
-    token: String
-
-    """
-    Optionally set the response language. Eg en, ja, fr. Setting this langcode
-    will change the current language of the entire response.
-    """
-    langcode: String
+        revision: ID
   ): NodeUnion
 
-  """Load a Route by path."""
-  route(
-    """Internal path to load. Eg /about"""
-    path: String!
+    info: SchemaInformation!
 
-    """
-    Optionally set the revision of the entity. Eg current, latest, or an ID.
-    """
-    revision: ID
+    preview(
+        id: ID!
 
-    """
-    Optionally set the response language. Eg en, ja, fr. Setting this langcode
-    will change the current language of the entire response.
-    """
-    langcode: String
+        token: String
+
+        langcode: String
+  ): NodeUnion
+
+    route(
+        path: String!
+
+        revision: ID
+
+        langcode: String
   ): RouteUnion
 
-  """Query for view go_categories display go_categories."""
-  goCategories(
-    """The page number to display."""
-    page: Int = 0
+    goCategories(
+        page: Int = 0
   ): GoCategoriesResult
 }
 
-"""Routes represent incoming requests that resolve to content."""
 interface Route {
-  """URL of this route."""
-  url: String!
+    url: String!
 
-  """Whether this route is internal or external."""
-  internal: Boolean!
+    internal: Boolean!
 }
 
-"""A list of possible entities that can be returned by URL."""
 union RouteEntityUnion = NodeGoArticle | NodeGoCategory | NodeGoPage | NodePage
 
-"""Route outside of this website."""
 type RouteExternal implements Route {
-  """URL of this route."""
-  url: String!
+    url: String!
 
-  """Whether this route is internal or external."""
-  internal: Boolean!
+    internal: Boolean!
 }
 
-"""Route within this website."""
 type RouteInternal implements Route {
-  """URL of this route."""
-  url: String!
+    url: String!
 
-  """Whether this route is internal or external."""
-  internal: Boolean!
+    internal: Boolean!
 
-  """Breadcrumb links for this route."""
-  breadcrumbs: [Link!]
+    breadcrumbs: [Link!]
 
-  """Content assigned to this route."""
-  entity: RouteEntityUnion
+    entity: RouteEntityUnion
 }
 
-"""Redirect to another URL with status."""
 type RouteRedirect implements Route {
-  """URL of this route."""
-  url: String!
+    url: String!
 
-  """Whether this route is internal or external."""
-  internal: Boolean!
+    internal: Boolean!
 
-  """Suggested status for redirect. Eg 301."""
-  status: Int!
+    status: Int!
 
-  """Utility prop. Always true for redirects."""
-  redirect: Boolean!
+    redirect: Boolean!
 }
 
-"""Route types that can exist in the system."""
 union RouteUnion = RouteInternal | RouteExternal | RouteRedirect
 
-"""Schema information provided by the system."""
 type SchemaInformation {
-  """The schema description."""
-  description: String
+    description: String
 
-  """The internal path to the front page."""
-  home: String
+    home: String
 
-  """The site name."""
-  name: String
+    name: String
   url: String!
 
-  """The schema version."""
-  version: String
+    version: String
 
-  """List of languages available."""
-  languages: [Language!]!
+    languages: [Language!]!
 }
 
-"""Sort direction."""
+type SearchProfiles {
+    default: String
+
+    local: String
+
+    global: String
+}
+
 enum SortDirection {
-  """Stigende"""
-  ASC
+    ASC
 
-  """Faldende"""
-  DESC
+    DESC
 }
 
-"""The schema's entry-point for subscriptions."""
 type Subscription {
-  """Placeholder for subscription extension."""
-  _: Boolean!
+    _: Boolean!
 }
 
-"""Entity type taxonomy_term."""
 type TermBreadcrumbStructure implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """
-  The title that is shown above the list of referenced content. Will not be shown, if there are no children displayed.
-  """
-  childrenTitle: String
+    childrenTitle: String
 
-  """Content"""
-  content: NodeUnion!
+    content: NodeUnion!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """
-  Should a list of contents that reference this breadcrumb, be shown automatically on this page?
-  """
-  showChildren: Boolean
+    showChildren: Boolean
 
-  """
-  If this is checked, the children teasers will be expanded with possible subtitle descriptions.
-  """
-  showChildrenSubtitles: Boolean
+    showChildrenSubtitles: Boolean
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""Entity type taxonomy_term."""
 type TermCategories implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""Entity type taxonomy_term."""
 interface TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""
-Kategorier af åbningstider, f.eks. "Åbent" eller "Telefontid"
-"""
 type TermOpeningHoursCategories implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""Screens to display content on"""
 type TermScreenName implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""Entity type taxonomy_term."""
 type TermTags implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""Entity type taxonomy_term."""
 union TermUnion = TermBreadcrumbStructure | TermCategories | TermOpeningHoursCategories | TermScreenName | TermTags | TermWebformEmailCategories
 
-"""
-List of email categories used for sending webform submissions. Each category is associated with an email address.
-"""
 type TermWebformEmailCategories implements TermInterface {
-  """The Universally Unique IDentifier (UUID)."""
-  id: ID!
+    id: ID!
 
-  """Datoen hvor termen senest blev redigeret."""
-  changed: DateTime!
+    changed: DateTime!
 
-  """Beskrivelse"""
-  description: Text!
+    description: Text!
 
-  """Add which email to send form submissions of this category to."""
-  email: Email!
+    email: Email!
 
-  """Term sprogkode."""
-  langcode: Language!
+    langcode: Language!
 
-  """Name"""
-  name: String!
+    name: String!
 
-  """Denne terms overordnede termer."""
-  parent: TermUnion
+    parent: TermUnion
 
-  """Alternativ URL"""
-  path: String
+    path: String
 
-  """Published"""
-  status: Boolean!
+    status: Boolean!
 
-  """Vægten af denne term i forhold til andre termer."""
-  weight: Int!
+    weight: Int!
 }
 
-"""A processed text format defined by the CMS."""
 type Text {
-  """The raw text value."""
-  value: String
+    value: String
 
-  """The processed text value."""
-  processed: Html
+    processed: Html
 
-  """The text format used to process the text value."""
-  format: String
+    format: String
 }
 
-"""A processed text format with summary defined by the CMS."""
 type TextSummary {
-  """The raw text value."""
-  value: String
+    value: String
 
-  """The processed text value."""
-  processed: Html
+    processed: Html
 
-  """The text format used to process the text value."""
-  format: String
+    format: String
 
-  """The processed text summary."""
-  summary: Html
+    summary: Html
 }
 
-"""RFC 3339 compliant time string."""
 scalar Time
 
-"""A field whose value exists in the standard IANA Time Zone Database."""
 scalar TimeZone
 
-"""
-Type represents date and time as number of milliseconds from start of the UNIX epoch.
-"""
 scalar Timestamp
 
-"""Available translations for content."""
 type Translation {
-  """The title of the translation."""
-  title: String
+    title: String
 
-  """The language of the translation."""
-  langcode: Language!
+    langcode: Language!
 
-  """The path to the translated content."""
-  path: String
+    path: String
 }
 
-"""List of DPL-Go Unilogin configuration."""
-type UniloginConfiguration {
-  unilogin_api_url: String
-  unilogin_api_wellknown_url: String
-  unilogin_api_client_id: String
-  unilogin_api_client_secret: String
+type UniloginConfigurationPrivate {
+  clientSecret: String
+  webServiceUsername: String
+  webServicePassword: String
+  pubHubRetailerKeyCode: String
 }
 
-"""
-Unsupported entity or field type in the schema.
-This entity may not have been enabled in the schema yet and is being referenced via entity reference.
-"""
+type UniloginConfigurationPublic {
+  municipalityId: String
+}
+
 type UnsupportedType {
-  """Unsupported type, always TRUE."""
-  unsupported: Boolean
+    unsupported: Boolean
 }
 
-"""
-Untyped structured data. Eg JSON, configuration, settings, attributes.
-"""
 scalar UntypedStructuredData
 
-"""A string that will have a value of format ±hh:mm"""
 scalar UtcOffset
 
-"""Views represent collections of curated data from the CMS."""
 interface View {
-  """The ID of the view."""
-  id: ID!
+    id: ID!
 
-  """The machine name of the view."""
-  view: String!
+    view: String!
 
-  """The machine name of the display."""
-  display: String!
+    display: String!
 
-  """The language code of the view."""
-  langcode: String
+    langcode: String
 
-  """The human friendly label of the view."""
-  label: String
+    label: String
 
-  """Viewets beskrivelse."""
-  description: String
+    description: String
 
-  """Information about the page in the view."""
-  pageInfo: ViewPageInfo!
+    pageInfo: ViewPageInfo!
 }
 
-"""An exposed filter option for the view."""
 type ViewFilter {
-  """The filter identifier."""
-  id: ID!
+    id: ID!
 
-  """The filter plugin type."""
-  plugin: String!
+    plugin: String!
 
-  """The filter element type."""
-  type: String!
+    type: String!
 
-  """The filter operator."""
-  operator: String!
+    operator: String!
 
-  """The filter element label."""
-  label: String
+    label: String
 
-  """The filter element description."""
-  description: String
+    description: String
 
-  """Whether the filter is required."""
-  required: Boolean!
+    required: Boolean!
 
-  """Whether the filter allows multiple values."""
-  multiple: Boolean!
+    multiple: Boolean!
 
-  """The value for the filter. Could be an array for multiple values."""
-  value: UntypedStructuredData
+    value: UntypedStructuredData
 
-  """The filter element options if any are defined."""
-  options: UntypedStructuredData
+    options: UntypedStructuredData
 
-  """The filter element attributes."""
-  attributes: UntypedStructuredData!
+    attributes: UntypedStructuredData!
 }
 
-"""Information about the page in a view."""
 type ViewPageInfo {
-  """Any result offset being used."""
-  offset: Int!
+    offset: Int!
 
-  """The current page being returned."""
-  page: Int!
+    page: Int!
 
-  """How many results per page."""
-  pageSize: Int!
+    pageSize: Int!
 
-  """How many results total."""
-  total: Int!
+    total: Int!
 }
 
-"""A reference to an embedded view"""
 type ViewReference {
-  """The machine name of the view."""
-  view: String!
+    view: String!
 
-  """The machine name of the display."""
-  display: String!
+    display: String!
 
-  """The contextual filter values used."""
-  contextualFilter: [String!]
+    contextualFilter: [String!]
 
-  """How many results per page."""
-  pageSize: Int
+    pageSize: Int
 
-  """
-  The name of the query used to fetch the data, if the view is a GraphQL display.
-  """
-  query: String
+    query: String
 }
 
-"""All available view result types."""
 union ViewResultUnion = GoCategoriesResult
 
-"""Et WorkID-felt."""
 type WorkId {
-  """The WorkID value"""
-  work_id: String
+    work_id: String
 
-  """Materialetype (fx bog, film, lydbog)"""
-  material_type: String
+    material_type: String
 }
