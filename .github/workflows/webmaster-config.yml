@@ -1,0 +1,59 @@
+---
+name: Check that webmaster-controlled config has been updated using hooks.
+on:
+  pull_request:
+    paths:
+      - 'config/sync/core.extension.yml'
+      - 'config/sync/user.role.*.yml'
+
+jobs:
+  getChanges:
+    runs-on: ubuntu-latest
+    outputs:
+      changes: ${{ steps.changed.outputs.changes }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get changed files
+        id: changed
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          CHANGES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "changes=$CHANGES" >> "$GITHUB_OUTPUT"
+
+  checkRoles:
+    name: Check roles has been updated correctly
+    needs: getChanges
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          CHANGES="${{ needs.getChanges.outputs.changes }}"
+          if echo "$CHANGES" | grep -q 'config/sync/user.role.*\.yml'; then
+            echo "Role config was changed, checking for hook..."
+            if ! git diff origin/${{ github.base_ref }}...HEAD | grep -q '_dpl_update_alter_permissions'; then
+              echo "::error file=config/sync/user.role.*.yml::Role config changed but '_dpl_update_alter_permissions' hook not found in changes."
+              exit 1
+            fi
+          else
+            echo "No role config changes detected."
+          fi
+
+  checkModules:
+    name: Check modules has been updated correctly
+    needs: getChanges
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          CHANGES="${{ needs.getChanges.outputs.changes }}"
+          if echo "$CHANGES" | grep -q 'config/sync/core.extension.yml'; then
+            echo "Module config was changed, checking for hook..."
+            if ! git diff origin/${{ github.base_ref }}...HEAD | grep -q '_dpl_update_install_modules'; then
+              echo "::error file=config/sync/core.extension.yml::Module config changed but '_dpl_update_install_modules' hook not found in changes."
+              exit 1
+            fi
+          else
+            echo "No module config changes detected."
+          fi
