@@ -224,6 +224,19 @@ tasks:
       - task dev:cli -- ./dev-scripts/cli-set-unilogin-settings.sh
       - task dev:cache:clear:all
 
+  dev:consumers:configure:
+    desc: Set correct passwords on the various API consumers
+    cmds:
+      - task dev:cli -- ./dev-scripts/cli-set-graphql-consumer-passwords.sh
+      - task dev:cache:clear:all
+
+  dev:configure:
+    desc: Run all configure tasks to set up the local environment.
+    cmds:
+      - task dev:openid:configure
+      - task dev:unilogin:configure
+      - task dev:consumers:configure
+
   dev:run-cron:
     desc: Run cron in the container
     cmds:
