@@ -28853,7 +28853,7 @@ msgstr ""
 #: 
 msgctxt "dpl_fbi"
 msgid "Sorting"
-msgstr ""
+msgstr "Sortering"
 
 #: 
 msgctxt "dpl_fbi"
@@ -28878,7 +28878,7 @@ msgstr ""
 #: 
 msgctxt "dpl_fbi"
 msgid "Fill out fields using link (optional)"
-msgstr ""
+msgstr "Udfyld felter i material grid med link til CQL-søgning (valgfrit)"
 
 #: 
 msgctxt "dpl_fbi"
@@ -28953,5 +28953,165 @@ msgstr ""
 #: 
 msgctxt "paragraphs.paragraphs_type.material_grid_link_automatic:label"
 msgid "Material grid link automatic (DEPRECATED - WILL BE DELETED)"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "Date for first accession date"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "Choose operator"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "The format should be YYYY-MM-DD e.g. 2024-11-24. Terms ”NOW”, ”DAYS” and ”MONTHS” can also be used. For example ”NOW - 90 DAYS”. Remember to add a space on both sides of the plus and minus symbols."
+msgstr "Datoformatet skal være YYYY-MM-DD, f.eks. 2024-12-24. Termerne \"NOW\", \"DAYS\" og \"MONTHS\" kan også bruges til at angive interval, f.eks. \"NOW - 90 DAYS\". HUSK at lave mellemrum på begge sider af plus- og minussymboler."
+
+#: 
+msgctxt "advanced search"
+msgid "Input desired date in format ”YYYY-MM-DD”"
+msgstr ""
+
+#: 
+msgctxt "dpl_fbi"
+msgid "Later than"
+msgstr "Senere end"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "Exact date"
+msgstr "Præcis dato"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "Earlier than"
+msgstr "Tidligere end"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "First accession date: Value"
+msgstr "Firstaccessiondate: Værdi"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "The format should be YYYY-MM-DD e.g. 2024-11-24. Terms ”NOW”, ”DAYS” and ”MONTHS” can also be used. For example ”NOW - 90 DAYS”. Remember to add a space on both sides of the plus and minus symbols."
+msgstr "Datoformatet skal være YYYY-MM-DD, f.eks. 2024-12-24. Termerne \"NOW\", \"DAYS\" og \"MONTHS\" kan også bruges til at angive interval, f.eks. \"NOW - 90 DAYS\". HUSK at lave mellemrum på begge sider af plus- og minussymboler."
+
+#: 
+msgctxt "dpl_fbi"
+msgid "First accession date: Operator"
+msgstr "Firstaccessiondate: Operator"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "First accession date"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:label"
+msgid "Content using firstaccessiondate"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_title"
+msgid "Default"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:title"
+msgid "Content using firstaccessiondate in CQL searches"
+msgstr "Indhold med firstaccessiondate indeholdt i en CQL-søgning"
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:title:label"
+msgid "Title"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:uid:label"
+msgid "Author"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:field_material_grid_title:label"
+msgid "Material grid title"
+msgstr "Titel på Material grid"
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:field_cql_search:label"
+msgid "CQL Search"
+msgstr "CQL-søgning"
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:changed:label"
+msgid "Updated"
+msgstr "Opdateret"
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:pager:options:tags:next"
+msgid "Next ›"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:pager:options:tags:previous"
+msgid "‹ Previous"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:pager:options:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:pager:options:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:pager:options:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:filters:field_cql_search_value:expose:label"
+msgid "CQL search"
+msgstr "CQL-søgning"
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:header:result:content"
+msgid "Displaying @start - @end of @total"
+msgstr ""
+
+#: 
+msgctxt "views.view.firstaccessiondate_content_admin:display:page_1:display_title"
+msgid "Page"
 msgstr ""
 
