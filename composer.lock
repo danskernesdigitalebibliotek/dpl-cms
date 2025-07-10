@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c803e624b0b553db822a26d50ffe08f",
+    "content-hash": "cae843f8bf92199b07bd81e309558537",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1166,10 +1166,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2025.27.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.27.0/dist-2025-27-0-a301abfb35e16b2f5ecfcd8a234e2ac4bb2497b5.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDFSAL-92-fix-placeholder-advanced-search/dist-ddfsal-92-fix-placeholder-advanced-search.zip"
             },
             "type": "drupal-library"
         },
@@ -21241,6 +21241,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
@@ -21253,6 +21254,6 @@
         "php": "8.1.*",
         "ext-dom": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
