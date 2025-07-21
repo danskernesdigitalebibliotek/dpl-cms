@@ -3683,7 +3683,7 @@ msgstr "Indstil hvor mange elementer der skal vises på en liste inden for hver 
 #: 
 msgctxt "Work Page"
 msgid "Your material has been ordered from another library"
-msgstr "Bestilt fra et andet bibliotek"
+msgstr "Materialet er bestilt fra et andet bibliotek. Materialer fra andre biblioteker har øget leveringstid. Bemærk: Hvis materialet er ret nyt, så dukker det ikke op i din reserveringsoversigt med det samme. Det er normalt. Kontakt os gerne, hvis det ikke er dukket op i din reserveringsoversigt tre hverdage efter bestillingen."
 
 #: 
 msgctxt "Work Page"
@@ -28659,12 +28659,12 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "You need to add an email address to reserve from another library."
-msgstr ""
+msgstr "En mailadresse er påkrævet ved bestillinger af materialer fra andre biblioteker."
 
 #: 
 msgctxt "Work Page"
 msgid "NOTE! This material is ordered from another library. Therefore, it may take a few days before it appears on your list of reservations."
-msgstr ""
+msgstr "Bemærk: Dette lån bestilles fra et andet bibliotek. Derfor kan der gå et par dage, inden det optræder i din reserveringsliste."
 
 #: 
 msgid "The selected caching mechanism does not work with views including content lock information. The selected caching mechanism was changed to none accordingly for the view %view."
@@ -29113,5 +29113,10 @@ msgstr ""
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:page_1:display_title"
 msgid "Page"
+msgstr ""
+
+#: 
+msgctxt "advanced search"
+msgid "CQL search external help link text"
 msgstr ""
 
