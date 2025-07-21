@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-07-21 12:04+0200\n"
-"PO-Revision-Date: 2025-07-21 12:04+0200\n"
+"POT-Creation-Date: 2025-07-21 13:13+0200\n"
+"PO-Revision-Date: 2025-07-21 13:13+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19985,7 +19985,7 @@ msgstr ""
 
 msgctxt "advanced search"
 msgid "Date for first accession date"
-msgstr ""
+msgstr "Datointerval for opr. indkøb af en udgave af et værk"
 
 msgctxt "advanced search"
 msgid "Choose operator"
@@ -20021,7 +20021,7 @@ msgstr "Tidligere end"
 
 msgctxt "dpl_fbi"
 msgid "First accession date: Value"
-msgstr "Firstaccessiondate: Værdi"
+msgstr "Firstaccessiondateitem: Værdi"
 
 msgctxt "dpl_fbi"
 msgid ""
@@ -20037,11 +20037,11 @@ msgstr ""
 
 msgctxt "dpl_fbi"
 msgid "First accession date: Operator"
-msgstr "Firstaccessiondate: Operator"
+msgstr "Firstaccessiondateitem: Operator"
 
 msgctxt "dpl_fbi"
 msgid "First accession date"
-msgstr ""
+msgstr "Filtrering på Firstaccessiondateitem"
 
 msgctxt "advanced search"
 msgid "CQL search external help link text"
