@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-07-22 11:01+0200\n"
-"PO-Revision-Date: 2025-07-22 11:01+0200\n"
+"POT-Creation-Date: 2025-07-22 13:31+0200\n"
+"PO-Revision-Date: 2025-07-22 13:31+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -20045,7 +20045,7 @@ msgstr "Filtrering på Firstaccessiondateitem"
 
 msgctxt "advanced search"
 msgid "CQL search external help link text"
-msgstr ""
+msgstr "Find søgekoder til brug ved CQL-søgning"
 
 msgctxt "Library Agency Configuration"
 msgid "Find on shelf"
@@ -20058,4 +20058,28 @@ msgstr ""
 msgctxt "Library Agency Configuration"
 msgid "If checked, the find on shelf disclosures will be open by default"
 msgstr ""
+
+msgctxt "dpl_fbi"
+msgid "Branch"
+msgstr "Bibliotek"
+
+msgctxt "dpl_fbi"
+msgid "Department"
+msgstr "Afdeling"
+
+msgctxt "advanced search"
+msgid "Branch"
+msgstr "Bibliotek"
+
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple branches"
+msgstr "Sæt komma mellem biblioteker for at filtrere på flere"
+
+msgctxt "advanced search"
+msgid "Department"
+msgstr "Afdeling"
+
+msgctxt "advanced search"
+msgid "E.g. \"Adult\" or \"Children\""
+msgstr "F.eks. \"Børn\" eller \"Voksen\""
 

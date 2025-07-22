@@ -29118,7 +29118,7 @@ msgstr ""
 #: 
 msgctxt "advanced search"
 msgid "CQL search external help link text"
-msgstr ""
+msgstr "Find søgekoder til brug ved CQL-søgning"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -29134,4 +29134,34 @@ msgstr ""
 msgctxt "Library Agency Configuration"
 msgid "If checked, the find on shelf disclosures will be open by default"
 msgstr ""
+
+#: 
+msgctxt "dpl_fbi"
+msgid "Branch"
+msgstr "Bibliotek"
+
+#: 
+msgctxt "dpl_fbi"
+msgid "Department"
+msgstr "Afdeling"
+
+#: 
+msgctxt "advanced search"
+msgid "Branch"
+msgstr "Bibliotek"
+
+#: 
+msgctxt "advanced search"
+msgid "Add a comma separated list for multiple branches"
+msgstr "Sæt komma mellem biblioteker for at filtrere på flere"
+
+#: 
+msgctxt "advanced search"
+msgid "Department"
+msgstr "Afdeling"
+
+#: 
+msgctxt "advanced search"
+msgid "E.g. \"Adult\" or \"Children\""
+msgstr "F.eks. \"Børn\" eller \"Voksen\""
 
