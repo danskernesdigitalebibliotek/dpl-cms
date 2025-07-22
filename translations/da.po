@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-07-21 13:13+0200\n"
-"PO-Revision-Date: 2025-07-21 13:13+0200\n"
+"POT-Creation-Date: 2025-07-22 11:01+0200\n"
+"PO-Revision-Date: 2025-07-22 11:01+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18992,7 +18992,7 @@ msgid "A WorkID field."
 msgstr "Et WorkID-felt."
 
 msgid "The WorkID value"
-msgstr ""
+msgstr "Værk-ID"
 
 msgid "The material type (e.g., bog, e-bog)."
 msgstr "Materialetype (fx bog, film, lydbog)"
@@ -19897,15 +19897,15 @@ msgstr ""
 
 msgctxt "dpl_fbi"
 msgid "Location"
-msgstr ""
+msgstr "Opstilling"
 
 msgctxt "dpl_fbi"
 msgid "Sub-location"
-msgstr ""
+msgstr "Delopstilling"
 
 msgctxt "dpl_fbi"
 msgid "On-shelf"
-msgstr ""
+msgstr "På hylden"
 
 msgctxt "dpl_fbi"
 msgid "Sorting"
@@ -19933,7 +19933,7 @@ msgstr "Udfyld felter i material grid med link til CQL-søgning (valgfrit)"
 
 msgctxt "dpl_fbi"
 msgid "Link to search"
-msgstr ""
+msgstr "Link til søgning"
 
 msgctxt "dpl_fbi"
 msgid ""
@@ -19943,7 +19943,7 @@ msgstr ""
 
 msgctxt "dpl_fbi"
 msgid "Load filters from URL"
-msgstr ""
+msgstr "Hent filtre fra URL"
 
 msgctxt "dpl_fbi"
 msgid "Search filters"
@@ -19985,7 +19985,7 @@ msgstr ""
 
 msgctxt "advanced search"
 msgid "Date for first accession date"
-msgstr "Datointerval for opr. indkøb af en udgave af et værk"
+msgstr "Filtrering på opr. indkøbsdato (firstaccessiondateitem)"
 
 msgctxt "advanced search"
 msgid "Choose operator"
@@ -19998,10 +19998,10 @@ msgid ""
 "DAYS”. Remember to add a space on both sides of the plus and minus "
 "symbols."
 msgstr ""
-"Datoformatet skal være YYYY-MM-DD, f.eks. 2024-12-24. Termerne "
-"\"NOW\", \"DAYS\" og \"MONTHS\" kan også bruges til at angive "
-"interval, f.eks. \"NOW - 90 DAYS\". HUSK at lave mellemrum på begge "
-"sider af plus- og minussymboler."
+"Datoformatet for \"firstaccessiondateitem\" skal være YYYY-MM-DD, "
+"f.eks. 2024-12-24. Termerne \"NOW\", \"DAYS\" og \"MONTHS\" kan også "
+"bruges til at angive interval, f.eks. \"NOW - 90 DAYS\". HUSK at lave "
+"mellemrum på begge sider af plus- og minussymboler."
 
 msgctxt "advanced search"
 msgid "Input desired date in format ”YYYY-MM-DD”"
@@ -20045,5 +20045,17 @@ msgstr "Filtrering på Firstaccessiondateitem"
 
 msgctxt "advanced search"
 msgid "CQL search external help link text"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Find on shelf"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Default open find on shelf disclosures"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "If checked, the find on shelf disclosures will be open by default"
 msgstr ""
 
