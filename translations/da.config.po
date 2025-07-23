@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-07-22 13:31+0200\n"
-"PO-Revision-Date: 2025-07-22 13:31+0200\n"
+"POT-Creation-Date: 2025-07-23 11:56+0200\n"
+"PO-Revision-Date: 2025-07-23 11:56+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7320,11 +7320,11 @@ msgstr "Indhold med firstaccessiondate indeholdt i en CQL-søgning"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel på siden"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:uid:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter på siden"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:field_material_grid_title:label"
 msgid "Material grid title"
@@ -7368,15 +7368,15 @@ msgstr ""
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:filters:field_cql_search_value:expose:label"
 msgid "CQL search"

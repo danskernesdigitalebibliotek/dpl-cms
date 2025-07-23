@@ -29028,12 +29028,12 @@ msgstr "Indhold med firstaccessiondate indeholdt i en CQL-søgning"
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:title:label"
 msgid "Title"
-msgstr ""
+msgstr "Titel på siden"
 
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:uid:label"
 msgid "Author"
-msgstr ""
+msgstr "Forfatter på siden"
 
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:fields:field_material_grid_title:label"
@@ -29088,17 +29088,17 @@ msgstr ""
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:exposed_sorts_label"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_asc_label"
 msgid "Asc"
-msgstr ""
+msgstr "Stigende"
 
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:exposed_form:options:sort_desc_label"
 msgid "Desc"
-msgstr ""
+msgstr "Faldende"
 
 #: 
 msgctxt "views.view.firstaccessiondate_content_admin:display:default:display_options:filters:field_cql_search_value:expose:label"
@@ -29123,7 +29123,7 @@ msgstr "Find søgekoder til brug ved CQL-søgning"
 #: 
 msgctxt "Library Agency Configuration"
 msgid "Find on shelf"
-msgstr ""
+msgstr "Find på hylden"
 
 #: 
 msgctxt "Library Agency Configuration"
@@ -29133,7 +29133,7 @@ msgstr ""
 #: 
 msgctxt "Library Agency Configuration"
 msgid "If checked, the find on shelf disclosures will be open by default"
-msgstr ""
+msgstr "Vælg hvorvidt alle faner i Find på hylden automatisk skal være udfoldet eller ej"
 
 #: 
 msgctxt "dpl_fbi"
