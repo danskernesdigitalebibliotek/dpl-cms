@@ -293,16 +293,9 @@ class MatchResource extends ResourceBase {
     foreach ($campaigns as $campaign) {
       $campaign_rules = $this->getCampaignRules($campaign);
       $campaign_rules_count = count($campaign_rules);
-      $processed_facets = [];
       $matched_campaign_rules_count = 0;
       foreach ($campaign_rules as $campaign_rule) {
-        $campaign_facet = $campaign_rule->get('field_campaign_rule_facet')->first()?->getString();
-        if (in_array($campaign_rule->facetName, $processed_facets)) {
-          continue;
-        }
-
         if ($this->campaignRuleMatched($campaign_rule, $rules)) {
-          $processed_facets[] = $campaign_facet;
           $matched_campaign_rules_count++;
         }
       }
