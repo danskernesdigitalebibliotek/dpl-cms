@@ -29165,3 +29165,13 @@ msgctxt "advanced search"
 msgid "E.g. \"Adult\" or \"Children\""
 msgstr "F.eks. \"Børn\" eller \"Voksen\""
 
+#: 
+msgctxt "Work Page"
+msgid "Library assessment"
+msgstr "Bibliotekernes vurdering"
+
+#: 
+msgctxt "Work Page"
+msgid "All material in Infomedia is covered by copyright law and may not be copied without special permission."
+msgstr "Alt materiale i Infomedia er omfattet af lov om ophavsret og må ikke kopieres uden særlig tilladelse."
+
