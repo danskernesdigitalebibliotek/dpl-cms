@@ -1,7 +1,7 @@
 From 936f18f9ae6e242847746379325c992cb1eda33d Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Kasper=20Garn=C3=A6s?= <kasperg@users.noreply.github.com>
 Date: Tue, 9 Jan 2024 11:53:58 +0100
-Subject: [PATCH] Mark module as compatible with Drupal 10 in info file
+Subject: [PATCH] Mark module as compatible with Drupal 11 in info file
 
 ---
  potion.info.yml | 2 +-
@@ -16,7 +16,7 @@ index 4315290..752866b 100644
  package: Multilingual
  type: module
 -core_version_requirement: ^8 || ^9
-+core_version_requirement: ^9 || ^10
++core_version_requirement: ^9 || ^10 || ^11
  dependencies:
    - drupal:locale
    - drupal:language
