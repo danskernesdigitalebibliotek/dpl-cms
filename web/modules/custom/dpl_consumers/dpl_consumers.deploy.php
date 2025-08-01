@@ -46,3 +46,18 @@ function dpl_consumers_deploy_10002(): void {
     $consumer_handler->create($consumer['consumer'], $consumer['user'], $consumer['role']);
   }
 }
+
+/**
+ * Add new consumer: Alternative GraphQL.
+ *
+ * Accommodating the need for an alternative GraphQL consumer.
+ */
+function dpl_consumers_deploy_10003(): void {
+  /** @var \Drupal\dpl_consumers\Services\ConsumerHandler $consumer_handler */
+  $consumer_handler = \Drupal::service('dpl_consumers.consumer_handler');
+  foreach (dpl_consumers_known_consumers_settings() as $settings) {
+    if ($settings['consumer']->clientId === 'alternative_graphql') {
+      $consumer_handler->create($settings['consumer'], $settings['user'], $settings['role']);
+    }
+  }
+}
