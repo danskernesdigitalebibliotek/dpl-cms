@@ -297,6 +297,10 @@ class MatchResource extends ResourceBase {
       $matched_campaign_rules_count = 0;
       foreach ($campaign_rules as $campaign_rule) {
         $campaign_facet = $campaign_rule->get('field_campaign_rule_facet')->first()?->getString();
+
+        // After an update to PHPStan, this line has started to cause issues,
+        // even though it is likely not an issue at all.
+        // @phpstan-ignore-next-line
         if (in_array($campaign_rule->facetName, $processed_facets)) {
           continue;
         }
