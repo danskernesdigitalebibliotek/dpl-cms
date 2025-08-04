@@ -54,3 +54,9 @@ services:
     class: Drupal\dpl_event\EventSubscriber\EventInstanceEditRedirect
     tags:
       - { name: event_subscriber }
+  dpl_event.event_instance_canonical_metatag:
+    class: Drupal\dpl_event\EventSubscriber\EventInstanceCanonicalMetatag
+    arguments:
+      - '@dpl_event.reoccurring_date_formatter'
+    tags:
+      - { name: event_subscriber }
