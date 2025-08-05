@@ -1,0 +1,14 @@
+uuid: 573a3663-628d-4c3c-be71-0f1d56dc9e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.alternative_graphql_client
+  module:
+    - user
+id: user_add_role_action.alternative_graphql_client
+label: 'Add the Alternative GraphQL Client role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: alternative_graphql_client

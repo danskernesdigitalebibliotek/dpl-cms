@@ -1,0 +1,14 @@
+uuid: 9981796b-a12b-4c1d-912e-4e1920f878f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.alternative_graphql_client
+  module:
+    - user
+id: user_remove_role_action.alternative_graphql_client
+label: 'Remove the Alternative GraphQL Client role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: alternative_graphql_client

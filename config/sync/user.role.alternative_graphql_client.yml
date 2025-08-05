@@ -1,0 +1,14 @@
+uuid: 50ec8450-24a8-4b02-b5a5-88b5cd53c1d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - dpl_graphql
+    - graphql
+id: alternative_graphql_client
+label: 'Alternative GraphQL Client'
+weight: 13
+is_admin: null
+permissions:
+  - 'execute graphql_compose_server arbitrary graphql requests'
+  - 'get dpl graphql cache tags'
