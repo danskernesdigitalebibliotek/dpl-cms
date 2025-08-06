@@ -9,6 +9,7 @@
   <file>assets/all.settings.php</file>
   <!-- Exclude generated client -->
   <exclude-pattern>web/modules/custom/bnf/src/GraphQL/*</exclude-pattern>
+  <exclude-pattern>web/modules/custom/dpl_fbi/src/GraphQL/*</exclude-pattern>
 
   <rule ref="Drupal" />
   <rule ref="DrupalPractice"/>
