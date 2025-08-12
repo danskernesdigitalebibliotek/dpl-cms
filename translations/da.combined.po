@@ -4318,11 +4318,6 @@ msgid "Date full month"
 msgstr "Date full month"
 
 #: 
-msgctxt "core.date_format.date_full_month:pattern"
-msgid "d. F Y"
-msgstr "d. F Y"
-
-#: 
 msgctxt "core.date_format.date_short_month:label"
 msgid "Date short month"
 msgstr "Date short month"
@@ -4573,49 +4568,9 @@ msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
 
 #: 
-msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_day"
-msgid "d F Y"
-msgstr "d F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_month"
-msgid "d - {d} F Y"
-msgstr "d - {d} F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_months"
-msgid "d F - {d} {F} Y"
-msgstr "d F - {d} {F} Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_years"
-msgid "d F Y - {d} {F} {Y}"
-msgstr "d F Y - {d} {F} {Y}"
-
-#: 
 msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_day"
-msgid "d F Y"
-msgstr "d F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_month"
-msgid "d - {d} F Y"
-msgstr "d - {d} F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_months"
-msgid "d F - {d} {F} Y"
-msgstr "d F - {d} {F} Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_years"
-msgid "d F Y - {d} {F} {Y}"
-msgstr "d F Y - {d} {F} {Y}"
 
 #: 
 msgctxt "core.entity_view_display.eventinstance.default.list:content:date:settings:separator"
@@ -4628,49 +4583,9 @@ msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
 
 #: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_day"
-msgid "d. M Y"
-msgstr "d. M Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_month"
-msgid "d. - {d}. M Y"
-msgstr "d. - {d}. M Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_months"
-msgid "d. M - {d}. {M} Y"
-msgstr "d. M - {d}. {M} Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_years"
-msgid "d. M Y - {d}. {M} {Y}"
-msgstr "d. M Y - {d}. {M} {Y}"
-
-#: 
 msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:date_format"
 msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_day"
-msgid "d. M Y"
-msgstr "d. M Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_month"
-msgid "d. - {d}. M Y"
-msgstr "d. - {d}. M Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_months"
-msgid "d. M - {d}. {M} Y"
-msgstr "d. M - {d}. {M} Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_years"
-msgid "d. M Y - {d}. {M} {Y}"
-msgstr "d. M Y - {d}. {M} {Y}"
 
 #: 
 msgctxt "core.entity_view_mode.block.token:label"
@@ -7158,26 +7073,6 @@ msgstr "Afpubliceret"
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:status:settings:format_custom_true"
 msgid "Published"
 msgstr "Publiceret"
-
-#: 
-msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_day"
-msgid "d F Y"
-msgstr "d F Y"
-
-#: 
-msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_month"
-msgid "d - {d} F Y"
-msgstr "d - {d} F Y"
-
-#: 
-msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_months"
-msgid "d F - {d} {F} Y"
-msgstr "d F - {d} {F} Y"
-
-#: 
-msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_years"
-msgid "d F Y - {d} {F} {Y}"
-msgstr "d F Y - {d} {F} {Y}"
 
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:pager:options:expose:items_per_page_label"
@@ -23453,26 +23348,6 @@ msgid "Y-m-d\\TH:i:s"
 msgstr "Y-m-d\\TH:i:s"
 
 #: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_day"
-msgid "d F Y"
-msgstr "d F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_month"
-msgid "d - {d} F Y"
-msgstr "d - {d} F Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_months"
-msgid "d F - {d} {F} Y"
-msgstr "d F - {d} {F} Y"
-
-#: 
-msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_years"
-msgid "d F Y - {d} {F} {Y}"
-msgstr "d F Y - {d} {F} {Y}"
-
-#: 
 msgctxt "core.entity_view_mode.eventinstance.list_teaser_stacked_parent:label"
 msgid "List teaser stacked parent"
 msgstr "Samlet liste over forældre "
@@ -29174,4 +29049,134 @@ msgstr "Bibliotekernes vurdering"
 msgctxt "Work Page"
 msgid "All material in Infomedia is covered by copyright law and may not be copied without special permission."
 msgstr "Alt materiale i Infomedia er omfattet af lov om ophavsret og må ikke kopieres uden særlig tilladelse."
+
+#: 
+msgctxt "Patron page"
+msgid "Card number"
+msgstr "Support-ID til eReolen"
+
+#: 
+msgctxt "core.date_format.date_full_month:pattern"
+msgid "j. F Y"
+msgstr "j. F Y"
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.card:content:date:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.default:content:date:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser:content:date:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.list_teaser_stacked_parent:content:date:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "core.entity_view_display.eventinstance.default.stacked_event:content:date:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_day"
+msgid "j. F Y"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:one_month"
+msgid "j. - {j}. F Y"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_months"
+msgid "j. F - {j}. {F} Y"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_years"
+msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
 
