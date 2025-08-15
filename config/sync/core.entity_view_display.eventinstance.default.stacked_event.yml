@@ -8,6 +8,7 @@ dependencies:
     - field.field.eventinstance.default.field_categories
     - field.field.eventinstance.default.field_description
     - field.field.eventinstance.default.field_event_address
+    - field.field.eventinstance.default.field_event_all_day
     - field.field.eventinstance.default.field_event_image
     - field.field.eventinstance.default.field_event_link
     - field.field.eventinstance.default.field_event_paragraphs
@@ -35,7 +36,7 @@ mode: stacked_event
 content:
   branch:
     type: entity_reference_label
-    label: visible
+    label: above
     settings:
       link: true
     third_party_settings: {  }
@@ -48,10 +49,10 @@ content:
       timezone_override: ''
       date_format: 'Y-m-d\TH:i:s'
       separator: '-'
-      one_day: 'd. M Y'
-      one_month: 'd. - {d}. M Y'
-      several_months: 'd. M - {d}. {M} Y'
-      several_years: 'd. M Y - {d}. {M} {Y}'
+      one_day: 'j. F Y'
+      one_month: 'j. - {j}. F Y'
+      several_months: 'j. F - {j}. {F} Y'
+      several_years: 'j. F Y - {j}. {F} {Y}'
     third_party_settings: {  }
     weight: 0
     region: content
@@ -61,6 +62,26 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  event_all_day:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 53
+    region: content
+  event_automatic_list_hide:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 53
     region: content
   event_link:
     type: link
@@ -86,7 +107,7 @@ content:
     region: content
   event_screen_names:
     type: entity_reference_label
-    label: visible
+    label: above
     settings:
       link: true
     third_party_settings: {  }
@@ -94,7 +115,7 @@ content:
     region: content
   event_ticket_capacity:
     type: number_integer
-    label: visible
+    label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -128,6 +149,7 @@ hidden:
   field_categories: true
   field_description: true
   field_event_address: true
+  field_event_all_day: true
   field_event_image: true
   field_event_link: true
   field_event_paragraphs: true
