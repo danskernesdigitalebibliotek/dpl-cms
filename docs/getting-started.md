@@ -1,6 +1,6 @@
 # Webmaster DPL CMS
 
-Teknisk dokumentation til videre udvikling på dpl-cms.
+Teknisk dokumentation til videreudvikling på dpl-cms.
 
 ## Udvikling i lokalt udviklingsmiljø
 
