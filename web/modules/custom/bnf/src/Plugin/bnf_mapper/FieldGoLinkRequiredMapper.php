@@ -6,6 +6,7 @@ namespace Drupal\bnf\Plugin\bnf_mapper;
 
 use Drupal\bnf\Attribute\BnfMapper;
 use Drupal\bnf\GraphQL\Operations\GetNode\Node\Paragraphs\GoLinkParagraph\LinkRequired\Link;
+use Spawnia\Sailor\ObjectLike;
 
 /**
  * Mapping Link data.
@@ -13,6 +14,16 @@ use Drupal\bnf\GraphQL\Operations\GetNode\Node\Paragraphs\GoLinkParagraph\LinkRe
 #[BnfMapper(
   id: Link::class,
   )]
-class FieldGoLinkRequiredMapper extends BnfMapperImportedLinkFieldPluginBase {
+class FieldGoLinkRequiredMapper extends BnfMapperImportReferencePluginBase {
+
+  /**
+   * {@inheritDoc}
+   */
+  public function map(ObjectLike $object): mixed {
+    if (!$object instanceof Link) {
+      throw new \RuntimeException('Wrong class handed to mapper');
+    }
+    return $this->mapLink($object);
+  }
 
 }

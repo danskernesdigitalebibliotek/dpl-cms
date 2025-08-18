@@ -107,6 +107,10 @@ final class EventsResource extends EventResourceBase {
                       'Occurred',
                     ],
                   ],
+                  'all_day' => [
+                    'type' => 'boolean',
+                    'description' => 'Whether the event is marked as an all-day event, without time relevance.',
+                  ],
                   'date_time' => [
                     'type' => 'object',
                     'description' => 'When the event occurs.',
@@ -158,6 +162,14 @@ final class EventsResource extends EventResourceBase {
                       ],
                     ],
                     'required' => ['street', 'zip_code', 'city', 'country'],
+                  ],
+                  'categories' => [
+                    'type' => 'array',
+                    'description' => 'The categories associated with the event.',
+                    'items' => [
+                      'type' => 'string',
+                      'description' => 'The name of a category.',
+                    ],
                   ],
                   'tags' => [
                     'type' => 'array',
