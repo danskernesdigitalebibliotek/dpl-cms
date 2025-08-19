@@ -10,6 +10,49 @@ use Drupal\node\NodeInterface;
 use Drupal\recurring_events\Entity\EventInstance;
 use Drupal\recurring_events\Entity\EventSeries;
 
+use Drupal\dpl_update\Services\MediaCleanup;
+use Drupal\media\Entity\Media;
+use Drupal\user\Entity\Role;
+use Drupal\user\RoleInterface;
+
+/**
+ * Update the permissions for a supplied list of roles.
+ *
+ * This hook is necessary, as some library websites have access to update their
+ * own permissions, and these changes are respected despite "config-import".
+ * This is the same logic that also makes the _dpl_update_install_modules
+ * necessary when adding modules.
+ *
+ * @param array<string|RoleInterface> $roles
+ *   The roles that we want to update.
+ * @param array<string> $permissions
+ *   The permissions we want to either add or remove.
+ * @param bool $grant
+ *   TRUE if we want to add the permissions - FALSE if we want to remove them.
+ */
+function _dpl_update_alter_permissions(array $roles, array $permissions, bool $grant = TRUE): void {
+  foreach ($roles as $role) {
+    if (is_string($role)) {
+      $role = Role::load($role);
+
+      if (!($role instanceof RoleInterface)) {
+        throw new UnexpectedValueException("Could not find role $role");
+      }
+    }
+
+    foreach ($permissions as $permission) {
+      if ($grant) {
+        $role->grantPermission($permission);
+      }
+      else {
+        $role->revokePermission($permission);
+      }
+    }
+
+    $role->save();
+  }
+}
+
 /**
  * Linking new field inheritances with existing eventinstances.
  *
@@ -306,4 +349,57 @@ function dpl_update_deploy_fix_content_view(): string {
   $config->save(TRUE);
 
   return 'views.view.contentdisplay.default.display_options.cache.type => tag';
+}
+
+/**
+ * Find duplicate medias, and hide them in the media library.
+ *
+ * As part of a bug, all medias pulled from Delingstjenesten/BNF were duplicated
+ * resulting in a bloated media library.
+ *
+ * @param array<mixed> $sandbox
+ *   The sandbox, used for batch processing.
+ */
+function dpl_update_deploy_clean_medias(array &$sandbox): string {
+  $service = DrupalTyped::service(MediaCleanup::class, 'dpl_update.media_cleanup');
+
+  // Amount of medias we want to handle per sandbox batch.
+  $batch_size = 50;
+
+  // Initialize sandbox values, that we will use as part of batch.
+  if (!isset($sandbox['ids'])) {
+    $media_ids = $service->getDuplicateOrphanedMediaIds();
+    $sandbox['ids'] = $media_ids;
+    $sandbox['total'] = count($media_ids);
+    $sandbox['current'] = 0;
+  }
+
+  if (empty($sandbox['total'])) {
+    $sandbox['#finished'] = 1;
+    return 'No orphaned media duplicates found.';
+  }
+
+  // Slice the current batch from stored IDs, breaking it into batches.
+  $batch_ids = array_slice($sandbox['ids'], $sandbox['current'], $batch_size);
+  $medias = Media::loadMultiple($batch_ids);
+
+  // Looping through the medias, and hiding it from the media-library.
+  foreach ($medias as $media) {
+    $service->archiveMedia($media);
+    $sandbox['current']++;
+  }
+
+  // Progress feedback, used for looping through batches.
+  $sandbox['#finished'] = $sandbox['current'] >= $sandbox['total']
+    ? 1 : ($sandbox['current'] / $sandbox['total']);
+
+  if ($sandbox['#finished'] === 1) {
+    \Drupal::logger('dpl_update')->notice(
+      'Finished archiving duplicated, orphaned medias.'
+    );
+
+    return 'Finished archiving duplicated, orphaned medias.';
+  }
+
+  return "Archived {$sandbox['current']}/{$sandbox['total']} duplicate medias.";
 }

@@ -127,6 +127,14 @@ class EventsGET200ResponseInner
     protected ?EventsGET200ResponseInnerImage $image = null;
 
     /**
+     * @var EventsGET200ResponseInnerTeaserImage|null
+     * @SerializedName("teaserImage")
+     * @Assert\Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTeaserImage")
+     * @Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTeaserImage")
+     */
+    protected ?EventsGET200ResponseInnerTeaserImage $teaserImage = null;
+
+    /**
      * The state of the event.
      *
      * @var string|null
@@ -137,6 +145,16 @@ class EventsGET200ResponseInner
      * @Type("string")
      */
     protected ?string $state = null;
+
+    /**
+     * Whether the event is marked as an all-day event, without time relevance.
+     *
+     * @var bool|null
+     * @SerializedName("all_day")
+     * @Assert\Type("bool")
+     * @Type("bool")
+     */
+    protected ?bool $allDay = null;
 
     /**
      * @var EventsGET200ResponseInnerDateTime|null
@@ -167,6 +185,18 @@ class EventsGET200ResponseInner
      * @Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerAddress")
      */
     protected ?EventsGET200ResponseInnerAddress $address = null;
+
+    /**
+     * The categories associated with the event.
+     *
+     * @var string[]|null
+     * @SerializedName("categories")
+     * @Assert\All({
+     *   @Assert\Type("string")
+     * })
+     * @Type("array<string>")
+     */
+    protected ?array $categories = null;
 
     /**
      * The tags associated with the event.
@@ -267,10 +297,13 @@ class EventsGET200ResponseInner
             $this->updatedAt = array_key_exists('updatedAt', $data) ? $data['updatedAt'] : $this->updatedAt;
             $this->ticketManagerRelevance = array_key_exists('ticketManagerRelevance', $data) ? $data['ticketManagerRelevance'] : $this->ticketManagerRelevance;
             $this->image = array_key_exists('image', $data) ? $data['image'] : $this->image;
+            $this->teaserImage = array_key_exists('teaserImage', $data) ? $data['teaserImage'] : $this->teaserImage;
             $this->state = array_key_exists('state', $data) ? $data['state'] : $this->state;
+            $this->allDay = array_key_exists('allDay', $data) ? $data['allDay'] : $this->allDay;
             $this->dateTime = array_key_exists('dateTime', $data) ? $data['dateTime'] : $this->dateTime;
             $this->branches = array_key_exists('branches', $data) ? $data['branches'] : $this->branches;
             $this->address = array_key_exists('address', $data) ? $data['address'] : $this->address;
+            $this->categories = array_key_exists('categories', $data) ? $data['categories'] : $this->categories;
             $this->tags = array_key_exists('tags', $data) ? $data['tags'] : $this->tags;
             $this->partners = array_key_exists('partners', $data) ? $data['partners'] : $this->partners;
             $this->ticketCategories = array_key_exists('ticketCategories', $data) ? $data['ticketCategories'] : $this->ticketCategories;
@@ -491,6 +524,32 @@ class EventsGET200ResponseInner
     }
 
     /**
+     * Gets teaserImage.
+     *
+     * @return EventsGET200ResponseInnerTeaserImage|null
+     */
+    public function getTeaserImage(): ?EventsGET200ResponseInnerTeaserImage
+    {
+        return $this->teaserImage;
+    }
+
+
+
+    /**
+     * Sets teaserImage.
+     *
+     * @param EventsGET200ResponseInnerTeaserImage|null $teaserImage
+     *
+     * @return $this
+     */
+    public function setTeaserImage(?EventsGET200ResponseInnerTeaserImage $teaserImage = null): self
+    {
+        $this->teaserImage = $teaserImage;
+
+        return $this;
+    }
+
+    /**
      * Gets state.
      *
      * @return string|null
@@ -512,6 +571,32 @@ class EventsGET200ResponseInner
     public function setState(?string $state): self
     {
         $this->state = $state;
+
+        return $this;
+    }
+
+    /**
+     * Gets allDay.
+     *
+     * @return bool|null
+     */
+    public function isAllDay(): ?bool
+    {
+        return $this->allDay;
+    }
+
+
+
+    /**
+     * Sets allDay.
+     *
+     * @param bool|null $allDay  Whether the event is marked as an all-day event, without time relevance.
+     *
+     * @return $this
+     */
+    public function setAllDay(?bool $allDay = null): self
+    {
+        $this->allDay = $allDay;
 
         return $this;
     }
@@ -590,6 +675,32 @@ class EventsGET200ResponseInner
     public function setAddress(?EventsGET200ResponseInnerAddress $address = null): self
     {
         $this->address = $address;
+
+        return $this;
+    }
+
+    /**
+     * Gets categories.
+     *
+     * @return string[]|null
+     */
+    public function getCategories(): ?array
+    {
+        return $this->categories;
+    }
+
+
+
+    /**
+     * Sets categories.
+     *
+     * @param string[]|null $categories  The categories associated with the event.
+     *
+     * @return $this
+     */
+    public function setCategories(?array $categories = null): self
+    {
+        $this->categories = $categories;
 
         return $this;
     }
