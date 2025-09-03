@@ -28833,7 +28833,7 @@ msgstr ""
 #: 
 msgctxt "advanced search"
 msgid "Date for first accession date"
-msgstr "Filtrering på opr. indkøbsdato (firstaccessiondateitem)"
+msgstr "Filtrering på opr. indkøbsdato"
 
 #: 
 msgctxt "advanced search"
@@ -29178,5 +29178,82 @@ msgstr ""
 #: 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_years"
 msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+#: 
+msgid "All day"
+msgstr ""
+
+#: 
+msgctxt "dpl_event"
+msgid "Any specific times below will be ignored when \"All day\" is enabled"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_all_day:label"
+msgid "All day"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_all_day:description"
+msgid "If the event is not limited to a certain time of day, you can enable it here."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_all_day:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_all_day:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_all_day:label"
+msgid "All day"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_all_day:description"
+msgid "If the event is not limited to a certain time of day, you can enable it here."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_all_day:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_all_day:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:label"
+msgid "Hide in automatic lists"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:description"
+msgid "If chosen, this eventseries and it's instances will not show up in automatic lists across the site.<br><br />The event will still show up in lists where it is manually added, and in Google search results."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgid "Media entity URL substitution"
+msgstr ""
+
+#: 
+msgid "Use metadata from when the link was created"
 msgstr ""
 

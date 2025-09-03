@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-08-12 12:13+0200\n"
-"PO-Revision-Date: 2025-08-12 12:13+0200\n"
+"POT-Creation-Date: 2025-09-03 11:10+0200\n"
+"PO-Revision-Date: 2025-09-03 11:10+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7388,5 +7388,60 @@ msgstr ""
 
 msgctxt "views.view.entity_reference_event_instance:display:default:display_options:fields:date__value:settings:several_years"
 msgid "j. F Y - {j}. {F} {Y}"
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_event_all_day:label"
+msgid "All day"
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_event_all_day:description"
+msgid ""
+"If the event is not limited to a certain time of day, you can enable "
+"it here."
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_event_all_day:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.eventinstance.default.field_event_all_day:settings:off_label"
+msgid "Off"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_event_all_day:label"
+msgid "All day"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_event_all_day:description"
+msgid ""
+"If the event is not limited to a certain time of day, you can enable "
+"it here."
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_event_all_day:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_event_all_day:settings:off_label"
+msgid "Off"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:label"
+msgid "Hide in automatic lists"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:description"
+msgid ""
+"If chosen, this eventseries and it's instances will not show up in "
+"automatic lists across the site.<br><br />The event will still show up "
+"in lists where it is manually added, and in Google search results."
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:on_label"
+msgid "On"
+msgstr ""
+
+msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:off_label"
+msgid "Off"
 msgstr ""
 

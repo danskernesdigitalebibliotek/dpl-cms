@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-08-12 12:13+0200\n"
-"PO-Revision-Date: 2025-08-12 12:13+0200\n"
+"POT-Creation-Date: 2025-09-03 11:10+0200\n"
+"PO-Revision-Date: 2025-09-03 11:10+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -19987,7 +19987,7 @@ msgstr "Ugyldigt link"
 
 msgctxt "advanced search"
 msgid "Date for first accession date"
-msgstr "Filtrering på opr. indkøbsdato (firstaccessiondateitem)"
+msgstr "Filtrering på opr. indkøbsdato"
 
 msgctxt "advanced search"
 msgid "Choose operator"
@@ -20102,4 +20102,17 @@ msgstr ""
 msgctxt "Patron page"
 msgid "Card number"
 msgstr "Support-ID til eReolen"
+
+msgid "All day"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Any specific times below will be ignored when \"All day\" is enabled"
+msgstr ""
+
+msgid "Media entity URL substitution"
+msgstr ""
+
+msgid "Use metadata from when the link was created"
+msgstr ""
 
