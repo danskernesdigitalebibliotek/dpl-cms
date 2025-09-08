@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "489cec1360abd3b9c66bd3d1864e9acd",
+    "content-hash": "794b158b6276cae4b8e72c36f68860e4",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -3521,7 +3521,7 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.4.8",
+            "version": "10.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -3565,7 +3565,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.5.0-beta1"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.5.3"
             },
             "time": "2024-08-22T14:31:30+00:00"
         },
