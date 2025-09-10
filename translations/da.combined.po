@@ -29182,72 +29182,72 @@ msgstr ""
 
 #: 
 msgid "All day"
-msgstr ""
+msgstr "Hele dagen"
 
 #: 
 msgctxt "dpl_event"
 msgid "Any specific times below will be ignored when \"All day\" is enabled"
-msgstr ""
+msgstr "Når \"Hele dagen\" er slået til, vil specifikke tidspunkter nedenfor blive ignoreret."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_all_day:label"
 msgid "All day"
-msgstr ""
+msgstr "Hele dagen"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_all_day:description"
 msgid "If the event is not limited to a certain time of day, you can enable it here."
-msgstr ""
+msgstr "Hvis et arrangement foregår hele dagen, kan du indstille det her."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_all_day:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Slået til"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_all_day:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Slået fra"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_all_day:label"
 msgid "All day"
-msgstr ""
+msgstr "Hele dagen"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_all_day:description"
 msgid "If the event is not limited to a certain time of day, you can enable it here."
-msgstr ""
+msgstr "Hvis et arrangement foregår hele dagen, kan du indstille det her."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_all_day:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Slået til"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_all_day:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Slået fra"
 
 #: 
 msgctxt "field.field.eventseries.default.field_automatic_list_hide:label"
 msgid "Hide in automatic lists"
-msgstr ""
+msgstr "Skjul i automatiske visninger"
 
 #: 
 msgctxt "field.field.eventseries.default.field_automatic_list_hide:description"
 msgid "If chosen, this eventseries and it's instances will not show up in automatic lists across the site.<br><br />The event will still show up in lists where it is manually added, and in Google search results."
-msgstr ""
+msgstr "Hvis dette vælges, vil arrangementsserien ikke blive vist i automatisk genererede lister på tværs af sitet som fx Event list automatic. Arrangementsserien vil stadig blive vist i manuelt udvalgte lister som fx Event list manual samt i søgemaskiners søgeresultater."
 
 #: 
 msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Slået til"
 
 #: 
 msgctxt "field.field.eventseries.default.field_automatic_list_hide:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Slået fra"
 
 #: 
 msgid "Media entity URL substitution"
@@ -29255,5 +29255,20 @@ msgstr ""
 
 #: 
 msgid "Use metadata from when the link was created"
+msgstr ""
+
+#: 
+msgctxt "system.action.user_add_role_action.external_graphql_client:label"
+msgid "Add the External GraphQL Client role to the selected user(s)"
+msgstr ""
+
+#: 
+msgctxt "system.action.user_remove_role_action.external_graphql_client:label"
+msgid "Remove the External GraphQL Client role from the selected user(s)"
+msgstr ""
+
+#: 
+msgctxt "user.role.external_graphql_client:label"
+msgid "External GraphQL Client"
 msgstr ""
 
