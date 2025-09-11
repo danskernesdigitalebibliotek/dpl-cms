@@ -10,6 +10,9 @@
 /web/libraries/
 /web/themes/custom/novel/assets/
 
+# Ignore scaffolded files.
+/.gitignore
+
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
