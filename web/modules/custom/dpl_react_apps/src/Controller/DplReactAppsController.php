@@ -524,6 +524,12 @@ class DplReactAppsController extends ControllerBase {
       'type-text' => $this->t('Type', [], ['context' => 'Work Page']),
       'we-have-shopped-text' => $this->t('In stock:', [], ['context' => 'Work Page']),
       'you-have-borrowed-text' => $this->t('You have borrowed', [], ['context' => 'Work Page']),
+      'edition-switch-modal-screen-reader-description-text' => $this->t('Edition switch modal', [], ['context' => 'Work Page']),
+      'edition-switch-modal-close-aria-label-text' => $this->t('Close edition switch modal', [], ['context' => 'Work Page']),
+      'edition-switch-modal-title-text' => $this->t('Choose Edition', [], ['context' => 'Work Page']),
+      'edition-switch-modal-description-text' => $this->t('Select which edition you would like to reserve from the available options below.', [], ['context' => 'Work Page']),
+      'edition-change-text' => $this->t('Change edition', [], ['context' => 'Work Page']),
+      'edition-choose-text' => $this->t('Choose', [], ['context' => 'Work Page']),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
