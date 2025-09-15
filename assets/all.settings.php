@@ -121,7 +121,7 @@ if (getenv('CI')) {
   // Wiremock.
   // Service base urls for the external APIs.
   // @todo This should be updated to use the correct URL when available.
-  $config['dpl_fbi.settings'] = ['base_url' => 'http://temp.fbi-api.dbc.dk/[profile]/graphql'];
+  $config['dpl_fbi.settings'] = ['base_url' => 'http://wiremock/[profile]/graphql'];
   $config['dpl_fbs.settings'] = ['base_url' => 'http://fbs-openplatform.dbc.dk'];
   $config['dpl_publizon.settings'] = ['base_url' => 'http://pubhub-openplatform.dbc.dk'];
   // Adgangsplatformen OpenID Connect client.
