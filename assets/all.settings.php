@@ -139,8 +139,6 @@ if (getenv('CI')) {
   // We need http domains for testing in CI context.
   $config['dpl_react_apps.settings']['services'] = [
     'cover' => ['base_url' => 'http://cover.dandigbib.org'],
-    // @todo This should be updated to use the correct URL when available.
-    'fbi' => ['base_url' => 'http://temp.fbi-api.dbc.dk/[profile]/graphql'],
     'material-list' => ['base_url' => 'http://prod.materiallist.dandigbib.org'],
   ];
 
