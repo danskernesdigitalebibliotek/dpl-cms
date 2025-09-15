@@ -29,9 +29,6 @@ services:
       CYPRESS_WIREMOCK_URL: "http://wiremock"
 
   wiremock:
-    # We use wiremock-gui as it exposes a UI for inspecting the state of
-    # WireMock. This can make debugging easier. It can seamlessly be replaced
-    # with the official wiremock/wiremock image.
     image: wiremock/wiremock:2.32.0
     # The following options are used:
     # --enable-browser-proxying: Allows Wiremock to intercept all traffic from
@@ -61,7 +58,5 @@ services:
     depends_on:
       - wiremock
     environment:
-      http_proxy: http://wiremock:80
-      https_proxy: https://wiremock:443
       CI: true
       LAGOON_ENVIRONMENT_TYPE: ci
