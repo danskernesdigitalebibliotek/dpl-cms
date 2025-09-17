@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3f8554551a66105b9d6a51e19e70bd0",
+    "content-hash": "4d06ed62c8699f410e44b395c9d48e3f",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1107,19 +1107,19 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2025.38.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2025.38.0/dist-2025-38-0-46b50df7c5282c3b6cfa90dda9da461016896ed3.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-copy-of-develop/dist-copy-of-develop.zip"
             },
             "type": "drupal-library"
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.38.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.38.0/dist-2025-38-0-816ebd2ac49922846559abd485a015c2dd12ab0c.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-312-copy-link/dist-ddfsal-312-copy-link.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21632,6 +21632,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
