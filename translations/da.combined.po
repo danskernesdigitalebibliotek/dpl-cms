@@ -1344,7 +1344,7 @@ msgstr "Du kan sætte dine reserveringer på pause mens du f.eks. er på ferie."
 #: 
 msgctxt "Patron page"
 msgid "Pause your reservations"
-msgstr "Sæt dine reserveringer på pause"
+msgstr "Sæt dine fysiske reserveringer på pause"
 
 #: 
 msgctxt "Patron page (aria)"
@@ -3219,7 +3219,7 @@ msgstr "Indstillinger"
 #: 
 msgctxt "Global"
 msgid "Your reservations are paused"
-msgstr "Dine reserveringer er sat på pause"
+msgstr "Dine fysiske reserveringer er sat på pause"
 
 #: 
 msgctxt "Global"

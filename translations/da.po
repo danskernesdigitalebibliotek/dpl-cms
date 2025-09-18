@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-09-16 11:08+0200\n"
-"PO-Revision-Date: 2025-09-16 11:08+0200\n"
+"POT-Creation-Date: 2025-09-18 13:47+0200\n"
+"PO-Revision-Date: 2025-09-18 13:47+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1153,7 +1153,7 @@ msgstr ""
 
 msgctxt "Patron page"
 msgid "Pause your reservations"
-msgstr "Sæt dine reserveringer på pause"
+msgstr "Sæt dine fysiske reserveringer på pause"
 
 msgctxt "Patron page (aria)"
 msgid ""
@@ -2774,7 +2774,7 @@ msgstr "Indstillinger"
 
 msgctxt "Global"
 msgid "Your reservations are paused"
-msgstr "Dine reserveringer er sat på pause"
+msgstr "Dine fysiske reserveringer er sat på pause"
 
 msgctxt "Global"
 msgid "At the moment you have 0 physical reservations"
