@@ -24912,7 +24912,7 @@ msgstr "Udsolgt"
 #: 
 msgctxt "dpl_event"
 msgid "Canceled"
-msgstr "Annulleret"
+msgstr "Aflyst"
 
 #: 
 msgctxt "dpl_event"
