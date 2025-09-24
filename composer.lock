@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3f8554551a66105b9d6a51e19e70bd0",
+    "content-hash": "b7042e312356f297adaa019833c478ef",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1116,10 +1116,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.38.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.38.0/dist-2025-38-0-816ebd2ac49922846559abd485a015c2dd12ab0c.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-352-info-box/dist-ddfsal-352-info-box.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21631,6 +21631,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
         "drupal/openapi_rest": 5,
