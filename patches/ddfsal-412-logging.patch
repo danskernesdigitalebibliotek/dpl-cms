@@ -1,0 +1,44 @@
+diff --git a/lib/Drupal/Core/Access/CsrfTokenGenerator.php b/lib/Drupal/Core/Access/CsrfTokenGenerator.php
+index 81cb1f29aa..e61ea0ebad 100644
+--- a/lib/Drupal/Core/Access/CsrfTokenGenerator.php
++++ b/lib/Drupal/Core/Access/CsrfTokenGenerator.php
+@@ -84,15 +84,24 @@ class CsrfTokenGenerator {
+   public function validate($token, $value = '') {
+     $seed = $this->sessionMetadata->getCsrfTokenSeed();
+     if (empty($seed)) {
++      \Drupal::logger('dpl_debug')->info("DPLSAL-412: CSRF failure, no seed, token \"{$token}\".");
+       return FALSE;
+     }
+     $value = $this->computeToken($seed, $value);
+     // PHP 8.0 strictly type hints for hash_equals. Maintain BC until we can
+     // enforce scalar type hints on this method.
+     if (!is_string($token)) {
++      \Drupal::logger('dpl_debug')->info('DPLSAL-412: CSRF failure, no token.');
+       return FALSE;
+     }
+ 
++    if (hash_equals($value, $token)) {
++      \Drupal::logger('dpl_debug')->info("DPLSAL-412: CSRF valid, token \"{$token}\".");
++    }
++    else {
++      \Drupal::logger('dpl_debug')->info("DPLSAL-412: CSRF invalid, expected \"{$value}\", actual \"{$token}\".");
++    }
++
+     return hash_equals($value, $token);
+   }
+ 
+diff --git a/lib/Drupal/Core/Form/FormValidator.php b/lib/Drupal/Core/Form/FormValidator.php
+index def5f87191..a833141d0a 100644
+--- a/lib/Drupal/Core/Form/FormValidator.php
++++ b/lib/Drupal/Core/Form/FormValidator.php
+@@ -104,6 +104,10 @@ class FormValidator implements FormValidatorInterface {
+     // code.
+     if (isset($form['#token'])) {
+       if (!$this->csrfToken->validate($form_state->getValue('form_token'), $form['#token']) || $form_state->hasInvalidToken()) {
++        if ($form_state->hasInvalidToken()) {
++          \Drupal::logger('dpl_debug')->info("DPLSAL-412: form_state invalid token.");
++        }
++
+         $this->setInvalidTokenError($form_state);
+ 
+         // Stop here and don't run any further validation handlers, because they
