@@ -40,10 +40,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2025.40.0",
+                "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.40.0/dist-2025-40-0-63f085a89483e7900a097e5a46ae581fdc4cc647.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-419-artikler-fra-infomedia-fix/dist-ddfsal-419-artikler-fra-infomedia-fix.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -92,7 +92,7 @@
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
         "danskernesdigitalebibliotek/dpl-design-system": "2025.40.0",
-        "danskernesdigitalebibliotek/dpl-react": "2025.40.0",
+        "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
