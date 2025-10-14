@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-09-22 13:16+0200\n"
-"PO-Revision-Date: 2025-09-22 13:16+0200\n"
+"POT-Creation-Date: 2025-10-14 08:13+0200\n"
+"PO-Revision-Date: 2025-10-14 08:13+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1606,8 +1606,8 @@ msgstr "Luk"
 msgctxt "React apps (Global error handling)"
 msgid "An error occurred"
 msgstr ""
-"Der opstod en uventet fejl, prøv igen senere eller kontakt "
-"biblioteket."
+"Der opstod en uventet fejl - du kan prøve at opdatere siden, prøve "
+"igen senere eller kontakte biblioteket."
 
 msgctxt "Work Page"
 msgid "Blocked"
@@ -18814,29 +18814,11 @@ msgstr "Meta"
 msgid "Select the HTML element of the Custom tag."
 msgstr "Select the HTML element of the Custom tag."
 
-msgid "Name attribute"
-msgstr "Name attribute"
-
-msgid "Http Equiv"
-msgstr "Http Equiv"
-
-msgid "Item Prop"
-msgstr "Item Prop"
-
-msgid "Rel"
-msgstr "Rel"
-
-msgid "Select the Name attribute of the Custom tag."
-msgstr "Select the Name attribute of the Custom tag."
-
 msgid "Value attribute"
 msgstr "Værdi attribut"
 
 msgid "Href"
 msgstr "Href"
-
-msgid "Select the Value attribute of the Custom tag."
-msgstr "Vælg værdiattributten for det brugerdefinerede tag."
 
 msgid "Created %label Custom tag."
 msgstr "Oprettet %label brugerdefineret tag."
@@ -20146,4 +20128,227 @@ msgstr "BNF GraphQL Client"
 msgctxt "simple_oauth.oauth2_scope.go_graphql_client:description"
 msgid "GO GraphQL Client"
 msgstr "GO GraphQL Client"
+
+msgid ""
+"Enter a unique identifier for this custom tag. This identifier can "
+"contain lowercase letters, numbers and underscores. This is only used "
+"internally, it is not used in the actual HTML output."
+msgstr ""
+
+msgid "Charset"
+msgstr ""
+
+msgid ""
+"Select the Value attribute of the Custom tag. This determines which "
+"HTML attribute will contain the user-provided content."
+msgstr ""
+
+msgid "HTML Attributes"
+msgstr "HTML-attributter"
+
+msgid ""
+"Define the HTML attributes for this custom meta tag. The first "
+"attribute serves as the primary identifier and is required. Additional "
+"attributes are optional and provide fixed values for all instances of "
+"this tag."
+msgstr ""
+
+msgid "Primary attribute (Required)"
+msgstr ""
+
+msgid "Additional attribute @num"
+msgstr ""
+
+msgid "This attribute identifies the meta tag and is required."
+msgstr ""
+
+msgid "This attribute provides a fixed value for all instances of this tag."
+msgstr ""
+
+msgid "Attribute name"
+msgstr ""
+
+msgid "Common values: name, property, rel, http-equiv, itemprop."
+msgstr ""
+
+msgid "Additional attribute name (e.g., type, sizes)."
+msgstr ""
+
+msgid "Attribute value"
+msgstr ""
+
+msgid ""
+"For new tags, defaults to the machine name. For existing tags, this "
+"identifies the specific meta tag."
+msgstr ""
+
+msgid "Fixed value for this attribute."
+msgstr ""
+
+msgid "Add another attribute"
+msgstr ""
+
+msgid "Examples"
+msgstr "Eksempler"
+
+msgid ""
+"<h4>Common Examples:</h4>\n"
+"        <ul>\n"
+"          <li><strong>Basic "
+"meta tag:</strong><br>\n"
+"            Primary attribute: name = "
+"\"description\"<br>\n"
+"            Result: &lt;meta "
+"name=\"description\" content=\"[user-input]\" /&gt;</li>\n"
+"          "
+"<li><strong>Open Graph tag:</strong><br>\n"
+"            Primary "
+"attribute: property = \"og:title\"<br>\n"
+"            Result: &lt;meta "
+"property=\"og:title\" content=\"[user-input]\" /&gt;</li>\n"
+"          "
+"<li><strong>Twitter Card:</strong><br>\n"
+"            Primary "
+"attribute: name = \"twitter:card\"<br>\n"
+"            Result: &lt;meta "
+"name=\"twitter:card\" content=\"[user-input]\" /&gt;</li>\n"
+"          "
+"<li><strong>Link with type:</strong><br>\n"
+"            Primary "
+"attribute: rel = \"icon\"<br>\n"
+"            Additional attribute: type "
+"= \"image/svg+xml\"<br>\n"
+"            Result: &lt;link rel=\"icon\" "
+"type=\"image/svg+xml\" href=\"[user-input]\" /&gt;</li>\n"
+"        "
+"</ul>"
+msgstr ""
+
+msgid "At least one attribute with both name and value must be provided."
+msgstr ""
+
+msgid "The primary attribute name and value are required."
+msgstr ""
+
+msgid "Total number of metatags"
+msgstr ""
+
+msgid "Total number of groups"
+msgstr ""
+
+msgid "Name of group"
+msgstr ""
+
+msgid "Number of metatags"
+msgstr ""
+
+msgid ""
+"Set to %none to disable inheritance of the parent value and prevent "
+"the output of this metatag entirely."
+msgstr ""
+
+msgid "Optional suffix to add"
+msgstr ""
+
+msgid ""
+"If provided this string will be added at the end of all meta tags that "
+"are trimmed to length."
+msgstr ""
+
+msgid "Creator's fediverse account"
+msgstr ""
+
+msgid ""
+"The fediverse @username for the content creator / author for this "
+"page, including the first @ symbol."
+msgstr ""
+
+msgid "SVG icon"
+msgstr ""
+
+msgid "A scalable vector graphic (SVG) file."
+msgstr ""
+
+msgid "Could not find token for user."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Search"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Search Info Box"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Title"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "The title of the search info box."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Content"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "The content of the search info box."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Button text"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"The label for the button in the search info box. Maximum 30 "
+"characters."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Button URL"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"The URL the button in the search info box should link to. <br />\n"
+"    "
+"                              You can add a relative url (e.g. "
+"/advanced-search). <br />\n"
+"                                  You can "
+"search for an internal url. <br />\n"
+"                                  "
+"You can add an external url (starting with \"http://\" or "
+"\"https://\")."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "URL til 0-hits søgninger"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"URL to the page that should be shown when a search returns zero "
+"results. <br />\n"
+"                                         You can add "
+"a relative url (e.g. /no-results). <br />\n"
+"                           "
+"              You can search for an internal url. <br />\n"
+"            "
+"                             You can add an external url (starting "
+"with \"http://\" or \"https://\")."
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Copy link"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Link copied"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Copy link to edition"
+msgstr ""
 
