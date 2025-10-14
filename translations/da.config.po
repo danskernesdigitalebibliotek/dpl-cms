@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-10-14 08:13+0200\n"
-"PO-Revision-Date: 2025-10-14 08:13+0200\n"
+"POT-Creation-Date: 2025-10-14 14:54+0200\n"
+"PO-Revision-Date: 2025-10-14 14:54+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -6893,7 +6893,7 @@ msgstr ""
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_canonical_url:label"
 msgid "Source"
-msgstr ""
+msgstr "Kilde"
 
 msgctxt "views.view.importable_content:display:default:display_options:fields:type:label"
 msgid "Content type"
@@ -7082,19 +7082,19 @@ msgstr ""
 
 msgctxt "pathauto.pattern.go_articles:label"
 msgid "GO Articles"
-msgstr ""
+msgstr "GO artikler"
 
 msgctxt "pathauto.pattern.go_categories:label"
 msgid "GO Categories"
-msgstr ""
+msgstr "GO kategorier"
 
 msgctxt "pathauto.pattern.go_pages:label"
 msgid "GO Pages"
-msgstr ""
+msgstr "GO sider"
 
 msgctxt "views.view.go_categories:label"
 msgid "GO Categories"
-msgstr ""
+msgstr "GO kategorier"
 
 msgctxt "views.view.go_categories:display:default:display_title"
 msgid "Default"

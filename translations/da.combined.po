@@ -27818,7 +27818,7 @@ msgstr ""
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:field_canonical_url:label"
 msgid "Source"
-msgstr ""
+msgstr "Kilde"
 
 #: 
 msgctxt "views.view.importable_content:display:default:display_options:fields:type:label"
@@ -27996,7 +27996,7 @@ msgstr "Digitale lån"
 #: 
 msgctxt "Work Page"
 msgid "You do not have access to digital materials from this library as you are not registered as a resident in the municipality. Contact the library."
-msgstr ""
+msgstr "Du har ikke adgang til lån af digitale materialer fra dette bibliotek, da du ikke har en registreret bopælsadresse i kommunen. Kontakt biblioteket for yderligere oplysninger."
 
 #: 
 msgctxt "system.action.user_add_role_action.bnf_pilot:label"
@@ -28066,22 +28066,22 @@ msgstr "Oplys en canonical URL hvis indholdet i artiklen er kopieret fra en ande
 #: 
 msgctxt "pathauto.pattern.go_articles:label"
 msgid "GO Articles"
-msgstr ""
+msgstr "GO artikler"
 
 #: 
 msgctxt "pathauto.pattern.go_categories:label"
 msgid "GO Categories"
-msgstr ""
+msgstr "GO kategorier"
 
 #: 
 msgctxt "pathauto.pattern.go_pages:label"
 msgid "GO Pages"
-msgstr ""
+msgstr "GO sider"
 
 #: 
 msgctxt "views.view.go_categories:label"
 msgid "GO Categories"
-msgstr ""
+msgstr "GO kategorier"
 
 #: 
 msgctxt "views.view.go_categories:display:default:display_title"
@@ -29519,5 +29519,6 @@ msgstr ""
 #: 
 msgctxt "Work Page"
 msgid "Copy link to edition"
-msgstr ""
+msgstr "Kopier link til udgave\n"
+""
 
