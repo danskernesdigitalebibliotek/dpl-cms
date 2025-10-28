@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-10-15 09:48+0200\n"
-"PO-Revision-Date: 2025-10-15 09:48+0200\n"
+"POT-Creation-Date: 2025-10-28 11:47+0100\n"
+"PO-Revision-Date: 2025-10-28 11:47+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -14980,19 +14980,6 @@ msgstr ""
 "Afpubliceret af Scheduler. Den planlagte dato for afpublicering var "
 "@unpublish_on."
 
-msgid "Config Update for actions"
-msgstr "Config opdatering for handlinger"
-
-msgid "Enable Config Update Reports"
-msgstr "Enable Config Update Reports"
-
-msgid ""
-"Action '%action_id' is missing. Use <a href=':url'>Config Update</a> "
-"to import the missing action."
-msgstr ""
-"Handlingen '%action_id' mangler. Brug <a href=':url'>Config Update</a> "
-"til at importere den manglende handling."
-
 msgid "settings"
 msgstr "indstillinger"
 
@@ -20377,4 +20364,78 @@ msgid "Copy link to edition"
 msgstr ""
 "Kopier link til udgave\n"
 ""
+
+msgctxt "Work Page"
+msgid "Change edition"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Choose"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Latest edition"
+msgstr "Seneste udgave"
+
+msgctxt "Work Page"
+msgid "Close edition switch modal"
+msgstr ""
+
+msgctxt "Work Page"
+msgid ""
+"Select which edition you would like to reserve from the available "
+"options below."
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Edition switch modal"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Choose Edition"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Could not find event-instance"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid ""
+"If you press the button “Insert values from the series”, this "
+"instance will be filled with all the content you have created in the "
+"series."
+msgstr ""
+
+msgctxt "dpl_event"
+msgid ""
+"<strong>What is the point of this?</strong> You can have the content "
+"filled in so you can adjust it on this one instance and not for all "
+"instances in the series — for example, if you need to change a date "
+"or something in the body text."
+msgstr ""
+
+msgctxt "dpl_event"
+msgid ""
+"Be aware that as soon as you have inserted the content into the "
+"instance, <strong>this instance will no longer be updated when you "
+"make changes in the series.</strong> This cannot be undone."
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Overwrite any existing values"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Insert values to instance"
+msgstr ""
+
+msgctxt "dpl_event"
+msgid "Values has been copied and saved from series."
+msgstr ""
+
+msgid "Insert values from series"
+msgstr ""
+
+msgid "Insert values from eventseries"
+msgstr ""
 
