@@ -24181,11 +24181,6 @@ msgstr "Alle cacher ryddet."
 
 #: 
 msgctxt "DPL Opening Hours Editor"
-msgid "This and feuture instances"
-msgstr "Denne og fremtidige instanser"
-
-#: 
-msgctxt "DPL Opening Hours Editor"
 msgid "Only this instance"
 msgstr "Kun denne instans"
 
@@ -29719,4 +29714,24 @@ msgstr "32"
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:user_bulk_form:action_title"
 msgid "Action"
 msgstr "Handling"
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "This and future instances"
+msgstr "Denne og fremtidige instanser"
+
+#: 
+msgctxt "DPL Opening Hours Editor"
+msgid "Loading.."
+msgstr "Gemmer..."
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "Hide unavailable holdings"
+msgstr "Skjul udlånte eksemplarer"
+
+#: 
+msgctxt "Library Agency Configuration"
+msgid "If checked, holdings with 0 available copies will be hidden from the \"Find on shelf\" modal. This does not hide entire libraries, only individual holding lines with no available copies."
+msgstr "Hvis dette tilvælges, vil alle beholdningslinjer med 0 tilgængelige eksemplarer bliver skjult fra \"Find på hylden\"-modalen."
 

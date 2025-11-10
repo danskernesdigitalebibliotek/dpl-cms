@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-10-30 22:39+0100\n"
-"PO-Revision-Date: 2025-10-30 22:39+0100\n"
+"POT-Creation-Date: 2025-11-10 16:47+0100\n"
+"PO-Revision-Date: 2025-11-10 16:47+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -17534,10 +17534,6 @@ msgid "All caches cleared."
 msgstr "Alle cacher ryddet."
 
 msgctxt "DPL Opening Hours Editor"
-msgid "This and feuture instances"
-msgstr "Denne og fremtidige instanser"
-
-msgctxt "DPL Opening Hours Editor"
 msgid "Only this instance"
 msgstr "Kun denne instans"
 
@@ -20528,4 +20524,25 @@ msgstr "Indsæt værdier fra serier"
 
 msgid "Insert values from eventseries"
 msgstr "Indsæt værdier fra arrangementserier"
+
+msgctxt "DPL Opening Hours Editor"
+msgid "This and future instances"
+msgstr "Denne og fremtidige instanser"
+
+msgctxt "DPL Opening Hours Editor"
+msgid "Loading.."
+msgstr "Gemmer..."
+
+msgctxt "Library Agency Configuration"
+msgid "Hide unavailable holdings"
+msgstr "Skjul udlånte eksemplarer"
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"If checked, holdings with 0 available copies will be hidden from the "
+"\"Find on shelf\" modal. This does not hide entire libraries, only "
+"individual holding lines with no available copies."
+msgstr ""
+"Hvis dette tilvælges, vil alle beholdningslinjer med 0 tilgængelige "
+"eksemplarer bliver skjult fra \"Find på hylden\"-modalen."
 
