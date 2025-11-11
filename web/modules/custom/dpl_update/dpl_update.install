@@ -790,17 +790,6 @@ function dpl_update_update_10049(): string {
 }
 
 /**
- * Enable queue_ui for bnf_client.
- */
-function dpl_update_update_10050(): string {
-  if (\Drupal::moduleHandler()->moduleExists('bnf_client')) {
-    return _dpl_update_install_modules(['queue_ui']);
-  }
-
-  return "bnf_client not enabled, not enabling queue_ui";
-}
-
-/**
  * Install graphql_compose_preview module.
  */
 function dpl_update_update_10051(): string {
@@ -979,4 +968,15 @@ function dpl_update_update_10062(): string {
     'Om eReolen',
     'Om eReolen'
   );
+}
+
+/**
+ * Enable queue_ui for bnf_client.
+ */
+function dpl_update_update_10063(): string {
+  if (\Drupal::moduleHandler()->moduleExists('bnf_client')) {
+    return _dpl_update_install_modules(['queue_ui']);
+  }
+
+  return "bnf_client not enabled, not enabling queue_ui";
 }
