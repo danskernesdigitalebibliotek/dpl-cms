@@ -142,8 +142,10 @@ class PatronMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
       // Config.
       'page-size-desktop' => $this->patronMenuSettings->getListSizeDesktop(),
       'page-size-mobile' => $this->patronMenuSettings->getListSizeMobile(),
-      'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
-      'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
+      'branches-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedReservationBranches()
+      ),
       "expiration-warning-days-before-config" => $generalSettings->get('expiration_warning_days_before_config') ?? GeneralSettings::EXPIRATION_WARNING_DAYS_BEFORE_CONFIG,
       "menu-navigation-data-config" => json_encode($menu, JSON_THROW_ON_ERROR),
       'reservation-detail-allow-remove-ready-reservations-config' => $generalSettings->get('reservation_detail_allow_remove_ready_reservations'),
