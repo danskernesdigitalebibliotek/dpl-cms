@@ -43,7 +43,7 @@
                 "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-479-antal-materialer-i-reserveringsoversigter/dist-ddfsal-479-antal-materialer-i-reserveringsoversigter.zip",
                     "type": "zip"
                 },
                 "require": {
