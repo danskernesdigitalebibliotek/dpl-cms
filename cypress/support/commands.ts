@@ -5,10 +5,7 @@ import { StubMapping } from 'wiremock-rest-client/dist/model/stub-mapping.model'
 import { RequestPattern } from 'wiremock-rest-client/dist/model/request-pattern.model';
 
 const wiremock = (baseUri?: string, options?: Options) => {
-  return new WireMockRestClient(
-    baseUri || Cypress.env('WIREMOCK_URL'),
-    options,
-  );
+  return new WireMockRestClient('http://wiremock', options);
 };
 
 Cypress.Commands.add('createMapping', (stub: StubMapping) => {
@@ -82,14 +79,6 @@ Cypress.Commands.add('drupalLogin', (url?: string) => {
   const password = Cypress.env('DRUPAL_PASSWORD');
   cy.session({ username, password }, () => {
     cy.visit('/user/login');
-
-    // If the CookieInformation prompt is here, we want to click it, to not
-    // have it block the user information.
-    cy.get('body').then(($body) => {
-      if ($body.find('.coi-banner__accept').length > 0) {
-        cy.get('.coi-banner__accept').first().click();
-      }
-    });
 
     cy.get('[name="name"]')
       .type(username)
@@ -237,6 +226,16 @@ const adgangsplatformenLoginOauthMappings = ({
       jsonBody: patronBody(userIsAlreadyRegistered),
     },
   });
+
+  cy.createMapping({
+    request: {
+      method: 'GET',
+      urlPath: '/logout',
+    },
+    response: {
+      body: 'A OK.',
+    },
+  });
 };
 
 Cypress.Commands.add(
@@ -381,7 +380,7 @@ Cypress.Commands.add('deleteEntitiesIfExists', (name) => {
 });
 
 Cypress.Commands.add('openParagraphsModal', () => {
-  cy.get('button[title="Show all Paragraphs"]').click();
+  cy.get('button[title="Show all Paragraphs"]').first().click();
 });
 
 // According to the documentation of types and Cypress commands

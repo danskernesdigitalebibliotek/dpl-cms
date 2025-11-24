@@ -5,13 +5,15 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\dpl_update\Services\ConfigIgnore;
 use Drupal\drupal_typed\DrupalTyped;
 use Drupal\node\NodeInterface;
 use Drupal\recurring_events\Entity\EventInstance;
 use Drupal\recurring_events\Entity\EventSeries;
-
 use Drupal\dpl_update\Services\MediaCleanup;
 use Drupal\media\Entity\Media;
+use Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\user\Entity\Role;
 use Drupal\user\RoleInterface;
 
@@ -352,6 +354,19 @@ function dpl_update_deploy_fix_content_view(): string {
 }
 
 /**
+ * Update go_graphql_client role permissions for DDFSAL-332.
+ *
+ * Replace 'rewrite go urls' permission with 'use absolute cms urls'.
+ */
+function dpl_update_deploy_update_go_permissions_ddfsal_332(): string {
+  // Remove the old permission and add the new one.
+  _dpl_update_alter_permissions(['go_graphql_client'], ['rewrite go urls'], FALSE);
+  _dpl_update_alter_permissions(['go_graphql_client'], ['use absolute cms urls'], TRUE);
+
+  return 'Updated go_graphql_client role: removed "rewrite go urls", added "use absolute cms urls".';
+}
+
+/**
  * Find duplicate medias, and hide them in the media library.
  *
  * As part of a bug, all medias pulled from Delingstjenesten/BNF were duplicated
@@ -402,4 +417,59 @@ function dpl_update_deploy_clean_medias(array &$sandbox): string {
   }
 
   return "Archived {$sandbox['current']}/{$sandbox['total']} duplicate medias.";
+}
+
+/**
+ * Create 0-hit search page.
+ *
+ * Creates a new page with title "Din søgning har 0 resultater" and a text_body
+ * paragraph.
+ */
+function dpl_update_deploy_create_zero_hit_search_page(): string {
+  $paragraph = Paragraph::create([
+    'type' => 'text_body',
+    'field_body' => [
+      'value' => 'Hvis du har svært ved at finde det du leder efter, så kan du kontakte eller besøge biblioteket for hjælp eller <a href="https://bibliotek.dk" target="_blank">søge på bibliotek.dk</a>.',
+      'format' => 'basic',
+    ],
+  ]);
+
+  $node = Node::create([
+    'type' => 'page',
+    'title' => 'Din søgning har 0 resultater',
+    'uid' => 1,
+    'field_paragraphs' => [$paragraph],
+    'field_display_titles' => TRUE,
+    'status' => TRUE,
+    'langcode' => 'da',
+  ]);
+  $node->save();
+
+  return "Created 0-hit search page with title 'Din søgning har 0 resultater' (node ID: {$node->id()}).";
+}
+
+/**
+ * Update config_ignore_auto to not affect drush cex.
+ */
+function dpl_update_deploy_set_config_settings(): string {
+  $config_ignore_auto_settings = \Drupal::configFactory()
+    ->getEditable('config_ignore_auto.settings');
+
+  $config_ignore_auto_settings->set('direction_operations', [
+    'import_create',
+    'import_update',
+    'import_delete',
+  ]);
+
+  $config_ignore_auto_settings->save();
+
+  return 'config_ignore_auto.settings.direction_operations updated to only ignore import.';
+}
+
+/**
+ * Remove any auto-ignored config that is identical to codebase.
+ */
+function dpl_update_deploy_clean_config(): string {
+  $service = DrupalTyped::service(ConfigIgnore::class, 'dpl_update.config_ignore');
+  return $service->cleanUnusedIgnores();
 }

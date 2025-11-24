@@ -6,15 +6,17 @@ use DanskernesDigitaleBibliotek\FBS\ApiException;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\dpl_fbi\FbiProfileType;
 use Drupal\dpl_library_agency\Branch\Branch;
 use Drupal\dpl_library_agency\Branch\BranchRepositoryInterface;
 use Drupal\dpl_library_agency\Branch\IdBranchRepository;
 use Drupal\dpl_library_agency\BranchSettings;
-use Drupal\dpl_library_agency\FbiProfileType;
 use Drupal\dpl_library_agency\GeneralSettings;
 use Drupal\dpl_library_agency\ReservationSettings;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use function Safe\preg_match as preg_match;
+use function Safe\json_decode;
 
 /**
  * General Settings form for a library agency.
@@ -119,6 +121,41 @@ class GeneralSettingsForm extends ConfigFormBase {
       $disabled = TRUE;
     }
 
+    $form['general'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('General', [], ['context' => 'Library Agency Configuration']),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    ];
+
+    $form['general']['enable_branch_address_search'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Enable "Find nearest branch"', [], ['context' => 'Library Agency Configuration']),
+      '#description' => $this->t(
+        'If enabled, the user will be able to find their nearest library branch, using an address field. <br />
+                                         <strong>For the best experience, make sure to <a href="@edit_url">edit all branches and assign an agency ID and address.</a></strong> <br />
+                                         You can, for example, see this new functionality on the patron registration page.',
+        ['@edit_url' => Url::fromRoute('system.admin_content', ['type' => 'branch'])->toString()],
+        ['context' => 'Library Agency Configuration']
+      ),
+      '#default_value' => $config->get('enable_branch_address_search') ?? GeneralSettings::ENABLE_BRANCH_ADDRESS_SEARCH,
+    ];
+
+    $form['general']['opening_hours_url'] = [
+      '#type' => 'linkit',
+      '#title' => $this->t('Opening Hours Link (remove link to enable sidebar)', [], ['context' => 'Library Agency Configuration']),
+      '#description' => $this->t('The link with information about opening hours. <br />
+                                         If no link is added, the opening hours sidebar modal is enabled. <br />
+                                         You can add a relative url (e.g. /takster). <br />
+                                         You can search for an internal url. <br />
+                                         You can add an external url (starting with "http://" or "https://").', [], ['context' => 'Library Agency Configuration']),
+      '#autocomplete_route_name' => 'linkit.autocomplete',
+      '#autocomplete_route_parameters' => [
+        'linkit_profile_id' => 'default',
+      ],
+      '#default_value' => $config->get('opening_hours_url') ?? GeneralSettings::OPENING_HOURS_URL,
+    ];
+
     $form['reservations'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Reservations', [], ['context' => 'Library Agency Configuration']),
@@ -169,19 +206,69 @@ class GeneralSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('pause_reservation_info_url') ?? GeneralSettings::PAUSE_RESERVATION_INFO_URL,
     ];
 
-    $form['opening_hours_url'] = [
+    $form['reservations']['zero_hits_search_url'] = [
       '#type' => 'linkit',
-      '#title' => $this->t('Opening Hours Link (remove link to enable sidebar)', [], ['context' => 'Library Agency Configuration']),
-      '#description' => $this->t('The link with information about opening hours. <br />
-                                         If no link is added, the opening hours sidebar modal is enabled. <br />
-                                         You can add a relative url (e.g. /takster). <br />
+      '#title' => $this->t('URL til 0-hits søgninger', [], ['context' => 'Library Agency Configuration']),
+      '#description' => $this->t('URL to the page that should be shown when a search returns zero results. <br />
+                                         You can add a relative url (e.g. /no-results). <br />
                                          You can search for an internal url. <br />
                                          You can add an external url (starting with "http://" or "https://").', [], ['context' => 'Library Agency Configuration']),
       '#autocomplete_route_name' => 'linkit.autocomplete',
       '#autocomplete_route_parameters' => [
         'linkit_profile_id' => 'default',
       ],
-      '#default_value' => $config->get('opening_hours_url') ?? GeneralSettings::OPENING_HOURS_URL,
+      '#default_value' => $config->get('zero_hits_search_url') ?? GeneralSettings::ZERO_HITS_SEARCH_URL,
+    ];
+
+    $form['search'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('Search', [], ['context' => 'Library Agency Configuration']),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    ];
+
+    $form['search']['search_infobox'] = [
+      '#type' => 'fieldset',
+      '#title' => $this->t('Search Info Box', [], ['context' => 'Library Agency Configuration']),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    ];
+
+    $form['search']['search_infobox']['search_infobox_title'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Title', [], ['context' => 'Library Agency Configuration']),
+      '#default_value' => $config->get('search_infobox_title') ?? GeneralSettings::SEARCH_INFOBOX_TITLE,
+      '#description' => $this->t('The title of the search info box.', [], ['context' => 'Library Agency Configuration']),
+    ];
+
+    $form['search']['search_infobox']['search_infobox_content'] = [
+      '#type' => 'text_format',
+      '#title' => $this->t('Content', [], ['context' => 'Library Agency Configuration']),
+      '#format' => 'limited',
+      '#allowed_formats' => ['limited'],
+      '#default_value' => $config->get('search_infobox_content.value') ?? json_decode(GeneralSettings::SEARCH_INFOBOX_CONTENT, TRUE)['value'],
+      '#description' => $this->t('The content of the search info box.', [], ['context' => 'Library Agency Configuration']),
+    ];
+
+    $form['search']['search_infobox']['search_infobox_button_label'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Button text', [], ['context' => 'Library Agency Configuration']),
+      '#default_value' => $config->get('search_infobox_button_label') ?? GeneralSettings::SEARCH_INFOBOX_BUTTON_LABEL,
+      '#description' => $this->t('The label for the button in the search info box. Maximum 30 characters.', [], ['context' => 'Library Agency Configuration']),
+    ];
+
+    $form['search']['search_infobox']['search_infobox_button_url'] = [
+      '#type' => 'linkit',
+      '#title' => $this->t('Button URL', [], ['context' => 'Library Agency Configuration']),
+      '#description' => $this->t('The URL the button in the search info box should link to. <br />
+                                  You can add a relative url (e.g. /advanced-search). <br />
+                                  You can search for an internal url. <br />
+                                  You can add an external url (starting with "http://" or "https://").', [], ['context' => 'Library Agency Configuration']),
+      '#autocomplete_route_name' => 'linkit.autocomplete',
+      '#autocomplete_route_parameters' => [
+        'linkit_profile_id' => 'default',
+      ],
+      '#default_value' => $config->get('search_infobox_button_url') ?? GeneralSettings::SEARCH_INFOBOX_BUTTON_URL,
     ];
 
     $form['find_on_shelf'] = [
@@ -196,6 +283,13 @@ class GeneralSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Default open find on shelf disclosures', [], ['context' => 'Library Agency Configuration']),
       '#default_value' => $config->get('find_on_shelf_disclosures_default_open') ?? FALSE,
       '#description' => $this->t('If checked, the find on shelf disclosures will be open by default', [], ['context' => 'Library Agency Configuration']),
+    ];
+
+    $form['find_on_shelf']['find_on_shelf_hide_unavailable_holdings'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Hide unavailable holdings', [], ['context' => 'Library Agency Configuration']),
+      '#default_value' => $config->get('find_on_shelf_hide_unavailable_holdings') ?? GeneralSettings::FIND_ON_SHELF_HIDE_UNAVAILABLE_HOLDINGS,
+      '#description' => $this->t('If checked, holdings with 0 available copies will be hidden from the "Find on shelf" modal. This does not hide entire libraries, only individual holding lines with no available copies.', [], ['context' => 'Library Agency Configuration']),
     ];
 
     $form['expiration_warning'] = [
@@ -261,7 +355,7 @@ class GeneralSettingsForm extends ConfigFormBase {
     $form['fbi_profiles']['fbi_profile_default'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Default profile', [], ['context' => 'Library Agency Configuration']),
-      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::DEFAULT),
+      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::Default),
       '#description' => $this->t('The default profile to use when using the FBI API.', [], ['context' => 'Library Agency Configuration']),
       '#pattern' => $fbi_profile_pattern,
       '#required' => TRUE,
@@ -270,7 +364,7 @@ class GeneralSettingsForm extends ConfigFormBase {
     $form['fbi_profiles']['fbi_profile_local'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Search profile', [], ['context' => 'Library Agency Configuration']),
-      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::LOCAL),
+      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::Local),
       '#description' => $this->t('The profile to use when searching for materials.', [], ['context' => 'Library Agency Configuration']),
       '#pattern' => $fbi_profile_pattern,
       '#required' => TRUE,
@@ -279,7 +373,7 @@ class GeneralSettingsForm extends ConfigFormBase {
     $form['fbi_profiles']['fbi_profile_global'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Material profile', [], ['context' => 'Library Agency Configuration']),
-      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::GLOBAL),
+      '#default_value' => $this->generalSettings->getFbiProfile(FbiProfileType::Global),
       '#description' => $this->t('The profile to use when requesting data about a material.', [], ['context' => 'Library Agency Configuration']),
       '#pattern' => $fbi_profile_pattern,
       '#required' => TRUE,
@@ -332,13 +426,20 @@ class GeneralSettingsForm extends ConfigFormBase {
       ->set('default_interest_period_config', $form_state->getValue('default_interest_period_config'))
       ->set('reservation_sms_notifications_enabled', $form_state->getValue('reservation_sms_notifications_enabled'))
       ->set('pause_reservation_info_url', $form_state->getValue('pause_reservation_info_url'))
+      ->set('zero_hits_search_url', $form_state->getValue('zero_hits_search_url'))
       ->set('opening_hours_url', $form_state->getValue('opening_hours_url'))
+      ->set('enable_branch_address_search', $form_state->getValue('enable_branch_address_search'))
       ->set('find_on_shelf_disclosures_default_open', $form_state->getValue('find_on_shelf_disclosures_default_open'))
+      ->set('find_on_shelf_hide_unavailable_holdings', $form_state->getValue('find_on_shelf_hide_unavailable_holdings'))
       ->set('fbi_profiles', [
         'default' => $form_state->getValue('fbi_profile_default'),
         'local' => $form_state->getValue('fbi_profile_local'),
         'global' => $form_state->getValue('fbi_profile_global'),
       ])
+      ->set('search_infobox_title', $form_state->getValue('search_infobox_title'))
+      ->set('search_infobox_content', $form_state->getValue('search_infobox_content'))
+      ->set('search_infobox_button_label', $form_state->getValue('search_infobox_button_label'))
+      ->set('search_infobox_button_url', $form_state->getValue('search_infobox_button_url'))
       ->save();
 
     $this->branchSettings->setExcludedAvailabilityBranches(array_filter($form_state->getValue('availability')));

@@ -2,6 +2,7 @@
 
 namespace Drupal\dpl_library_agency;
 
+use Drupal\dpl_fbi\FbiProfileType;
 use Drupal\dpl_react\DplReactConfigBase;
 
 /**
@@ -18,11 +19,18 @@ class GeneralSettings extends DplReactConfigBase {
   ];
   const RESERVATION_SMS_NOTIFICATIONS_ENABLED = TRUE;
   const PAUSE_RESERVATION_INFO_URL = '';
+  const ZERO_HITS_SEARCH_URL = '/din-sogning-har-0-resultater';
   // We define these urls so that the admins don't have to - e-reolen urls is
   // not expected to be changing often.
   const FBI_PROFILE = 'next';
   const OPENING_HOURS_URL = '/branches';
   const FIND_ON_SHELF_DISCLOSURES_DEFAULT_OPEN = FALSE;
+  const FIND_ON_SHELF_HIDE_UNAVAILABLE_HOLDINGS = FALSE;
+  const SEARCH_INFOBOX_TITLE = '';
+  const SEARCH_INFOBOX_CONTENT = '{"value":"","format":"limited"}';
+  const SEARCH_INFOBOX_BUTTON_LABEL = '';
+  const SEARCH_INFOBOX_BUTTON_URL = '';
+  const ENABLE_BRANCH_ADDRESS_SEARCH = FALSE;
 
   /**
    * Gets the configuration key for general settings.
@@ -118,16 +126,16 @@ class GeneralSettings extends DplReactConfigBase {
    */
   public function getFbiProfiles(): array {
     return $this->loadConfig()->get('fbi_profiles') ?? [
-      FbiProfileType::DEFAULT->value => self::FBI_PROFILE,
-      FbiProfileType::LOCAL->value => self::FBI_PROFILE,
-      FbiProfileType::GLOBAL->value => self::FBI_PROFILE,
+      FbiProfileType::Default->value => self::FBI_PROFILE,
+      FbiProfileType::Local->value => self::FBI_PROFILE,
+      FbiProfileType::Global->value => self::FBI_PROFILE,
     ];
   }
 
   /**
    * Get profile name.
    *
-   * @param FbiProfileType $fbi_profile
+   * @param \Drupal\dpl_fbi\FbiProfileType $fbi_profile
    *   The FBI profile type.
    *
    * @return string
@@ -164,6 +172,17 @@ class GeneralSettings extends DplReactConfigBase {
   }
 
   /**
+   * Get the setting for hiding unavailable holdings in find on shelf.
+   *
+   * @return bool
+   *   True if unavailable holdings should be hidden, false otherwise.
+   */
+  public function getFindOnShelfHideUnavailableHoldings(): bool {
+    return $this->loadConfig()->get('find_on_shelf_hide_unavailable_holdings')
+      ?? self::FIND_ON_SHELF_HIDE_UNAVAILABLE_HOLDINGS;
+  }
+
+  /**
    * Gets the default interest period as an array.
    *
    * @return string
@@ -173,6 +192,19 @@ class GeneralSettings extends DplReactConfigBase {
     return dpl_react_apps_format_app_url(
       $this->loadConfig()->get('pause_reservation_info_url'),
       self::PAUSE_RESERVATION_INFO_URL
+    );
+  }
+
+  /**
+   * Gets the zero hits search URL.
+   *
+   * @return string
+   *   The zero hits search URL.
+   */
+  public function getZeroHitsSearchUrl(): string {
+    return dpl_react_apps_format_app_url(
+      $this->loadConfig()->get('zero_hits_search_url'),
+      self::ZERO_HITS_SEARCH_URL
     );
   }
 

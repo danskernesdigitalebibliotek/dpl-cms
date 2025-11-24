@@ -14,7 +14,7 @@
 x-volumes:
   &default-volumes # Define all volumes you would like to have real-time mounted into the docker containers
   volumes:
-    - 'projectroot:/app'
+    - "projectroot:/app"
 
 x-user:
   &default-user # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
@@ -24,8 +24,8 @@ x-environment:
   &default-environment # Lagoon ensures that Drush knows the local site URI using this variable.
   LAGOON_ROUTE: &default-url https://${COMPOSE_PROJECT_NAME}.${DEV_TLD:-docker}
   # Environment variables which mimic what will be set in a Lagoon cluster locally
-  LAGOON_PROJECT: 'dplcms'
-  LAGOON_ENVIRONMENT: 'local'
+  LAGOON_PROJECT: "dplcms"
+  LAGOON_ENVIRONMENT: "local"
   LAGOON_ENVIRONMENT_TYPE: ${LAGOON_ENVIRONMENT_TYPE:-local}
   WEBROOT: web
   # Uncomment if you like to have the system behave like in production
@@ -35,22 +35,23 @@ services:
   https:
     image: ghcr.io/reload/https-proxy:proxy
     ports:
-      - '80'
-      - '443'
+      - "80"
+      - "443"
     depends_on:
       - varnish
     labels:
       lagoon.type: none
     volumes:
-      - 'projectroot:/app'
-      - '${HOME}/.local/share/mkcert:/rootCA:ro'
-      - '${HOME}/.local/share/dev_certificates:/cert:rw'
+      - "projectroot:/app"
+      - "${HOME}/.local/share/mkcert:/rootCA:ro"
+      - "${HOME}/.local/share/dev_certificates:/cert:rw"
     environment:
       NGINX_DOCUMENT_ROOT: /app/web
       NGINX_PROXY_PASS: http://varnish:8080
       VIRTUAL_PROTO: https
       VIRTUAL_HOST: >-
         ${COMPOSE_PROJECT_NAME}.${DEV_TLD:-docker}
+        dpl-cms.docker
     working_dir: /app
 
   varnish: # Caching HTTP reverse proxy that serves (mostly) anonymous requests.
@@ -68,11 +69,11 @@ services:
     <<: *default-user # uses the defined user from top
     ports:
       # Exposing the port to make it accessible locally without proxies.
-      - '8080'
+      - "8080"
     environment:
       <<: *default-environment
       # VARNISH_BYPASS: "true" # Add this to disable caching in varnish.
-      # Is used by [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) or [dory](https://github.com/FreedomBen/dory)
+      # Is used by [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy)
       VIRTUAL_HOST: ${COMPOSE_PROJECT_NAME}-varnish.${DEV_TLD:-docker}
       VIRTUAL_PORT: 8080
 
@@ -81,7 +82,7 @@ services:
     build:
       context: .
       dockerfile: lagoon/cli.dockerfile
-    image: &cli-image uselagoon/php-8.1-cli-drupal:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
+    image: &cli-image uselagoon/php-8.3-cli-drupal:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
     <<: *default-volumes # loads the defined volumes from the top
     user: root
     environment:
@@ -144,14 +145,14 @@ services:
     # Do a periodic healthcheck. This is mainly used to block the php service
     # from starting up before we have a healthy database.
     healthcheck:
-      test: '/usr/share/container-scripts/mysql/readiness-probe.sh'
+      test: "/usr/share/container-scripts/mysql/readiness-probe.sh"
       interval: 10s
     ports:
-      - '3306' # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
+      - "3306" # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
     <<: *default-user # uses the defined user from top
     environment:
-      MARIADB_CHARSET: 'utf8mb4'
-      MARIADB_COLLATION: 'utf8mb4_danish_ci'
+      MARIADB_CHARSET: "utf8mb4"
+      MARIADB_COLLATION: "utf8mb4_danish_ci"
       <<: *default-environment
 
   redis: # In-memory key-value database used as the Drupal Core cache backend.

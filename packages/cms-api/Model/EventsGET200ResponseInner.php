@@ -13,7 +13,7 @@
 /**
  * DPL CMS - REST API
  *
- * The REST API provide by the core REST module.
+ * The REST API provided by the core REST module.
  *
  * The version of the OpenAPI document: Versioning not supported
  * 
@@ -125,6 +125,14 @@ class EventsGET200ResponseInner
      * @Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerImage")
      */
     protected ?EventsGET200ResponseInnerImage $image = null;
+
+    /**
+     * @var EventsGET200ResponseInnerTeaserImage|null
+     * @SerializedName("teaserImage")
+     * @Assert\Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTeaserImage")
+     * @Type("DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTeaserImage")
+     */
+    protected ?EventsGET200ResponseInnerTeaserImage $teaserImage = null;
 
     /**
      * The state of the event.
@@ -289,6 +297,7 @@ class EventsGET200ResponseInner
             $this->updatedAt = array_key_exists('updatedAt', $data) ? $data['updatedAt'] : $this->updatedAt;
             $this->ticketManagerRelevance = array_key_exists('ticketManagerRelevance', $data) ? $data['ticketManagerRelevance'] : $this->ticketManagerRelevance;
             $this->image = array_key_exists('image', $data) ? $data['image'] : $this->image;
+            $this->teaserImage = array_key_exists('teaserImage', $data) ? $data['teaserImage'] : $this->teaserImage;
             $this->state = array_key_exists('state', $data) ? $data['state'] : $this->state;
             $this->allDay = array_key_exists('allDay', $data) ? $data['allDay'] : $this->allDay;
             $this->dateTime = array_key_exists('dateTime', $data) ? $data['dateTime'] : $this->dateTime;
@@ -510,6 +519,32 @@ class EventsGET200ResponseInner
     public function setImage(?EventsGET200ResponseInnerImage $image = null): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Gets teaserImage.
+     *
+     * @return EventsGET200ResponseInnerTeaserImage|null
+     */
+    public function getTeaserImage(): ?EventsGET200ResponseInnerTeaserImage
+    {
+        return $this->teaserImage;
+    }
+
+
+
+    /**
+     * Sets teaserImage.
+     *
+     * @param EventsGET200ResponseInnerTeaserImage|null $teaserImage
+     *
+     * @return $this
+     */
+    public function setTeaserImage(?EventsGET200ResponseInnerTeaserImage $teaserImage = null): self
+    {
+        $this->teaserImage = $teaserImage;
 
         return $this;
     }

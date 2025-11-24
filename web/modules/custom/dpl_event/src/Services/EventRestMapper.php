@@ -8,14 +8,17 @@ use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerAddress;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerDateTime;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerImage;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerSeries;
+use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTeaserImage;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTicketCategoriesInner;
 use DanskernesDigitaleBibliotek\CMS\Api\Model\EventsGET200ResponseInnerTicketCategoriesInnerPrice;
 use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\File\FileUrlGeneratorInterface;
 use Drupal\dpl_event\Entity\EventInstance;
 use Drupal\dpl_event\Form\SettingsForm;
 use Drupal\file\FileInterface;
+use Drupal\image\Entity\ImageStyle;
 use Drupal\media\MediaInterface;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\recurring_events\Entity\EventSeries;
@@ -35,6 +38,7 @@ class EventRestMapper {
    * Constructor.
    */
   public function __construct(
+    protected EntityTypeManagerInterface $entityTypeManager,
     protected FileUrlGeneratorInterface $fileUrlGenerator,
     protected ConfigFactoryInterface $configFactory,
   ) {}
@@ -54,6 +58,7 @@ class EventRestMapper {
       'body' => $this->event->getDescription(),
       'state' => $this->event->getState()?->value,
       'image' => $this->getImage(),
+      'teaserImage' => $this->getTeaserImage(),
       'branches' => $this->getBranches(),
       'address' => $this->getAddress(),
       'tags' => $this->getTags(),
@@ -240,26 +245,36 @@ class EventRestMapper {
    * @see BranchAddressFormatter
    */
   private function getAddress(): EventsGET200ResponseInnerAddress {
+    $address = new EventsGET200ResponseInnerAddress();
+    $address->setLocation($this->getValue('event_place'));
+
     // Loading the field, and rendering it, to let the BranchAddressFormatter
     // do the work of looking up a possible branch.
     $rendered = $this->event->get('event_address')->view('full');
+    $street = NULL;
 
-    $zip = $rendered[0]['postal_code']['#value'] ?? NULL;
-    $address_1 = $rendered[0]['address_line1']['#value'] ?? NULL;
-    $address_2 = $rendered[0]['address_line2']['#value'] ?? NULL;
+    if ($rendered['#field_type'] === 'address_dawa') {
+      $zip = $rendered[0]['postal_code'] ?? NULL;
+      $city = $rendered[0]['city'] ?? NULL;
+      $street = $rendered[0]['address'] ?? NULL;
+      $country = $rendered[0]['country'] ?? NULL;
+    }
+    else {
+      $country = $rendered[0]['country_code']['#value'] ?? NULL;
+      $city = $rendered[0]['locality']['#value'] ?? NULL;
+      $zip = $rendered[0]['postal_code']['#value'] ?? NULL;
+      $address_1 = $rendered[0]['address_line1']['#value'] ?? NULL;
+      $address_2 = $rendered[0]['address_line2']['#value'] ?? NULL;
 
-    $street = "$address_1 $address_2";
-
-    if (empty($address_1) && empty($address_2)) {
-      $street = NULL;
+      if (!empty($address_1) || !empty($address_2)) {
+        $street = "$address_1 $address_2";
+      }
     }
 
-    $address = new EventsGET200ResponseInnerAddress();
-    $address->setLocation($this->getValue('event_place'));
     $address->setStreet($street);
     $address->setZipCode(!empty($zip) ? intval($zip) : NULL);
-    $address->setCity($rendered[0]['locality']['#value'] ?? NULL);
-    $address->setCountry($rendered[0]['country_code']['#value'] ?? NULL);
+    $address->setCity($city);
+    $address->setCountry($country);
 
     return $address;
   }
@@ -337,10 +352,55 @@ class EventRestMapper {
   }
 
   /**
-   * Get the event image, loading the file and generating the original URL.
+   * Getting the scaled/cropped teaser image.
+   */
+  private function getTeaserImage(): ?EventsGET200ResponseInnerTeaserImage {
+    $url = $this->getImageUrl('event_teaser_image', 'list_teaser_4_3');
+
+    if (empty($url)) {
+      return NULL;
+    }
+
+    return new EventsGET200ResponseInnerTeaserImage(['url' => $url]);
+  }
+
+  /**
+   * Getting the main, original image.
    */
   private function getImage(): ?EventsGET200ResponseInnerImage {
-    $media_field = $this->event->getField('event_image');
+    $url = $this->getImageUrl('event_image', 'paragraph_wide');
+
+    if (empty($url)) {
+      return NULL;
+    }
+
+    return new EventsGET200ResponseInnerImage(['url' => $url]);
+  }
+
+  /**
+   * Getting an image, loading the file and generating the absolute URL.
+   *
+   * @param string $field_name
+   *   The field name we want to get the image from.
+   * @param string|null $image_style_name
+   *   The image style we want to generate the image from. NULL = original size.
+   *
+   * @return string|null
+   *   The image URL.
+   */
+  private function getImageUrl(string $field_name, string|null $image_style_name = NULL): ?string {
+    if (!($this->event->hasField($field_name))) {
+      return NULL;
+    }
+
+    $image_style = NULL;
+
+    if ($image_style_name) {
+      $image_style_storage = $this->entityTypeManager->getStorage('image_style');
+      $image_style = $image_style_storage->load($image_style_name);
+    }
+
+    $media_field = $this->event->getField($field_name);
 
     if (!($media_field instanceof FieldItemListInterface)) {
       return NULL;
@@ -362,9 +422,18 @@ class EventRestMapper {
 
     $file_uri = $file->getFileUri();
 
-    $url = !empty($file_uri) ? $this->fileUrlGenerator->generateAbsoluteString($file_uri) : NULL;
+    if (empty($file_uri)) {
+      return NULL;
+    }
 
-    return new EventsGET200ResponseInnerImage(['url' => $url]);
+    if ($image_style instanceof ImageStyle) {
+      return $image_style->buildUrl($file_uri);
+    }
+
+    // If no image style is passed along, we'll return the original, full
+    // size, non-cropped image URL instead.
+    return $this->fileUrlGenerator->generateAbsoluteString($file_uri);
+
   }
 
 }
