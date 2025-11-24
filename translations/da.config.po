@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-11-24 10:21+0100\n"
-"PO-Revision-Date: 2025-11-24 10:21+0100\n"
+"POT-Creation-Date: 2025-11-24 12:19+0100\n"
+"PO-Revision-Date: 2025-11-24 12:19+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -731,10 +731,6 @@ msgstr "Teaserbillede"
 msgctxt "field.field.node.article.field_teaser_text:label"
 msgid "Teaser text"
 msgstr "Teasertekst"
-
-msgctxt "field.field.node.branch.field_address:label"
-msgid "Address"
-msgstr "Adresse"
 
 msgctxt "field.field.node.branch.field_email:label"
 msgid "Email"
@@ -7591,4 +7587,20 @@ msgstr "32"
 msgctxt "views.view.user_admin_people:display:default:display_options:fields:user_bulk_form:action_title"
 msgid "Action"
 msgstr "Handling"
+
+msgctxt "field.field.node.branch.field_address:label"
+msgid "Address (Deprecated - will be removed)"
+msgstr "Adresse (Forældet – feltet fjernes)"
+
+msgctxt "field.field.node.branch.field_address_dawa:label"
+msgid "Address"
+msgstr "Adresse"
+
+msgctxt "field.field.node.branch.field_address_dawa:description"
+msgid "Start typing to look up addresses in Denmark."
+msgstr "Søg på adresser i Danmark."
+
+msgctxt "field.field.node.branch.field_agency_branch_id:label"
+msgid "Agency Branch ID"
+msgstr "Agency Branch ID"
 
