@@ -29738,10 +29738,10 @@ msgstr "Hvis dette tilvælges, vil alle beholdningslinjer med 0 tilgængelige ek
 #: 
 msgctxt "dpl_update"
 msgid "Unsupported configuration ignores"
-msgstr ""
+msgstr "Ikke-understøttede konfigurationer"
 
 #: 
 msgctxt "dpl_update"
 msgid "Overriden configuration, that is not supported by DPL-CMS. These items will be ignored by future DPL releases, and may result in broken functionality."
-msgstr ""
+msgstr "Overskrevne konfigurationer, der ikke understøttes af Folkebibliotekernes CMS. Disse elementer vil blive ignoreret af fremtidige CMS releases, hvilket kan resultere i, at funktionalitet går i stykker."
 
