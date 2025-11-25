@@ -73,8 +73,10 @@ class FavoritesListBlock extends BlockBase implements ContainerFactoryPluginInte
   public function build() {
     $data = [
       // Branches.
-      'blacklisted-availability-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
-      'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
+      'branches-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedAvailabilityBranches()
+      ),
 
       // Page size.
       "page-size-desktop" => $this->favoritesSettings->getListSizeDesktop(),

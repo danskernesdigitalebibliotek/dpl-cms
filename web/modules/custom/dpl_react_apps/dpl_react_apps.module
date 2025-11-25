@@ -461,6 +461,18 @@ function dpl_react_apps_preprocess_html(array &$variables): void {
 
     $variables['page']['#attached']['html_head'][] = [$meta_tag, "meta-{$name}"];
   }
+
+  $config = [
+    'urls' => [],
+    'texts' => [],
+    'configs' => [],
+  ];
+
+  \Drupal::moduleHandler()->invokeAll('dpl_react_apps_data', [&$config, &$variables]);
+  $config['texts']['benjamin'] = 'hello';
+
+  $variables['#attached']['drupalSettings']['dpl_react_apps'] = $config;
+  $variables['#attached']['library'][] = 'dpl_react_apps/base';
 }
 
 /**
@@ -477,6 +489,10 @@ function dpl_react_apps_preprocess_dpl_react_app(array &$variables): void {
     'configs' => [],
   ];
   \Drupal::moduleHandler()->invokeAll('dpl_react_apps_data', [&$data, &$variables]);
+  //unset($data['texts']);
+
+  if (true) {}
+
   foreach ($data as $scope => $values) {
     if (!is_array($values)) {
       continue;
@@ -490,6 +506,7 @@ function dpl_react_apps_preprocess_dpl_react_app(array &$variables): void {
       ];
     }
   }
+
 }
 
 /**

@@ -86,8 +86,10 @@ class DashboardBlock extends BlockBase implements ContainerFactoryPluginInterfac
       'expiration-warning-days-before-config' => $generalSettings->get('expiration_warning_days_before_config') ?? GeneralSettings::EXPIRATION_WARNING_DAYS_BEFORE_CONFIG,
       'interest-periods-config' => json_encode($this->generalSettings->getInterestPeriodsConfig()),
       'reservation-detail-allow-remove-ready-reservations-config' => $generalSettings->get('reservation_detail_allow_remove_ready_reservations') ?? GeneralSettings::RESERVATION_DETAIL_ALLOW_REMOVE_READY_RESERVATIONS,
-      'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
-      'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
+      'branches-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedReservationBranches()
+      ),
 
       // Urls.
       // Cannot find that route. Does it exist?

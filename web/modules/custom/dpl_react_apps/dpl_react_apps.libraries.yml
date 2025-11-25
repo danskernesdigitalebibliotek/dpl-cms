@@ -1,0 +1,4 @@
+---
+base:
+  js:
+    assets/dpl_react_apps.js: {}

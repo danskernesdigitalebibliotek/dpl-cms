@@ -54,19 +54,40 @@ class DplReactAppsController extends ControllerBase {
    *
    * @param \Drupal\dpl_library_agency\Branch\Branch[] $branches
    *   The branches to build the string with.
+   * @param  string[] $excluded_branch_ids
+   *   The branch IDs we want to exclude from the result.
    *
    * @todo This should be moved into an service to make it more sharable
    *       between modules.
    *
    * @throws \Safe\Exceptions\JsonException
    */
-  public static function buildBranchesJsonProp(array $branches) : string {
-    return json_encode(array_map(function (Branch $branch) {
-      return [
+  public static function buildBranchesJsonProp(array $branches, array $excluded_branch_ids) : ?string {
+    // If we have nothing excluded, we don't want to send any branches to FBS,
+    // as sending nothing will mean the same.
+    if (empty($excluded_branch_ids)) {
+      return NULL;
+    }
+
+    $result = [];
+
+    foreach ($branches as $branch) {
+      if (in_array($branch->id, $excluded_branch_ids)) {
+        continue;
+      }
+
+      $result[] = [
         'branchId' => $branch->id,
         'title' => $branch->title,
       ];
-    }, $branches));
+    }
+
+    // If nothing has been excluded, do same logic as sending empty excludes.
+    if (count($branches) === count($result)) {
+      return NULL;
+    }
+
+    return json_encode($result);
   }
 
   /**
@@ -93,9 +114,15 @@ class DplReactAppsController extends ControllerBase {
   public function search(): array {
     $data = [
       // Config.
-      'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
-      'blacklisted-search-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedSearchBranches()),
-      'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
+        'branches-availability-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedAvailabilityBranches()
+        ),
+        'branches-search-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedSearchBranches()
+        ),
+
       'search-infobox-config' => json_encode([
         'title' => $this->generalSettings->loadConfig()->get('search_infobox_title'),
         'content' => $this->generalSettings->loadConfig()->get('search_infobox_content'),
@@ -163,9 +190,15 @@ class DplReactAppsController extends ControllerBase {
   public function advancedSearch(): array {
     $data = [
       // Config.
-      'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
-      'blacklisted-search-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedSearchBranches()),
-      'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
+
+        'branches-availability-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedAvailabilityBranches()
+        ),
+        'branches-search-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedSearchBranches()
+        ),
       // Texts.
       'advanced-search-ac-source-text' => $this->t('source', [], ['context' => 'advanced search']),
       'advanced-search-add-row-text' => $this->t('add row', [], ['context' => 'advanced search']),
@@ -293,14 +326,16 @@ class DplReactAppsController extends ControllerBase {
   public function work(string $wid): array {
     $data = [
       'wid' => $wid,
-      // Config.
-      // Data attributes can only be strings
-      // so we need to convert the boolean to a number (0/1).
-      'blacklisted-availability-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
-      'blacklisted-pickup-branches-config' => $this->buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
-      // @todo Remove when instant loans branches are used.
-      'blacklisted-instant-loan-branches-config' => "",
-      'branches-config' => $this->buildBranchesJsonProp($this->branchRepository->getBranches()),
+        'branches-availability-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedAvailabilityBranches()
+        ),
+        'branches-pickup-config' => DplReactAppsController::buildBranchesJsonProp(
+          $this->branchRepository->getBranches(),
+          $this->branchSettings->getExcludedReservationBranches()
+        ),
+        // Data attributes can only be strings
+        // so we need to convert the boolean to a number (0/1).
       'sms-notifications-for-reservations-enabled-config' => (int) $this->reservationSettings->smsNotificationsIsEnabled(),
       'instant-loan-config' => $this->instantLoanSettings->getConfig(),
       'interest-periods-config' => json_encode($this->generalSettings->getInterestPeriodsConfig()),

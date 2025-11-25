@@ -211,8 +211,11 @@ function _dpl_paragraphs_prepare_material_grid_render_array(ParagraphInterface $
   // Build configurations for blacklisted search branches and all branches.
   $branch_settings = \Drupal::service('dpl_library_agency.branch_settings');
   $branch_repository = \Drupal::service('dpl_library_agency.branch.repository');
-  $blacklisted_search_branches_config = DplReactAppsController::buildBranchesListProp($branch_settings->getExcludedSearchBranches());
-  $branches_config = DplReactAppsController::buildBranchesJsonProp($branch_repository->getBranches());
+
+  $branches_config = DplReactAppsController::buildBranchesJsonProp(
+    $branch_repository->getBranches(),
+    $branch_settings->getExcludedSearchBranches()
+  );
 
   return [
     '#theme' => 'dpl_react_app',
@@ -221,7 +224,6 @@ function _dpl_paragraphs_prepare_material_grid_render_array(ParagraphInterface $
       'description' => $description,
       'requested-amount' => $display_amount,
       'button-text' => t('Show all', [], ['context' => 'Material Grid']),
-      'blacklisted-search-branches-config' => $blacklisted_search_branches_config,
       'branches-config' => $branches_config,
     ] + DplReactAppsController::externalApiBaseUrls(),
   ];

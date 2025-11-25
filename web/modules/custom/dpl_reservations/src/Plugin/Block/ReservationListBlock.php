@@ -81,10 +81,21 @@ class ReservationListBlock extends BlockBase implements ContainerFactoryPluginIn
 
     $data = [
       // Branches.
-      'blacklisted-availability-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedAvailabilityBranches()),
-      'blacklisted-pickup-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedReservationBranches()),
-      'blacklisted-search-branches-config' => DplReactAppsController::buildBranchesListProp($this->branchSettings->getExcludedSearchBranches()),
-      'branches-config' => DplReactAppsController::buildBranchesJsonProp($this->branchRepository->getBranches()),
+      'branches-availability-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedAvailabilityBranches()
+      ),
+      'branches-pickup-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedReservationBranches()
+      ),
+      'branches-search-config' => DplReactAppsController::buildBranchesJsonProp(
+        $this->branchRepository->getBranches(),
+        $this->branchSettings->getExcludedSearchBranches()
+      ),
+
+
+
 
       // Url.
       'pause-reservation-info-url' => dpl_react_apps_format_app_url($general_settings->get('pause_reservation_info_url'), GeneralSettings::PAUSE_RESERVATION_INFO_URL),
