@@ -3058,10 +3058,6 @@ msgid "Time"
 msgstr "Tid"
 
 #: 
-msgid "Price"
-msgstr "Pris"
-
-#: 
 msgid "Place"
 msgstr "Sted"
 
@@ -29816,7 +29812,7 @@ msgid "If enabled, the user will be able to find their nearest library branch, u
 "                                         <strong>For the best experience, make sure to <a href=\"@edit_url\">edit all branches and assign an agency ID and address.</a></strong> <br />\n"
 "                                         You can, for example, see this new functionality on the patron registration page."
 msgstr "Hvis dette slås til, kan brugerne finde deres nærmeste bibliotek eller afhentningssted med søgning på deres adresse. Bemærk, at dette virker kun for biblioteker, der har adresse i Danmark.<br />\n"
-"                                         <strong>Og det er vigtigt, at få<a href=\"@edit_url\">redigeret alle biblioteker og tilføjet et agency ID fra FBS sammen med adressen.</a></strong> <br />\n"
+"                                         <strong>Og det er vigtigt, at få <a href=\"@edit_url\">redigeret alle biblioteker og tilføjet et agency ID fra FBS sammen med adressen.</a></strong> <br />\n"
 "                                         \"Find nærmeste bibliotek\" kan ses på låneoprettelsessiden."
 
 #: 
