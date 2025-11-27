@@ -180,7 +180,7 @@ environments:
         schedule: "M/15 * * * *"
         command: drush cron
         service: cli
-  pr-2822:
+  pr-2901:
     cronjobs:
       - name: drush cron
         schedule: "M/30 * * * *"
