@@ -171,7 +171,7 @@ environments:
     autogenerateRoutes: true
     routes:
       - varnish:
-          - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
+          - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk'
           - "nginx.pr-2929.dpl-cms.dplplat01.dpl.reload.dk":
             annotations:
               nginx.ingress.kubernetes.io/permanent-redirect: https://cms-demo.dpl-cms.dplplat01.dpl.reload.dk$request_uri
