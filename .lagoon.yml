@@ -168,15 +168,15 @@ environments:
         command: drush err:purge paragraph
         service: cli
   pr-2929:
+    autogenerateRoutes: true
     routes:
       - varnish:
           - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
-          - "varnish.pr-2929.dpl-cms.dplplat01.dpl.reload.dk":
-            annotations:
-              nginx.ingress.kubernetes.io/permanent-redirect: https://cms-demo.dpl-cms.dplplat01.dpl.reload.dk$request_uri
           - "nginx.pr-2929.dpl-cms.dplplat01.dpl.reload.dk":
             annotations:
               nginx.ingress.kubernetes.io/permanent-redirect: https://cms-demo.dpl-cms.dplplat01.dpl.reload.dk$request_uri
+      - nginx:
+          -
       - node:
           - 'go.cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
               annotations:
