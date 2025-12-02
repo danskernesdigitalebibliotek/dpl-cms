@@ -167,10 +167,9 @@ environments:
         schedule: 'M * * * *'
         command: drush err:purge paragraph
         service: cli
-
   pr-2929:
     routes:
-      - nginx:
+      - varnish:
           - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
       - node:
           - 'go.cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
