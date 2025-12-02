@@ -170,10 +170,11 @@ environments:
   pr-2929:
     routes:
       - varnish:
-          - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk'
           - "nginx.pr-2929.dpl-cms.dplplat01.dpl.reload.dk":
             annotations:
               nginx.ingress.kubernetes.io/permanent-redirect: https://cms-demo.dpl-cms.dplplat01.dpl.reload.dk$request_uri
+      -nginx:
+        - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk'
       - node:
           - 'go.cms-demo.dpl-cms.dplplat01.dpl.reload.dk':
               annotations:
