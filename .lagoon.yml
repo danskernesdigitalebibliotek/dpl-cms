@@ -168,7 +168,6 @@ environments:
         command: drush err:purge paragraph
         service: cli
   pr-2929:
-    autogenerateRoutes: true
     routes:
       - varnish:
           - 'cms-demo.dpl-cms.dplplat01.dpl.reload.dk'
