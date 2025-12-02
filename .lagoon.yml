@@ -170,7 +170,7 @@ environments:
   pr-2929:
     routes:
       - varnish:
-        - "cms-demo.dpl-cms.dplplat01.dpl.reload.dk":
+        - "cms-demo.dpl-cms.dplplat01.dpl.reload.dk"
       - node:
           - "go.cms-demo.dpl-cms.dplplat01.dpl.reload.dk":
               annotations:
