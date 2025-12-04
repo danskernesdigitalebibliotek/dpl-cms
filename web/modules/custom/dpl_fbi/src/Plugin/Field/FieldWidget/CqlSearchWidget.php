@@ -318,7 +318,10 @@ class CqlSearchWidget extends WidgetBase {
     $response = new AjaxResponse();
 
     $cqlName = $formElement['filters']['cql']['#name'];
-    $cqlValue = $this->getFilter($link, 'advancedSearchCql');
+    // Try old format first (advancedSearchCql), then new format
+    // (filters/preSearchFacets/facets).
+    $cqlValue = $this->getFilter($link, 'advancedSearchCql')
+      ?? self::buildCqlFromNewFormat($link);
 
     $warningClass = 'dpl-material-search-warning';
 
@@ -356,9 +359,11 @@ class CqlSearchWidget extends WidgetBase {
 
     // The onshelf is special, as it is a checkbox, and the value is sent along
     // as a string 'true'/'false'.
+    // New format uses 'onShelf', old uses 'onshelf'.
     $onshelfName = $formElement['filters']['onshelf']['#name'];
-    $onshelfValue = (string) $this->getFilter($link, 'onshelf');
-    $onshelfBoolValue = (strtolower($onshelfValue) === 'true');
+    $onshelfValue = (string) (
+      $this->getFilter($link, 'onshelf') ?? $this->getFilter($link, 'onShelf')
+    );
     $response->addCommand(new InvokeCommand(
         "$parentSelector [name=\"$onshelfName\"]",
         'prop',
@@ -459,6 +464,239 @@ class CqlSearchWidget extends WidgetBase {
     }
 
     return NULL;
+  }
+
+  /**
+   * Safely decode JSON string.
+   *
+   * @param string $json
+   *   The JSON string to decode.
+   *
+   * @return array<mixed>|null
+   *   The decoded array, or NULL on failure.
+   */
+  private static function safeJsonDecode(string $json): ?array {
+    try {
+      $result = json_decode($json, TRUE);
+      return is_array($result) ? $result : NULL;
+    }
+    catch (\Exception $e) {
+      return NULL;
+    }
+  }
+
+  /**
+   * Build CQL from the new advanced-search-v2 URL format.
+   *
+   * This handles URLs with filters, preSearchFacets, and facets JSON params.
+   *
+   * @param string $url
+   *   The URL to parse.
+   *
+   * @return string|null
+   *   The built CQL string, or NULL if the URL doesn't have the new format.
+   */
+  public static function buildCqlFromNewFormat(string $url): ?string {
+    $filtersJson = self::getFilter($url, 'filters');
+    $preSearchFacetsJson = self::getFilter($url, 'preSearchFacets');
+    $facetsJson = self::getFilter($url, 'facets');
+
+    // If none of the new format params exist, return NULL.
+    if (!$filtersJson && !$preSearchFacetsJson && !$facetsJson) {
+      return NULL;
+    }
+
+    $parts = [];
+
+    // Parse and build CQL from filters (search terms).
+    if ($filtersJson) {
+      $filters = self::safeJsonDecode($filtersJson);
+      if ($filters) {
+        $filterPart = self::buildFilterTerms($filters);
+        if ($filterPart) {
+          $parts[] = $filterPart;
+        }
+      }
+    }
+
+    // Parse and build CQL from preSearchFacets.
+    if ($preSearchFacetsJson) {
+      $preSearchFacets = self::safeJsonDecode($preSearchFacetsJson);
+      if ($preSearchFacets) {
+        $facetParts = self::buildFacetTerms($preSearchFacets, TRUE);
+        $parts = array_merge($parts, $facetParts);
+      }
+    }
+
+    // Parse and build CQL from facets (post-search facets).
+    if ($facetsJson) {
+      $facets = self::safeJsonDecode($facetsJson);
+      if ($facets) {
+        $facetParts = self::buildFacetTerms($facets, FALSE);
+        $parts = array_merge($parts, $facetParts);
+      }
+    }
+
+    if (empty($parts)) {
+      return NULL;
+    }
+
+    return implode(' AND ', $parts);
+  }
+
+  /**
+   * Build CQL from filter inputs (search terms).
+   *
+   * @param array<mixed> $filters
+   *   Array of filter objects with term, query, and optional operator.
+   *
+   * @return string|null
+   *   The filter part of CQL, or NULL if empty.
+   */
+  private static function buildFilterTerms(array $filters): ?string {
+    $terms = [];
+
+    foreach ($filters as $filter) {
+      if (!is_array($filter)) {
+        continue;
+      }
+
+      $term = $filter['term'] ?? '';
+      $query = trim($filter['query'] ?? '');
+
+      if (empty($query)) {
+        continue;
+      }
+
+      // Escape double quotes in the query.
+      $escapedQuery = str_replace('"', '\\"', $query);
+      $cqlTerm = "{$term}=\"{$escapedQuery}\"";
+
+      if (empty($terms)) {
+        $terms[] = $cqlTerm;
+      }
+      else {
+        $operator = strtoupper($filter['operator'] ?? 'and');
+        $terms[] = "{$operator} {$cqlTerm}";
+      }
+    }
+
+    return !empty($terms) ? '(' . implode(' ', $terms) . ')' : NULL;
+  }
+
+  /**
+   * Mapping from ComplexSearchFacetsEnum to CQL phrase fields.
+   *
+   * @return array<string, string>
+   *   Map of facet field to CQL phrase field.
+   */
+  private static function getFacetToCqlFieldMap(): array {
+    return [
+      'mainLanguages' => 'phrase.mainlanguage',
+      'materialTypesSpecific' => 'phrase.specificmaterialtype',
+      'fictionalCharacters' => 'phrase.fictionalcharacter',
+      'genreAndForm' => 'phrase.genreandform',
+      'childrenOrAdults' => 'phrase.childrenoradults',
+      'accessTypes' => 'phrase.accesstype',
+      'fictionNonfiction' => 'phrase.fictionnonfiction',
+      'subjects' => 'phrase.subject',
+      'creators' => 'phrase.creatorfunction',
+      'filmsAdaptedFromBooks' => 'phrase.filmsadaptedfrombooks',
+      // Range fields are handled separately.
+      'publicationYear' => 'publicationyear',
+      'ages' => 'ages',
+    ];
+  }
+
+  /**
+   * Build CQL from facet filters.
+   *
+   * @param array<mixed> $facets
+   *   Array of facet objects with facetField and selectedValues.
+   * @param bool $useOpenEndedRange
+   *   TRUE for pre-search facets (open-ended ranges), FALSE for post-search.
+   *
+   * @return array<string>
+   *   Array of CQL parts.
+   */
+  private static function buildFacetTerms(array $facets, bool $useOpenEndedRange): array {
+    $parts = [];
+    $fieldMap = self::getFacetToCqlFieldMap();
+
+    foreach ($facets as $facet) {
+      if (!is_array($facet)) {
+        continue;
+      }
+
+      $facetField = $facet['facetField'] ?? '';
+      $selectedValues = $facet['selectedValues'] ?? [];
+
+      if (!is_array($selectedValues) || empty($selectedValues)) {
+        continue;
+      }
+
+      $from = $selectedValues[0] ?? '';
+      $to = $selectedValues[1] ?? '';
+
+      if (empty($from)) {
+        continue;
+      }
+
+      // Handle range fields (publicationYear, ages).
+      if (in_array($facetField, ['publicationYear', 'ages'], TRUE)) {
+        $rangeField = $fieldMap[$facetField] ?? $facetField;
+
+        // Check if values are numeric for range queries.
+        $fromIsNumeric = is_numeric($from);
+        $toIsNumeric = empty($to) || is_numeric($to);
+
+        if ($facetField === 'ages' && (!$fromIsNumeric || !$toIsNumeric)) {
+          // Non-numeric ages should use phrase query.
+          $cqlField = 'phrase.ages';
+          $orTerms = array_map(
+            fn($v) => "{$cqlField}=\"{$v}\"",
+            array_filter($selectedValues, fn($v) => !empty($v))
+          );
+          if (!empty($orTerms)) {
+            $parts[] = '((' . implode(' OR ', $orTerms) . '))';
+          }
+          continue;
+        }
+
+        if (empty($to)) {
+          // Single value or open-ended range.
+          if ($useOpenEndedRange) {
+            $parts[] = "(({$rangeField}>={$from}))";
+          }
+          else {
+            $parts[] = "(({$rangeField}={$from}))";
+          }
+        }
+        elseif ($from === $to) {
+          // Exact match.
+          $parts[] = "(({$rangeField}={$from}))";
+        }
+        else {
+          // Closed range.
+          $parts[] = "(({$rangeField} within \"{$from} {$to}\"))";
+        }
+        continue;
+      }
+
+      // Handle phrase fields.
+      $cqlField = $fieldMap[$facetField] ?? NULL;
+      if ($cqlField) {
+        $orTerms = array_map(
+          fn($v) => "{$cqlField}=\"{$v}\"",
+          array_filter($selectedValues, fn($v) => !empty($v))
+        );
+        if (!empty($orTerms)) {
+          $parts[] = '((' . implode(' OR ', $orTerms) . '))';
+        }
+      }
+    }
+
+    return $parts;
   }
 
 }
