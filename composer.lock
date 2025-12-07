@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bc512d86b4c05284380553552bfe037",
+    "content-hash": "d0786d21af8480485c88359ab26c0e41",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1116,10 +1116,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2025.48.0",
+            "version": "2025.50.0+pr.2230",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2025.48.0/dist-2025-48-0-1c358389b5038e7610fe025048d0194ef8d002a1.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-use-autocomplete-suggestion-types/dist-use-autocomplete-suggestion-types.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21851,5 +21851,5 @@
         "ext-dom": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
