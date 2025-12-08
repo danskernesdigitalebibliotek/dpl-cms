@@ -29839,3 +29839,13 @@ msgctxt "field.field.node.branch.field_agency_branch_id:label"
 msgid "Agency Branch ID"
 msgstr "Agency Branch ID"
 
+#: 
+msgctxt "Reservation list"
+msgid "We have 1 copy of the material in stock"
+msgstr "Biblioteket har 1 eksemplar."
+
+#: 
+msgctxt "Reservation list"
+msgid "We have @count copies of the material in stock"
+msgstr "Biblioteket har @count eksemplarer."
+
