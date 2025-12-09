@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bf3f71911b2279738d77b47725cd309",
+    "content-hash": "2bfa07205bea53b83f006c823394d6c5",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1119,7 +1119,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-483-fejl-ved-sogning-fra-i-os-og-mac-os-enheder/dist-ddfsal-483-fejl-ved-sogning-fra-i-os-og-mac-os-enheder.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"

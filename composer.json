@@ -59,7 +59,7 @@
                 "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-develop/dist-develop.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDFSAL-483-fejl-ved-sogning-fra-i-os-og-mac-os-enheder/dist-ddfsal-483-fejl-ved-sogning-fra-i-os-og-mac-os-enheder.zip",
                     "type": "zip"
                 },
                 "require": {
