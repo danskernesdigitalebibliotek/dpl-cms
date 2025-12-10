@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-12-08 16:23+0100\n"
-"PO-Revision-Date: 2025-12-08 16:23+0100\n"
+"POT-Creation-Date: 2025-12-10 11:22+0100\n"
+"PO-Revision-Date: 2025-12-10 11:22+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -906,10 +906,6 @@ msgstr "Link til et andet sprog"
 msgctxt "field.field.paragraph.links.field_link:label"
 msgid "Link"
 msgstr "Link"
-
-msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:label"
-msgid "Amount of materials"
-msgstr "Antal materialer/værker"
 
 msgctxt "field.field.paragraph.material_grid_automatic.field_cql_search:label"
 msgid "CQL Search"
@@ -6704,10 +6700,6 @@ msgstr ""
 "felter som aria-label og ’Åbn link i nyt vindue’. Disse felter "
 "kunne ikke eksporteres i GraphQL, når der bruges en Linkit-widget."
 
-msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:label"
-msgid "Amount of materials"
-msgstr "Antal materialer"
-
 msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:description"
 msgid ""
 "Determines the amount of materials that will be shown, based on the "
@@ -7603,4 +7595,28 @@ msgstr "Søg på adresser i Danmark."
 msgctxt "field.field.node.branch.field_agency_branch_id:label"
 msgid "Agency Branch ID"
 msgstr "Agency Branch ID"
+
+msgctxt "field.field.paragraph.material_grid_automatic.field_amount_of_materials:label"
+msgid "Amount of materials (Deprecated - will be deleted!)"
+msgstr ""
+
+msgctxt "field.field.paragraph.material_grid_automatic.field_material_amount:label"
+msgid "Amount of materials"
+msgstr ""
+
+msgctxt "field.field.paragraph.material_grid_automatic.field_material_amount:settings:suffix"
+msgid " materials"
+msgstr ""
+
+msgctxt "field.field.paragraph.material_grid_link_automatic.field_amount_of_materials:label"
+msgid "Amount of materials (Deprecated - will be deleted!)"
+msgstr ""
+
+msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_amount:label"
+msgid "Amount of materials"
+msgstr ""
+
+msgctxt "field.field.paragraph.material_grid_link_automatic.field_material_amount:settings:suffix"
+msgid " materials"
+msgstr ""
 
