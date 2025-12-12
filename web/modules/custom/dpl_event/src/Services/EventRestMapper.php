@@ -368,7 +368,7 @@ class EventRestMapper {
    * Getting the main, original image.
    */
   private function getImage(): ?EventsGET200ResponseInnerImage {
-    $url = $this->getImageUrl('event_image', 'paragraph_wide');
+    $url = $this->getImageUrl('event_image', NULL);
 
     if (empty($url)) {
       return NULL;
