@@ -183,6 +183,6 @@ environments:
   pr-2822:
     cronjobs:
       - name: drush cron
-        schedule: "M/30 * * * *"
+        schedule: "M/35 * * * *"
         command: drush cron
         service: cli
