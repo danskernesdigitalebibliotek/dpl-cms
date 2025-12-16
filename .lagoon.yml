@@ -149,7 +149,7 @@ environments:
   main:
     cronjobs:
       - name: drush cron
-        schedule: "M/15 * * * *"
+        schedule: "M/20 * * * *"
         command: drush cron
         service: cli
       # The cron schedule here, mirrors how we do it in production sites.
