@@ -2065,6 +2065,14 @@ msgctxt "Work Page"
 msgid "Editions"
 msgstr "Udgaver"
 
+msgctxt "Global"
+msgid "At home"
+msgstr "Hjemme"
+
+msgctxt "Global"
+msgid "Unavailable"
+msgstr "Udlånt"
+
 msgctxt "Work Page"
 msgid "Expand more"
 msgstr "Udvid"
