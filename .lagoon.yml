@@ -3,7 +3,7 @@ docker-compose-yaml: docker-compose.yml
 project: dpl-cms-core
 
 ssh: 20.238.147.183:22
-api: https://api.lagoon.dplplat02.dpl.reload.dk/graphql
+api: https://api.lagoon.dplplat01.dpl.reload.dk/graphql
 environment_variables:
   git_sha: 'true'
 
@@ -30,7 +30,7 @@ tasks:
           # file. Environment variables are killed between tasks, apart from
           # the global ones.
           echo "$GH_DEPLOYMENT_ID" > /tmp/GH_DEPLOYMENT_ID
-          LAGOON_DEPLOYS_LOG_URL="https://ui.lagoon.dplplat02.dpl.reload.dk/projects/$LAGOON_PROJECT/$LAGOON_PROJECT-$LAGOON_ENVIRONMENT/deployments"
+          LAGOON_DEPLOYS_LOG_URL="https://ui.lagoon.dplplat01.dpl.reload.dk/projects/$LAGOON_PROJECT/$LAGOON_PROJECT-$LAGOON_ENVIRONMENT/deployments"
           echo "$LAGOON_DEPLOYS_LOG_URL" > /tmp/LAGOON_DEPLOYS_LOG_URL
 
           echo "Creating a initial pending deployment status."
@@ -181,20 +181,14 @@ environments:
         schedule: "M * * * *"
         command: drush err:purge paragraph
         service: cli
-  pr-2474:
+  pr-3015:
     routes:
       - varnish:
-          - "cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
+          - "ddfsal-555.dpl-cms.dplplat01.dpl.reload.dk":
       - node:
-          - "go.cms-playground.dpl-cms.dplplat01.dpl.reload.dk":
+          - "go.ddfsal-555.dpl-cms.dplplat01.dpl.reload.dk":
               annotations:
                 nginx.ingress.kubernetes.io/proxy-buffer-size: 32k
-    cronjobs:
-      - name: drush cron
-        schedule: "M/15 * * * *"
-        command: drush cron
-        service: cli
-  pr-2822:
     cronjobs:
       - name: drush cron
         schedule: "M/30 * * * *"

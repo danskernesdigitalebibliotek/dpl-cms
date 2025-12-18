@@ -1,13 +1,13 @@
 # This is the version of the Dpl Go application:
 # https://github.com/danskernesdigitalebibliotek/dpl-go
 # In PR environments this should be updated whenever testing a new version:
-FROM ghcr.io/danskernesdigitalebibliotek/dpl-go-node:0.25.24 as builder
+FROM ghcr.io/danskernesdigitalebibliotek/dpl-go-node:2025.50.1 as builder
 
 # This is an important variable.
 # It is used both to resolve the url for the DPL CMS, the DPL CMS Graphql endpoint, and the Next.js app URL.
 # All the args here are only used for the next building phase.
 # In PR environments this should be updated to match the cms domain of the environment.
-ARG GO_CMS_DOMAIN=cms-playground.dpl-cms.dplplat01.dpl.reload.dk
+ARG GO_CMS_DOMAIN=ddfsal-555.dpl-cms.dplplat01.dpl.reload.dk
 
 ARG DRUPAL_REVALIDATE_SECRET
 ARG GO_SESSION_SECRET
