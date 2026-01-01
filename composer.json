@@ -363,7 +363,7 @@
                 "2708731: Allow redirect to edit form after cloning": "https://www.drupal.org/files/issues/2024-07-25/improve-workflow-of-cloned-entity-2708731-40_patch.patch"
             },
             "drupal/entity_reference_revisions": {
-                "3039442: Circular dependencies in EntityReferenceRevisionsFieldItemList::hasAffectingChanges()": "https://www.drupal.org/files/issues/2023-11-20/entity_reference_revisions-fix_infinite_loop-3039442-8.patch"
+                "3039442: Circular dependencies in EntityReferenceRevisionsFieldItemList::hasAffectingChanges()": "https://git.drupalcode.org/project/entity_reference_revisions/-/commit/88d5a5ee66cfdf1a648fbca7983af3d3a56ef8c4.patch"
             },
             "drupal/facets": {
                 "DDFSAL-279: Fix infinite scroll with facet filters": "patches/facets-infinite-scroll-fix-custom.patch"
