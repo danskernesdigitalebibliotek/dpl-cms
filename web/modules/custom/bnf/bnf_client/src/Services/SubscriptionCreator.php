@@ -87,7 +87,7 @@ final class SubscriptionCreator {
     ];
 
     // Create and associate taxonomy term if tag name is provided.
-    $hasTagName = $tagName !== null && $tagName !== '';
+    $hasTagName = $tagName !== NULL && $tagName !== '';
     if ($hasTagName) {
       $termStorage = $this->entityTypeManager->getStorage('taxonomy_term');
 

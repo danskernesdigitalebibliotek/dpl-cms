@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Drupal\Tests\bnf_client\Unit\Services;
 
+use Drupal\bnf_client\Entity\Subscription;
 use Drupal\bnf_client\Services\SubscriptionCreator;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\taxonomy\TermInterface;
 use Drupal\Tests\UnitTestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
@@ -105,7 +107,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
     $label = 'Test Subscription';
 
     // Mock that a subscription already exists.
-    $existingSubscription = $this->prophesize(\Drupal\bnf_client\Entity\Subscription::class);
+    $existingSubscription = $this->prophesize(Subscription::class);
     $this->subscriptionStorageProphecy
       ->loadByProperties(['subscription_uuid' => $uuid])
       ->willReturn([$existingSubscription->reveal()]);
@@ -134,7 +136,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
       ->willReturn([]);
 
     // Mock subscription entity.
-    $subscriptionEntity = $this->prophesize(\Drupal\bnf_client\Entity\Subscription::class);
+    $subscriptionEntity = $this->prophesize(Subscription::class);
     $subscriptionEntity->save()->shouldBeCalled();
 
     $this->subscriptionStorageProphecy
@@ -171,7 +173,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
       ->willReturn([]);
 
     // Mock new term creation.
-    $termEntity = $this->prophesize(\Drupal\taxonomy\TermInterface::class);
+    $termEntity = $this->prophesize(TermInterface::class);
     $termEntity->save()->shouldBeCalled();
     $termEntity->id()->willReturn(42);
 
@@ -180,7 +182,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
       ->willReturn($termEntity->reveal());
 
     // Mock subscription entity.
-    $subscriptionEntity = $this->prophesize(\Drupal\bnf_client\Entity\Subscription::class);
+    $subscriptionEntity = $this->prophesize(Subscription::class);
     $subscriptionEntity->save()->shouldBeCalled();
 
     $this->subscriptionStorageProphecy
@@ -214,7 +216,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
       ->willReturn([]);
 
     // Existing tag found.
-    $existingTerm = $this->prophesize(\Drupal\taxonomy\TermInterface::class);
+    $existingTerm = $this->prophesize(TermInterface::class);
     $existingTerm->id()->willReturn(99);
 
     $this->termStorageProphecy
@@ -222,7 +224,7 @@ class SubscriptionCreatorTest extends UnitTestCase {
       ->willReturn([$existingTerm->reveal()]);
 
     // Mock subscription entity.
-    $subscriptionEntity = $this->prophesize(\Drupal\bnf_client\Entity\Subscription::class);
+    $subscriptionEntity = $this->prophesize(Subscription::class);
     $subscriptionEntity->save()->shouldBeCalled();
 
     $this->subscriptionStorageProphecy
