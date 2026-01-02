@@ -65,6 +65,9 @@ final class SubscriptionCreator {
    *   Feedback message.
    */
   public function addSubscription(string $subscriptionUuid, string $label, ?string $tagName = NULL): string {
+    Assert::uuid($subscriptionUuid, 'A valid UUID is required for subscription_uuid.');
+    Assert::notEmpty($label, 'Label cannot be empty.');
+
     $feedback = [];
 
     $subscriptionStorage = $this->entityTypeManager->getStorage('bnf_subscription');
