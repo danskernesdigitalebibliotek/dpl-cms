@@ -88,7 +88,8 @@ final class SubscriptionCreator {
     ];
 
     // Create and associate taxonomy term if tag name is provided.
-    if (!is_null($tagName) && $tagName !== '') {
+    $hasTagName = $tagName !== null && $tagName !== '';
+    if ($hasTagName) {
       $termStorage = $this->entityTypeManager->getStorage('taxonomy_term');
 
       /** @var \Drupal\taxonomy\Entity\Term[] $existingTerms */
@@ -120,7 +121,7 @@ final class SubscriptionCreator {
 
     $feedback[] = "Successfully created subscription for '$label' ($subscriptionUuid).";
 
-    if (!is_null($tagName) && $tagName !== '') {
+    if ($hasTagName) {
       $feedback[] = "Subscription configured to automatically tag imported content with '$tagName'.";
     }
 
