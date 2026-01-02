@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Drupal\bnf_client\Drush\Commands;
 
 use Consolidation\OutputFormatters\StructuredData\RowsOfFields;
+use Drupal\bnf_client\Services\SubscriptionCreator;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drush\Attributes\Argument;
@@ -33,6 +34,7 @@ class SubscriptionCommands extends DrushCommands {
    */
   public function __construct(
     EntityTypeManagerInterface $entityTypeManager,
+    protected SubscriptionCreator $subscriptionCreator,
   ) {
     $this->storage = $entityTypeManager->getStorage('bnf_subscription');
     parent::__construct();
@@ -49,11 +51,8 @@ class SubscriptionCommands extends DrushCommands {
     description: 'Subscribe to 8f647000-cb67-40d0-b942-3f7fbf899c88.'
   )]
   public function createSubscription(string $uuid = '', string $label = ''): void {
-    $this->storage->create([
-      'subscription_uuid' => $uuid,
-      'label' => $label,
-    ])
-      ->save();
+    $feedback = $this->subscriptionCreator->addSubscription($uuid, $label);
+    $this->output()->writeln($feedback);
   }
 
   /**
