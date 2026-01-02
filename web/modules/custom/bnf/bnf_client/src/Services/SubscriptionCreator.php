@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Drupal\bnf_client\Services;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\taxonomy\Entity\Term;
 use Webmozart\Assert\Assert;
 
 /**
@@ -100,11 +99,11 @@ final class SubscriptionCreator {
 
       if ($existingTerms) {
         $tagTerm = reset($existingTerms);
-        Assert::isInstanceOf($tagTerm, Term::class);
         $feedback[] = "Found existing tag '$tagName' (ID: {$tagTerm->id()}).";
       }
       else {
-        $tagTerm = Term::create([
+        /** @var \Drupal\taxonomy\TermInterface $tagTerm */
+        $tagTerm = $termStorage->create([
           'name' => $tagName,
           'vid' => 'tags',
         ]);
