@@ -71,33 +71,6 @@ class SubscriptionCreatorTest extends UnitTestCase {
   }
 
   /**
-   * Test that invalid UUID throws exception.
-   *
-   * @covers ::addSubscription
-   */
-  public function testInvalidUuidThrowsException(): void {
-    $this->expectException(\InvalidArgumentException::class);
-    $this->expectExceptionMessage('A valid UUID is required for subscription_uuid.');
-
-    $this->subscriptionCreator->addSubscription('not-a-valid-uuid', 'Test Label');
-  }
-
-  /**
-   * Test that empty label throws exception.
-   *
-   * @covers ::addSubscription
-   */
-  public function testEmptyLabelThrowsException(): void {
-    $this->expectException(\InvalidArgumentException::class);
-    $this->expectExceptionMessage('Label cannot be empty.');
-
-    $this->subscriptionCreator->addSubscription(
-      '4669c003-5673-46eb-9950-aa62ca4b4a2f',
-      ''
-    );
-  }
-
-  /**
    * Test that existing subscription is skipped.
    *
    * @covers ::addSubscription

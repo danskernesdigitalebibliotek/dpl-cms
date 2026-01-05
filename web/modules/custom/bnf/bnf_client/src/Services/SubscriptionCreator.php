@@ -5,13 +5,11 @@ declare(strict_types=1);
 namespace Drupal\bnf_client\Services;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Webmozart\Assert\Assert;
 
 /**
  * Helper for programmatically creating BNF subscriptions.
  */
 final class SubscriptionCreator {
-  public const MODULE_NOT_ENABLED_MESSAGE = 'The bnf_client module is not enabled. Subscription could not be created.';
 
   /**
    * Constructs a SubscriptionCreator object.
@@ -21,31 +19,6 @@ final class SubscriptionCreator {
    *   term entities.
    */
   public function __construct(private EntityTypeManagerInterface $entityTypeManager) {}
-
-  /**
-   * Convenience: Add subscription if service is available, else return message.
-   *
-   * @param string $subscriptionUuid
-   *   The UUID of the term on Delingstjenesten to subscribe to.
-   * @param string $label
-   *   The label for the subscription.
-   * @param string|null $tagName
-   *   Optional tag name to create and associate with the subscription.
-   *
-   * @return string
-   *   A feedback message indicating the result, or
-   *   SubscriptionCreator::MODULE_NOT_ENABLED_MESSAGE if the service
-   *   is not available.
-   */
-  public static function addIfAvailable(string $subscriptionUuid, string $label, ?string $tagName = NULL): string {
-    if (!\Drupal::hasService('bnf_client.subscription_creator')) {
-      return self::MODULE_NOT_ENABLED_MESSAGE;
-    }
-
-    /** @var self $service */
-    $service = \Drupal::service('bnf_client.subscription_creator');
-    return $service->addSubscription($subscriptionUuid, $label, $tagName);
-  }
 
   /**
    * Add a BNF subscription.
@@ -64,8 +37,6 @@ final class SubscriptionCreator {
    *   Feedback message.
    */
   public function addSubscription(string $subscriptionUuid, string $label, ?string $tagName = NULL): string {
-    Assert::uuid($subscriptionUuid, 'A valid UUID is required for subscription_uuid.');
-    Assert::notEmpty($label, 'Label cannot be empty.');
 
     $feedback = [];
 

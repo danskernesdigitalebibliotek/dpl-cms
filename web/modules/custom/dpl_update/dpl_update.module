@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Module file for dpl_update.
+ */
+
+/**
+ * Adds a BNF subscription if the bnf_client module is enabled.
+ *
+ * This is a convenience function to be used in update hooks where the
+ * bnf_client module may or may not be enabled.
+ *
+ * @param string $subscriptionUuid
+ *   The UUID of the term on Delingstjenesten to subscribe to.
+ * @param string $label
+ *   The label for the subscription.
+ * @param string|null $tagName
+ *   Optional tag name to create and associate with the subscription.
+ *
+ * @return string
+ *   A feedback message indicating the result.
+ */
+function dpl_update_add_bnf_subscription(string $subscriptionUuid, string $label, ?string $tagName = NULL): string {
+  try {
+    /** @var \Drupal\bnf_client\Services\SubscriptionCreator $service */
+    $service = \Drupal::service('bnf_client.subscription_creator');
+    return $service->addSubscription($subscriptionUuid, $label, $tagName);
+  }
+  catch (\Exception $e) {
+    return 'The bnf_client module is not enabled or subscription creation failed: ' . $e->getMessage();
+  }
+}

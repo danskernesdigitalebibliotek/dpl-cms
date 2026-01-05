@@ -17,7 +17,6 @@ use Drupal\Core\Render\Markup;
 use Drupal\Core\Render\RendererInterface;
 use Drupal\dpl_library_token\LibraryTokenHandler;
 use Drupal\dpl_login\Adgangsplatformen\Config;
-use Drupal\bnf_client\Services\SubscriptionCreator;
 use Drupal\dpl_update\Services\ConfigIgnore;
 use Drupal\drupal_typed\DrupalTyped;
 use Drupal\locale\SourceString;
@@ -838,7 +837,7 @@ function dpl_update_update_10053(): string {
  * @throws \Exception
  */
 function dpl_update_update_10054(): string {
-  return SubscriptionCreator::addIfAvailable(
+  return dpl_update_add_bnf_subscription(
     '4669c003-5673-46eb-9950-aa62ca4b4a2f',
     'GO: Formidling til børn'
   );
@@ -941,7 +940,7 @@ function dpl_update_update_10061(): string {
  * Add the "Om eReolen" subscription to BNF with automatic tagging.
  */
 function dpl_update_update_10062(): string {
-  return SubscriptionCreator::addIfAvailable(
+  return dpl_update_add_bnf_subscription(
     '6f204837-ed6f-4683-b8c9-4200005ac1ae',
     'Om eReolen',
     'Om eReolen'

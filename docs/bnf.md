@@ -109,18 +109,21 @@ custom update hooks or custom module code.
 
 - Service: `Drupal\bnf_client\Services\SubscriptionCreator`
   - Implemented in `web/modules/custom/bnf/bnf_client/src/Services/SubscriptionCreator.php`.
+- Helper function: `dpl_update_add_bnf_subscription()`
+  - Implemented in `web/modules/custom/dpl_update/dpl_update.module`.
+  - Use this in update hooks as it handles the case where bnf_client is not enabled.
 
 ### Example: Adding a Subscription in an Update Hook
 
-In your update hook, grab the service if available:
+In your update hook, use the helper function which gracefully handles
+the case where the bnf_client module is not enabled:
 
 ```php
 /**
  * Add the "Om eReolen" subscription to BNF with automatic tagging.
  */
 function my_module_update_9001(): string {
-
-  return \Drupal\bnf_client\Services\SubscriptionCreator::addIfAvailable(
+  return dpl_update_add_bnf_subscription(
     '6f204837-ed6f-4683-b8c9-4200005ac1ae',
     'Om eReolen',
     'Om eReolen'
@@ -133,3 +136,5 @@ function my_module_update_9001(): string {
 - Duplicate subscriptions are avoided by checking `subscription_uuid`.
 - If a tag name is provided, a term is created/reused in the `'tags'`
   vocabulary and assigned to the subscription.
+- The helper function returns an informative message if the bnf_client
+  module is not enabled.
