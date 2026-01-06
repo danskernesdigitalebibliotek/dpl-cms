@@ -251,6 +251,11 @@ msgctxt "Global"
 msgid "Available"
 msgstr "Tilgængelig"
 
+#: 
+msgctxt "Global"
+msgid "At home"
+msgstr "Hjemme"
+
 msgctxt "Global"
 msgid "Unavailable"
 msgstr "Udlånt"
