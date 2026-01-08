@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2025-12-11 10:50+0100\n"
-"PO-Revision-Date: 2025-12-11 10:50+0100\n"
+"POT-Creation-Date: 2026-01-08 15:07+0100\n"
+"PO-Revision-Date: 2026-01-08 15:07+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2994,11 +2994,11 @@ msgstr "Profil som anvendes til at forespørge efter data på et materiale"
 
 msgctxt "List size (settings)"
 msgid "Patron menu list size settings"
-msgstr "Listestørrelse i gruppemodaler"
+msgstr "Listestørrelse i brugermenuen"
 
 msgctxt "List size (settings)"
 msgid "The number of items to display in the patron menu list."
-msgstr "Antal elementer der vises i brugermenuen"
+msgstr "Antal elementer der vises når man åbner en liste i brugermenuen"
 
 msgctxt "List size (settings)"
 msgid "Patron menu list size on desktop"
@@ -3026,11 +3026,11 @@ msgstr "Antal elementer der vises i en liste på mobil"
 
 msgctxt "List size (settings)"
 msgid "Dashboard list size settings"
-msgstr "Listestørrelse i gruppemodaler"
+msgstr "Listestørrelse i Dit overblik"
 
 msgctxt "List size (settings)"
 msgid "The number of items to display in the dashboard list."
-msgstr "Antal elementer der vises i en gruppemodal"
+msgstr "Antal elementer der vises når man åbner en liste på Dit overblik"
 
 msgctxt "List size (settings)"
 msgid "Dashboard list size on desktop"
@@ -21003,4 +21003,47 @@ msgstr "Forfatter / ophav (A-Å)"
 msgctxt "advanced search 2"
 msgid "Z-A"
 msgstr "Forfatter / ophav (Å-A)"
+
+msgid "Add matcher to profile"
+msgstr ""
+
+msgid "Set matcher configuration"
+msgstr ""
+
+msgctxt "dpl_login"
+msgid ""
+"You are not registered at this library.<br />Please <a "
+"href=\":sign_up\">sign up</a> at this library or <a "
+"href=\":log_out\">log out</a> again."
+msgstr ""
+
+msgid "DPL: Event Location Type"
+msgstr ""
+
+msgid "- Site default (@country) -"
+msgstr ""
+
+msgid "Skip country for domestic addresses"
+msgstr ""
+
+msgid "Domestic addresses country"
+msgstr ""
+
+msgid "Addresses within this country are considered domestic."
+msgstr ""
+
+msgid "<em><a href=\"@url\">Set the default country for your site</a></em>."
+msgstr ""
+
+msgid "Site default (@country)"
+msgstr ""
+
+msgid "Skip country for addresses in: @country"
+msgstr ""
+
+msgid "Always display country."
+msgstr ""
+
+msgid "Price"
+msgstr ""
 

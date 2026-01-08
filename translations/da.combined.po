@@ -3496,12 +3496,12 @@ msgstr "Profil som anvendes til at forespørge efter data på et materiale"
 #: 
 msgctxt "List size (settings)"
 msgid "Patron menu list size settings"
-msgstr "Listestørrelse i gruppemodaler"
+msgstr "Listestørrelse i brugermenuen"
 
 #: 
 msgctxt "List size (settings)"
 msgid "The number of items to display in the patron menu list."
-msgstr "Antal elementer der vises i brugermenuen"
+msgstr "Antal elementer der vises når man åbner en liste i brugermenuen"
 
 #: 
 msgctxt "List size (settings)"
@@ -3536,12 +3536,12 @@ msgstr "Antal elementer der vises i en liste på mobil"
 #: 
 msgctxt "List size (settings)"
 msgid "Dashboard list size settings"
-msgstr "Listestørrelse i gruppemodaler"
+msgstr "Listestørrelse i Dit overblik"
 
 #: 
 msgctxt "List size (settings)"
 msgid "The number of items to display in the dashboard list."
-msgstr "Antal elementer der vises i en gruppemodal"
+msgstr "Antal elementer der vises når man åbner en liste på Dit overblik"
 
 #: 
 msgctxt "List size (settings)"
@@ -4796,7 +4796,7 @@ msgstr "Billetlink"
 #: 
 msgctxt "field.field.eventinstance.default.field_event_link:description"
 msgid "Please enter the URL where attendees can buy tickets for this event."
-msgstr "Angiv URL til billetsalg"
+msgstr "Skriv URL hvor billetter kan købes/hentes til arrangementet. Ignoreres hvis 'Opret billet i billetsystem' er slået til."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_paragraphs:label"
@@ -4876,7 +4876,7 @@ msgstr "Billetlink"
 #: 
 msgctxt "field.field.eventseries.default.field_event_link:description"
 msgid "Please enter the URL where attendees can buy/get tickets for this event."
-msgstr "Skriv URL hvor billetter kan købes/hentes til arrangementet."
+msgstr "Skriv URL hvor billetter kan købes/hentes til arrangementet. Ignoreres hvis 'Opret billet i billetsystem' er slået til."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_paragraphs:label"
@@ -22127,11 +22127,6 @@ msgid "The teaser fields are used for the card of display.<br />If no image has 
 msgstr "Teaserfelterne bruges til cards som blikfang for indholdet. Hvis der ikke er valgt et teaserbillede, vil teksten vises i stedet."
 
 #: 
-msgctxt "field.field.eventseries.default.field_branch:description"
-msgid "When connecting a branch, it will also overwrite the event address with the address from the branch."
-msgstr "Når du tilknytter en filial, vil adressen på arrangementet blive overskrevet med adressen på filialen."
-
-#: 
 msgctxt "field.field.eventseries.default.field_event_address:description"
 msgid "Use this value to specific a different address than the event branch."
 msgstr "Brug dette felt til at angive en anden adresse end det tilknyttede bibliotek."
@@ -30301,4 +30296,249 @@ msgstr "Forfatter / ophav (A-Å)"
 msgctxt "advanced search 2"
 msgid "Z-A"
 msgstr "Forfatter / ophav (Å-A)"
+
+#: 
+msgid "Add matcher to profile"
+msgstr ""
+
+#: 
+msgid "Set matcher configuration"
+msgstr ""
+
+#: 
+msgctxt "metatag.metatag_defaults.eventinstance__default:tags:title"
+msgid "[eventinstance:title] | [site:name]"
+msgstr ""
+
+#: 
+msgctxt "metatag.metatag_defaults.eventseries__default:tags:title"
+msgid "[eventseries:title] | [site:name]"
+msgstr ""
+
+#: 
+msgctxt "dpl_login"
+msgid "You are not registered at this library.<br />Please <a href=\":sign_up\">sign up</a> at this library or <a href=\":log_out\">log out</a> again."
+msgstr ""
+
+#: 
+msgid "DPL: Event Location Type"
+msgstr ""
+
+#: 
+msgid "- Site default (@country) -"
+msgstr ""
+
+#: 
+msgid "Skip country for domestic addresses"
+msgstr ""
+
+#: 
+msgid "Domestic addresses country"
+msgstr ""
+
+#: 
+msgid "Addresses within this country are considered domestic."
+msgstr ""
+
+#: 
+msgid "<em><a href=\"@url\">Set the default country for your site</a></em>."
+msgstr ""
+
+#: 
+msgid "Site default (@country)"
+msgstr ""
+
+#: 
+msgid "Skip country for addresses in: @country"
+msgstr ""
+
+#: 
+msgid "Always display country."
+msgstr ""
+
+#: 
+msgid "Price"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_library:label"
+msgid "Library"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_tickets:label"
+msgid "Tickets"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_partners:label"
+msgid "Partners"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_dates:label"
+msgid "Dates"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_location:label"
+msgid "Locations"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_library:label"
+msgid "Library"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_tickets:label"
+msgid "Tickets"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_partners:label"
+msgid "Partners"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_dates:label"
+msgid "Dates"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_location:label"
+msgid "Locations"
+msgstr ""
+
+#: 
+msgctxt "core.entity_form_display.eventseries.default.default:content:field_event_location:settings:placeholder"
+msgid "E.g. “Museum of Architecture”, “The Student House”"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_location:label"
+msgid "Location"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_location_type:label"
+msgid "In person or online?"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_location_type:description"
+msgid "Specify wether this is a physical or online event. If it’s both online and in person, please create two separate events."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_non_branch_location:label"
+msgid "Other location than branch"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_non_branch_location:description"
+msgid "If you choose “other location” this will be show in the list and on the event as the location for the event."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_non_branch_location:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_non_branch_location:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventinstance.default.field_event_state:description"
+msgid "If ‘Relevant for ticket manager’ under ‘Tickets’ is turned on, then this state is ignored and the state provided from the ticket manager is used."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_branch:description"
+msgid "When selecting a branch, we will use the address from the branch, unless you select “Other location”."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_location:label"
+msgid "Location"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_location_type:label"
+msgid "In person or online?"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_location_type:description"
+msgid "Specify wether this is a physical or online event. If it’s both online and in person, please create two separate events."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_non_branch_location:label"
+msgid "Other location than branch"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_non_branch_location:description"
+msgid "If you choose “other location” this will be show in the list and on the event as the location for the event."
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_non_branch_location:settings:on_label"
+msgid "On"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_non_branch_location:settings:off_label"
+msgid "Off"
+msgstr ""
+
+#: 
+msgctxt "field.field.eventseries.default.field_event_state:description"
+msgid "If ‘Relevant for ticket manager’ under ‘Tickets’ is turned on, then this state is ignored and the state provided from the ticket manager is used."
+msgstr ""
+
+#: 
+msgctxt "field.storage.eventinstance.field_event_location_type:settings:allowed_values:0:label"
+msgid "In person"
+msgstr ""
+
+#: 
+msgctxt "field.storage.eventinstance.field_event_location_type:settings:allowed_values:1:label"
+msgid "Online"
+msgstr ""
+
+#: 
+msgctxt "field.storage.eventseries.field_event_location_type:settings:allowed_values:0:label"
+msgid "In person"
+msgstr ""
+
+#: 
+msgctxt "field.storage.eventseries.field_event_location_type:settings:allowed_values:1:label"
+msgid "Online"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_content:display:branch_addresses:display_title"
+msgid "Branches and addresses"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_content:display:branch_addresses:display_options:fields:field_address_dawa:alter:text"
+msgid "{{ field_address_dawa__value }}"
+msgstr ""
+
+#: 
+msgctxt "views.view.entity_reference_content:display:branch_addresses:display_options:fields:title:alter:text"
+msgid "<div>\n"
+"<strong>{{ title }}</strong>\n"
+"{% if field_address_dawa %}\n"
+"<br/>­\n"
+"\n"
+" ({{ field_address_dawa }})\n"
+"{% endif %}\n"
+"</div>"
+msgstr ""
 
