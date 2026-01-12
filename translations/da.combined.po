@@ -30318,7 +30318,7 @@ msgstr ""
 #: 
 msgctxt "dpl_login"
 msgid "You are not registered at this library.<br />Please <a href=\":sign_up\">sign up</a> at this library or <a href=\":log_out\">log out</a> again."
-msgstr ""
+msgstr "Du er ikke oprettet som bruger ved dette bibliotek.<br />Du kan <a href=\":sign_up\">oprette dig som bruger</a> ved dette bibliotek eller <a href=\":log_out\">logge ud</a> igen."
 
 #: 
 msgid "DPL: Event Location Type"
@@ -30358,62 +30358,62 @@ msgstr ""
 
 #: 
 msgid "Price"
-msgstr ""
+msgstr "Pris"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_library:label"
 msgid "Library"
-msgstr ""
+msgstr "Bibliotek"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_tickets:label"
 msgid "Tickets"
-msgstr ""
+msgstr "Billetter"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_partners:label"
 msgid "Partners"
-msgstr ""
+msgstr "Samarbejdspartnere"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_dates:label"
 msgid "Dates"
-msgstr ""
+msgstr "Datoer"
 
 #: 
 msgctxt "core.entity_form_display.eventinstance.default.default:third_party_settings:field_group:group_location:label"
 msgid "Locations"
-msgstr ""
+msgstr "Steder"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_library:label"
 msgid "Library"
-msgstr ""
+msgstr "Bibliotek"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_tickets:label"
 msgid "Tickets"
-msgstr ""
+msgstr "Billetter"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_partners:label"
 msgid "Partners"
-msgstr ""
+msgstr "Samarbejdspartnere"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_dates:label"
 msgid "Dates"
-msgstr ""
+msgstr "Datoer"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:third_party_settings:field_group:group_location:label"
 msgid "Locations"
-msgstr ""
+msgstr "Steder"
 
 #: 
 msgctxt "core.entity_form_display.eventseries.default.default:content:field_event_location:settings:placeholder"
 msgid "E.g. “Museum of Architecture”, “The Student House”"
-msgstr ""
+msgstr "F.eks. \"Kunstmuseet\", \"Studenterhuset\""
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_location:label"
@@ -30423,32 +30423,32 @@ msgstr ""
 #: 
 msgctxt "field.field.eventinstance.default.field_event_location_type:label"
 msgid "In person or online?"
-msgstr ""
+msgstr "Afvikles arrangementet fysisk eller online?"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_location_type:description"
 msgid "Specify wether this is a physical or online event. If it’s both online and in person, please create two separate events."
-msgstr ""
+msgstr "Angiv om arrangementet er fysisk eller online. Hvis arrangementet afvikles både fysisk og online, så skal man lave to separate arrangementer."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_non_branch_location:label"
 msgid "Other location than branch"
-msgstr ""
+msgstr "Anden lokation end bibliotek"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_non_branch_location:description"
 msgid "If you choose “other location” this will be show in the list and on the event as the location for the event."
-msgstr ""
+msgstr "Hvis du vælger \"anden lokation\" vil denne blive vist på arrangementssiden og i arrangementsoversigten for arrangementet."
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_non_branch_location:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_non_branch_location:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_state:description"
@@ -30458,7 +30458,7 @@ msgstr ""
 #: 
 msgctxt "field.field.eventseries.default.field_branch:description"
 msgid "When selecting a branch, we will use the address from the branch, unless you select “Other location”."
-msgstr ""
+msgstr "Når du vælger et bibliotek, bruger arrangementet bibliotekets adresse som afholdelsessted, medmindre du også vælger \"Anden lokation\"."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_location:label"
@@ -30468,32 +30468,32 @@ msgstr ""
 #: 
 msgctxt "field.field.eventseries.default.field_event_location_type:label"
 msgid "In person or online?"
-msgstr ""
+msgstr "Afvikles arrangementet fysisk eller online?"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_location_type:description"
 msgid "Specify wether this is a physical or online event. If it’s both online and in person, please create two separate events."
-msgstr ""
+msgstr "Angiv om arrangementet er fysisk eller online. Hvis arrangementet afvikles både fysisk og online, så skal man lave to separate arrangementer."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_non_branch_location:label"
 msgid "Other location than branch"
-msgstr ""
+msgstr "Anden lokation end bibliotek"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_non_branch_location:description"
 msgid "If you choose “other location” this will be show in the list and on the event as the location for the event."
-msgstr ""
+msgstr "Hvis du vælger \"anden lokation\" vil denne blive vist på arrangementssiden og i arrangementsoversigten for arrangementet."
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_non_branch_location:settings:on_label"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_non_branch_location:settings:off_label"
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_state:description"
@@ -30503,22 +30503,22 @@ msgstr ""
 #: 
 msgctxt "field.storage.eventinstance.field_event_location_type:settings:allowed_values:0:label"
 msgid "In person"
-msgstr ""
+msgstr "Fysisk"
 
 #: 
 msgctxt "field.storage.eventinstance.field_event_location_type:settings:allowed_values:1:label"
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: 
 msgctxt "field.storage.eventseries.field_event_location_type:settings:allowed_values:0:label"
 msgid "In person"
-msgstr ""
+msgstr "Fysisk"
 
 #: 
 msgctxt "field.storage.eventseries.field_event_location_type:settings:allowed_values:1:label"
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: 
 msgctxt "views.view.entity_reference_content:display:branch_addresses:display_title"
