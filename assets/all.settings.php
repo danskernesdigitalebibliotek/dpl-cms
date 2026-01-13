@@ -21,18 +21,6 @@ $config['system.site']['uuid'] = '13ef1a53-dfb4-4c82-9b64-44586a366729';
 // The email needs to match what is setup in Azure Communication Services.
 $config['system.site']['mail'] = 'mail@folkebibliotekernescms.dk';
 
-// Configure logging using the project name and environment from the Lagoon
-// environment.
-$config['jsonlog.settings']['jsonlog_siteid'] = getenv('LAGOON_PROJECT') . '_' . getenv('LAGOON_ENVIRONMENT');
-$config['jsonlog.settings']['jsonlog_canonical'] = getenv('LAGOON_PROJECT') . '_' . getenv('LAGOON_ENVIRONMENT');
-if (InstallerKernel::installationAttempted()) {
-  // During the installation we can end up in situations where both JSONLog ond
-  // Drupal will output messages. Squash any messages coming from JSONLog by
-  // setting a low (meaning high) threshold.
-  $config['jsonlog.settings']['jsonlog_stdout'] = TRUE;
-  $config['jsonlog.settings']['jsonlog_severity_threshold'] = 0;
-}
-
 // Support overriding the database configuration using non-standard Lagoon
 // environment variables.
 // This is explicitly added to support migration between databases.

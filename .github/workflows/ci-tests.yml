@@ -23,6 +23,7 @@ jobs:
           php-version: ${{ env.PHP_VERSION }}
           coverage: none
           tools: composer:${{ env.COMPOSER_VERSION }}
+          extensions: dio
       - name: Validate composer.json
         run: |
           composer validate --no-check-all --no-check-publish
@@ -43,7 +44,7 @@ jobs:
         php-version: ${{ env.PHP_VERSION }}
         tools: composer:${{ env.COMPOSER_VERSION }}, cs2pr
         coverage: none
-        extensions: gd
+        extensions: dio, gd
     - name: Install Dependencies
       run: |
         composer install --no-interaction --no-progress
@@ -62,7 +63,7 @@ jobs:
           php-version: ${{ env.PHP_VERSION }}
           tools: composer:${{ env.COMPOSER_VERSION }}
           coverage: none
-          extensions: gd
+          extensions: dio, gd
       - name: Install Dependencies
         run: |
           composer install --no-interaction --no-progress
@@ -81,6 +82,7 @@ jobs:
           php-version: ${{ env.PHP_VERSION }}
           coverage: none
           tools: composer:${{ env.COMPOSER_VERSION }}
+          extensions: dio
       - name: Install composer dependencies
         run: |
           composer install --no-interaction --no-progress
@@ -101,7 +103,7 @@ jobs:
           php-version: ${{ env.PHP_VERSION }}
           tools: composer:${{ env.COMPOSER_VERSION }}
           coverage: xdebug
-          extensions: gd
+          extensions: dio, gd
       - name: Install Dependencies
         run: |
           composer install --no-interaction --no-progress
