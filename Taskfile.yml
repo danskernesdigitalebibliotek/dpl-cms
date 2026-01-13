@@ -129,14 +129,14 @@ tasks:
     # This could have a dependency on dev:build but does not to avoid excessive
     # log output. dev:cli gets called a lot.
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} run --rm cli sh -c "{{.CLI_ARGS}}"
+      - docker compose {{ .DOCKER_COMPOSE_FILES }} exec cli sh -c "{{.CLI_ARGS}}"
 
   dev:bnfcli:
     summary: dev:cli for BNF site, a noop if BNF not enabled
     status:
       - "[[ -z \"{{ .DOCKER_COMPOSE_FILES_BNF}}\" ]]"
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} run --rm bnfcli sh -c "{{.CLI_ARGS}}"
+      - docker compose {{ .DOCKER_COMPOSE_FILES }} exec bnfcli sh -c "{{.CLI_ARGS}}"
 
   dev:start:
     summary: Run docker compose
@@ -164,7 +164,7 @@ tasks:
   dev:pull:
     summary: Pull latest docker images.
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} pull
+      - echo "Pulling images will overwrite the locally build images, which is probably not what you want."
 
   dev:reset:
     desc: Create local development setup in a clean state
@@ -176,8 +176,6 @@ tasks:
     cmds:
       # Create a .env file with recommended defaults.
       - cp -n .env.example .env || true
-      # Pull the images (necessary for the first reset)
-      - task dev:pull
       # Start local environment.
       - task dev:start
       # Build site.
@@ -233,7 +231,7 @@ tasks:
   dev:phpunit:
     desc: Run PHPUnit tests with code coverage
     cmds:
-      - docker compose run -e XDEBUG_ENABLE=true -e XDEBUG_MODE=coverage,debug cli vendor/bin/phpunit --coverage-text
+      - docker compose exec -e XDEBUG_ENABLE=true -e XDEBUG_MODE=coverage,debug cli vendor/bin/phpunit --coverage-text
 
   dev:create-users:
     desc: Create test users, with test roles
