@@ -72,9 +72,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2026.2.0",
+                "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2026.2.0/dist-2026-2-0-20a43bbf0070c1424b4d1b642d7a46ff22a64ba5.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDF-29-enten-eller-funktion-til-filtrene/dist-ddf-29-enten-eller-funktion-til-filtrene.zip",
                     "type": "zip"
                 }
             }
@@ -107,7 +107,7 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2026.2.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "0.0.0-dev",
         "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
