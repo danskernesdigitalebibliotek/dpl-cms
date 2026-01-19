@@ -13,3 +13,13 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header.
     supportsCredentials: false
+  monolog.channel_handlers:
+    default:
+      handlers:
+        - name: 'container_stderr'
+          formatter: 'json'
+
+services:
+  monolog.handler.container_stderr:
+    class: ZiffMedia\MonologDioHandler\MonologDioHandler
+    arguments: [ '/proc/1/fd/1' ]

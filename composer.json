@@ -100,6 +100,7 @@
     ],
     "require": {
         "php": "8.3.*",
+        "ext-dio": "*",
         "ext-dom": "*",
         "amazeeio/drupal_integrations": "^0.5",
         "bower-asset/jsnlog": "^2.30",
@@ -170,6 +171,7 @@
         "drupal/linkit": "^7.0",
         "drupal/media_library_edit": "^3.0",
         "drupal/metatag": "^2.1",
+        "drupal/monolog": "^3.0",
         "drupal/multiple_fields_remove_button": "^2.2",
         "drupal/multivalue_form_element": "^1.0@beta",
         "drupal/next": "^2.0",
@@ -221,7 +223,8 @@
         "symfony/property-info": "^7.3",
         "thecodingmachine/safe": "^2.5.0",
         "webmozart/assert": "^1.11",
-        "zaporylie/composer-drupal-optimizations": "1.2.0"
+        "zaporylie/composer-drupal-optimizations": "1.2.0",
+        "ziffmedia/monolog-dio-handler": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10.1",

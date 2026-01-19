@@ -123,7 +123,6 @@ module:
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
-  jsonlog: 0
   language: 0
   language_neutral_aliases: 0
   link: 0
@@ -139,6 +138,7 @@ module:
   menu_ui: 0
   metatag: 0
   metatag_open_graph: 0
+  monolog: 0
   multiple_fields_remove_button: 0
   multivalue_form_element: 0
   mysql: 0
