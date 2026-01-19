@@ -258,7 +258,7 @@ msgstr "Beskrivelse"
 #: 
 msgctxt "Work Page"
 msgid "Edition"
-msgstr "Nr."
+msgstr "Udgave"
 
 #: 
 msgctxt "Work Page"
@@ -30418,7 +30418,7 @@ msgstr "F.eks. \"Kunstmuseet\", \"Studenterhuset\""
 #: 
 msgctxt "field.field.eventinstance.default.field_event_location:label"
 msgid "Location"
-msgstr ""
+msgstr "Lokation"
 
 #: 
 msgctxt "field.field.eventinstance.default.field_event_location_type:label"
@@ -30463,7 +30463,7 @@ msgstr "Når du vælger et bibliotek, bruger arrangementet bibliotekets adresse 
 #: 
 msgctxt "field.field.eventseries.default.field_event_location:label"
 msgid "Location"
-msgstr ""
+msgstr "Lokation"
 
 #: 
 msgctxt "field.field.eventseries.default.field_event_location_type:label"
@@ -30540,5 +30540,29 @@ msgid "<div>\n"
 " ({{ field_address_dawa }})\n"
 "{% endif %}\n"
 "</div>"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "<div class=\"messages messages--warning\">You currently have <strong>@title</strong> open in another window or tab. If you delete it now, you may lose changes that have not been saved.</div>"
+msgstr ""
+
+#: 
+msgctxt "DPL admin UX"
+msgid "<div class=\"messages messages--warning\"><strong>@title</strong> is currently being edited by <strong>@user</strong>. There is a risk of data loss if you proceed with deleting this content.</div>"
+msgstr ""
+
+#: 
+msgid "another user"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Show less"
+msgstr ""
+
+#: 
+msgctxt "Work Page"
+msgid "Show all (@count)"
 msgstr ""
 

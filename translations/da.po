@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2026-01-12 10:33+0100\n"
-"PO-Revision-Date: 2026-01-12 10:33+0100\n"
+"POT-Creation-Date: 2026-01-19 11:34+0100\n"
+"PO-Revision-Date: 2026-01-19 11:34+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -222,7 +222,7 @@ msgstr "Beskrivelse"
 
 msgctxt "Work Page"
 msgid "Edition"
-msgstr "Nr."
+msgstr "Udgave"
 
 msgctxt "Work Page"
 msgid "Edition year"
@@ -21049,4 +21049,29 @@ msgstr ""
 
 msgid "Price"
 msgstr "Pris"
+
+msgctxt "DPL admin UX"
+msgid ""
+"<div class=\"messages messages--warning\">You currently have "
+"<strong>@title</strong> open in another window or tab. If you delete "
+"it now, you may lose changes that have not been saved.</div>"
+msgstr ""
+
+msgctxt "DPL admin UX"
+msgid ""
+"<div class=\"messages messages--warning\"><strong>@title</strong> is "
+"currently being edited by <strong>@user</strong>. There is a risk of "
+"data loss if you proceed with deleting this content.</div>"
+msgstr ""
+
+msgid "another user"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Show less"
+msgstr ""
+
+msgctxt "Work Page"
+msgid "Show all (@count)"
+msgstr ""
 
