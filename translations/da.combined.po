@@ -30290,12 +30290,12 @@ msgstr "Forfatter / ophav"
 #: 
 msgctxt "advanced search 2"
 msgid "A-Z"
-msgstr "Forfatter / ophav (A-Å)"
+msgstr "A-Å"
 
 #: 
 msgctxt "advanced search 2"
 msgid "Z-A"
-msgstr "Forfatter / ophav (Å-A)"
+msgstr "Å-A"
 
 #: 
 msgid "Add matcher to profile"
