@@ -167,6 +167,19 @@ services:
     environment:
       << : *default-environment
 
+  node:
+    build:
+      context: .
+      dockerfile: lagoon/node.dockerfile
+      args:
+        # Next requires these variables to be present in order to build.
+        DRUPAL_REVALIDATE_SECRET: none
+        GO_SESSION_SECRET: "00000000000000000000000000000000"
+        NEXT_PUBLIC_GO_GRAPHQL_CONSUMER_USER_PASSWORD: none
+    labels:
+      provenance: false
+      lagoon.type: node
+
 volumes:
   projectroot:
     driver: local
