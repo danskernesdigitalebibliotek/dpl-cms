@@ -6,6 +6,10 @@ services:
     arguments:
       $logger: '@logger.channel.bnf'
 
+  bnf_client.subscription_creator:
+    class: Drupal\bnf_client\Services\SubscriptionCreator
+    autowire: true
+
   Drupal\bnf_client\BnfScheduler:
     class: Drupal\bnf_client\BnfScheduler
     autowire: true

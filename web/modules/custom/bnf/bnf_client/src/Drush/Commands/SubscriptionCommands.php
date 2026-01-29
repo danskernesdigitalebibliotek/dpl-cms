@@ -5,12 +5,14 @@ declare(strict_types=1);
 namespace Drupal\bnf_client\Drush\Commands;
 
 use Consolidation\OutputFormatters\StructuredData\RowsOfFields;
+use Drupal\bnf_client\Services\SubscriptionCreator;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drush\Attributes\Argument;
 use Drush\Attributes\Command;
 use Drush\Attributes\FieldLabels;
 use Drush\Attributes\Help;
+use Drush\Attributes\Option;
 use Drush\Attributes\Usage;
 use Drush\Commands\AutowireTrait;
 use Drush\Commands\DrushCommands;
@@ -33,6 +35,7 @@ class SubscriptionCommands extends DrushCommands {
    */
   public function __construct(
     EntityTypeManagerInterface $entityTypeManager,
+    protected SubscriptionCreator $subscriptionCreator,
   ) {
     $this->storage = $entityTypeManager->getStorage('bnf_subscription');
     parent::__construct();
@@ -44,16 +47,19 @@ class SubscriptionCommands extends DrushCommands {
   #[Command(name: 'bnf:subscription:create')]
   #[Help(description: 'Create a new subscription')]
   #[Argument(name: 'uuid', description: 'UUID to subscribe')]
+  #[Argument(name: 'label', description: 'Label for the subscription')]
+  #[Option(name: 'tag', description: 'Tag name to create and associate with the subscription')]
   #[Usage(
-    name: 'drush bnf:subscription:create 8f647000-cb67-40d0-b942-3f7fbf899c88',
+    name: 'drush bnf:subscription:create 8f647000-cb67-40d0-b942-3f7fbf899c88 "My subscription"',
     description: 'Subscribe to 8f647000-cb67-40d0-b942-3f7fbf899c88.'
   )]
-  public function createSubscription(string $uuid = '', string $label = ''): void {
-    $this->storage->create([
-      'subscription_uuid' => $uuid,
-      'label' => $label,
-    ])
-      ->save();
+  #[Usage(
+    name: 'drush bnf:subscription:create 8f647000-cb67-40d0-b942-3f7fbf899c88 "My subscription" --tag="My Tag"',
+    description: 'Subscribe with automatic tagging of imported content.'
+  )]
+  public function createSubscription(string $uuid = '', string $label = '', array $options = ['tag' => NULL]): void {
+    $feedback = $this->subscriptionCreator->addSubscription($uuid, $label, $options['tag']);
+    $this->output()->writeln($feedback);
   }
 
   /**
