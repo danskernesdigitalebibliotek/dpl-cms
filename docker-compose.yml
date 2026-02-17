@@ -106,7 +106,10 @@ services:
       args:
         CLI_IMAGE: *cli-image # Inject the name of the cli image
     depends_on:
-      - php
+      php:
+        condition: service_started
+      cli:
+        condition: service_started # basically just tells docker-compose to build the cli first
     # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
@@ -130,6 +133,8 @@ services:
         condition: service_started
       mariadb:
         condition: service_healthy
+      cli:
+        condition: service_started # basically just tells docker-compose to build the cli first
       # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:

@@ -59,6 +59,7 @@ services:
   php:
     depends_on:
       - wiremock
+      - cli # basically just tells docker-compose to build the cli first
     links: *links
     environment:
       CI: true

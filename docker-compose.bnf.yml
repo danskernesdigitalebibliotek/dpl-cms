@@ -88,7 +88,7 @@ services:
         CLI_IMAGE: *cli-image # Inject the name of the cli image
     depends_on:
       - bnfphp
-    # loads the defined volumes and user from the top
+      - bnfcli # basically just tells docker-compose to build the cli first    # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
       << : *default-environment # loads the defined environment variables from the top
@@ -107,6 +107,8 @@ services:
         condition: service_started
       bnfmariadb:
         condition: service_healthy
+      bnfcli:
+        condition: service_started # basically just tells docker-compose to build the cli first
       # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
