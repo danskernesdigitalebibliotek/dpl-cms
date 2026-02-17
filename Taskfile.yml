@@ -123,7 +123,7 @@ tasks:
       - "{{ .LAGOON_DIR }}/*"
       - "web/sites/sites.php"
     cmds:
-      - docker compose {{ .DOCKER_COMPOSE_FILES }} build
+      - docker compose --parallel 1 {{ .DOCKER_COMPOSE_FILES }} build
 
   dev:cli:
     summary: Performs command inside container. Expects parameter(s).
