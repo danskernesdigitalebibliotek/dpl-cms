@@ -107,6 +107,8 @@ services:
         condition: service_started
       bnfmariadb:
         condition: service_healthy
+      bnfcli:
+        condition: service_started # basically just tells docker-compose to build the cli first
       # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:

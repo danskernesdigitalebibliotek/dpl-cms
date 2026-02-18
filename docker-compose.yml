@@ -130,6 +130,8 @@ services:
         condition: service_started
       mariadb:
         condition: service_healthy
+      cli:
+        condition: service_started # basically just tells docker-compose to build the cli first
       # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
