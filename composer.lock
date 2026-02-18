@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dae51c0b2bde9bb93aed6f660fb1c30",
+    "content-hash": "4834d18241d80416dd9206b4fca8cfb3",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1107,10 +1107,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-design-system",
-            "version": "2026.8.0",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2026.8.0/dist-2026-8-0-ed2465a3ffeb72ea60a2efafd5fe7c5c5745eb23.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-KB-7-filialliste-react/dist-kb-7-filialliste-react.zip"
             },
             "type": "drupal-library"
         },
@@ -21873,6 +21873,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-design-system": 20,
         "drupal/address_dawa": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
