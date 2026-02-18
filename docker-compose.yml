@@ -107,6 +107,7 @@ services:
         CLI_IMAGE: *cli-image # Inject the name of the cli image
     depends_on:
       - php
+      - cli # basically just tells docker-compose to build the cli first
     # loads the defined volumes and user from the top
     <<: [*default-volumes, *default-user]
     environment:
