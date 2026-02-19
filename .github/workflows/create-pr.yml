@@ -45,7 +45,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Stop workflow if branch already exists
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v4
+
+        - name: Stop workflow if branch already exists
         run: |
           if git ls-remote --exit-code --heads origin "${{ env.PR_BRANCH }}"; then
             echo "::error::A branch with the same name as the requested branch name already exists."

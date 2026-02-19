@@ -30,6 +30,8 @@ jobs:
           echo "{\"version\": \"${{ steps.get_version.outputs.RELEASE_TAG }}\"}" > .version
         if: ${{ steps.detect_tag.outputs.IS_RELEASE_TAG == 'true' }}
       # Install go-task since we need it for building the source package.
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v4
       - name: Install go-task
         uses: arduino/setup-task@v2
         if: ${{ steps.detect_tag.outputs.IS_RELEASE_TAG == 'true' }}
