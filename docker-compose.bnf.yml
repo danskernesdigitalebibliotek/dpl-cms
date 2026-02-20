@@ -71,7 +71,7 @@ services:
     build:
       context: .
       dockerfile: lagoon/cli.dockerfile
-    image: &cli-image uselagoon/php-8.3-cli-drupal:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
+    image: &cli-image bnf-cli:latest # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
     << : *default-volumes # loads the defined volumes from the top
     user: root
     environment:
@@ -86,6 +86,8 @@ services:
       dockerfile: lagoon/nginx.dockerfile
       args:
         CLI_IMAGE: *cli-image # Inject the name of the cli image
+      additional_contexts:
+        cli: service:cli
     depends_on:
       - bnfphp
     # loads the defined volumes and user from the top
@@ -102,6 +104,8 @@ services:
       dockerfile: lagoon/php.dockerfile
       args:
         CLI_IMAGE: *cli-image
+      additional_contexts:
+        cli: service:cli
     depends_on:
       bnfredis:
         condition: service_started
