@@ -26,8 +26,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *       label = "ISIL Branch ID filter",
  *       required = false
  *     ),
- *     "whitelistType" = @ContextDefinition("string",
- *       label = "Whitelist type filter (search, availability, reservations)",
+ *     "whitelistTypes" = @ContextDefinition("any",
+ *       label = "Whitelist type filters (search, availability, reservations)",
  *       required = false
  *     ),
  *     "cmsConfigured" = @ContextDefinition("any",
@@ -70,20 +70,23 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
    *
    * @param string|null $isilId
    *   Optional ISIL branch ID to filter by.
-   * @param string|null $whitelistType
-   *   Optional whitelist type: "search", "availability", or "reservations".
-   *   Branches excluded from this whitelist will be filtered out.
+   * @param string[]|null $whitelistTypes
+   *   Optional whitelist types to filter by. Accepted values: "search",
+   *   "availability", "reservations". Multiple values use AND logic — only
+   *   branches whitelisted for every specified purpose are returned.
    * @param bool|null $cmsConfigured
    *   Optional filter to only return branches that have a corresponding CMS
    *   node. When TRUE, only CMS-configured branches are returned. When FALSE,
    *   only branches without CMS configuration are returned.
+   * @param \Drupal\graphql\GraphQL\Execution\FieldContext $field_context
+   *   The field context for adding cache metadata.
    *
-   * @return Branch[]
+   * @return \Drupal\dpl_library_agency\Branch\Branch[]
    *   The filtered branches.
    */
   public function resolve(
     ?string $isilId,
-    ?string $whitelistType,
+    ?array $whitelistTypes,
     mixed $cmsConfigured,
     FieldContext $field_context,
   ): array {
@@ -99,18 +102,20 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
       );
     }
 
-    if ($whitelistType !== NULL) {
-      $excludedBranchIds = match ($whitelistType) {
-        'search' => $this->branchSettings->getExcludedSearchBranches(),
-        'availability' => $this->branchSettings->getExcludedAvailabilityBranches(),
-        'reservations' => $this->branchSettings->getExcludedReservationBranches(),
-        default => [],
-      };
+    if (!empty($whitelistTypes)) {
+      foreach ($whitelistTypes as $whitelistType) {
+        $excludedBranchIds = match ($whitelistType) {
+          'search' => $this->branchSettings->getExcludedSearchBranches(),
+          'availability' => $this->branchSettings->getExcludedAvailabilityBranches(),
+          'reservations' => $this->branchSettings->getExcludedReservationBranches(),
+          default => [],
+        };
 
-      $branches = array_filter(
-        $branches,
-        fn(Branch $branch) => !in_array($branch->id, $excludedBranchIds, TRUE)
-      );
+        $branches = array_filter(
+          $branches,
+          fn(Branch $branch) => !in_array($branch->id, $excludedBranchIds, TRUE)
+        );
+      }
     }
 
     if ($cmsConfigured !== NULL) {

@@ -7,11 +7,12 @@ extend type Query {
     "Filter by a specific ISIL branch ID, e.g. DK-710111."
     isilId: String
     """
-    Filter to branches whitelisted for a specific purpose.
+    Filter to branches whitelisted for all of the given purposes.
     Accepted values: "search", "availability", "reservations".
-    Branches excluded from the given whitelist in the CMS configuration are omitted.
+    Multiple values are combined with AND logic — only branches whitelisted
+    for every specified purpose are returned.
     """
-    whitelistType: String
+    whitelistTypes: [String!]
     """
     When true, only return branches that have a corresponding node configured
     in the CMS. When false, only return branches without CMS configuration.

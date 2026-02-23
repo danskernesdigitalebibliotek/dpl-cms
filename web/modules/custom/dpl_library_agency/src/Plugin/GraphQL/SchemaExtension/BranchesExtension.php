@@ -3,10 +3,12 @@
 namespace Drupal\dpl_library_agency\Plugin\GraphQL\SchemaExtension;
 
 use Drupal\dpl_library_agency\Branch\Branch;
+use Drupal\dpl_library_agency\BranchSettings;
 use Drupal\dpl_library_agency\Plugin\Field\FieldFormatter\AddressDawaFormatter;
 use Drupal\graphql\GraphQL\ResolverBuilder;
 use Drupal\graphql\GraphQL\ResolverRegistryInterface;
 use Drupal\graphql\Plugin\GraphQL\SchemaExtension\SdlSchemaExtensionPluginBase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Branches extension.
@@ -21,6 +23,20 @@ use Drupal\graphql\Plugin\GraphQL\SchemaExtension\SdlSchemaExtensionPluginBase;
 class BranchesExtension extends SdlSchemaExtensionPluginBase {
 
   /**
+   * The branch settings service.
+   */
+  protected BranchSettings $branchSettings;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): static {
+    $instance = parent::create($container, $configuration, $plugin_id, $plugin_definition);
+    $instance->branchSettings = $container->get(BranchSettings::class);
+    return $instance;
+  }
+
+  /**
    * {@inheritdoc}
    */
   public function registerResolvers(ResolverRegistryInterface $registry): void {
@@ -29,7 +45,7 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
     $registry->addFieldResolver('Query', 'getBranches',
       $builder->produce('get_branches_producer')
         ->map('isilId', $builder->fromArgument('isilId'))
-        ->map('whitelistType', $builder->fromArgument('whitelistType'))
+        ->map('whitelistTypes', $builder->fromArgument('whitelistTypes'))
         ->map('cmsConfigured', $builder->fromArgument('cmsConfigured'))
     );
 
@@ -52,6 +68,16 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
       })
     );
 
+    $registry->addFieldResolver('Branch', 'whitelists',
+      $builder->callback(function (Branch $branch): array {
+        return [
+          'search' => !in_array($branch->id, $this->branchSettings->getExcludedSearchBranches(), TRUE),
+          'availability' => !in_array($branch->id, $this->branchSettings->getExcludedAvailabilityBranches(), TRUE),
+          'reservations' => !in_array($branch->id, $this->branchSettings->getExcludedReservationBranches(), TRUE),
+        ];
+      })
+    );
+
     $registry->addFieldResolver('BranchAddress', 'street',
       $builder->callback(fn(array $address) => $address['address'])
     );
@@ -66,6 +92,18 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
 
     $registry->addFieldResolver('BranchAddress', 'country',
       $builder->callback(fn(array $address) => $address['country'])
+    );
+
+    $registry->addFieldResolver('BranchWhitelists', 'search',
+      $builder->callback(fn(array $whitelists) => $whitelists['search'])
+    );
+
+    $registry->addFieldResolver('BranchWhitelists', 'availability',
+      $builder->callback(fn(array $whitelists) => $whitelists['availability'])
+    );
+
+    $registry->addFieldResolver('BranchWhitelists', 'reservations',
+      $builder->callback(fn(array $whitelists) => $whitelists['reservations'])
     );
   }
 
