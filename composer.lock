@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc89afe6eb2885b8515d15daefb71f20",
+    "content-hash": "187960ea2aea46893114bec767a9623b",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -8303,26 +8303,26 @@
         },
         {
             "name": "drupal/state_log",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/state_log.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/state_log-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "23a3f60d4b571d5db76e39052014aefef7354c52"
+                "url": "https://ftp.drupal.org/files/projects/state_log-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "f07edcbb45a03444d98924ab228b54bd088f8d02"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8.8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1688162796",
+                    "version": "8.x-2.3",
+                    "datestamp": "1771525487",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
