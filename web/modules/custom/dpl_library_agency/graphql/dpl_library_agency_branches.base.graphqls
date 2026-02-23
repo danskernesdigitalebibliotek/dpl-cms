@@ -1,0 +1,26 @@
+
+"""
+A library branch (physical location) within the library organization.
+"""
+type Branch {
+  "The ISIL branch identifier, e.g. DK-710111."
+  isilId: String!
+  "The human-readable name of the branch."
+  title: String!
+  "The physical address of the branch. Only available for CMS-configured branches."
+  address: BranchAddress
+}
+
+"""
+Physical address of a branch.
+"""
+type BranchAddress {
+  "Street name and house number."
+  street: String
+  "Postal/ZIP code."
+  postalCode: String
+  "City name."
+  city: String
+  "ISO 3166-1 alpha-2 country code."
+  country: String
+}

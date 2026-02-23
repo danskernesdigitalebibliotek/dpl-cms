@@ -27,7 +27,7 @@ class AddressDawaFormatter extends FormatterBase {
 
     foreach ($items as $delta => $item) {
       /** @var \Drupal\address_dawa\AddressDawaItemInterface $item */
-      $elements[$delta] = $this->buildOutput($item);
+      $elements[$delta] = static::buildOutput($item);
     }
 
     return $elements;
@@ -44,7 +44,7 @@ class AddressDawaFormatter extends FormatterBase {
    *   country: string
    *   }
    */
-  protected function buildOutput(AddressDawaItemInterface $item): array {
+  public static function buildOutput(AddressDawaItemInterface $item): array {
     $dawa_data = $item->getData()['adgangsadresse'] ?? NULL;
     $postal_code = $dawa_data?->postnummer?->nr;
     $city = $dawa_data?->postnummer?->navn;
