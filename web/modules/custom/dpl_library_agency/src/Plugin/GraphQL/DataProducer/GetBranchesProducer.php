@@ -90,7 +90,9 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
     mixed $cmsConfigured,
     FieldContext $field_context,
   ): array {
-    $field_context->addCacheableDependency((new CacheableMetadata())->setCacheMaxAge(0));
+    // @todo Create strategy for queries that has a TTL like this one has.
+    $six_hours = 6 * 60 * 60;
+    $field_context->addCacheableDependency((new CacheableMetadata())->setCacheMaxAge($six_hours));
     $field_context->addCacheableDependency($this->branchSettings);
 
     $branches = $this->branchRepository->getBranches();
