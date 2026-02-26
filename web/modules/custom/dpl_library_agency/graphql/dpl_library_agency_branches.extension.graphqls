@@ -12,7 +12,7 @@ extend type Query {
     Multiple values are combined with AND logic — only branches whitelisted
     for every specified purpose are returned.
     """
-    whitelistTypes: [String!]
+    availabilityContexts: [String!]
     """
     When true, only return branches that have a corresponding node configured
     in the CMS. When false, only return branches without CMS configuration.

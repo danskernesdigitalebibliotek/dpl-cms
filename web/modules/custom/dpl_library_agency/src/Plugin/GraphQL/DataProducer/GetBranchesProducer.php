@@ -26,8 +26,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *       label = "ISIL Branch ID filter",
  *       required = false
  *     ),
- *     "whitelistTypes" = @ContextDefinition("any",
- *       label = "Whitelist type filters (search, availability, reservations)",
+ *     "availabilityContexts" = @ContextDefinition("any",
+ *       label = "Available in (search, availability, reservations)",
  *       required = false
  *     ),
  *     "cmsConfigured" = @ContextDefinition("any",
@@ -70,7 +70,7 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
    *
    * @param string|null $isilId
    *   Optional ISIL branch ID to filter by.
-   * @param string[]|null $whitelistTypes
+   * @param string[]|null $availabilityContexts
    *   Optional whitelist types to filter by. Accepted values: "search",
    *   "availability", "reservations". Multiple values use AND logic — only
    *   branches whitelisted for every specified purpose are returned.
@@ -86,7 +86,7 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
    */
   public function resolve(
     ?string $isilId,
-    ?array $whitelistTypes,
+    ?array $availabilityContexts,
     mixed $cmsConfigured,
     FieldContext $field_context,
   ): array {
@@ -96,7 +96,6 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
     $field_context->addCacheableDependency($this->branchSettings);
 
     $branches = $this->branchRepository->getBranches();
-
     if ($isilId !== NULL) {
       $branches = array_filter(
         $branches,
@@ -104,9 +103,9 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
       );
     }
 
-    if (!empty($whitelistTypes)) {
-      foreach ($whitelistTypes as $whitelistType) {
-        $excludedBranchIds = match ($whitelistType) {
+    if (!empty($availabilityContexts)) {
+      foreach ($availabilityContexts as $availabilityContext) {
+        $excludedBranchIds = match ($availabilityContext) {
           'search' => $this->branchSettings->getExcludedSearchBranches(),
           'availability' => $this->branchSettings->getExcludedAvailabilityBranches(),
           'reservations' => $this->branchSettings->getExcludedReservationBranches(),

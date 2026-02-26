@@ -45,7 +45,7 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
     $registry->addFieldResolver('Query', 'getBranches',
       $builder->produce('get_branches_producer')
         ->map('isilId', $builder->fromArgument('isilId'))
-        ->map('whitelistTypes', $builder->fromArgument('whitelistTypes'))
+        ->map('availabilityContexts', $builder->fromArgument('availabilityContexts'))
         ->map('cmsConfigured', $builder->fromArgument('cmsConfigured'))
     );
 
@@ -68,7 +68,7 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
       })
     );
 
-    $registry->addFieldResolver('Branch', 'whitelists',
+    $registry->addFieldResolver('Branch', 'availabilityContext',
       $builder->callback(function (Branch $branch): array {
         return [
           'search' => !in_array($branch->id, $this->branchSettings->getExcludedSearchBranches(), TRUE),
@@ -94,16 +94,16 @@ class BranchesExtension extends SdlSchemaExtensionPluginBase {
       $builder->callback(fn(array $address) => $address['country'])
     );
 
-    $registry->addFieldResolver('BranchWhitelists', 'search',
-      $builder->callback(fn(array $whitelists) => $whitelists['search'])
+    $registry->addFieldResolver('BranchAvailabilityContext', 'search',
+      $builder->callback(fn(array $context) => $context['search'])
     );
 
-    $registry->addFieldResolver('BranchWhitelists', 'availability',
-      $builder->callback(fn(array $whitelists) => $whitelists['availability'])
+    $registry->addFieldResolver('BranchAvailabilityContext', 'availability',
+      $builder->callback(fn(array $context) => $context['availability'])
     );
 
-    $registry->addFieldResolver('BranchWhitelists', 'reservations',
-      $builder->callback(fn(array $whitelists) => $whitelists['reservations'])
+    $registry->addFieldResolver('BranchAvailabilityContext', 'reservations',
+      $builder->callback(fn(array $context) => $context['reservations'])
     );
   }
 

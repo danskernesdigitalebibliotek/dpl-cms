@@ -1,4 +1,3 @@
-
 """
 A library branch (physical location) within the library organization.
 """
@@ -9,21 +8,19 @@ type Branch {
   title: String!
   "The physical address of the branch. Only available for CMS-configured branches."
   address: BranchAddress
-  "Indicates which whitelists this branch is included in."
-  whitelists: BranchWhitelists!
+  "Indicates which contexts this branch is available in."
+  availabilityContext: BranchAvailabilityContext!
 }
 
 """
-Whitelist membership for a branch across the three configurable lists.
-A branch is whitelisted for a given purpose when it is NOT in the excluded list
-for that purpose in the CMS configuration.
+In which contexts this branch is available.
 """
-type BranchWhitelists {
-  "Whether this branch is whitelisted for search (i.e. not excluded from search results)."
+type BranchAvailabilityContext {
+  "Whether this branch is used in the search (i.e. not excluded from search results)."
   search: Boolean!
-  "Whether this branch is whitelisted for availability (i.e. not excluded from availability)."
+  "Whether this branch is used when requesting availability."
   availability: Boolean!
-  "Whether this branch is whitelisted for reservations (i.e. available as a pickup location)."
+  "Whether this branch is used when requesting reservations."
   reservations: Boolean!
 }
 
