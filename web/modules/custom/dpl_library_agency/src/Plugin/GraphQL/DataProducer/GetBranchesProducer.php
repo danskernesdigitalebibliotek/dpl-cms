@@ -123,7 +123,7 @@ class GetBranchesProducer extends DataProducerPluginBase implements ContainerFac
     if ($cmsConfigured !== NULL) {
       $branches = array_filter(
         $branches,
-        fn(Branch $branch) => (bool) $branch->node === (bool) $cmsConfigured
+        fn(Branch $branch) => (bool) $branch->getNode() === (bool) $cmsConfigured
       );
     }
 
