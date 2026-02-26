@@ -30,7 +30,8 @@ class GeneralSettings extends DplReactConfigBase {
   const SEARCH_INFOBOX_CONTENT = '{"value":"","format":"limited"}';
   const SEARCH_INFOBOX_BUTTON_LABEL = '';
   const SEARCH_INFOBOX_BUTTON_URL = '';
-  const ENABLE_BRANCH_ADDRESS_SEARCH = FALSE;
+  const ENABLE_ADDRESS_SEARCH_BRANCH = FALSE;
+  const ENABLE_ADDRESS_SEARCH_PATRON = FALSE;
 
   /**
    * Gets the configuration key for general settings.
