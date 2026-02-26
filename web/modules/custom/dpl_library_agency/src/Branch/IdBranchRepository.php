@@ -2,6 +2,8 @@
 
 namespace Drupal\dpl_library_agency\Branch;
 
+use Drupal\Core\Cache\Cache;
+
 /**
  * Build an array of branches from an array of ids.
  *
@@ -27,6 +29,27 @@ class IdBranchRepository implements BranchRepositoryInterface {
     return array_map(function (string $id) {
       return new Branch($id, $id);
     }, $this->ids);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheContexts(): array {
+    return [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags(): array {
+    return [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheMaxAge(): int {
+    return Cache::PERMANENT;
   }
 
 }

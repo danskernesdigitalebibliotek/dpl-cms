@@ -3,6 +3,7 @@
 namespace Drupal\dpl_library_agency\Branch;
 
 use DanskernesDigitaleBibliotek\FBS\Model\AgencyBranch;
+use Drupal\Core\Cache\Cache;
 use Drupal\dpl_fbs\FbsApiFactory;
 use Drupal\dpl_library_token\LibraryTokenHandler;
 
@@ -44,6 +45,29 @@ class FbsBranchRepository implements BranchRepositoryInterface {
     });
 
     return $branches;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheContexts(): array {
+    return [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags(): array {
+    return [];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheMaxAge(): int {
+    // The FBS repository itself has no caching — it always fetches live data.
+    // Caching is handled by the wrapping CacheableBranchRepository.
+    return Cache::PERMANENT;
   }
 
 }
