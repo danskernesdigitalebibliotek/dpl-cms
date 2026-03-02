@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2026-02-03 09:20+0100\n"
-"PO-Revision-Date: 2026-02-03 09:20+0100\n"
+"POT-Creation-Date: 2026-03-02 15:36+0100\n"
+"PO-Revision-Date: 2026-03-02 15:36+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1862,9 +1862,6 @@ msgstr "Aktiv"
 msgid "Event"
 msgstr "Arrangement"
 
-msgid "Custom handling related to events."
-msgstr "Indstillinger for arrangementer"
-
 msgid "Article"
 msgstr "Artikel"
 
@@ -2035,7 +2032,7 @@ msgstr "tilføj @title til huskelisten"
 
 msgctxt "Global"
 msgid "Animated series"
-msgstr "Animeret serie"
+msgstr "Tegneserier"
 
 msgctxt "Global"
 msgid "Audio books"
@@ -2633,9 +2630,6 @@ msgstr "Ændringer til forskellige Paragraphs"
 
 msgid "Admin"
 msgstr "Administrator"
-
-msgid "Functionality related to the admin/editor experience"
-msgstr "Funktionalitet relateret til administrator/redaktøroplevelsen"
 
 msgid "Time"
 msgstr "Tid"
@@ -21074,4 +21068,32 @@ msgstr "Vis færre"
 msgctxt "Work Page"
 msgid "Show all (@count)"
 msgstr "Vis alle (@count)"
+
+msgid "Custom handling related to Events."
+msgstr ""
+
+msgid "Functionality related to the admin/editor experience."
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Local subjects agency IDs"
+msgstr "Agency ID'er til visning af lokale emneord"
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"A comma-separated list of agency IDs whose local subjects should be "
+"displayed on the work page alongside the standard subjects. E.g. "
+"\"911116-katalog,911130-katalog\"."
+msgstr ""
+"FBI API udleverer udover DBCs kontrollerede emneord også lokale "
+"emneord fra hvert Agency (er tildelt de enkelte manifestationer, evt. "
+"via påhængsposter), som også kan være emneord på andre sprog, "
+"f.eks. grønlandsk og færøsk.\n"
+"\n"
+"For at disse kan vises, skal man "
+"her tilføje en komma-adskilt liste af ID'er på de agencies, hvis "
+"lokale emneord der ønskes vist på værkvisningssiden sammen med de "
+"alm. emneord. F.eks. \"911116-katalog,911130-katalog\". Typisk vil det "
+"her være nok blot at notere bibliotekets eget agency ID, f.eks. "
+"\"762100-katalog\"."
 
