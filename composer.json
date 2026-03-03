@@ -56,10 +56,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2026.10.1",
+                "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2026.10.1/dist-2026-10-1-b99ce2364674b9577b4d30e3467241151f0358b5.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -72,9 +72,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2026.10.0",
+                "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2026.10.0/dist-2026-10-0-44ddf4ef4a21258df2c3ad6a2c54e0ea8faf9c24.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip",
                     "type": "zip"
                 }
             }
@@ -106,8 +106,8 @@
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2026.10.0",
-        "danskernesdigitalebibliotek/dpl-react": "2026.10.1",
+        "danskernesdigitalebibliotek/dpl-design-system": "0.0.0-dev",
+        "danskernesdigitalebibliotek/dpl-react": "0.0.0-dev",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
