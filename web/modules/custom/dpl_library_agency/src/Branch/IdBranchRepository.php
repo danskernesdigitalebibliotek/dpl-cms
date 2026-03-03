@@ -2,7 +2,7 @@
 
 namespace Drupal\dpl_library_agency\Branch;
 
-use Drupal\Core\Cache\Cache;
+use Drupal\Core\Cache\CacheableDependencyTrait;
 
 /**
  * Build an array of branches from an array of ids.
@@ -11,6 +11,8 @@ use Drupal\Core\Cache\Cache;
  * available.
  */
 class IdBranchRepository implements BranchRepositoryInterface {
+
+  use CacheableDependencyTrait;
 
   /**
    * Constructor.
@@ -34,22 +36,8 @@ class IdBranchRepository implements BranchRepositoryInterface {
   /**
    * {@inheritdoc}
    */
-  public function getCacheContexts(): array {
-    return [];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getCacheTags(): array {
-    return [];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function getCacheMaxAge(): int {
-    return Cache::PERMANENT;
+    return 0;
   }
 
 }
