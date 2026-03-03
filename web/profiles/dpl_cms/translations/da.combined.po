@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2026-02-18 10:32+0100\n"
-"PO-Revision-Date: 2026-02-18 10:32+0100\n"
+"POT-Creation-Date: 2026-03-02 17:07+0100\n"
+"PO-Revision-Date: 2026-03-02 17:07+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2692,6 +2692,46 @@ msgctxt "Work Page"
 msgid "Show all (@count)"
 msgstr "Vis alle (@count)"
 
+msgctxt "Branch List"
+msgid "Branches"
+msgstr ""
+
+msgctxt "Branch List"
+msgid "See libraries near an address"
+msgstr ""
+
+msgctxt "Branch List"
+msgid "Enter an address e.g. Torvegade 1, 1401 København K"
+msgstr ""
+
+msgctxt "Branch List"
+msgid "See libraries close to you"
+msgstr ""
+
+msgctxt "Branch List"
+msgid "Geolocation is not supported by your browser."
+msgstr ""
+
+msgctxt "Branch List"
+msgid "You have denied access to your location."
+msgstr ""
+
+msgctxt "Branch List"
+msgid "Your location is not available at the moment."
+msgstr ""
+
+msgctxt "Branch List"
+msgid "The request for your location timed out. Please try again."
+msgstr ""
+
+msgctxt "Branch List"
+msgid "An error occurred while fetching your location."
+msgstr ""
+
+msgctxt "Branch List"
+msgid "Could not find address for your location."
+msgstr ""
+
 msgctxt "Global (Aria)"
 msgid "Close blocked patron modal"
 msgstr "Luk pop-up til blokeret bruger"
@@ -2827,7 +2867,7 @@ msgstr ""
 
 msgctxt "Global"
 msgid "Animated series"
-msgstr "Animeret serie"
+msgstr "Tegneserier"
 
 msgctxt "Global"
 msgid "Audio books"
@@ -3797,27 +3837,21 @@ msgid "General"
 msgstr "Generelt"
 
 msgctxt "Library Agency Configuration"
-msgid "Enable \"Find nearest branch\""
-msgstr "Slå \"Find nærmeste bibliotek\" til"
-
-msgctxt "Library Agency Configuration"
 msgid ""
 "If enabled, the user will be able to find their nearest library branch, "
 "using an address field. <br />\n"
 "                                         <strong>For the best experience, "
 "make sure to <a href=\"@edit_url\">edit all branches and assign an agency ID "
-"and address.</a></strong> <br />\n"
-"                                         You can, for example, see this new "
-"functionality on the patron registration page."
+"and address.</a></strong>"
 msgstr ""
-"Hvis dette slås til, kan brugerne finde deres nærmeste bibliotek eller "
-"afhentningssted med søgning på deres adresse. Bemærk, at dette virker kun "
-"for biblioteker, der har adresse i Danmark.<br />\n"
-"                                         <strong>Og det er vigtigt, at få <a "
-"href=\"@edit_url\">redigeret alle biblioteker og tilføjet et agency ID fra "
-"FBS sammen med adressen.</a></strong> <br />\n"
-"                                         \"Find nærmeste bibliotek\" kan ses "
-"på låneoprettelsessiden."
+
+msgctxt "Library Agency Configuration"
+msgid "Enable \"Find nearest branch\" on the branch list page /biblioteker"
+msgstr ""
+
+msgctxt "Library Agency Configuration"
+msgid "Enable \"Find nearest branch\" on the patron registration page"
+msgstr ""
 
 msgctxt "Library Agency Configuration"
 msgid "Opening Hours Link (remove link to enable sidebar)"
@@ -3844,6 +3878,27 @@ msgstr ""
 "<br />\n"
 "                                         You can add an external url "
 "(starting with \"http://\" or \"https://\")."
+
+msgctxt "Library Agency Configuration"
+msgid "Local subjects agency IDs"
+msgstr "Agency ID'er til visning af lokale emneord"
+
+msgctxt "Library Agency Configuration"
+msgid ""
+"A comma-separated list of agency IDs whose local subjects should be "
+"displayed on the work page alongside the standard subjects. E.g. \"911116-"
+"katalog,911130-katalog\"."
+msgstr ""
+"FBI API udleverer udover DBCs kontrollerede emneord også lokale emneord fra "
+"hvert Agency (er tildelt de enkelte manifestationer, evt. via "
+"påhængsposter), som også kan være emneord på andre sprog, f.eks. grønlandsk "
+"og færøsk.\n"
+"\n"
+"For at disse kan vises, skal man her tilføje en komma-adskilt liste af ID'er "
+"på de agencies, hvis lokale emneord der ønskes vist på værkvisningssiden "
+"sammen med de alm. emneord. F.eks. \"911116-katalog,911130-katalog\". Typisk "
+"vil det her være nok blot at notere bibliotekets eget agency ID, f.eks. "
+"\"762100-katalog\"."
 
 msgctxt "Library Agency Configuration"
 msgid "Reservations"
@@ -4215,16 +4270,16 @@ msgid "Find nearest library"
 msgstr "Find dit nærmeste bibliotek"
 
 msgctxt "Create patron"
-msgid "Enter your address"
-msgstr "Indtast din adresse"
+msgid "See libraries near an address"
+msgstr ""
 
 msgctxt "Create patron"
-msgid "Ex. Torvegade 1, 1401 København K"
-msgstr "F.eks. Torvegade 1, 1401 København K"
+msgid "Enter an address e.g. Torvegade 1, 1401 København K"
+msgstr ""
 
 msgctxt "Create patron"
-msgid "Find nearest library using your location"
-msgstr "Find dit nærmeste bibliotek eller afhentningssted via din lokation"
+msgid "See libraries close to you"
+msgstr ""
 
 msgctxt "Create patron"
 msgid "Geolocation is not supported by your browser."
@@ -4402,7 +4457,7 @@ msgid "The link will only be displayed if there is content."
 msgstr "Dette link vil kun blive vist, hvis der er indhold."
 
 msgid "Submit"
-msgstr "Submit"
+msgstr "Indsend"
 
 msgid "Library token"
 msgstr "Biblioteks token"
@@ -5628,7 +5683,7 @@ msgid "VideoTool embed"
 msgstr "VideoTool indlejring"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Navn"
 
 msgid "Description"
 msgstr "Beskrivelse"
@@ -5696,9 +5751,6 @@ msgstr "VærkID-formatter"
 
 msgid "List all opening hours for legacy API"
 msgstr "List alle åbningstider for ældre API"
-
-msgid "DPL DAWA Adress Formatter"
-msgstr "FB CMS DAWA adresseformatering"
 
 msgid "DPL Linkit with options"
 msgstr "DPL Linkit with options"
@@ -6607,7 +6659,7 @@ msgid "Zip code"
 msgstr "Postnummer"
 
 msgid "Sort by"
-msgstr "Sort by"
+msgstr "Sortér efter"
 
 msgid "Country name"
 msgstr "Landenavn"
@@ -6868,7 +6920,7 @@ msgid "Always display country."
 msgstr ""
 
 msgid "- All -"
-msgstr "- All -"
+msgstr "- Alle -"
 
 msgid "Limit by postal code"
 msgstr "Begræns efter postnummer"
@@ -6887,7 +6939,7 @@ msgid "Territory"
 msgstr "Territorium"
 
 msgid "Operations"
-msgstr "Operations"
+msgstr "Handlinger"
 
 msgid "Remove"
 msgstr "Fjern"
@@ -6956,7 +7008,7 @@ msgid "Family name"
 msgstr "Efternavn"
 
 msgid "Default"
-msgstr "Default"
+msgstr "Standard"
 
 msgid "Plain"
 msgstr "Enkel"
@@ -6988,7 +7040,7 @@ msgid "Provides functionality for handling postal addresses."
 msgstr "Udøver funktionalitet til håndtering af postadresser."
 
 msgid "Roles"
-msgstr "Roles"
+msgstr "Roller"
 
 msgid "Allowed"
 msgstr "Tilladt"
@@ -7919,7 +7971,7 @@ msgid "Entity type protected"
 msgstr "Entity type protected"
 
 msgid "All"
-msgstr "All"
+msgstr "Alle"
 
 msgid "Select the bundles on which enable content lock"
 msgstr "Vælg de bundter, hvorpå indholdslås skal aktiveres"
@@ -7995,13 +8047,13 @@ msgid "The @type being locked."
 msgstr "@type er låst."
 
 msgid "Lock owner"
-msgstr "Lock owner"
+msgstr "Låsens ejer"
 
 msgid "The user locking the node."
 msgstr "The user locking the node."
 
 msgid "Lock Date/Time"
-msgstr "Lock Date/Time"
+msgstr "Lås Dato/Tid"
 
 msgid "Timestamp of the lock"
 msgstr "Tidsstempel for låsen"
@@ -8130,7 +8182,7 @@ msgid "Content lock settings"
 msgstr "Indstillinger for indholdslås"
 
 msgid "General"
-msgstr "General"
+msgstr "Generelt"
 
 msgid "Administer content locking settings."
 msgstr "Administrer indstillinger for låsning af indhold."
@@ -8247,7 +8299,7 @@ msgid "The crop type %name has been added."
 msgstr "Beskæringstype %name er blevet tilføjet."
 
 msgid "Edit"
-msgstr "Edit"
+msgstr "Redigér"
 
 msgid "Edit @name crop type"
 msgstr "Rediger @name beskæringstype"
@@ -8262,7 +8314,7 @@ msgid "The machine-readable name is already in use. It must be unique."
 msgstr "Dette maskinlæsbare navn er allerede i brug. Det skal være unikt."
 
 msgid "Delete"
-msgstr "Delete"
+msgstr "Slet"
 
 msgid "Are you sure you want to delete the crop type @name?"
 msgstr "Er du sikker på, at du vil slette beskæringstypen @name?"
@@ -8287,7 +8339,7 @@ msgid "Aspect Ratio"
 msgstr "Aspekt ratio"
 
 msgid "Used in"
-msgstr "Used in"
+msgstr "Brugt i"
 
 msgid "@first, @second and @count more"
 msgstr "@first, @second og @count flere"
@@ -8420,7 +8472,7 @@ msgid "ID of entity crop belongs to."
 msgstr "ID for enhed, hvis beskæring tilhører."
 
 msgid "Entity type"
-msgstr "Entity type"
+msgstr "Entity-type"
 
 msgid "The type of entity crop belongs to."
 msgstr "Den type enhed, beskæringen tilhører."
@@ -9096,7 +9148,7 @@ msgid "Provide a Drupal Views to select templates from content types"
 msgstr "Levere ren Drupal Views til at vælge skabeloner fra indholdstyper"
 
 msgid "Entity Clone Template"
-msgstr "Entity Clone Template"
+msgstr "Gem som skabelon"
 
 msgid "Allow this content type to define Entity Clone templates"
 msgstr "Tillad dette indhold at blive gemt som skabelon"
@@ -10202,7 +10254,7 @@ msgstr ""
 "forskydningerne er i procenter. Eksempel: 25,75."
 
 msgid "Focal point"
-msgstr "Focal point"
+msgstr "Fokuspunkt"
 
 msgid ""
 "Specify the focus of this image in the form \"leftoffset,topoffset\" where "
@@ -10212,7 +10264,7 @@ msgstr ""
 "forskydningerne er i procent. Eksempel: 25,75"
 
 msgid "Preview"
-msgstr "Preview"
+msgstr "Gennemse"
 
 msgid "File not found."
 msgstr "File not found."
@@ -10374,7 +10426,7 @@ msgid "Timestamp when a job is to be executed."
 msgstr "Tidsstempel for, hvornår et job skal udføres."
 
 msgid "Scheduled"
-msgstr "Scheduled"
+msgstr "Planlagt"
 
 msgid "Timestamp when a job was scheduled."
 msgstr "Tidsstempel for, hvornår et job blev planlagt."
@@ -10691,7 +10743,7 @@ msgid "Opens your mail client ready to e-mail @email"
 msgstr "Åbner din mail: Gør klar til at sende e-mail @email"
 
 msgid "Front page"
-msgstr "Front page"
+msgstr "Forside"
 
 msgid "System"
 msgstr "System"
@@ -10784,16 +10836,16 @@ msgid "External"
 msgstr "Eksterne"
 
 msgid "User"
-msgstr "User"
+msgstr "Bruger"
 
 msgid "Content"
-msgstr "Content"
+msgstr "Indhold"
 
 msgid "Email"
 msgstr "E-mail"
 
 msgid "Taxonomy term"
-msgstr "Taxonomy term"
+msgstr "Ord i ordforråd"
 
 msgid "Contact form"
 msgstr "Kontaktformular"
@@ -10907,7 +10959,7 @@ msgid "Revert"
 msgstr "Gendan"
 
 msgid "Language"
-msgstr "Language"
+msgstr "Sprog"
 
 msgid "@language (original)"
 msgstr "@language (original)"
@@ -11308,7 +11360,7 @@ msgid "Status"
 msgstr "Status"
 
 msgid "Active"
-msgstr "Active"
+msgstr "Aktiv"
 
 msgid "Inherits meta tags from: @inherits"
 msgstr "Arver meta tags fra: @inherits"
@@ -12124,13 +12176,13 @@ msgid "The length of the video in seconds"
 msgstr "Længden på videoen i sekunder"
 
 msgid "Title"
-msgstr "Title"
+msgstr "Titel"
 
 msgid "The title of the content, e.g., <em>The Rock</em>."
 msgstr "Titlen på indhold, f.eks., <em>The Rock</em>."
 
 msgid "Gender"
-msgstr "Gender"
+msgstr "Køn"
 
 msgid ""
 "Any of Facebook's gender values should be allowed, the initial two being "
@@ -12155,7 +12207,7 @@ msgid "Fax number"
 msgstr "Faxnummer"
 
 msgid "Content type"
-msgstr "Content type"
+msgstr "Indholdstype"
 
 msgid "The type of the content, e.g., <em>movie</em>."
 msgstr "Typen af indhold, f.eks. <em>movie</em>."
@@ -12378,7 +12430,7 @@ msgid "The date the video was released."
 msgstr "Datoen for, hvornår videoen blev udgivet."
 
 msgid "Username"
-msgstr "Username"
+msgstr "Brugernavn"
 
 msgid "A pseudonym / alias of this person."
 msgstr "Et pseudonym / alias af denne person."
@@ -13307,7 +13359,7 @@ msgstr ""
 "href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> fil."
 
 msgid "Page title"
-msgstr "Page title"
+msgstr "Sidetitel"
 
 msgid ""
 "The text to display in the title bar of a visitor's web browser when they "
@@ -13475,7 +13527,7 @@ msgid "Used for paginated content by providing URL with rel='next' link."
 msgstr "Bruges til pagineret indhold ved at give URL med rel='next'-link."
 
 msgid "Author"
-msgstr "Author"
+msgstr "Forfatter"
 
 msgid "Define the author of a page."
 msgstr "Definer forfatteren af en side."
@@ -15443,7 +15495,7 @@ msgstr ""
 "href=\"@create_content\">eventseries for at tilføje en ny eventserietype."
 
 msgid "Register"
-msgstr "Register"
+msgstr "Opret konto"
 
 msgid "Excluded Dates"
 msgstr "Udelukkede datoer"
@@ -15647,13 +15699,13 @@ msgid "Series Starts"
 msgstr "Serien starter"
 
 msgid "Updated"
-msgstr "Updated"
+msgstr "Opdateret"
 
 msgid "Published"
-msgstr "Published"
+msgstr "Udgivet"
 
 msgid "Unpublished"
-msgstr "Unpublished"
+msgstr "Ikke udgivet"
 
 msgid "Are you sure you want to delete the revision from %revision-date?"
 msgstr "Ønsker du at slette versionen fra %revision-date?"
@@ -16078,7 +16130,7 @@ msgid "The language code of event entity."
 msgstr "Sprogkoden for arrangementenhed."
 
 msgid "Created"
-msgstr "Created"
+msgstr "Oprettet"
 
 msgid "The time that the entity was created."
 msgstr "Tidspunktet enheden blev skabt."
@@ -16145,7 +16197,7 @@ msgstr ""
 "indholdselementer mærket med \"frugt\" hvis dybden er -1 (eller lavere)."
 
 msgid "Days"
-msgstr "Days"
+msgstr "Dage"
 
 msgid "The days of the week on which this event occurs"
 msgstr "Hvilke dage på ugen finder arrangementet sted"
@@ -16241,7 +16293,7 @@ msgid "Number of years between occurrences"
 msgstr "Antal år mellem hver instans"
 
 msgid "Months"
-msgstr "Months"
+msgstr "Måneder"
 
 msgid "The months in which the event occurs"
 msgstr "Månederne. hvor arrangementerne foregår"
@@ -16792,7 +16844,7 @@ msgid "Waitlist"
 msgstr "Venteliste"
 
 msgid "Complete"
-msgstr "Complete"
+msgstr "Komplet"
 
 msgid "Pending"
 msgstr "Afventer"
@@ -18355,10 +18407,10 @@ msgstr ""
 "matche, enten begge til eller begge fra."
 
 msgid "Publish on"
-msgstr "Publish on"
+msgstr "Udgiv den"
 
 msgid "Unpublish on"
-msgstr "Unpublish on"
+msgstr "Afpublicér den"
 
 msgid "Media Field Data"
 msgstr "Mediefeltdatabaser"
@@ -19472,7 +19524,7 @@ msgid "The user roles associated with the user account."
 msgstr "Brugerrollerne forbundet til brugerkontoen."
 
 msgid "IP address"
-msgstr "IP address"
+msgstr "IP-adresse"
 
 msgid "The IP address of the current user."
 msgstr "Nuværende brugers IP-adresse."
@@ -20270,7 +20322,7 @@ msgid "By @username"
 msgstr "Af @username"
 
 msgid "Show all"
-msgstr "Show all"
+msgstr "Vis alle"
 
 msgid "Show less"
 msgstr "Vis mindre"
@@ -21753,11 +21805,15 @@ msgid "Address (Deprecated - will be removed)"
 msgstr ""
 
 msgctxt "field.field.node.branch.field_address_dawa:label"
-msgid "Address"
+msgid "Address (Deprecated - will be removed)"
 msgstr ""
 
 msgctxt "field.field.node.branch.field_address_dawa:description"
 msgid "Start typing to look up addresses in Denmark."
+msgstr ""
+
+msgctxt "field.field.node.branch.field_address_gsearch:label"
+msgid "Address"
 msgstr ""
 
 msgctxt "field.field.node.branch.field_agency_branch_id:label"
@@ -24879,42 +24935,6 @@ msgctxt "views.view.articles:display:all:display_title"
 msgid "Page"
 msgstr ""
 
-msgctxt "views.view.branches:label"
-msgid "Branches"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_title"
-msgid "Default"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:title"
-msgid "Branches"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:exposed_form:options:submit_button"
-msgid "Apply"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:exposed_form:options:reset_button_label"
-msgid "Reset"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:exposed_form:options:exposed_sorts_label"
-msgid "Sort by"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:exposed_form:options:sort_asc_label"
-msgid "Asc"
-msgstr ""
-
-msgctxt "views.view.branches:display:default:display_options:exposed_form:options:sort_desc_label"
-msgid "Desc"
-msgstr ""
-
-msgctxt "views.view.branches:display:page:display_title"
-msgid "Page"
-msgstr ""
-
 msgctxt "views.view.content:label"
 msgid "Content"
 msgstr ""
@@ -25283,18 +25303,18 @@ msgctxt "views.view.entity_reference_content:display:branch_addresses:display_ti
 msgid "Branches and addresses"
 msgstr ""
 
-msgctxt "views.view.entity_reference_content:display:branch_addresses:display_options:fields:field_address_dawa:alter:text"
-msgid "{{ field_address_dawa__value }}"
+msgctxt "views.view.entity_reference_content:display:branch_addresses:display_options:fields:field_address_gsearch:alter:text"
+msgid "{{ field_address_gsearch__value }}"
 msgstr ""
 
 msgctxt "views.view.entity_reference_content:display:branch_addresses:display_options:fields:title:alter:text"
 msgid ""
 "<div>\r\n"
 "<strong>{{ title }}</strong>\r\n"
-"{% if field_address_dawa %}\r\n"
+"{% if field_address_gsearch %}\r\n"
 "<br/>­\r\n"
 "\r\n"
-" ({{ field_address_dawa }})\r\n"
+" ({{ field_address_gsearch }})\r\n"
 "{% endif %}\r\n"
 "</div>"
 msgstr ""
