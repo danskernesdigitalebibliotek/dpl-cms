@@ -56,10 +56,10 @@
             "type": "package",
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-react",
-                "version": "2026.8.0",
+                "version": "2026.10.1",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2026.8.0/dist-2026-8-0-bc173de06457bd6aca426389f1a42aa4175714b9.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2026.10.1/dist-2026-10-1-b99ce2364674b9577b4d30e3467241151f0358b5.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -72,9 +72,9 @@
             "package": {
                 "name": "danskernesdigitalebibliotek/dpl-design-system",
                 "type": "drupal-library",
-                "version": "2026.8.0",
+                "version": "2026.10.0",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2026.8.0/dist-2026-8-0-ed2465a3ffeb72ea60a2efafd5fe7c5c5745eb23.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/2026.10.0/dist-2026-10-0-44ddf4ef4a21258df2c3ad6a2c54e0ea8faf9c24.zip",
                     "type": "zip"
                 }
             }
@@ -103,12 +103,11 @@
         "ext-dom": "*",
         "amazeeio/drupal_integrations": "^0.5",
         "bower-asset/jsnlog": "^2.30",
-        "brick/math": "^0.14.0",
         "composer/installers": "1.12.0",
         "cweagans/composer-patches": "1.7.3",
         "danskernesdigitalebibliotek/cms-api": "*",
-        "danskernesdigitalebibliotek/dpl-design-system": "2026.8.0",
-        "danskernesdigitalebibliotek/dpl-react": "2026.8.0",
+        "danskernesdigitalebibliotek/dpl-design-system": "2026.10.0",
+        "danskernesdigitalebibliotek/dpl-react": "2026.10.1",
         "danskernesdigitalebibliotek/fbs-client": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "deoliveiralucas/array-keys-case-transform": "^1.1",
@@ -154,6 +153,7 @@
         "drupal/graphql": "^4.9",
         "drupal/graphql_compose": "^2.2",
         "drupal/graphql_compose_preview": "^1.1",
+        "drupal/gsearch": "^1",
         "drupal/handy_cache_tags": "^1.4",
         "drupal/health_check": "^3.1",
         "drupal/honeypot": "^2.2",
@@ -423,10 +423,6 @@
                 "3487412: Fix WSOD when EventInstance has invalid translation.": "https://git.drupalcode.org/project/recurring_events/-/commit/996052eeb7518ce591df968a0bb12c4819fb4edf.patch",
                 "3504806: Clean up orphaned eventinstances automatically": "https://www.drupal.org/files/issues/2025-02-06/reccuring_events_auto_delete_orphaned.patch",
                 "3515976: EventUserTrait may return NULL if owner has been deleted": "https://git.drupalcode.org/issue/recurring_events-3515976/-/commit/4bf78bde6378b01367c4f57b0d5c40b51e8dc53f.patch"
-            },
-            "drupal/state_log": {
-                "3501178: Call to undefined method Drupal\\state_log\\StateLog::destruct()": "https://git.drupalcode.org/project/state_log/-/commit/8d63dd4827a930f5294004a1d13f051487ec4269.patch",
-                "3505648: var_export does not handle circular references": "https://git.drupalcode.org/project/state_log/-/commit/707c51dff86a0ccb8cb1b0923c4ff9dbfab8bb8d.patch"
             },
             "drupal/theme_permission": {
                 "3105637: Edit, install and uninstall permission": "https://www.drupal.org/files/issues/2024-02-01/theme-permission-edit-install-uninstall-3105637-7.patch"
