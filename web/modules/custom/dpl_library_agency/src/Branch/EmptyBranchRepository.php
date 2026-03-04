@@ -2,7 +2,6 @@
 
 namespace Drupal\dpl_library_agency\Branch;
 
-use Drupal\Core\Cache\Cache;
 use Drupal\Core\Cache\CacheableDependencyTrait;
 
 /**
@@ -23,7 +22,7 @@ class EmptyBranchRepository implements BranchRepositoryInterface {
    * {@inheritdoc}
    */
   public function getCacheMaxAge(): int {
-    return Cache::PERMANENT;
+    return 0;
   }
 
 }
