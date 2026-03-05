@@ -457,6 +457,9 @@ class DplReactAppsController extends ControllerBase {
       'find-on-shelf-hide-unavailable-holdings-config' => (int) $this->generalSettings->getFindOnShelfHideUnavailableHoldings(),
       'agency-id-config' => $this->adgangsplatformenConfig->getAgencyId(),
       'local-subjects-agency-ids-config' => $this->generalSettings->getLocalSubjectsAgencyIds(),
+      'share-config' => json_encode([
+        'enabled' => $this->generalSettings->getShareButtonsEnabled(),
+      ]),
       'mapp-domain-config' => $this->config('dpl_mapp.settings')->get('domain'),
       'mapp-id-config' => $this->config('dpl_mapp.settings')->get('id'),
 
@@ -690,6 +693,10 @@ class DplReactAppsController extends ControllerBase {
       'edition-switch-modal-title-text' => $this->t('Choose Edition', [], ['context' => 'Work Page']),
       'material-contents-show-less-text' => $this->t('Show less', [], ['context' => 'Work Page']),
       'material-contents-show-all-text' => $this->t('Show all (@count)', [], ['context' => 'Work Page']),
+      'share-on-facebook-text' => $this->t('Share on Facebook', [], ['context' => 'Work Page']),
+      'share-on-facebook-aria-label-text' => $this->t('Share this page on Facebook', [], ['context' => 'Work Page']),
+      'copy-link-text' => $this->t('Copy link', [], ['context' => 'Work Page']),
+      'copy-link-aria-label-text' => $this->t('Copy link to this page', [], ['context' => 'Work Page']),
       // Add external API base urls.
     ] + self::externalApiBaseUrls();
 
@@ -702,6 +709,7 @@ class DplReactAppsController extends ControllerBase {
     $this->renderer->addCacheableDependency($app, $this->reservationSettings);
     $this->renderer->addCacheableDependency($app, $this->branchSettings);
     $this->renderer->addCacheableDependency($app, $this->instantLoanSettings);
+    $this->renderer->addCacheableDependency($app, $this->generalSettings);
 
     return $app;
   }
