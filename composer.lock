@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12a14e8636180ccf15de45deded8cc15",
+    "content-hash": "5c50502767cbbebe68aa76e2f6dce547",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1056,10 +1056,10 @@
         },
         {
             "name": "danskernesdigitalebibliotek/dpl-react",
-            "version": "2026.10.1",
+            "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/2026.10.1/dist-2026-10-1-b99ce2364674b9577b4d30e3467241151f0358b5.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDF-129_DDF-131_accessibility/dist-ddf-129-ddf-131-accessibility.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -21865,6 +21865,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/dpl-react": 20,
         "drupal/address_dawa": 20,
         "drupal/default_content": 15,
         "drupal/multivalue_form_element": 10,
