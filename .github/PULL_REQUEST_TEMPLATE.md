@@ -1,5 +1,5 @@
+# Do not open new pull requests here!
 
+New pull requests should be created in dpl-web:
 
-#### Link to issue
-
-Please add a link to the issue being addressed by this change.
+https://github.com/danskernesdigitalebibliotek/dpl-web
