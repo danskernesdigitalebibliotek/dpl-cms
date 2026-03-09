@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0dc9641d4a795c93ac84a5736c7a1de1",
+    "content-hash": "d8670c481befa1566925d35114164e0a",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1050,7 +1050,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-KB-4-share-on-some/dist-kb-4-share-on-some.zip"
             },
             "type": "drupal-library"
         },
@@ -1059,7 +1059,7 @@
             "version": "0.0.0-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip"
+                "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-KB-4-share-on-some/dist-kb-4-share-on-some.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
