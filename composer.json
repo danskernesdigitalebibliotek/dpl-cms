@@ -59,7 +59,7 @@
                 "version": "0.0.0-dev",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-react/releases/download/branch-KB-4-share-on-some/dist-kb-4-share-on-some.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -74,7 +74,7 @@
                 "type": "drupal-library",
                 "version": "0.0.0-dev",
                 "dist": {
-                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-DDF-37-filtre-i-simple-search-ligesom-pa-advanced-search/dist-ddf-37-filtre-i-simple-search-ligesom-pa-advanced-search.zip",
+                    "url": "https://github.com/danskernesdigitalebibliotek/dpl-design-system/releases/download/branch-KB-4-share-on-some/dist-kb-4-share-on-some.zip",
                     "type": "zip"
                 }
             }
