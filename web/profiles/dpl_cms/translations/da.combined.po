@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2026-03-09 09:37+0100\n"
-"PO-Revision-Date: 2026-03-09 09:37+0100\n"
+"POT-Creation-Date: 2026-03-09 11:37+0100\n"
+"PO-Revision-Date: 2026-03-09 11:37+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1160,6 +1160,26 @@ msgid "Year"
 msgstr "År"
 
 msgctxt "Search Result"
+msgid "Age"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "General audience"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Lix"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Let"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Library recommendation"
+msgstr ""
+
+msgctxt "Search Result"
 msgid "Filter list"
 msgstr "Flere filtre"
 
@@ -1202,6 +1222,42 @@ msgstr "Viser"
 msgctxt "Search Result"
 msgid "Switch to the results for the library content."
 msgstr "Vis i stedet resultater fra bibliotekets hjemmeside for"
+
+msgctxt "Search Result"
+msgid "Show all"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Show less"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "On shelf"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Only show results available at the library now."
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Only show results that can always be loaned."
+msgstr ""
+
+msgctxt "Search Result"
+msgid "@hitcount results"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Showing all materials"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Showing results for"
+msgstr ""
+
+msgctxt "Search Result"
+msgid "Filter materials (@hitcount)"
+msgstr ""
 
 msgctxt "advanced search"
 msgid "source"
@@ -1539,10 +1595,6 @@ msgid "Loading results..."
 msgstr "Henter resultater..."
 
 msgctxt "advanced search 2"
-msgid "showing materials (@hitcount)"
-msgstr "Din søgning har @hitcount resultater"
-
-msgctxt "advanced search 2"
 msgid "More filters"
 msgstr "Flere filtre"
 
@@ -1669,32 +1721,6 @@ msgid "Edit search"
 msgstr "Rediger søgning"
 
 msgctxt "advanced search 2"
-msgid "On shelf"
-msgstr "På hylden"
-
-msgctxt "advanced search 2"
-msgid "Only show results available at the library now."
-msgstr "Vis kun titler, som har eksemplarer hjemme på hylden."
-
-msgctxt "advanced search 2"
-msgid "Only \"Extra Titles\""
-msgstr "Lån udenfor kvoten"
-
-msgctxt "advanced search 2"
-msgid "Only show results not limited by digital loan quotas."
-msgstr ""
-"Vis kun digitale titler, der ikke tæller med i din månedlige lånekvote og "
-"altid er tilgængelige."
-
-msgctxt "advanced search 2"
-msgid "Show all"
-msgstr "Vis alle"
-
-msgctxt "advanced search 2"
-msgid "Show less"
-msgstr "Vis færre"
-
-msgctxt "advanced search 2"
 msgid "Reset"
 msgstr "Nulstil"
 
@@ -1815,10 +1841,6 @@ msgid "Filter materials (@hitcount)"
 msgstr "Filtrer resultater (@hitcount)"
 
 msgctxt "advanced search 2"
-msgid "Show results"
-msgstr "Vis resultater"
-
-msgctxt "advanced search 2"
 msgid "Sort by"
 msgstr "Sorter efter"
 
@@ -1849,6 +1871,40 @@ msgstr "A-Å"
 msgctxt "advanced search 2"
 msgid "Z-A"
 msgstr "Å-A"
+
+msgctxt "advanced search 2"
+msgid "Show all"
+msgstr "Vis alle"
+
+msgctxt "advanced search 2"
+msgid "Show less"
+msgstr "Vis færre"
+
+msgctxt "advanced search 2"
+msgid "On shelf"
+msgstr "På hylden"
+
+msgctxt "advanced search 2"
+msgid "Only show results available at the library now."
+msgstr "Vis kun titler, som har eksemplarer hjemme på hylden."
+
+msgctxt "advanced search 2"
+msgid "Only \"Extra Titles\""
+msgstr "Lån udenfor kvoten"
+
+msgctxt "advanced search 2"
+msgid "Only show results not limited by digital loan quotas."
+msgstr ""
+"Vis kun digitale titler, der ikke tæller med i din månedlige lånekvote og "
+"altid er tilgængelige."
+
+msgctxt "advanced search 2"
+msgid "Show results"
+msgstr "Vis resultater"
+
+msgctxt "advanced search 2"
+msgid "@hitcount results"
+msgstr ""
 
 msgctxt "Work Page"
 msgid "Already reserved"
